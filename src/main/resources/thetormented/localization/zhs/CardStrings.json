@@ -1,0 +1,111 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description. NL Second line.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  }, "${modID}:StrikeTormented": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害"
+  }, "${modID}:DefendTormented": {
+  "NAME": "防御",
+  "DESCRIPTION": "获得 !B! 点格挡",
+  "UPGRADE_DESCRIPTION": "获得 !B! 点格挡"
+  }, "${modID}:Rebel": {
+  "NAME": "叛逆",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 给予目标等同于此牌预计伤害的流血",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予目标等同于此牌预计伤害的流血",
+  "EXTENDED_DESCRIPTION": [
+    "NL 给予 !M! 点流血"
+  ]
+  }, "${modID}:Forgive": {
+  "NAME": "宽恕",
+  "DESCRIPTION": "获得 !B! 点格挡。 NL 降低 !M! 点原罪",
+  "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 降低 !M! 点原罪"
+  }, "${modID}:Slash": {
+  "NAME": "割伤",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 点流血",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 点流血"
+  }, "${modID}:Rend": {
+  "NAME": "撕扯",
+  "DESCRIPTION": "造成 !D! 点伤害.如果敌人有流血，额外造成 !M! 次伤害",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害.如果敌人有流血，额外造成 !M! 次伤害"
+  }, "${modID}:Pursuit": {
+  "NAME": "追击",
+  "DESCRIPTION": "仅当你本回合打出的上一张牌是攻击牌时允许打出。 NL 造成 !D! 点伤害",
+  "UPGRADE_DESCRIPTION": "仅当你本回合打出的上一张牌是攻击牌时允许打出。 NL 造成 !D! 点伤害",
+  "EXTENDED_DESCRIPTION": ["本回合我打出的上一张牌不是攻击牌"]
+  }, "${modID}:ArmSevering": {
+  "NAME": "断臂斩",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 将 !M! 张苦痛加入手牌",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将 !M! 张苦痛加入手牌"
+  }, "${modID}:QuenchedBlade": {
+  "NAME": "淬火刀刃",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 本场战斗中升级 !M! 张手牌",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 本场战斗中升级 !M! 张手牌"
+  },"${modID}:CruelTorture": {
+  "NAME": "残酷折磨",
+  "DESCRIPTION": "造成 !D! 伤害。 NL 获得 !${modID}:SIN! 点原罪",
+  "UPGRADE_DESCRIPTION": "造成 !D! 伤害。 NL 获得 !${modID}:SIN! 点原罪"
+  },"${modID}:AtonementStrike": {
+  "NAME": "赎罪打击",
+  "DESCRIPTION": "造成 !D! 点伤害。NL 若你有血债，抽 !M! 张牌",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。NL 若你有血债，抽 !M! 张牌"
+  },"${modID}:RelentlessEntanglement": {
+  "NAME": "纠缠不放",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 每当你洗牌时，将其加入手牌。",
+  "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 每当你洗牌时，将其加入手牌。"
+  },"${modID}:UnrighteousGuilt": {
+  "NAME": "不义罪责",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !${modID}:SIN! 点原罪。",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage to ALL enemy.Gain !${modID}:Sin! Sin."
+  },"${modID}:Agony": {
+  "NAME": "伤痛",
+  "DESCRIPTION": "造成 !D! 点伤害。 NL 给予 !M! 层虚弱和 !M! 层易伤",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage.Apply !M! Weak and !M! vulnerable."
+  },"${modID}:SacredLand": {
+  "NAME": "Sacred Land",
+  "DESCRIPTION": "Gain !B! Block.Draw !M! cards if hasn't Debt.",
+  "UPGRADE_DESCRIPTION": "Gain !B! Block.Draw !M! cards if hasn't Debt."
+  },"${modID}:Loan": {
+  "NAME": "Loan",
+  "DESCRIPTION": "Gain !M! Energy.Next turn, lose 1 Energy.NL Exhaust",
+  "UPGRADE_DESCRIPTION": "Gain !M! Energy.Next turn, lose 1 Energy.NL Exhaust NL Retain"
+  },"${modID}:Firm": {
+  "NAME": "Firm",
+  "DESCRIPTION": "Gain !B! BLOCK.NL Retain",
+  "UPGRADE_DESCRIPTION": "Gain !B! BLOCK.NL Retain"
+  },"${modID}:BloodGuard": {
+  "NAME": "BloodGuard",
+  "DESCRIPTION": "Gain !B! BLOCK.Give an enemy !M! Bleed.",
+  "UPGRADE_DESCRIPTION": "Gain !B! BLOCK.Give an enemy !M! Bleed."
+  },"${modID}:PleaOfInnocence": {
+  "NAME": "Plea Of Innocence",
+  "DESCRIPTION": "Gain !B! BLOCK.Each Debt makes !M! more BLOCK.",
+  "UPGRADE_DESCRIPTION": "Gain !B! BLOCK.Each Debt makes !M! more BLOCK."
+  },"${modID}:PredictiveMeasures": {
+  "NAME": "Predictive Measures",
+  "DESCRIPTION": "Draw !M! card. If it is an Attack, it costs 0 until played this turn.",
+  "UPGRADE_DESCRIPTION": "Draw !M! card. If it is an Attack, it costs 0 until played this turn."
+  }, "${modID}:Hostility": {
+  "NAME": "Hostility",
+  "DESCRIPTION": "If your BLOCK is under !B!,give all enemy !M! weak.",
+  "UPGRADE_DESCRIPTION": "If your BLOCK is under !B!,give all enemy !M! weak."
+  }, "${modID}:DeterringStrike": {
+  "NAME": "Deterring Strike",
+  "DESCRIPTION": "Deal !D! damage.Give !M! weak if the enemy's intend is attack",
+  "UPGRADE_DESCRIPTION": "Deal !D! damage.Give !M! weak if the enemy's intend is attack"
+  }, "${modID}:Relief": {
+  "NAME": "Relief",
+  "DESCRIPTION": "At the end of your turn, Exhaust all Misery in your hand.",
+  "UPGRADE_DESCRIPTION": "Innate NL At the end of your turn, Exhaust all Misery in your hand."
+  }, "${modID}:Misery": {
+  "NAME": "Misery",
+  "DESCRIPTION": "Suffer 2 damage.Draw 1 card."
+  }
+}
