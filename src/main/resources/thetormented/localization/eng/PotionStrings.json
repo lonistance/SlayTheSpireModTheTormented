@@ -1,12 +1,21 @@
 {
-  "${modID}:PotionID": {
-    "NAME": "Some Kind of Potion",
+  "${modID}:GodBlood": {
+    "NAME": "God Blood",
     "DESCRIPTIONS": [
-      "Little",
-      " pieces ",
-      "that get put together",
-      " into a description.",
-      " Exactly how depends on the potion, and you can set it up however you want."
+      "Apply #b",
+      " Bleed to an enemy."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Tear Drop",
+    "DESCRIPTIONS": [
+      "Retain your hand for #b1 turn."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Revival Wine",
+    "DESCRIPTIONS": [
+      "Gain #b1 Energy. NL Draw #b2 cards."
     ]
   }
 }

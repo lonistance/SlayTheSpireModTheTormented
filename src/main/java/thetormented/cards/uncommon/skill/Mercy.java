@@ -43,6 +43,6 @@ public class Mercy extends BaseCard {
 
     @Override
     public AbstractCard makecopy() {
-        return new Riot();
+        return new Mercy();
     }
 }

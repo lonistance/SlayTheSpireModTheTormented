@@ -33,10 +33,8 @@ public class SinsToBlades extends BaseCard {
 
     public SinsToBlades() {
         super(ID, STATS);
-        this.baseDamage = BASE_DAMAGE;
-        // magicNumber 用于表示“额外抽牌量”（未升级为0，升级后为1）
-        this.baseMagicNumber = BASE_EXTRA_DRAW;
-        this.magicNumber = this.baseMagicNumber;
+        setDamage(BASE_DAMAGE, UPGRADE_PLUS_DAMAGE);
+        setMagic(BASE_EXTRA_DRAW, UPGRADE_PLUS_DRAW);
     }
 
     @Override
@@ -50,7 +48,7 @@ public class SinsToBlades extends BaseCard {
         int currentDebt = getPowerAmount(p);
         int extraDraw = this.magicNumber;
         int totalDrawAmount = currentDebt + extraDraw;
-
+        setCustomVar("${modID}:TOTAL_DRAW", totalDrawAmount);
         if (totalDrawAmount > 0) {
             addToBot(new DrawCardAction(p, totalDrawAmount));
         }

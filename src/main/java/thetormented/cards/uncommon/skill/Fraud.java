@@ -1,13 +1,12 @@
 package thetormented.cards.uncommon.skill;
 
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import thetormented.actions.UpdateSinAction;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
-import thetormented.powers.buff.SinPower;
 import thetormented.util.CardStats;
 
 public class Fraud extends BaseCard {
@@ -32,7 +31,7 @@ public class Fraud extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DrawCardAction(p, magicNumber));
-        addToBot(new ApplyPowerAction(p, p, new SinPower(p,magicNumber)));
+        addToBot(new UpdateSinAction(p, p, magicNumber));
     }
 
     @Override

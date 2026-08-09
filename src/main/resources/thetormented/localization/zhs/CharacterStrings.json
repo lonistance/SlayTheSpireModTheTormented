@@ -1,12 +1,12 @@
 {
   "${modID}:TheTormented": {
     "NAMES": [
-      "The Tormented",
-      "The Tormented"
+      "受刑者",
+      "受刑者"
     ],
     "TEXT": [
-      "Blood can't wash misery, but relieve debt from curse.",
-      "The Tormented.",
+      "因为斩断敌人手臂而受到诅咒的战士。 NL 鲜血无法洗涤痛苦，但可以暂时逃避",
+      "受刑者",
       "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~brother~, ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
     ]
   }

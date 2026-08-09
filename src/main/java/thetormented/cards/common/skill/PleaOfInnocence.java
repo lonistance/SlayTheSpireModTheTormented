@@ -55,6 +55,7 @@ public class PleaOfInnocence extends BaseCard {
             totalBlock += extraBlock;
         }
 
+        setCustomVar("TOTAL_BLOCK", totalBlock);
         // 获得最终格挡
         addToBot(new GainBlockAction(p, p, totalBlock));
     }

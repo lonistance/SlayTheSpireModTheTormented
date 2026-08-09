@@ -1,4 +1,4 @@
-package thetormented.cards.special.statue;
+package thetormented.cards.special.status;
 
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -7,10 +7,10 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
-import thetormented.cards.special.status.Entangled;import thetormented.util.CardStats;
+import thetormented.util.CardStats;
 
 public class Misery extends BaseCard {
-    public static final String ID = makeID(Entangled.Misery.class.getSimpleName()); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+    public static final String ID = makeID(Misery.class.getSimpleName()); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
             CardColor.COLORLESS, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
             CardType.STATUS, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
@@ -38,6 +38,6 @@ public class Misery extends BaseCard {
 
     @Override
     public AbstractCard makecopy() {
-        return new Entangled.Misery();
+        return new Misery();
     }
 }

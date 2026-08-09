@@ -46,9 +46,13 @@ public abstract class BaseRelic extends CustomRelic {
                 outlineImg = img;
         }
         else {
-            ImageMaster.loadRelicImg("Derp Rock", "derpRock.png");
-            this.img = ImageMaster.getRelicImg("Derp Rock");
-            this.outlineImg = ImageMaster.getRelicOutlineImg("Derp Rock");
+            //TODO: Temporary placeholder until the real relic art is added.
+            this.img = TextureLoader.getTextureNull(relicPath("example.png"), true);
+            if (img == null) {
+                ImageMaster.loadRelicImg("Derp Rock", "derpRock.png");
+                this.img = ImageMaster.getRelicImg("Derp Rock");
+            }
+            this.outlineImg = this.img;
         }
     }
 

@@ -22,6 +22,6 @@ public class SinPower extends BasePower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + 1 + DESCRIPTIONS[1];
     }
 }

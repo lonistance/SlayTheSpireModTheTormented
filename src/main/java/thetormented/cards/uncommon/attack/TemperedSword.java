@@ -5,38 +5,85 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
 import thetormented.util.CardStats;
 
 public class TemperedSword extends BaseCard {
-    public static final String ID = makeID(TemperedSword.class.getSimpleName()); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
+    public static final String ID = makeID(TemperedSword.class.getSimpleName());
+
+    private static final int COST = 1;
+    private static final int BASE_DAMAGE = 8;
+    private static final int DAMAGE_PER_STATUS = 2;
+    private static final int UPG_DAMAGE_PER_STATUS = 1; // 3 -> 4
+
     private static final CardStats info = new CardStats(
-            Tormented.Meta.CARD_COLOR, //The card color. If you're making your own character, it'll look something like this. Otherwise, it'll be CardColor.RED or similar for a basegame character color.
-            CardType.ATTACK, //The type. ATTACK/SKILL/POWER/CURSE/STATUS
-            CardRarity.UNCOMMON, //Rarity. BASIC is for starting cards, then there's COMMON/UNCOMMON/RARE, and then SPECIAL and CURSE. SPECIAL is for cards you only get from events. Curse is for curses, except for special curses like Curse of the Bell and Necronomicurse.
-            CardTarget.ENEMY, //The target. Single target is ENEMY, all enemies is ALL_ENEMY. Look at cards similar to what you want to see what to use.
-            1 //The card's base cost. -1 is X cost, -2 is no cost for unplayable cards like curses, or Reflex.
+            Tormented.Meta.CARD_COLOR,
+            CardType.ATTACK,
+            CardRarity.UNCOMMON,
+            CardTarget.ENEMY,
+            COST
     );
-    //These will be used in the constructor. Technically you can just use the values directly,
-    //but constants at the top of the file are easy to adjust.
-    private static final int DAMAGE = 8;
-    private static final int UPG_DAMAGE = 2;
-    private static final int DAMAGE_ADDITION = 3;
-    private static final int UPG_DAMAGE_ADDITION = 1;
 
     public TemperedSword() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
-        setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+        super(ID, info);
+        // 基础伤害 8 点（未升级与升级后均保持 8 点）
+        setDamage(BASE_DAMAGE);
+        // 设置加成系数：未升级 2，升级后 3
+        setMagic(DAMAGE_PER_STATUS, UPG_DAMAGE_PER_STATUS);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        int totalExhaustedStatues = p.exhaustPile.size();
-        int totalDamage = damage + totalExhaustedStatues * magicNumber;
-        addToBot(new DamageAction(m, new DamageInfo(p, totalDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        // 在打出时重新计算一次包含状态牌加成的伤害
+        calculateCardDamage(m);
+        addToBot(new DamageAction(
+                m,
+                new DamageInfo(p, this.damage, this.damageTypeForTurn),
+                AbstractGameAction.AttackEffect.SLASH_VERTICAL
+        ));
+    }
+
+    /**
+     * 计算消耗堆中状态牌的数量
+     */
+    private int countExhaustedStatusCards() {
+        int count = 0;
+        AbstractPlayer p = AbstractDungeon.player;
+        if (p != null && p.exhaustPile != null) {
+            for (AbstractCard c : p.exhaustPile.group) {
+                if (c.type == CardType.STATUS) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+
+    // --- 实时面板 preview 逻辑 ---
+
+    @Override
+    public void applyPowers() {
+        int originalBaseDamage = this.baseDamage;
+        this.baseDamage += countExhaustedStatusCards() * this.magicNumber;
+
+        super.applyPowers();
+
+        this.baseDamage = originalBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        int originalBaseDamage = this.baseDamage;
+        this.baseDamage += countExhaustedStatusCards() * this.magicNumber;
+
+        super.calculateCardDamage(mo);
+
+        this.baseDamage = originalBaseDamage;
+        this.isDamageModified = (this.damage != this.baseDamage);
     }
 
     @Override

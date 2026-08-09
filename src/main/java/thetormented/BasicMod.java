@@ -2,9 +2,15 @@ package thetormented;
 
 import basemod.AutoAdd;
 import basemod.BaseMod;
+import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import thetormented.cards.BaseCard;
+import thetormented.cards.rare.attack.UnceasingWar;
 import thetormented.character.Tormented;
+import thetormented.potions.GodBlood;
+import thetormented.potions.RevivalWine;
+import thetormented.potions.TearDrop;
+import thetormented.relics.BaseRelic;
 import thetormented.util.GeneralUtils;
 import thetormented.util.KeywordInfo;
 import thetormented.util.Sounds;
@@ -13,6 +19,7 @@ import com.badlogic.gdx.Files;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglFileHandle;
 import com.badlogic.gdx.files.FileHandle;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.evacipated.cardcrawl.modthespire.Loader;
@@ -22,6 +29,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.scannotation.AnnotationDB;
@@ -35,10 +43,12 @@ import java.util.*;
 public class BasicMod implements
         EditCardsSubscriber,
         EditCharactersSubscriber,
+        EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         AddAudioSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        StartGameSubscriber {
     public static ModInfo info;
     public static String modID; //Edit your pom.xml to change this
     static { loadModInfo(); }
@@ -64,6 +74,11 @@ public class BasicMod implements
 
     @Override
     public void receivePostInitialize() {
+        //Register potions (this BaseMod fork has no EditPotionsSubscriber)
+        BaseMod.addPotion(GodBlood.class, Color.RED, Color.RED, Color.RED, GodBlood.POTION_ID, Tormented.Meta.TORMENTED);
+        BaseMod.addPotion(TearDrop.class, Color.BLUE, Color.LIGHT_GRAY, Color.CYAN, TearDrop.POTION_ID, Tormented.Meta.TORMENTED);
+        BaseMod.addPotion(RevivalWine.class, Color.RED, Color.ORANGE, Color.RED, RevivalWine.POTION_ID, Tormented.Meta.TORMENTED);
+
         //This loads the image used as an icon in the in-game mods menu.
         Texture badgeTexture = TextureLoader.getTexture(imagePath("badge.png"));
         //Set up the mod information displayed in the in-game mods menu.
@@ -281,6 +296,11 @@ public class BasicMod implements
         Tormented.Meta.registerCharacter();
     }
 
+    @Override
+    public void receiveStartGame() {
+        UnceasingWar.resetBonusHits();
+    }
+
     //Implement this method to add cards
     @Override
     public void receiveEditCards() {
@@ -288,5 +308,17 @@ public class BasicMod implements
                 .packageFilter(BaseCard.class) //In the same package as this class
                 .setDefaultSeen(true) //And marks them as seen in the compendium
                 .cards(); //Adds the cards
+    }
+
+    //Implement this method to add relics
+    @Override
+    public void receiveEditRelics() {
+        new AutoAdd(modID)
+                .packageFilter(BaseRelic.class)
+                .any(BaseRelic.class, (info, relic) -> {
+                    if (relic.tier != AbstractRelic.RelicTier.STARTER) {
+                        BaseMod.addRelic(relic, RelicType.SHARED);
+                    }
+                });
     }
 }

@@ -7,7 +7,8 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
 import thetormented.util.CardStats;
@@ -15,12 +16,13 @@ import thetormented.util.CardStats;
 public class DeterringStrike extends BaseCard {
     public static final String ID = makeID(DeterringStrike.class.getSimpleName());
 
-    // 声明常量变量，避免数字硬编码参与计算或函数调用
     private static final int CARD_COST = 1;
     private static final int BASE_DAMAGE = 8;
-    private static final int UPGRADE_PLUS_DAMAGE = 3;
-    private static final int BASE_WEAK_AMOUNT = 1;
-    private static final int UPGRADE_PLUS_WEAK = 1;
+    private static final int UPGRADE_PLUS_DAMAGE = 3; // 8 -> 11
+
+    // magicNumber 用于表示本回合降低的力量数值
+    private static final int BASE_STRENGTH_LOSS = 2;
+    private static final int UPGRADE_PLUS_STRENGTH_LOSS = 1; // 2 -> 3
 
     private static final CardStats STATS = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -32,27 +34,38 @@ public class DeterringStrike extends BaseCard {
 
     public DeterringStrike() {
         super(ID, STATS);
-        setDamage(BASE_DAMAGE,UPGRADE_PLUS_DAMAGE);
-        setMagic(BASE_WEAK_AMOUNT, UPGRADE_PLUS_WEAK);
+        setDamage(BASE_DAMAGE, UPGRADE_PLUS_DAMAGE);
+        setMagic(BASE_STRENGTH_LOSS, UPGRADE_PLUS_STRENGTH_LOSS);
 
-        // 标记打击标签（可选，若属于 Strike 体系卡牌）
         this.tags.add(CardTags.STRIKE);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // 1. 造成伤害
-        DamageInfo.DamageType damageType = DamageInfo.DamageType.NORMAL;
-        AbstractGameAction.AttackEffect effect = AbstractGameAction.AttackEffect.SLASH_HEAVY;
+        addToBot(new DamageAction(
+                m,
+                new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL),
+                AbstractGameAction.AttackEffect.SLASH_HEAVY
+        ));
 
-        addToBot(new DamageAction(m, new DamageInfo(p, this.damage, damageType), effect));
-
-        // 2. 判断敌人意图是否为攻击
+        // 2. 若敌人的意图为攻击，使其本回合失去力量
         if (m != null && isAttackIntent(m.intent)) {
-            int weakStacks = this.magicNumber;
-            boolean isSourcePlayer = false;
+            // 施加 -X 力量
+            addToBot(new ApplyPowerAction(
+                    m, p,
+                    new StrengthPower(m, -this.magicNumber),
+                    -this.magicNumber
+            ));
 
-            addToBot(new ApplyPowerAction(m, p, new WeakPower(m, weakStacks, isSourcePlayer), weakStacks));
+            // 如果敌人没有 Artifact (人工制品) 抵消 Debuff，则在回合结束时通过 GainStrengthPower 恢复力量
+            if (!m.hasPower("Artifact")) {
+                addToBot(new ApplyPowerAction(
+                        m, p,
+                        new GainStrengthPower(m, this.magicNumber),
+                        this.magicNumber
+                ));
+            }
         }
     }
 
@@ -70,6 +83,4 @@ public class DeterringStrike extends BaseCard {
                 || intent == AbstractMonster.Intent.ATTACK_DEBUFF
                 || intent == AbstractMonster.Intent.ATTACK_DEFEND;
     }
-
-
 }

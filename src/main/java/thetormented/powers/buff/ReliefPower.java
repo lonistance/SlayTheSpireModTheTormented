@@ -4,7 +4,7 @@ import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import thetormented.cards.special.statue.Misery;
+import thetormented.cards.special.status.Misery;
 import thetormented.powers.BasePower;
 
 import java.util.ArrayList;

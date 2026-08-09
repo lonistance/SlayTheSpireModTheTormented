@@ -34,15 +34,15 @@ public class Hostility extends BaseCard {
         super(ID, STATS);
         setBlock(BASE_BLOCK, UPGRADE_BLOCK);
         setMagic(BASE_WEAK_AMOUNT, UPGRADE_PLUS_WEAK);
+        setCustomVar("BLOCK_THRESHOLD", BLOCK_THRESHOLD);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // 条件判断：若玩家当前格挡小于或等于判定阈值（不大于5点）
-        int currentBlock = p.currentBlock;
         int weakStacks = this.magicNumber;
 
-        if (currentBlock <= BLOCK_THRESHOLD) {
+        if (p.currentBlock <= BLOCK_THRESHOLD) {
             // 遍历所有活着的敌人并施加虚弱
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {

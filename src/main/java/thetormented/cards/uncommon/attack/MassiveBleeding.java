@@ -24,7 +24,7 @@ public class MassiveBleeding extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
     private static final int DAMAGE = 4;
-    private static final int EXTRA_DAMAGE = 3;
+    private static final int EXTRA_DAMAGE = 1;
     private static final int UPG_EXTRA_DAMAGE = 1;
 
     public MassiveBleeding() {
@@ -36,9 +36,8 @@ public class MassiveBleeding extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        AbstractPower bleedPower = p.getPower(BleedPower.POWER_ID);
-        int BleedCount = bleedPower.amount;
-        int extra_damage = BleedCount * magicNumber;
+        AbstractPower bleedPower = m.getPower(BleedPower.POWER_ID);
+        int extra_damage = bleedPower.amount * magicNumber;
         addToBot(new DamageAction(m, new DamageInfo(p, extra_damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
     }
 
