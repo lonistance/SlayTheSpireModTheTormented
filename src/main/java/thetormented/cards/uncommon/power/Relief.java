@@ -24,6 +24,7 @@ public class Relief extends BaseCard {
     public Relief(){
         super(ID, info);
         setInnate(false,true);
+        this.cardsToPreview = new Misery();
     }
 
     @Override

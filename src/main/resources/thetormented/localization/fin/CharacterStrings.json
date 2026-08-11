@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Kidutettu",
+      "Kidutettu"
+    ],
+    "TEXT": [
+      "Veri ei pese pois kurjuutta, mutta keventää kirouksen velkaa.",
+      "Kidutettu.",
+      "Kulkiessasi valaisematonta katua kohtaat useita huppupäisiä hahmoja jonkin pimeän rituaalin keskellä. Lähestyessäsi he kääntyvät puoleesi pelottavan samaan aikaan. Heistä pisin paljastaa torahampaansa ja ojentaa pitkän, vaalean kätensä sinua kohti. NL ~\"Liity~ ~meihin~ ~veli~, ~ja~ ~tunne~ ~Spiren~ ~lämpö.\"~"
+    ]
+  }
+}

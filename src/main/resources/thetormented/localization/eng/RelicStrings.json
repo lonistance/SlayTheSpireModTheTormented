@@ -10,13 +10,13 @@
     "FLAVOR": "A shattered blade that still thirsts for the sins of others.",
     "DESCRIPTIONS": [
       "At the start of each combat, upgrade a random Strike and a random Defend for the duration of combat. NL At the start of each turn, gain #b",
-      " Sin."
+      " ${modID}:Sin."
     ]
   }, "${modID}:BarbedHook": {
     "NAME": "Barbed Hook",
     "FLAVOR": "A cruel hook that digs deeper every time it tears flesh.",
     "DESCRIPTIONS": [
-      "Whenever you apply Bleed, apply #b1 additional Bleed."
+      "Whenever you apply ${modID}:Bleed, apply #b1 additional ${modID}:Bleed."
     ]
   }, "${modID}:FrenziedGoblet": {
     "NAME": "Frenzied Goblet",
@@ -28,7 +28,7 @@
     "NAME": "Contract Seal",
     "FLAVOR": "A contract signed in blood, honoured only by the pure.",
     "DESCRIPTIONS": [
-      "At the end of combat, if you have no Debt, gain #b15 gold."
+      "At the end of combat, if you have no ${modID}:Debt, gain #b15 gold."
     ]
   }, "${modID}:RecoveryCharm": {
     "NAME": "Recovery Charm",
@@ -53,7 +53,7 @@
     "FLAVOR": "A blade forged from the promise of redemption.",
     "DESCRIPTIONS": [
       "Replaces Cursed Broken Blade. NL On pickup, upgrade all Strikes and Defends in your deck. NL At the start of each turn, gain #b",
-      " Sin."
+      " ${modID}:Sin."
     ]
   }, "${modID}:HeavyFetters": {
     "NAME": "Heavy Fetters",

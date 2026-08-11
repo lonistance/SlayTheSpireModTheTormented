@@ -33,6 +33,14 @@ public class ChaosDirty extends BaseCard {
         setDamage(BASE_DAMAGE);
         setMagic(BASE_MAGIC, UPGRADE_MAGIC);
         setCustomVar("SIN", SIN_GAIN);
+
+        // 实时预览：总伤害 = 基础伤害 + 血债加成（力量/易伤由 applyPowers 计算）
+        setCustomVar("TOTAL_DAMAGE", VariableType.DAMAGE, BASE_DAMAGE);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
     }
 
     @Override

@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Orb-naam",
+    "DESCRIPTION": [
+      "#yPassief: Trek aan het begin van je beurt #b",
+      " kaart.",
+      " kaarten.",
+      " NL #yOntketen: Richt op alle vijanden #b",
+      " schade aan."
+    ]
+  }
+}

@@ -1,31 +1,34 @@
 [
   {
-    "PROPER_NAME": "This is displayed in the tooltip.",
+    "ID": "bleed",
+    "PROPER_NAME": "流血",
     "NAMES": [
-      "these",
-      "are",
-      "detected",
-      "in",
-      "the",
-      "text"
+      "流血"
     ],
-    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+    "DESCRIPTION": "回合开始时，失去等同于流血层数的生命值，随后移除所有流血。带有流血的生物受到未被格挡的攻击时，获得 #b1 层流血。"
   },
   {
-    "PROPER_NAME": "Multiword Keyword",
+    "ID": "sin",
+    "PROPER_NAME": "原罪",
     "NAMES": [
-      "multiword keyword",
-      "multiword_keyword",
-      "multiword_keywords"
+      "原罪"
     ],
-    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+    "DESCRIPTION": "你每有 #b5 点原罪，获得 #b1 点血债。"
   },
   {
-    "PROPER_NAME": "Pink",
+    "ID": "debt",
+    "PROPER_NAME": "血债",
     "NAMES": [
-      "pink"
+      "血债"
     ],
-    "DESCRIPTION": "Using the COLOR field, this keyword is colored pink instead of the normal keyword color.",
-    "COLOR": "fc83da"
+    "DESCRIPTION": "每有 1 层血债，受到的伤害增加 #b10% 。"
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "禁制",
+    "NAMES": [
+      "禁制"
+    ],
+    "DESCRIPTION": "除非你完全移除一次 血债 ，否则无法获得 [E] ，回合结束时移除。"
   }
 ]

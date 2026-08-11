@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Godenbloed",
+    "DESCRIPTIONS": [
+      "Pas #b",
+      " ${modID}:Bloeden toe op een vijand."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Traan",
+    "DESCRIPTIONS": [
+      "Behoud je hand voor #b1 beurt."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Wijn van Herrijzenis",
+    "DESCRIPTIONS": [
+      "Krijg #b1 energie. NL Trek #b2 kaarten."
+    ]
+  }
+}

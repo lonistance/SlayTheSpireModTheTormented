@@ -1,9 +1,12 @@
 package thetormented.powers.buff;
 
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import thetormented.powers.BasePower;
 
 import static thetormented.BasicMod.makeID;
@@ -13,10 +16,38 @@ public class JudgmentFormPower extends BasePower {
 
     private static final PowerType POWER_TYPE = PowerType.BUFF;
     private static final boolean IS_TURN_BASED = false;
-    private static final float BONUS_MULTIPLIER = 0.5f;
 
     public JudgmentFormPower(AbstractCreature owner, int amount) {
         super(POWER_ID, POWER_TYPE, IS_TURN_BASED, owner, amount);
+    }
+
+    private boolean isBelowThreshold(AbstractMonster m) {
+        return m.currentHealth < m.maxHealth * this.amount / 100.0f;
+    }
+
+    private void syncConcede(AbstractMonster m) {
+        if (m.isDead || m.isDying || m.isEscaping) {
+            return;
+        }
+        AbstractPower concede = m.getPower(ConcedePower.POWER_ID);
+        if (isBelowThreshold(m)) {
+            if (concede == null) {
+                this.addToBot(new ApplyPowerAction(m, this.owner, new ConcedePower(m, this.owner, 1), 1));
+            }
+        } else if (concede != null) {
+            this.addToBot(new RemoveSpecificPowerAction(m, this.owner, ConcedePower.POWER_ID));
+        }
+    }
+
+    private void syncAllMonsters() {
+        if (AbstractDungeon.getMonsters() == null || AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            return;
+        }
+        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+            if (m != null) {
+                syncConcede(m);
+            }
+        }
     }
 
     @Override
@@ -30,12 +61,20 @@ public class JudgmentFormPower extends BasePower {
         if (damageAmount <= 0) {
             return;
         }
-        if (target.currentHealth >= target.maxHealth * this.amount / 100.0f) {
-            return;
+        if (target instanceof AbstractMonster) {
+            syncConcede((AbstractMonster) target);
         }
-        int bonus = Math.round(damageAmount * BONUS_MULTIPLIER);
-        if (bonus > 0) {
-            this.addToBot(new DamageAction(target, new DamageInfo(null, bonus, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.NONE));
+    }
+
+    @Override
+    public void atStartOfTurn() {
+        syncAllMonsters();
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayerTurn) {
+        if (isPlayerTurn) {
+            syncAllMonsters();
         }
     }
 

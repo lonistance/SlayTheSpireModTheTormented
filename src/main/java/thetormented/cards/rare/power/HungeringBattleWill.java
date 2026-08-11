@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.WeakPower;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
 import thetormented.powers.buff.HungeringBattleWillPower;
@@ -15,7 +14,6 @@ public class HungeringBattleWill extends BaseCard {
 
     private static final int COST = 1;
     private static final int ENERGY_GAIN = 1;
-    private static final int WEAK_GAIN = 2;
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -33,7 +31,6 @@ public class HungeringBattleWill extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new WeakPower(p, WEAK_GAIN, false), WEAK_GAIN));
         addToBot(new ApplyPowerAction(p, p, new HungeringBattleWillPower(p, this.magicNumber), this.magicNumber));
     }
 

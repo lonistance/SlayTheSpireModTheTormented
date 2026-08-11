@@ -9,6 +9,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
 import thetormented.util.CardStats;
 
+import static thetormented.BasicMod.imagePath;
+
 public class Misery extends BaseCard {
     public static final String ID = makeID(Misery.class.getSimpleName()); //makeID adds the mod ID, so the final ID will be something like "modID:MyCard"
     private static final CardStats info = new CardStats(
@@ -23,7 +25,7 @@ public class Misery extends BaseCard {
     private static final int SELF_DAMAGE = 2;
 
     public Misery() {
-        super(ID, info); //Pass the required information to the BaseCard constructor.
+        super(ID, info, imagePath("cards/skill/Misery.png")); //Pass the required information to the BaseCard constructor.
         setExhaust(true);
         canUpgrade();
     }

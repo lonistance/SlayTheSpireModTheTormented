@@ -2,7 +2,6 @@ package thetormented.powers.debuff;
 
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.powers.BasePower;
 
 import static thetormented.BasicMod.makeID;
@@ -18,7 +17,7 @@ public class OverrigidPower extends BasePower {
     }
 
     @Override
-    public void onPlayCard(AbstractCard card, AbstractMonster m) {
+    public void onAfterCardPlayed(AbstractCard card) {
         if (card.type == AbstractCard.CardType.ATTACK && this.amount > 0) {
             card.baseDamage = Math.max(0, card.baseDamage - this.amount);
             card.damage = Math.max(0, card.damage - this.amount);

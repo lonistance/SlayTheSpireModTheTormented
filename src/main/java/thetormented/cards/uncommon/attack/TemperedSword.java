@@ -33,6 +33,14 @@ public class TemperedSword extends BaseCard {
         setDamage(BASE_DAMAGE);
         // 设置加成系数：未升级 2，升级后 3
         setMagic(DAMAGE_PER_STATUS, UPG_DAMAGE_PER_STATUS);
+
+        // 实时预览：总伤害 = 基础伤害 + 消耗状态牌加成（力量/易伤由 applyPowers 计算）
+        setCustomVar("TOTAL_DAMAGE", VariableType.DAMAGE, BASE_DAMAGE);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
     }
 
     @Override

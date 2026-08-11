@@ -5,6 +5,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
+import thetormented.cards.special.status.Misery;
 import thetormented.character.Tormented;
 import thetormented.powers.buff.ReconcileFatePower;
 import thetormented.util.CardStats;
@@ -23,6 +24,7 @@ public class ReconcileFate extends BaseCard {
     public ReconcileFate() {
         super(ID, info);
         setMagic(2, 1);
+        this.cardsToPreview = new Misery();
     }
 
     @Override

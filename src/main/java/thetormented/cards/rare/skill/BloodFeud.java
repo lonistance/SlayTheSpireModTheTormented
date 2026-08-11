@@ -14,8 +14,8 @@ public class BloodFeud extends BaseCard {
     public static final String ID = makeID(BloodFeud.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BASE_TICKS = 1;
-    private static final int UPG_TICKS = 1; // 1 -> 2
+    private static final int BASE_TICKS = 2;
+    private static final int UPG_TICKS = 1; // 2 -> 3
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -28,6 +28,7 @@ public class BloodFeud extends BaseCard {
     public BloodFeud() {
         super(ID, info);
         setMagic(BASE_TICKS, UPG_TICKS);
+        this.cardsToPreview = new Misery();
     }
 
     @Override

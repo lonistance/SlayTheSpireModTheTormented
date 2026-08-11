@@ -30,6 +30,7 @@ public class FaceDanger extends BaseCard {
     public FaceDanger() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        this.cardsToPreview = new Misery();
     }
 
     @Override

@@ -23,7 +23,7 @@ public class MassiveBleeding extends BaseCard {
     );
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
-    private static final int DAMAGE = 4;
+    private static final int DAMAGE = 6;
     private static final int EXTRA_DAMAGE = 1;
     private static final int UPG_EXTRA_DAMAGE = 1;
 
@@ -31,14 +31,40 @@ public class MassiveBleeding extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(EXTRA_DAMAGE, UPG_EXTRA_DAMAGE);
+
+        // 实时预览：总伤害 = 当前伤害（含力量/易伤）+ 流血层数 * 倍率
+        setCustomVar("TOTAL_DAMAGE", VariableType.DAMAGE, DAMAGE, 0,
+                (c, m, base) -> base,
+                (c, m, val) -> val + getBleedAmount(m) * c.magicNumber);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
+    }
+
+    private int getBleedAmount(AbstractMonster m) {
+        if (m == null) {
+            return 0;
+        }
+        AbstractPower bleedPower = m.getPower(BleedPower.POWER_ID);
+        return bleedPower != null ? bleedPower.amount : 0;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        AbstractPower bleedPower = m.getPower(BleedPower.POWER_ID);
-        int extra_damage = bleedPower.amount * magicNumber;
-        addToBot(new DamageAction(m, new DamageInfo(p, extra_damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+
+        int extraDamage = 0;
+        if (m != null) {
+            AbstractPower bleedPower = m.getPower(BleedPower.POWER_ID);
+            if (bleedPower != null) {
+                extraDamage = bleedPower.amount * magicNumber;
+            }
+        }
+        if (extraDamage > 0) {
+            addToBot(new DamageAction(m, new DamageInfo(p, extraDamage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
+        }
     }
 
     @Override

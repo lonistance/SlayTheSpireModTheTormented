@@ -59,6 +59,12 @@
     "At the start of each turn, apply #b",
     " Bleed to ALL enemies."
   ]
+  }, "${modID}:GriefPower": {
+  "NAME": "Grief",
+  "DESCRIPTIONS": [
+    "This turn, whenever you draw a card, apply #b",
+    " Bleed to ALL enemies."
+  ]
   }, "${modID}:DreadMemoryPower": {
   "NAME": "Dread Memory",
   "DESCRIPTIONS": [
@@ -74,7 +80,7 @@
   }, "${modID}:MangledFleshPower": {
   "NAME": "Mangled Flesh",
   "DESCRIPTIONS": [
-    "Whenever you apply 5 Bleed to an enemy, deal #b",
+    "Whenever you apply 6 Bleed to an enemy, deal #b",
     " damage to it."
   ]
   }, "${modID}:BloodThornsPower": {
@@ -98,8 +104,12 @@
   }, "${modID}:HungeringBattleWillPower": {
   "NAME": "Hungering Battle Will",
   "DESCRIPTIONS": [
-    "At the start of each turn, gain [E] #b",
-    " and gain #b2 Weak."
+    "At the start of each turn, gain [E] . At the end of your turn, if no enemy was killed this turn, take 3 damage."
+  ]
+  }, "${modID}:ConcedePower": {
+  "NAME": "Concede",
+  "DESCRIPTIONS": [
+    "This enemy takes #b50% more damage."
   ]
   }, "${modID}:JudgmentFormPower": {
   "NAME": "Form of Judgment",

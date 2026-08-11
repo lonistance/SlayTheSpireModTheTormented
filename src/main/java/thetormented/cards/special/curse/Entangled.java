@@ -8,6 +8,8 @@ import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
 import thetormented.util.CardStats;
 
+import static thetormented.BasicMod.imagePath;
+
 public class Entangled extends BaseCard {
     public static final String ID = makeID(Entangled.class.getSimpleName());
     private static final CardStats info = new CardStats(
@@ -19,7 +21,7 @@ public class Entangled extends BaseCard {
     );
 
     public Entangled() {
-        super(ID, info);
+        super(ID, info, imagePath("cards/skill/Entangled.png"));
         setExhaust(true);
     }
 

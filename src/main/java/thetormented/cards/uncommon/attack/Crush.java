@@ -30,6 +30,22 @@ public class Crush extends BaseCard {
     public Crush() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+
+        // 实时预览：获得格挡 = 目标敌人身上的流血层数
+        setCustomVar("TOTAL_BLOCK", VariableType.MAGIC, 0, 0, (c, m, base) -> getBleedAmount(m));
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
+    }
+
+    private int getBleedAmount(AbstractMonster m) {
+        if (m == null) {
+            return 0;
+        }
+        AbstractPower bleedPower = m.getPower(BleedPower.POWER_ID);
+        return bleedPower != null ? bleedPower.amount : 0;
     }
 
     @Override

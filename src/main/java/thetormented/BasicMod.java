@@ -316,7 +316,9 @@ public class BasicMod implements
         new AutoAdd(modID)
                 .packageFilter(BaseRelic.class)
                 .any(BaseRelic.class, (info, relic) -> {
-                    if (relic.tier != AbstractRelic.RelicTier.STARTER) {
+                    if (relic.tier == AbstractRelic.RelicTier.STARTER) {
+                        BaseMod.addRelicToCustomPool(relic, Tormented.Meta.CARD_COLOR);
+                    } else {
                         BaseMod.addRelic(relic, RelicType.SHARED);
                     }
                 });

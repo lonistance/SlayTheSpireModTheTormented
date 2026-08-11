@@ -1,6 +1,6 @@
 package thetormented.cards.uncommon.skill;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.status.Burn;
@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
 import thetormented.cards.special.status.Misery;
 import thetormented.character.Tormented;
+import thetormented.powers.buff.GriefPower;
 import thetormented.util.CardStats;
 
 import java.util.ArrayList;
@@ -22,9 +23,9 @@ public class Grief extends BaseCard {
     public static final String ID = makeID(Grief.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int STATUS_ADD = 2;
-    private static final int BASE_BLOCK = 3;
-    private static final int UPG_BLOCK = 1; // 3 -> 4
+    private static final int STATUS_ADD = 1;
+    private static final int BLEED_BASE = 2;
+    private static final int BLEED_UPG = 1; // 2 -> 3
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -36,27 +37,13 @@ public class Grief extends BaseCard {
 
     public Grief() {
         super(ID, info);
-        setMagic(BASE_BLOCK, UPG_BLOCK);
+        setMagic(BLEED_BASE, BLEED_UPG);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < STATUS_ADD; i++) {
-            addToBot(new MakeTempCardInHandAction(getRandomStatus()));
-        }
-
-        int statusCount = 0;
-        for (AbstractCard c : p.hand.group) {
-            if (c.type == CardType.STATUS) {
-                statusCount++;
-            }
-        }
-        statusCount += STATUS_ADD;
-
-        int totalBlock = this.magicNumber * statusCount;
-        if (totalBlock > 0) {
-            addToBot(new GainBlockAction(p, p, totalBlock));
-        }
+        addToBot(new MakeTempCardInHandAction(getRandomStatus()));
+        addToBot(new ApplyPowerAction(p, p, new GriefPower(p, p, this.magicNumber), this.magicNumber));
     }
 
     private AbstractCard getRandomStatus() {

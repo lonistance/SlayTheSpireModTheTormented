@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Dit is",
+      "een array van strings."
+    ],
+    "EXTRA_TEXT": [
+      "Dit is nog een",
+      "array van strings."
+    ],
+    "TEXT_DICT": {
+      "Dit": "Bevat string-paren die worden gebruikt om waarden op te halen op basis van sleutels.",
+      "Dit is een sleutel": "Dit is een waarde."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Kies kaarten om aan je hand toe te voegen en Etherisch te maken."
+    ]
+  }
+}

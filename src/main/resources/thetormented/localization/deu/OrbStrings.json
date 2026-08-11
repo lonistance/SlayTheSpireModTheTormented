@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Orb-Name",
+    "DESCRIPTION": [
+      "#yPassiv: Ziehe zu Beginn deines Zuges #b",
+      " Karte.",
+      " Karten.",
+      " NL #yEntfesseln: Füge allen Gegnern #b",
+      " Schaden zu."
+    ]
+  }
+}

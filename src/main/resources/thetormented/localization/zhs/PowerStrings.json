@@ -59,6 +59,12 @@
     "每回合开始时，给予所有敌人 #b",
     " 层流血。"
   ]
+  }, "${modID}:GriefPower": {
+  "NAME": "悲恸",
+  "DESCRIPTIONS": [
+    "在这个回合，你每抽 1 张牌，就对所有敌人施加 #b",
+    " 层流血。"
+  ]
   }, "${modID}:DreadMemoryPower": {
   "NAME": "恐惧记忆",
   "DESCRIPTIONS": [
@@ -98,8 +104,12 @@
   }, "${modID}:HungeringBattleWillPower": {
   "NAME": "饥渴战意",
   "DESCRIPTIONS": [
-    "每回合开始时获得 [E] #b",
-    "，并获得 #b2 层虚弱。"
+    "每回合开始时获得 [E] 。回合结束时，若本回合没有杀死敌人，受到 3 点伤害。"
+  ]
+  }, "${modID}:ConcedePower": {
+  "NAME": "判罪",
+  "DESCRIPTIONS": [
+    "该敌人受到的伤害增加 #b50% 。"
   ]
   }, "${modID}:JudgmentFormPower": {
   "NAME": "罪刑形态",
@@ -127,9 +137,9 @@
     " 点。"
   ]
   }, "${modID}:RestrictionPower": {
-  "NAME": "束缚",
+  "NAME": "禁制",
   "DESCRIPTIONS": [
-    "你无法获得能量。回合结束时移除。"
+    "除非你完全移除一次 血债 ，否则无法获得 [E] ，回合结束时移除。"
   ]
   }
 }

@@ -16,7 +16,7 @@ public class Requiem extends BaseCard {
     public static final String ID = makeID(Requiem.class.getSimpleName());
 
     private static final int COST = 3;
-    private static final int BASE_DAMAGE = 5;
+    private static final int BASE_DAMAGE = 6;
     private static final int UPG_DAMAGE = 1;
 
     private static final CardStats info = new CardStats(
@@ -31,6 +31,12 @@ public class Requiem extends BaseCard {
         super(ID, info);
         setDamage(BASE_DAMAGE, UPG_DAMAGE);
         setCustomVar("HITS", VariableType.MAGIC, 0, 0, (c, m, base) -> exhaustedMiseryCount());
+        this.cardsToPreview = new Misery();
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
     }
 
     private int exhaustedMiseryCount() {

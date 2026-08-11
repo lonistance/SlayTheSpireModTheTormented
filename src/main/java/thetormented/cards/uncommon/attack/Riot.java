@@ -15,8 +15,8 @@ import thetormented.util.CardStats;
 public class Riot extends BaseCard {
     public static final String ID = makeID(Riot.class.getSimpleName());
 
-    private static final int DAMAGE = 4;
-    private static final int UPG_DAMAGE = 1;
+    private static final int DAMAGE = 6;
+    private static final int UPG_DAMAGE = 2;
     private static final int DAMAGE_ADDITION = 1;
     private static final int UPG_DAMAGE_ADDITION = 1;
 
@@ -32,6 +32,14 @@ public class Riot extends BaseCard {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
         setMagic(DAMAGE_ADDITION, UPG_DAMAGE_ADDITION);
+
+        // 实时预览：每段伤害 = 基础伤害 + 血债加成（力量/易伤由 applyPowers 计算）
+        setCustomVar("TOTAL_DAMAGE", VariableType.DAMAGE, DAMAGE, UPG_DAMAGE);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
     }
 
     @Override

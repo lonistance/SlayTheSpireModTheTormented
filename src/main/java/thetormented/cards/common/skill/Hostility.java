@@ -17,10 +17,10 @@ public class Hostility extends BaseCard {
     // 声明常量变量，避免任何数字硬编码参与计算或函数调用
     private static final int CARD_COST = 1;
     private static final int BASE_BLOCK = 6;
-    private static final int UPGRADE_BLOCK = 2;
+    private static final int UPGRADE_BLOCK = 3;
     private static final int BASE_WEAK_AMOUNT = 1;
     private static final int UPGRADE_PLUS_WEAK = 1;
-    private static final int BLOCK_THRESHOLD = 5;
+    private static final int BLOCK_THRESHOLD = 6;
 
     private static final CardStats STATS = new CardStats(
             Tormented.Meta.CARD_COLOR,

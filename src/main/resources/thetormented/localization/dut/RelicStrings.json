@@ -1,0 +1,98 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Goed relikwie",
+    "FLAVOR": "Flavortekst die in de gedetailleerde relikwie-weergave wordt getoond.",
+    "DESCRIPTIONS": [
+      "Krijg [E] aan het begin van je beurt. [E] is een energiesymbool."
+    ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "Vervloekt Gebroken Kling",
+    "FLAVOR": "Een gebroken kling die nog altijd hunkert naar de zonden van anderen.",
+    "DESCRIPTIONS": [
+      "Verbeter aan het begin van elk gevecht een willekeurige Slag en een willekeurige Verdedig voor de duur van het gevecht. NL Krijg aan het begin van elke beurt #b",
+      " ${modID}:Zonde."
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "Weerhaak",
+    "FLAVOR": "Een wrede haak die steeds dieper snijdt wanneer hij vlees scheurt.",
+    "DESCRIPTIONS": [
+      "Telkens als je ${modID}:Bloeden toepast, pas #b1 extra ${modID}:Bloeden toe."
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "Woeste Beker",
+    "FLAVOR": "In pure waanzin gebrouwen wijn; elk heil zuigt weer een leven op.",
+    "DESCRIPTIONS": [
+      "Telkens als een niet-Dienaar vijand sterft, genees #b8 LP."
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "Contractzegel",
+    "FLAVOR": "Een in bloed ondertekend contract, alleen nagekomen door de zuiveren.",
+    "DESCRIPTIONS": [
+      "Krijg aan het einde van het gevecht, als je geen ${modID}:Schuld hebt, #b15 Goud."
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "Herstelcharme",
+    "FLAVOR": "Een charme die elke wond zijn steek ontneemt.",
+    "DESCRIPTIONS": [
+      "Telkens als je LP zou verliezen, verlies je in plaats daarvan maximaal #b18 LP."
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "Arm van de Gargouille",
+    "FLAVOR": "Oude steen die zuivering in bescherming verandert.",
+    "DESCRIPTIONS": [
+      "Telkens als je #b1 Stapel van een Debuff verwijdert, krijg #b1 Blok."
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "Verschroeide Banier",
+    "FLAVOR": "Een versleten banier die alleen de leegte oproept.",
+    "DESCRIPTIONS": [
+      "Als je aan het einde van je beurt geen kaarten in je hand hebt, trek aan het begin van je volgende beurt #b2 extra kaarten."
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "Heldenlangzwaard",
+    "FLAVOR": "Een kling gesmeed uit de belofte van verlossing.",
+    "DESCRIPTIONS": [
+      "Vervangt Vervloekt Gebroken Kling. NL Verbeter bij het oppakken alle Slagen en Verdedigingen in je deck. NL Krijg aan het begin van elke beurt #b",
+      " ${modID}:Zonde."
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "Zware Boeien",
+    "FLAVOR": "Een ijzeren gewicht dat boeit en toch kracht geeft.",
+    "DESCRIPTIONS": [
+      "Krijg aan het begin van elke beurt [E]. NL Voeg aan het begin van elk gevecht 1 *Verstrikt toe aan je trekstapel."
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "Trommelstok",
+    "FLAVOR": "Elke trommelslag ontsteekt een vonk energie.",
+    "DESCRIPTIONS": [
+      "Elke keer dat je #b",
+      " kaarten Uitput, krijg [E]."
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "Spijtloze Munt",
+    "FLAVOR": "Een munt die elke misstap vergeeft.",
+    "DESCRIPTIONS": [
+      "Telkens als je een winkel betreedt, krijg #b",
+      " Goud."
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "Zwartstenen Lantaarn",
+    "FLAVOR": "Zijn koude licht markeert elk lijden dat hij aansteekt.",
+    "DESCRIPTIONS": [
+      "De eerste keer dat je per gevecht een Debuff op een vijand toepast, krijg [E]."
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "IJzeren Hamer",
+    "FLAVOR": "Gesmeed op het aambeeld van eindeloze veldslagen.",
+    "DESCRIPTIONS": [
+      "Telkens als je een Elite verslaat, verbeter #b",
+      " willekeurige kaarten in je deck."
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "Onsterfelijke Gloed",
+    "FLAVOR": "Een vonk die zich voedt met tegenslag en nooit dooft.",
+    "DESCRIPTIONS": [
+      "Telkens als je een Debuff hebt, loop je #b25% minder schade op. NL Richt #b25% meer schade aan op vijanden met een Debuff."
+    ]
+  }
+}

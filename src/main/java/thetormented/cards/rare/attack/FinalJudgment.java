@@ -38,9 +38,14 @@ public class FinalJudgment extends BaseCard {
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return super.canUse(p, m)
-                && p.hasPower(DebtPower.POWER_ID)
-                && p.getPower(DebtPower.POWER_ID).amount >= MIN_DEBT;
+        if (!super.canUse(p, m)) {
+            return false;
+        }
+        if (!(p.hasPower(DebtPower.POWER_ID) && p.getPower(DebtPower.POWER_ID).amount >= MIN_DEBT)) {
+            this.cantUseMessage = cardStrings.EXTENDED_DESCRIPTION[0];
+            return false;
+        }
+        return true;
     }
 
     @Override

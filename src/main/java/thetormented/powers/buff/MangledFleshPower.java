@@ -16,7 +16,7 @@ import static thetormented.BasicMod.makeID;
 public class MangledFleshPower extends BasePower implements ApplyBleedAction.OnBleedApplySubscriber {
     public static final String POWER_ID = makeID(MangledFleshPower.class.getSimpleName());
 
-    private static final int BLEED_PER_TICK = 5;
+    private static final int BLEED_PER_TICK = 6;
 
     private static final PowerType POWER_TYPE = PowerType.BUFF;
     private static final boolean IS_TURN_BASED = false;

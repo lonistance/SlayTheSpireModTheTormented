@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "?i tio estas",
+      "aro de ?enoj."
+    ],
+    "EXTRA_TEXT": [
+      "?i tio estas alia",
+      "aro de ?enoj."
+    ],
+    "TEXT_DICT": {
+      "?i tio": "Enhavas parojn de ?enoj uzatajn por akiri valorojn la? ?losiloj.",
+      "?i tio estas ?losilo": "?i tio estas valoro."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Elektu kartojn por aldoni al via mano kaj igi ilin fantomaj."
+    ]
+  }
+}

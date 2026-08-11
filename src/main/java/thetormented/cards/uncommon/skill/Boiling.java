@@ -16,8 +16,8 @@ public class Boiling extends BaseCard {
     public static final String ID = makeID(Boiling.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BASE_BLEED = 3;
-    private static final int UPG_BLEED = 1; // 3 -> 4
+    private static final int BASE_BLEED = 4;
+    private static final int UPG_BLEED = 1; // 4 -> 1
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,

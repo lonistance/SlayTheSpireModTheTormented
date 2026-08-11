@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Nomo de la evento",
+    "DESCRIPTIONS": [
+      "?i tio estas eventoteksto, kiu ?enerale priskribas kio okazas.",
+      "#g~?i~ #g~teksto~ #g~estas~ #g~verda~ #g~kaj~ #g~ondanta.~",
+      "#r@RU?A@ #r@KAJ@ #r@VIBRANTA@ #r@TEKSTO.@",
+      "#rRu?a #gVerda #yFlava #bBlua #pPurpura. ~Ondanta~ @vibranta.@",
+      "Vi devas marki ?iun vorton aparte.",
+      "Vi povas anka? uzi hex-kolorkodojn kiel [#ffffff]blanko[] por kolorigi tekston.",
+      "Hex-kolorkodoj funkcias anka? en kartoteksto! Sed ne en ?losilvortoj, sen iuj lerta?oj."
+    ],
+    "OPTIONS": [
+      "[Aktopriskribo] Kion vi fakte ricevas.",
+      "[Malakcepti] #rPerdu #r1 #rMaks. #rvivon. Malbonaj aferoj estas ru?aj.",
+      "[Akcepti] #gGajnu #gApoteozon. Bonaj aferoj estas verdaj.",
+      "[Foriri]",
+      "Elektu la karton por forigi. (Vi povas anka? aldoni plian tekston ?i tie.)"
+    ]
+  }
+}

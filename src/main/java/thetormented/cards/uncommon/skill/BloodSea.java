@@ -13,7 +13,7 @@ public class BloodSea extends BaseCard {
     public static final String ID = makeID(BloodSea.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BLEED_APPLY = 4;
+    private static final int BLEED_APPLY = 5;
     private static final int BASE_MULTI = 2;
     private static final int UPG_MULTI = 1; // 2 -> 3
 
@@ -28,6 +28,7 @@ public class BloodSea extends BaseCard {
     public BloodSea() {
         super(ID, info);
         setMagic(BASE_MULTI, UPG_MULTI);
+        setCustomVar("BLEED", BLEED_APPLY);
         setExhaust(true);
     }
 

@@ -14,7 +14,7 @@ public class CursedBrokenBlade extends BaseRelic {
     private static final int SIN_PER_TURN = 3;
 
     public CursedBrokenBlade() {
-        super(ID, "cursedBrokenBlade", Tormented.Meta.CARD_COLOR, RelicTier.COMMON, LandingSound.MAGICAL);
+        super(ID, "cursedBrokenBlade", Tormented.Meta.CARD_COLOR, RelicTier.STARTER, LandingSound.MAGICAL);
     }
 
     @Override

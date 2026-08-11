@@ -30,6 +30,17 @@ public class Taboo extends BaseCard {
     public Taboo() {
         super(ID, info);
         setMagic(BASE_MAGIC, UPG_MAGIC);
+
+        // 实时预览：可获得能量 = 当前血债 + 额外能量（升级 +1）
+        setCustomVar("TOTAL_ENERGY", VariableType.MAGIC, 0, 0,
+                (c, m, base) -> getPlayerPowerAmount(DebtPower.POWER_ID) + c.magicNumber);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        int energy = getPlayerPowerAmount(DebtPower.POWER_ID) + this.magicNumber;
+        int index = energy <= 0 ? 0 : (energy <= 3 ? 1 : 2);
+        return extDescription(index);
     }
 
     @Override

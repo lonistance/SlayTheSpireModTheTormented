@@ -1,0 +1,98 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Bona relikvo",
+    "FLAVOR": "Flavorteksto montrata en la detala relikva vido.",
+    "DESCRIPTIONS": [
+      "Gajnu [E] je la komenco de via vico. [E] estas energisimbolo."
+    ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "Malbenita Rompita Klingo",
+    "FLAVOR": "Rompita klingo, kiu ankora? soifas la pekojn de aliaj.",
+    "DESCRIPTIONS": [
+      "Plibonigu hazardan Baton kaj hazardan Defendon je la komenco de ?iu batalo por la resto de la batalo. NL Gajnu je la komenco de ?iu vico #b",
+      " da ${modID}:Peko."
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "Pikila Hoko",
+    "FLAVOR": "Kruela hoko, kiu fosas pli profunden ?iufoje kiam ?i ?iras karnon.",
+    "DESCRIPTIONS": [
+      "Kiam ajn vi aldonas ${modID}:Sangon, aldonu #b1 da plia ${modID}:Sango."
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "Freneza Pokalo",
+    "FLAVOR": "Vino farita en pura furiozo; ?iu tosto su?as alian vivon.",
+    "DESCRIPTIONS": [
+      "Kiam ajn ne-helpanta malamiko mortas, resani?u #b8 da vivo."
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "Kontrakta Sigelo",
+    "FLAVOR": "Kontrakto subskribita per sango, plenumita nur de la puruloj.",
+    "DESCRIPTIONS": [
+      "Gajnu je la fino de la batalo, se vi ne havas ${modID}:?uldon, #b15 da oro."
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "Resani?a ?armo",
+    "FLAVOR": "?armo, kiu forprenas la pikon de ?iu vundo.",
+    "DESCRIPTIONS": [
+      "Kiam ajn vi perdus vivon, vi anstata?e perdas maksimume #b18 da vivo."
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "Gargojla Brako",
+    "FLAVOR": "Antikva ?tono, kiu turnas purigadon en protekton.",
+    "DESCRIPTIONS": [
+      "Kiam ajn vi forigas #b1 stakon de malhelpo, gajnu #b1 da ?irmo."
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "Bruligita Standardo",
+    "FLAVOR": "?ifita standardo, kiu kunvokas nur la malplenon.",
+    "DESCRIPTIONS": [
+      "Se vi havas neniun karton en via mano je la fino de via vico, prenu #b2 pliajn kartojn je la komenco de via sekvonta vico."
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "Longa Glavo de la Heroo",
+    "FLAVOR": "Klingo for?ita el la promeso de ela?eto.",
+    "DESCRIPTIONS": [
+      "Anstata?igas Malbenitan Rompitan Klingon. NL Plibonigu ?iujn Batojn kaj Defendojn en via kartaro kiam vi prenas ?in. NL Gajnu je la komenco de ?iu vico #b",
+      " da ${modID}:Peko."
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "Pezaj Katenoj",
+    "FLAVOR": "Fera pezo, kiu katenas kaj tamen donas forton.",
+    "DESCRIPTIONS": [
+      "Gajnu [E] je la komenco de ?iu vico. NL Aldonu 1 *Implikitan al via prenstako je la komenco de ?iu batalo."
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "Tambura Basto",
+    "FLAVOR": "?iu tamburbato ekbruligas fajreron de energio.",
+    "DESCRIPTIONS": [
+      "?iufoje kiam vi el?erpas #b",
+      " kartojn, gajnu [E]."
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "Monero sen Bedaro",
+    "FLAVOR": "Monero, kiu pardonas ?iun eraron.",
+    "DESCRIPTIONS": [
+      "Kiam ajn vi eniras butikon, gajnu #b",
+      " da oro."
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "Nigra?tona Lanterno",
+    "FLAVOR": "?ia malvarma lumo markas ?iun suferon, kiun ?i ekbruligas.",
+    "DESCRIPTIONS": [
+      "La unuan fojon, kiam vi aldonas malhelpon al malamiko en batalo, gajnu [E]."
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "Fera Martelo",
+    "FLAVOR": "For?ita sur la amboso de senfinaj bataloj.",
+    "DESCRIPTIONS": [
+      "Kiam ajn vi venkas Eliton, plibonigu #b",
+      " hazardajn kartojn en via kartaro."
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "Nesmortema Bra?ero",
+    "FLAVOR": "Fajrero, kiu man?as malbon?ancon kaj neniam estingi?as.",
+    "DESCRIPTIONS": [
+      "Kiam ajn vi havas malhelpon, vi prenas #b25% malpli da dama?o. NL Faru #b25% pli da dama?o al malamikoj kun malhelpo."
+    ]
+  }
+}

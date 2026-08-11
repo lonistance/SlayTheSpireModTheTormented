@@ -14,6 +14,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -541,6 +542,70 @@ public abstract class BaseCard extends CustomCard {
         }
     }
 
+    // ==========================================================
+    // 卡面实时 EXTENDED_DESCRIPTION 注入
+    // 仅当该实例确实处于玩家手牌中时，才把 rawDescription 切换为
+    // “基础描述 + EXT 附文”并重新渲染；渲染后立即恢复字段值，
+    // 避免污染其他实例（图鉴、奖励卡、预览卡等）。
+    // ==========================================================
+
+    protected boolean isCardInHand() {
+        return AbstractDungeon.player != null
+                && AbstractDungeon.player.hand != null
+                && AbstractDungeon.player.hand.group.contains(this);
+    }
+
+    protected String getInjectedDescription() {
+        return null;
+    }
+
+    protected final String baseDescription() {
+        if (this.upgraded && cardStrings.UPGRADE_DESCRIPTION != null) {
+            return cardStrings.UPGRADE_DESCRIPTION;
+        }
+        return cardStrings.DESCRIPTION;
+    }
+
+    protected final String extDescription(int index) {
+        if (cardStrings.EXTENDED_DESCRIPTION == null || cardStrings.EXTENDED_DESCRIPTION.length <= index) {
+            return null;
+        }
+        return cardStrings.EXTENDED_DESCRIPTION[index];
+    }
+
+    protected final int getPlayerPowerAmount(String powerID) {
+        if (AbstractDungeon.player != null) {
+            AbstractPower power = AbstractDungeon.player.getPower(powerID);
+            if (power != null) {
+                return power.amount;
+            }
+        }
+        return 0;
+    }
+
+    @Override
+    public void initializeDescription() {
+        if (cardStrings == null) {
+            super.initializeDescription();
+            return;
+        }
+        String base = baseDescription();
+        if (isCardInHand()) {
+            String ext = getInjectedDescription();
+            if (ext != null && !ext.isEmpty()) {
+                this.rawDescription = base + ext;
+            }
+        }
+        super.initializeDescription();
+        this.rawDescription = base;
+    }
+
+    private void refreshInjectedDescription() {
+        if (!inCalc && isCardInHand() && getInjectedDescription() != null) {
+            initializeDescription();
+        }
+    }
+
     boolean inCalc = false;
     @Override
     public void applyPowers() {
@@ -566,6 +631,7 @@ public abstract class BaseCard extends CustomCard {
         }
 
         super.applyPowers();
+        refreshInjectedDescription();
     }
 
     @Override
@@ -591,6 +657,7 @@ public abstract class BaseCard extends CustomCard {
         }
 
         super.calculateCardDamage(m);
+        refreshInjectedDescription();
     }
 
     @Override

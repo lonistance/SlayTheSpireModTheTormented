@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Tapahtuman nimi",
+    "DESCRIPTIONS": [
+      "Tämä on tapahtumatekstiä, jolla kuvataan yleensä mitä tapahtuu.",
+      "#g~Tämä~ #g~teksti~ #g~on~ #g~vihreää~ #g~ja~ #g~aaltoilevaa.~",
+      "#r@PUNAISTA@ #r@JA@ #r@TÄRINÄISTÄ@ #r@TEKSTIÄ.@",
+      "#rPunainen #gVihreä #yKeltainen #bSininen #pVioletti. ~Aaltoilevaa~ @tärinää.@",
+      "Jokainen sana on merkittävä erikseen.",
+      "Voit myös käyttää [#ffffff]valkoisia[] heksavärikoodeja tekstin värjäämiseen.",
+      "Heksavärikoodit toimivat myös korttitekstissä! Mutta eivät avainsanoissa ilman hämäyskikkoja."
+    ],
+    "OPTIONS": [
+      "[Toiminnan kuvaus] Mitä todella saat.",
+      "[Kieltäytyminen] #rMenetä #r1 #rMaks. #rHP. Pahat asiat ovat punaisia.",
+      "[Hyväksyminen] #gSaa #gApoteoosi. Hyvät asiat ovat vihreitä.",
+      "[Poistu]",
+      "Valitse poistettava kortti. (Voit lisätä tähän myös ylimääräistä tekstiä.)"
+    ]
+  }
+}

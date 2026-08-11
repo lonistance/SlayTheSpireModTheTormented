@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Der Gequälte",
+      "Der Gequälte"
+    ],
+    "TEXT": [
+      "Blut kann die Qual nicht abwaschen, aber Schuld von einem Fluch lindern.",
+      "Der Gequälte.",
+      "Auf einem unbeleuchteten Weg begegnest du mehreren vermummten Gestalten, mitten in einem dunklen Ritual. Als du dich näherst, wenden sie sich dir in unheimlicher Gleichzeitigkeit zu. Die Größte unter ihnen fletscht ihre Fangzähne und streckt eine lange, blasse Hand nach dir aus. NL ~„Komm~ ~zu~ ~uns~ ~Bruder~ ~und~ ~spüre~ ~die~ ~Wärme~ ~des~ ~Spire.“~"
+    ]
+  }
+}

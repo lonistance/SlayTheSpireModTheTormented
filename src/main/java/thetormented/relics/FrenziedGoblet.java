@@ -13,7 +13,7 @@ public class FrenziedGoblet extends BaseRelic {
     private static final int HEAL_AMOUNT = 8;
 
     public FrenziedGoblet() {
-        super(ID, "frenziedGoblet", Tormented.Meta.CARD_COLOR, RelicTier.RARE, LandingSound.FLAT);
+        super(ID, "frenziedGoblet", Tormented.Meta.CARD_COLOR, RelicTier.UNCOMMON, LandingSound.FLAT);
     }
 
     @Override

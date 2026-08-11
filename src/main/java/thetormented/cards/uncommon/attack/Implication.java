@@ -33,7 +33,7 @@ public class Implication extends BaseCard {
         ));
 
         // 绑定基础伤害与二次伤害（两者数值一致，均跟随升级提升）
-        this.baseDamage = DAMAGE;
+        setDamage(DAMAGE, UPGRADE_PLUS_DMG);
     }
 
     @Override
@@ -56,6 +56,4 @@ public class Implication extends BaseCard {
     public AbstractCard makecopy() {
         return new Implication();
     }
-
-
 }

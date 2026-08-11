@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Ereignisname",
+    "DESCRIPTIONS": [
+      "Dies ist Ereignistext, der im Allgemeinen beschreibt, was gerade passiert.",
+      "#g~Dieser~ #g~Text~ #g~ist~ #g~grün~ #g~und~ #g~wellig.~",
+      "#r@ROTER@ #r@UND@ #r@VIBRIERENDER@ #r@TEXT.@",
+      "#rRot #gGrün #yGelb #bBlau #pLila. ~Wellig~ @vibrierend.@",
+      "Du musst jedes einzelne Wort markieren.",
+      "Du kannst auch [#ffffff]weiße[] Hex-Farbcodes wie diesen verwenden, um Text einzufärben.",
+      "Hex-Farbcodes funktionieren auch in Kartentext! Aber nicht bei Schlüsselwörtern, ohne gewisse Tricks."
+    ],
+    "OPTIONS": [
+      "[Aktionsbeschreibung] Was du tatsächlich erhältst.",
+      "[Ablehnung] #rVerliere #r1 #rMax. #rLP. Schlechte Dinge sind rot.",
+      "[Annahme] #gErhalte #gApotheose. Gute Dinge sind grün.",
+      "[Verlassen]",
+      "Wähle die Karte, die entfernt werden soll. (Du kannst hier auch zusätzlichen Text einfügen.)"
+    ]
+  }
+}
