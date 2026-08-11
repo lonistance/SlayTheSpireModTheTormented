@@ -172,7 +172,8 @@
   ]
 },"${modID}:FaceDanger": {
   "NAME": "Het Gevaar Trotseren",
-  "DESCRIPTION": "Richt !D! schade aan. NL Elke *Ellende die je speelt, verlaagt de kosten van deze kaart met 1 voor dit gevecht"
+  "DESCRIPTION": "Richt !D! schade aan. NL Elke *Ellende die je speelt, verlaagt de kosten van deze kaart met 1 voor dit gevecht",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Elke *Ellende die je speelt, verlaagt de kosten van deze kaart met 1 voor dit gevecht"
 }, "${modID}:Relief": {
   "NAME": "Verlichting",
   "DESCRIPTION": "Put aan het einde van je beurt alle *Ellende in je hand uit.",

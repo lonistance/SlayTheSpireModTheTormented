@@ -9,8 +9,8 @@
       "taulukko merkkijonoja."
     ],
     "TEXT_DICT": {
-      "This": "Sisältää merkkijonopareja, joita käytetään arvojen hakemiseen avainten perusteella.",
-      "This is a key": "Tämä on arvo."
+      "Tämä": "Sisältää merkkijonopareja, joita käytetään arvojen hakemiseen avainten perusteella.",
+      "Tämä on avain": "Tämä on arvo."
     }
   }, "${modID}:VoidCallAction": {
     "TEXT": [
