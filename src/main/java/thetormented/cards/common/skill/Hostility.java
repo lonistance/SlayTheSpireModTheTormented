@@ -17,10 +17,10 @@ public class Hostility extends BaseCard {
     // 声明常量变量，避免任何数字硬编码参与计算或函数调用
     private static final int CARD_COST = 1;
     private static final int BASE_BLOCK = 6;
-    private static final int UPGRADE_BLOCK = 2;
+    private static final int UPGRADE_BLOCK = 3;
     private static final int BASE_WEAK_AMOUNT = 1;
     private static final int UPGRADE_PLUS_WEAK = 1;
-    private static final int BLOCK_THRESHOLD = 5;
+    private static final int BLOCK_THRESHOLD = 6;
 
     private static final CardStats STATS = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -34,15 +34,15 @@ public class Hostility extends BaseCard {
         super(ID, STATS);
         setBlock(BASE_BLOCK, UPGRADE_BLOCK);
         setMagic(BASE_WEAK_AMOUNT, UPGRADE_PLUS_WEAK);
+        setCustomVar("BLOCK_THRESHOLD", BLOCK_THRESHOLD);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // 条件判断：若玩家当前格挡小于或等于判定阈值（不大于5点）
-        int currentBlock = p.currentBlock;
         int weakStacks = this.magicNumber;
 
-        if (currentBlock <= BLOCK_THRESHOLD) {
+        if (p.currentBlock <= BLOCK_THRESHOLD) {
             // 遍历所有活着的敌人并施加虚弱
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {

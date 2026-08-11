@@ -1,0 +1,98 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Hyvä reliikki",
+    "FLAVOR": "Tarinateksti, joka näytetään reliikin tarkassa näkymässä.",
+    "DESCRIPTIONS": [
+      "Saa [E] vuorosi alussa. [E] on energiakuvake."
+    ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "Kirottu murtunut miekka",
+    "FLAVOR": "Särkynyt terä, joka yhä janoaa muiden syntejä.",
+    "DESCRIPTIONS": [
+      "Parantele jokaisen taistelun alussa satunnainen Isku ja satunnainen Puolustus taistelun ajaksi. NL Saa jokaisen vuoron alussa #b",
+      " ${modID}:Syntiä."
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "Väkäsikoukku",
+    "FLAVOR": "Julma koukku, joka kaivautuu syvemmälle joka kerta kun se repii lihaa.",
+    "DESCRIPTIONS": [
+      "Aina kun lisäät ${modID}:Verenvuotoa, lisää #b1 ylimääräinen ${modID}:Verenvuoto."
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "Hurja malja",
+    "FLAVOR": "Puhtaassa hurjuudessa pantu viini; jokainen malja tyhjentää yhden elämän.",
+    "DESCRIPTIONS": [
+      "Aina kun ei-minion-vihollinen kuolee, paranna #b8 HP."
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "Sopimussinetti",
+    "FLAVOR": "Verellä allekirjoitettu sopimus, jota vain puhtaat kunnioittavat.",
+    "DESCRIPTIONS": [
+      "Taistelun lopussa, jos sinulla ei ole ${modID}:Velkaa, saa #b15 kultaa."
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "Paranemisen lumous",
+    "FLAVOR": "Lumous, joka imee kivun pois jokaisesta haavasta.",
+    "DESCRIPTIONS": [
+      "Aina kun menettäisit HP:tä, menetät sen sijaan korkeintaan #b18 HP."
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "Gargoylen käsivarsi",
+    "FLAVOR": "Muinaista kiveä, joka muuttaa puhdistuksen suojaksi.",
+    "DESCRIPTIONS": [
+      "Aina kun poistat #b1 haittavaikutuksen kasauksen, saa #b1 Suojaa."
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "Karrelle palanut lippu",
+    "FLAVOR": "Rääsyinen lippu, joka kokoaa alleen vain tyhjin käsin olevat.",
+    "DESCRIPTIONS": [
+      "Vuorosi lopussa, jos kättäsi ei ole kortteja, nosta #b2 ylimääräistä korttia seuraavan vuorosi alussa."
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "Sankarin pitkämiekka",
+    "FLAVOR": "Terä, joka on taottu lunastuksen lupauksesta.",
+    "DESCRIPTIONS": [
+      "Korvaa Kirotun murtuneen miekan. NL Parantele nostettaessa kaikki Iskut ja Puolustukset pakassasi. NL Saa jokaisen vuoron alussa #b",
+      " ${modID}:Syntiä."
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "Raskaat jalkaraudat",
+    "FLAVOR": "Rautapaino, joka kahlehtii, mutta antaa voimaa.",
+    "DESCRIPTIONS": [
+      "Saa jokaisen vuoron alussa [E] . NL Lisää jokaisen taistelun alussa 1 *Kietoutunut nostopinoosi."
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "Rumpukapula",
+    "FLAVOR": "Jokainen rummun isku sytyttää energian kipinän.",
+    "DESCRIPTIONS": [
+      "Joka kerta kun kulutat #b",
+      " korttia, saa [E] ."
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "Katumukseton kolikko",
+    "FLAVOR": "Kolikko, joka antaa anteeksi jokaisen kompastuksen.",
+    "DESCRIPTIONS": [
+      "Aina kun menet kauppaan, saa #b",
+      " kultaa."
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "Mustakivilyhty",
+    "FLAVOR": "Sen kylmä valo merkitsee jokaisen vitsauksen, jonka se sytyttää.",
+    "DESCRIPTIONS": [
+      "Ensimmäisellä kerralla kun lisäät viholliselle haittavaikutuksen taistelussa, saat [E] ."
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "Rautavasara",
+    "FLAVOR": "Taottu loputtoman taistelun alasimella.",
+    "DESCRIPTIONS": [
+      "Aina kun voitat Eliitin, parantele #b",
+      " satunnaista korttia pakassasi."
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "Sammumaton hiillos",
+    "FLAVOR": "Kipinä, joka elää vastoinkäymisistä eikä sammu koskaan.",
+    "DESCRIPTIONS": [
+      "Aina kun sinulla on haittavaikutus, saat #b25% vähemmän vauriota. NL Aiheuta #b25% enemmän vauriota vihollisille, joilla on haittavaikutus."
+    ]
+  }
+}

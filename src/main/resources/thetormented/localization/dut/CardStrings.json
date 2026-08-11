@@ -1,0 +1,360 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Naam",
+    "DESCRIPTION": "Beschrijving. NL Tweede regel.",
+    "UPGRADE_DESCRIPTION": "Wordt automatisch gebruikt wanneer de kaart is verbeterd. Verwijderen indien niet nodig.",
+    "EXTENDED_DESCRIPTION": [
+      "Hier kun je extra tekst toevoegen.",
+      "Als je het voor iets nodig hebt.",
+      "Blizzard is hier een goed voorbeeld van."
+    ]
+  }, "${modID}:StrikeTormented": {
+    "NAME": "Slag",
+    "DESCRIPTION": "Richt !D! schade aan.",
+    "UPGRADE_DESCRIPTION": "Richt !D! schade aan."
+  }, "${modID}:DefendTormented": {
+  "NAME": "Verdedig",
+  "DESCRIPTION": "Krijg !B! Blok.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok."
+  }, "${modID}:Rebel": {
+  "NAME": "Rebel",
+  "DESCRIPTION": "Richt !D! schade aan. NL Pas ${modID}:Bloeden toe gelijk aan de schade die deze kaart aanricht.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Pas ${modID}:Bloeden toe gelijk aan de schade die deze kaart aanricht.",
+  "EXTENDED_DESCRIPTION": [
+    "NL (Pas !M! ${modID}:Bloeden toe)"
+  ]
+  }, "${modID}:Forgive": {
+  "NAME": "Vergeven",
+  "DESCRIPTION": "Krijg !B! Blok. NL Verminder !M! ${modID}:Zonde.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Verminder !M! ${modID}:Zonde."
+  }, "${modID}:Slash": {
+  "NAME": "Snede",
+  "DESCRIPTION": "Richt !D! schade aan. NL Pas !M! ${modID}:Bloeden toe.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Pas !M! ${modID}:Bloeden toe."
+  }, "${modID}:Rend": {
+  "NAME": "Scheuren",
+  "DESCRIPTION": "Richt !D! schade aan. NL Als de vijand ${modID}:Bloeden heeft, richt !M! extra treffers aan.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Als de vijand ${modID}:Bloeden heeft, richt !M! extra treffers aan."
+  }, "${modID}:Pursuit": {
+  "NAME": "Achtervolging",
+  "DESCRIPTION": "Alleen speelbaar als je laatste in deze beurt gespeelde kaart een Aanval was. NL Richt !D! schade aan.",
+  "UPGRADE_DESCRIPTION": "Alleen speelbaar als je laatste in deze beurt gespeelde kaart een Aanval was. NL Richt !D! schade aan.",
+  "EXTENDED_DESCRIPTION": ["Je moet eerst een Aanval spelen in deze beurt."]
+  }, "${modID}:ArmSevering": {
+  "NAME": "Armamputatie",
+  "DESCRIPTION": "Richt !D! schade aan. NL Voeg !M! *Ellende toe aan je hand.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Voeg !M! *Ellende toe aan je hand."
+  },"${modID}:QuenchedBlade": {
+  "NAME": "Gebluste Kling",
+  "DESCRIPTION": "Richt !D! schade aan. NL Verbeter !M! kaarten in je hand voor de rest van het gevecht.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Verbeter !M! kaarten in je hand voor de rest van het gevecht."
+  },"${modID}:CruelTorture": {
+  "NAME": "Wrede Marteling",
+  "DESCRIPTION": "Richt !D! schade aan. NL Krijg !${modID}:SIN! ${modID}:Zonde.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Krijg !${modID}:SIN! ${modID}:Zonde."
+  },"${modID}:AtonementStrike": {
+  "NAME": "Boeteslag",
+  "DESCRIPTION": "Richt !D! schade aan. NL Trek !M! kaarten als je ${modID}:Schuld hebt.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Trek !M! kaarten als je ${modID}:Schuld hebt."
+  },"${modID}:UnrighteousGuilt": {
+  "NAME": "Onterechte Schuld",
+  "DESCRIPTION": "Richt !D! schade aan op ALLE vijanden. NL Krijg !${modID}:SIN! ${modID}:Zonde.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan op ALLE vijanden. NL Krijg !${modID}:SIN! ${modID}:Zonde."
+  },"${modID}:RelentlessEntanglement": {
+  "NAME": "Onophoudelijke Verstrengeling",
+  "DESCRIPTION": "Richt !D! schade aan. NL Voeg deze kaart toe aan je hand wanneer je ${modID}:Schuld toeneemt"
+},"${modID}:Agony": {
+  "NAME": "Kwelling",
+  "DESCRIPTION": "Richt !D! schade aan. NL Pas !M! Zwak en !M! Kwetsbaar toe.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Pas !M! Zwak en !M! Kwetsbaar toe."
+  },"${modID}:SacredLand": {
+  "NAME": "Heilig Land",
+  "DESCRIPTION": "Krijg !B! Blok. NL Trek !M! kaarten als je geen ${modID}:Schuld hebt.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Trek !M! kaarten als je geen ${modID}:Schuld hebt."
+  },"${modID}:Loan": {
+  "NAME": "Lening",
+  "DESCRIPTION": "Krijg [E] [E] [E]. NL In de volgende beurt verlies je [E]. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Krijg [E] [E] [E]. NL In de volgende beurt verlies je [E]. NL Put-uit NL Behoud."
+  },"${modID}:Firm": {
+  "NAME": "Standvastig",
+  "DESCRIPTION": "Krijg !B! Blok. NL Behoud.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Behoud."
+  },"${modID}:Wandering": {
+  "NAME": "Dwalen",
+  "DESCRIPTION": "Trek !M! kaarten. NL Put 1 kaart uit. NL Als je een Statuskaart Uitput, verminder 3 ${modID}:Zonde",
+  "UPGRADE_DESCRIPTION": "Trek !M! kaarten. NL Put 1 kaart uit. NL Als je een Statuskaart Uitput, verminder 3 ${modID}:Zonde"
+},"${modID}:BloodGuard": {
+  "NAME": "Bloedwacht",
+  "DESCRIPTION": "Krijg !B! Blok. NL Pas !M! ${modID}:Bloeden toe op een vijand.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Pas !M! ${modID}:Bloeden toe op een vijand."
+  },"${modID}:PleaOfInnocence": {
+  "NAME": "Onschuldspleidooi",
+  "DESCRIPTION": "Krijg !B! Blok. NL Elke ${modID}:Schuld geeft !M! extra Blok.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Elke ${modID}:Schuld geeft !M! extra Blok.",
+  "EXTENDED_DESCRIPTION": [
+    " (Krijg in totaal !${modID}:TOTAL_BLOCK! Blok)"
+  ]
+  },"${modID}:PredictiveMeasures": {
+  "NAME": "Voorspellende Maatregelen",
+  "DESCRIPTION": "Trek !M! kaart. Als het een Aanval is, kost die 0 tot hij deze beurt wordt gespeeld.",
+  "UPGRADE_DESCRIPTION": "Trek !M! kaart. Als het een Aanval is, kost die 0 tot hij deze beurt wordt gespeeld."
+  }, "${modID}:Hostility": {
+  "NAME": "Vijandigheid",
+  "DESCRIPTION": "Als je Blok onder !${modID}:BLOCK_THRESHOLD! ligt, pas !M! Zwak toe op alle vijanden. NL Krijg !B! Blok",
+  "UPGRADE_DESCRIPTION": "Als je Blok onder !${modID}:BLOCK_THRESHOLD! ligt, pas !M! Zwak toe op alle vijanden. NL Krijg !B! Blok"
+  }, "${modID}:Shackles": {
+  "NAME": "Boeien",
+  "DESCRIPTION": "Voeg !${modID}:CARD_ADD! *Ellende toe aan je hand. NL Krijg !M! Blok voor elke Statuskaart in je hand",
+  "UPGRADE_DESCRIPTION": "Voeg !${modID}:CARD_ADD! *Ellende toe aan je hand. NL Krijg !M! Blok voor elke Statuskaart in je hand",
+  "EXTENDED_DESCRIPTION": [
+    " (Krijg in totaal !${modID}:TOTAL_BLOCK! Blok)"
+  ]
+  }, "${modID}:DeterringStrike": {
+  "NAME": "Afschrikslag",
+  "DESCRIPTION": "Richt !D! schade aan. NL De vijand verliest deze beurt !M! Sterkte als zijn intentie een Aanval is",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL De vijand verliest deze beurt !M! Sterkte als zijn intentie een Aanval is"
+  },"${modID}:HeavySmite": {
+  "NAME": "Zware Klap",
+  "DESCRIPTION": "Alleen speelbaar als je minstens !M! ${modID}:Schuld hebt. Richt !D! schade aan",
+  "UPGRADE_DESCRIPTION": "Alleen speelbaar als je minstens !M! ${modID}:Schuld hebt. Richt !D! schade aan",
+  "EXTENDED_DESCRIPTION": [
+    "Je hebt minstens 2 ${modID}:Schuld nodig"
+  ]
+}, "${modID}:SinsToBlades": {
+  "NAME": "Zonden tot Klingen",
+  "DESCRIPTION": "Richt !D! schade aan. NL Trek kaarten gelijk aan je ${modID}:Schuld.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Trek kaarten gelijk aan je ${modID}:Schuld plus 1.",
+  "EXTENDED_DESCRIPTION": [
+    " (Trek in totaal !${modID}:TOTAL_DRAW! kaarten)"
+  ]
+}, "${modID}:ChaosDirty": {
+  "NAME": "Vies Chaos",
+  "DESCRIPTION": "Krijg !${modID}:SIN! ${modID}:Zonde. NL Richt !D! schade aan. Elke ${modID}:Schuld die je hebt, veroorzaakt !M! extra schade",
+  "UPGRADE_DESCRIPTION": "Krijg !${modID}:SIN! ${modID}:Zonde. NL Richt !D! schade aan. Elke ${modID}:Schuld die je hebt, veroorzaakt !M! extra schade",
+  "EXTENDED_DESCRIPTION": [
+    " (Richt in totaal !${modID}:TOTAL_DAMAGE! schade aan)"
+  ]
+},"${modID}:TemperedSword": {
+  "NAME": "Gehard Zwaard",
+  "DESCRIPTION": "Richt !D! schade aan. NL Elke Statuskaart die je Uitput, veroorzaakt !M! extra schade",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Elke Statuskaart die je Uitput, veroorzaakt !M! extra schade",
+  "EXTENDED_DESCRIPTION": [
+    " (Richt in totaal !${modID}:TOTAL_DAMAGE! schade aan)"
+  ]
+},"${modID}:Crush": {
+  "NAME": "Verpletteren",
+  "DESCRIPTION": "Richt !D! schade aan. NL Krijg Blok gelijk aan het ${modID}:Bloeden van de vijand",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Krijg Blok gelijk aan het ${modID}:Bloeden van de vijand",
+  "EXTENDED_DESCRIPTION": [
+    " (Krijg in totaal !${modID}:TOTAL_BLOCK! Blok)"
+  ]
+}, "${modID}:Accumulate": {
+  "NAME": "Ophopen",
+  "DESCRIPTION": "Richt !D! schade 2 keer aan. NL Krijg in de volgende beurt [E]",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade 2 keer aan. NL Krijg in de volgende beurt [E][E]"
+},"${modID}:HeavyPast": {
+  "NAME": "Zwaar Verleden",
+  "DESCRIPTION": "Richt !D! schade aan. NL Voeg 1 *Ellende toe aan je trekstapel en 1 aan je aflegstapel",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Voeg 1 *Ellende toe aan je trekstapel en 1 aan je aflegstapel"
+},"${modID}:Implication": {
+  "NAME": "Implicatie",
+  "DESCRIPTION": "Richt !D! schade aan. NL Richt dan !D! schade aan op alle vijanden met ${modID}:Bloeden."
+},"${modID}:ConsecutiveKicks": {
+  "NAME": "Opeenvolgende Trappen",
+  "DESCRIPTION": "Richt !D! schade !M! keer aan",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade !M! keer aan"
+},"${modID}:MassiveBleeding": {
+  "NAME": "Massale Bloeding",
+  "DESCRIPTION": "Richt !D! schade aan. NL Richt dan schade aan gelijk aan het ${modID}:Bloeden van de vijand",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Richt dan schade aan gelijk aan het dubbele van het ${modID}:Bloeden van de vijand",
+  "EXTENDED_DESCRIPTION": [
+    " (Richt in totaal !${modID}:TOTAL_DAMAGE! schade aan)"
+  ]
+},"${modID}:FaceDanger": {
+  "NAME": "Het Gevaar Trotseren",
+  "DESCRIPTION": "Richt !D! schade aan. NL Elke *Ellende die je speelt, verlaagt de kosten van deze kaart met 1 voor dit gevecht"
+}, "${modID}:Relief": {
+  "NAME": "Verlichting",
+  "DESCRIPTION": "Put aan het einde van je beurt alle *Ellende in je hand uit.",
+  "UPGRADE_DESCRIPTION": "Aangeboren. NL Put aan het einde van je beurt alle *Ellende in je hand uit."
+  }, "${modID}:Misery": {
+  "NAME": "Ellende",
+  "DESCRIPTION": "Krijg 2 schade. NL Trek 1 kaart. NL Put-uit."
+  }, "${modID}:Parry": {
+  "NAME": "Pareren",
+  "DESCRIPTION": "Krijg !B! Blok. NL Telkens als je wordt aangevallen, reflecteer de afgeweerde schade naar de aanvaller.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Telkens als je wordt aangevallen, reflecteer de afgeweerde schade naar de aanvaller."
+  }, "${modID}:Pardon": {
+  "NAME": "Kwijtschelding",
+  "DESCRIPTION": "Verwijder elk 1 Stapel ${modID}:Schuld, Kwetsbaar, Zwak en Fragiel. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Verwijder elk 1 Stapel ${modID}:Schuld, Kwetsbaar, Zwak en Fragiel."
+  }, "${modID}:Memorial": {
+  "NAME": "Herdenking",
+  "DESCRIPTION": "Als je geen ${modID}:Schuld hebt, krijg !B! Blok en trek !M! kaarten. NL Krijg !${modID}:SIN! ${modID}:Zonde.",
+  "UPGRADE_DESCRIPTION": "Als je geen ${modID}:Schuld hebt, krijg !B! Blok en trek !M! kaarten. NL Krijg !${modID}:SIN! ${modID}:Zonde."
+  }, "${modID}:Boiling": {
+  "NAME": "Koken",
+  "DESCRIPTION": "Put alle niet-Aanvalskaarten in je hand uit. NL Pas !M! ${modID}:Bloeden toe op ALLE vijanden voor elke uitgeputte kaart.",
+  "UPGRADE_DESCRIPTION": "Put alle niet-Aanvalskaarten in je hand uit. NL Pas !M! ${modID}:Bloeden toe op ALLE vijanden voor elke uitgeputte kaart."
+  }, "${modID}:Grief": {
+  "NAME": "Verdriet",
+  "DESCRIPTION": "Voeg 1 willekeurige Statuskaart toe aan je hand. NL Deze beurt: Telkens als je een kaart trekt, pas !M! ${modID}:Bloeden toe op ALLE vijanden.",
+  "UPGRADE_DESCRIPTION": "Voeg 1 willekeurige Statuskaart toe aan je hand. NL Deze beurt: Telkens als je een kaart trekt, pas !M! ${modID}:Bloeden toe op ALLE vijanden."
+  }, "${modID}:BloodSea": {
+  "NAME": "Bloedzee",
+  "DESCRIPTION": "Pas !${modID}:BLEED! ${modID}:Bloeden toe. NL Vermenigvuldig het ${modID}:Bloeden van de vijand met !M!. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Pas !${modID}:BLEED! ${modID}:Bloeden toe. NL Vermenigvuldig het ${modID}:Bloeden van de vijand met !M!. NL Put-uit."
+  }, "${modID}:RelentlessBleed": {
+  "NAME": "Onophoudelijk Bloeden",
+  "DESCRIPTION": "Pas aan het begin van elke beurt !M! ${modID}:Bloeden toe op ALLE vijanden.",
+  "UPGRADE_DESCRIPTION": "Pas aan het begin van elke beurt !M! ${modID}:Bloeden toe op ALLE vijanden."
+  }, "${modID}:DreadMemory": {
+  "NAME": "Vreselijke Herinnering",
+  "DESCRIPTION": "Als je deze beurt ${modID}:Schuld hebt gekregen, veroorzaken vijanden !M!% minder schade. NL Geldt alleen in de beurt waarin je ${modID}:Schuld hebt gekregen.",
+  "UPGRADE_DESCRIPTION": "Als je deze beurt ${modID}:Schuld hebt gekregen, veroorzaken vijanden !M!% minder schade. NL Geldt alleen in de beurt waarin je ${modID}:Schuld hebt gekregen."
+  }, "${modID}:Trial": {
+  "NAME": "Beproeving",
+  "DESCRIPTION": "Krijg !M! Sterkte en !M! Behendigheid. NL Krijg 2 Zwak.",
+  "UPGRADE_DESCRIPTION": "Krijg !M! Sterkte en !M! Behendigheid. NL Krijg 2 Zwak."
+  }, "${modID}:ReconcileFate": {
+  "NAME": "Lot Verzoenen",
+  "DESCRIPTION": "Telkens als je een *Ellende maakt of Uitput, krijg !M! Blok.",
+  "UPGRADE_DESCRIPTION": "Telkens als je een *Ellende maakt of Uitput, krijg !M! Blok."
+  }, "${modID}:MangledFlesh": {
+  "NAME": "Verminkt Vlees",
+  "DESCRIPTION": "Telkens als je een vijand 6 ${modID}:Bloeden toebrengt, richt je !M! schade aan hem aan.",
+  "UPGRADE_DESCRIPTION": "Telkens als je een vijand 6 ${modID}:Bloeden toebrengt, richt je !M! schade aan hem aan."
+  }, "${modID}:BloodThorns": {
+  "NAME": "Bloeddoorns",
+  "DESCRIPTION": "Telkens als een vijand je aanvalt, pas !M! ${modID}:Bloeden op hem toe.",
+  "UPGRADE_DESCRIPTION": "Telkens als een vijand je aanvalt, pas !M! ${modID}:Bloeden op hem toe."
+  }, "${modID}:RedemptionPath": {
+  "NAME": "Pad van Verlossing",
+  "DESCRIPTION": "Telkens als je 1 ${modID}:Schuld verwijdert, trek !M! kaarten.",
+  "UPGRADE_DESCRIPTION": "Telkens als je 1 ${modID}:Schuld verwijdert, trek !M! kaarten."
+  }, "${modID}:Requiem": {
+  "NAME": "Requiem",
+  "DESCRIPTION": "Elke *Ellende die je hebt uitgeput, richt !D! schade aan op een willekeurige vijand",
+  "UPGRADE_DESCRIPTION": "Elke *Ellende die je hebt uitgeput, richt !D! schade aan op een willekeurige vijand",
+  "EXTENDED_DESCRIPTION": [
+    " (Richt in totaal !${modID}:HITS! treffers aan)"
+  ]
+  }, "${modID}:DesperateMeasure": {
+  "NAME": "Wanhopige Maatregel",
+  "DESCRIPTION": "Richt !D! schade aan. NL Als dit de vijand niet doodt, verlies !M! LP.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade aan. NL Als dit de vijand niet doodt, verlies !M! LP."
+  }, "${modID}:UnceasingWar": {
+  "NAME": "Eindeloze Oorlog",
+  "DESCRIPTION": "Richt !D! schade !${modID}:HITS! keer aan. NL Telkens als dit een vijand doodt, verhoog het aantal treffers van deze kaart permanent met 1 voor de rest van de run. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade !${modID}:HITS! keer aan. NL Telkens als dit een vijand doodt, verhoog het aantal treffers van deze kaart permanent met 1 voor de rest van de run. NL Put-uit."
+  }, "${modID}:FinalJudgment": {
+  "NAME": "Laatste Oordeel",
+  "DESCRIPTION": "Alleen speelbaar als je minstens 4 ${modID}:Schuld hebt. NL Richt !D! schade aan op ALLE vijanden. NL Verwijder alle ${modID}:Zonde.",
+  "UPGRADE_DESCRIPTION": "Alleen speelbaar als je minstens 4 ${modID}:Schuld hebt. NL Richt !D! schade aan op ALLE vijanden. NL Verwijder alle ${modID}:Zonde.",
+  "EXTENDED_DESCRIPTION": [
+    "Je hebt minstens 4 ${modID}:Schuld nodig."
+  ]
+  }, "${modID}:Blazing": {
+  "NAME": "Laaiend",
+  "DESCRIPTION": "Put alle kaarten in je hand uit. NL Trek !M! kaarten voor elke uitgeputte Statuskaart. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Put alle kaarten in je hand uit. NL Trek !M! kaarten voor elke uitgeputte Statuskaart. NL Put-uit."
+  }, "${modID}:RockSolid": {
+  "NAME": "Rotsvast",
+  "DESCRIPTION": "Krijg !B! Blok. NL Verlies 3 Max LP.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Verlies 3 Max LP."
+  }, "${modID}:Devotion": {
+  "NAME": "Toewijding",
+  "DESCRIPTION": "Verwijder al je ${modID}:Schuld, Kwetsbaar en Zwak. NL Krijg voor elke verwijderde Stapel [E] en trek !M! kaarten. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Verwijder al je ${modID}:Schuld, Kwetsbaar en Zwak. NL Krijg voor elke verwijderde Stapel [E] en trek !M! kaarten. NL Put-uit."
+  }, "${modID}:Indignation": {
+  "NAME": "Verontwaardiging",
+  "DESCRIPTION": "In de volgende X beurten kost de eerste niet-Aanvalskaart die je per beurt speelt 0. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "In de volgende X+1 beurten kost de eerste niet-Aanvalskaart die je per beurt speelt 0. NL Put-uit."
+  }, "${modID}:BloodFeud": {
+  "NAME": "Bloedwraak",
+  "DESCRIPTION": "Voeg 1 *Ellende toe aan je hand. NL Activeer onmiddellijk het ${modID}:Bloeden van alle vijanden !M! keer.",
+  "UPGRADE_DESCRIPTION": "Voeg 1 *Ellende toe aan je hand. NL Activeer onmiddellijk het ${modID}:Bloeden van alle vijanden !M! keer."
+  }, "${modID}:VoidCall": {
+  "NAME": "Roep van de Leegte",
+  "DESCRIPTION": "Aangeboren. NL Kies 1 kaart uit je trekstapel en voeg hem toe aan je hand. Hij wordt Etherisch. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Aangeboren. NL Kies 2 kaarten uit je trekstapel en voeg ze toe aan je hand. Ze worden Etherisch. NL Put-uit."
+  }, "${modID}:Spread": {
+  "NAME": "Verspreiding",
+  "DESCRIPTION": "Pas !M! ${modID}:Bloeden toe. NL Pas alle Debuffs van deze vijand toe op alle andere vijanden.",
+  "UPGRADE_DESCRIPTION": "Pas !M! ${modID}:Bloeden toe. NL Pas alle Debuffs van deze vijand toe op alle andere vijanden."
+  }, "${modID}:HungeringBattleWill": {
+  "NAME": "Hongerige Strijdwil",
+  "DESCRIPTION": "Krijg aan het begin van elke beurt [E]. Verlies aan het einde van je beurt 3 LP als er deze beurt geen vijand is gedood.",
+  "UPGRADE_DESCRIPTION": "Krijg aan het begin van elke beurt [E]. Verlies aan het einde van je beurt 3 LP als er deze beurt geen vijand is gedood."
+  }, "${modID}:JudgmentForm": {
+  "NAME": "Vorm van het Oordeel",
+  "DESCRIPTION": "Richt 50% meer schade aan op vijanden onder !M!% van hun Max LP.",
+  "UPGRADE_DESCRIPTION": "Richt 50% meer schade aan op vijanden onder !M!% van hun Max LP."
+  }, "${modID}:SinAvatar": {
+  "NAME": "Avatar van de Zonde",
+  "DESCRIPTION": "Krijg aan het einde van je beurt !B! Blok, plus !M! Blok voor elke Stapel ${modID}:Schuld.",
+  "UPGRADE_DESCRIPTION": "Krijg aan het einde van je beurt !B! Blok, plus !M! Blok voor elke Stapel ${modID}:Schuld.",
+  "EXTENDED_DESCRIPTION": [
+    " (Krijg in totaal !${modID}:TOTAL_BLOCK! Blok)"
+  ]
+  }, "${modID}:Bloodbath": {
+  "NAME": "Bloedbad",
+  "DESCRIPTION": "Je eerste in elke beurt gespeelde Aanvalskaart past ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade.",
+  "UPGRADE_DESCRIPTION": "Je eerste !M! in elke beurt gespeelde Aanvalskaarten passen ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade."
+  }, "${modID}:Overrigid": {
+  "NAME": "Overstijf",
+  "DESCRIPTION": "Krijg 4 Sterkte. NL Elke keer dat je een Aanvalskaart speelt, verliest die permanent !M! schade voor de rest van het gevecht.",
+  "UPGRADE_DESCRIPTION": "Krijg 4 Sterkte. NL Elke keer dat je een Aanvalskaart speelt, verliest die permanent !M! schade voor de rest van het gevecht."
+  }, "${modID}:Entangled": {
+  "NAME": "Verstrikt",
+  "DESCRIPTION": "Telkens als je deze kaart trekt, voeg 1 kopie ervan toe aan je hand. NL Put-uit."
+  }, "${modID}:Riot": {
+  "NAME": "Oproer",
+  "DESCRIPTION": "Richt !D! schade X keer aan. NL Elke ${modID}:Schuld die je hebt, laat deze kaart !M! extra schade veroorzaken.",
+  "UPGRADE_DESCRIPTION": "Richt !D! schade X keer aan. NL Elke ${modID}:Schuld die je hebt, laat deze kaart !M! extra schade veroorzaken.",
+  "EXTENDED_DESCRIPTION": [
+    " (Richt !${modID}:TOTAL_DAMAGE! schade per treffer aan)"
+  ]
+  }, "${modID}:Bloodstain": {
+  "NAME": "Bloedvlek",
+  "DESCRIPTION": "Pas !M! ${modID}:Bloeden toe. NL Herhaal dit een keer voor elke ${modID}:Schuld die je hebt.",
+  "UPGRADE_DESCRIPTION": "Pas !M! ${modID}:Bloeden toe. NL Herhaal dit een keer voor elke ${modID}:Schuld die je hebt."
+  }, "${modID}:BrokenArmor": {
+  "NAME": "Gebroken Pantser",
+  "DESCRIPTION": "Krijg !B! Blok. NL Krijg !M! Zwak.",
+  "UPGRADE_DESCRIPTION": "Krijg !B! Blok. NL Krijg !M! Zwak."
+  }, "${modID}:FormPact": {
+  "NAME": "Pact Sluiten",
+  "DESCRIPTION": "Krijg [E] [E]. NL Voeg 1 *Ellende toe aan je hand.",
+  "UPGRADE_DESCRIPTION": "Krijg [E] [E] [E]. NL Voeg 1 *Ellende toe aan je hand."
+  }, "${modID}:Fraud": {
+  "NAME": "Fraude",
+  "DESCRIPTION": "Trek !M! kaarten. NL Krijg !M! ${modID}:Zonde.",
+  "UPGRADE_DESCRIPTION": "Trek !M! kaarten. NL Krijg !M! ${modID}:Zonde."
+  }, "${modID}:Mercy": {
+  "NAME": "Genade",
+  "DESCRIPTION": "Etherisch. NL Put aan het einde van elke beurt *Ellende in je hand uit. NL Krijg !M! ${modID}:Zonde.",
+  "UPGRADE_DESCRIPTION": "Put aan het einde van elke beurt *Ellende in je hand uit. NL Krijg !M! ${modID}:Zonde."
+  }, "${modID}:Prepare": {
+  "NAME": "Voorbereiden",
+  "DESCRIPTION": "Aangeboren. NL Trek !M! kaarten. NL Behoud je hand deze beurt. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Aangeboren. NL Trek !M! kaarten. NL Behoud je hand deze beurt. NL Put-uit."
+  }, "${modID}:Relapse": {
+  "NAME": "Terugval",
+  "DESCRIPTION": "Het ${modID}:Bloeden van een vijand wordt deze beurt niet verwijderd.",
+  "UPGRADE_DESCRIPTION": "Het ${modID}:Bloeden van ALLE vijanden wordt deze beurt niet verwijderd."
+  }, "${modID}:SharedSuffering": {
+  "NAME": "Gedeeld Lijden",
+  "DESCRIPTION": "Pas voor elke ${modID}:Schuld die je hebt !M! Zwak en !M! Kwetsbaar toe op ALLE vijanden. NL Put-uit.",
+  "UPGRADE_DESCRIPTION": "Pas voor elke ${modID}:Schuld die je hebt !M! Zwak en !M! Kwetsbaar toe op ALLE vijanden. NL Put-uit."
+  }, "${modID}:Taboo": {
+  "NAME": "Taboe",
+  "DESCRIPTION": "Krijg voor elke ${modID}:Schuld die je hebt [E]. NL Krijg 1 ${modID}:Beperking.",
+  "UPGRADE_DESCRIPTION": "Krijg voor elke ${modID}:Schuld die je hebt, plus 1 [E]. NL Krijg 1 ${modID}:Beperking.",
+  "EXTENDED_DESCRIPTION": [
+    " (Kan geen energie krijgen)",
+    " (Krijg !${modID}:TOTAL_ENERGY! energie)",
+    " (Krijg !${modID}:TOTAL_ENERGY! energie!)"
+  ]
+  }
+}

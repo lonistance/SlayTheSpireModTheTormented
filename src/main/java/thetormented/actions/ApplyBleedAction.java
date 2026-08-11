@@ -2,9 +2,11 @@ package thetormented.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import thetormented.powers.debuff.BleedPower;
+import thetormented.relics.BarbedHook;
 
 public class ApplyBleedAction extends AbstractGameAction {
     // 默认动画/音效配置常量（便于后期统一修改）
@@ -30,6 +32,11 @@ public class ApplyBleedAction extends AbstractGameAction {
             AbstractCreature actionSource = this.source;
             int bleedAmount = this.amount;
 
+            // 倒刺钩：玩家给予流血时额外 +1
+            if (actionSource != null && actionSource.isPlayer && ((AbstractPlayer) actionSource).hasRelic(BarbedHook.ID)) {
+                bleedAmount += 1;
+            }
+
             // 构造 BleedPower 实体并提交 ApplyPowerAction 队列
             AbstractPower powerToApply = new BleedPower(actionTarget, bleedAmount);
             ApplyPowerAction applyPowerAction = new ApplyPowerAction(
@@ -40,9 +47,28 @@ public class ApplyBleedAction extends AbstractGameAction {
                     this.attackEffect
             );
 
-            this.addToTop(applyPowerAction);
-        }
+        this.addToTop(applyPowerAction);
 
-        this.isDone = true;
+        this.notifyBleedApplied(bleedAmount);
+    }
+
+    this.isDone = true;
+}
+
+    private void notifyBleedApplied(int appliedAmount) {
+        if (this.source != null && this.source.isPlayer) {
+            for (AbstractPower power : this.source.powers) {
+                if (power instanceof OnBleedApplySubscriber) {
+                    ((OnBleedApplySubscriber) power).onBleedApplied(this.target, appliedAmount);
+                }
+            }
+        }
+    }
+
+    /**
+     * 接口：供检测“玩家向敌人施加流血”的能力牌实现
+     */
+    public interface OnBleedApplySubscriber {
+        void onBleedApplied(AbstractCreature target, int amount);
     }
 }

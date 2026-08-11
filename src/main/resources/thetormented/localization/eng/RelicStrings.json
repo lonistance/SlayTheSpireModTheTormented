@@ -5,5 +5,94 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "Cursed Broken Blade",
+    "FLAVOR": "A shattered blade that still thirsts for the sins of others.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, upgrade a random Strike and a random Defend for the duration of combat. NL At the start of each turn, gain #b",
+      " ${modID}:Sin."
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "Barbed Hook",
+    "FLAVOR": "A cruel hook that digs deeper every time it tears flesh.",
+    "DESCRIPTIONS": [
+      "Whenever you apply ${modID}:Bleed, apply #b1 additional ${modID}:Bleed."
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "Frenzied Goblet",
+    "FLAVOR": "Wine brewed in pure frenzy; each toast drains another life.",
+    "DESCRIPTIONS": [
+      "Whenever a non-minion enemy dies, heal #b8 HP."
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "Contract Seal",
+    "FLAVOR": "A contract signed in blood, honoured only by the pure.",
+    "DESCRIPTIONS": [
+      "At the end of combat, if you have no ${modID}:Debt, gain #b15 gold."
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "Recovery Charm",
+    "FLAVOR": "A charm that draws the sting from every wound.",
+    "DESCRIPTIONS": [
+      "Whenever you would lose HP, you lose at most #b18 HP instead."
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "Gargoyle Arm",
+    "FLAVOR": "Ancient stone that turns purging into protection.",
+    "DESCRIPTIONS": [
+      "Whenever you remove #b1 stack of a debuff, gain #b1 Block."
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "Scorched Banner",
+    "FLAVOR": "A tattered banner that rallies only the emptied-handed.",
+    "DESCRIPTIONS": [
+      "At the end of your turn, if you have no cards in hand, draw #b2 additional cards at the start of your next turn."
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "Hero's Longsword",
+    "FLAVOR": "A blade forged from the promise of redemption.",
+    "DESCRIPTIONS": [
+      "Replaces Cursed Broken Blade. NL On pickup, upgrade all Strikes and Defends in your deck. NL At the start of each turn, gain #b",
+      " ${modID}:Sin."
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "Heavy Fetters",
+    "FLAVOR": "An iron weight that binds, yet grants strength.",
+    "DESCRIPTIONS": [
+      "At the start of each turn, gain [E] . NL At the start of each combat, add 1 *Entangled to your draw pile."
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "Drumstick",
+    "FLAVOR": "Each beat of the drum stirs a spark of energy.",
+    "DESCRIPTIONS": [
+      "Every time you Exhaust #b",
+      " cards, gain [E] ."
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "Regretless Coin",
+    "FLAVOR": "A coin that forgives every misstep.",
+    "DESCRIPTIONS": [
+      "Whenever you enter a Shop, gain #b",
+      " Gold."
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "Blackstone Lantern",
+    "FLAVOR": "Its cold light marks every affliction it kindles.",
+    "DESCRIPTIONS": [
+      "The first time you apply a debuff to an enemy each combat, gain [E] ."
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "Iron Hammer",
+    "FLAVOR": "Forged upon the anvil of endless battle.",
+    "DESCRIPTIONS": [
+      "Whenever you defeat an Elite, upgrade #b",
+      " random cards in your deck."
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "Undying Ember",
+    "FLAVOR": "A spark that feeds on misfortune and never goes out.",
+    "DESCRIPTIONS": [
+      "Whenever you have a debuff, take #b25% less damage. NL Deal #b25% more damage to enemies that have a debuff."
+    ]
   }
 }

@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Götterblut",
+    "DESCRIPTIONS": [
+      "Füge einem Gegner #b",
+      " ${modID}:Blutung zu."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Träne",
+    "DESCRIPTIONS": [
+      "Behalte deine Hand für #b1 Zug."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Wein der Wiederbelebung",
+    "DESCRIPTIONS": [
+      "Erhalte #b1 Energie. NL Ziehe #b2 Karten."
+    ]
+  }
+}

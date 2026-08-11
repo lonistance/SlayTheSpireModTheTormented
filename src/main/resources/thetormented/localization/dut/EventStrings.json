@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Naam van het evenement",
+    "DESCRIPTIONS": [
+      "Dit is evenementtekst die over het algemeen beschrijft wat er gebeurt.",
+      "#g~Deze~ #g~tekst~ #g~is~ #g~groen~ #g~en~ #g~golvend.~",
+      "#r@RODE@ #r@EN@ #r@TRILLENDE@ #r@TEKST.@",
+      "#rRood #gGroen #yGeel #bBlauw #pPaars. ~Golvend~ @trillend.@",
+      "Je moet elk woord afzonderlijk markeren.",
+      "Je kunt ook hex-kleurcodes zoals [#ffffff]wit[] gebruiken om tekst te kleuren.",
+      "Hex-kleurcodes werken ook in kaarttekst! Maar niet bij sleutelwoorden, zonder bepaalde trucs."
+    ],
+    "OPTIONS": [
+      "[Actiebeschrijving] Wat je daadwerkelijk krijgt.",
+      "[Afwijzen] #rVerlies #r1 #rMax #rLP. Slechte dingen zijn rood.",
+      "[Accepteren] #gKrijg #gApotheose. Goede dingen zijn groen.",
+      "[Vertrekken]",
+      "Kies de te verwijderen kaart. (Je kunt hier ook extra tekst invoegen.)"
+    ]
+  }
+}

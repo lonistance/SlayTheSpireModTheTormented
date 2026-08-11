@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Sango de Dioj",
+    "DESCRIPTIONS": [
+      "Aldonu #b",
+      " da ${modID}:Sango al malamiko."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Larmo",
+    "DESCRIPTIONS": [
+      "Retenu vian manon dum #b1 vico."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Vino de Revivi?o",
+    "DESCRIPTIONS": [
+      "Gajnu #b1 da energio. NL Prenu #b2 kartojn."
+    ]
+  }
+}

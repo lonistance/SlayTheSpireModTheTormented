@@ -7,9 +7,9 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import thetormented.powers.buff.SinPower;
 
-
 public class UpdateSinAction extends AbstractGameAction {
     private static final int SIN_PER_DEBT = 5; // 5 点 Sin 对应 1 点 Debt
+
     public UpdateSinAction(AbstractCreature target, AbstractCreature source, int sinAmount) {
         this.target = target;
         this.source = source;
@@ -30,10 +30,7 @@ public class UpdateSinAction extends AbstractGameAction {
             int currentSin = (sinInstance != null) ? sinInstance.amount : 0;
             int currentDebt = currentSin / SIN_PER_DEBT;
 
-            int targetSin = currentSin + this.amount;
-            if (targetSin < 0) {
-                targetSin = 0;
-            }
+            int targetSin = Math.max(0, currentSin + this.amount);
             int targetDebt = targetSin / SIN_PER_DEBT;
 
             int debtChange = targetDebt - currentDebt;

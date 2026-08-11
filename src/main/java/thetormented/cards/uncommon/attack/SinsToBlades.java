@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
 import thetormented.powers.debuff.DebtPower; // 替换为您项目中的血债 Power 类
@@ -33,10 +32,17 @@ public class SinsToBlades extends BaseCard {
 
     public SinsToBlades() {
         super(ID, STATS);
-        this.baseDamage = BASE_DAMAGE;
-        // magicNumber 用于表示“额外抽牌量”（未升级为0，升级后为1）
-        this.baseMagicNumber = BASE_EXTRA_DRAW;
-        this.magicNumber = this.baseMagicNumber;
+        setDamage(BASE_DAMAGE, UPGRADE_PLUS_DAMAGE);
+        setMagic(BASE_EXTRA_DRAW, UPGRADE_PLUS_DRAW);
+
+        // 实时预览：抽牌数 = 当前血债 + 额外抽牌
+        setCustomVar("TOTAL_DRAW", VariableType.MAGIC, 0, 0,
+                (c, m, base) -> getPowerAmount() + c.magicNumber);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
     }
 
     @Override
@@ -47,10 +53,9 @@ public class SinsToBlades extends BaseCard {
         addToBot(new DamageAction(m, new DamageInfo(p, this.damage, damageType), attackEffect));
 
         // 2. 计算并执行抽牌
-        int currentDebt = getPowerAmount(p);
+        int currentDebt = getPowerAmount();
         int extraDraw = this.magicNumber;
         int totalDrawAmount = currentDebt + extraDraw;
-
         if (totalDrawAmount > 0) {
             addToBot(new DrawCardAction(p, totalDrawAmount));
         }
@@ -64,15 +69,7 @@ public class SinsToBlades extends BaseCard {
     /**
      * 辅助获取玩家身上的特定 Power 层数
      */
-    private int getPowerAmount(AbstractPlayer player) {
-        if (player == null || player.powers == null) {
-            return 0;
-        }
-        for (AbstractPower power : player.powers) {
-            if (power != null && DebtPower.POWER_ID.equals(power.ID)) {
-                return power.amount;
-            }
-        }
-        return 0;
+    private int getPowerAmount() {
+        return getPlayerPowerAmount(DebtPower.POWER_ID);
     }
 }

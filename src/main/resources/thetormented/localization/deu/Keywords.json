@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Blutung",
+    "NAMES": [
+      "blutung",
+      "blutungen"
+    ],
+    "DESCRIPTION": "Verliert zu Beginn seines Zuges LP in Höhe seiner Blutung, dann wird alle Blutung entfernt. Wenn eine blutende Kreatur ungeblockten Angriffsschaden erleidet, erhält sie #b1 Blutung."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Sünde",
+    "NAMES": [
+      "sünde",
+      "sünden"
+    ],
+    "DESCRIPTION": "Jede #b5 Sünde, die du hast, gewährt #b1 ${modID}:Schuld."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Schuld",
+    "NAMES": [
+      "schuld",
+      "schulden"
+    ],
+    "DESCRIPTION": "Jeder Stapel Schuld lässt dich #b10% mehr Schaden erleiden."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Einschränkung",
+    "NAMES": [
+      "einschränkung",
+      "einschränkungen"
+    ],
+    "DESCRIPTION": "Du kannst kein [E] erhalten, solange du nicht deine gesamte Schuld entfernst. Wird am Ende deines Zuges entfernt."
+  }
+]

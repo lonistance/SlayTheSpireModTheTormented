@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Dies ist",
+      "ein Array von Strings."
+    ],
+    "EXTRA_TEXT": [
+      "Dies ist ein weiteres",
+      "Array von Strings."
+    ],
+    "TEXT_DICT": {
+      "Dies": "Enthält String-Paare, die verwendet werden, um Werte basierend auf Schlüsseln zu erhalten.",
+      "Dies ist ein Schlüssel": "Dies ist ein Wert."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Wähle Karten, die du deiner Hand hinzufügen und Ätherisch machen möchtest."
+    ]
+  }
+}

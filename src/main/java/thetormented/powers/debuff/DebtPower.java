@@ -2,6 +2,8 @@ package thetormented.powers.debuff;
 
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.VulnerablePower;
 import thetormented.powers.BasePower;
 import thetormented.powers.buff.MercyPower;
 
@@ -11,7 +13,7 @@ import static thetormented.BasicMod.makeID;
 public class DebtPower extends BasePower {
     public static final String POWER_ID = makeID(DebtPower.class.getSimpleName());
     private static final PowerType POWER_TYPE = PowerType.DEBUFF;
-    private static final boolean IS_TURN_BASED = true;
+    private static final boolean IS_TURN_BASED = false;
 
     // 每 1 点 Debt 增加 10% 伤害
     private static final float DAMAGE_INCREASE_PER_STACK = 0.10f;
@@ -25,16 +27,35 @@ public class DebtPower extends BasePower {
     }
 
     /**
-     * 受到伤害时增伤 10% * Debt 层数
+     * 在所有常规 atDamageReceive (如易伤) 执行完毕后，统一调整最终伤害
      */
     @Override
-    public float atDamageReceive(float damage, DamageInfo.DamageType type) {
+    public float atDamageFinalReceive(float damage, DamageInfo.DamageType type) {
         if (type == DamageInfo.DamageType.NORMAL) {
-            if(owner.hasPower(MercyPower.POWER_ID)) {
+            // 1. 如果拥有 MercyPower (慈悲)，直接返回原伤害
+            if (owner.hasPower(MercyPower.POWER_ID)) {
                 return damage;
             }
-            float multiplier = 1.0f + (this.amount * DAMAGE_INCREASE_PER_STACK);
-            return damage * multiplier;
+
+            // 2. 获取 Debt 增加的百分比（如 2 层 Debt = 0.20f）
+            float debtPercent = this.amount * DAMAGE_INCREASE_PER_STACK;
+
+            // 3. 判断当前目标是否有易伤，并拿到易伤的增加比例 (vulnPercent)
+            if (owner.hasPower(VulnerablePower.POWER_ID)) {
+                float vulnMultiplier = 1.5f;
+                if (owner.isPlayer && AbstractDungeon.player.hasRelic("Odd Mushroom")) {
+                    vulnMultiplier = 1.25f;
+                }
+                // 核心逻辑：
+                // 目前传入的 damage 已经被 VulnerablePower 乘以了 vulnMultiplier。
+                // 即：damage = baseDamage * vulnMultiplier
+                // 我们期望的目标伤害是：targetDamage = baseDamage * (vulnMultiplier + debtPercent)
+                // 转换公式：targetDamage = damage * ((vulnMultiplier + debtPercent) / vulnMultiplier)
+                return damage * ((vulnMultiplier + debtPercent) / vulnMultiplier);
+            } else {
+                // 如果没有易伤，直接按 (1 + debtPercent) 增加伤害
+                return damage * (1.0f + debtPercent);
+            }
         }
         return damage;
     }

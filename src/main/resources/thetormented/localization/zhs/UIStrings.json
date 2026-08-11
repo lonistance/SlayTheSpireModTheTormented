@@ -12,5 +12,9 @@
       "This": "Contains pairs of Strings, used to get values based on keys.",
       "This is a key": "This is a value."
     }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "选择要加入手牌的牌。"
+    ]
   }
 }

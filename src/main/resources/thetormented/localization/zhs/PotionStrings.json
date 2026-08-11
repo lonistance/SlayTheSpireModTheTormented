@@ -1,12 +1,21 @@
 {
-  "${modID}:PotionID": {
-    "NAME": "Some Kind of Potion",
+  "${modID}:GodBlood": {
+    "NAME": "神之血",
     "DESCRIPTIONS": [
-      "Little",
-      " pieces ",
-      "that get put together",
-      " into a description.",
-      " Exactly how depends on the potion, and you can set it up however you want."
+      "给予 1 名敌人 #b",
+      " 点 流血 。"
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "泪滴",
+    "DESCRIPTIONS": [
+      "保留你的手牌 #b1 回合。"
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "复苏之酒",
+    "DESCRIPTIONS": [
+      "获得 #b1 点能量。 NL 抽 #b2 张牌。"
     ]
   }
 }

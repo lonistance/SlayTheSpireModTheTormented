@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Bloeden",
+    "NAMES": [
+      "bloeden",
+      "bloeding"
+    ],
+    "DESCRIPTION": "Verliest aan het begin van zijn beurt LP gelijk aan zijn Bloeden, dan wordt al het Bloeden verwijderd. Als een bloederig wezen ongeBlokkeerde aanvalsschade oploopt, krijgt het #b1 Bloeden."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Zonde",
+    "NAMES": [
+      "zonde",
+      "zonden"
+    ],
+    "DESCRIPTION": "Elke #b5 Zonde die je hebt, geeft #b1 ${modID}:Schuld."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Schuld",
+    "NAMES": [
+      "schuld",
+      "schulden"
+    ],
+    "DESCRIPTION": "Elke Stapel Schuld laat je #b10% meer schade oplopen."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Beperking",
+    "NAMES": [
+      "beperking",
+      "beperkingen"
+    ],
+    "DESCRIPTION": "Je kunt geen [E] krijgen zolang je niet al je Schuld verwijdert. Wordt aan het einde van je beurt verwijderd."
+  }
+]

@@ -19,10 +19,10 @@ public class HeavySmite extends BaseCard {
     private static final int CARD_COST = 1;
     private static final int BASE_DAMAGE = 12;
     private static final int UPGRADE_PLUS_DAMAGE = 4;
-    private static final int REQUIRED_BLOOD_DEBT_AMOUNT = 2;
+    private static final int REQUIRED_DEBT_AMOUNT = 2;
 
-    private static final String BLOOD_DEBT_POWER_ID = DebtPower.POWER_ID;
-    private static final String CARD_CANT_PLAY_MESSAGE = "需要至少 2 层血债才能打出。";
+    private static final String DEBT_POWER_ID = DebtPower.POWER_ID;
+    private final String CARD_CANT_PLAY_MESSAGE = cardStrings.EXTENDED_DESCRIPTION[0];
 
     private static final CardStats STATS = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -34,9 +34,8 @@ public class HeavySmite extends BaseCard {
 
     public HeavySmite() {
         super(ID, STATS);
-        this.baseDamage = BASE_DAMAGE;
-        this.baseMagicNumber = REQUIRED_BLOOD_DEBT_AMOUNT;
-        this.magicNumber = this.baseMagicNumber;
+        setDamage(BASE_DAMAGE, UPGRADE_PLUS_DAMAGE);
+        setMagic(REQUIRED_DEBT_AMOUNT);
     }
 
     @Override
@@ -46,7 +45,7 @@ public class HeavySmite extends BaseCard {
             return false;
         }
 
-        int currentBloodDebt = getPowerAmount(p, BLOOD_DEBT_POWER_ID);
+        int currentBloodDebt = getPowerAmount(p, DEBT_POWER_ID);
         int requiredAmount = this.magicNumber;
 
         if (currentBloodDebt < requiredAmount) {
@@ -83,14 +82,5 @@ public class HeavySmite extends BaseCard {
             }
         }
         return 0;
-    }
-
-    @Override
-    public void upgrade() {
-        if (!this.upgraded) {
-            upgradeName();
-            upgradeDamage(UPGRADE_PLUS_DAMAGE);
-            initializeDescription();
-        }
     }
 }

@@ -35,6 +35,15 @@ public class PleaOfInnocence extends BaseCard {
         // 设置基础格挡与基础 MagicNumber（血债系数）
         setBlock(BASE_BLOCK, UPGRADE_BLOCK);
         setMagic(BASE_MAGIC, UPGRADE_MAGIC);
+
+        // 实时预览：基础格挡 + 血债加成（含敏捷等修正）
+        setCustomVar("TOTAL_BLOCK", VariableType.BLOCK, BASE_BLOCK, UPGRADE_BLOCK,
+                (c, m, base) -> base + getPlayerPowerAmount(DebtPower.POWER_ID) * c.magicNumber);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
     }
 
     @Override

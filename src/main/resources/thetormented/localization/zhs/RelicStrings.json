@@ -5,5 +5,94 @@
     "DESCRIPTIONS": [
       "Gain [E] at the start of your turn. [E] is an energy icon."
     ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "诅咒断剑",
+    "FLAVOR": "一把断裂的剑，仍渴求着他人的罪孽。",
+    "DESCRIPTIONS": [
+      "战斗开始时，随机升级 1 张打击和 1 张防御（仅限本场战斗）。 NL 每回合开始获得 #b",
+      " 点 ${modID}:原罪 。"
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "倒刺钩",
+    "FLAVOR": "一枚残忍的钩子，撕裂血肉时只会越陷越深。",
+    "DESCRIPTIONS": [
+      "每当你给予 ${modID}:流血 时，额外给予 #b1 点 ${modID}:流血 。"
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "狂乱酒杯",
+    "FLAVOR": "以纯粹的狂乱酿造的美酒，每一次举杯都终结一条性命。",
+    "DESCRIPTIONS": [
+      "每当非爪牙敌人死亡时，恢复 #b8 点生命。"
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "契约印章",
+    "FLAVOR": "以鲜血签署的契约，唯有纯净之人才配得到它的回报。",
+    "DESCRIPTIONS": [
+      "战斗结束时，若你没有任何 ${modID}:血债 ，获得 #b15 金币。"
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "复苏护符",
+    "FLAVOR": "一枚抚平每一道伤口的护符。",
+    "DESCRIPTIONS": [
+      "每次失去生命时，最多失去 #b18 点生命。"
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "石像手臂",
+    "FLAVOR": "古老的石像之臂，把每一次净化都化为守护。",
+    "DESCRIPTIONS": [
+      "每当你移除 #b1 层负面效果时，获得 #b1 点格挡。"
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "烧焦旗帜",
+    "FLAVOR": "一面破旧的旗帜，只为两手空空之人振作。",
+    "DESCRIPTIONS": [
+      "回合结束时，若你没有手牌，下回合开始多抽 #b2 张牌。"
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "英雄长剑",
+    "FLAVOR": "一把由救赎之誓锻造而成的长剑。",
+    "DESCRIPTIONS": [
+      "替换诅咒断剑。 NL 拾起时，升级牌组中的全部打击和防御。 NL 每回合开始获得 #b",
+      " 点 ${modID}:原罪 。"
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "沉重脚镣",
+    "FLAVOR": "沉重的束缚，亦赐予力量。",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E] 。 NL 每场战斗开始时，将 1 张 *纠缠 加入你的抽牌堆。"
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "鼓槌",
+    "FLAVOR": "鼓点起落之间，力量源源不绝。",
+    "DESCRIPTIONS": [
+      "每消耗 #b",
+      " 张牌，获得 [E] 。"
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "无悔钱币",
+    "FLAVOR": "一枚对每一次失足都既往不咎的钱币。",
+    "DESCRIPTIONS": [
+      "每当你进入商店时，获得 #b",
+      " 金币。"
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "黑石提灯",
+    "FLAVOR": "冰冷的火光，映照着每一次点燃的苦难。",
+    "DESCRIPTIONS": [
+      "每场战斗中，你第 1 次对敌人施加负面效果时，获得 [E] 。"
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "铁锤",
+    "FLAVOR": "在无尽战火的铁砧上锻造而成。",
+    "DESCRIPTIONS": [
+      "每当你打败精英敌人时，随机升级牌组中的 #b",
+      " 张牌。"
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "不灭火种",
+    "FLAVOR": "以厄运为薪的火焰，生生不息。",
+    "DESCRIPTIONS": [
+      "当你带有负面状态时，受到的伤害降低 #b25%。 NL 你对带有负面状态的敌人造成的伤害提高 #b25%。"
+    ]
   }
 }

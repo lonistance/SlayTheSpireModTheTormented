@@ -23,7 +23,7 @@ public class UnrighteousGuilt extends BaseCard {
     //but constants at the top of the file are easy to adjust.
     private static final int DAMAGE = 11;
     private static final int UPG_DAMAGE = 3;
-    private static final int SIN_GAIN = 3;
+    private static final int SIN_GAIN = 4;
 
     public UnrighteousGuilt() {
         super(ID, info);

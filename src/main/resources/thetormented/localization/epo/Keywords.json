@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Sango",
+    "NAMES": [
+      "sango",
+      "sangado"
+    ],
+    "DESCRIPTION": "Perdas vivon egale al sia Sango je la komenco de sia vico, tiam ?iu Sango estas forigita. Se sanganta esta?o prenas ne?irmitan atakdama?on, ?i gajnas #b1 Sango."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Peko",
+    "NAMES": [
+      "peko",
+      "pekoj"
+    ],
+    "DESCRIPTION": "?iu #b5 Peko, kiun vi havas, donas #b1 ${modID}:?uldo."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "?uldo",
+    "NAMES": [
+      "?uldo",
+      "?uldoj"
+    ],
+    "DESCRIPTION": "?iu stako da ?uldo igas vin preni #b10% pli da dama?o."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Limigo",
+    "NAMES": [
+      "limigo",
+      "limigoj"
+    ],
+    "DESCRIPTION": "Vi ne povas gajni [E] ?is vi forigas vian tutan ?uldon. Estas forigita je la fino de via vico."
+  }
+]

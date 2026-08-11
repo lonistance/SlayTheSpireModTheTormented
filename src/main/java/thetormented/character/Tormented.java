@@ -21,9 +21,11 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.relics.BurningBlood;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
+import thetormented.cards.basic.attack.Rebel;
 import thetormented.cards.basic.attack.StrikeTormented;
 import thetormented.cards.basic.skill.DefendTormented;
 import thetormented.cards.basic.skill.Forgive;
+import thetormented.relics.CursedBrokenBlade;
 
 import java.util.ArrayList;
 
@@ -145,12 +147,12 @@ public class Tormented extends CustomPlayer {
         retVal.add(StrikeTormented.ID);
         retVal.add(StrikeTormented.ID);
         retVal.add(StrikeTormented.ID);
+        retVal.add(Rebel.ID);
         retVal.add(DefendTormented.ID);
         retVal.add(DefendTormented.ID);
         retVal.add(DefendTormented.ID);
         retVal.add(DefendTormented.ID);
         retVal.add(Forgive.ID);
-        retVal.add(Neutralize.ID);
 
         return retVal;
     }
@@ -159,8 +161,7 @@ public class Tormented extends CustomPlayer {
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
         //IDs of starting relics. You can have multiple, but one is recommended.
-        retVal.add(BurningBlood.ID);
-
+        retVal.add(CursedBrokenBlade.ID);
         return retVal;
     }
 

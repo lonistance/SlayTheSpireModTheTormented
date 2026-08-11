@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Kuulan nimi",
+    "DESCRIPTION": [
+      "#yPassiivinen: Nosta vuorosi alussa #b",
+      " kortti.",
+      " korttia.",
+      " NL #yManaa: Tee #b",
+      " vauriota kaikille vihollisille."
+    ]
+  }
+}

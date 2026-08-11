@@ -30,14 +30,41 @@ public class Crush extends BaseCard {
     public Crush() {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
+
+        // 实时预览：获得格挡 = 目标敌人身上的流血层数
+        setCustomVar("TOTAL_BLOCK", VariableType.MAGIC, 0, 0, (c, m, base) -> getBleedAmount(m));
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
+    }
+
+    private int getBleedAmount(AbstractMonster m) {
+        if (m == null) {
+            return 0;
+        }
+        AbstractPower bleedPower = m.getPower(BleedPower.POWER_ID);
+        return bleedPower != null ? bleedPower.amount : 0;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractPower bleedPower = p.getPower(BleedPower.POWER_ID);
-        int gainBlock = bleedPower.amount;
+        // 1. 造成伤害
         addToBot(new DamageAction(m, new DamageInfo(p, damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SLASH_VERTICAL));
-        addToBot(new GainBlockAction(p, p, gainBlock));
+
+        // 2. 获取目标敌人身上的流血层数（必须检查是否为 null，防止怪物身上没有流血时崩溃）
+        int gainBlock = 0;
+        if (m != null) {
+            AbstractPower bleedPower = m.getPower(BleedPower.POWER_ID);
+            if (bleedPower != null) {
+                gainBlock = bleedPower.amount;
+            }
+        }
+        // 3. 获得等同于敌人流血层数的格挡
+        if (gainBlock > 0) {
+            addToBot(new GainBlockAction(p, p, gainBlock));
+        }
     }
 
     @Override

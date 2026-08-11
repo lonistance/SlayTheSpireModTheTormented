@@ -24,15 +24,15 @@ public class SacredLand extends BaseCard {
     // 2. 数值配置变量（便于后续调整平衡性）
     private static final int BLOCK_BASE = 6;
     private static final int BLOCK_UPGRADE = 3; // 升级后增加 3（总共 9）
-
     private static final int DRAW_AMOUNT = 2;   // 满足条件时抽 2 张牌
+    private static final int DRAW_UPGRADE = 1;
 
     public SacredLand() {
         super(ID, info);
         // 设置基础格挡与升级增加量
         setBlock(BLOCK_BASE, BLOCK_UPGRADE);
         // 将抽牌数存入 magicNumber
-        setMagic(DRAW_AMOUNT);
+        setMagic(DRAW_AMOUNT,DRAW_UPGRADE);
     }
 
     @Override

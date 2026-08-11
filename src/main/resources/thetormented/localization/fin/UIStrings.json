@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Tämä on",
+      "taulukko merkkijonoja."
+    ],
+    "EXTRA_TEXT": [
+      "Tämä on toinen",
+      "taulukko merkkijonoja."
+    ],
+    "TEXT_DICT": {
+      "This": "Sisältää merkkijonopareja, joita käytetään arvojen hakemiseen avainten perusteella.",
+      "This is a key": "Tämä on arvo."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Valitse kortit lisättäväksi käteesi ja tehtäväksi Aineettomiksi."
+    ]
+  }
+}

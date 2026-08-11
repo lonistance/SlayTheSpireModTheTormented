@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Jumalan veri",
+    "DESCRIPTIONS": [
+      "Lisää #b",
+      " ${modID}:Verenvuotoa viholliselle."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Kyynele",
+    "DESCRIPTIONS": [
+      "Pidä kätesi #b1 vuoron ajan."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Elvytysviini",
+    "DESCRIPTIONS": [
+      "Saa #b1 energiaa. NL Nosta #b2 korttia."
+    ]
+  }
+}

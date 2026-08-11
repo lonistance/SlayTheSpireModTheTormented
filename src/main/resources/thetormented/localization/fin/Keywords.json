@@ -1,0 +1,40 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Verenvuoto",
+    "NAMES": [
+      "verenvuoto",
+      "verenvuotoa",
+      "verenvuodon"
+    ],
+    "DESCRIPTION": "Menettää vuoronsa alussa HP:tä Verenvuodon kasausmäärän verran, poista sitten kaikki Verenvuoto. Kun verenvuodossa oleva olento kärsii suojaamatonta hyökkäysvauriota, se saa #b1 Verenvuotoa."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Synti",
+    "NAMES": [
+      "synti",
+      "syntiä"
+    ],
+    "DESCRIPTION": "Jokainen #b5 Synti antaa #b1 ${modID}:Velkaa."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Velka",
+    "NAMES": [
+      "velka",
+      "velkaa",
+      "velkaasi",
+      "velkasi"
+    ],
+    "DESCRIPTION": "Jokainen Velka-kasaus saa sinut kärsimään #b10% enemmän vauriota."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Rajoitus",
+    "NAMES": [
+      "rajoitus"
+    ],
+    "DESCRIPTION": "Et voi saada [E], ellet poista kaikkea Velkaasi. Poistetaan vuorosi lopussa."
+  }
+]

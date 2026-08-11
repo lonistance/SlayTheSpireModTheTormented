@@ -1,14 +1,14 @@
 package thetormented.cards.common.attack;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
-import thetormented.cards.special.statue.Misery;
+import thetormented.cards.special.status.Misery;
 import thetormented.character.Tormented;
 import thetormented.util.CardStats;
 
@@ -31,6 +31,7 @@ public class ArmSevering extends BaseCard {
         super(ID, info); //Pass the required information to the BaseCard constructor.
         setDamage(DAMAGE, UPG_DAMAGE); //Sets the card's damage and how much it changes when upgraded.
         setMagic(MISERY_ADD);
+        this.cardsToPreview = new Misery();
     }
 
     @Override

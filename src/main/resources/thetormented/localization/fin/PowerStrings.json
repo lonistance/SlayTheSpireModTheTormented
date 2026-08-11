@@ -1,0 +1,145 @@
+{
+  "${modID}:PowerID": {
+    "NAME": "Ylivertainen voima",
+    "DESCRIPTIONS": [
+      "Olet erittäin siisti ja vahva."
+    ]
+  }, "${modID}:BleedPower": {
+  "NAME": "Verenvuoto",
+  "DESCRIPTIONS": [
+    "Vuoronsa alussa menettää #b",
+    " HP, poista sitten kaikki Verenvuoto. Kun verenvuodossa oleva olento kärsii suojaamatonta hyökkäysvauriota, se saa #b1 Verenvuotoa."
+  ]
+  }, "${modID}:SinPower": {
+  "NAME": "Synti",
+  "DESCRIPTIONS": [
+    "Kun sinulla on #b5 Syntiä, saat ",
+    " ${modID}:Velkaa."
+  ]
+  }, "${modID}:DebtPower": {
+  "NAME": "Velka",
+  "DESCRIPTIONS": [
+    "Jokainen Velka saa #b10% enemmän vauriota. Kärsit ",
+    "% enemmän vauriota."
+  ]
+  }, "${modID}:LoseEnergyNextTurnPower": {
+  "NAME": "Menetät energian ensi vuorolla",
+  "DESCRIPTIONS": [
+    "Menetät [E] seuraavalla vuorollasi"
+  ]
+}, "${modID}:GainEnergyNextTurnPower": {
+  "NAME": "Saat energian ensi vuorolla",
+  "DESCRIPTIONS": [
+    "Saat [E] seuraavalla vuorollasi"
+  ]
+}, "${modID}:MercyPower": {
+  "NAME": "Armo",
+  "DESCRIPTIONS": [
+    "Velka ei aiheuta ylimääräistä vauriota tällä vuorolla"
+  ]
+},"${modID}:DeepWoundPower": {
+  "NAME": "Syvä haava",
+  "DESCRIPTIONS": [
+    "Vähentää tällä vuorolla vain 50% Verenvuotoa"
+  ]
+  }, "${modID}:ReliefPower": {
+  "NAME": "Helpotus",
+  "DESCRIPTIONS": [
+    "Kuluta vuorosi lopussa KAIKKI ",
+    " kädessäsi."
+  ]
+  }, "${modID}:ParryPower": {
+  "NAME": "Torjunta",
+  "DESCRIPTIONS": [
+    "Aina kun sinuun hyökätään, heijasta torjumasi vaurio takaisin hyökkääjään."
+  ]
+  }, "${modID}:RelentlessBleedPower": {
+  "NAME": "Säälimätön verenvuoto",
+  "DESCRIPTIONS": [
+    "Lisää jokaisen vuoron alussa #b",
+    " ${modID}:Verenvuotoa KAIKILLE vihollisille."
+  ]
+  }, "${modID}:GriefPower": {
+  "NAME": "Suru",
+  "DESCRIPTIONS": [
+    "Tällä vuorolla, kun nostat kortin, lisää #b",
+    " ${modID}:Verenvuotoa KAIKILLE vihollisille."
+  ]
+  }, "${modID}:DreadMemoryPower": {
+  "NAME": "Pelon muisto",
+  "DESCRIPTIONS": [
+    "Jos sait ${modID}:Velkaa tällä vuorolla, viholliset aiheuttavat #b",
+    "% vähemmän vauriota."
+  ]
+  }, "${modID}:ReconcileFatePower": {
+  "NAME": "Kohtalon sovitus",
+  "DESCRIPTIONS": [
+    "Aina kun luot tai kulutat *Kurjuus, saat #b",
+    " Suojaa."
+  ]
+  }, "${modID}:MangledFleshPower": {
+  "NAME": "Silvottu liha",
+  "DESCRIPTIONS": [
+    "Aina kun lisäät viholliselle 6 ${modID}:Verenvuotoa, aiheuta sille #b",
+    " vauriota."
+  ]
+  }, "${modID}:BloodThornsPower": {
+  "NAME": "Veripiikit",
+  "DESCRIPTIONS": [
+    "Aina kun vihollinen hyökkää sinua vastaan, lisää sille #b",
+    " ${modID}:Verenvuotoa."
+  ]
+  }, "${modID}:RedemptionPathPower": {
+  "NAME": "Lunastuksen polku",
+  "DESCRIPTIONS": [
+    "Aina kun poistat 1 ${modID}:Velkaa, nosta #b",
+    " korttia."
+  ]
+  }, "${modID}:IndignationPower": {
+  "NAME": "Närkästys",
+  "DESCRIPTIONS": [
+    "Seuraavien #b",
+    " vuoron ajan ensimmäinen ei-Hyökkäys-kortti, jonka pelaat joka vuoro, maksaa 0."
+  ]
+  }, "${modID}:HungeringBattleWillPower": {
+  "NAME": "Nälkäinen taistelutahto",
+  "DESCRIPTIONS": [
+    "Saat jokaisen vuoron alussa [E]. Jos mikään vihollinen ei kuollut vuorosi aikana, kärsit vuorosi lopussa 3 vauriota."
+  ]
+  }, "${modID}:ConcedePower": {
+  "NAME": "Alistuminen",
+  "DESCRIPTIONS": [
+    "Tämä vihollinen saa #b50% enemmän vauriota."
+  ]
+  }, "${modID}:JudgmentFormPower": {
+  "NAME": "Tuomion muoto",
+  "DESCRIPTIONS": [
+    "Aiheutat 50% enemmän vauriota vihollisille, joiden HP on alle ",
+    "% maksimista."
+  ]
+  }, "${modID}:SinAvatarPower": {
+  "NAME": "Synnin ruumiillistuma",
+  "DESCRIPTIONS": [
+    "Saat vuorosi lopussa #b",
+    " Suojaa sekä #b",
+    " Suojaa jokaista ${modID}:Velkaa kohden."
+  ]
+  }, "${modID}:BloodbathPower": {
+  "NAME": "Verikylpy",
+  "DESCRIPTIONS": [
+    "Ensimmäinen ",
+    " hyökkäyskortti joka vuoro lisää ${modID}:Verenvuotoa suojaamattoman vaurion verran."
+  ]
+  }, "${modID}:OverrigidPower": {
+  "NAME": "Ylijäykkä",
+  "DESCRIPTIONS": [
+    "Joka kerta kun pelaat hyökkäyskortin, se menettää pysyvästi ",
+    " vauriota lopputaistelun ajaksi."
+  ]
+  }, "${modID}:RestrictionPower": {
+  "NAME": "Rajoitus",
+  "DESCRIPTIONS": [
+    "Et voi saada [E]. Poistetaan vuorosi lopussa."
+  ]
+  }
+}

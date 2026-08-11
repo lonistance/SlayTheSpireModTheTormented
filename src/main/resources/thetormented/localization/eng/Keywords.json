@@ -1,31 +1,35 @@
 [
   {
-    "PROPER_NAME": "This is displayed in the tooltip.",
+    "ID": "bleed",
+    "PROPER_NAME": "Bleed",
     "NAMES": [
-      "these",
-      "are",
-      "detected",
-      "in",
-      "the",
-      "text"
+      "bleed"
     ],
-    "DESCRIPTION": "This is displayed in the tooltip. Spaces should not be used be avoided in NAMES, with the exception of multi-word keywords (see next entry)."
+    "DESCRIPTION": "At the start of its turn, lose HP equal to its Bleed stacks, then remove all Bleed. When a Bleeding creature takes unblocked attack damage, it gains #b1 Bleed."
   },
   {
-    "PROPER_NAME": "Multiword Keyword",
+    "ID": "sin",
+    "PROPER_NAME": "Sin",
     "NAMES": [
-      "multiword keyword",
-      "multiword_keyword",
-      "multiword_keywords"
+      "sin",
+      "sins"
     ],
-    "DESCRIPTION": "Make sure the first element in NAMES has no underscores. The rest should use _ in the place of spaces. In card text, you'll use the underscore versions."
+    "DESCRIPTION": "Every #b5 Sin you have grants #b1 Debt."
   },
   {
-    "PROPER_NAME": "Pink",
+    "ID": "debt",
+    "PROPER_NAME": "Debt",
     "NAMES": [
-      "pink"
+      "debt"
     ],
-    "DESCRIPTION": "Using the COLOR field, this keyword is colored pink instead of the normal keyword color.",
-    "COLOR": "fc83da"
+    "DESCRIPTION": "Each stack of Debt makes you take #b10% more damage."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Restriction",
+    "NAMES": [
+      "restriction"
+    ],
+    "DESCRIPTION": "You cannot gain [E] unless you fully remove all of your Debt. Removed at the end of your turn."
   }
 ]

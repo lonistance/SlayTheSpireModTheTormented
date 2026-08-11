@@ -10,7 +10,7 @@ import static thetormented.BasicMod.makeID;
 
 public class GainEnergyNextTurnPower extends BasePower {
     public static final String POWER_ID = makeID(GainEnergyNextTurnPower.class.getSimpleName());
-    private static final PowerType TYPE = PowerType.DEBUFF;
+    private static final PowerType TYPE = PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
     public GainEnergyNextTurnPower(AbstractCreature owner, int amount) {
@@ -19,7 +19,7 @@ public class GainEnergyNextTurnPower extends BasePower {
 
     @Override
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0];
     }
 
     @Override

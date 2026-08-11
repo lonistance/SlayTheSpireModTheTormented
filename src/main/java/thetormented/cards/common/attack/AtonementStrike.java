@@ -25,8 +25,8 @@ public class AtonementStrike extends BaseCard {
     );
 
     // 2. 卡牌数值配置变量
-    private static final int DAMAGE_BASE = 6;
-    private static final int DAMAGE_UPGRADE = 2; // 升级后增加 2（总共 8）
+    private static final int DAMAGE_BASE = 8;
+    private static final int DAMAGE_UPGRADE = 1; // 升级后增加 1（总共 9）
 
     private static final int DRAW_BASE = 2;
     private static final int DRAW_UPGRADE = 1; // 升级后增加 1（总共 3）
