@@ -172,20 +172,177 @@ Against the previous state of `main` (0.0.0), a full comparison shows:
 - README.md / README.zh-CN.md rewritten, bilingual CHANGELOG (this file), Localization spec,
   build & validation scripts committed to the repo.
 
-### 13. Notable Bug-Fix Highlights
+### 13. Bug-Fix Archive — Symptom · Root Cause · Fix · Verification
 
-- Upgraded card text not shown in collection preview / deck view / combat (stale rawDescription).
-- Pardon's upgraded description missing the "upgraded" wording in all 24 languages.
-- Overrigid dealt double-reduced damage (baseDamage + current damage both reduced).
-- Relapse kept 50% of Bleed (old leftover code) while claiming "not removed this turn".
-- Boiling applied Bleed to itself.
-- ExecutionForm (ex-JudgmentForm) upgrade was 25 → 25 — the upgrade did nothing.
-- RedemptionPath upgrade forced the cost back to 1.
-- Relic descriptions empty in-game (missing getUpdatedDescription override).
-- ChaosDirty preview mismatched the real damage (Artifact interaction).
-- UnceasingWar counted minion kills as permanent hits.
-- JudgmentFormPower display name desynced from the renamed card.
-- Crash (NPE) when a card had no test art while the playtester mode was active.
+Every entry below follows the same four-part structure, with the exact reproduction path and the
+code path that was wrong. All fixes were verified in-game against the deployed jar
+(`mods/thetormented.jar`), and the vanilla mechanisms quoted here were confirmed by
+decompiling the game's own bytecode (`javap` on `AbstractCard` / `SingleCardViewPopup` /
+`UnlockTracker`) — nothing was assumed.
+
+**#1 Upgraded card text not shown (part 1) — `initializeDescription()` parsed stale text**
+- **Symptom**: an upgraded card (e.g. Pardon) kept showing its *base* description in the
+  collection, in the card-view popup's upgrade preview, and in the deck view — but showed the
+  correct text in combat. Reproduce: open the collection → hover Pardon → toggle the upgrade
+  preview.
+- **Root cause**: `BaseCard.initializeDescription()` overrode the vanilla method but only
+  re-derived `rawDescription` inside the `isCardInHand()` branch; everywhere else it fell through
+  to `super.initializeDescription()`, which parses whatever `rawDescription` happened to hold
+  (stale base text). Worse, the line `this.rawDescription = base;` ran *after* the parse, so the
+  correct text was always written too late — the parse consumed the old value.
+- **Fix**: `rawDescription` is now unconditionally re-derived from `baseDescription()` (upgraded
+  → `UPGRADE_DESCRIPTION`, in-hand → plus the injected clause) **before** the parse; it is still
+  reset to the clean base string afterwards. One change, every context fixed (collection, popup,
+  deck, combat, campfire).
+
+**#2 Upgraded card text not shown (part 2) — nothing re-parses after `upgrade()`**
+- **Symptom**: even after fix #1, the popup's upgrade preview still rendered the base text —
+  the copy made by the popup was never re-parsed.
+- **Root cause** (two layers, both confirmed in bytecode): (a) vanilla `upgradeName()` does **not**
+  call `initializeDescription()` — it only bumps `timesUpgraded`, sets `upgraded`, appends "+" to
+  the name and calls `initializeTitle()`; (b) `SingleCardViewPopup.render()` builds the preview as
+  `card = card.makeStatEquivalentCopy(); card.upgrade(); card.displayUpgrades();` and then renders
+  the card's *parsed* `description` tokens — and the popup never calls `initializeDescription()`
+  anywhere. `makeStatEquivalentCopy()` only calls `upgrade()` `timesUpgraded` times, so an
+  un-upgraded card's copy got its description from `upgrade()` → `upgradeName()` → no re-parse.
+  Cards whose `upgrade()` overrides never call `super` (Pardon, Relapse, Taboo, DreadMemory,
+  Bloodstain…) skipped `BaseCard.upgrade()`'s re-parse entirely.
+- **Fix**: `BaseCard.upgradeName()` now forces `initializeDescription()` after `super` — a single
+  choke point that covers every card, because every custom `upgrade()` calls `upgradeName()`.
+  Verified: preview toggle, deck view of upgraded cards, in-combat and campfire upgrades all show
+  the upgraded text.
+
+**#3 Pardon's upgraded description incomplete in all 24 languages**
+- **Symptom**: Simplified Chinese showed "将所有手牌变化为随机牌…变化为随机能力牌" for the
+  upgraded version — the second sentence was missing "升级过的" (and the collection preview
+  claimed "打出 2 次").
+- **Root cause**: the localization data file's `UPGRADE_DESCRIPTION` second sentence had never
+  been updated for the new wording; an earlier automated batch also left spaces around `!M!`
+  ("打出 !M! 次后") and a `-1` magic upgrade that conflicted with the fixed 3-play rule.
+- **Fix**: all 24 language files re-synced in one scripted pass (upgraded sentence now ends
+  "…变化为随机升级过的能力牌", with `TrimEnd` guarding against double punctuation), `!M!` spacing
+  normalized in zhs/zht, and `Pardon.upgrade()` simplified to `upgradeName()` only (plays
+  requirement stays 3). Verified by previewing all 24 languages in the generated files.
+
+**#4 Beta-art toggle never appeared in the card view popup**
+- **Symptom**: no "test art" checkbox in the popup for any Tormented card.
+- **Root cause**: decompiled `SingleCardViewPopup.canToggleBetaArt()` =
+  `UnlockTracker.isAchievementUnlocked("THE_ENDING") || switch (card.color)` — RED → RUBY_PLUS,
+  GREEN → EMERALD_PLUS, BLUE → SAPPHIRE_PLUS, PURPLE → AMETHYST_PLUS, **default → false**. Mod
+  colors never qualify, so the toggle was unreachable unless the player had beaten the heart.
+- **Fix**: new `patches/BetaArtUnlockPatch.java` (prefix patch on `canToggleBetaArt`) short-circuits
+  to `SpireReturn.Return(true)`. Note: this MTS build (3.30.3) has no `SpirePrefix` class — the
+  existing `SpirePrefixPatch` spelling used by `RestrictionPower` was followed. Verified: toggle
+  appears and per-card art switches at render time.
+
+**#5 Crash (NPE) on cards without test art**
+- **Symptom**: game crashed on startup/card creation with
+  `NullPointerException at TextureLoader.loadTexture(124) ← getTextureNull(73) ←
+  BaseCard.refreshJokePortrait(197) ← <init> ← Misery`.
+- **Root cause**: `refreshJokePortrait()` unconditionally called `getTextureNull(testPath, false)`
+  even when `getCardTestTextureString()` returned null (Misery is a Status — there is no
+  `cards_test/status/Misery.png`), and `getTextureNull(null)` → `new Texture(null)` throws.
+- **Fix**: null-guard — when no test art exists, fall back to the card's normal portrait.
+  Verified: Misery and every other art-less card load without crashing; jar contents checked to
+  confirm the missing resource.
+
+**#6 Overrigid reduced damage twice**
+- **Symptom**: attacking under Overrigid (过度僵硬) dealt less damage than expected — the penalty
+  seemed applied twice.
+- **Root cause**: `OverrigidPower.onAfterCardPlayed()` did both
+  `card.baseDamage = max(0, baseDamage - amount)` **and**
+  `card.damage = max(0, damage - amount)` — the *current turn's* damage (already derived from
+  baseDamage) got reduced a second time.
+- **Fix**: keep only the permanent `baseDamage` reduction; the current `damage` field follows
+  automatically. Verified: in-combat damage matches `baseDamage − penalty`.
+
+**#7 "Bleed not removed" cards still lost half their Bleed (Relapse / DeepWound)**
+- **Symptom**: after playing Relapse (血瘾) / applying DeepWound (旧伤复发), the enemy still lost
+  50% of its Bleed at turn start — contradicting the card text.
+- **Root cause**: `BleedPower.atStartOfTurn()` still carried the old "keep 50%" rule in its
+  DeepWound branch (`ReducePowerAction` of `ceil(amount*0.5)`), left over from an earlier
+  design; the mechanic had since changed to "Bleed is not removed this turn". The no-DeepWound
+  branch removed **all** Bleed, which was also out of date.
+- **Fix**: one coherent rule — without DeepWound remove exactly `100 − BLEED_RETAIN_PERCENT`
+  (50%) per turn; with DeepWound remove nothing. New constant `BLEED_RETAIN_PERCENT = 50`
+  (tunable). Verified: Bleed stacks stay put under DeepWound, halve otherwise.
+
+**#8 Boiling applied Bleed to itself**
+- **Symptom**: playing Boiling (沸腾) gave the *player* Bleed.
+- **Root cause**: in `use()`, the card is still in the hand; the exhaustion sweep
+  (`c.type != CardType.ATTACK`) caught the card itself — a Skill — so Boiling exhausted itself and
+  counted itself in its own multiplier.
+- **Fix**: exclude self from the exhaustion target list (and, as a follow-up rework, Bleed now
+  lands on a *random enemy* per exhausted card instead of all enemies). Verified: no self-Bleed,
+  no self-exhaust.
+
+**#9 ExecutionForm's upgrade did nothing (25 → 25)**
+- **Symptom**: upgrading ExecutionForm (ex-JudgmentForm) changed nothing.
+- **Root cause**: the constants literally read `BASE_THRESHOLD = 25; UPG_THRESHOLD = 25;`
+  with the comment `// 25% -> 50%` — the design intent (50) was never written into the constant,
+  and the "upgrade" applied 25 again.
+- **Fix**: base 50, upgraded 75. Verified: upgraded card applies 75% of remaining HP as damage
+  at the threshold.
+
+**#10 RedemptionPath's 0-cost upgrade bounced back to 1**
+- **Symptom**: after upgrading, RedemptionPath (救赎之道) showed 1 cost again.
+- **Root cause**: the cost reduction was hand-rolled inside `upgrade()`, but
+  `BaseCard.upgrade()`'s cost branch (when `isCostModified && cost < baseCost`) recomputes the
+  cost as `cost + (costUpgrade − baseCost)`, overwriting the manual 0-cost back to 1.
+- **Fix**: declare the intent instead — `setCostUpgrade(0)` — so the cost branch adjusts from
+  `baseCost` and the 0-cost sticks, even when the cost was modified by external effects.
+  Verified: stays 0 after upgrade, including with bottle/relic cost modifiers.
+
+**#11 Relic descriptions empty in-game**
+- **Symptom**: BlackstoneLantern (黑石提灯) and HeavyFetters (沉重脚镣) showed no description.
+- **Root cause**: vanilla `AbstractRelic.getUpdatedDescription()` returns `""` by default and
+  `updateDescription()` is empty — the description is assigned exactly once, in the constructor.
+  Both relics simply never overrode `getUpdatedDescription()`.
+- **Fix**: override it to return `DESCRIPTIONS[0]`. Verified: both relics display their text.
+
+**#12 ChaosDirty — upgrade numbers never took effect, and the preview lied**
+- **Symptom**: (a) the upgraded card kept the base damage and Debt bonus (text promised 7 / +4);
+  (b) the hand preview showed a different total than the actual hit.
+- **Root cause**: (a) the upgrade parameters were never wired into the preview path —
+  `applyPowers()`/`calculateCardDamage()` temporarily add `getDebtDamageBonus()` and restore the
+  base afterwards, so a missing `damageUpgrade`/`magicUpgrade` silently vanished; (b) the preview
+  counted only the *current* Debt, ignoring that this play first converts Sin → Debt, and behaved
+  differently under Artifact.
+- **Fix**: real upgrade values (damage 6 → 7, Debt bonus 3 → 4) and a preview that mirrors actual
+  resolution (with/without Artifact). Verified: preview equals the damage dealt.
+
+**#13 UnceasingWar counted minion kills as permanent hits**
+- **Symptom**: killing a minion (e.g. Gremlin Leader's adds) permanently increased UnceasingWar's
+  (无休战火) bonus-hit counter.
+- **Root cause**: the kill check counted every `isDeadOrEscaped()` target regardless of the
+  `MinionPower` minions carry.
+- **Fix**: `UnceasingWarKillAction` takes a `countKill` flag; the card passes
+  `!m.isDeadOrEscaped() && !m.hasPower(MinionPower)` and only enemies alive when the card was
+  played are eligible. Verified: minion kills no longer accumulate.
+
+**#14 Startup crash: "Expected BEGIN_ARRAY but was STRING"**
+- **Symptom**: the game refused to start after a localization round.
+- **Root cause**: `HungeringBattleWillPower.DESCRIPTIONS` was written as a plain string; basemod
+  requires the array form and the JSON parser aborted.
+- **Fix**: reverted to the array form, and the validation script now **rejects** string-typed
+  `DESCRIPTIONS` fields so the mistake can't recur. Verified: clean boot + validator catches the
+  bad shape.
+
+**#15 Small text/display fixes**
+- "状态 牌" word-split in Simplified/Traditional Chinese (5 cards affected) — zhs/zht line-break
+  parser split the keyword; fixed the wording so the term stays intact.
+- Odyssey's Simplified Chinese description showed "1 Sin" instead of 3.
+- JudgmentFormPower's display name desynced after the card rename → ExecutionFormPower.
+- German FaceDanger was missing its upgraded description entirely.
+- All touched card texts no longer end with a period (keyword-recognition robustness).
+
+**#16 Triggered-Bleed settlement unified (BloodFeud)**
+- **Symptom**: BloodFeud (血仇) dealt an opaque amount of damage ("trigger Bleed N times") that
+  was hard to reason about and hard to tune.
+- **Root cause**: the action looped a full-Bleed HP-loss hit `ticks` times — the "times" model
+  conflicted with the new 50%-retention Bleed economy.
+- **Fix**: `TriggerBleedAction` now takes a `percent` and deals `amount * percent / 100` once
+  (BloodFeud: 75%, upgraded 150%), guarded by `> 0`. Verified: damage matches the stated percent.
 
 ---
 

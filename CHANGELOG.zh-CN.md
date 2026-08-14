@@ -158,20 +158,147 @@
 - README.md / README.zh-CN.md 重写；双语 CHANGELOG（本文件）；本地化规范；
   构建与校验脚本已入库。
 
-### 13. 重点 Bug 修复清单
+### 13. Bug 修复档案——现象 · 根因 · 修复 · 验证
 
-- 升级后的卡牌文本在图鉴预览/牌组/战斗中不显示（陈旧 rawDescription）。
-- 赦免的升级描述在 24 种语言中缺失"升级过的"措辞。
-- 过度僵硬造成双重伤害削减（baseDamage 与当前伤害同时被减）。
-- 血瘾（Relapse）残留旧"保留 50% 流血"代码，与"本回合不移除"文案不符。
-- 沸腾给自己施加流血。
-- 处刑形态（原审判形态）升级 25 → 25——升级完全无收益。
-- 救赎之道升级后费用被顶回 1。
-- 遗物描述在游戏内为空（缺少 getUpdatedDescription 覆写）。
-- 污浊之乱伤害预览与实际结算不符（人工制品交互）。
-- 无休战火把击杀爪牙计入永久段数。
-- 审判形态能力名与改名后的卡牌不同步。
-- 测试画风开启时，无测试图的卡牌（如苦痛状态牌）NPE 崩溃。
+每条均按四段式撰写，附精确复现路径与出错的代码位置。所有修复都对照已部署的
+`mods/thetormented.jar` 在游戏内验证；文中引用的原版机制均通过反编译原版字节码
+（`javap` 反汇编 `AbstractCard` / `SingleCardViewPopup` / `UnlockTracker`）确认，无一猜测。
+
+**#1 升级后的卡牌文本不显示（上）——`initializeDescription()` 解析的是陈旧文本**
+- **现象**：升级后的卡牌（如赦免）在图鉴、弹窗升级预览、牌组视图中仍显示**基础版**描述，
+  只有战斗中显示正确。复现：图鉴 → 悬停赦免 → 切换升级预览。
+- **根因**：`BaseCard.initializeDescription()` 覆写只在 `isCardInHand()` 分支内重算
+  `rawDescription`；其余场景直接落进 `super.initializeDescription()`，解析的是 `rawDescription`
+  里残留的旧文本。更要命的是 `this.rawDescription = base;` 写在**解析之后**——正确文本永远晚到一步。
+- **修复**：解析前无条件按 `baseDescription()` 重算 `rawDescription`（升级态取
+  `UPGRADE_DESCRIPTION`，手牌中再叠加注入段），解析后再重置回纯净基础文本。一处修改，
+  图鉴/弹窗/牌组/战斗/篝火全场景生效。
+
+**#2 升级后的卡牌文本不显示（下）——升级后从来没人重新解析**
+- **现象**：修完 #1 后，弹窗升级预览仍显示基础文本——弹窗复制的卡牌从未被重新解析。
+- **根因**（两层，均经字节码确认）：(a) 原版 `upgradeName()` **不调用** `initializeDescription()`——
+  它只做 `timesUpgraded++`、`upgraded = true`、名字加 "+"、`initializeTitle()`；(b)
+  `SingleCardViewPopup.render()` 的预览流程是 `card = card.makeStatEquivalentCopy();
+  card.upgrade(); card.displayUpgrades();`，随后直接渲染卡牌**已解析的** `description` token，
+  而整个弹窗类里根本没有任何 `initializeDescription()` 调用；`makeStatEquivalentCopy()` 只在
+  `timesUpgraded > 0` 时循环调 `upgrade()`，未升级卡的副本全靠 `upgrade() → upgradeName()`，
+  于是从不重解析。此外，覆写了 `upgrade()` 且**不调 super** 的卡（赦免、血瘾、禁忌、恐惧记忆、
+  血渍…）连 `BaseCard.upgrade()` 尾部的重解析也一并绕过了。
+- **修复**：`BaseCard.upgradeName()` 覆写——`super` 之后强制 `initializeDescription()`。
+  由于所有自定义 `upgrade()` 都调用 `upgradeName()`，这一处兜底覆盖全部卡牌。
+  验证：预览开关、牌组里的升级卡、战斗内与篝火升级均显示升级文本。
+
+**#3 赦免升级描述在 24 种语言中不完整**
+- **现象**：简体中文升级版仍是"将所有手牌变化为随机牌…变化为随机能力牌"——第二句漏译
+  "升级过的"；图鉴预览还显示过"打出 2 次"。
+- **根因**：本地化数据里 `UPGRADE_DESCRIPTION` 第二句从未按新措辞更新；早前一次批量处理还在
+  `!M!` 两侧留了空格（"打出 !M! 次后"），`-1` 的魔法值升级也与"固定 3 次"规则冲突。
+- **修复**：一次脚本化批量修复 24 个语言文件（升级句改为"…变化为随机升级过的能力牌"，
+  `TrimEnd` 防双标点）；zhs/zht 去掉 `!M!` 空格；`Pardon.upgrade()` 简化为只 `upgradeName()`
+  （3 次触发条件不变）。验证：24 语言生成文件逐一预览核对。
+
+**#4 卡牌弹窗的 Beta 画风开关永远不出现**
+- **现象**：本模组任何卡牌都没有"测试画风"勾选框。
+- **根因**：反编译 `SingleCardViewPopup.canToggleBetaArt()` =
+  `UnlockTracker.isAchievementUnlocked("THE_ENDING") || switch (card.color)`——
+  RED→RUBY_PLUS、GREEN→EMERALD_PLUS、BLUE→SAPPHIRE_PLUS、PURPLE→AMETHYST_PLUS、
+  **default→false**。模组色卡永远不满足条件；除非通关真结局，否则原版四色都不解锁。
+- **修复**：新增 `patches/BetaArtUnlockPatch.java`（对 `canToggleBetaArt` 前缀注入）
+  直接 `SpireReturn.Return(true)`。注意：本 MTS 3.30.3 没有 `SpirePrefix` 类，采用
+  `RestrictionPower` 已有的 `SpirePrefixPatch` 写法。验证：勾选框出现，逐卡切换即时生效。
+
+**#5 无测试画风的卡牌直接 NPE 崩溃**
+- **现象**：进游戏/生成卡牌即崩溃，
+  `NullPointerException at TextureLoader.loadTexture(124) ← getTextureNull(73) ←
+  BaseCard.refreshJokePortrait(197) ← <init> ← Misery`。
+- **根因**：`refreshJokePortrait()` 无条件对 `getCardTestTextureString()` 的结果调
+  `getTextureNull`；苦痛（状态牌）没有 `cards_test/status/Misery.png`，路径为 null →
+  `getTextureNull(null)` → `new Texture(null)` 抛异常。
+- **修复**：null 守卫——无测试图时回退正常卡图。验证：苦痛等无图卡正常加载；
+  抽查 jar 内确实不存在该资源。
+
+**#6 过度僵硬的惩罚被扣两次**
+- **现象**：挂着过度僵硬（Overrigid）打攻击牌，伤害比预期低——惩罚好像算了两次。
+- **根因**：`OverrigidPower.onAfterCardPlayed()` 同时执行
+  `card.baseDamage = max(0, baseDamage - amount)` **和**
+  `card.damage = max(0, damage - amount)`——当前回合的伤害（由 baseDamage 推导而来）
+  被二次削减。
+- **修复**：只保留永久性的 `baseDamage` 削减，`damage` 字段自动跟随。
+  验证：战斗内伤害 = baseDamage − 惩罚。
+
+**#7 血瘾/旧伤复发后流血仍被移除一半**
+- **现象**：对敌人打出血瘾（Relapse）/施加旧伤复发（DeepWound）后，文案说"本回合流血不移除"，
+  实际回合开始时仍被移除 50%。
+- **根因**：`BleedPower.atStartOfTurn()` 的 DeepWound 分支还残留早期"保留 50%"规则
+  （`ReducePowerAction` 减 `ceil(amount*0.5)`），机制早已改为"完全不移除"却从未更新；
+  而无 DeepWound 的分支移除**全部**流血，同样过时。
+- **修复**：统一规则——无旧伤复发：每回合恰好移除 `100 − BLEED_RETAIN_PERCENT`（50%）；
+  有旧伤复发：完全不移除。新增常量 `BLEED_RETAIN_PERCENT = 50`（便于后续调参）。
+  验证：有旧伤复发时层数纹丝不动，无时每回合减半。
+
+**#8 沸腾给自己叠流血**
+- **现象**：打出沸腾（Boiling）后**玩家自己**多了流血。
+- **根因**：`use()` 执行时卡牌还在手牌；消耗扫描条件（`c.type != CardType.ATTACK`）把自身
+  （技能牌）也扫了进去——沸腾既消耗了自己，又把自己计入了倍率。
+- **修复**：从消耗目标中排除自身（后续顺带重做：改为每消耗一张牌对**随机一个敌人**施加流血）。
+  验证：不再自伤、不再自耗。
+
+**#9 处刑形态升级完全无收益（25 → 25）**
+- **现象**：升级处刑形态（原审判形态）什么都没有变。
+- **根因**：常量原样写着 `BASE_THRESHOLD = 25; UPG_THRESHOLD = 25;`，旁边注释
+  `// 25% -> 50%`——设计意图（50）从未写进常量，升级又施加了 25。
+- **修复**：基础 50、升级 75。验证：升级后按剩余生命 75% 触发斩杀。
+
+**#10 救赎之道升级后的 0 费被顶回 1**
+- **现象**：升级救赎之道（RedemptionPath）后费用又变回 1。
+- **根因**：减费写在 `upgrade()` 里手工处理，而 `BaseCard.upgrade()` 的费用分支（当
+  `isCostModified && cost < baseCost` 时）会按 `cost + (costUpgrade − baseCost)` 重算费用，
+  把手动减出的 0 覆盖回 1。
+- **修复**：改为声明式 `setCostUpgrade(0)`——费用分支从 `baseCost` 出发调整，0 费稳定保留，
+  即使费用被外部效果（瓶装/遗物改费）修改过也不回弹。验证：升级后保持 0 费。
+
+**#11 遗物描述在游戏内为空**
+- **现象**：黑石提灯（BlackstoneLantern）、沉重脚镣（HeavyFetters）没有任何描述文字。
+- **根因**：原版 `AbstractRelic.getUpdatedDescription()` 默认返回空串、`updateDescription()`
+  是空方法——描述只在构造函数里赋一次值。这两个遗物忘了覆写。
+- **修复**：覆写返回 `DESCRIPTIONS[0]`。验证：两个遗物描述正常显示。
+
+**#12 污浊之乱——升级数值不生效，且预览与结算不符**
+- **现象**：(a) 升级后的污浊之乱（ChaosDirty）伤害与血债加成仍是基础值（文案写 7 / +4）；
+  (b) 手牌预览总伤害与实际打出的伤害不一致。
+- **根因**：(a) 升级参数没有接入预览链路——`applyPowers()`/`calculateCardDamage()` 临时加
+  `getDebtDamageBonus()` 再还原 base，缺了 `damageUpgrade`/`magicUpgrade` 就悄悄消失；
+  (b) 预览只算**当前**血债，没有计入本回合原罪→血债的转换，且人工制品阻挡时行为不同。
+- **修复**：补齐真实升级数值（伤害 6 → 7，血债加成 3 → 4），预览按实际结算口径重写
+  （区分有无人工制品）。验证：预览 = 实际伤害。
+
+**#13 无休战火把击杀爪牙算进永久段数**
+- **现象**：击杀爪牙（如地精领袖的小怪）也会永久增加无休战火（UnceasingWar）的段数。
+- **根因**：击杀检测对一切 `isDeadOrEscaped()` 目标计数，没排除带 `MinionPower` 的爪牙。
+- **修复**：`UnceasingWarKillAction` 增加 `countKill` 标志；卡牌传入
+  `!m.isDeadOrEscaped() && !m.hasPower(MinionPower)`，且仅当打出时目标仍存活才计数。
+  验证：击杀爪牙不再累积段数。
+
+**#14 启动崩溃："Expected BEGIN_ARRAY but was STRING"**
+- **现象**：某轮本地化后游戏无法启动。
+- **根因**：`HungeringBattleWillPower.DESCRIPTIONS` 被写成了纯字符串；basemod 要求数组形式，
+  JSON 解析直接中止。
+- **修复**：还原为数组形式；校验脚本新增规则**拒绝**字符串型 `DESCRIPTIONS`，杜绝复发。
+  验证：正常启动；校验器能抓出错误形态。
+
+**#15 小型文本/显示修复**
+- 简繁中文"状态 牌"被分词拆开（波及 5 张卡）：换行分词器把关键词拆断，调整措辞使词组完整。
+- 漂泊（Odyssey）简中描述显示"1 原罪"而非 3。
+- 审判形态能力名在卡牌改名后不同步 → 同步为处刑形态（ExecutionFormPower）。
+- 德语不避艰险（FaceDanger）整体缺失升级描述。
+- 涉及文案的卡牌描述结尾不再带句号（关键词识别健壮性）。
+
+**#16 血仇的触发流血结算口径统一**
+- **现象**：血仇（BloodFeud）"触发流血 N 次"的伤害量不直观，且难以调参。
+- **根因**：动作类循环 `ticks` 次完整流血值的 HP_LOSS 伤害——"次数"模型与新的
+  "每回合保留 50%"流血经济不协调。
+- **修复**：`TriggerBleedAction` 改为按 `percent` 一次性结算 `amount * percent / 100`
+  （血仇 75%，升级 150%），并加 `> 0` 守卫。验证：伤害与描述百分比一致。
 
 ---
 
