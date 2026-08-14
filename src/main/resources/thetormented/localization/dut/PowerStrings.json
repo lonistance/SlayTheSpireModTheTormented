@@ -1,145 +1,170 @@
 {
-  "${modID}:PowerID": {
-    "NAME": "Ultieme kracht",
-    "DESCRIPTIONS": [
-      "Je bent heel cool en sterk."
-    ]
-  }, "${modID}:BleedPower": {
-  "NAME": "Bloeden",
-  "DESCRIPTIONS": [
-    "Verliest aan het begin van zijn beurt #b",
-    " LP, dan wordt al het Bloeden verwijderd. Als een bloederig wezen ongeBlokkeerde aanvalsschade oploopt, krijgt het #b1 Bloeden."
-  ]
-  }, "${modID}:SinPower": {
-  "NAME": "Zonde",
-  "DESCRIPTIONS": [
-    "Als je #b5 Zonde hebt, krijg je ",
-    " ${modID}:Schuld."
-  ]
-  }, "${modID}:DebtPower": {
-  "NAME": "Schuld",
-  "DESCRIPTIONS": [
-    "Elke Stapel Schuld laat je #b10% meer schade oplopen. Je loopt ",
-    "% meer schade op."
-  ]
-  }, "${modID}:LoseEnergyNextTurnPower": {
-  "NAME": "Energieverlies volgende beurt",
-  "DESCRIPTIONS": [
-    "In de volgende beurt verlies je [E]"
-  ]
-}, "${modID}:GainEnergyNextTurnPower": {
-  "NAME": "Energiewinst volgende beurt",
-  "DESCRIPTIONS": [
-    "In de volgende beurt krijg je [E]"
-  ]
-}, "${modID}:MercyPower": {
-  "NAME": "Genade",
-  "DESCRIPTIONS": [
-    "Schuld veroorzaakt deze beurt geen extra schade"
-  ]
-},"${modID}:DeepWoundPower": {
-  "NAME": "Diepe Wond",
-  "DESCRIPTIONS": [
-    "Bloeden wordt deze beurt slechts met 50% verminderd"
-  ]
-  }, "${modID}:ReliefPower": {
-  "NAME": "Verlichting",
-  "DESCRIPTIONS": [
-    "Put aan het einde van je beurt ALLE ",
-    " in je hand uit."
-  ]
-  }, "${modID}:ParryPower": {
-  "NAME": "Pareren",
-  "DESCRIPTIONS": [
-    "Telkens als je wordt aangevallen, reflecteer de afgeweerde schade naar de aanvaller."
-  ]
-  }, "${modID}:RelentlessBleedPower": {
-  "NAME": "Onophoudelijk Bloeden",
-  "DESCRIPTIONS": [
-    "Pas aan het begin van elke beurt op ALLE vijanden #b",
-    " ${modID}:Bloeden toe."
-  ]
-  }, "${modID}:GriefPower": {
-  "NAME": "Verdriet",
-  "DESCRIPTIONS": [
-    "Deze beurt: Telkens als je een kaart trekt, pas op ALLE vijanden #b",
-    " ${modID}:Bloeden toe."
-  ]
-  }, "${modID}:DreadMemoryPower": {
-  "NAME": "Vreselijke Herinnering",
-  "DESCRIPTIONS": [
-    "Als je deze beurt ${modID}:Schuld hebt gekregen, veroorzaken vijanden #b",
-    "% minder schade."
-  ]
-  }, "${modID}:ReconcileFatePower": {
-  "NAME": "Lot Verzoenen",
-  "DESCRIPTIONS": [
-    "Telkens als je een *Ellende maakt of Uitput, krijg #b",
-    " Blok."
-  ]
-  }, "${modID}:MangledFleshPower": {
-  "NAME": "Verminkt Vlees",
-  "DESCRIPTIONS": [
-    "Telkens als je een vijand 6 ${modID}:Bloeden toebrengt, richt #b",
-    " schade aan hem aan."
-  ]
-  }, "${modID}:BloodThornsPower": {
-  "NAME": "Bloeddoorns",
-  "DESCRIPTIONS": [
-    "Telkens als een vijand je aanvalt, pas #b",
-    " ${modID}:Bloeden op hem toe."
-  ]
-  }, "${modID}:RedemptionPathPower": {
-  "NAME": "Pad van Verlossing",
-  "DESCRIPTIONS": [
-    "Telkens als je 1 ${modID}:Schuld verwijdert, trek #b",
-    " kaarten."
-  ]
-  }, "${modID}:IndignationPower": {
-  "NAME": "Verontwaardiging",
-  "DESCRIPTIONS": [
-    "In de volgende #b",
-    " beurten kost de eerste niet-Aanvalskaart die je per beurt speelt 0."
-  ]
-  }, "${modID}:HungeringBattleWillPower": {
-  "NAME": "Hongerige Strijdwil",
-  "DESCRIPTIONS": [
-    "Krijg aan het begin van elke beurt [E]. Verlies aan het einde van je beurt 3 LP als er deze beurt geen vijand is gedood."
-  ]
-  }, "${modID}:ConcedePower": {
-  "NAME": "Toegeven",
-  "DESCRIPTIONS": [
-    "Deze vijand loopt #b50% meer schade op."
-  ]
-  }, "${modID}:JudgmentFormPower": {
-  "NAME": "Vorm van het Oordeel",
-  "DESCRIPTIONS": [
-    "Je richt 50% meer schade aan op vijanden onder ",
-    "% van hun Max LP."
-  ]
-  }, "${modID}:SinAvatarPower": {
-  "NAME": "Avatar van de Zonde",
-  "DESCRIPTIONS": [
-    "Krijg aan het einde van je beurt #b",
-    " Blok, plus #b",
-    " Blok voor elke Stapel ${modID}:Schuld."
-  ]
-  }, "${modID}:BloodbathPower": {
-  "NAME": "Bloedbad",
-  "DESCRIPTIONS": [
-    "De eerste ",
-    " in elke beurt gespeelde Aanvalskaarten passen ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade."
-  ]
-  }, "${modID}:OverrigidPower": {
-  "NAME": "Overstijf",
-  "DESCRIPTIONS": [
-    "Elke keer dat je een Aanvalskaart speelt, verliest die permanent ",
-    " schade voor de rest van het gevecht."
-  ]
-  }, "${modID}:RestrictionPower": {
-  "NAME": "Beperking",
-  "DESCRIPTIONS": [
-    "Je kunt geen [E] krijgen. Wordt aan het einde van je beurt verwijderd."
-  ]
-  }
+    "${modID}:PowerID":  {
+                                 "NAME":  "Ultieme kracht",
+                                 "DESCRIPTIONS":  [
+                                                      "Je bent heel cool en sterk."
+                                                  ]
+                             },
+    "${modID}:BleedPower":  {
+                                    "NAME":  "Bloeden",
+                                    "DESCRIPTIONS":  [
+                                                         "Verliest aan het begin van zijn beurt #b",
+                                                         " LP, dan wordt al het Bloeden verwijderd. Als een bloederig wezen ongeBlokkeerde aanvalsschade oploopt, krijgt het #b1 Bloeden."
+                                                     ]
+                                },
+    "${modID}:SinPower":  {
+                                  "NAME":  "Zonde",
+                                  "DESCRIPTIONS":  [
+                                                       "Als je #b5 Zonde hebt, krijg je ",
+                                                       " ${modID}:Schuld."
+                                                   ]
+                              },
+    "${modID}:DebtPower":  {
+                                   "NAME":  "Schuld",
+                                   "DESCRIPTIONS":  [
+                                                        "Elke Stapel Schuld laat je #b10% meer schade oplopen. Je loopt ",
+                                                        "% meer schade op. NL Wanneer een Schuld-toepassing wordt geblokkeerd door een Artefact, verlies je ",
+                                                        " Zonde voor elke geblokte Schuld."
+                                                    ]
+                               },
+    "${modID}:LoseEnergyNextTurnPower":  {
+                                                 "NAME":  "Energieverlies volgende beurt",
+                                                 "DESCRIPTIONS":  [
+                                                                      "In de volgende beurt verlies je [E]"
+                                                                  ]
+                                             },
+    "${modID}:GainEnergyNextTurnPower":  {
+                                                 "NAME":  "Energiewinst volgende beurt",
+                                                 "DESCRIPTIONS":  [
+                                                                      "In de volgende beurt krijg je [E]"
+                                                                  ]
+                                             },
+    "${modID}:MercyPower":  {
+                                    "NAME":  "Genade",
+                                    "DESCRIPTIONS":  [
+                                                         "Schuld veroorzaakt deze beurt geen extra schade"
+                                                     ]
+                                },
+    "${modID}:DeepWoundPower":  {
+                                        "NAME":  "Diepe Wond",
+                                        "DESCRIPTIONS":  [
+                                                             "Bloeden wordt niet verwijderd aan het begin van zijn beurt."
+                                                         ]
+                                    },
+    "${modID}:ReliefPower":  {
+                                     "NAME":  "Verlichting",
+                                     "DESCRIPTIONS":  [
+                                                          "Put aan het einde van je beurt ALLE ",
+                                                          " in je hand uit."
+                                                      ]
+                                 },
+    "${modID}:ParryPower":  {
+                                    "NAME":  "Pareren",
+                                    "DESCRIPTIONS":  [
+                                                         "Telkens als je wordt aangevallen, reflecteer de afgeweerde schade naar de aanvaller."
+                                                     ]
+                                },
+    "${modID}:RelentlessBleedPower":  {
+                                              "NAME":  "Onophoudelijk Bloeden",
+                                              "DESCRIPTIONS":  [
+                                                                   "Pas aan het begin van elke beurt op ALLE vijanden #b",
+                                                                   " ${modID}:Bloeden toe."
+                                                               ]
+                                          },
+    "${modID}:GriefPower":  {
+                                    "NAME":  "Verdriet",
+                                    "DESCRIPTIONS":  [
+                                                         "Deze beurt: Telkens als je een kaart trekt, pas op ALLE vijanden #b",
+                                                         " ${modID}:Bloeden toe."
+                                                     ]
+                                },
+    "${modID}:DreadMemoryPower":  {
+                                          "NAME":  "Vreselijke Herinnering",
+                                          "DESCRIPTIONS":  [
+                                                               "Als je deze beurt ${modID}:Schuld hebt gekregen, veroorzaken vijanden #b",
+                                                               "% minder schade."
+                                                           ]
+                                      },
+    "${modID}:ReconcileFatePower":  {
+                                            "NAME":  "Lot Verzoenen",
+                                            "DESCRIPTIONS":  [
+                                                                 "Telkens als je een *Ellende maakt of Uitput, krijg #b",
+                                                                 " Blok."
+                                                             ]
+                                        },
+    "${modID}:MangledFleshPower":  {
+                                           "NAME":  "Verminkt Vlees",
+                                           "DESCRIPTIONS":  [
+                                                                "Telkens als je een vijand 6 ${modID}:Bloeden toebrengt, richt #b",
+                                                                " schade aan ALLE vijanden aan."
+                                                            ]
+                                       },
+    "${modID}:BloodThornsPower":  {
+                                          "NAME":  "Bloeddoorns",
+                                          "DESCRIPTIONS":  [
+                                                               "Telkens als een vijand je aanvalt, pas #b",
+                                                               " ${modID}:Bloeden op hem toe."
+                                                           ]
+                                      },
+    "${modID}:RedemptionPathPower":  {
+                                             "NAME":  "Pad van Verlossing",
+                                             "DESCRIPTIONS":  [
+                                                                  "Telkens als je 1 ${modID}:Schuld verwijdert, trek #b",
+                                                                  " kaarten."
+                                                              ]
+                                         },
+    "${modID}:IndignationPower":  {
+                                          "NAME":  "Verontwaardiging",
+                                          "DESCRIPTIONS":  [
+                                                               "In de volgende #b",
+                                                               " beurten kost de eerste niet-Aanvalskaart die je per beurt speelt 0."
+                                                           ]
+                                      },
+    "${modID}:HungeringBattleWillPower":  {
+                                                  "NAME":  "Hongerige Strijdwil",
+                                                  "DESCRIPTIONS":  [
+                                                                       "Krijg aan het begin van elke beurt [E]. NL Neem aan het einde van elke beurt 3 schade."
+                                                                   ]
+                                              },
+    "${modID}:ConcedePower":  {
+                                      "NAME":  "Toegeven",
+                                      "DESCRIPTIONS":  [
+                                                           "Deze vijand loopt #b50% meer schade op."
+                                                       ]
+                                  },
+    "${modID}:JudgmentFormPower":  {
+                                           "NAME":  "Vorm van het Oordeel",
+                                           "DESCRIPTIONS":  [
+                                                                "Je richt 50% meer schade aan op vijanden onder ",
+                                                                "% van hun Max LP."
+                                                            ]
+                                       },
+    "${modID}:SinAvatarPower":  {
+                                        "NAME":  "Avatar van de Zonde",
+                                        "DESCRIPTIONS":  [
+                                                             "Krijg aan het einde van je beurt #b",
+                                                             " Blok, plus #b",
+                                                             " Blok voor elke Stapel ${modID}:Schuld."
+                                                         ]
+                                    },
+    "${modID}:BloodbathPower":  {
+                                        "NAME":  "Bloedbad",
+                                        "DESCRIPTIONS":  [
+                                                             "De eerste ",
+                                                             " in elke beurt gespeelde Aanvalskaart past ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade."
+                                                         ]
+                                    },
+    "${modID}:OverrigidPower":  {
+                                        "NAME":  "Overstijf",
+                                        "DESCRIPTIONS":  [
+                                                             "Elke keer dat je een Aanvalskaart speelt, verliest die permanent ",
+                                                             " schade voor de rest van het gevecht."
+                                                         ]
+                                    },
+    "${modID}:RestrictionPower":  {
+                                          "NAME":  "Beperking",
+                                          "DESCRIPTIONS":  [
+                                                               "Je kunt geen [E] krijgen. Wordt aan het einde van je beurt verwijderd."
+                                                           ]
+                                      }
 }

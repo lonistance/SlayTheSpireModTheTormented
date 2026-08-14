@@ -9,6 +9,9 @@ import static thetormented.BasicMod.makeID;
 public class SinPower extends BasePower {
     public static final String POWER_ID = makeID(SinPower.class.getSimpleName());
 
+    // 每 SIN_PER_DEBT 点原罪折算 1 点血债（也用于被人工制品抵消血债时的同步扣除）
+    public static final int SIN_PER_DEBT = 5;
+
     private static final PowerType POWER_TYPE = PowerType.BUFF;
     private static final boolean IS_TURN_BASED = false;
 

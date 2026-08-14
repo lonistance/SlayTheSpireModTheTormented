@@ -14,13 +14,13 @@ public class PleaOfInnocence extends BaseCard {
     public static final String ID = makeID(PleaOfInnocence.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BASE_BLOCK = 5;
-    private static final int UPGRADE_BLOCK = 2; // 升级后增加2点基础格挡 (5 -> 7)
+    private static final int BASE_BLOCK = 7;
+    private static final int UPGRADE_BLOCK = 2; // 升级后增加2点基础格挡 (7 -> 9)
     private static final int BASE_MAGIC = 3;
     private static final int UPGRADE_MAGIC = 1; // 升级后增加1点血债加成 (3 -> 4)
 
     private static final CardType TYPE = CardType.SKILL;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
 
     public PleaOfInnocence() {

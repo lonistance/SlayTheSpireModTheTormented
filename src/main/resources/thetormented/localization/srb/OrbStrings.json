@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Ime sfere",
+    "DESCRIPTION": [
+      "#yPasiv: Na početku svog poteza, vuci #b",
+      " kartu.",
+      " karte.",
+      " NL #yAktivacija: Zadaj #b",
+      " štete svim neprijateljima."
+    ]
+  }
+}

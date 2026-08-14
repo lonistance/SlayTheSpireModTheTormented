@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.MinionPower;
 import thetormented.actions.UnceasingWarKillAction;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
@@ -68,11 +69,12 @@ public class UnceasingWar extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        boolean countKill = !m.isDeadOrEscaped() && !m.hasPower(MinionPower.POWER_ID);
         int hits = BASE_HITS + bonusHits;
         for (int i = 0; i < hits; i++) {
             addToBot(new DamageAction(m, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         }
-        addToBot(new UnceasingWarKillAction(m));
+        addToBot(new UnceasingWarKillAction(m, countKill));
     }
 
     @Override

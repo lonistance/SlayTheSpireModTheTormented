@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Nome do Evento",
+    "DESCRIPTIONS": [
+      "Este é o texto do evento, geralmente usado para descrever o que está acontecendo.",
+      "#g~Este~ #g~texto~ #g~está~ #g~verde~ #g~e~ #g~ondulado.~",
+      "#r@VERMELHO@ #r@E@ #r@VIBRANDO@ #r@TEXTO.@",
+      "#rVermelho #gVerde #yAmarelo #bAzul #pRoxo. ~Ondulado~ @vibrando.@",
+      "Você precisa marcar cada palavra individualmente.",
+      "Você também pode usar códigos de cor hexadecimais como [#ffffff]branco[] para colorir o texto.",
+      "Códigos de cor hexadecimais também funcionam em textos de cartas! Mas não em keywords, sem algumas adaptações."
+    ],
+    "OPTIONS": [
+      "[Descrição da Ação] O que você realmente recebe.",
+      "[Recusa] #rPerca #r1 #rPV #rMáximo. Coisas ruins são vermelhas.",
+      "[Aceitação] #gGanhe #gApoteose. Coisas boas são verdes.",
+      "[Sair]",
+      "Selecione a carta a remover. (Você também pode colocar texto extra assim aqui.)"
+    ]
+  }
+}

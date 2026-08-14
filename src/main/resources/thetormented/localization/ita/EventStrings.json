@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Nome Evento",
+    "DESCRIPTIONS": [
+      "Questo è il testo dell'evento, usato generalmente per descrivere cosa sta succedendo.",
+      "#g~Questo~ #g~testo~ #g~è~ #g~verde~ #g~e~ #g~ondulato.~",
+      "#r@ROSSO@ #r@E@ #r@VIBRANTE@ #r@TESTO.@",
+      "#rRosso #gVerde #yGiallo #bBlu #pViola. ~Ondulato~ @vibrante.@",
+      "Devi marcare ogni parola singolarmente.",
+      "Puoi anche usare [#ffffff]codici colore esadecimali bianchi[] come questo per colorare il testo.",
+      "I codici colore esadecimali funzionano anche nel testo delle carte! Ma non sulle parole chiave, senza alcuni escamotage."
+    ],
+    "OPTIONS": [
+      "[Descrizione Azione] Quello che ottieni realmente.",
+      "[Rifiuto] #rPerdi #r1 #rPF #rMassimo. Le cose brutte sono rosse.",
+      "[Accettazione] #gOttieni #gApoteosi. Le cose buone sono verdi.",
+      "[Lascia]",
+      "Seleziona la carta da rimuovere. (Puoi anche inserire qui testo extra come questo.)"
+    ]
+  }
+}

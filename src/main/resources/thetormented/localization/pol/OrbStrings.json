@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Nazwa kuli",
+    "DESCRIPTION": [
+      "#yPasywna: Na początku swojej tury dobierz #b",
+      " kartę.",
+      " karty.",
+      " NL #yWyzwolenie: Zadaj #b",
+      " obrażeń wszystkim wrogom."
+    ]
+  }
+}

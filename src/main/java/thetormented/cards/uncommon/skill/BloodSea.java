@@ -13,7 +13,7 @@ public class BloodSea extends BaseCard {
     public static final String ID = makeID(BloodSea.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BLEED_APPLY = 5;
+    private static final int BLEED_APPLY = 3;
     private static final int BASE_MULTI = 2;
     private static final int UPG_MULTI = 1; // 2 -> 3
 

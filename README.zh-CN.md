@@ -59,16 +59,34 @@
 
 ## 本地化
 
-内置六种语言，随游戏语言设置自动切换：
+内置二十四种语言，随游戏语言设置自动切换：
 
 | 语言 | 代码 | 状态 |
 |---|---|---|
 | English | eng | 基准（参考） |
 | 简体中文 | zhs | 已完整；存在少量一致性问题待修 |
+| 繁體中文 | zht | 已校验，全部检查通过 |
 | Deutsch | deu | 已完整；存在少量一致性问题待修 |
 | Nederlands | dut | 已校验，全部检查通过 |
 | Esperanto | epo | 已校验，全部检查通过 |
 | Suomi | fin | 已校验，全部检查通过 |
+| Français | fra | 已校验，全部检查通过 |
+| Ελληνικά | gre | 已校验，全部检查通过 |
+| Bahasa Indonesia | ind | 已校验，全部检查通过 |
+| Italiano | ita | 已校验，全部检查通过 |
+| 日本語 | jpn | 已校验，全部检查通过 |
+| 한국어 | kor | 已校验，全部检查通过 |
+| Norsk | nor | 已校验，全部检查通过 |
+| Polski | pol | 已校验，全部检查通过 |
+| Português (Brasil) | ptb | 已校验，全部检查通过 |
+| Русский | rus | 已校验，全部检查通过 |
+| Español | spa | 已校验，全部检查通过 |
+| Srpski | srb | 已校验，全部检查通过 |
+| Српски | srp | 已校验，全部检查通过 |
+| ไทย | tha | 已校验，全部检查通过 |
+| Türkçe | tur | 已校验，全部检查通过 |
+| Українська | ukr | 已校验，全部检查通过 |
+| Tiếng Việt | vie | 已校验，全部检查通过 |
 
 对任意语言运行校验工具：
 
@@ -107,7 +125,7 @@ src/main/resources/
 └── thetormented/
     ├── audio/        # 音频资源
     ├── images/       # 卡牌/遗物/能力/角色美术
-    └── localization/ # eng / zhs / deu / dut / epo / fin
+    └── localization/ # eng / zhs / zht / deu / dut / epo / fin / fra / gre / ind / ita / jpn / kor / nor / pol / ptb / rus / spa / srp / srb / tha / tur / ukr / vie
 docs/                 # 本地化规范
 tools/                # 本地化校验工具
 ```

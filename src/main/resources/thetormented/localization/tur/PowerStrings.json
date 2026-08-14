@@ -1,0 +1,170 @@
+{
+    "${modID}:PowerID":  {
+                                 "NAME":  "Nihai Güç",
+                                 "DESCRIPTIONS":  [
+                                                      "Çok Havalı ve Güçlüsün."
+                                                  ]
+                             },
+    "${modID}:BleedPower":  {
+                                    "NAME":  "Kanama",
+                                    "DESCRIPTIONS":  [
+                                                         "Kendi turunun başında #b",
+                                                         " CP kaybeder, sonra tüm Kanama kaldırılır. Kanaması olan bir yaratık kalkanlanmamış saldırı hasarı aldığında #b1 Kanama kazanır."
+                                                     ]
+                                },
+    "${modID}:SinPower":  {
+                                  "NAME":  "Günah",
+                                  "DESCRIPTIONS":  [
+                                                       "#b5 Günah\u0027ın olduğunda, ",
+                                                       " Borç kazanırsın."
+                                                   ]
+                              },
+    "${modID}:DebtPower":  {
+                                   "NAME":  "Borç",
+                                   "DESCRIPTIONS":  [
+                                                        "Her Borç #b%10 daha fazla hasar aldırır. ",
+                                                        "% daha fazla hasar alıyorsun. NL Bir Borç uygulaması Yapı tarafından engellendiğinde, engellenen her Borç için ",
+                                                        " Günah kaybedersin."
+                                                    ]
+                               },
+    "${modID}:LoseEnergyNextTurnPower":  {
+                                                 "NAME":  "Sonraki Tur Enerji Kaybet",
+                                                 "DESCRIPTIONS":  [
+                                                                      "Sonraki turunda [E] kaybedersin"
+                                                                  ]
+                                             },
+    "${modID}:GainEnergyNextTurnPower":  {
+                                                 "NAME":  "Sonraki Tur Enerji Kazan",
+                                                 "DESCRIPTIONS":  [
+                                                                      "Sonraki turunda [E] kazanırsın"
+                                                                  ]
+                                             },
+    "${modID}:MercyPower":  {
+                                    "NAME":  "Merhamet",
+                                    "DESCRIPTIONS":  [
+                                                         "Borç bu tur ekstra hasar vermez"
+                                                     ]
+                                },
+    "${modID}:DeepWoundPower":  {
+                                        "NAME":  "Derin Yara",
+                                        "DESCRIPTIONS":  [
+                                                             "Kanama, kendi turunun başında kaldırılmaz."
+                                                         ]
+                                    },
+    "${modID}:ReliefPower":  {
+                                     "NAME":  "Rahatlama",
+                                     "DESCRIPTIONS":  [
+                                                          "Tur sonunda elindeki TÜM ",
+                                                          " kartları Tüket."
+                                                      ]
+                                 },
+    "${modID}:ParryPower":  {
+                                    "NAME":  "Savuşturma",
+                                    "DESCRIPTIONS":  [
+                                                         "Ne zaman saldırıya uğrarsan, blokladığın hasarı saldırana geri yansıtırsın."
+                                                     ]
+                                },
+    "${modID}:RelentlessBleedPower":  {
+                                              "NAME":  "Amansız Kanama",
+                                              "DESCRIPTIONS":  [
+                                                                   "Her tur başında TÜM düşmanlara #b",
+                                                                   " Kanama uygula."
+                                                               ]
+                                          },
+    "${modID}:GriefPower":  {
+                                    "NAME":  "Keder",
+                                    "DESCRIPTIONS":  [
+                                                         "Bu tur ne zaman kart çekersen TÜM düşmanlara #b",
+                                                         " Kanama uygula."
+                                                     ]
+                                },
+    "${modID}:DreadMemoryPower":  {
+                                          "NAME":  "Korkunç Anı",
+                                          "DESCRIPTIONS":  [
+                                                               "Bu tur Borç kazandıysan düşmanlar #b",
+                                                               "% daha az hasar verir."
+                                                           ]
+                                      },
+    "${modID}:ReconcileFatePower":  {
+                                            "NAME":  "Kaderi Uzlaştır",
+                                            "DESCRIPTIONS":  [
+                                                                 "Ne zaman bir *Sefalet oluşturur veya Tüketirsen #b",
+                                                                 " Blok kazan."
+                                                             ]
+                                        },
+    "${modID}:MangledFleshPower":  {
+                                           "NAME":  "Parçalanmış Et",
+                                           "DESCRIPTIONS":  [
+                                                                "Bir düşmana 6 Kanama uyguladığında tüm düşmanlara #b",
+                                                                " hasar ver."
+                                                            ]
+                                       },
+    "${modID}:BloodThornsPower":  {
+                                          "NAME":  "Kan Dikenleri",
+                                          "DESCRIPTIONS":  [
+                                                               "Ne zaman bir düşman sana saldırırsa ona #b",
+                                                               " Kanama uygula."
+                                                           ]
+                                      },
+    "${modID}:RedemptionPathPower":  {
+                                             "NAME":  "Kurtuluş Yolu",
+                                             "DESCRIPTIONS":  [
+                                                                  "Ne zaman 1 Borç kaldırırsan #b",
+                                                                  " kart çek."
+                                                              ]
+                                         },
+    "${modID}:IndignationPower":  {
+                                          "NAME":  "Öfke",
+                                          "DESCRIPTIONS":  [
+                                                               "Sonraki #b",
+                                                               " tur boyunca her tur oynadığın ilk Saldırı olmayan kartın maliyeti 0 olur."
+                                                           ]
+                                      },
+    "${modID}:HungeringBattleWillPower":  {
+                                                  "NAME":  "Aç Savaş İradesi",
+                                                  "DESCRIPTIONS":  [
+                                                                       "Her tur başında [E] kazan. NL Her tur sonunda 3 hasar al."
+                                                                   ]
+                                              },
+    "${modID}:ConcedePower":  {
+                                      "NAME":  "Teslim",
+                                      "DESCRIPTIONS":  [
+                                                           "Bu düşman #b%50 daha fazla hasar alır."
+                                                       ]
+                                  },
+    "${modID}:JudgmentFormPower":  {
+                                           "NAME":  "Yargı Formu",
+                                           "DESCRIPTIONS":  [
+                                                                "Maksimum CP\u0027si ",
+                                                                "%\u0027in altında olan düşmanlara %50 daha fazla hasar verirsin."
+                                                            ]
+                                       },
+    "${modID}:SinAvatarPower":  {
+                                        "NAME":  "Günahın Bedeni",
+                                        "DESCRIPTIONS":  [
+                                                             "Tur sonunda #b",
+                                                             " Blok, artı sahip olduğun her Borç kademesi için #b",
+                                                             " Blok kazan."
+                                                         ]
+                                    },
+    "${modID}:BloodbathPower":  {
+                                        "NAME":  "Kan Banyosu",
+                                        "DESCRIPTIONS":  [
+                                                             "Her tur oynadığın ilk ",
+                                                             " saldırı kartı, kalkanlanmamış verdiği hasar kadar Kanama uygular."
+                                                         ]
+                                    },
+    "${modID}:OverrigidPower":  {
+                                        "NAME":  "Aşırı Sert",
+                                        "DESCRIPTIONS":  [
+                                                             "Ne zaman bir Saldırı kartı oynarsan, dövüşün geri kalanı boyunca kalıcı olarak ",
+                                                             " hasar kaybeder."
+                                                         ]
+                                    },
+    "${modID}:RestrictionPower":  {
+                                          "NAME":  "Kısıtlama",
+                                          "DESCRIPTIONS":  [
+                                                               "[E] kazanamazsın. Tur sonunda kaldırılır."
+                                                           ]
+                                      }
+}

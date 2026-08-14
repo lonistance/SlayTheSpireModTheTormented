@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Tanrı Kanı",
+    "DESCRIPTIONS": [
+      "Bir düşmana #b",
+      " Kanama uygula."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Gözyaşı Damlası",
+    "DESCRIPTIONS": [
+      "Elini #b1 tur boyunca Sakla."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Diriliş Şarabı",
+    "DESCRIPTIONS": [
+      "#b1 Enerji kazan. NL #b2 kart çek."
+    ]
+  }
+}

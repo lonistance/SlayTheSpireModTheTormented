@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Sangre de Dios",
+    "DESCRIPTIONS": [
+      "Aplica #b",
+      " de Sangrado a un enemigo."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Lágrima",
+    "DESCRIPTIONS": [
+      "Retiene tu mano durante #b1 turno."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Vino de Resurrección",
+    "DESCRIPTIONS": [
+      "Gana #b1 de Energía. NL Roba #b2 cartas."
+    ]
+  }
+}

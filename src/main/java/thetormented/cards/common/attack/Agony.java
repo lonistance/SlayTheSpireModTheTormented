@@ -27,7 +27,7 @@ public class Agony extends BaseCard {
 
     // 2. 数值配置变量（方便后期调整平衡性）
     private static final int DAMAGE_BASE = 7;
-    private static final int DAMAGE_UPGRADE = 3; // 升级后增加 3（总共 10）
+    private static final int DAMAGE_UPGRADE = 1; // 升级后增加 1（总共 8）
 
     private static final int WEAK_STACKS = 1;      // 给予 1 层虚弱
     private static final int VULNERABLE_STACKS = 1; // 给予 1 层易伤
@@ -36,8 +36,8 @@ public class Agony extends BaseCard {
         super(ID, info);
         // 设置基础伤害与升级增加量
         setDamage(DAMAGE_BASE, DAMAGE_UPGRADE);
-        // 将虚弱/易伤层数存入 magicNumber
-        setMagic(WEAK_STACKS);
+        // 将虚弱/易伤层数存入 magicNumber（升级后 1 -> 2）
+        setMagic(WEAK_STACKS, 1);
     }
 
     @Override
@@ -48,12 +48,12 @@ public class Agony extends BaseCard {
         this.addToBot(new DamageAction(m, damageInfo, attackEffect));
 
         // 2. 给予 1 层虚弱
-        WeakPower weakToApply = new WeakPower(m, WEAK_STACKS, false);
-        this.addToBot(new ApplyPowerAction(m, p, weakToApply, WEAK_STACKS));
+        WeakPower weakToApply = new WeakPower(m, this.magicNumber, false);
+        this.addToBot(new ApplyPowerAction(m, p, weakToApply, this.magicNumber));
 
         // 3. 给予 1 层易伤
-        VulnerablePower vulnerableToApply = new VulnerablePower(m, VULNERABLE_STACKS, false);
-        this.addToBot(new ApplyPowerAction(m, p, vulnerableToApply, VULNERABLE_STACKS));
+        VulnerablePower vulnerableToApply = new VulnerablePower(m, this.magicNumber, false);
+        this.addToBot(new ApplyPowerAction(m, p, vulnerableToApply, this.magicNumber));
     }
 
     @Override

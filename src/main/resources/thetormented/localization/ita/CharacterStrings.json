@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Il Tormentato",
+      "Il Tormentato"
+    ],
+    "TEXT": [
+      "Il sangue non può lavare via la miseria, ma può alleviare il debito della maledizione.",
+      "Il Tormentato.",
+      "Percorrendo una strada non illuminata, ti imbatti in alcune figure incappucciate nel bel mezzo di un oscuro rituale. Mentre ti avvicini, si voltano verso di te in sinistro unisono. La più alta tra loro scopre denti aguzzi e tende verso di te una mano lunga e pallida. NL ~Unisciti~ ~a~ ~noi~ ~fratello~, ~e~ ~senti~ ~il~ ~calore~ ~della~ ~Spire.~"
+    ]
+  }
+}

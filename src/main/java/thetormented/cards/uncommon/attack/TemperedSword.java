@@ -15,8 +15,8 @@ public class TemperedSword extends BaseCard {
     public static final String ID = makeID(TemperedSword.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BASE_DAMAGE = 8;
-    private static final int DAMAGE_PER_STATUS = 2;
+    private static final int BASE_DAMAGE = 9;
+    private static final int DAMAGE_PER_STATUS = 3; // 基础增伤加 1
     private static final int UPG_DAMAGE_PER_STATUS = 1; // 3 -> 4
 
     private static final CardStats info = new CardStats(

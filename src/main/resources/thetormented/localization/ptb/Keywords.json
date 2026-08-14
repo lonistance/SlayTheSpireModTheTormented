@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Sangramento",
+    "NAMES": [
+      "sangramento",
+      "sangramentos"
+    ],
+    "DESCRIPTION": "No início do seu turno, perca PV igual aos seus acumulados de Sangramento e depois remova metade do Sangramento. Uma ferida profunda impede a remoção de Sangramento naquele turno. Quando uma criatura sangrando recebe dano de ataque não bloqueado, ela ganha #b1 de Sangramento."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Pecado",
+    "NAMES": [
+      "pecado",
+      "pecados"
+    ],
+    "DESCRIPTION": "Cada #b5 de Pecado que você tiver concede #b1 de Dívida."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Dívida",
+    "NAMES": [
+      "dívida",
+      "dívidas"
+    ],
+    "DESCRIPTION": "Cada acumulado de Dívida faz você receber #b10% a mais de dano. Quando a aplicação de uma Dívida é bloqueada por um Artefato, você perde %%SIN_PER_DEBT%% de Pecado para cada Dívida bloqueada."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Restrição",
+    "NAMES": [
+      "restrição",
+      "restrições"
+    ],
+    "DESCRIPTION": "Você não pode ganhar [E] até remover completamente toda a sua Dívida. Removida no fim do seu turno."
+  }
+]

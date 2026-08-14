@@ -9,6 +9,7 @@ import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
 import thetormented.util.CardStats;
 import thetormented.powers.debuff.DebtPower;
+import thetormented.actions.UpdateSinAction;
 
 public class SacredLand extends BaseCard {
     // 1. 卡牌 ID 与基础配置常量
@@ -23,9 +24,10 @@ public class SacredLand extends BaseCard {
     );
     // 2. 数值配置变量（便于后续调整平衡性）
     private static final int BLOCK_BASE = 6;
-    private static final int BLOCK_UPGRADE = 3; // 升级后增加 3（总共 9）
+    private static final int BLOCK_UPGRADE = 2; // 升级后增加 2（总共 8，升级格挡减 1）
     private static final int DRAW_AMOUNT = 2;   // 满足条件时抽 2 张牌
     private static final int DRAW_UPGRADE = 1;
+    private static final int SIN_LOSS = 7;      // 否则降低 7 点原罪
 
     public SacredLand() {
         super(ID, info);
@@ -46,6 +48,8 @@ public class SacredLand extends BaseCard {
 
         if (!hasDebt) {
             this.addToBot(new DrawCardAction(p, this.magicNumber));
+        } else {
+            this.addToBot(new UpdateSinAction(p, p, -SIN_LOSS));
         }
     }
 

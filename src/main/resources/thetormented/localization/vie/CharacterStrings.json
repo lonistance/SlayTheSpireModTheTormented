@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Kẻ Khổ Đau",
+      "Kẻ Khổ Đau"
+    ],
+    "TEXT": [
+      "Máu không thể rửa sạch khốn khổ, nhưng có thể trút bỏ nợ nần khỏi lời nguyền.",
+      "Kẻ Khổ Đau.",
+      "Đang bước trên một con phố tối tăm, bạn chạm trán vài bóng người trùm đầu giữa một nghi lễ hắc ám. Khi bạn tiến lại gần, họ đồng loạt quay về phía bạn trong sự kỳ lạ rùng rợn. Kẻ cao nhất trong số họ nhe hàm răng nhọn và đưa một bàn tay dài, xanh xao về phía bạn. NL ~\"Hãy~ ~nhập~ ~hội~ ~người~ ~anh~ ~em~, ~và~ ~cảm~ ~nhận~ ~hơi~ ~ấm~ ~của~ ~Ngọn~ ~Tháp.\"~"
+    ]
+  }
+}

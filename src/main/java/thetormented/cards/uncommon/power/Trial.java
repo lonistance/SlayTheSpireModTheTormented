@@ -14,7 +14,7 @@ import thetormented.util.CardStats;
 public class Trial extends BaseCard {
     public static final String ID = makeID(Trial.class.getSimpleName());
 
-    private static final int WEAK_AMOUNT = 2;
+    private static final int WEAK_AMOUNT = 1;
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,

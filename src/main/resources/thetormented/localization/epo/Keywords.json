@@ -7,7 +7,7 @@
       "sangado",
       "sangon"
     ],
-    "DESCRIPTION": "Perdas vivon egale al sia Sango je la komenco de sia vico, tiam ?iu Sango estas forigita. Se sanganta esta?o prenas ne?irmitan atakdama?on, ?i gajnas #b1 Sango."
+    "DESCRIPTION": "Perdas vivon egale al sia Sango je la komenco de sia vico, tiam duono de ?ia Sango estas forigita. Profunda vundo malhelpas, ke Sango estu forigita en tiu vico. Se sanganta esta?o prenas ne?irmitan atakdama?on, ?i gajnas #b1 Sango."
   },
   {
     "ID": "sin",
@@ -26,7 +26,7 @@
       "?uldo",
       "?uldoj"
     ],
-    "DESCRIPTION": "?iu stako da ?uldo igas vin preni #b10% pli da dama?o."
+    "DESCRIPTION": "?iu stako da ?uldo igas vin preni #b10% pli da dama?o. Kiam ?uldo-aplikado estas blokita de Artefakto, vi perdas %%SIN_PER_DEBT%% da Peko por ?iu blokita ?uldo."
   },
   {
     "ID": "restriction",

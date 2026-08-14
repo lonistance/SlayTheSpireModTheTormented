@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Azap Çeken",
+      "Azap Çeken"
+    ],
+    "TEXT": [
+      "Kan sefaleti yıkayamaz; lanetten borcu hafifletebilir.",
+      "Azap Çeken.",
+      "Karanlık bir sokakta ilerlerken karanlık bir ayinin ortasında birkaç başlıklı figürle karşılaşıyorsun. Yaklaştığında ürkütücü bir uyum içinde sana dönüyorlar. Aralarındaki en uzun olanı sivri dişlerini gösteriyor ve uzun, soluk bir elini sana doğru uzatıyor. NL ~\"Katıl~ ~bize~ ~kardeşim,~ ~ve~ ~Spire'ın~ ~sıcaklığını~ ~hisset.\"~"
+    ]
+  }
+}

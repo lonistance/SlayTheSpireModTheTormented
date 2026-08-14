@@ -10,6 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
 import thetormented.powers.debuff.DebtPower;
+import thetormented.actions.UpdateSinAction;
 import thetormented.util.CardStats;
 
 public class AtonementStrike extends BaseCard {
@@ -30,6 +31,8 @@ public class AtonementStrike extends BaseCard {
 
     private static final int DRAW_BASE = 2;
     private static final int DRAW_UPGRADE = 1; // 升级后增加 1（总共 3）
+
+    private static final int SIN_LOSS = 4; // 然后降低 4 点原罪
 
     public AtonementStrike() {
         super(ID, info);
@@ -55,6 +58,9 @@ public class AtonementStrike extends BaseCard {
         if (hasDebt) {
             this.addToBot(new DrawCardAction(p, this.magicNumber));
         }
+
+        // 然后降低 4 点原罪
+        this.addToBot(new UpdateSinAction(p, p, -SIN_LOSS));
     }
 
     @Override

@@ -1,0 +1,441 @@
+{
+    "${modID}:ExampleCard":  {
+                                     "NAME":  "Ime",
+                                     "DESCRIPTION":  "Opis. NL Drugi red.",
+                                     "UPGRADE_DESCRIPTION":  "Ovo će se automatski koristiti ako je karta poboljšana. Ukloni ga ako nije potreban.",
+                                     "EXTENDED_DESCRIPTION":  [
+                                                                  "Ovde možeš staviti još teksta.",
+                                                                  "Ako ti treba za nešto.",
+                                                                  "Blizzard je dobar primer za ovo."
+                                                              ]
+                                 },
+    "${modID}:StrikeTormented":  {
+                                         "NAME":  "Udarac",
+                                         "DESCRIPTION":  "Zadaj !D! štete.",
+                                         "UPGRADE_DESCRIPTION":  "Zadaj !D! štete."
+                                     },
+    "${modID}:DefendTormented":  {
+                                         "NAME":  "Odbrana",
+                                         "DESCRIPTION":  "Zadobi !B! odbrane.",
+                                         "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane."
+                                     },
+    "${modID}:Rebel":  {
+                               "NAME":  "Buntovnik",
+                               "DESCRIPTION":  "Zadaj !D! štete. NL Nanesi ${modID}:Krvarenje jednako zadatoj šteti.",
+                               "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Nanesi ${modID}:Krvarenje jednako zadatoj šteti.",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            "NL (Nanesi !M! ${modID}:Krvarenja)"
+                                                        ]
+                           },
+    "${modID}:Forgive":  {
+                                 "NAME":  "Oproštaj",
+                                 "DESCRIPTION":  "Zadobi !B! odbrane. NL Smanji !M! ${modID}:Greha.",
+                                 "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. NL Smanji !M! ${modID}:Greha."
+                             },
+    "${modID}:Slash":  {
+                               "NAME":  "Zasek",
+                               "DESCRIPTION":  "Zadaj !D! štete. NL Nanesi !M! ${modID}:Krvarenja.",
+                               "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Nanesi !M! ${modID}:Krvarenja."
+                           },
+    "${modID}:Rend":  {
+                              "NAME":  "Razderi",
+                              "DESCRIPTION":  "Zadaj !D! štete. NL Ako neprijatelj ima ${modID}:Krvarenje, zadaj !M! dodatnih pogodaka.",
+                              "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Ako neprijatelj ima ${modID}:Krvarenje, zadaj !M! dodatnih pogodaka."
+                          },
+    "${modID}:Pursuit":  {
+                                 "NAME":  "Potera",
+                                 "DESCRIPTION":  "Može se odigrati samo ako je poslednja odigrana karta ovog poteza bila napad. NL Zadaj !D! štete.",
+                                 "UPGRADE_DESCRIPTION":  "Može se odigrati samo ako je poslednja odigrana karta ovog poteza bila napad. NL Zadaj !D! štete.",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              "Potrebno je prvo odigrati napad ovog poteza."
+                                                          ]
+                             },
+    "${modID}:ArmSevering":  {
+                                     "NAME":  "Odsecanje ruke",
+                                     "DESCRIPTION":  "Zadaj !D! štete. NL Dodaj !M! *Beda u ruku.",
+                                     "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Dodaj !M! *Beda u ruku."
+                                 },
+    "${modID}:QuenchedBlade":  {
+                                       "NAME":  "Prekaljeno sečivo",
+                                       "DESCRIPTION":  "Zadaj !D! štete. NL Poboljšaj !M! karte iz ruke do kraja borbe.",
+                                       "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Poboljšaj !M! karte iz ruke do kraja borbe."
+                                   },
+    "${modID}:CruelTorture":  {
+                                      "NAME":  "Okrutno mučenje",
+                                      "DESCRIPTION":  "Zadaj !D! štete. Zadobi !${modID}:SIN! ${modID}:Greha.",
+                                      "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. Zadobi !${modID}:SIN! ${modID}:Greha."
+                                  },
+    "${modID}:AtonementStrike":  {
+                                         "NAME":  "Udarac iskupljenja",
+                                         "DESCRIPTION":  "Zadaj !D! štete. Vuci !M! karte ako imaš ${modID}:Dug. NL Zatim izgubi 4 ${modID}:Greha.",
+                                         "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. Vuci !M! karte ako imaš ${modID}:Dug. NL Zatim izgubi 4 ${modID}:Greha."
+                                     },
+    "${modID}:UnrighteousGuilt":  {
+                                          "NAME":  "Nepravedna krivica",
+                                          "DESCRIPTION":  "Zadaj !D! štete SVIM neprijateljima. Zadobi !${modID}:SIN! ${modID}:Greha.",
+                                          "UPGRADE_DESCRIPTION":  "Zadaj !D! štete SVIM neprijateljima. Zadobi !${modID}:SIN! ${modID}:Greha."
+                                      },
+    "${modID}:RelentlessEntanglement":  {
+                                                "NAME":  "Neumoljivo zapetljavanje",
+                                                "DESCRIPTION":  "Zadaj !D! štete. NL Dodaj je u ruku ako poveća ${modID}:Dug."
+                                            },
+    "${modID}:Agony":  {
+                               "NAME":  "Agonija",
+                               "DESCRIPTION":  "Zadaj !D! štete. Nanesi !M! slabosti i !M! ranjivosti.",
+                               "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. Nanesi !M! slabosti i !M! ranjivosti."
+                           },
+    "${modID}:SacredLand":  {
+                                    "NAME":  "Sveto tlo",
+                                    "DESCRIPTION":  "Zadobi !B! odbrane. Vuci !M! karte ako nemaš ${modID}:Duga. NL Inače, izgubi 7 ${modID}:Greha.",
+                                    "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. Vuci !M! karte ako nemaš ${modID}:Duga. NL Inače, izgubi 7 ${modID}:Greha."
+                                },
+    "${modID}:Loan":  {
+                              "NAME":  "Zajam",
+                              "DESCRIPTION":  "Zadobi [E] [E] [E]. Sledeći potez, izgubi [E]. NL Iscrpi",
+                              "UPGRADE_DESCRIPTION":  "Zadobi [E] [E] [E]. NL Sledeći potez, izgubi [E]. NL Iscrpi NL Zadrži"
+                          },
+    "${modID}:Firm":  {
+                              "NAME":  "Čvrst",
+                              "DESCRIPTION":  "Zadobi !B! odbrane. NL Zadrži",
+                              "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. NL Zadrži"
+                          },
+    "${modID}:Odyssey":  {
+                                 "NAME":  "Lutanje",
+                                 "DESCRIPTION":  "Vuci !M! kartu. NL Iscrpi 1 kartu. NL Ako iscrpiš kartu stanja, smanji 3 ${modID}:Greha",
+                                 "UPGRADE_DESCRIPTION":  "Vuci !M! karte. NL Iscrpi 1 kartu. NL Ako iscrpiš kartu stanja, smanji 3 ${modID}:Greha"
+                             },
+    "${modID}:BloodGuard":  {
+                                    "NAME":  "Krvni čuvar",
+                                    "DESCRIPTION":  "Zadobi !B! odbrane. NL Nanesi neprijatelju !M! ${modID}:Krvarenja.",
+                                    "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. NL Nanesi neprijatelju !M! ${modID}:Krvarenja."
+                                },
+    "${modID}:PleaOfInnocence":  {
+                                         "NAME":  "Molitva nevinosti",
+                                         "DESCRIPTION":  "Zadobi !B! odbrane. NL Svaki ${modID}:Dug daje !M! odbrane više.",
+                                         "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. NL Svaki ${modID}:Dug daje !M! odbrane više.",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (Ukupno zadobi !${modID}:TOTAL_BLOCK! odbrane)"
+                                                                  ]
+                                     },
+    "${modID}:PredictiveMeasures":  {
+                                            "NAME":  "Prediktivne mere",
+                                            "DESCRIPTION":  "Vuci !M! kartu. Ako je napad, košta 0 dok je ne odigraš ovog poteza.",
+                                            "UPGRADE_DESCRIPTION":  "Vuci !M! kartu. Ako je napad, košta 0 dok je ne odigraš ovog poteza."
+                                        },
+    "${modID}:Hostility":  {
+                                   "NAME":  "Neprijateljstvo",
+                                   "DESCRIPTION":  "Ako ti je odbrana ispod !${modID}:BLOCK_THRESHOLD!, nanesi !M! slabosti SVIM neprijateljima. NL Zadobi !B! odbrane",
+                                   "UPGRADE_DESCRIPTION":  "Ako ti je odbrana ispod !${modID}:BLOCK_THRESHOLD!, nanesi !M! slabosti SVIM neprijateljima. NL Zadobi !B! odbrane"
+                               },
+    "${modID}:Shackles":  {
+                                  "NAME":  "Okovi",
+                                  "DESCRIPTION":  "Dodaj !${modID}:CARD_ADD! *Beda. NL Zadobi !M! odbrane za svako stanje u ruci",
+                                  "UPGRADE_DESCRIPTION":  "Dodaj !${modID}:CARD_ADD! *Beda. NL Zadobi !M! odbrane za svako stanje u ruci",
+                                  "EXTENDED_DESCRIPTION":  [
+                                                               " (Ukupno zadobi !${modID}:TOTAL_BLOCK! odbrane)"
+                                                           ]
+                              },
+    "${modID}:DeterringStrike":  {
+                                         "NAME":  "Odvraćajući udarac",
+                                         "DESCRIPTION":  "Zadaj !D! štete. NL Neprijatelj gubi !M! snage ovog poteza ako namerava da napadne",
+                                         "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Neprijatelj gubi !M! snage ovog poteza ako namerava da napadne"
+                                     },
+    "${modID}:HeavySmash":  {
+                                    "NAME":  "Teški udar",
+                                    "DESCRIPTION":  "Može se odigrati samo ako imaš !M! ${modID}:Duga. Zadaj !D! štete",
+                                    "UPGRADE_DESCRIPTION":  "Može se odigrati samo ako imaš !M! ${modID}:Duga. Zadaj !D! štete",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 "Može se odigrati samo ako imaš 2 ${modID}:Duga"
+                                                             ]
+                                },
+    "${modID}:SinsToBlades":  {
+                                      "NAME":  "Grehovi u sečiva",
+                                      "DESCRIPTION":  "Zadaj !D! štete. NL Vuci karte jednake tvom ${modID}:Dugu.",
+                                      "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Vuci karte jednake tvom ${modID}:Dugu uvećanom za 1.",
+                                      "EXTENDED_DESCRIPTION":  [
+                                                                   " (Vuci !${modID}:TOTAL_DRAW! kartu(e))"
+                                                               ]
+                                  },
+    "${modID}:ChaosDirty":  {
+                                    "NAME":  "Prljavi haos",
+                                    "DESCRIPTION":  "Zadobi !${modID}:SIN! ${modID}:Greha. NL Zadaj !D! štete. Svaki ${modID}:Dug koji imaš zadaje !M! štete više",
+                                    "UPGRADE_DESCRIPTION":  "Zadobi !${modID}:SIN! ${modID}:Greha. NL Zadaj !D! štete. Svaki ${modID}:Dug koji imaš zadaje !M! štete više",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 " (Ukupno zadaj !${modID}:TOTAL_DAMAGE! štete)"
+                                                             ]
+                                },
+    "${modID}:TemperedSword":  {
+                                       "NAME":  "Prekaljeni mač",
+                                       "DESCRIPTION":  "Zadaj !D! štete. NL Svako stanje koje iscrpiš zadaje !M! štete više",
+                                       "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Svako stanje koje iscrpiš zadaje !M! štete više",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    " (Ukupno zadaj !${modID}:TOTAL_DAMAGE! štete)"
+                                                                ]
+                                   },
+    "${modID}:Crush":  {
+                               "NAME":  "Zgnječi",
+                               "DESCRIPTION":  "Zadaj !D! štete. NL Zadobi odbranu jednaku ${modID}:Krvarenju koje neprijatelj ima",
+                               "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Zadobi odbranu jednaku ${modID}:Krvarenju koje neprijatelj ima",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (Ukupno zadobi !${modID}:TOTAL_BLOCK! odbrane)"
+                                                        ]
+                           },
+    "${modID}:Unleash":  {
+                                 "NAME":  "Nagomilavanje",
+                                 "DESCRIPTION":  "Zadaj !D! štete 2 puta. NL Sledeći potez zadobi [E]",
+                                 "UPGRADE_DESCRIPTION":  "Zadaj !D! štete 2 puta. NL Sledeći potez zadobi [E] [E]"
+                             },
+    "${modID}:HeavyPast":  {
+                                   "NAME":  "Teška prošlost",
+                                   "DESCRIPTION":  "Zadaj !D! štete 2 puta. NL Dodaj 1 *Beda u gomilu za vučenje i 1 u gomilu za odbacivanje. NL Vuci !M! karte.",
+                                   "UPGRADE_DESCRIPTION":  "Zadaj !D! štete 2 puta. NL Dodaj 1 *Beda u gomilu za vučenje i 1 u gomilu za odbacivanje. NL Vuci !M! karte."
+                               },
+    "${modID}:Implication":  {
+                                     "NAME":  "Implikacija",
+                                     "DESCRIPTION":  "Iscrpi 1 kartu iz ruke. NL Zadaj !D! štete SVIM neprijateljima. NL Vuče 1 kartu za svakog neprijatelja koji ima ${modID}:Krvarenje i kojem zadaje štetu.",
+                                     "UPGRADE_DESCRIPTION":  "Iscrpi 1 kartu iz ruke. NL Zadaj !D! štete SVIM neprijateljima. NL Vuče 1 kartu za svakog neprijatelja koji ima ${modID}:Krvarenje i kojem zadaje štetu."
+                                 },
+    "${modID}:ConsecutiveKicks":  {
+                                          "NAME":  "Uzastopni udarci",
+                                          "DESCRIPTION":  "Zadaj !D! štete !M! puta",
+                                          "UPGRADE_DESCRIPTION":  "Zadaj !D! štete !M! puta"
+                                      },
+    "${modID}:MassiveBleeding":  {
+                                         "NAME":  "Masivno krvarenje",
+                                         "DESCRIPTION":  "Zadaj !D! štete. NL Potom zadaj štetu jednaku ${modID}:Krvarenju koje neprijatelj ima",
+                                         "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Potom zadaj štetu jednaku dvostrukom ${modID}:Krvarenju koje neprijatelj ima",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (Ukupno zadaj !${modID}:TOTAL_DAMAGE! štete)"
+                                                                  ]
+                                     },
+    "${modID}:FaceDanger":  {
+                                    "NAME":  "Suoči se s opasnošću",
+                                    "DESCRIPTION":  "Zadaj !D! štete. NL Svaki *Beda koji si odigrao ove borbe smanjuje energiju koju košta za 1",
+                                    "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Svaki *Beda koji si odigrao ove borbe smanjuje energiju koju košta za 1"
+                                },
+    "${modID}:Relief":  {
+                                "NAME":  "Olakšanje",
+                                "DESCRIPTION":  "Dodaj 2 *Beda u gomilu za odbacivanje. NL Na kraju tvog poteza, iscrpi sav *Beda iz ruke.",
+                                "UPGRADE_DESCRIPTION":  "Urođena NL Dodaj 2 *Beda u gomilu za odbacivanje. NL Na kraju tvog poteza, iscrpi sav *Beda iz ruke."
+                            },
+    "${modID}:Misery":  {
+                                "NAME":  "Beda",
+                                "DESCRIPTION":  "Primi 2 štete. NL Vuci 1 kartu. NL Iscrpljena"
+                            },
+    "${modID}:Parry":  {
+                               "NAME":  "Pariranje",
+                               "DESCRIPTION":  "Zadobi !B! odbrane. NL Kad god si napadnut, odbij štetu koju si blokirao nazad na napadača.",
+                               "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. NL Kad god si napadnut, odbij štetu koju si blokirao nazad na napadača."
+                           },
+    "${modID}:Pardon":  {
+                                "NAME":  "Pomilovanje",
+                                "DESCRIPTION":  "Pretvori SVE karte u ruci u nasumične karte. NL Nakon što se odigra !M! puta, ova karta se pretvara u nasumičnu Kartu Moći",
+                                "UPGRADE_DESCRIPTION":  "Pretvori SVE karte u ruci u nasumične unapređene karte. NL Nakon što se odigra !M! puta, ova karta se pretvara u nasumičnu unapređenu Kartu Moći"
+                            },
+    "${modID}:Memorial":  {
+                                  "NAME":  "Spomenik",
+                                  "DESCRIPTION":  "Vuci 1 kartu. NL Ako je izvučena karta veština, izgubi !M! ${modID}:Greha.",
+                                  "UPGRADE_DESCRIPTION":  "Vuci 1 kartu. NL Ako je izvučena karta veština, izgubi !M! ${modID}:Greha."
+                              },
+    "${modID}:Boiling":  {
+                                 "NAME":  "Kipenje",
+                                 "DESCRIPTION":  "Iscrpi sve karte iz ruke koje nisu napadi. NL Nanesi !M! ${modID}:Krvarenja nasumičnom neprijatelju za svaku iscrpljenu kartu.",
+                                 "UPGRADE_DESCRIPTION":  "Iscrpi sve karte iz ruke koje nisu napadi. NL Nanesi !M! ${modID}:Krvarenja nasumičnom neprijatelju za svaku iscrpljenu kartu."
+                             },
+    "${modID}:Grief":  {
+                               "NAME":  "Tuga",
+                               "DESCRIPTION":  "Dodaj 1 nasumičnu kartu stanja u ruku. NL Ovog poteza, kad god vučeš kartu, nanesi !M! ${modID}:Krvarenja SVIM neprijateljima.",
+                               "UPGRADE_DESCRIPTION":  "Dodaj 1 nasumičnu kartu stanja u ruku. NL Ovog poteza, kad god vučeš kartu, nanesi !M! ${modID}:Krvarenja SVIM neprijateljima."
+                           },
+    "${modID}:BloodSea":  {
+                                  "NAME":  "More krvi",
+                                  "DESCRIPTION":  "Nanesi !${modID}:BLEED! ${modID}:Krvarenja. NL Pomnoži neprijateljevo ${modID}:Krvarenje brojem !M!. NL Iscrpi",
+                                  "UPGRADE_DESCRIPTION":  "Nanesi !${modID}:BLEED! ${modID}:Krvarenja. NL Pomnoži neprijateljevo ${modID}:Krvarenje brojem !M!. NL Iscrpi"
+                              },
+    "${modID}:RelentlessBleed":  {
+                                         "NAME":  "Neumoljivo krvarenje",
+                                         "DESCRIPTION":  "Na početku svakog poteza, nanesi !M! ${modID}:Krvarenja SVIM neprijateljima.",
+                                         "UPGRADE_DESCRIPTION":  "Na početku svakog poteza, nanesi !M! ${modID}:Krvarenja SVIM neprijateljima."
+                                     },
+    "${modID}:DreadMemory":  {
+                                     "NAME":  "Užasno sećanje",
+                                     "DESCRIPTION":  "Ako si ovog poteza zadobio ${modID}:Dug, neprijatelji zadaju !M!% manje štete. NL Traje samo tokom poteza u kom si zadobio ${modID}:Dug.",
+                                     "UPGRADE_DESCRIPTION":  "Ako si ovog poteza zadobio ${modID}:Dug, neprijatelji zadaju !M!% manje štete. NL Traje samo tokom poteza u kom si zadobio ${modID}:Dug."
+                                 },
+    "${modID}:Trial":  {
+                               "NAME":  "Iskušenje",
+                               "DESCRIPTION":  "Zadobi !M! snage i !M! okretnosti. NL Zadobi 1 slabost.",
+                               "UPGRADE_DESCRIPTION":  "Zadobi !M! snage i !M! okretnosti. NL Zadobi 1 slabost."
+                           },
+    "${modID}:ReconcileFate":  {
+                                       "NAME":  "Pomiri sudbinu",
+                                       "DESCRIPTION":  "Kad god stvoriš ili iscrpiš *Beda, zadobi !M! odbrane.",
+                                       "UPGRADE_DESCRIPTION":  "Kad god stvoriš ili iscrpiš *Beda, zadobi !M! odbrane."
+                                   },
+    "${modID}:MangledFlesh":  {
+                                      "NAME":  "Razderano meso",
+                                      "DESCRIPTION":  "Kad god neprijatelju naneseš 6 ${modID}:Krvarenja, zadaj SVIM neprijateljima !M! štete.",
+                                      "UPGRADE_DESCRIPTION":  "Kad god neprijatelju naneseš 6 ${modID}:Krvarenja, zadaj SVIM neprijateljima !M! štete."
+                                  },
+    "${modID}:BloodThorns":  {
+                                     "NAME":  "Krvavo trnje",
+                                     "DESCRIPTION":  "Kad god te neprijatelj napadne, nanesi mu !M! ${modID}:Krvarenja.",
+                                     "UPGRADE_DESCRIPTION":  "Kad god te neprijatelj napadne, nanesi mu !M! ${modID}:Krvarenja."
+                                 },
+    "${modID}:RedemptionPath":  {
+                                        "NAME":  "Put iskupljenja",
+                                        "DESCRIPTION":  "Kad god ukloniš 1 ${modID}:Dug, vuci !M! karte.",
+                                        "UPGRADE_DESCRIPTION":  "Kad god ukloniš 1 ${modID}:Dug, vuci !M! karte."
+                                    },
+    "${modID}:Requiem":  {
+                                 "NAME":  "Rekvijem",
+                                 "DESCRIPTION":  "Svaki *Beda koji si iscrpio zadaje !D! štete nasumičnom neprijatelju",
+                                 "UPGRADE_DESCRIPTION":  "Svaki *Beda koji si iscrpio zadaje !D! štete nasumičnom neprijatelju",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              " (Ukupno !${modID}:HITS! pogodaka)"
+                                                          ]
+                             },
+    "${modID}:DesperateMeasure":  {
+                                          "NAME":  "Očajna mera",
+                                          "DESCRIPTION":  "Zadaj !D! štete. NL Ako ovo ne ubije neprijatelja, izgubi !M! ž. p.",
+                                          "UPGRADE_DESCRIPTION":  "Zadaj !D! štete. NL Ako ovo ne ubije neprijatelja, izgubi !M! ž. p."
+                                      },
+    "${modID}:UnceasingWar":  {
+                                      "NAME":  "Neprestani rat",
+                                      "DESCRIPTION":  "Zadaj !D! štete !${modID}:HITS! puta. NL Kad god ovo ubije neprijatelja, trajno povećaj broj pogodaka ove karte za 1 do kraja pohoda. NL Iscrpi",
+                                      "UPGRADE_DESCRIPTION":  "Zadaj !D! štete !${modID}:HITS! puta. NL Kad god ovo ubije neprijatelja, trajno povećaj broj pogodaka ove karte za 1 do kraja pohoda. NL Iscrpi"
+                                  },
+    "${modID}:FinalJudgment":  {
+                                       "NAME":  "Konačni sud",
+                                       "DESCRIPTION":  "Može se odigrati samo ako imaš najmanje 4 ${modID}:Duga. NL Zadaj !D! štete SVIM neprijateljima. NL Ukloni sve ${modID}:Grehe.",
+                                       "UPGRADE_DESCRIPTION":  "Može se odigrati samo ako imaš najmanje 4 ${modID}:Duga. NL Zadaj !D! štete SVIM neprijateljima. NL Ukloni sve ${modID}:Grehe.",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    "Za igranje je potrebno najmanje 4 ${modID}:Duga."
+                                                                ]
+                                   },
+    "${modID}:Blazing":  {
+                                 "NAME":  "Plamteći",
+                                 "DESCRIPTION":  "Iscrpi sve karte iz ruke. NL Vuci !M! karte za svaku iscrpljenu kartu stanja. NL Iscrpi",
+                                 "UPGRADE_DESCRIPTION":  "Iscrpi sve karte iz ruke. NL Vuci !M! karte za svaku iscrpljenu kartu stanja. NL Iscrpi"
+                             },
+    "${modID}:RockSolid":  {
+                                   "NAME":  "Čvrst kao stena",
+                                   "DESCRIPTION":  "Zadobi !B! odbrane. NL Izgubi 3 maks. ž. p.",
+                                   "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. NL Izgubi 3 maks. ž. p."
+                               },
+    "${modID}:Devotion":  {
+                                  "NAME":  "Predanost",
+                                  "DESCRIPTION":  "Ukloni sav svoj ${modID}:Dug, ranjivost, slabost i krhkost. NL Za svaki uklonjeni sloj, zadobi 1 energiju i vuci !M! karte. NL Iscrpi",
+                                  "UPGRADE_DESCRIPTION":  "Ukloni sav svoj ${modID}:Dug, ranjivost, slabost i krhkost. NL Za svaki uklonjeni sloj, zadobi 1 energiju i vuci !M! karte. NL Iscrpi"
+                              },
+    "${modID}:Indignation":  {
+                                     "NAME":  "Ogorčenje",
+                                     "DESCRIPTION":  "Tokom narednih X poteza, prva karta koju odigraš svakog poteza košta 0. NL Iscrpi",
+                                     "UPGRADE_DESCRIPTION":  "Tokom narednih X+1 poteza, prva karta koju odigraš svakog poteza košta 0. NL Iscrpi"
+                                 },
+    "${modID}:BloodFeud":  {
+                                   "NAME":  "Krvna zavada",
+                                   "DESCRIPTION":  "Dodaj 1 *Beda u ruku. NL Odmah aktiviraj !M!% sveg ${modID}:Krvarenja svih neprijatelja.",
+                                   "UPGRADE_DESCRIPTION":  "Dodaj 1 *Beda u ruku. NL Odmah aktiviraj !M!% sveg ${modID}:Krvarenja svih neprijatelja."
+                               },
+    "${modID}:VoidCall":  {
+                                  "NAME":  "Poziv vakuuma",
+                                  "DESCRIPTION":  "Izaberi 1 kartu iz gomile za vučenje i dodaj je u ruku. Postaje prolazna. NL Iscrpi",
+                                  "UPGRADE_DESCRIPTION":  "Izaberi 1 kartu iz gomile za vučenje i dodaj je u ruku. Postaje prolazna."
+                              },
+    "${modID}:Spread":  {
+                                "NAME":  "Širenje",
+                                "DESCRIPTION":  "Nanesi !M! ${modID}:Krvarenja. NL Nanesi sve negativne efekte tog neprijatelja svim ostalim neprijateljima.",
+                                "UPGRADE_DESCRIPTION":  "Nanesi !M! ${modID}:Krvarenja. NL Nanesi sve negativne efekte tog neprijatelja svim ostalim neprijateljima."
+                            },
+    "${modID}:HungeringBattleWill":  {
+                                             "NAME":  "Gladna borbena volja",
+                                             "DESCRIPTION":  "Na početku svakog poteza, zadobi [E]. NL Na kraju svakog poteza zadobi 3 štete.",
+                                             "UPGRADE_DESCRIPTION":  "Na početku svakog poteza, zadobi [E]. NL Na kraju svakog poteza zadobi 3 štete."
+                                         },
+    "${modID}:ExecutionForm":  {
+                                       "NAME":  "Oblik suda",
+                                       "DESCRIPTION":  "Zadaj 50% više štete neprijateljima ispod !M!% njihovih maks. ž. p.",
+                                       "UPGRADE_DESCRIPTION":  "Zadaj 50% više štete neprijateljima ispod !M!% njihovih maks. ž. p."
+                                   },
+    "${modID}:SinAvatar":  {
+                                   "NAME":  "Inkarnacija greha",
+                                   "DESCRIPTION":  "Na kraju tvog poteza, zadobi !B! odbrane, plus !M! odbrane za svaki sloj ${modID}:Duga.",
+                                   "UPGRADE_DESCRIPTION":  "Na kraju tvog poteza, zadobi !B! odbrane, plus !M! odbrane za svaki sloj ${modID}:Duga.",
+                                   "EXTENDED_DESCRIPTION":  [
+                                                                " (Ukupno zadobi !${modID}:TOTAL_BLOCK! odbrane)"
+                                                            ]
+                               },
+    "${modID}:Bloodbath":  {
+                                   "NAME":  "Krvoproliće",
+                                   "DESCRIPTION":  "Tvoja prva karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje.",
+                                   "UPGRADE_DESCRIPTION":  "Tvoja prva karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje."
+                               },
+    "${modID}:Overrigid":  {
+                                   "NAME":  "Previše ukočen",
+                                   "DESCRIPTION":  "Zadobi 5 snage. NL Svaki put kad odigraš kartu napada, ona trajno gubi !M! štete do kraja borbe.",
+                                   "UPGRADE_DESCRIPTION":  "Zadobi 5 snage. NL Svaki put kad odigraš kartu napada, ona trajno gubi !M! štete do kraja borbe."
+                               },
+    "${modID}:Entangled":  {
+                                   "NAME":  "Zapetljan",
+                                   "DESCRIPTION":  "Kad god vučeš ovu kartu, dodaj 1 njenu kopiju u ruku. NL Iscrpi NL Kada se ova karta iscrpi, dodaj 1 Sluz na gomilu za izvlačenje."
+                               },
+    "${modID}:Riot":  {
+                              "NAME":  "Nered",
+                              "DESCRIPTION":  "Zadaj !D! štete X puta. NL Svaki ${modID}:Dug koji imaš čini da ova karta zadaje !M! štete više.",
+                              "UPGRADE_DESCRIPTION":  "Zadaj !D! štete X puta. NL Svaki ${modID}:Dug koji imaš čini da ova karta zadaje !M! štete više.",
+                              "EXTENDED_DESCRIPTION":  [
+                                                           " (Po pogotku zadaj !${modID}:TOTAL_DAMAGE! štete)"
+                                                       ]
+                          },
+    "${modID}:Bloodstain":  {
+                                    "NAME":  "Krvava mrlja",
+                                    "DESCRIPTION":  "Nanesi !M! ${modID}:Krvarenja. NL Učini to ponovo za svaki ${modID}:Dug koji imaš. NL Iscrpi.",
+                                    "UPGRADE_DESCRIPTION":  "Nanesi !M! ${modID}:Krvarenja. NL Učini to ponovo za svaki ${modID}:Dug koji imaš."
+                                },
+    "${modID}:BrokenArmor":  {
+                                     "NAME":  "Slomljeni oklop",
+                                     "DESCRIPTION":  "Zadobi !B! odbrane. NL Zadobi 1 krhkost.",
+                                     "UPGRADE_DESCRIPTION":  "Zadobi !B! odbrane. NL Zadobi 1 krhkost."
+                                 },
+    "${modID}:FormPact":  {
+                                  "NAME":  "Pakt oblika",
+                                  "DESCRIPTION":  "Zadobi [E] [E]. NL Dodaj 1 *Beda na gomilu za odbacivanje",
+                                  "UPGRADE_DESCRIPTION":  "Zadobi [E] [E] [E]. NL Dodaj 1 *Beda na gomilu za odbacivanje"
+                              },
+    "${modID}:Fraud":  {
+                               "NAME":  "Prevara",
+                               "DESCRIPTION":  "Vuci !M! karte. NL Zadobi !M! ${modID}:Greha.",
+                               "UPGRADE_DESCRIPTION":  "Vuci !M! karte. NL Zadobi !M! ${modID}:Greha."
+                           },
+    "${modID}:Mercy":  {
+                               "NAME":  "Milost",
+                               "DESCRIPTION":  "Prolazna. NL Na kraju svakog poteza, iscrpi *Beda iz ruke. NL Zadobi !M! ${modID}:Greha.",
+                               "UPGRADE_DESCRIPTION":  "Prolazna. NL Na kraju svakog poteza, iscrpi *Beda iz ruke. NL Zadobi !M! ${modID}:Greha."
+                           },
+    "${modID}:Prepare":  {
+                                 "NAME":  "Pripremi se",
+                                 "DESCRIPTION":  "Urođena. NL Vuci !M! karte. NL Zadrži ruku ovog poteza. NL Iscrpi.",
+                                 "UPGRADE_DESCRIPTION":  "Urođena. NL Vuci !M! karte. NL Zadrži ruku ovog poteza. NL Iscrpi."
+                             },
+    "${modID}:Relapse":  {
+                                 "NAME":  "Povratak",
+                                 "DESCRIPTION":  "Neprijateljevo ${modID}:Krvarenje se neće ukloniti ovog poteza.",
+                                 "UPGRADE_DESCRIPTION":  "${modID}:Krvarenje svih neprijatelja se neće ukloniti ovog poteza."
+                             },
+    "${modID}:SharedSuffering":  {
+                                         "NAME":  "Zajednička patnja",
+                                         "DESCRIPTION":  "Za svaki ${modID}:Dug koji imaš, nanesi !M! slabosti i !M! ranjivosti SVIM neprijateljima. NL Iscrpi.",
+                                         "UPGRADE_DESCRIPTION":  "Za svaki ${modID}:Dug koji imaš, nanesi !M! slabosti i !M! ranjivosti SVIM neprijateljima. NL Iscrpi."
+                                     },
+    "${modID}:Taboo":  {
+                               "NAME":  "Tabu",
+                               "DESCRIPTION":  "Zadobi 1 energiju za svaki ${modID}:Dug koji imaš. NL Zadobi 1 ${modID}:Ograničenje.",
+                               "UPGRADE_DESCRIPTION":  "Zadobi 1 energiju za svaki ${modID}:Dug koji imaš, uvećano za 1. NL Zadobi 1 ${modID}:Ograničenje.",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (Ne možeš zadobiti energiju)",
+                                                            " (Zadobi !${modID}:TOTAL_ENERGY! energije)",
+                                                            " (Zadobi !${modID}:TOTAL_ENERGY! energije!)"
+                                                        ]
+                           }
+}

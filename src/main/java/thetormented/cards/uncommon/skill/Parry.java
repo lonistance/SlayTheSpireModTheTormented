@@ -14,7 +14,7 @@ public class Parry extends BaseCard {
     public static final String ID = makeID(Parry.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BASE_BLOCK = 5;
+    private static final int BASE_BLOCK = 6;
     private static final int UPG_BLOCK = 3; // 5 -> 8
 
     private static final CardStats info = new CardStats(

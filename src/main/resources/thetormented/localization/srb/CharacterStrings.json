@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Mučeni",
+      "Mučeni"
+    ],
+    "TEXT": [
+      "Krv ne može da opere bedu, ali olakšava dug od kletve.",
+      "Mučeni.",
+      "Krećući se neosvetljenom ulicom, nailaziš na nekoliko zaodenutih figura usred nekog mračnog rituala. Kako im prilaziš, u sablasnoj složnosti se okreću ka tebi. Najviši među njima otkriva očnjake i pruža ka tebi dugu, bledu ruku. NL ~\"Pridruži~ ~nam~ ~se~ ~brate,~ ~i~ ~osetićeš~ ~toplinu~ ~Toranj.\"~"
+    ]
+  }
+}

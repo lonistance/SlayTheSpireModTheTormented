@@ -1,7 +1,7 @@
 package thetormented.cards.uncommon.skill;
 
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -38,8 +38,8 @@ public class FormPact extends BaseCard {
         // 1. 获得能量 (未升级 2 点，升级后 3 点)
         addToBot(new GainEnergyAction(this.magicNumber));
 
-        // 2. 将 1 张《苦痛》加入手牌
-        addToBot(new MakeTempCardInHandAction(new Misery(), 1));
+        // 2. 将 1 张《苦痛》加入弃牌堆
+        addToBot(new MakeTempCardInDiscardAction(new Misery(), 1));
     }
 
     @Override

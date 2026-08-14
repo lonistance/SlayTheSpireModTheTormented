@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Küre Adı",
+    "DESCRIPTION": [
+      "#yPasif: Turunun başında #b",
+      " kart çek.",
+      " kart çek.",
+      " NL #yUyarma: TÜM düşmanlara #b",
+      " hasar ver."
+    ]
+  }
+}

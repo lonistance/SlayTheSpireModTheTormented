@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Arrangementsnavn",
+    "DESCRIPTIONS": [
+      "Dette er arrangementstekst, vanligvis brukt til å beskrive det som skjer.",
+      "#g~Dette~ #g~er~ #g~grønn~ #g~og~ #g~bølgete~ #g~tekst.~",
+      "#r@RØD@ #r@OG@ #r@VIBRERENDE@ #r@TEKST.@",
+      "#rRød #gGrønn #yGul #bBlå #pLilla. ~Bølgete~ @vibrerende.@",
+      "Du må markere hvert ord individuelt.",
+      "Du kan også bruke [#ffffff]hvite[] heksadesimale fargekoder som dette for å fargelegge tekst.",
+      "Heksadesimale fargekoder fungerer også i korttekst! Men ikke på nøkkelord, uten noen løsninger."
+    ],
+    "OPTIONS": [
+      "[Handlingsbeskrivelse] Det du faktisk får.",
+      "[Avslag] #rMist #r1 #rMaks #rHP. Dårlige ting er røde.",
+      "[Aksept] #gFå #gHøydepunkt. Gode ting er grønne.",
+      "[Stikk]",
+      "Velg kortet du vil fjerne. (Du kan også stikke inn ekstra tekst som dette her.)"
+    ]
+  }
+}

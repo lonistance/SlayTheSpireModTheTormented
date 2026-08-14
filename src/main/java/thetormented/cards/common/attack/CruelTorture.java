@@ -27,7 +27,7 @@ public class CruelTorture extends BaseCard {
     //but constants at the top of the file are easy to adjust.
     private static final int DAMAGE = 15;
     private static final int UPG_DAMAGE = 5;
-    private static final int SIN_GAIN = 5;
+    private static final int SIN_GAIN = 7;
 
     public CruelTorture() {
         super(ID,info);

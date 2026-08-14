@@ -20,7 +20,6 @@ public class OverrigidPower extends BasePower {
     public void onAfterCardPlayed(AbstractCard card) {
         if (card.type == AbstractCard.CardType.ATTACK && this.amount > 0) {
             card.baseDamage = Math.max(0, card.baseDamage - this.amount);
-            card.damage = Math.max(0, card.damage - this.amount);
             this.flash();
         }
     }

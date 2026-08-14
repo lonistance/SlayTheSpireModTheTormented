@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.actions.ApplyBleedAction;
 import thetormented.powers.BasePower;
@@ -39,12 +40,17 @@ public class MangledFleshPower extends BasePower implements ApplyBleedAction.OnB
 
         if (ticks > 0) {
             this.flash();
-            // THORNS 类型伤害，避免触发流血的“受到未格挡伤害时叠层”机制
-            this.addToBot(new DamageAction(
-                    m,
-                    new DamageInfo(this.owner, ticks * this.amount, DamageInfo.DamageType.THORNS),
-                    AbstractGameAction.AttackEffect.POISON
-            ));
+            // 对所有敌人造成伤害，THORNS 类型伤害避免触发流血的“受到未格挡伤害时叠层”机制
+            for (AbstractMonster mon : AbstractDungeon.getMonsters().monsters) {
+                if (mon == null || mon.isDeadOrEscaped()) {
+                    continue;
+                }
+                this.addToBot(new DamageAction(
+                        mon,
+                        new DamageInfo(this.owner, ticks * this.amount, DamageInfo.DamageType.THORNS),
+                        AbstractGameAction.AttackEffect.POISON
+                ));
+            }
         }
     }
 

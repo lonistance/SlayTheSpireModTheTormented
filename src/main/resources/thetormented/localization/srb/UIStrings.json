@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Ovo je",
+      "niz niski."
+    ],
+    "EXTRA_TEXT": [
+      "Ovo je još jedan",
+      "niz niski."
+    ],
+    "TEXT_DICT": {
+      "Ovo": "Sadrži parove niski, koji se koriste za dobijanje vrednosti na osnovu ključeva.",
+      "Ovo je ključ": "Ovo je vrednost."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Izaberi karte koje ćeš dodati u ruku i učiniti prolaznima."
+    ]
+  }
+}

@@ -22,7 +22,7 @@ public class BloodThorns extends BaseCard {
 
     public BloodThorns() {
         super(ID, info);
-        setMagic(3, 1);
+        setMagic(3, 1); // 回调：基础数值 +1（3 -> 4）
     }
 
     @Override

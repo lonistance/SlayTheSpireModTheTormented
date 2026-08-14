@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Krew Boga",
+    "DESCRIPTIONS": [
+      "Nałóż #b",
+      " Krwawienia wrogowi."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Kropla łzy",
+    "DESCRIPTIONS": [
+      "Zachowaj swoją rękę przez #b1 turę."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Wino ożywienia",
+    "DESCRIPTIONS": [
+      "Uzyskaj #b1 Energię. NL Dobierz #b2 karty."
+    ]
+  }
+}

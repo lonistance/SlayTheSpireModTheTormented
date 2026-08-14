@@ -5,7 +5,7 @@
     "NAMES": [
       "bleed"
     ],
-    "DESCRIPTION": "At the start of its turn, lose HP equal to its Bleed stacks, then remove all Bleed. When a Bleeding creature takes unblocked attack damage, it gains #b1 Bleed."
+    "DESCRIPTION": "At the start of its turn, lose HP equal to its Bleed stacks, then remove #b50% of its Bleed. DeepWound prevents Bleed from being removed this turn. When a Bleeding creature takes unblocked attack damage, it gains #b1 Bleed."
   },
   {
     "ID": "sin",
@@ -22,7 +22,7 @@
     "NAMES": [
       "debt"
     ],
-    "DESCRIPTION": "Each stack of Debt makes you take #b10% more damage."
+    "DESCRIPTION": "Each stack of Debt makes you take #b10% more damage. When a Debt application is blocked by Artifact, lose %%SIN_PER_DEBT%% Sin for each 1 Debt blocked."
   },
   {
     "ID": "restriction",

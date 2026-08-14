@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Кров бога",
+    "DESCRIPTIONS": [
+      "Наносите #b",
+      " ${modID}:Кровотечі ворогу."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Сльоза",
+    "DESCRIPTIONS": [
+      "Залишаєте руку протягом #b1 ходу."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Вино відродження",
+    "DESCRIPTIONS": [
+      "Отримуєте #b1 енергію. NL Берете #b2 карти."
+    ]
+  }
+}

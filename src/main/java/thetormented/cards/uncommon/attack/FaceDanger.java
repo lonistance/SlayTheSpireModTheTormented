@@ -16,8 +16,8 @@ public class FaceDanger extends BaseCard {
     public static final String ID = makeID(FaceDanger.class.getSimpleName());
 
     private static final int COST = 3;
-    private static final int DAMAGE = 15;
-    private static final int UPG_DAMAGE = 5; // 15 -> 20
+    private static final int DAMAGE = 16;
+    private static final int UPG_DAMAGE = 4; // 16 -> 20
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,

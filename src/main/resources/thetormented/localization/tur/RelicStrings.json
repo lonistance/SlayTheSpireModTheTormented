@@ -1,0 +1,98 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "İyi Kalıntı",
+    "FLAVOR": "Detaylı kalıntı görünümünde gösterilen açıklama metni.",
+    "DESCRIPTIONS": [
+      "Turunun başında [E] kazan. [E] bir enerji simgesidir."
+    ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "Lanetli Kırık Kılıç",
+    "FLAVOR": "Başkalarının günahlarına hâlâ susamış parçalanmış bir kılıç.",
+    "DESCRIPTIONS": [
+      "Her dövüşün başında, dövüş boyunca rastgele bir Darbe ve rastgele bir Savunma kartını Geliştir. NL Her tur başında #b",
+      " ${modID}:Günah kazan."
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "Çengelli Kanca",
+    "FLAVOR": "Eti her yaralayışında daha derine kazılan zalim bir kanca.",
+    "DESCRIPTIONS": [
+      "Ne zaman ${modID}:Kanama uygularsan #b1 ekstra ${modID}:Kanama uygula."
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "Çılgın Kadeh",
+    "FLAVOR": "Saf çılgınlıkla demlenmiş şarap; her kadeh kaldırış başka bir hayatı tüketir.",
+    "DESCRIPTIONS": [
+      "Minyon olmayan bir düşman öldüğünde #b8 CP iyileştir."
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "Sözleşme Mührü",
+    "FLAVOR": "Kanla imzalanmış, yalnızca saf olanların onurlandırdığı bir sözleşme.",
+    "DESCRIPTIONS": [
+      "Dövüşün sonunda ${modID}:Borç yoksa #b15 altın kazan."
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "İyileşme Tılsımı",
+    "FLAVOR": "Her yaradaki acıyı söken bir tılsım.",
+    "DESCRIPTIONS": [
+      "Ne zaman CP kaybedecek olsan bunun yerine en fazla #b18 CP kaybedersin."
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "Gargoyla Kol",
+    "FLAVOR": "Arınmayı korumaya çeviren kadim taş.",
+    "DESCRIPTIONS": [
+      "Ne zaman bir olumsuz etkinin #b1 kademesini kaldırırsan #b1 Blok kazan."
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "Kavrulmuş Sancak",
+    "FLAVOR": "Yalnızca elleri boş olanları toplayan yıpranmış bir sancak.",
+    "DESCRIPTIONS": [
+      "Tur sonunda elinde kart yoksa sonraki turunun başında #b2 ekstra kart çek."
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "Kahramanın Uzunkılıcı",
+    "FLAVOR": "Kurtuluş vaadinden dövülmüş bir kılıç.",
+    "DESCRIPTIONS": [
+      "Lanetli Kırık Kılıç'ın yerine geçer. NL Aldığında destendeki tüm Darbe ve Savunma kartlarını Geliştir. NL Her tur başında #b",
+      " ${modID}:Günah kazan."
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "Ağır Prangalar",
+    "FLAVOR": "Bağlayan ama güç veren demir bir ağırlık.",
+    "DESCRIPTIONS": [
+      "Her tur başında [E] kazan. NL Her dövüşün başında çekme yığınına 1 *Dolaşık ekle."
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "Davul Tokmağı",
+    "FLAVOR": "Davulun her vuruşu bir enerji kıvılcımı uyandırır.",
+    "DESCRIPTIONS": [
+      "Her #b",
+      " kart Tüketişinde [E] kazan."
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "Pişmansız Para",
+    "FLAVOR": "Her hatayı affeden bir para.",
+    "DESCRIPTIONS": [
+      "Ne zaman dükkana girersen #b",
+      " Altın kazan."
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "Karataş Feneri",
+    "FLAVOR": "Soğuk ışığı, tutuşturduğu her dertti işaretler.",
+    "DESCRIPTIONS": [
+      "Her dövüşte bir düşmana ilk olumsuz etkiyi uyguladığında [E] kazan."
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "Demir Çekiç",
+    "FLAVOR": "Bitmeyen savaşın örsünde dövülmüş.",
+    "DESCRIPTIONS": [
+      "Bir Elit'i yendiğinde destendeki #b",
+      " rastgele kartı Geliştir."
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "Sönmeyen Kor",
+    "FLAVOR": "Talihsizlikle beslenen ve asla sönmeyen bir kıvılcım.",
+    "DESCRIPTIONS": [
+      "Bir olumsuz etkiye sahipken #b%25 daha az hasar al. NL Olumsuz etkisi olan düşmanlara #b%25 daha fazla hasar ver."
+    ]
+  }
+}

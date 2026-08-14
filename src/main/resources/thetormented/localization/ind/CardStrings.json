@@ -1,0 +1,441 @@
+{
+    "${modID}:ExampleCard":  {
+                                     "NAME":  "Nama",
+                                     "DESCRIPTION":  "Deskripsi. NL Baris kedua.",
+                                     "UPGRADE_DESCRIPTION":  "Ini akan otomatis digunakan jika kartu ditingkatkan. Hapus jika tidak diperlukan.",
+                                     "EXTENDED_DESCRIPTION":  [
+                                                                  "Kamu dapat menaruh lebih banyak teks di sini.",
+                                                                  "Jika kamu perlu menggunakannya untuk sesuatu.",
+                                                                  "Badai Salju adalah contoh yang baik untuk ini."
+                                                              ]
+                                 },
+    "${modID}:StrikeTormented":  {
+                                         "NAME":  "Serangan",
+                                         "DESCRIPTION":  "Berikan !D! kerusakan.",
+                                         "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan."
+                                     },
+    "${modID}:DefendTormented":  {
+                                         "NAME":  "Pertahanan",
+                                         "DESCRIPTION":  "Dapatkan !B! Blok.",
+                                         "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok."
+                                     },
+    "${modID}:Rebel":  {
+                               "NAME":  "Pemberontak",
+                               "DESCRIPTION":  "Berikan !D! kerusakan. NL Berikan ${modID}:Perdarahan setara dengan kerusakan yang diberikan.",
+                               "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Berikan ${modID}:Perdarahan setara dengan kerusakan yang diberikan.",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            "NL (Berikan !M! ${modID}:Perdarahan)"
+                                                        ]
+                           },
+    "${modID}:Forgive":  {
+                                 "NAME":  "Pengampunan",
+                                 "DESCRIPTION":  "Dapatkan !B! Blok. NL Kurangi !M! ${modID}:Dosa.",
+                                 "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. NL Kurangi !M! ${modID}:Dosa."
+                             },
+    "${modID}:Slash":  {
+                               "NAME":  "Tebasan",
+                               "DESCRIPTION":  "Berikan !D! kerusakan. NL Berikan !M! ${modID}:Perdarahan.",
+                               "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Berikan !M! ${modID}:Perdarahan."
+                           },
+    "${modID}:Rend":  {
+                              "NAME":  "Robekan",
+                              "DESCRIPTION":  "Berikan !D! kerusakan. NL Jika musuh memiliki ${modID}:Perdarahan, berikan !M! serangan ekstra.",
+                              "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Jika musuh memiliki ${modID}:Perdarahan, berikan !M! serangan ekstra."
+                          },
+    "${modID}:Pursuit":  {
+                                 "NAME":  "Pengejaran",
+                                 "DESCRIPTION":  "Hanya dapat dimainkan jika kartu terakhir yang dimainkan pada giliran ini adalah kartu Serangan. NL Berikan !D! kerusakan.",
+                                 "UPGRADE_DESCRIPTION":  "Hanya dapat dimainkan jika kartu terakhir yang dimainkan pada giliran ini adalah kartu Serangan. NL Berikan !D! kerusakan.",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              "Kamu harus memainkan Serangan terlebih dahulu pada giliran ini."
+                                                          ]
+                             },
+    "${modID}:ArmSevering":  {
+                                     "NAME":  "Pemotongan Lengan",
+                                     "DESCRIPTION":  "Berikan !D! kerusakan. NL Tambahkan !M! *Sengsara ke tanganmu.",
+                                     "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Tambahkan !M! *Sengsara ke tanganmu."
+                                 },
+    "${modID}:QuenchedBlade":  {
+                                       "NAME":  "Bilah Terpadam",
+                                       "DESCRIPTION":  "Berikan !D! kerusakan. NL Tingkatkan !M! kartu di tanganmu untuk sisa pertarungan.",
+                                       "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Tingkatkan !M! kartu di tanganmu untuk sisa pertarungan."
+                                   },
+    "${modID}:CruelTorture":  {
+                                      "NAME":  "Siksaan Kejam",
+                                      "DESCRIPTION":  "Berikan !D! kerusakan. Dapatkan !${modID}:SIN! ${modID}:Dosa.",
+                                      "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. Dapatkan !${modID}:SIN! ${modID}:Dosa."
+                                  },
+    "${modID}:AtonementStrike":  {
+                                         "NAME":  "Serangan Penebusan",
+                                         "DESCRIPTION":  "Berikan !D! kerusakan. Ambil !M! kartu jika memiliki ${modID}:Utang. NL Kemudian kehilangan 4 ${modID}:Dosa.",
+                                         "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. Ambil !M! kartu jika memiliki ${modID}:Utang. NL Kemudian kehilangan 4 ${modID}:Dosa."
+                                     },
+    "${modID}:UnrighteousGuilt":  {
+                                          "NAME":  "Bersalah Tak Adil",
+                                          "DESCRIPTION":  "Berikan !D! kerusakan kepada SEMUA musuh. Dapatkan !${modID}:SIN! ${modID}:Dosa.",
+                                          "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan kepada SEMUA musuh. Dapatkan !${modID}:SIN! ${modID}:Dosa."
+                                      },
+    "${modID}:RelentlessEntanglement":  {
+                                                "NAME":  "Keterjeratan Tanpa Henti",
+                                                "DESCRIPTION":  "Berikan !D! kerusakan. NL Tambahkan ke tangan jika ${modID}:Utang bertambah"
+                                            },
+    "${modID}:Agony":  {
+                               "NAME":  "Penderitaan",
+                               "DESCRIPTION":  "Berikan !D! kerusakan. Berikan !M! #yLemah dan !M! #yRentan.",
+                               "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. Berikan !M! #yLemah dan !M! #yRentan."
+                           },
+    "${modID}:SacredLand":  {
+                                    "NAME":  "Tanah Suci",
+                                    "DESCRIPTION":  "Dapatkan !B! Blok. Ambil !M! kartu jika tidak memiliki ${modID}:Utang. NL Jika tidak, kehilangan 7 ${modID}:Dosa.",
+                                    "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. Ambil !M! kartu jika tidak memiliki ${modID}:Utang. NL Jika tidak, kehilangan 7 ${modID}:Dosa."
+                                },
+    "${modID}:Loan":  {
+                              "NAME":  "Pinjaman",
+                              "DESCRIPTION":  "Dapatkan [E] [E] [E]. Pada giliran berikutnya, kehilangan [E]. NL Buang",
+                              "UPGRADE_DESCRIPTION":  "Dapatkan [E] [E] [E]. NL Pada giliran berikutnya, kehilangan [E]. NL Buang NL Simpan"
+                          },
+    "${modID}:Firm":  {
+                              "NAME":  "Kokoh",
+                              "DESCRIPTION":  "Dapatkan !B! Blok. NL Simpan",
+                              "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. NL Simpan"
+                          },
+    "${modID}:Odyssey":  {
+                                 "NAME":  "Pengembaraan",
+                                 "DESCRIPTION":  "Ambil !M! kartu. NL Buang 1 kartu. NL Jika kamu membuang kartu Status, kurangi 3 ${modID}:Dosa.",
+                                 "UPGRADE_DESCRIPTION":  "Ambil !M! kartu. NL Buang 1 kartu. NL Jika kamu membuang kartu Status, kurangi 3 ${modID}:Dosa."
+                             },
+    "${modID}:BloodGuard":  {
+                                    "NAME":  "Penjaga Darah",
+                                    "DESCRIPTION":  "Dapatkan !B! Blok. NL Berikan !M! ${modID}:Perdarahan kepada satu musuh.",
+                                    "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. NL Berikan !M! ${modID}:Perdarahan kepada satu musuh."
+                                },
+    "${modID}:PleaOfInnocence":  {
+                                         "NAME":  "Pengakuan Tak Bersalah",
+                                         "DESCRIPTION":  "Dapatkan !B! Blok. NL Setiap ${modID}:Utang memberikan !M! Blok tambahan.",
+                                         "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. NL Setiap ${modID}:Utang memberikan !M! Blok tambahan.",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (Dapatkan !${modID}:TOTAL_BLOCK! Blok total)"
+                                                                  ]
+                                     },
+    "${modID}:PredictiveMeasures":  {
+                                            "NAME":  "Langkah Prediktif",
+                                            "DESCRIPTION":  "Ambil !M! kartu. Jika berupa Serangan, kartu itu berbiaya 0 sampai dimainkan pada giliran ini.",
+                                            "UPGRADE_DESCRIPTION":  "Ambil !M! kartu. Jika berupa Serangan, kartu itu berbiaya 0 sampai dimainkan pada giliran ini."
+                                        },
+    "${modID}:Hostility":  {
+                                   "NAME":  "Permusuhan",
+                                   "DESCRIPTION":  "Jika Blok-mu di bawah !${modID}:BLOCK_THRESHOLD!, berikan !M! #yLemah kepada semua musuh. NL Dapatkan !B! Blok",
+                                   "UPGRADE_DESCRIPTION":  "Jika Blok-mu di bawah !${modID}:BLOCK_THRESHOLD!, berikan !M! #yLemah kepada semua musuh. NL Dapatkan !B! Blok"
+                               },
+    "${modID}:Shackles":  {
+                                  "NAME":  "Belenggu",
+                                  "DESCRIPTION":  "Tambahkan !${modID}:CARD_ADD! *Sengsara. NL Dapatkan !M! Blok untuk setiap kartu Status di tanganmu",
+                                  "UPGRADE_DESCRIPTION":  "Tambahkan !${modID}:CARD_ADD! *Sengsara. NL Dapatkan !M! Blok untuk setiap kartu Status di tanganmu",
+                                  "EXTENDED_DESCRIPTION":  [
+                                                               " (Dapatkan !${modID}:TOTAL_BLOCK! Blok total)"
+                                                           ]
+                              },
+    "${modID}:DeterringStrike":  {
+                                         "NAME":  "Serangan Pencegah",
+                                         "DESCRIPTION":  "Berikan !D! kerusakan. NL Musuh kehilangan !M! #yKekuatan pada giliran ini jika niatnya adalah menyerang",
+                                         "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Musuh kehilangan !M! #yKekuatan pada giliran ini jika niatnya adalah menyerang"
+                                     },
+    "${modID}:HeavySmash":  {
+                                    "NAME":  "Pukulan Berat",
+                                    "DESCRIPTION":  "Hanya dapat dimainkan jika memiliki !M! ${modID}:Utang. Berikan !D! kerusakan",
+                                    "UPGRADE_DESCRIPTION":  "Hanya dapat dimainkan jika memiliki !M! ${modID}:Utang. Berikan !D! kerusakan",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 "Hanya dapat dimainkan jika memiliki 2 ${modID}:Utang"
+                                                             ]
+                                },
+    "${modID}:SinsToBlades":  {
+                                      "NAME":  "Dosa Menjadi Pedang",
+                                      "DESCRIPTION":  "Berikan !D! kerusakan. NL Ambil kartu sebanyak ${modID}:Utang-mu.",
+                                      "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Ambil kartu sebanyak ${modID}:Utang-mu, ditambah 1.",
+                                      "EXTENDED_DESCRIPTION":  [
+                                                                   " (Ambil !${modID}:TOTAL_DRAW! kartu)"
+                                                               ]
+                                  },
+    "${modID}:ChaosDirty":  {
+                                    "NAME":  "Kekacauan Kotor",
+                                    "DESCRIPTION":  "Dapatkan !${modID}:SIN! ${modID}:Dosa. NL Berikan !D! kerusakan. Setiap ${modID}:Utang yang kamu miliki memberikan !M! kerusakan ekstra",
+                                    "UPGRADE_DESCRIPTION":  "Dapatkan !${modID}:SIN! ${modID}:Dosa. NL Berikan !D! kerusakan. Setiap ${modID}:Utang yang kamu miliki memberikan !M! kerusakan ekstra",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 " (Berikan !${modID}:TOTAL_DAMAGE! kerusakan total)"
+                                                             ]
+                                },
+    "${modID}:TemperedSword":  {
+                                       "NAME":  "Pedang Tempaan",
+                                       "DESCRIPTION":  "Berikan !D! kerusakan. NL Setiap kartu Status yang kamu buang memberikan !M! kerusakan ekstra",
+                                       "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Setiap kartu Status yang kamu buang memberikan !M! kerusakan ekstra",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    " (Berikan !${modID}:TOTAL_DAMAGE! kerusakan total)"
+                                                                ]
+                                   },
+    "${modID}:Crush":  {
+                               "NAME":  "Penghancuran",
+                               "DESCRIPTION":  "Berikan !D! kerusakan. NL Dapatkan Blok setara dengan ${modID}:Perdarahan yang dimiliki musuh",
+                               "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Dapatkan Blok setara dengan ${modID}:Perdarahan yang dimiliki musuh",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (Dapatkan !${modID}:TOTAL_BLOCK! Blok total)"
+                                                        ]
+                           },
+    "${modID}:Unleash":  {
+                                 "NAME":  "Akumulasi",
+                                 "DESCRIPTION":  "Berikan !D! kerusakan 2 kali. NL Pada giliran berikutnya, dapatkan [E]",
+                                 "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan 2 kali. NL Pada giliran berikutnya, dapatkan [E][E]"
+                             },
+    "${modID}:HeavyPast":  {
+                                   "NAME":  "Masa Lalu Berat",
+                                   "DESCRIPTION":  "Berikan !D! kerusakan 2 kali. NL Tambahkan 1 *Sengsara ke tumpukan tarik dan 1 ke tumpukan buangan. NL Ambil !M! kartu.",
+                                   "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan 2 kali. NL Tambahkan 1 *Sengsara ke tumpukan tarik dan 1 ke tumpukan buangan. NL Ambil !M! kartu."
+                               },
+    "${modID}:Implication":  {
+                                     "NAME":  "Implikasi",
+                                     "DESCRIPTION":  "Buang 1 kartu dari tanganmu. NL Berikan !D! kerusakan ke SEMUA musuh. NL Ambil 1 kartu untuk setiap musuh dengan ${modID}:Perdarahan yang menerima kerusakan.",
+                                     "UPGRADE_DESCRIPTION":  "Buang 1 kartu dari tanganmu. NL Berikan !D! kerusakan ke SEMUA musuh. NL Ambil 1 kartu untuk setiap musuh dengan ${modID}:Perdarahan yang menerima kerusakan."
+                                 },
+    "${modID}:ConsecutiveKicks":  {
+                                          "NAME":  "Tendangan Beruntun",
+                                          "DESCRIPTION":  "Berikan !D! kerusakan !M! kali",
+                                          "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan !M! kali"
+                                      },
+    "${modID}:MassiveBleeding":  {
+                                         "NAME":  "Perdarahan Masif",
+                                         "DESCRIPTION":  "Berikan !D! kerusakan. NL Lalu berikan kerusakan setara dengan ${modID}:Perdarahan yang dimiliki musuh",
+                                         "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Lalu berikan kerusakan setara dengan dua kali lipat ${modID}:Perdarahan yang dimiliki musuh",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (Berikan !${modID}:TOTAL_DAMAGE! kerusakan total)"
+                                                                  ]
+                                     },
+    "${modID}:FaceDanger":  {
+                                    "NAME":  "Hadapi Bahaya",
+                                    "DESCRIPTION":  "Berikan !D! kerusakan. NL Setiap *Sengsara yang kamu mainkan mengurangi biaya energinya sebesar 1 untuk pertarungan ini",
+                                    "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Setiap *Sengsara yang kamu mainkan mengurangi biaya energinya sebesar 1 untuk pertarungan ini"
+                                },
+    "${modID}:Relief":  {
+                                "NAME":  "Kelegaan",
+                                "DESCRIPTION":  "Tambahkan 2 *Sengsara ke tumpukan buangan. NL Pada akhir giliranmu, buang semua *Sengsara di tanganmu.",
+                                "UPGRADE_DESCRIPTION":  "Bawaan NL Tambahkan 2 *Sengsara ke tumpukan buangan. NL Pada akhir giliranmu, buang semua *Sengsara di tanganmu."
+                            },
+    "${modID}:Misery":  {
+                                "NAME":  "Sengsara",
+                                "DESCRIPTION":  "Terima 2 kerusakan. NL Ambil 1 kartu. NL Dibuang"
+                            },
+    "${modID}:Parry":  {
+                               "NAME":  "Tangkisan",
+                               "DESCRIPTION":  "Dapatkan !B! Blok. NL Setiap kali kamu diserang, pantulkan kerusakan yang kamu blok kembali ke penyerang.",
+                               "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. NL Setiap kali kamu diserang, pantulkan kerusakan yang kamu blok kembali ke penyerang."
+                           },
+    "${modID}:Pardon":  {
+                                "NAME":  "Ampunan",
+                                "DESCRIPTION":  "Ubah SEMUA kartu di tanganmu menjadi kartu acak. NL Setelah dimainkan !M! kali, kartu ini berubah menjadi kartu Kekuatan acak",
+                                "UPGRADE_DESCRIPTION":  "Ubah SEMUA kartu di tanganmu menjadi kartu acak yang ditingkatkan. NL Setelah dimainkan !M! kali, kartu ini berubah menjadi kartu Kekuatan acak yang ditingkatkan"
+                            },
+    "${modID}:Memorial":  {
+                                  "NAME":  "Peringatan",
+                                  "DESCRIPTION":  "Ambil 1 kartu. NL Jika kartu yang diambil adalah Keterampilan, kehilangan !M! ${modID}:Dosa.",
+                                  "UPGRADE_DESCRIPTION":  "Ambil 1 kartu. NL Jika kartu yang diambil adalah Keterampilan, kehilangan !M! ${modID}:Dosa."
+                              },
+    "${modID}:Boiling":  {
+                                 "NAME":  "Mendidih",
+                                 "DESCRIPTION":  "Buang semua kartu non-Serangan di tanganmu. NL Berikan !M! ${modID}:Perdarahan kepada 1 musuh acak untuk setiap kartu yang dibuang.",
+                                 "UPGRADE_DESCRIPTION":  "Buang semua kartu non-Serangan di tanganmu. NL Berikan !M! ${modID}:Perdarahan kepada 1 musuh acak untuk setiap kartu yang dibuang."
+                             },
+    "${modID}:Grief":  {
+                               "NAME":  "Duka",
+                               "DESCRIPTION":  "Tambahkan 1 kartu Status acak ke tanganmu. NL Pada giliran ini, setiap kali kamu mengambil kartu, berikan !M! ${modID}:Perdarahan kepada SEMUA musuh.",
+                               "UPGRADE_DESCRIPTION":  "Tambahkan 1 kartu Status acak ke tanganmu. NL Pada giliran ini, setiap kali kamu mengambil kartu, berikan !M! ${modID}:Perdarahan kepada SEMUA musuh."
+                           },
+    "${modID}:BloodSea":  {
+                                  "NAME":  "Lautan Darah",
+                                  "DESCRIPTION":  "Berikan !${modID}:BLEED! ${modID}:Perdarahan. NL Lipatgandakan ${modID}:Perdarahan musuh itu sebesar !M!. NL Buang",
+                                  "UPGRADE_DESCRIPTION":  "Berikan !${modID}:BLEED! ${modID}:Perdarahan. NL Lipatgandakan ${modID}:Perdarahan musuh itu sebesar !M!. NL Buang"
+                              },
+    "${modID}:RelentlessBleed":  {
+                                         "NAME":  "Perdarahan Tanpa Henti",
+                                         "DESCRIPTION":  "Pada awal setiap giliran, berikan !M! ${modID}:Perdarahan kepada SEMUA musuh.",
+                                         "UPGRADE_DESCRIPTION":  "Pada awal setiap giliran, berikan !M! ${modID}:Perdarahan kepada SEMUA musuh."
+                                     },
+    "${modID}:DreadMemory":  {
+                                     "NAME":  "Kenangan Mengerikan",
+                                     "DESCRIPTION":  "Jika kamu memperoleh ${modID}:Utang pada giliran ini, musuh memberikan !M!% lebih sedikit kerusakan. NL Hanya berlaku pada giliran kamu memperoleh ${modID}:Utang.",
+                                     "UPGRADE_DESCRIPTION":  "Jika kamu memperoleh ${modID}:Utang pada giliran ini, musuh memberikan !M!% lebih sedikit kerusakan. NL Hanya berlaku pada giliran kamu memperoleh ${modID}:Utang."
+                                 },
+    "${modID}:Trial":  {
+                               "NAME":  "Ujian",
+                               "DESCRIPTION":  "Dapatkan !M! #yKekuatan dan !M! #yKetangkasan. NL Dapatkan 1 #yLemah.",
+                               "UPGRADE_DESCRIPTION":  "Dapatkan !M! #yKekuatan dan !M! #yKetangkasan. NL Dapatkan 1 #yLemah."
+                           },
+    "${modID}:ReconcileFate":  {
+                                       "NAME":  "Rekonsiliasi",
+                                       "DESCRIPTION":  "Setiap kali kamu membuat atau membuang *Sengsara, dapatkan !M! Blok.",
+                                       "UPGRADE_DESCRIPTION":  "Setiap kali kamu membuat atau membuang *Sengsara, dapatkan !M! Blok."
+                                   },
+    "${modID}:MangledFlesh":  {
+                                      "NAME":  "Daging Remuk",
+                                      "DESCRIPTION":  "Setiap kali kamu memberikan 6 ${modID}:Perdarahan kepada musuh, berikan !M! kerusakan kepada SEMUA musuh.",
+                                      "UPGRADE_DESCRIPTION":  "Setiap kali kamu memberikan 6 ${modID}:Perdarahan kepada musuh, berikan !M! kerusakan kepada SEMUA musuh."
+                                  },
+    "${modID}:BloodThorns":  {
+                                     "NAME":  "Duri Darah",
+                                     "DESCRIPTION":  "Setiap kali musuh menyerangmu, berikan !M! ${modID}:Perdarahan kepadanya.",
+                                     "UPGRADE_DESCRIPTION":  "Setiap kali musuh menyerangmu, berikan !M! ${modID}:Perdarahan kepadanya."
+                                 },
+    "${modID}:RedemptionPath":  {
+                                        "NAME":  "Jalan Penebusan",
+                                        "DESCRIPTION":  "Setiap kali kamu menghilangkan 1 ${modID}:Utang, ambil !M! kartu.",
+                                        "UPGRADE_DESCRIPTION":  "Setiap kali kamu menghilangkan 1 ${modID}:Utang, ambil !M! kartu."
+                                    },
+    "${modID}:Requiem":  {
+                                 "NAME":  "Requiem",
+                                 "DESCRIPTION":  "Setiap *Sengsara yang kamu buang memberikan !D! kerusakan kepada musuh acak",
+                                 "UPGRADE_DESCRIPTION":  "Setiap *Sengsara yang kamu buang memberikan !D! kerusakan kepada musuh acak",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              " (Berikan !${modID}:HITS! pukulan total)"
+                                                          ]
+                             },
+    "${modID}:DesperateMeasure":  {
+                                          "NAME":  "Langkah Nekat",
+                                          "DESCRIPTION":  "Berikan !D! kerusakan. NL Jika ini tidak membunuh musuh, kehilangan !M! HP.",
+                                          "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan. NL Jika ini tidak membunuh musuh, kehilangan !M! HP."
+                                      },
+    "${modID}:UnceasingWar":  {
+                                      "NAME":  "Perang Tanpa Henti",
+                                      "DESCRIPTION":  "Berikan !D! kerusakan !${modID}:HITS! kali. NL Setiap kali ini membunuh musuh, secara permanen tingkatkan jumlah pukulan kartu ini sebesar 1 untuk sisa pertandingan. NL Buang",
+                                      "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan !${modID}:HITS! kali. NL Setiap kali ini membunuh musuh, secara permanen tingkatkan jumlah pukulan kartu ini sebesar 1 untuk sisa pertandingan. NL Buang"
+                                  },
+    "${modID}:FinalJudgment":  {
+                                       "NAME":  "Penghakiman Terakhir",
+                                       "DESCRIPTION":  "Hanya dapat dimainkan jika kamu memiliki setidaknya 4 ${modID}:Utang. NL Berikan !D! kerusakan kepada SEMUA musuh. NL Hilangkan semua ${modID}:Dosa.",
+                                       "UPGRADE_DESCRIPTION":  "Hanya dapat dimainkan jika kamu memiliki setidaknya 4 ${modID}:Utang. NL Berikan !D! kerusakan kepada SEMUA musuh. NL Hilangkan semua ${modID}:Dosa.",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    "Butuh setidaknya 4 ${modID}:Utang untuk dimainkan."
+                                                                ]
+                                   },
+    "${modID}:Blazing":  {
+                                 "NAME":  "Membara",
+                                 "DESCRIPTION":  "Buang semua kartu di tanganmu. NL Ambil !M! kartu untuk setiap kartu Status yang dibuang. NL Buang",
+                                 "UPGRADE_DESCRIPTION":  "Buang semua kartu di tanganmu. NL Ambil !M! kartu untuk setiap kartu Status yang dibuang. NL Buang"
+                             },
+    "${modID}:RockSolid":  {
+                                   "NAME":  "Kokoh Seperti Batu",
+                                   "DESCRIPTION":  "Dapatkan !B! Blok. NL Kehilangan 3 HP Maks.",
+                                   "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. NL Kehilangan 3 HP Maks."
+                               },
+    "${modID}:Devotion":  {
+                                  "NAME":  "Pengabdian",
+                                  "DESCRIPTION":  "Hilangkan semua ${modID}:Utang, #yRentan, #yLemah, dan #yRapuh milikmu. NL Untuk setiap lapisan yang dihilangkan, dapatkan 1 Energi dan ambil !M! kartu. NL Buang",
+                                  "UPGRADE_DESCRIPTION":  "Hilangkan semua ${modID}:Utang, #yRentan, #yLemah, dan #yRapuh milikmu. NL Untuk setiap lapisan yang dihilangkan, dapatkan 1 Energi dan ambil !M! kartu. NL Buang"
+                              },
+    "${modID}:Indignation":  {
+                                     "NAME":  "Kemarahan",
+                                     "DESCRIPTION":  "Untuk X giliran berikutnya, kartu pertama yang kamu mainkan setiap giliran berbiaya 0. NL Buang",
+                                     "UPGRADE_DESCRIPTION":  "Untuk X+1 giliran berikutnya, kartu pertama yang kamu mainkan setiap giliran berbiaya 0. NL Buang"
+                                 },
+    "${modID}:BloodFeud":  {
+                                   "NAME":  "Dendam Darah",
+                                   "DESCRIPTION":  "Tambahkan 1 *Sengsara ke tanganmu. NL Langsung picu !M!% dari ${modID}:Perdarahan semua musuh.",
+                                   "UPGRADE_DESCRIPTION":  "Tambahkan 1 *Sengsara ke tanganmu. NL Langsung picu !M!% dari ${modID}:Perdarahan semua musuh."
+                               },
+    "${modID}:VoidCall":  {
+                                  "NAME":  "Panggilan Kehampaan",
+                                  "DESCRIPTION":  "Pilih 1 kartu dari tumpukan tarikmu dan tambahkan ke tanganmu. Kartu itu menjadi #ySementara. NL Buang",
+                                  "UPGRADE_DESCRIPTION":  "Pilih 1 kartu dari tumpukan tarikmu dan tambahkan ke tanganmu. Kartu itu menjadi #ySementara."
+                              },
+    "${modID}:Spread":  {
+                                "NAME":  "Penyebaran",
+                                "DESCRIPTION":  "Berikan !M! ${modID}:Perdarahan. NL Berikan semua efek negatif musuh itu kepada semua musuh lainnya.",
+                                "UPGRADE_DESCRIPTION":  "Berikan !M! ${modID}:Perdarahan. NL Berikan semua efek negatif musuh itu kepada semua musuh lainnya."
+                            },
+    "${modID}:HungeringBattleWill":  {
+                                             "NAME":  "Nafsu Bertarung",
+                                             "DESCRIPTION":  "Pada awal setiap giliran, dapatkan [E] . NL Pada akhir setiap giliran, menerima 3 kerusakan.",
+                                             "UPGRADE_DESCRIPTION":  "Pada awal setiap giliran, dapatkan [E] . NL Pada akhir setiap giliran, menerima 3 kerusakan."
+                                         },
+    "${modID}:ExecutionForm":  {
+                                       "NAME":  "Wujud Penghakiman",
+                                       "DESCRIPTION":  "Berikan 50% lebih banyak kerusakan kepada musuh di bawah !M!% HP Maks mereka.",
+                                       "UPGRADE_DESCRIPTION":  "Berikan 50% lebih banyak kerusakan kepada musuh di bawah !M!% HP Maks mereka."
+                                   },
+    "${modID}:SinAvatar":  {
+                                   "NAME":  "Penjelmaan Dosa",
+                                   "DESCRIPTION":  "Pada akhir giliranmu, dapatkan !B! Blok, ditambah !M! Blok untuk setiap lapisan ${modID}:Utang.",
+                                   "UPGRADE_DESCRIPTION":  "Pada akhir giliranmu, dapatkan !B! Blok, ditambah !M! Blok untuk setiap lapisan ${modID}:Utang.",
+                                   "EXTENDED_DESCRIPTION":  [
+                                                                " (Dapatkan !${modID}:TOTAL_BLOCK! Blok total)"
+                                                            ]
+                               },
+    "${modID}:Bloodbath":  {
+                                   "NAME":  "Pemandian Darah",
+                                   "DESCRIPTION":  "Kartu Serangan pertamamu yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan.",
+                                   "UPGRADE_DESCRIPTION":  "Kartu Serangan pertamamu yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan."
+                               },
+    "${modID}:Overrigid":  {
+                                   "NAME":  "Terlalu Kaku",
+                                   "DESCRIPTION":  "Dapatkan 5 #yKekuatan. NL Setiap kali kamu memainkan kartu Serangan, kartu itu secara permanen kehilangan !M! kerusakan untuk sisa pertarungan.",
+                                   "UPGRADE_DESCRIPTION":  "Dapatkan 5 #yKekuatan. NL Setiap kali kamu memainkan kartu Serangan, kartu itu secara permanen kehilangan !M! kerusakan untuk sisa pertarungan."
+                               },
+    "${modID}:Entangled":  {
+                                   "NAME":  "Terjerat",
+                                   "DESCRIPTION":  "Setiap kali kamu mengambil kartu ini, tambahkan 1 salinannya ke tanganmu. NL Buang NL Saat kartu ini habis, tambahkan 1 Lendir ke tumpukan ambil."
+                               },
+    "${modID}:Riot":  {
+                              "NAME":  "Kerusuhan",
+                              "DESCRIPTION":  "Berikan !D! kerusakan X kali. NL Setiap ${modID}:Utang yang kamu miliki membuat kartu ini memberikan !M! kerusakan ekstra.",
+                              "UPGRADE_DESCRIPTION":  "Berikan !D! kerusakan X kali. NL Setiap ${modID}:Utang yang kamu miliki membuat kartu ini memberikan !M! kerusakan ekstra.",
+                              "EXTENDED_DESCRIPTION":  [
+                                                           " (Berikan !${modID}:TOTAL_DAMAGE! kerusakan per pukulan)"
+                                                       ]
+                          },
+    "${modID}:Bloodstain":  {
+                                    "NAME":  "Noda Darah",
+                                    "DESCRIPTION":  "Berikan !M! ${modID}:Perdarahan. NL Lakukan sekali lagi untuk setiap ${modID}:Utang yang kamu miliki. NL Buang.",
+                                    "UPGRADE_DESCRIPTION":  "Berikan !M! ${modID}:Perdarahan. NL Lakukan sekali lagi untuk setiap ${modID}:Utang yang kamu miliki."
+                                },
+    "${modID}:BrokenArmor":  {
+                                     "NAME":  "Baju Zirah Rusak",
+                                     "DESCRIPTION":  "Dapatkan !B! Blok. NL Dapatkan 1 Rapuh.",
+                                     "UPGRADE_DESCRIPTION":  "Dapatkan !B! Blok. NL Dapatkan 1 Rapuh."
+                                 },
+    "${modID}:FormPact":  {
+                                  "NAME":  "Pakta",
+                                  "DESCRIPTION":  "Dapatkan [E] [E]. NL Tambahkan 1 *Sengsara ke tumpukan buang",
+                                  "UPGRADE_DESCRIPTION":  "Dapatkan [E] [E] [E]. NL Tambahkan 1 *Sengsara ke tumpukan buang"
+                              },
+    "${modID}:Fraud":  {
+                               "NAME":  "Penipuan",
+                               "DESCRIPTION":  "Ambil !M! kartu. NL Dapatkan !M! ${modID}:Dosa.",
+                               "UPGRADE_DESCRIPTION":  "Ambil !M! kartu. NL Dapatkan !M! ${modID}:Dosa."
+                           },
+    "${modID}:Mercy":  {
+                               "NAME":  "Belas Kasih",
+                               "DESCRIPTION":  "#ySementara. NL Buang *Sengsara di tanganmu pada akhir setiap giliran. NL Dapatkan !M! ${modID}:Dosa.",
+                               "UPGRADE_DESCRIPTION":  "#ySementara. NL Buang *Sengsara di tanganmu pada akhir setiap giliran. NL Dapatkan !M! ${modID}:Dosa."
+                           },
+    "${modID}:Prepare":  {
+                                 "NAME":  "Persiapan",
+                                 "DESCRIPTION":  "Bawaan. NL Ambil !M! kartu. NL Simpan tanganmu pada giliran ini. NL Buang.",
+                                 "UPGRADE_DESCRIPTION":  "Bawaan. NL Ambil !M! kartu. NL Simpan tanganmu pada giliran ini. NL Buang."
+                             },
+    "${modID}:Relapse":  {
+                                 "NAME":  "Kambuh",
+                                 "DESCRIPTION":  "${modID}:Perdarahan musuh tidak dihilangkan pada giliran ini.",
+                                 "UPGRADE_DESCRIPTION":  "${modID}:Perdarahan SEMUA musuh tidak dihilangkan pada giliran ini."
+                             },
+    "${modID}:SharedSuffering":  {
+                                         "NAME":  "Penderitaan Bersama",
+                                         "DESCRIPTION":  "Untuk setiap ${modID}:Utang yang kamu miliki, berikan !M! #yLemah dan !M! #yRentan kepada SEMUA musuh. NL Buang.",
+                                         "UPGRADE_DESCRIPTION":  "Untuk setiap ${modID}:Utang yang kamu miliki, berikan !M! #yLemah dan !M! #yRentan kepada SEMUA musuh. NL Buang."
+                                     },
+    "${modID}:Taboo":  {
+                               "NAME":  "Tabu",
+                               "DESCRIPTION":  "Dapatkan 1 Energi untuk setiap ${modID}:Utang yang kamu miliki. NL Dapatkan 1 ${modID}:Pembatasan.",
+                               "UPGRADE_DESCRIPTION":  "Dapatkan 1 Energi untuk setiap ${modID}:Utang yang kamu miliki, ditambah 1. NL Dapatkan 1 ${modID}:Pembatasan.",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (Tidak dapat memperoleh energi)",
+                                                            " (Dapatkan !${modID}:TOTAL_ENERGY! Energi)",
+                                                            " (Dapatkan !${modID}:TOTAL_ENERGY! Energi!)"
+                                                        ]
+                           }
+}

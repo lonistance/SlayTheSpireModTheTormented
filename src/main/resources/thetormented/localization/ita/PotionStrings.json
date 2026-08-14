@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Sangue Divino",
+    "DESCRIPTIONS": [
+      "Applica #b",
+      " ${modID}:Sanguinamento a un nemico."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Lacrima",
+    "DESCRIPTIONS": [
+      "Conserva la tua mano per #b1 turno."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Vino della Rinascita",
+    "DESCRIPTIONS": [
+      "Ottieni #b1 Energia. NL Pesca #b2 carte."
+    ]
+  }
+}

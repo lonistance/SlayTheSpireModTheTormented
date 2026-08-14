@@ -6,7 +6,7 @@
       "bloeden",
       "bloeding"
     ],
-    "DESCRIPTION": "Verliest aan het begin van zijn beurt LP gelijk aan zijn Bloeden, dan wordt al het Bloeden verwijderd. Als een bloederig wezen ongeBlokkeerde aanvalsschade oploopt, krijgt het #b1 Bloeden."
+    "DESCRIPTION": "Verliest aan het begin van zijn beurt LP gelijk aan zijn Bloeden, dan wordt de helft van zijn Bloeden verwijderd. Diepe wonden voorkomen dat Bloeden deze beurt wordt verwijderd. Als een bloederig wezen ongeBlokkeerde aanvalsschade oploopt, krijgt het #b1 Bloeden."
   },
   {
     "ID": "sin",
@@ -24,7 +24,7 @@
       "schuld",
       "schulden"
     ],
-    "DESCRIPTION": "Elke Stapel Schuld laat je #b10% meer schade oplopen."
+    "DESCRIPTION": "Elke Stapel Schuld laat je #b10% meer schade oplopen. Wanneer een Schuld-toepassing wordt geblokkeerd door een Artefact, verlies je %%SIN_PER_DEBT%% Zonde voor elke geblokte Schuld."
   },
   {
     "ID": "restriction",

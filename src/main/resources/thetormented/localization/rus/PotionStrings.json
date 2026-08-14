@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Кровь бога",
+    "DESCRIPTIONS": [
+      "Накладывает #b",
+      " Кровотечения врагу."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Слеза",
+    "DESCRIPTIONS": [
+      "Оставляет вашу руку на #b1 ход."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Вино возрождения",
+    "DESCRIPTIONS": [
+      "Даёт #b1 Энергии. NL Берёт #b2 карты."
+    ]
+  }
+}

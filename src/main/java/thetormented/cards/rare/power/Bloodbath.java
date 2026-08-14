@@ -12,9 +12,8 @@ import thetormented.util.CardStats;
 public class Bloodbath extends BaseCard {
     public static final String ID = makeID(Bloodbath.class.getSimpleName());
 
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int ATTACKS_PER_TURN = 1;
-    private static final int UPG_ATTACKS_PER_TURN = 1; // 1 -> 2
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -26,7 +25,8 @@ public class Bloodbath extends BaseCard {
 
     public Bloodbath() {
         super(ID, info);
-        setMagic(ATTACKS_PER_TURN, UPG_ATTACKS_PER_TURN);
+        setMagic(ATTACKS_PER_TURN);
+        setCostUpgrade(1); // 2 -> 1
     }
 
     @Override

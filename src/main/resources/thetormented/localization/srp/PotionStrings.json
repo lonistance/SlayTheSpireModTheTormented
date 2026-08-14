@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Крв бога",
+    "DESCRIPTIONS": [
+      "Нанеси #b",
+      " ${modID}:Крварења непријатељу."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Суза",
+    "DESCRIPTIONS": [
+      "Задржи руку током #b1 потеза."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Вино препорода",
+    "DESCRIPTIONS": [
+      "Задоби #b1 енергију. NL Вуци #b2 карте."
+    ]
+  }
+}

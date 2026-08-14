@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "신의 피",
+    "DESCRIPTIONS": [
+      "적 하나에게 #b",
+      " 의 ${modID}:출혈 을 부여합니다."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "눈물방울",
+    "DESCRIPTIONS": [
+      "#b1 턴 동안 손을 보존합니다."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "부활의 술",
+    "DESCRIPTIONS": [
+      "에너지를 #b1 얻습니다. NL 카드를 #b2 장 뽑습니다."
+    ]
+  }
+}

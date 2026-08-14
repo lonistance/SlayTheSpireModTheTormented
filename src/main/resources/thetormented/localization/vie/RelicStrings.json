@@ -1,0 +1,98 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Cổ Vật Tốt",
+    "FLAVOR": "Văn bản mô tả hiển thị trong chế độ xem chi tiết cổ vật.",
+    "DESCRIPTIONS": [
+      "Nhận [E] vào đầu lượt của bạn. [E] là biểu tượng Năng lượng."
+    ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "Thanh Kiếm Gãy Bị Nguyền Rủa",
+    "FLAVOR": "Một thanh kiếm vỡ vẫn khao khát tội lỗi của kẻ khác.",
+    "DESCRIPTIONS": [
+      "Vào đầu mỗi trận đấu, nâng cấp một lá Đánh ngẫu nhiên và một lá Phòng Thủ ngẫu nhiên trong suốt trận đấu. NL Vào đầu mỗi lượt, nhận #b",
+      " ${modID}:Tội lỗi."
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "Lưỡi Câu Móc",
+    "FLAVOR": "Một chiếc móc tàn nhẫn đào sâu hơn mỗi lần xé toạc thịt.",
+    "DESCRIPTIONS": [
+      "Mỗi khi bạn gây ${modID}:Chảy máu, gây thêm #b1 ${modID}:Chảy máu."
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "Chén Cuồng Nhiệt",
+    "FLAVOR": "Rượu ủ trong cơn cuồng nhiệt thuần khiết; mỗi lần nâng ly lại rút gọn một sinh mạng.",
+    "DESCRIPTIONS": [
+      "Mỗi khi một quân địch không phải tay sai chết, hồi #b8 HP."
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "Ấn Khế Ước",
+    "FLAVOR": "Một khế ước ký bằng máu, chỉ được tôn trọng bởi người trong sạch.",
+    "DESCRIPTIONS": [
+      "Vào cuối trận đấu, nếu bạn không có ${modID}:Nợ, nhận #b15 Vàng."
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "Bùa Hồi Phục",
+    "FLAVOR": "Một lá bùa rút đi cơn đau nhức của mọi vết thương.",
+    "DESCRIPTIONS": [
+      "Mỗi khi bạn sắp mất HP, bạn chỉ mất tối đa #b18 HP."
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "Cánh Tay Gargoyle",
+    "FLAVOR": "Đá cổ đại biến sự thanh lọc thành sự bảo vệ.",
+    "DESCRIPTIONS": [
+      "Mỗi khi bạn loại bỏ #b1 tầng hiệu ứng bất lợi, nhận #b1 Giáp."
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "Cờ Hiệu Cháy Sém",
+    "FLAVOR": "Một lá cờ rách nát chỉ tập hợp những kẻ tay trắng.",
+    "DESCRIPTIONS": [
+      "Vào cuối lượt của bạn, nếu bạn không có lá bài nào trong tay, bốc thêm #b2 lá bài vào đầu lượt sau của bạn."
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "Trường Kiếm Anh Hùng",
+    "FLAVOR": "Một lưỡi kiếm rèn từ lời hứa chuộc tội.",
+    "DESCRIPTIONS": [
+      "Thay thế Thanh Kiếm Gãy Bị Nguyền Rủa. NL Khi nhận được, nâng cấp TẤT CẢ Đánh và Phòng Thủ trong bộ bài của bạn. NL Vào đầu mỗi lượt, nhận #b",
+      " ${modID}:Tội lỗi."
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "Xiềng Xích Nặng",
+    "FLAVOR": "Một khối sắt trói buộc, nhưng lại ban sức mạnh.",
+    "DESCRIPTIONS": [
+      "Vào đầu mỗi lượt, nhận [E] . NL Vào đầu mỗi trận đấu, thêm 1 lá *Rối Rắm vào chồng bài bốc của bạn."
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "Dùi Trống",
+    "FLAVOR": "Mỗi nhịp trống khơi dậy một tia Năng lượng.",
+    "DESCRIPTIONS": [
+      "Mỗi khi bạn Đốt #b",
+      " lá bài, nhận [E] ."
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "Đồng Xu Không Hối Tiếc",
+    "FLAVOR": "Một đồng xu tha thứ cho mọi bước sai lầm.",
+    "DESCRIPTIONS": [
+      "Mỗi khi bạn vào Cửa Hàng, nhận #b",
+      " Vàng."
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "Đèn Lồng Đá Đen",
+    "FLAVOR": "Ánh sáng lạnh lẽo của nó đánh dấu mọi đau khổ nó khơi lên.",
+    "DESCRIPTIONS": [
+      "Lần đầu tiên bạn gây một hiệu ứng bất lợi lên quân địch trong mỗi trận đấu, nhận [E] ."
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "Búa Sắt",
+    "FLAVOR": "Rèn trên đe của cuộc chiến bất tận.",
+    "DESCRIPTIONS": [
+      "Mỗi khi bạn đánh bại một Tinh Anh, nâng cấp #b",
+      " lá bài ngẫu nhiên trong bộ bài của bạn."
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "Than Hồng Bất Diệt",
+    "FLAVOR": "Một tia lửa nuôi dưỡng bằng bất hạnh và không bao giờ tắt.",
+    "DESCRIPTIONS": [
+      "Mỗi khi bạn có hiệu ứng bất lợi, chịu ít hơn #b25% sát thương. NL Gây thêm #b25% sát thương lên quân địch có hiệu ứng bất lợi."
+    ]
+  }
+}

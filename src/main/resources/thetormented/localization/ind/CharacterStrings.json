@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Orang Tersiksa",
+      "Orang Tersiksa"
+    ],
+    "TEXT": [
+      "Darah tidak dapat membasuh sengsara, tetapi meringankan utang dari kutukan.",
+      "Orang Tersiksa.",
+      "Berjalan di jalan yang tak berpenerangan, kamu menemukan beberapa sosok berkerudung di tengah ritual gelap. Saat kamu mendekat, mereka menoleh ke arahmu dengan serempak yang mengerikan. Yang tertinggi di antara mereka memperlihatkan taring dan mengulurkan tangan panjang pucat ke arahmu. NL ~Gabung~ ~dengan~ ~kami~ ~saudara~ ~dan~ ~rasakan~ ~kehangatan~ ~Spire.~"
+    ]
+  }
+}

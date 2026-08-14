@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Dette er",
+      "en rekke strenger."
+    ],
+    "EXTRA_TEXT": [
+      "Dette er en annen",
+      "rekke strenger."
+    ],
+    "TEXT_DICT": {
+      "Dette": "Inneholder par av strenger, som brukes til å hente verdier basert på nøkler.",
+      "Dette er en nøkkel": "Dette er en verdi."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Velg kort å legge til på hånda, og gjør dem Eteriske."
+    ]
+  }
+}

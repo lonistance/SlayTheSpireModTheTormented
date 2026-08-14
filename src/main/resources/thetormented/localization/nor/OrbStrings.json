@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Orbnavn",
+    "DESCRIPTION": [
+      "#yPassiv: I starten av runden din, trekk #b",
+      " kort.",
+      " kort.",
+      " NL #yUtløs: Påfør #b",
+      " Skade til alle fiender."
+    ]
+  }
+}

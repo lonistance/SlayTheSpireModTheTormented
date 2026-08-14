@@ -117,6 +117,8 @@ foreach ($f in @("PowerStrings.json", "RelicStrings.json", "PotionStrings.json")
         if ($k -notin $lk) { continue }
         $ed = ArrLen $e.$k.DESCRIPTIONS; $ld = ArrLen $l.$k.DESCRIPTIONS
         if ($ed -ne $ld) { Add-Err "${f} ${k}: DESCRIPTIONS len eng=$ed $Lang=$ld" }
+        if ($e.$k.DESCRIPTIONS -is [string]) { Add-Err "${f} ${k}: eng DESCRIPTIONS is a STRING (must be array)" }
+        if ($l.$k.DESCRIPTIONS -is [string]) { Add-Err "${f} ${k}: DESCRIPTIONS is a STRING in $Lang (must be array)" }
     }
     if ($f -eq "RelicStrings.json") {
         foreach ($k in $ek) {
@@ -182,14 +184,23 @@ if ($engData.ContainsKey("Keywords.json") -and $langData.ContainsKey("Keywords.j
         foreach ($n in @($k.NAMES)) { $kwNames += ([string]$n).ToLower() }
     }
     foreach ($id in $expectedIds) { if ($id -notin $gotIds) { Add-Err "Keywords: missing ID '$id'" } }
+    # --- debt keyword MUST carry the %%SIN_PER_DEBT%% marker (bound at runtime to SinPower.SIN_PER_DEBT) ---
+    foreach ($k in $l) {
+        if ($k.ID -eq "debt" -and ([string]$k.DESCRIPTION -notmatch '%%SIN_PER_DEBT%%')) {
+            Add-Err "Keywords debt: DESCRIPTION missing %%SIN_PER_DEBT%% marker"
+        }
+    }
     Write-Host "  [OK] Keywords: 4 entries, NAMES collected ($($kwNames.Count) forms)"
 }
 
 # --- token coverage ---
 $dynVars = @("SIN", "BLEED", "BLOCK_THRESHOLD", "TOTAL_BLOCK", "CARD_ADD", "TOTAL_DAMAGE", "TOTAL_DRAW", "HITS", "TOTAL_ENERGY")
-$kwTokenRe = [regex]'(?<![!A-Za-z])\$\{modID\}:([A-Za-zÄÖÜäöü]+)'
+# Char class: Latin letters incl. Vietnamese precomposed (U+1E00-\u1EFF), combining marks, Greek, Cyrillic, Thai, Hangul, kana, CJK.
+# Keyword/star tokens may be multi-word (space-separated); the check loops truncate at word boundaries if the full form is not covered.
+$kwClass = 'A-Za-z\u00C0-\u024F\u0300-\u036F\u0370-\u03FF\u0400-\u04FF\u0E00-\u0E7F\u1100-\u11FF\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF\u1E00-\u1EFF'
+$kwTokenRe = [regex]("(?<![!$kwClass])\`$\{modID\}:([$kwClass]+(?:\u0020[$kwClass]+)*)")
 $dynRe = [regex]'!\$\{modID\}:([A-Za-z_]+)!'
-$starRe = [regex]'\*([A-Za-zÄÖÜäöü][A-Za-zÄÖÜäöü-]*)'
+$starRe = [regex]("\*([$kwClass][$kwClass-]*(?:\u0020[$kwClass][$kwClass-]*)*)")
 $cardNames = @()
 if ($langData.ContainsKey("CardStrings.json")) {
     $l = $langData["CardStrings.json"]
@@ -206,12 +217,24 @@ foreach ($f in $files) {
         }
         foreach ($m in $starRe.Matches($v)) {
             $w = $m.Groups[1].Value
-            if ($w -notin $cardNames) { Add-Warn "*$w used in $f but no card NAME matches (case-sensitive)" }
+            $cand = $w
+            while ($cand -notin $cardNames) {
+                $i = $cand.LastIndexOf(' ')
+                if ($i -le 0) { break }
+                $cand = $cand.Substring(0, $i)
+            }
+            if ($cand -notin $cardNames) { Add-Warn "*$w used in $f but no card NAME matches (case-sensitive)" }
         }
     }
 }
 foreach ($k in @($usedKw.Keys | Sort-Object)) {
-    if ($k -notin $kwNames) { Add-Err "Keyword token '${modID}:$k' not covered by Keywords NAMES" }
+    $cand = $k
+    while ($cand -notin $kwNames) {
+        $i = $cand.LastIndexOf(' ')
+        if ($i -le 0) { break }
+        $cand = $cand.Substring(0, $i)
+    }
+    if ($cand -notin $kwNames) { Add-Err "Keyword token '${modID}:$k' not covered by Keywords NAMES" }
 }
 Write-Host "  [OK] token coverage: $($usedKw.Count) keyword forms checked, dynamic vars whitelisted"
 
@@ -228,6 +251,9 @@ foreach ($f in $files) {
 # Per-language native words that would false-positive the scan
 $nativeWords = @{
     "dut" = @("hand", "Max")
+    "fra" = @("combat", "max")
+    "ind" = @("Status")
+    "spa" = @("Vulnerable")
 }
 $engWords = "Deal|Gain|Apply|Draw|Exhaust|Block|Bleed|Debt|Sins|damage|enemy|turn|hand|stack|Remove|Retain|Innate|Ethereal|Strength|Dexterity|Vulnerable|Weak|Frail|Attack|Status|Random|Card|Upgrade|Max|combat"
 foreach ($f in @("CardStrings.json", "PowerStrings.json", "RelicStrings.json", "PotionStrings.json", "EventStrings.json")) {

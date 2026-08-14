@@ -34,6 +34,11 @@ public class BlackstoneLantern extends BaseRelic implements OnApplyPowerRelic {
     }
 
     @Override
+    public String getUpdatedDescription() {
+        return DESCRIPTIONS[0];
+    }
+
+    @Override
     public AbstractRelic makeCopy() {
         return new BlackstoneLantern();
     }

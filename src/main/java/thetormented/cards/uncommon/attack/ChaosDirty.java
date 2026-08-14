@@ -5,10 +5,12 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.ArtifactPower;
 import thetormented.actions.PollutedChaosDamageAction;
 import thetormented.actions.UpdateSinAction;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
+import thetormented.powers.buff.SinPower;
 import thetormented.powers.debuff.DebtPower;
 import thetormented.util.CardStats;
 
@@ -16,9 +18,10 @@ public class ChaosDirty extends BaseCard {
     public static final String ID = makeID(ChaosDirty.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BASE_DAMAGE = 5;
+    private static final int BASE_DAMAGE = 6;   // 5 -> 6
+    private static final int UPGRADE_DAMAGE = 1;
     private static final int BASE_MAGIC = 3;
-    private static final int UPGRADE_MAGIC = 1; // 3 -> 4
+    private static final int UPGRADE_MAGIC = 1;
     private static final int SIN_GAIN = 10;
 
     public ChaosDirty() {
@@ -30,7 +33,7 @@ public class ChaosDirty extends BaseCard {
                 COST
         ));
 
-        setDamage(BASE_DAMAGE);
+        setDamage(BASE_DAMAGE, UPGRADE_DAMAGE);
         setMagic(BASE_MAGIC, UPGRADE_MAGIC);
         setCustomVar("SIN", SIN_GAIN);
 
@@ -72,15 +75,28 @@ public class ChaosDirty extends BaseCard {
         this.isDamageModified = (this.damage != this.baseDamage);
     }
 
+    // 预览必须与 PollutedChaosDamageAction 的结算口径一致：
+    // - 无人工制品：打出后原罪会转化为血债，本次打出的加成 = (当前 debt + 本次转化的 debt) * magic
+    // - 有人工制品：转化被抵消，本次加成 = 当前 debt * magic
     private int getDebtDamageBonus() {
         AbstractPlayer p = AbstractDungeon.player;
-        if (p != null) {
-            AbstractPower debtPower = p.getPower(DebtPower.POWER_ID);
-            if (debtPower != null && debtPower.amount > 0) {
-                return debtPower.amount * this.magicNumber;
-            }
+        if (p == null) {
+            return 0;
         }
-        return 0;
+
+        AbstractPower debtPower = p.getPower(DebtPower.POWER_ID);
+        int debt = (debtPower != null) ? debtPower.amount : 0;
+
+        if (p.hasPower(ArtifactPower.POWER_ID)) {
+            return debt * this.magicNumber;
+        }
+
+        AbstractPower sinPower = p.getPower(SinPower.POWER_ID);
+        int currentSin = (sinPower != null) ? sinPower.amount : 0;
+        int debtAfterPlay = (currentSin + SIN_GAIN) / SinPower.SIN_PER_DEBT;
+        int debtGainFromPlay = debtAfterPlay - (currentSin / SinPower.SIN_PER_DEBT);
+
+        return (debt + debtGainFromPlay) * this.magicNumber;
     }
 
     @Override

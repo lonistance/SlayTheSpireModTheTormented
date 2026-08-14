@@ -1,145 +1,170 @@
 {
-  "${modID}:PowerID": {
-    "NAME": "Ultimate Power",
-    "DESCRIPTIONS": [
-      "You are Very Cool and Strong."
-    ]
-  }, "${modID}:BleedPower": {
-  "NAME": "流血",
-  "DESCRIPTIONS": [
-    "回合开始时，失去 #b",
-    " 点生命值，随后移除所有流血。当带有流血的生物受到未格挡的攻击时，获得 #b1 层流血。"
-  ]
-  }, "${modID}:SinPower": {
-  "NAME": "原罪",
-  "DESCRIPTIONS": [
-    "你每有 #b5 点原罪，获得 ",
-    " 点血债"
-  ]
-  },  "${modID}:DebtPower": {
-  "NAME": "血债",
-  "DESCRIPTIONS": [
-    "每有 1 层血债，受到的伤害增加 #b10%。目前额外承受 ",
-    "% 的伤害。"
-  ]
-  }, "${modID}:LoseEnergyNextTurnPower": {
-  "NAME": "下回合失去能量",
-  "DESCRIPTIONS": [
-    "在你的下回合开始失去 [E]"
-  ]
-  },"${modID}:GainEnergyNextTurnPower": {
-  "NAME": "下回合获得能量",
-  "DESCRIPTIONS": [
-    "在你的下回合开始获得[E]"
-  ]
-}, "${modID}:MercyPower": {
-  "NAME": "宽恕",
-  "DESCRIPTIONS": [
-    "本回合 血债 不会增加你受到的伤害"
-  ]
-},"${modID}:DeepWoundPower": {
-  "NAME": "深层伤口",
-  "DESCRIPTIONS": [
-    "本回合移除 流血 时，改为减少 50%"
-  ]
-  },  "${modID}:ReliefPower": {
-  "NAME": "解忧",
-  "DESCRIPTIONS": [
-    "你的回合结束时，消耗你手牌中的所有 ",
-    ""
-  ]
-  }, "${modID}:ParryPower": {
-  "NAME": "招架",
-  "DESCRIPTIONS": [
-    "当你被攻击时，将你格挡掉的伤害反击给攻击者。"
-  ]
-  }, "${modID}:RelentlessBleedPower": {
-  "NAME": "血流不止",
-  "DESCRIPTIONS": [
-    "每回合开始时，给予所有敌人 #b",
-    " 层流血。"
-  ]
-  }, "${modID}:GriefPower": {
-  "NAME": "悲恸",
-  "DESCRIPTIONS": [
-    "在这个回合，你每抽 1 张牌，就对所有敌人施加 #b",
-    " 层流血。"
-  ]
-  }, "${modID}:DreadMemoryPower": {
-  "NAME": "恐惧记忆",
-  "DESCRIPTIONS": [
-    "若本回合获得过血债，敌人造成的伤害降低 #b",
-    "%。"
-  ]
-  }, "${modID}:ReconcileFatePower": {
-  "NAME": "宿命和解",
-  "DESCRIPTIONS": [
-    "每当你生成或消耗 1 张*苦痛，获得 #b",
-    " 点格挡。"
-  ]
-  }, "${modID}:MangledFleshPower": {
-  "NAME": "血肉模糊",
-  "DESCRIPTIONS": [
-    "每当你给予敌人 5 层流血，对其造成 #b",
-    " 点伤害。"
-  ]
-  }, "${modID}:BloodThornsPower": {
-  "NAME": "血荆棘",
-  "DESCRIPTIONS": [
-    "每当敌人攻击你时，给予其 #b",
-    " 层流血。"
-  ]
-  }, "${modID}:RedemptionPathPower": {
-  "NAME": "救赎之道",
-  "DESCRIPTIONS": [
-    "每当你移除 1 层血债，抽 #b",
-    " 张牌。"
-  ]
-  }, "${modID}:IndignationPower": {
-  "NAME": "激愤",
-  "DESCRIPTIONS": [
-    "在接下来的 #b",
-    " 个回合内，你每回合打出的第 1 张非攻击牌耗能为 0。"
-  ]
-  }, "${modID}:HungeringBattleWillPower": {
-  "NAME": "饥渴战意",
-  "DESCRIPTIONS": [
-    "每回合开始时获得 [E] 。回合结束时，若本回合没有杀死敌人，受到 3 点伤害。"
-  ]
-  }, "${modID}:ConcedePower": {
-  "NAME": "判罪",
-  "DESCRIPTIONS": [
-    "该敌人受到的伤害增加 #b50% 。"
-  ]
-  }, "${modID}:JudgmentFormPower": {
-  "NAME": "罪刑形态",
-  "DESCRIPTIONS": [
-    "你对生命值低于 #b",
-    "% 的敌人造成的伤害增加 50%。"
-  ]
-  }, "${modID}:SinAvatarPower": {
-  "NAME": "罪孽化身",
-  "DESCRIPTIONS": [
-    "回合结束时获得 #b",
-    " 点格挡，每有 1 层血债额外获得 #b",
-    " 点格挡。"
-  ]
-  }, "${modID}:BloodbathPower": {
-  "NAME": "血腥屠戮",
-  "DESCRIPTIONS": [
-    "每回合你打出的前 ",
-    " 张攻击牌对敌人施加等同于其未被格挡伤害的流血。"
-  ]
-  }, "${modID}:OverrigidPower": {
-  "NAME": "过刚易折",
-  "DESCRIPTIONS": [
-    "你每打出一张攻击牌，此牌在本场战斗的伤害便永久降低 ",
-    " 点。"
-  ]
-  }, "${modID}:RestrictionPower": {
-  "NAME": "禁制",
-  "DESCRIPTIONS": [
-    "除非你完全移除一次 血债 ，否则无法获得 [E] ，回合结束时移除。"
-  ]
-  }
+    "${modID}:PowerID":  {
+                                 "NAME":  "Ultimate Power",
+                                 "DESCRIPTIONS":  [
+                                                      "You are Very Cool and Strong."
+                                                  ]
+                             },
+    "${modID}:BleedPower":  {
+                                    "NAME":  "流血",
+                                    "DESCRIPTIONS":  [
+                                                         "回合开始时，失去 #b",
+                                                         " 点生命值，随后移除所有流血。当带有流血的生物受到未格挡的攻击时，获得 #b1 层流血。"
+                                                     ]
+                                },
+    "${modID}:SinPower":  {
+                                  "NAME":  "原罪",
+                                  "DESCRIPTIONS":  [
+                                                       "你每拥有 #b5 点原罪，视为拥有 ",
+                                                       " 点血债"
+                                                   ]
+                              },
+    "${modID}:DebtPower":  {
+                                   "NAME":  "血债",
+                                   "DESCRIPTIONS":  [
+                                                        "每有 1 层血债，受到的伤害增加 #b10%。目前额外承受 ",
+                                                        "% 的伤害。 NL 被人工制品抵消时，每被抵消 1 点血债，同步降低 ",
+                                                        " 点原罪。"
+                                                    ]
+                               },
+    "${modID}:LoseEnergyNextTurnPower":  {
+                                                 "NAME":  "下回合失去能量",
+                                                 "DESCRIPTIONS":  [
+                                                                      "在你的下回合开始失去 [E]"
+                                                                  ]
+                                             },
+    "${modID}:GainEnergyNextTurnPower":  {
+                                                 "NAME":  "下回合获得能量",
+                                                 "DESCRIPTIONS":  [
+                                                                      "在你的下回合开始获得[E]"
+                                                                  ]
+                                             },
+    "${modID}:MercyPower":  {
+                                    "NAME":  "宽恕",
+                                    "DESCRIPTIONS":  [
+                                                         "本回合 血债 不会增加你受到的伤害"
+                                                     ]
+                                },
+    "${modID}:DeepWoundPower":  {
+                                        "NAME":  "深层伤口",
+                                        "DESCRIPTIONS":  [
+                                                             "回合开始时，流血 不会被移除。"
+                                                         ]
+                                    },
+    "${modID}:ReliefPower":  {
+                                     "NAME":  "解忧",
+                                     "DESCRIPTIONS":  [
+                                                          "你的回合结束时，消耗你手牌中的所有 ",
+                                                          ""
+                                                      ]
+                                 },
+    "${modID}:ParryPower":  {
+                                    "NAME":  "招架",
+                                    "DESCRIPTIONS":  [
+                                                         "当你被攻击时，将你格挡掉的伤害反击给攻击者。"
+                                                     ]
+                                },
+    "${modID}:RelentlessBleedPower":  {
+                                              "NAME":  "血流不止",
+                                              "DESCRIPTIONS":  [
+                                                                   "每回合开始时，给予所有敌人 #b",
+                                                                   " 层流血。"
+                                                               ]
+                                          },
+    "${modID}:GriefPower":  {
+                                    "NAME":  "悲恸",
+                                    "DESCRIPTIONS":  [
+                                                         "在这个回合，你每抽 1 张牌，就对所有敌人施加 #b",
+                                                         " 层流血。"
+                                                     ]
+                                },
+    "${modID}:DreadMemoryPower":  {
+                                          "NAME":  "恐惧记忆",
+                                          "DESCRIPTIONS":  [
+                                                               "若本回合获得过血债，敌人造成的伤害降低 #b",
+                                                               "%。"
+                                                           ]
+                                      },
+    "${modID}:ReconcileFatePower":  {
+                                            "NAME":  "宿命和解",
+                                            "DESCRIPTIONS":  [
+                                                                 "每当你生成或消耗 1 张*苦痛，获得 #b",
+                                                                 " 点格挡。"
+                                                             ]
+                                        },
+    "${modID}:MangledFleshPower":  {
+                                           "NAME":  "血肉模糊",
+                                           "DESCRIPTIONS":  [
+                                                                "每当你给予敌人 6 层流血，对所有敌人造成 #b",
+                                                                " 点伤害。"
+                                                            ]
+                                       },
+    "${modID}:BloodThornsPower":  {
+                                          "NAME":  "血荆棘",
+                                          "DESCRIPTIONS":  [
+                                                               "每当敌人攻击你时，给予其 #b",
+                                                               " 层流血。"
+                                                           ]
+                                      },
+    "${modID}:RedemptionPathPower":  {
+                                             "NAME":  "救赎之道",
+                                             "DESCRIPTIONS":  [
+                                                                  "每当你移除 1 层血债，抽 #b",
+                                                                  " 张牌。"
+                                                              ]
+                                         },
+    "${modID}:IndignationPower":  {
+                                          "NAME":  "激愤",
+                                          "DESCRIPTIONS":  [
+                                                               "在接下来的 #b",
+                                                               " 个回合内，你每回合打出的第 1 张非攻击牌耗能为 0。"
+                                                           ]
+                                      },
+    "${modID}:HungeringBattleWillPower":  {
+                                                  "NAME":  "饥渴战意",
+                                                  "DESCRIPTIONS":  [
+                                                                       "每回合开始时获得 [E] 。 NL 每回合结束时受到 3 点伤害。"
+                                                                   ]
+                                              },
+    "${modID}:ConcedePower":  {
+                                      "NAME":  "判罪",
+                                      "DESCRIPTIONS":  [
+                                                           "该敌人受到的伤害增加 #b50% 。"
+                                                       ]
+                                  },
+    "${modID}:JudgmentFormPower":  {
+                                           "NAME":  "处刑形态",
+                                           "DESCRIPTIONS":  [
+                                                                "你对生命值低于 #b",
+                                                                "% 的敌人造成的伤害增加 50%。"
+                                                            ]
+                                       },
+    "${modID}:SinAvatarPower":  {
+                                        "NAME":  "罪孽化身",
+                                        "DESCRIPTIONS":  [
+                                                             "回合结束时获得 #b",
+                                                             " 点格挡，每有 1 层血债额外获得 #b",
+                                                             " 点格挡。"
+                                                         ]
+                                    },
+    "${modID}:BloodbathPower":  {
+                                        "NAME":  "血腥屠戮",
+                                        "DESCRIPTIONS":  [
+                                                             "每回合你打出的第一张攻击牌",
+                                                             "对敌人施加等同于其未被格挡伤害的流血。"
+                                                         ]
+                                    },
+    "${modID}:OverrigidPower":  {
+                                        "NAME":  "过刚易折",
+                                        "DESCRIPTIONS":  [
+                                                             "你每打出一张攻击牌，此牌在本场战斗的伤害便永久降低 ",
+                                                             " 点。"
+                                                         ]
+                                    },
+    "${modID}:RestrictionPower":  {
+                                          "NAME":  "禁制",
+                                          "DESCRIPTIONS":  [
+                                                               "除非你完全移除一次 血债 ，否则无法获得 [E] ，回合结束时移除。"
+                                                           ]
+                                      }
 }

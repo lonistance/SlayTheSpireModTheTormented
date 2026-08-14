@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Nama Orb",
+    "DESCRIPTION": [
+      "#yPasif: Pada awal giliranmu, ambil #b",
+      " kartu.",
+      " kartu.",
+      " NL #yPicu: Berikan #b",
+      " kerusakan kepada semua musuh."
+    ]
+  }
+}

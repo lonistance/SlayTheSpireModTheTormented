@@ -16,7 +16,7 @@ public class Bloodstain extends BaseCard {
 
     private static final int COST = 1;
     private static final int BASE_BLEED = 4;
-    private static final int UPG_BLEED = 1; // 4 -> 5 层流血
+    private static final int UPG_BLEED = 0; // 升级不增加施加流血
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -29,6 +29,15 @@ public class Bloodstain extends BaseCard {
     public Bloodstain() {
         super(ID, info);
         setMagic(BASE_BLEED, UPG_BLEED);
+        setExhaust(true, false); // 基础消耗，升级后去除消耗
+    }
+
+    @Override
+    public void upgrade() {
+        if (!this.upgraded) {
+            // super.upgrade() 会处理升级描述切换与消耗去除（baseExhaust ^ upgExhaust）
+            super.upgrade();
+        }
     }
 
     @Override

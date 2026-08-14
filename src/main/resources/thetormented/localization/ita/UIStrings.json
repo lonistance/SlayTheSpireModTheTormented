@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Questo è",
+      "un array di Stringhe."
+    ],
+    "EXTRA_TEXT": [
+      "Questo è un altro",
+      "array di Stringhe."
+    ],
+    "TEXT_DICT": {
+      "Questa": "Contiene coppie di Stringhe, usate per ottenere valori in base alle chiavi.",
+      "Questa è una chiave": "Questo è un valore."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Scegli le carte da aggiungere alla tua mano e da rendere Eteree."
+    ]
+  }
+}

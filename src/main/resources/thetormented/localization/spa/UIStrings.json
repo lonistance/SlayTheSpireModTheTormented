@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Esto es",
+      "una matriz de Strings."
+    ],
+    "EXTRA_TEXT": [
+      "Este es otro",
+      "array de Strings."
+    ],
+    "TEXT_DICT": {
+      "Esto": "Contiene pares de Strings, usados para obtener valores según las claves.",
+      "Esta es una clave": "Este es un valor."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Elige cartas para añadir a tu mano y hacerlas Etéreas."
+    ]
+  }
+}

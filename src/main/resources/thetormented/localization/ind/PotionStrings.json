@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Darah Dewa",
+    "DESCRIPTIONS": [
+      "Berikan #b",
+      " ${modID}:Perdarahan kepada satu musuh."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Tetesan Air Mata",
+    "DESCRIPTIONS": [
+      "Simpan tanganmu selama #b1 giliran."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Anggur Kebangkitan",
+    "DESCRIPTIONS": [
+      "Dapatkan #b1 Energi. NL Ambil #b2 kartu."
+    ]
+  }
+}

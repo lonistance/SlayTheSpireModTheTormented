@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Etkinlik Adı",
+    "DESCRIPTIONS": [
+      "Bu, ne olduğunu anlatmak için genellikle kullanılan etkinlik metnidir.",
+      "#g~Bu~ #g~metin~ #g~yeşil~ #g~ve~ #g~dalgalı.~",
+      "#r@KIRMIZI@ #r@VE@ #r@TİTRETEN@ #r@METİN.@",
+      "#rKırmızı #gYeşil #ySarı #bMavi #pMor. ~Dalgalı~ @titreyen.@",
+      "Her kelimeyi ayrı ayrı işaretlemek zorundasın.",
+      "Metni renklendirmek için [#ffffff]beyaz[] hex renk kodlarını da şöyle kullanabilirsin.",
+      "Hex renk kodları kart metinlerinde de çalışır! Ama bazı geçici çözümler olmadan anahtar kelimelerde çalışmaz."
+    ],
+    "OPTIONS": [
+      "[Eylem Açıklaması] Aslında alacağın şey.",
+      "[Reddetme] #r1 #rMaksimum #rCP #rkaybet. Kötü şeyler kırmızıdır.",
+      "[Kabul] #gTanrılaşma #gkazan. İyi şeyler yeşildir.",
+      "[Ayrıl]",
+      "Kaldırmak için kart seç. (Ayrıca buraya bu şekilde ekstra metin de ekleyebilirsin.)"
+    ]
+  }
+}

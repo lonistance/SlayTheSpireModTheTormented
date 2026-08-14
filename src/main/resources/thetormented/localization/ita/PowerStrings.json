@@ -1,0 +1,170 @@
+{
+    "${modID}:PowerID":  {
+                                 "NAME":  "Potere Supremo",
+                                 "DESCRIPTIONS":  [
+                                                      "Sei molto Figo e Forte."
+                                                  ]
+                             },
+    "${modID}:BleedPower":  {
+                                    "NAME":  "Sanguinamento",
+                                    "DESCRIPTIONS":  [
+                                                         "All\u0027inizio del suo turno, perde #b",
+                                                         " PF, poi rimuovi tutto il Sanguinamento. Quando una creatura sanguinante subisce un attacco non bloccato, ottiene #b1 Sanguinamento."
+                                                     ]
+                                },
+    "${modID}:SinPower":  {
+                                  "NAME":  "Peccato",
+                                  "DESCRIPTIONS":  [
+                                                       "Quando hai #b5 Peccato, ottieni ",
+                                                       " Debito."
+                                                   ]
+                              },
+    "${modID}:DebtPower":  {
+                                   "NAME":  "Debito",
+                                   "DESCRIPTIONS":  [
+                                                        "Ogni Debito subisce #b10% danni in più. Subisci ",
+                                                        "% danni in più. NL Quando l\u0027applicazione di un Debito viene bloccata da un Artefatto, perdi ",
+                                                        " Peccato per ogni Debito bloccato."
+                                                    ]
+                               },
+    "${modID}:LoseEnergyNextTurnPower":  {
+                                                 "NAME":  "Perdi Energia al Prossimo Turno",
+                                                 "DESCRIPTIONS":  [
+                                                                      "Perdi [E] al tuo prossimo turno"
+                                                                  ]
+                                             },
+    "${modID}:GainEnergyNextTurnPower":  {
+                                                 "NAME":  "Ottieni Energia al Prossimo Turno",
+                                                 "DESCRIPTIONS":  [
+                                                                      "Ottieni [E] al tuo prossimo turno"
+                                                                  ]
+                                             },
+    "${modID}:MercyPower":  {
+                                    "NAME":  "Misericordia",
+                                    "DESCRIPTIONS":  [
+                                                         "Il Debito non infligge danni extra in questo turno"
+                                                     ]
+                                },
+    "${modID}:DeepWoundPower":  {
+                                        "NAME":  "Ferita Profonda",
+                                        "DESCRIPTIONS":  [
+                                                             "Il Sanguinamento non viene rimosso all\u0027inizio del suo turno."
+                                                         ]
+                                    },
+    "${modID}:ReliefPower":  {
+                                     "NAME":  "Sollievo",
+                                     "DESCRIPTIONS":  [
+                                                          "Alla fine del tuo turno, esaurisci TUTTE le ",
+                                                          " nella tua mano."
+                                                      ]
+                                 },
+    "${modID}:ParryPower":  {
+                                    "NAME":  "Parata",
+                                    "DESCRIPTIONS":  [
+                                                         "Ogni volta che vieni attaccato, rifletti i danni che hai bloccato sull\u0027attaccante."
+                                                     ]
+                                },
+    "${modID}:RelentlessBleedPower":  {
+                                              "NAME":  "Sanguinamento Implacabile",
+                                              "DESCRIPTIONS":  [
+                                                                   "All\u0027inizio di ogni turno, applica #b",
+                                                                   " Sanguinamento a TUTTI i nemici."
+                                                               ]
+                                          },
+    "${modID}:GriefPower":  {
+                                    "NAME":  "Afflizione",
+                                    "DESCRIPTIONS":  [
+                                                         "In questo turno, ogni volta che peschi una carta, applica #b",
+                                                         " Sanguinamento a TUTTI i nemici."
+                                                     ]
+                                },
+    "${modID}:DreadMemoryPower":  {
+                                          "NAME":  "Memoria Angosciosa",
+                                          "DESCRIPTIONS":  [
+                                                               "Se hai guadagnato Debito in questo turno, i nemici infliggono #b",
+                                                               "% danni in meno."
+                                                           ]
+                                      },
+    "${modID}:ReconcileFatePower":  {
+                                            "NAME":  "Riconciliazione",
+                                            "DESCRIPTIONS":  [
+                                                                 "Ogni volta che generi o esaurisci una *Miseria, ottieni #b",
+                                                                 " Blocco."
+                                                             ]
+                                        },
+    "${modID}:MangledFleshPower":  {
+                                           "NAME":  "Carne Dilaniata",
+                                           "DESCRIPTIONS":  [
+                                                                "Ogni volta che applichi 6 Sanguinamento a un nemico, infliggi #b",
+                                                                " danni a TUTTI i nemici."
+                                                            ]
+                                       },
+    "${modID}:BloodThornsPower":  {
+                                          "NAME":  "Spine di Sangue",
+                                          "DESCRIPTIONS":  [
+                                                               "Ogni volta che un nemico ti attacca, applicagli #b",
+                                                               " Sanguinamento."
+                                                           ]
+                                      },
+    "${modID}:RedemptionPathPower":  {
+                                             "NAME":  "Via della Redenzione",
+                                             "DESCRIPTIONS":  [
+                                                                  "Ogni volta che rimuovi 1 Debito, pesca #b",
+                                                                  " carte."
+                                                              ]
+                                         },
+    "${modID}:IndignationPower":  {
+                                          "NAME":  "Indignazione",
+                                          "DESCRIPTIONS":  [
+                                                               "Per i prossimi #b",
+                                                               " turni, la prima carta non-Attacco che giochi ogni turno costa 0."
+                                                           ]
+                                      },
+    "${modID}:HungeringBattleWillPower":  {
+                                                  "NAME":  "Fame di Battaglia",
+                                                  "DESCRIPTIONS":  [
+                                                                       "All\u0027inizio di ogni turno, ottieni [E] . NL Alla fine di ogni turno, subisci 3 danni."
+                                                                   ]
+                                              },
+    "${modID}:ConcedePower":  {
+                                      "NAME":  "Resa",
+                                      "DESCRIPTIONS":  [
+                                                           "Questo nemico subisce #b50% danni in più."
+                                                       ]
+                                  },
+    "${modID}:JudgmentFormPower":  {
+                                           "NAME":  "Forma di Giudizio",
+                                           "DESCRIPTIONS":  [
+                                                                "Infliggi 50% danni in più ai nemici sotto ",
+                                                                "% dei loro PF massimi."
+                                                            ]
+                                       },
+    "${modID}:SinAvatarPower":  {
+                                        "NAME":  "Incarnazione del Peccato",
+                                        "DESCRIPTIONS":  [
+                                                             "Alla fine del tuo turno, ottieni #b",
+                                                             " Blocco, più #b",
+                                                             " Blocco per ogni livello di Debito."
+                                                         ]
+                                    },
+    "${modID}:BloodbathPower":  {
+                                        "NAME":  "Bagno di Sangue",
+                                        "DESCRIPTIONS":  [
+                                                             "Le prime ",
+                                                             " carta Attacco giocata ogni turno applica Sanguinamento pari ai danni non bloccati che infligge."
+                                                         ]
+                                    },
+    "${modID}:OverrigidPower":  {
+                                        "NAME":  "Troppo Rigido",
+                                        "DESCRIPTIONS":  [
+                                                             "Ogni volta che giochi una carta Attacco, perde in modo permanente ",
+                                                             " danni per il resto del combattimento."
+                                                         ]
+                                    },
+    "${modID}:RestrictionPower":  {
+                                          "NAME":  "Restrizione",
+                                          "DESCRIPTIONS":  [
+                                                               "Non puoi ottenere [E]. Rimossa alla fine del tuo turno."
+                                                           ]
+                                      }
+}

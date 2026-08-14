@@ -1,0 +1,441 @@
+{
+    "${modID}:ExampleCard":  {
+                                     "NAME":  "名稱",
+                                     "DESCRIPTION":  "描述。 NL 第二行。",
+                                     "UPGRADE_DESCRIPTION":  "升級後會自動使用此描述。不需要時請將其移除。",
+                                     "EXTENDED_DESCRIPTION":  [
+                                                                  "你可以把更多文字放在這裡。",
+                                                                  "如果你需要用於其他用途。",
+                                                                  "暴雪是這方面的好例子。"
+                                                              ]
+                                 },
+    "${modID}:StrikeTormented":  {
+                                         "NAME":  "打擊",
+                                         "DESCRIPTION":  "造成 !D! 點傷害。",
+                                         "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。"
+                                     },
+    "${modID}:DefendTormented":  {
+                                         "NAME":  "防禦",
+                                         "DESCRIPTION":  "獲得 !B! 點 格擋。",
+                                         "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋。"
+                                     },
+    "${modID}:Rebel":  {
+                               "NAME":  "叛逆",
+                               "DESCRIPTION":  "造成 !D! 點傷害。 NL 給予目標等同於此牌預計傷害的 ${modID}:流血。",
+                               "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 給予目標等同於此牌預計傷害的 ${modID}:流血。",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            "NL (給予 !M! 層 ${modID}:流血)"
+                                                        ]
+                           },
+    "${modID}:Forgive":  {
+                                 "NAME":  "寬恕",
+                                 "DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 降低 !M! 層 ${modID}:原罪。",
+                                 "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 降低 !M! 層 ${modID}:原罪。"
+                             },
+    "${modID}:Slash":  {
+                               "NAME":  "割傷",
+                               "DESCRIPTION":  "造成 !D! 點傷害。 NL 給予 !M! 層 ${modID}:流血。",
+                               "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 給予 !M! 層 ${modID}:流血。"
+                           },
+    "${modID}:Rend":  {
+                              "NAME":  "撕扯",
+                              "DESCRIPTION":  "造成 !D! 點傷害。 NL 如果敵人帶有 ${modID}:流血 ，額外造成 !M! 次傷害。",
+                              "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 如果敵人帶有 ${modID}:流血 ，額外造成 !M! 次傷害。"
+                          },
+    "${modID}:Pursuit":  {
+                                 "NAME":  "追擊",
+                                 "DESCRIPTION":  "僅當你本回合打出的上一張牌是攻擊牌時才能打出。 NL 造成 !D! 點傷害。",
+                                 "UPGRADE_DESCRIPTION":  "僅當你本回合打出的上一張牌是攻擊牌時才能打出。 NL 造成 !D! 點傷害。",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              "本回合我打出的上一張牌不是攻擊牌"
+                                                          ]
+                             },
+    "${modID}:ArmSevering":  {
+                                     "NAME":  "斷臂斬",
+                                     "DESCRIPTION":  "造成 !D! 點傷害。 NL 將 !M! 張 *苦痛 加入手牌。",
+                                     "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 將 !M! 張 *苦痛 加入手牌。"
+                                 },
+    "${modID}:QuenchedBlade":  {
+                                       "NAME":  "淬火刀刃",
+                                       "DESCRIPTION":  "造成 !D! 點傷害。 NL 本場戰鬥中升級 !M! 張手牌。",
+                                       "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 本場戰鬥中升級 !M! 張手牌。"
+                                   },
+    "${modID}:CruelTorture":  {
+                                      "NAME":  "殘酷折磨",
+                                      "DESCRIPTION":  "造成 !D! 點傷害。 NL 獲得 !${modID}:SIN! 層 ${modID}:原罪。",
+                                      "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 獲得 !${modID}:SIN! 層 ${modID}:原罪。"
+                                  },
+    "${modID}:AtonementStrike":  {
+                                         "NAME":  "贖罪打擊",
+                                         "DESCRIPTION":  "造成 !D! 點傷害。 NL 若你擁有 ${modID}:血債 ，抽 !M! 張牌。 NL 然後降低 4 點 ${modID}:原罪。",
+                                         "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 若你擁有 ${modID}:血債 ，抽 !M! 張牌。 NL 然後降低 4 點 ${modID}:原罪。"
+                                     },
+    "${modID}:RelentlessEntanglement":  {
+                                                "NAME":  "糾纏不放",
+                                                "DESCRIPTION":  "造成 !D! 點傷害。 NL 每當你的 ${modID}:血債 增加時，將此牌加入手牌。"
+                                            },
+    "${modID}:UnrighteousGuilt":  {
+                                          "NAME":  "不義罪責",
+                                          "DESCRIPTION":  "對所有敵人造成 !D! 點傷害。 NL 獲得 !${modID}:SIN! 層 ${modID}:原罪。",
+                                          "UPGRADE_DESCRIPTION":  "對所有敵人造成 !D! 點傷害。 NL 獲得 !${modID}:SIN! 層 ${modID}:原罪。"
+                                      },
+    "${modID}:Agony":  {
+                               "NAME":  "傷痛",
+                               "DESCRIPTION":  "造成 !D! 點傷害。 NL 給予 !M! 層 虛弱 和 !M! 層 易傷。",
+                               "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 給予 !M! 層 虛弱 和 !M! 層 易傷。"
+                           },
+    "${modID}:SacredLand":  {
+                                    "NAME":  "淨土",
+                                    "DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 若你沒有 ${modID}:血債 ，抽 !M! 張牌。 NL 否則降低 7 點 ${modID}:原罪。",
+                                    "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 若你沒有 ${modID}:血債 ，抽 !M! 張牌。 NL 否則降低 7 點 ${modID}:原罪。"
+                                },
+    "${modID}:Loan":  {
+                              "NAME":  "借貸",
+                              "DESCRIPTION":  "獲得 [E] [E] [E]。 NL 下回合失去 [E]。 NL 消耗。",
+                              "UPGRADE_DESCRIPTION":  "獲得 [E] [E] [E] NL 下回合失去 [E]。 NL 消耗 NL 保留"
+                          },
+    "${modID}:Firm":  {
+                              "NAME":  "堅定",
+                              "DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 保留。",
+                              "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 保留。"
+                          },
+    "${modID}:Odyssey":  {
+                                 "NAME":  "漂泊",
+                                 "DESCRIPTION":  "抽 !M! 張牌。 NL 消耗 1 張手牌。若消耗的是 狀態牌，降低 3 層 ${modID}:原罪。",
+                                 "UPGRADE_DESCRIPTION":  "抽 !M! 張牌。 NL 消耗 1 張手牌。若消耗的是 狀態牌，降低 3 層 ${modID}:原罪。"
+                             },
+    "${modID}:BloodGuard":  {
+                                    "NAME":  "鮮血援護",
+                                    "DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 給予一名敵人 !M! 層 ${modID}:流血。",
+                                    "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 給予一名敵人 !M! 層 ${modID}:流血。"
+                                },
+    "${modID}:PleaOfInnocence":  {
+                                         "NAME":  "無罪辯護",
+                                         "DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 你每有 1 層 ${modID}:血債 ，使此牌額外獲得 !M! 點 格擋。",
+                                         "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 。 NL 你每有 1 層 ${modID}:血債 ，使此牌額外獲得 !M! 點 格擋。",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (共獲得 !${modID}:TOTAL_BLOCK! 點 格擋)"
+                                                                  ]
+                                     },
+    "${modID}:PredictiveMeasures":  {
+                                            "NAME":  "預判手段",
+                                            "DESCRIPTION":  "抽 !M! 張牌。 NL 若抽到的是攻擊牌，本回合打出前費用為 0。",
+                                            "UPGRADE_DESCRIPTION":  "抽 !M! 張牌。 NL 若抽到的是攻擊牌，本回合打出前費用為 0。"
+                                        },
+    "${modID}:Hostility":  {
+                                   "NAME":  "敵視",
+                                   "DESCRIPTION":  "若你的 格擋 值低於 !${modID}:BLOCK_THRESHOLD!，給予所有敵人 !M! 層 虛弱。 NL 獲得 !B! 點 格擋。",
+                                   "UPGRADE_DESCRIPTION":  "若你的 格擋 值低於 !${modID}:BLOCK_THRESHOLD!，給予所有敵人 !M! 層 虛弱。 NL 獲得 !B! 點 格擋。"
+                               },
+    "${modID}:Shackles":  {
+                                  "NAME":  "枷鎖",
+                                  "DESCRIPTION":  "將 !${modID}:CARD_ADD! 張 *苦痛 加入手牌。 NL 你手牌中每有 1 張 狀態牌，獲得 !M! 點 格擋。",
+                                  "UPGRADE_DESCRIPTION":  "將 !${modID}:CARD_ADD! 張 *苦痛 加入手牌。 NL 你手牌中每有 1 張 狀態牌，獲得 !M! 點 格擋。",
+                                  "EXTENDED_DESCRIPTION":  [
+                                                               " (共獲得 !${modID}:TOTAL_BLOCK! 點 格擋)"
+                                                           ]
+                              },
+    "${modID}:DeterringStrike":  {
+                                         "NAME":  "威懾打擊",
+                                         "DESCRIPTION":  "造成 !D! 點傷害。 NL 若敵人的意圖為攻擊，使其本回合失去 !M! 點 力量。",
+                                         "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 若敵人的意圖為攻擊，使其本回合失去 !M! 點 力量。"
+                                     },
+    "${modID}:HeavySmash":  {
+                                    "NAME":  "負重猛擊",
+                                    "DESCRIPTION":  "僅當擁有至少 !M! 點 ${modID}:血債 時才能打出。造成 !D! 點傷害。",
+                                    "UPGRADE_DESCRIPTION":  "僅當擁有至少 !M! 點 ${modID}:血債 時才能打出。造成 !D! 點傷害。",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 "至少需要 2 點 ${modID}:血債 才能打出"
+                                                             ]
+                                },
+    "${modID}:SinsToBlades":  {
+                                      "NAME":  "化罪為刃",
+                                      "DESCRIPTION":  "造成 !D! 點傷害。 NL 抽取與你 ${modID}:血債 數等量的牌。",
+                                      "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 抽取與你 ${modID}:血債 數加 1 等量的牌。",
+                                      "EXTENDED_DESCRIPTION":  [
+                                                                   " (共抽 !${modID}:TOTAL_DRAW! 張牌)"
+                                                               ]
+                                  },
+    "${modID}:ChaosDirty":  {
+                                    "NAME":  "污濁之亂",
+                                    "DESCRIPTION":  "獲得 !${modID}:SIN! 層 ${modID}:原罪 。 NL 造成 !D! 點傷害。你每有 1 層 ${modID}:血債 ，此牌額外造成 !M! 點傷害。",
+                                    "UPGRADE_DESCRIPTION":  "獲得 !${modID}:SIN! 層 ${modID}:原罪 。 NL 造成 !D! 點傷害。你每有 1 層 ${modID}:血債 ，此牌額外造成 !M! 點傷害。",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 " (共造成 !${modID}:TOTAL_DAMAGE! 點傷害)"
+                                                             ]
+                                },
+    "${modID}:TemperedSword":  {
+                                       "NAME":  "淬煉之劍",
+                                       "DESCRIPTION":  "造成 !D! 點傷害。你每消耗 1 張 狀態牌，此牌額外造成 !M! 點傷害。",
+                                       "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。你每消耗 1 張 狀態牌，此牌額外造成 !M! 點傷害。",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    " (共造成 !${modID}:TOTAL_DAMAGE! 點傷害)"
+                                                                ]
+                                   },
+    "${modID}:Crush":  {
+                               "NAME":  "崩摧",
+                               "DESCRIPTION":  "造成 !D! 點傷害。 NL 獲得等同於該敵人身上 ${modID}:流血 層數的 格擋。",
+                               "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 獲得等同於該敵人身上 ${modID}:流血 層數的 格擋。",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (共獲得 !${modID}:TOTAL_BLOCK! 點 格擋)"
+                                                        ]
+                           },
+    "${modID}:Unleash":  {
+                                 "NAME":  "蓄積",
+                                 "DESCRIPTION":  "造成 !D! 點傷害 2 次。 NL 下回合獲得 [E]。",
+                                 "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害 2 次。 NL 下回合獲得 [E] [E]。"
+                             },
+    "${modID}:HeavyPast":  {
+                                   "NAME":  "沉重過往",
+                                   "DESCRIPTION":  "造成 !D! 點傷害 2 次。 NL 向你的抽牌堆與棄牌堆各加入 1 張 *苦痛。 NL 抽 !M! 張牌。",
+                                   "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害 2 次。 NL 向你的抽牌堆與棄牌堆各加入 1 張 *苦痛。 NL 抽 !M! 張牌。"
+                               },
+    "${modID}:Implication":  {
+                                     "NAME":  "株連",
+                                     "DESCRIPTION":  "消耗 1 張手牌。 NL 對所有敵人造成 !D! 點傷害。 NL 每對 1 名擁有 ${modID}:流血 的敵人造成傷害，抽 1 張牌。",
+                                     "UPGRADE_DESCRIPTION":  "消耗 1 張手牌。 NL 對所有敵人造成 !D! 點傷害。 NL 每對 1 名擁有 ${modID}:流血 的敵人造成傷害，抽 1 張牌。"
+                                 },
+    "${modID}:ConsecutiveKicks":  {
+                                          "NAME":  "連環踢",
+                                          "DESCRIPTION":  "造成 !D! 點傷害 !M! 次。",
+                                          "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害 !M! 次。"
+                                      },
+    "${modID}:MassiveBleeding":  {
+                                         "NAME":  "大出血",
+                                         "DESCRIPTION":  "造成 !D! 點傷害。 NL 然後造成等同於該敵人身上 ${modID}:流血 層數的傷害。",
+                                         "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 然後造成等同於該敵人身上 ${modID}:流血 層數 2 倍的傷害。",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (共造成 !${modID}:TOTAL_DAMAGE! 點傷害)"
+                                                                  ]
+                                     },
+    "${modID}:FaceDanger":  {
+                                    "NAME":  "不避艱險",
+                                    "DESCRIPTION":  "造成 !D! 點傷害。你本場戰鬥每打出 1 張 *苦痛 ，此牌費用減少 1 點。",
+                                    "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。你本場戰鬥每打出 1 張 *苦痛 ，此牌費用減少 1 點。"
+                                },
+    "${modID}:Relief":  {
+                                "NAME":  "解憂",
+                                "DESCRIPTION":  "將 2 張 *苦痛 加入棄牌堆。 NL 在你的回合結束時，消耗你手牌中的所有 *苦痛。",
+                                "UPGRADE_DESCRIPTION":  "固有 NL 將 2 張 *苦痛 加入棄牌堆。 NL 在你的回合結束時，消耗你手牌中的所有 *苦痛。"
+                            },
+    "${modID}:Misery":  {
+                                "NAME":  "苦痛",
+                                "DESCRIPTION":  "受到 2 點傷害。 NL 抽 1 張牌。 NL 消耗。"
+                            },
+    "${modID}:Parry":  {
+                               "NAME":  "招架",
+                               "DESCRIPTION":  "獲得 !B! 點 格擋 NL 當你被攻擊時，將你 格擋 掉的傷害反擊給攻擊者。",
+                               "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 NL 當你被攻擊時，將你 格擋 掉的傷害反擊給攻擊者。"
+                           },
+    "${modID}:Pardon":  {
+                                "NAME":  "赦免",
+                                "DESCRIPTION":  "將所有手牌變化為隨機牌。 NL 此牌打出!M!次後變化為隨機能力牌",
+                                "UPGRADE_DESCRIPTION":  "將所有手牌變化為隨機升級過的牌。 NL 此牌打出!M!次後變化為隨機升級過的能力牌"
+                            },
+    "${modID}:Memorial":  {
+                                  "NAME":  "祭奠",
+                                  "DESCRIPTION":  "抽 1 張牌。 NL 若抽到的牌是技能牌，降低 !M! 點 ${modID}:原罪。",
+                                  "UPGRADE_DESCRIPTION":  "抽 1 張牌。 NL 若抽到的牌是技能牌，降低 !M! 點 ${modID}:原罪。"
+                              },
+    "${modID}:Boiling":  {
+                                 "NAME":  "沸騰",
+                                 "DESCRIPTION":  "消耗你手牌中的所有非攻擊牌。 NL 每消耗 1 張牌，給予隨機 1 名敵人 !M! 層 ${modID}:流血。",
+                                 "UPGRADE_DESCRIPTION":  "消耗你手牌中的所有非攻擊牌。 NL 每消耗 1 張牌，給予隨機 1 名敵人 !M! 層 ${modID}:流血。"
+                             },
+    "${modID}:Grief":  {
+                               "NAME":  "悲慟",
+                               "DESCRIPTION":  "將 1 張隨機 狀態牌加入你的手牌。 NL 在這一回合，你每抽 1 張牌，就對所有敵人施加 !M! 層 ${modID}:流血。",
+                               "UPGRADE_DESCRIPTION":  "將 1 張隨機 狀態牌加入你的手牌。 NL 在這一回合，你每抽 1 張牌，就對所有敵人施加 !M! 層 ${modID}:流血。"
+                           },
+    "${modID}:BloodSea":  {
+                                  "NAME":  "血海",
+                                  "DESCRIPTION":  "給予 !${modID}:BLEED! 層 ${modID}:流血。 NL 將該敵人的 ${modID}:流血 層數變為 !M! 倍。 NL 消耗。",
+                                  "UPGRADE_DESCRIPTION":  "給予 !${modID}:BLEED! 層 ${modID}:流血。 NL 將該敵人的 ${modID}:流血 層數變為 !M! 倍。 NL 消耗。"
+                              },
+    "${modID}:RelentlessBleed":  {
+                                         "NAME":  "血流不止",
+                                         "DESCRIPTION":  "每回合開始時，給予所有敵人 !M! 層 ${modID}:流血。",
+                                         "UPGRADE_DESCRIPTION":  "每回合開始時，給予所有敵人 !M! 層 ${modID}:流血。"
+                                     },
+    "${modID}:DreadMemory":  {
+                                     "NAME":  "恐懼記憶",
+                                     "DESCRIPTION":  "若本回合獲得過 ${modID}:血債 ，敵人造成的傷害降低 !M!%。 NL 減傷效果僅在本回合生效。",
+                                     "UPGRADE_DESCRIPTION":  "若本回合獲得過 ${modID}:血債 ，敵人造成的傷害降低 !M!%。 NL 減傷效果僅在本回合生效。"
+                                 },
+    "${modID}:Trial":  {
+                               "NAME":  "試煉",
+                               "DESCRIPTION":  "獲得 !M! 點 力量 和 !M! 點 敏捷。 NL 獲得 1 層 虛弱。",
+                               "UPGRADE_DESCRIPTION":  "獲得 !M! 點 力量 和 !M! 點 敏捷。 NL 獲得 1 層 虛弱。"
+                           },
+    "${modID}:ReconcileFate":  {
+                                       "NAME":  "宿命和解",
+                                       "DESCRIPTION":  "每當你生成或消耗 1 張 *苦痛 ，獲得 !M! 點 格擋。",
+                                       "UPGRADE_DESCRIPTION":  "每當你生成或消耗 1 張 *苦痛 ，獲得 !M! 點 格擋。"
+                                   },
+    "${modID}:MangledFlesh":  {
+                                      "NAME":  "血肉模糊",
+                                      "DESCRIPTION":  "每當你給予敵人 6 層 ${modID}:流血 ，對所有敵人造成 !M! 點傷害。",
+                                      "UPGRADE_DESCRIPTION":  "每當你給予敵人 6 層 ${modID}:流血 ，對所有敵人造成 !M! 點傷害。"
+                                  },
+    "${modID}:BloodThorns":  {
+                                     "NAME":  "血荊棘",
+                                     "DESCRIPTION":  "每當敵人攻擊你時，給予其 !M! 層 ${modID}:流血。",
+                                     "UPGRADE_DESCRIPTION":  "每當敵人攻擊你時，給予其 !M! 層 ${modID}:流血。"
+                                 },
+    "${modID}:RedemptionPath":  {
+                                        "NAME":  "救贖之道",
+                                        "DESCRIPTION":  "每當你移除 1 層 ${modID}:血債 ，抽 !M! 張牌。",
+                                        "UPGRADE_DESCRIPTION":  "每當你移除 1 層 ${modID}:血債 ，抽 !M! 張牌。"
+                                    },
+    "${modID}:Requiem":  {
+                                 "NAME":  "安魂曲",
+                                 "DESCRIPTION":  "本場戰鬥每消耗過 1 張 *苦痛 ，就對隨機敵人造成 !D! 點傷害。",
+                                 "UPGRADE_DESCRIPTION":  "本場戰鬥每消耗過 1 張 *苦痛 ，就對隨機敵人造成 !D! 點傷害。",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              " (共造成 !${modID}:HITS! 次傷害)"
+                                                          ]
+                             },
+    "${modID}:DesperateMeasure":  {
+                                          "NAME":  "搏命手段",
+                                          "DESCRIPTION":  "造成 !D! 點傷害。 NL 若沒有殺死敵人，失去 !M! 點生命。",
+                                          "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害。 NL 若沒有殺死敵人，失去 !M! 點生命。"
+                                      },
+    "${modID}:UnceasingWar":  {
+                                      "NAME":  "無休戰火",
+                                      "DESCRIPTION":  "造成 !D! 點傷害 !${modID}:HITS! 次。 NL 斬殺時，本局遊戲該牌傷害次數永久 +1。 NL 消耗。",
+                                      "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害 !${modID}:HITS! 次。 NL 斬殺時，本局遊戲該牌傷害次數永久 +1。 NL 消耗。"
+                                  },
+    "${modID}:FinalJudgment":  {
+                                       "NAME":  "最終審判",
+                                       "DESCRIPTION":  "僅在擁有至少 4 層 ${modID}:血債 時才能打出。 NL 對所有敵人造成 !D! 點傷害。 NL 移除所有 ${modID}:原罪。",
+                                       "UPGRADE_DESCRIPTION":  "僅在擁有至少 4 層 ${modID}:血債 時才能打出。 NL 對所有敵人造成 !D! 點傷害。 NL 移除所有 ${modID}:原罪。",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    "至少需要 4 層 ${modID}:血債 才能打出"
+                                                                ]
+                                   },
+    "${modID}:Blazing":  {
+                                 "NAME":  "熾焰",
+                                 "DESCRIPTION":  "消耗所有手牌。 NL 每消耗 1 張 狀態牌，抽 !M! 張牌。 NL 消耗。",
+                                 "UPGRADE_DESCRIPTION":  "消耗所有手牌。 NL 每消耗 1 張 狀態牌，抽 !M! 張牌。 NL 消耗。"
+                             },
+    "${modID}:RockSolid":  {
+                                   "NAME":  "堅如磐石",
+                                   "DESCRIPTION":  "獲得 !B! 點 格擋 NL 失去 3 點最大生命值。",
+                                   "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 NL 失去 3 點最大生命值。"
+                               },
+    "${modID}:Devotion":  {
+                                  "NAME":  "赤誠",
+                                  "DESCRIPTION":  "移除你身上的所有 ${modID}:血債 、易傷 、虛弱 和 脆弱。 NL 每移除 1 層，獲得 [E] 並抽 !M! 張牌。 NL 消耗",
+                                  "UPGRADE_DESCRIPTION":  "移除你身上的所有 ${modID}:血債 、易傷 、虛弱 和 脆弱。 NL 每移除 1 層，獲得 [E] 並抽 !M! 張牌。 NL 消耗"
+                              },
+    "${modID}:Indignation":  {
+                                     "NAME":  "激憤",
+                                     "DESCRIPTION":  "在接下來的 X 個回合內，你每回合打出的第 1 張牌耗能為 0。 NL 消耗。",
+                                     "UPGRADE_DESCRIPTION":  "在接下來的 X+1 個回合內，你每回合打出的第 1 張牌耗能為 0。 NL 消耗。"
+                                 },
+    "${modID}:BloodFeud":  {
+                                   "NAME":  "血仇",
+                                   "DESCRIPTION":  "將 1 張 *苦痛 加入手牌。 NL 立即結算所有敵人 ${modID}:流血 數值的 !M!%。",
+                                   "UPGRADE_DESCRIPTION":  "將 1 張 *苦痛 加入手牌。 NL 立即結算所有敵人 ${modID}:流血 數值的 !M!%。"
+                               },
+    "${modID}:VoidCall":  {
+                                  "NAME":  "虛空呼喚",
+                                  "DESCRIPTION":  "從抽牌堆選擇 1 張牌加入手牌，並使它獲得 虛無。 NL 消耗。",
+                                  "UPGRADE_DESCRIPTION":  "從抽牌堆選擇 1 張牌加入手牌，並使它獲得 虛無。"
+                              },
+    "${modID}:Spread":  {
+                                "NAME":  "蔓延",
+                                "DESCRIPTION":  "給予 !M! 層 ${modID}:流血 NL 將該敵人的所有負面效果給予所有其他敵人。",
+                                "UPGRADE_DESCRIPTION":  "給予 !M! 層 ${modID}:流血 NL 將該敵人的所有負面效果給予所有其他敵人。"
+                            },
+    "${modID}:HungeringBattleWill":  {
+                                             "NAME":  "飢渴戰意",
+                                             "DESCRIPTION":  "每回合開始時獲得 [E]。 NL 每回合結束時受到 3 點傷害。",
+                                             "UPGRADE_DESCRIPTION":  "每回合開始時獲得 [E]。 NL 每回合結束時受到 3 點傷害。"
+                                         },
+    "${modID}:ExecutionForm":  {
+                                       "NAME":  "罪刑形態",
+                                       "DESCRIPTION":  "對生命值低於 !M!% 的敵人造成的傷害增加 50%。",
+                                       "UPGRADE_DESCRIPTION":  "對生命值低於 !M!% 的敵人造成的傷害增加 50%。"
+                                   },
+    "${modID}:SinAvatar":  {
+                                   "NAME":  "罪孽化身",
+                                   "DESCRIPTION":  "回合結束時獲得 !B! 點 格擋 ，每有 1 層 ${modID}:血債 額外獲得 !M! 點 格擋。",
+                                   "UPGRADE_DESCRIPTION":  "回合結束時獲得 !B! 點 格擋 ，每有 1 層 ${modID}:血債 額外獲得 !M! 點 格擋。",
+                                   "EXTENDED_DESCRIPTION":  [
+                                                                " (回合結束時共獲得 !${modID}:TOTAL_BLOCK! 點 格擋)"
+                                                            ]
+                               },
+    "${modID}:Bloodbath":  {
+                                   "NAME":  "血腥屠戮",
+                                   "DESCRIPTION":  "每回合你打出的第一張攻擊牌對敵人施加等同於其未被 格擋 傷害的 ${modID}:流血。",
+                                   "UPGRADE_DESCRIPTION":  "每回合你打出的第一張攻擊牌對敵人施加等同於其未被 格擋 傷害的 ${modID}:流血。"
+                               },
+    "${modID}:Overrigid":  {
+                                   "NAME":  "過剛易折",
+                                   "DESCRIPTION":  "獲得 5 點 力量。你每打出一張攻擊牌，此牌在本場戰鬥的傷害便永久降低 !M! 點。",
+                                   "UPGRADE_DESCRIPTION":  "獲得 5 點 力量。你每打出一張攻擊牌，此牌在本場戰鬥的傷害便永久降低 !M! 點。"
+                               },
+    "${modID}:Entangled":  {
+                                   "NAME":  "糾纏",
+                                   "DESCRIPTION":  "每當你抽到此牌時，將 1 張此牌的複製品加入手牌。 NL 消耗。 NL 被消耗時，將一張 黏液 加入抽牌堆。"
+                               },
+    "${modID}:Riot":  {
+                              "NAME":  "暴亂",
+                              "DESCRIPTION":  "造成 !D! 點傷害 X 次。 NL 你每有 1 層 ${modID}:血債 ，此牌額外造成 !M! 點傷害。",
+                              "UPGRADE_DESCRIPTION":  "造成 !D! 點傷害 X 次。 NL 你每有 1 層 ${modID}:血債 ，此牌額外造成 !M! 點傷害。",
+                              "EXTENDED_DESCRIPTION":  [
+                                                           " (每次造成 !${modID}:TOTAL_DAMAGE! 點傷害)"
+                                                       ]
+                          },
+    "${modID}:Bloodstain":  {
+                                    "NAME":  "血漬",
+                                    "DESCRIPTION":  "給予 !M! 層 ${modID}:流血。 NL 你每有 1 層 ${modID}:血債 便重複施加一次。 NL 消耗。",
+                                    "UPGRADE_DESCRIPTION":  "給予 !M! 層 ${modID}:流血。 NL 你每有 1 層 ${modID}:血債 便重複施加一次。"
+                                },
+    "${modID}:BrokenArmor":  {
+                                     "NAME":  "破碎甲胄",
+                                     "DESCRIPTION":  "獲得 !B! 點 格擋 NL 獲得 1 層 脆弱。",
+                                     "UPGRADE_DESCRIPTION":  "獲得 !B! 點 格擋 NL 獲得 1 層 脆弱。"
+                                 },
+    "${modID}:FormPact":  {
+                                  "NAME":  "締結契約",
+                                  "DESCRIPTION":  "獲得 [E] [E] NL 將 1 張 *苦痛 加入棄牌堆",
+                                  "UPGRADE_DESCRIPTION":  "獲得 [E] [E] [E] NL 將 1 張 *苦痛 加入棄牌堆"
+                              },
+    "${modID}:Fraud":  {
+                               "NAME":  "欺詐",
+                               "DESCRIPTION":  "抽 !M! 張牌。 NL 獲得 !M! 層 ${modID}:原罪。",
+                               "UPGRADE_DESCRIPTION":  "抽 !M! 張牌。 NL 獲得 !M! 層 ${modID}:原罪。"
+                           },
+    "${modID}:Mercy":  {
+                               "NAME":  "寬恕",
+                               "DESCRIPTION":  "虛無 NL 每回合結束時，消耗你手牌中的所有 *苦痛。 NL 獲得 !M! 層 ${modID}:原罪。",
+                               "UPGRADE_DESCRIPTION":  "虛無 NL 每回合結束時，消耗你手牌中的所有 *苦痛。 NL 獲得 !M! 層 ${modID}:原罪。"
+                           },
+    "${modID}:Prepare":  {
+                                 "NAME":  "備戰",
+                                 "DESCRIPTION":  "固有 NL 抽 !M! 張牌。 NL 本回合保留手牌。 NL 消耗。",
+                                 "UPGRADE_DESCRIPTION":  "固有 NL 抽 !M! 張牌。 NL 本回合保留手牌。 NL 消耗。"
+                             },
+    "${modID}:Relapse":  {
+                                 "NAME":  "舊傷復發",
+                                 "DESCRIPTION":  "一名敵人身上的 ${modID}:流血 不會在本回合移除。",
+                                 "UPGRADE_DESCRIPTION":  "所有敵人身上的 ${modID}:流血 不會在本回合移除。"
+                             },
+    "${modID}:SharedSuffering":  {
+                                         "NAME":  "共擔苦難",
+                                         "DESCRIPTION":  "你每有 1 層 ${modID}:血債 ，給予所有敵人 !M! 層 虛弱 和 !M! 層 易傷。 NL 消耗。",
+                                         "UPGRADE_DESCRIPTION":  "你每有 1 層 ${modID}:血債 ，給予所有敵人 !M! 層 虛弱 和 !M! 層 易傷。 NL 消耗。"
+                                     },
+    "${modID}:Taboo":  {
+                               "NAME":  "禁忌",
+                               "DESCRIPTION":  "獲得等同於你當前 ${modID}:血債 數量的 [E] NL 獲得 1 層 ${modID}:禁制。",
+                               "UPGRADE_DESCRIPTION":  "獲得等同於你當前 ${modID}:血債 數量加 1 的 [E] NL 獲得 1 層 ${modID}:禁制。",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (無法獲得能量)",
+                                                            " (獲得 !${modID}:TOTAL_ENERGY! 能量)",
+                                                            " (獲得 !${modID}:TOTAL_ENERGY! 能量！)"
+                                                        ]
+                           }
+}

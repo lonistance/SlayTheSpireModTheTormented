@@ -8,7 +8,7 @@ import thetormented.character.Tormented;
 
 import static thetormented.BasicMod.makeID;
 
-public class GargoyleArm extends BaseRelic {
+public class  GargoyleArm extends BaseRelic {
     public static final String ID = makeID(GargoyleArm.class.getSimpleName());
     private int lastDebuffTotal = 0;
 

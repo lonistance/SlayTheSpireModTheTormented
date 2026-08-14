@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Nom de l'événement",
+    "DESCRIPTIONS": [
+      "Ceci est un texte d'événement, généralement utilisé pour décrire ce qui se passe.",
+      "#g~Ceci~ #g~est~ #g~un~ #g~texte~ #g~vert~ #g~et~ #g~ondulé.~",
+      "#r@ROUGE@ #r@ET@ #r@VIBRANT@ #r@TEXTE.@",
+      "#rRouge #gVert #yJaune #bBleu #pViolet. ~Ondulé~ @vibrant.@",
+      "Vous devez marquer chaque mot individuellement.",
+      "Vous pouvez aussi utiliser des codes couleur hexadécimaux comme [#ffffff]blanc[] pour colorer le texte.",
+      "Les codes couleur hexadécimaux fonctionnent aussi dans le texte des cartes ! Mais pas sur les mots-clés, sans quelques contournements."
+    ],
+    "OPTIONS": [
+      "[Description de l'action] Ce que vous obtenez réellement.",
+      "[Refus] #rPerdez #r1 #rPV #rmax. Les mauvaises choses sont en rouge.",
+      "[Acceptation] #gGagnez #gApothéose. Les bonnes choses sont en vert.",
+      "[Quitter]",
+      "Choisissez la carte à retirer. (Vous pouvez aussi ajouter du texte supplémentaire comme ceci.)"
+    ]
+  }
+}

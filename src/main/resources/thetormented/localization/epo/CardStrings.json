@@ -1,361 +1,441 @@
 {
-  "${modID}:ExampleCard": {
-    "NAME": "Nomo",
-    "DESCRIPTION": "Priskribo. NL Dua linio.",
-    "UPGRADE_DESCRIPTION": "Estas a?tomate uzata kiam la karto estas plibonigita. Forigu, se ne necese.",
-    "EXTENDED_DESCRIPTION": [
-      "?i tie vi povas aldoni plian tekston.",
-      "Se vi bezonas ?in por io ajn.",
-      "Blizzard estas bona ekzemplo por tio."
-    ]
-  }, "${modID}:StrikeTormented": {
-    "NAME": "Bato",
-    "DESCRIPTION": "Faru !D! da dama?o.",
-    "UPGRADE_DESCRIPTION": "Faru !D! da dama?o."
-  }, "${modID}:DefendTormented": {
-  "NAME": "Defendo",
-  "DESCRIPTION": "Gajnu !B! da ?irmo.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo."
-  }, "${modID}:Rebel": {
-  "NAME": "Ribelulo",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Aldonu ${modID}:Sangon egale al la dama?o, kiun ?i tiu karto faras.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Aldonu ${modID}:Sangon egale al la dama?o, kiun ?i tiu karto faras.",
-  "EXTENDED_DESCRIPTION": [
-    "NL (Aldonu !M! da ${modID}:Sango)"
-  ]
-  }, "${modID}:Forgive": {
-  "NAME": "Pardoni",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL Malpliigu !M! da ${modID}:Peko.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL Malpliigu !M! da ${modID}:Peko."
-  }, "${modID}:Slash": {
-  "NAME": "Tranco",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Aldonu !M! da ${modID}:Sango.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Aldonu !M! da ${modID}:Sango."
-  }, "${modID}:Rend": {
-  "NAME": "?iri",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Se la malamiko havas ${modID}:Sangon, faru !M! pliajn trafojn.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Se la malamiko havas ${modID}:Sangon, faru !M! pliajn trafojn."
-  }, "${modID}:Pursuit": {
-  "NAME": "Persekuto",
-  "DESCRIPTION": "Ludebla nur se via lasta ludo ?i-vice estis atako. NL Faru !D! da dama?o.",
-  "UPGRADE_DESCRIPTION": "Ludebla nur se via lasta ludo ?i-vice estis atako. NL Faru !D! da dama?o.",
-  "EXTENDED_DESCRIPTION": ["Vi devas unue ludi atakon en ?i tiu vico."]
-  }, "${modID}:ArmSevering": {
-  "NAME": "Brako-Amputo",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Aldonu !M! *Mizero al via mano.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Aldonu !M! *Mizero al via mano."
-  },"${modID}:QuenchedBlade": {
-  "NAME": "Eestingita Klingo",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Plibonigu !M! kartojn en via mano por la resto de la batalo.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Plibonigu !M! kartojn en via mano por la resto de la batalo."
-  },"${modID}:CruelTorture": {
-  "NAME": "Kruela Torturo",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Gajnu !${modID}:SIN! da ${modID}:Peko.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Gajnu !${modID}:SIN! da ${modID}:Peko."
-  },"${modID}:AtonementStrike": {
-  "NAME": "Repaga Bato",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Prenu !M! kartojn, se vi havas ${modID}:?uldon.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Prenu !M! kartojn, se vi havas ${modID}:?uldon."
-  },"${modID}:UnrighteousGuilt": {
-  "NAME": "Maljusta Kulpo",
-  "DESCRIPTION": "Faru !D! da dama?o al ?IUJ malamikoj. NL Gajnu !${modID}:SIN! da ${modID}:Peko.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o al ?IUJ malamikoj. NL Gajnu !${modID}:SIN! da ${modID}:Peko."
-  },"${modID}:RelentlessEntanglement": {
-  "NAME": "Sen?esa Interplekti?o",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Aldonu ?i tiun karton al via mano kiam via ${modID}:?uldo plii?as"
-},"${modID}:Agony": {
-  "NAME": "Agonio",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Aldonu !M! da malforta kaj !M! da vundebla.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Aldonu !M! da malforta kaj !M! da vundebla."
-  },"${modID}:SacredLand": {
-  "NAME": "Sankta Lando",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL Prenu !M! kartojn, se vi ne havas ${modID}:?uldon.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL Prenu !M! kartojn, se vi ne havas ${modID}:?uldon."
-  },"${modID}:Loan": {
-  "NAME": "Prunto",
-  "DESCRIPTION": "Gajnu [E] [E] [E]. NL Perdu [E] la sekvontan vicon. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Gajnu [E] [E] [E]. NL Perdu [E] la sekvontan vicon. NL El?erpu NL Retenu."
-  },"${modID}:Firm": {
-  "NAME": "Stabila",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL Retenu.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL Retenu."
-  },"${modID}:Wandering": {
-  "NAME": "Vagado",
-  "DESCRIPTION": "Prenu !M! kartojn. NL El?erpu 1 karton. NL Se vi el?erpas statkarton, malpliigu 3 da ${modID}:Peko",
-  "UPGRADE_DESCRIPTION": "Prenu !M! kartojn. NL El?erpu 1 karton. NL Se vi el?erpas statkarton, malpliigu 3 da ${modID}:Peko"
-},"${modID}:BloodGuard": {
-  "NAME": "Sangogardisto",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL Aldonu !M! da ${modID}:Sango al malamiko.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL Aldonu !M! da ${modID}:Sango al malamiko."
-  },"${modID}:PleaOfInnocence": {
-  "NAME": "Senkulpeca Pledo",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL ?iu ${modID}:?uldo donas !M! da plia ?irmo.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL ?iu ${modID}:?uldo donas !M! da plia ?irmo.",
-  "EXTENDED_DESCRIPTION": [
-    " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
-  ]
-  },"${modID}:PredictiveMeasures": {
-  "NAME": "Anta?vidaj Rimedoj",
-  "DESCRIPTION": "Prenu !M! karton. Se ?i estas atako, ?i kostas 0 ?is ludita ?i-vice.",
-  "UPGRADE_DESCRIPTION": "Prenu !M! karton. Se ?i estas atako, ?i kostas 0 ?is ludita ?i-vice."
-  }, "${modID}:Hostility": {
-  "NAME": "Malamikeco",
-  "DESCRIPTION": "Se via ?irmo estas sub !${modID}:BLOCK_THRESHOLD!, aldonu !M! da malforta al ?iuj malamikoj. NL Gajnu !B! da ?irmo",
-  "UPGRADE_DESCRIPTION": "Se via ?irmo estas sub !${modID}:BLOCK_THRESHOLD!, aldonu !M! da malforta al ?iuj malamikoj. NL Gajnu !B! da ?irmo"
-  }, "${modID}:Shackles": {
-  "NAME": "Katenoj",
-  "DESCRIPTION": "Aldonu !${modID}:CARD_ADD! *Mizero al via mano. NL Gajnu !M! da ?irmo por ?iu statkarto en via mano",
-  "UPGRADE_DESCRIPTION": "Aldonu !${modID}:CARD_ADD! *Mizero al via mano. NL Gajnu !M! da ?irmo por ?iu statkarto en via mano",
-  "EXTENDED_DESCRIPTION": [
-    " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
-  ]
-  }, "${modID}:DeterringStrike": {
-  "NAME": "Deterna Bato",
-  "DESCRIPTION": "Faru !D! da dama?o. NL La malamiko perdas !M! da forto ?i-vice, se lia intenco estas atako",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL La malamiko perdas !M! da forto ?i-vice, se lia intenco estas atako"
-  },"${modID}:HeavySmite": {
-  "NAME": "Pezega Bato",
-  "DESCRIPTION": "Ludebla nur se vi havas almena? !M! da ${modID}:?uldo. Faru !D! da dama?o",
-  "UPGRADE_DESCRIPTION": "Ludebla nur se vi havas almena? !M! da ${modID}:?uldo. Faru !D! da dama?o",
-  "EXTENDED_DESCRIPTION": [
-    "Vi bezonas almena? 2 da ${modID}:?uldo"
-  ]
-}, "${modID}:SinsToBlades": {
-  "NAME": "Pekoj al Klingoj",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Prenu kartojn egalantajn al via ${modID}:?uldo.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Prenu kartojn egalantajn al via ${modID}:?uldo plus 1.",
-  "EXTENDED_DESCRIPTION": [
-    " (Prenu entute !${modID}:TOTAL_DRAW! kartojn)"
-  ]
-}, "${modID}:ChaosDirty": {
-  "NAME": "Malpura Kaoso",
-  "DESCRIPTION": "Gajnu !${modID}:SIN! da ${modID}:Peko. NL Faru !D! da dama?o. ?iu ${modID}:?uldo, kiun vi havas, faras !M! da plia dama?o",
-  "UPGRADE_DESCRIPTION": "Gajnu !${modID}:SIN! da ${modID}:Peko. NL Faru !D! da dama?o. ?iu ${modID}:?uldo, kiun vi havas, faras !M! da plia dama?o",
-  "EXTENDED_DESCRIPTION": [
-    " (Faru entute !${modID}:TOTAL_DAMAGE! da dama?o)"
-  ]
-},"${modID}:TemperedSword": {
-  "NAME": "Hardita Glavo",
-  "DESCRIPTION": "Faru !D! da dama?o. NL ?iu statkarto, kiun vi el?erpas, faras !M! da plia dama?o",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL ?iu statkarto, kiun vi el?erpas, faras !M! da plia dama?o",
-  "EXTENDED_DESCRIPTION": [
-    " (Faru entute !${modID}:TOTAL_DAMAGE! da dama?o)"
-  ]
-},"${modID}:Crush": {
-  "NAME": "Premegi",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Gajnu ?irmon egale al la ${modID}:Sango de la malamiko",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Gajnu ?irmon egale al la ${modID}:Sango de la malamiko",
-  "EXTENDED_DESCRIPTION": [
-    " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
-  ]
-}, "${modID}:Accumulate": {
-  "NAME": "Akumuli",
-  "DESCRIPTION": "Faru !D! da dama?o 2 fojojn. NL Gajnu [E] la sekvontan vicon",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o 2 fojojn. NL Gajnu [E][E] la sekvontan vicon"
-},"${modID}:HeavyPast": {
-  "NAME": "Pezega Pasinteco",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Aldonu 1 *Mizero al via prenstako kaj 1 al via for?etstako",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Aldonu 1 *Mizero al via prenstako kaj 1 al via for?etstako"
-},"${modID}:Implication": {
-  "NAME": "Impliko",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Tiam faru !D! da dama?o al ?iuj malamikoj kun ${modID}:Sango."
-},"${modID}:ConsecutiveKicks": {
-  "NAME": "Sinsekvaj Piedbatoj",
-  "DESCRIPTION": "Faru !D! da dama?o !M! fojojn",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o !M! fojojn"
-},"${modID}:MassiveBleeding": {
-  "NAME": "Amasa Sangado",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Tiam faru dama?on egalantajn al la ${modID}:Sango de la malamiko",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Tiam faru dama?on egalantajn al duoblo de la ${modID}:Sango de la malamiko",
-  "EXTENDED_DESCRIPTION": [
-    " (Faru entute !${modID}:TOTAL_DAMAGE! da dama?o)"
-  ]
-},"${modID}:FaceDanger": {
-  "NAME": "Alfronti Dan?eron",
-  "DESCRIPTION": "Faru !D! da dama?o. NL ?iu *Mizero, kiun vi ludas, malpliigas la koston de ?i tiu karto je 1 por la resto de la batalo",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL ?iu *Mizero, kiun vi ludas, malpliigas la koston de ?i tiu karto je 1 por la resto de la batalo"
-}, "${modID}:Relief": {
-  "NAME": "Konsolo",
-  "DESCRIPTION": "El?erpu ?iujn *Mizero en via mano je la fino de via vico.",
-  "UPGRADE_DESCRIPTION": "Fundamenta. NL El?erpu ?iujn *Mizero en via mano je la fino de via vico."
-  }, "${modID}:Misery": {
-  "NAME": "Mizero",
-  "DESCRIPTION": "Prenu 2 da dama?o. NL Prenu 1 karton. NL El?erpu."
-  }, "${modID}:Parry": {
-  "NAME": "Parado",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL Kiam ajn vi estas atakata, resendu la ?irmitan dama?on al la atakanto.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL Kiam ajn vi estas atakata, resendu la ?irmitan dama?on al la atakanto."
-  }, "${modID}:Pardon": {
-  "NAME": "Pardono",
-  "DESCRIPTION": "Forigu po 1 stakon da ${modID}:?uldo, vundebla, malforta kaj fragila. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Forigu po 1 stakon da ${modID}:?uldo, vundebla, malforta kaj fragila."
-  }, "${modID}:Memorial": {
-  "NAME": "Memora?o",
-  "DESCRIPTION": "Se vi ne havas ${modID}:?uldon, gajnu !B! da ?irmo kaj prenu !M! kartojn. NL Gajnu !${modID}:SIN! da ${modID}:Peko.",
-  "UPGRADE_DESCRIPTION": "Se vi ne havas ${modID}:?uldon, gajnu !B! da ?irmo kaj prenu !M! kartojn. NL Gajnu !${modID}:SIN! da ${modID}:Peko."
-  }, "${modID}:Boiling": {
-  "NAME": "Bolado",
-  "DESCRIPTION": "El?erpu ?iujn ne-atakajn kartojn en via mano. NL Aldonu !M! da ${modID}:Sango al ?IUJ malamikoj por ?iu el?erpita karto.",
-  "UPGRADE_DESCRIPTION": "El?erpu ?iujn ne-atakajn kartojn en via mano. NL Aldonu !M! da ${modID}:Sango al ?IUJ malamikoj por ?iu el?erpita karto."
-  }, "${modID}:Grief": {
-  "NAME": "Doloro",
-  "DESCRIPTION": "Aldonu 1 hazardan statkarton al via mano. NL ?i-vice: Kiam ajn vi prenas karton, aldonu !M! da ${modID}:Sango al ?IUJ malamikoj.",
-  "UPGRADE_DESCRIPTION": "Aldonu 1 hazardan statkarton al via mano. NL ?i-vice: Kiam ajn vi prenas karton, aldonu !M! da ${modID}:Sango al ?IUJ malamikoj."
-  }, "${modID}:BloodSea": {
-  "NAME": "Sangomaro",
-  "DESCRIPTION": "Aldonu !${modID}:BLEED! da ${modID}:Sango. NL Multipliku la ${modID}:Sangon de la malamiko je !M!. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Aldonu !${modID}:BLEED! da ${modID}:Sango. NL Multipliku la ${modID}:Sangon de la malamiko je !M!. NL El?erpu."
-  }, "${modID}:RelentlessBleed": {
-  "NAME": "Sen?esa Sangado",
-  "DESCRIPTION": "Aldonu !M! da ${modID}:Sango al ?IUJ malamikoj je la komenco de ?iu vico.",
-  "UPGRADE_DESCRIPTION": "Aldonu !M! da ${modID}:Sango al ?IUJ malamikoj je la komenco de ?iu vico."
-  }, "${modID}:DreadMemory": {
-  "NAME": "Timinda Memoro",
-  "DESCRIPTION": "Se vi gajnis ${modID}:?uldon ?i-vice, malamikoj faras !M!% malpli da dama?o. NL Apliki?as nur en la vico, en kiu vi gajnis ${modID}:?uldon.",
-  "UPGRADE_DESCRIPTION": "Se vi gajnis ${modID}:?uldon ?i-vice, malamikoj faras !M!% malpli da dama?o. NL Apliki?as nur en la vico, en kiu vi gajnis ${modID}:?uldon."
-  }, "${modID}:Trial": {
-  "NAME": "Provo",
-  "DESCRIPTION": "Gajnu !M! da forto kaj !M! da lerteco. NL Gajnu 2 da malforta.",
-  "UPGRADE_DESCRIPTION": "Gajnu !M! da forto kaj !M! da lerteco. NL Gajnu 2 da malforta."
-  }, "${modID}:ReconcileFate": {
-  "NAME": "Repacigi la Sorton",
-  "DESCRIPTION": "Kiam ajn vi kreas a? el?erpas *Mizero, gajnu !M! da ?irmo.",
-  "UPGRADE_DESCRIPTION": "Kiam ajn vi kreas a? el?erpas *Mizero, gajnu !M! da ?irmo."
-  }, "${modID}:MangledFlesh": {
-  "NAME": "Kripligita Karno",
-  "DESCRIPTION": "Kiam ajn vi aldonas 6 da ${modID}:Sango al malamiko, faru !M! da dama?o al ?i.",
-  "UPGRADE_DESCRIPTION": "Kiam ajn vi aldonas 6 da ${modID}:Sango al malamiko, faru !M! da dama?o al ?i."
-  }, "${modID}:BloodThorns": {
-  "NAME": "Sangaj Dornoj",
-  "DESCRIPTION": "Kiam ajn malamiko atakas vin, aldonu !M! da ${modID}:Sango al ?i.",
-  "UPGRADE_DESCRIPTION": "Kiam ajn malamiko atakas vin, aldonu !M! da ${modID}:Sango al ?i."
-  }, "${modID}:RedemptionPath": {
-  "NAME": "Vojo de Ela?eto",
-  "DESCRIPTION": "Kiam ajn vi forigas 1 da ${modID}:?uldo, prenu !M! kartojn.",
-  "UPGRADE_DESCRIPTION": "Kiam ajn vi forigas 1 da ${modID}:?uldo, prenu !M! kartojn."
-  }, "${modID}:Requiem": {
-  "NAME": "Rekviemo",
-  "DESCRIPTION": "?iu *Mizero, kiun vi el?erpis, faras !D! da dama?o al hazarda malamiko",
-  "UPGRADE_DESCRIPTION": "?iu *Mizero, kiun vi el?erpis, faras !D! da dama?o al hazarda malamiko",
-  "EXTENDED_DESCRIPTION": [
-    " (Faru entute !${modID}:HITS! trafojn)"
-  ]
-  }, "${modID}:DesperateMeasure": {
-  "NAME": "Malespera Rimedo",
-  "DESCRIPTION": "Faru !D! da dama?o. NL Se tio ne mortigas la malamikon, perdu !M! da vivo.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o. NL Se tio ne mortigas la malamikon, perdu !M! da vivo."
-  }, "${modID}:UnceasingWar": {
-  "NAME": "Senfina Milito",
-  "DESCRIPTION": "Faru !D! da dama?o !${modID}:HITS! fojojn. NL Kiam ajn tio mortigas malamikon, plialtigu la trafojn de ?i tiu karto konstante je 1 por la resto de la serio. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o !${modID}:HITS! fojojn. NL Kiam ajn tio mortigas malamikon, plialtigu la trafojn de ?i tiu karto konstante je 1 por la resto de la serio. NL El?erpu."
-  }, "${modID}:FinalJudgment": {
-  "NAME": "Fina Ju?o",
-  "DESCRIPTION": "Ludebla nur se vi havas almena? 4 da ${modID}:?uldo. NL Faru !D! da dama?o al ?IUJ malamikoj. NL Forigu ?iujn ${modID}:Pekojn.",
-  "UPGRADE_DESCRIPTION": "Ludebla nur se vi havas almena? 4 da ${modID}:?uldo. NL Faru !D! da dama?o al ?IUJ malamikoj. NL Forigu ?iujn ${modID}:Pekojn.",
-  "EXTENDED_DESCRIPTION": [
-    "Vi bezonas almena? 4 da ${modID}:?uldo."
-  ]
-  }, "${modID}:Blazing": {
-  "NAME": "Ardanta",
-  "DESCRIPTION": "El?erpu ?iujn kartojn en via mano. NL Prenu !M! kartojn por ?iu el?erpita statkarto. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "El?erpu ?iujn kartojn en via mano. NL Prenu !M! kartojn por ?iu el?erpita statkarto. NL El?erpu."
-  }, "${modID}:RockSolid": {
-  "NAME": "Rokfirma",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL Perdu 3 da maks. vivo.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL Perdu 3 da maks. vivo."
-  }, "${modID}:Devotion": {
-  "NAME": "Devoteco",
-  "DESCRIPTION": "Forigu ?iujn viajn ${modID}:?uldojn, vundebla kaj malforta. NL Gajnu [E] por ?iu forigita stako kaj prenu !M! kartojn. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Forigu ?iujn viajn ${modID}:?uldojn, vundebla kaj malforta. NL Gajnu [E] por ?iu forigita stako kaj prenu !M! kartojn. NL El?erpu."
-  }, "${modID}:Indignation": {
-  "NAME": "Indigno",
-  "DESCRIPTION": "En la sekvontaj X vicoj, la unua ne-ataka karto, kiun vi ludas ?iuvice, kostas 0. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "En la sekvontaj X+1 vicoj, la unua ne-ataka karto, kiun vi ludas ?iuvice, kostas 0. NL El?erpu."
-  }, "${modID}:BloodFeud": {
-  "NAME": "Sangovendo",
-  "DESCRIPTION": "Aldonu 1 *Mizero al via mano. NL Tuj aktivigu la ${modID}:Sangon de ?iuj malamikoj !M! fojojn.",
-  "UPGRADE_DESCRIPTION": "Aldonu 1 *Mizero al via mano. NL Tuj aktivigu la ${modID}:Sangon de ?iuj malamikoj !M! fojojn."
-  }, "${modID}:VoidCall": {
-  "NAME": "Voko de la Vakuo",
-  "DESCRIPTION": "Fundamenta. NL Elektu 1 karton el via prenstako kaj aldonu ?in al via mano. ?i fari?as fantoma. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Fundamenta. NL Elektu 2 kartojn el via prenstako kaj aldonu ilin al via mano. Ili fari?as fantomaj. NL El?erpu."
-  }, "${modID}:Spread": {
-  "NAME": "Disvastigo",
-  "DESCRIPTION": "Aldonu !M! da ${modID}:Sango. NL Aldonu ?iujn malhelpojn de ?i tiu malamiko al ?iuj aliaj malamikoj.",
-  "UPGRADE_DESCRIPTION": "Aldonu !M! da ${modID}:Sango. NL Aldonu ?iujn malhelpojn de ?i tiu malamiko al ?iuj aliaj malamikoj."
-  }, "${modID}:HungeringBattleWill": {
-  "NAME": "Malsata Batalvolo",
-  "DESCRIPTION": "Gajnu [E] je la komenco de ?iu vico. Perdu 3 da vivo je la fino de via vico, se neniu malamiko estis mortigita ?i-vice.",
-  "UPGRADE_DESCRIPTION": "Gajnu [E] je la komenco de ?iu vico. Perdu 3 da vivo je la fino de via vico, se neniu malamiko estis mortigita ?i-vice."
-  }, "${modID}:JudgmentForm": {
-  "NAME": "Formo de la Ju?o",
-  "DESCRIPTION": "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo.",
-  "UPGRADE_DESCRIPTION": "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo."
-  }, "${modID}:SinAvatar": {
-  "NAME": "Avataro de la Peko",
-  "DESCRIPTION": "Gajnu je la fino de via vico !B! da ?irmo, plus !M! da ?irmo por ?iu stako da ${modID}:?uldo.",
-  "UPGRADE_DESCRIPTION": "Gajnu je la fino de via vico !B! da ?irmo, plus !M! da ?irmo por ?iu stako da ${modID}:?uldo.",
-  "EXTENDED_DESCRIPTION": [
-    " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
-  ]
-  }, "${modID}:Bloodbath": {
-  "NAME": "Sangobano",
-  "DESCRIPTION": "Via unua atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o.",
-  "UPGRADE_DESCRIPTION": "Viaj unuaj !M! atak-kartoj luditaj ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
-  }, "${modID}:Overrigid": {
-  "NAME": "Tro Rigida",
-  "DESCRIPTION": "Gajnu 4 da forto. NL ?iufoje kiam vi ludas atak-karton, ?i konstante perdas !M! da dama?o por la resto de la batalo.",
-  "UPGRADE_DESCRIPTION": "Gajnu 4 da forto. NL ?iufoje kiam vi ludas atak-karton, ?i konstante perdas !M! da dama?o por la resto de la batalo."
-  }, "${modID}:Entangled": {
-  "NAME": "Implikita",
-  "DESCRIPTION": "Kiam ajn vi prenas ?i tiun karton, aldonu 1 kopion de ?i al via mano. NL El?erpu."
-  }, "${modID}:Riot": {
-  "NAME": "Ribelo",
-  "DESCRIPTION": "Faru !D! da dama?o X fojojn. NL ?iu ${modID}:?uldo, kiun vi havas, igas ?i tiun karton fari !M! da plia dama?o.",
-  "UPGRADE_DESCRIPTION": "Faru !D! da dama?o X fojojn. NL ?iu ${modID}:?uldo, kiun vi havas, igas ?i tiun karton fari !M! da plia dama?o.",
-  "EXTENDED_DESCRIPTION": [
-    " (Faru !${modID}:TOTAL_DAMAGE! da dama?o po trafo)"
-  ]
-  }, "${modID}:Bloodstain": {
-  "NAME": "Sangomakulo",
-  "DESCRIPTION": "Aldonu !M! da ${modID}:Sango. NL Ripetu ?i tion unufoje por ?iu ${modID}:?uldo, kiun vi havas.",
-  "UPGRADE_DESCRIPTION": "Aldonu !M! da ${modID}:Sango. NL Ripetu ?i tion unufoje por ?iu ${modID}:?uldo, kiun vi havas."
-  }, "${modID}:BrokenArmor": {
-  "NAME": "Rompita Kiraso",
-  "DESCRIPTION": "Gajnu !B! da ?irmo. NL Gajnu !M! da malforta.",
-  "UPGRADE_DESCRIPTION": "Gajnu !B! da ?irmo. NL Gajnu !M! da malforta."
-  }, "${modID}:FormPact": {
-  "NAME": "Formi Pakton",
-  "DESCRIPTION": "Gajnu [E] [E]. NL Aldonu 1 *Mizero al via mano.",
-  "UPGRADE_DESCRIPTION": "Gajnu [E] [E] [E]. NL Aldonu 1 *Mizero al via mano."
-  }, "${modID}:Fraud": {
-  "NAME": "Fra?do",
-  "DESCRIPTION": "Prenu !M! kartojn. NL Gajnu !M! da ${modID}:Peko.",
-  "UPGRADE_DESCRIPTION": "Prenu !M! kartojn. NL Gajnu !M! da ${modID}:Peko."
-  }, "${modID}:Mercy": {
-  "NAME": "Kompatemo",
-  "DESCRIPTION": "Fantoma. NL El?erpu *Mizero en via mano je la fino de ?iu vico. NL Gajnu !M! da ${modID}:Peko.",
-  "UPGRADE_DESCRIPTION": "El?erpu *Mizero en via mano je la fino de ?iu vico. NL Gajnu !M! da ${modID}:Peko."
-  }, "${modID}:Prepare": {
-  "NAME": "Prepari",
-  "DESCRIPTION": "Fundamenta. NL Prenu !M! kartojn. NL Retenu vian manon ?i-vice. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Fundamenta. NL Prenu !M! kartojn. NL Retenu vian manon ?i-vice. NL El?erpu."
-  }, "${modID}:Relapse": {
-  "NAME": "Recidivo",
-  "DESCRIPTION": "La ${modID}:Sango de malamiko ne estas forigata ?i-vice.",
-  "UPGRADE_DESCRIPTION": "La ${modID}:Sango de ?IUJ malamikoj ne estas forigata ?i-vice."
-  }, "${modID}:SharedSuffering": {
-  "NAME": "Komuna Sufero",
-  "DESCRIPTION": "Aldonu !M! da malforta kaj !M! da vundebla al ?IUJ malamikoj por ?iu ${modID}:?uldo, kiun vi havas. NL El?erpu.",
-  "UPGRADE_DESCRIPTION": "Aldonu !M! da malforta kaj !M! da vundebla al ?IUJ malamikoj por ?iu ${modID}:?uldo, kiun vi havas. NL El?erpu."
-  }, "${modID}:Taboo": {
-  "NAME": "Tabuo",
-  "DESCRIPTION": "Gajnu [E] por ?iu ${modID}:?uldo, kiun vi havas. NL Gajnu 1 da ${modID}:Limigo.",
-  "UPGRADE_DESCRIPTION": "Gajnu [E] por ?iu ${modID}:?uldo, kiun vi havas, plus 1. NL Gajnu 1 da ${modID}:Limigo.",
-  "EXTENDED_DESCRIPTION": [
-    " (Vi ne povas gajni energion)",
-    " (Gajnu !${modID}:TOTAL_ENERGY! da energio)",
-    " (Gajnu !${modID}:TOTAL_ENERGY! da energio!)"
-  ]
-  }
+    "${modID}:ExampleCard":  {
+                                     "NAME":  "Nomo",
+                                     "DESCRIPTION":  "Priskribo. NL Dua linio.",
+                                     "UPGRADE_DESCRIPTION":  "Estas a?tomate uzata kiam la karto estas plibonigita. Forigu, se ne necese.",
+                                     "EXTENDED_DESCRIPTION":  [
+                                                                  "?i tie vi povas aldoni plian tekston.",
+                                                                  "Se vi bezonas ?in por io ajn.",
+                                                                  "Blizzard estas bona ekzemplo por tio."
+                                                              ]
+                                 },
+    "${modID}:StrikeTormented":  {
+                                         "NAME":  "Bato",
+                                         "DESCRIPTION":  "Faru !D! da dama?o.",
+                                         "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o."
+                                     },
+    "${modID}:DefendTormented":  {
+                                         "NAME":  "Defendo",
+                                         "DESCRIPTION":  "Gajnu !B! da ?irmo.",
+                                         "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo."
+                                     },
+    "${modID}:Rebel":  {
+                               "NAME":  "Ribelulo",
+                               "DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu ${modID}:Sangon egale al la dama?o, kiun ?i tiu karto faras.",
+                               "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu ${modID}:Sangon egale al la dama?o, kiun ?i tiu karto faras.",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            "NL (Aldonu !M! da ${modID}:Sango)"
+                                                        ]
+                           },
+    "${modID}:Forgive":  {
+                                 "NAME":  "Pardoni",
+                                 "DESCRIPTION":  "Gajnu !B! da ?irmo. NL Malpliigu !M! da ${modID}:Peko.",
+                                 "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL Malpliigu !M! da ${modID}:Peko."
+                             },
+    "${modID}:Slash":  {
+                               "NAME":  "Tranco",
+                               "DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu !M! da ${modID}:Sango.",
+                               "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu !M! da ${modID}:Sango."
+                           },
+    "${modID}:Rend":  {
+                              "NAME":  "?iri",
+                              "DESCRIPTION":  "Faru !D! da dama?o. NL Se la malamiko havas ${modID}:Sangon, faru !M! pliajn trafojn.",
+                              "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Se la malamiko havas ${modID}:Sangon, faru !M! pliajn trafojn."
+                          },
+    "${modID}:Pursuit":  {
+                                 "NAME":  "Persekuto",
+                                 "DESCRIPTION":  "Ludebla nur se via lasta ludo ?i-vice estis atako. NL Faru !D! da dama?o.",
+                                 "UPGRADE_DESCRIPTION":  "Ludebla nur se via lasta ludo ?i-vice estis atako. NL Faru !D! da dama?o.",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              "Vi devas unue ludi atakon en ?i tiu vico."
+                                                          ]
+                             },
+    "${modID}:ArmSevering":  {
+                                     "NAME":  "Brako-Amputo",
+                                     "DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu !M! *Mizero al via mano.",
+                                     "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu !M! *Mizero al via mano."
+                                 },
+    "${modID}:QuenchedBlade":  {
+                                       "NAME":  "Eestingita Klingo",
+                                       "DESCRIPTION":  "Faru !D! da dama?o. NL Plibonigu !M! kartojn en via mano por la resto de la batalo.",
+                                       "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Plibonigu !M! kartojn en via mano por la resto de la batalo."
+                                   },
+    "${modID}:CruelTorture":  {
+                                      "NAME":  "Kruela Torturo",
+                                      "DESCRIPTION":  "Faru !D! da dama?o. NL Gajnu !${modID}:SIN! da ${modID}:Peko.",
+                                      "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Gajnu !${modID}:SIN! da ${modID}:Peko."
+                                  },
+    "${modID}:AtonementStrike":  {
+                                         "NAME":  "Repaga Bato",
+                                         "DESCRIPTION":  "Faru !D! da dama?o. NL Prenu !M! kartojn, se vi havas ${modID}:?uldon. NL Tiam perdu 4 da ${modID}:Peko.",
+                                         "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Prenu !M! kartojn, se vi havas ${modID}:?uldon. NL Tiam perdu 4 da ${modID}:Peko."
+                                     },
+    "${modID}:UnrighteousGuilt":  {
+                                          "NAME":  "Maljusta Kulpo",
+                                          "DESCRIPTION":  "Faru !D! da dama?o al ?IUJ malamikoj. NL Gajnu !${modID}:SIN! da ${modID}:Peko.",
+                                          "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o al ?IUJ malamikoj. NL Gajnu !${modID}:SIN! da ${modID}:Peko."
+                                      },
+    "${modID}:RelentlessEntanglement":  {
+                                                "NAME":  "Sen?esa Interplekti?o",
+                                                "DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu ?i tiun karton al via mano kiam via ${modID}:?uldo plii?as"
+                                            },
+    "${modID}:Agony":  {
+                               "NAME":  "Agonio",
+                               "DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu !M! da malforta kaj !M! da vundebla.",
+                               "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Aldonu !M! da malforta kaj !M! da vundebla."
+                           },
+    "${modID}:SacredLand":  {
+                                    "NAME":  "Sankta Lando",
+                                    "DESCRIPTION":  "Gajnu !B! da ?irmo. NL Prenu !M! kartojn, se vi ne havas ${modID}:?uldon. NL Alikaze perdu 7 da ${modID}:Peko.",
+                                    "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL Prenu !M! kartojn, se vi ne havas ${modID}:?uldon. NL Alikaze perdu 7 da ${modID}:Peko."
+                                },
+    "${modID}:Loan":  {
+                              "NAME":  "Prunto",
+                              "DESCRIPTION":  "Gajnu [E] [E] [E]. NL Perdu [E] la sekvontan vicon. NL El?erpu.",
+                              "UPGRADE_DESCRIPTION":  "Gajnu [E] [E] [E]. NL Perdu [E] la sekvontan vicon. NL El?erpu NL Retenu."
+                          },
+    "${modID}:Firm":  {
+                              "NAME":  "Stabila",
+                              "DESCRIPTION":  "Gajnu !B! da ?irmo. NL Retenu.",
+                              "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL Retenu."
+                          },
+    "${modID}:Odyssey":  {
+                                 "NAME":  "Vagado",
+                                 "DESCRIPTION":  "Prenu !M! kartojn. NL El?erpu 1 karton. NL Se vi el?erpas statkarton, malpliigu 3 da ${modID}:Peko",
+                                 "UPGRADE_DESCRIPTION":  "Prenu !M! kartojn. NL El?erpu 1 karton. NL Se vi el?erpas statkarton, malpliigu 3 da ${modID}:Peko"
+                             },
+    "${modID}:BloodGuard":  {
+                                    "NAME":  "Sangogardisto",
+                                    "DESCRIPTION":  "Gajnu !B! da ?irmo. NL Aldonu !M! da ${modID}:Sango al malamiko.",
+                                    "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL Aldonu !M! da ${modID}:Sango al malamiko."
+                                },
+    "${modID}:PleaOfInnocence":  {
+                                         "NAME":  "Senkulpeca Pledo",
+                                         "DESCRIPTION":  "Gajnu !B! da ?irmo. NL ?iu ${modID}:?uldo donas !M! da plia ?irmo.",
+                                         "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL ?iu ${modID}:?uldo donas !M! da plia ?irmo.",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
+                                                                  ]
+                                     },
+    "${modID}:PredictiveMeasures":  {
+                                            "NAME":  "Anta?vidaj Rimedoj",
+                                            "DESCRIPTION":  "Prenu !M! karton. Se ?i estas atako, ?i kostas 0 ?is ludita ?i-vice.",
+                                            "UPGRADE_DESCRIPTION":  "Prenu !M! karton. Se ?i estas atako, ?i kostas 0 ?is ludita ?i-vice."
+                                        },
+    "${modID}:Hostility":  {
+                                   "NAME":  "Malamikeco",
+                                   "DESCRIPTION":  "Se via ?irmo estas sub !${modID}:BLOCK_THRESHOLD!, aldonu !M! da malforta al ?iuj malamikoj. NL Gajnu !B! da ?irmo",
+                                   "UPGRADE_DESCRIPTION":  "Se via ?irmo estas sub !${modID}:BLOCK_THRESHOLD!, aldonu !M! da malforta al ?iuj malamikoj. NL Gajnu !B! da ?irmo"
+                               },
+    "${modID}:Shackles":  {
+                                  "NAME":  "Katenoj",
+                                  "DESCRIPTION":  "Aldonu !${modID}:CARD_ADD! *Mizero al via mano. NL Gajnu !M! da ?irmo por ?iu statkarto en via mano",
+                                  "UPGRADE_DESCRIPTION":  "Aldonu !${modID}:CARD_ADD! *Mizero al via mano. NL Gajnu !M! da ?irmo por ?iu statkarto en via mano",
+                                  "EXTENDED_DESCRIPTION":  [
+                                                               " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
+                                                           ]
+                              },
+    "${modID}:DeterringStrike":  {
+                                         "NAME":  "Deterna Bato",
+                                         "DESCRIPTION":  "Faru !D! da dama?o. NL La malamiko perdas !M! da forto ?i-vice, se lia intenco estas atako",
+                                         "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL La malamiko perdas !M! da forto ?i-vice, se lia intenco estas atako"
+                                     },
+    "${modID}:HeavySmash":  {
+                                    "NAME":  "Pezega Bato",
+                                    "DESCRIPTION":  "Ludebla nur se vi havas almena? !M! da ${modID}:?uldo. Faru !D! da dama?o",
+                                    "UPGRADE_DESCRIPTION":  "Ludebla nur se vi havas almena? !M! da ${modID}:?uldo. Faru !D! da dama?o",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 "Vi bezonas almena? 2 da ${modID}:?uldo"
+                                                             ]
+                                },
+    "${modID}:SinsToBlades":  {
+                                      "NAME":  "Pekoj al Klingoj",
+                                      "DESCRIPTION":  "Faru !D! da dama?o. NL Prenu kartojn egalantajn al via ${modID}:?uldo.",
+                                      "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Prenu kartojn egalantajn al via ${modID}:?uldo plus 1.",
+                                      "EXTENDED_DESCRIPTION":  [
+                                                                   " (Prenu entute !${modID}:TOTAL_DRAW! kartojn)"
+                                                               ]
+                                  },
+    "${modID}:ChaosDirty":  {
+                                    "NAME":  "Malpura Kaoso",
+                                    "DESCRIPTION":  "Gajnu !${modID}:SIN! da ${modID}:Peko. NL Faru !D! da dama?o. ?iu ${modID}:?uldo, kiun vi havas, faras !M! da plia dama?o",
+                                    "UPGRADE_DESCRIPTION":  "Gajnu !${modID}:SIN! da ${modID}:Peko. NL Faru !D! da dama?o. ?iu ${modID}:?uldo, kiun vi havas, faras !M! da plia dama?o",
+                                    "EXTENDED_DESCRIPTION":  [
+                                                                 " (Faru entute !${modID}:TOTAL_DAMAGE! da dama?o)"
+                                                             ]
+                                },
+    "${modID}:TemperedSword":  {
+                                       "NAME":  "Hardita Glavo",
+                                       "DESCRIPTION":  "Faru !D! da dama?o. NL ?iu statkarto, kiun vi el?erpas, faras !M! da plia dama?o",
+                                       "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL ?iu statkarto, kiun vi el?erpas, faras !M! da plia dama?o",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    " (Faru entute !${modID}:TOTAL_DAMAGE! da dama?o)"
+                                                                ]
+                                   },
+    "${modID}:Crush":  {
+                               "NAME":  "Premegi",
+                               "DESCRIPTION":  "Faru !D! da dama?o. NL Gajnu ?irmon egale al la ${modID}:Sango de la malamiko",
+                               "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Gajnu ?irmon egale al la ${modID}:Sango de la malamiko",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
+                                                        ]
+                           },
+    "${modID}:Unleash":  {
+                                 "NAME":  "Akumuli",
+                                 "DESCRIPTION":  "Faru !D! da dama?o 2 fojojn. NL Gajnu [E] la sekvontan vicon",
+                                 "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o 2 fojojn. NL Gajnu [E][E] la sekvontan vicon"
+                             },
+    "${modID}:HeavyPast":  {
+                                   "NAME":  "Pezega Pasinteco",
+                                   "DESCRIPTION":  "Faru !D! da dama?o 2 fojojn. NL Aldonu 1 *Mizero al via prenstako kaj 1 al via for?etstako. NL Prenu !M! kartojn.",
+                                   "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o 2 fojojn. NL Aldonu 1 *Mizero al via prenstako kaj 1 al via for?etstako. NL Prenu !M! kartojn."
+                               },
+    "${modID}:Implication":  {
+                                     "NAME":  "Impliko",
+                                     "DESCRIPTION":  "El?erpu 1 karton el via mano. NL Faru !D! da dama?o al ?IUJ malamikoj. NL Tiru 1 karton por ?iu malamiko kun ${modID}:Sango, kiu ricevis dama?on.",
+                                     "UPGRADE_DESCRIPTION":  "El?erpu 1 karton el via mano. NL Faru !D! da dama?o al ?IUJ malamikoj. NL Tiru 1 karton por ?iu malamiko kun ${modID}:Sango, kiu ricevis dama?on."
+                                 },
+    "${modID}:ConsecutiveKicks":  {
+                                          "NAME":  "Sinsekvaj Piedbatoj",
+                                          "DESCRIPTION":  "Faru !D! da dama?o !M! fojojn",
+                                          "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o !M! fojojn"
+                                      },
+    "${modID}:MassiveBleeding":  {
+                                         "NAME":  "Amasa Sangado",
+                                         "DESCRIPTION":  "Faru !D! da dama?o. NL Tiam faru dama?on egalantajn al la ${modID}:Sango de la malamiko",
+                                         "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Tiam faru dama?on egalantajn al duoblo de la ${modID}:Sango de la malamiko",
+                                         "EXTENDED_DESCRIPTION":  [
+                                                                      " (Faru entute !${modID}:TOTAL_DAMAGE! da dama?o)"
+                                                                  ]
+                                     },
+    "${modID}:FaceDanger":  {
+                                    "NAME":  "Alfronti Dan?eron",
+                                    "DESCRIPTION":  "Faru !D! da dama?o. NL ?iu *Mizero, kiun vi ludas, malpliigas la koston de ?i tiu karto je 1 por la resto de la batalo",
+                                    "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL ?iu *Mizero, kiun vi ludas, malpliigas la koston de ?i tiu karto je 1 por la resto de la batalo"
+                                },
+    "${modID}:Relief":  {
+                                "NAME":  "Konsolo",
+                                "DESCRIPTION":  "Aldonu 2 *Mizero al via for?etstako. NL El?erpu ?iujn *Mizero en via mano je la fino de via vico.",
+                                "UPGRADE_DESCRIPTION":  "Fundamenta. NL Aldonu 2 *Mizero al via for?etstako. NL El?erpu ?iujn *Mizero en via mano je la fino de via vico."
+                            },
+    "${modID}:Misery":  {
+                                "NAME":  "Mizero",
+                                "DESCRIPTION":  "Prenu 2 da dama?o. NL Prenu 1 karton. NL El?erpu."
+                            },
+    "${modID}:Parry":  {
+                               "NAME":  "Parado",
+                               "DESCRIPTION":  "Gajnu !B! da ?irmo. NL Kiam ajn vi estas atakata, resendu la ?irmitan dama?on al la atakanto.",
+                               "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL Kiam ajn vi estas atakata, resendu la ?irmitan dama?on al la atakanto."
+                           },
+    "${modID}:Pardon":  {
+                                "NAME":  "Pardono",
+                                "DESCRIPTION":  "Ŝanĝu ĈIUJN kartojn en via mano al hazardaj kartoj. NL Post ludo de ĉi tiu karto !M! fojojn, ŝanĝu ĝin al hazarda Potenckarto",
+                                "UPGRADE_DESCRIPTION":  "Ŝanĝu ĈIUJN kartojn en via mano al hazardaj plibonigitaj kartoj. NL Post ludo de ĉi tiu karto !M! fojojn, ŝanĝu ĝin al hazarda plibonigita Potenckarto"
+                            },
+    "${modID}:Memorial":  {
+                                  "NAME":  "Memora?o",
+                                  "DESCRIPTION":  "Prenu 1 karton. NL Se la prenita karto estas Lerto, perdu !M! da ${modID}:Peko.",
+                                  "UPGRADE_DESCRIPTION":  "Prenu 1 karton. NL Se la prenita karto estas Lerto, perdu !M! da ${modID}:Peko."
+                              },
+    "${modID}:Boiling":  {
+                                 "NAME":  "Bolado",
+                                 "DESCRIPTION":  "El?erpu ?iujn ne-atakajn kartojn en via mano. NL Aldonu !M! da ${modID}:Sango al hazarda malamiko por ?iu el?erpita karto.",
+                                 "UPGRADE_DESCRIPTION":  "El?erpu ?iujn ne-atakajn kartojn en via mano. NL Aldonu !M! da ${modID}:Sango al hazarda malamiko por ?iu el?erpita karto."
+                             },
+    "${modID}:Grief":  {
+                               "NAME":  "Doloro",
+                               "DESCRIPTION":  "Aldonu 1 hazardan statkarton al via mano. NL ?i-vice: Kiam ajn vi prenas karton, aldonu !M! da ${modID}:Sango al ?IUJ malamikoj.",
+                               "UPGRADE_DESCRIPTION":  "Aldonu 1 hazardan statkarton al via mano. NL ?i-vice: Kiam ajn vi prenas karton, aldonu !M! da ${modID}:Sango al ?IUJ malamikoj."
+                           },
+    "${modID}:BloodSea":  {
+                                  "NAME":  "Sangomaro",
+                                  "DESCRIPTION":  "Aldonu !${modID}:BLEED! da ${modID}:Sango. NL Multipliku la ${modID}:Sangon de la malamiko je !M!. NL El?erpu.",
+                                  "UPGRADE_DESCRIPTION":  "Aldonu !${modID}:BLEED! da ${modID}:Sango. NL Multipliku la ${modID}:Sangon de la malamiko je !M!. NL El?erpu."
+                              },
+    "${modID}:RelentlessBleed":  {
+                                         "NAME":  "Sen?esa Sangado",
+                                         "DESCRIPTION":  "Aldonu !M! da ${modID}:Sango al ?IUJ malamikoj je la komenco de ?iu vico.",
+                                         "UPGRADE_DESCRIPTION":  "Aldonu !M! da ${modID}:Sango al ?IUJ malamikoj je la komenco de ?iu vico."
+                                     },
+    "${modID}:DreadMemory":  {
+                                     "NAME":  "Timinda Memoro",
+                                     "DESCRIPTION":  "Se vi gajnis ${modID}:?uldon ?i-vice, malamikoj faras !M!% malpli da dama?o. NL Apliki?as nur en la vico, en kiu vi gajnis ${modID}:?uldon.",
+                                     "UPGRADE_DESCRIPTION":  "Se vi gajnis ${modID}:?uldon ?i-vice, malamikoj faras !M!% malpli da dama?o. NL Apliki?as nur en la vico, en kiu vi gajnis ${modID}:?uldon."
+                                 },
+    "${modID}:Trial":  {
+                               "NAME":  "Provo",
+                               "DESCRIPTION":  "Gajnu !M! da forto kaj !M! da lerteco. NL Gajnu 1 da malforta.",
+                               "UPGRADE_DESCRIPTION":  "Gajnu !M! da forto kaj !M! da lerteco. NL Gajnu 1 da malforta."
+                           },
+    "${modID}:ReconcileFate":  {
+                                       "NAME":  "Repacigi la Sorton",
+                                       "DESCRIPTION":  "Kiam ajn vi kreas a? el?erpas *Mizero, gajnu !M! da ?irmo.",
+                                       "UPGRADE_DESCRIPTION":  "Kiam ajn vi kreas a? el?erpas *Mizero, gajnu !M! da ?irmo."
+                                   },
+    "${modID}:MangledFlesh":  {
+                                      "NAME":  "Kripligita Karno",
+                                      "DESCRIPTION":  "Kiam ajn vi aldonas 6 da ${modID}:Sango al malamiko, faru !M! da dama?o al ?IUJ malamikoj.",
+                                      "UPGRADE_DESCRIPTION":  "Kiam ajn vi aldonas 6 da ${modID}:Sango al malamiko, faru !M! da dama?o al ?IUJ malamikoj."
+                                  },
+    "${modID}:BloodThorns":  {
+                                     "NAME":  "Sangaj Dornoj",
+                                     "DESCRIPTION":  "Kiam ajn malamiko atakas vin, aldonu !M! da ${modID}:Sango al ?i.",
+                                     "UPGRADE_DESCRIPTION":  "Kiam ajn malamiko atakas vin, aldonu !M! da ${modID}:Sango al ?i."
+                                 },
+    "${modID}:RedemptionPath":  {
+                                        "NAME":  "Vojo de Ela?eto",
+                                        "DESCRIPTION":  "Kiam ajn vi forigas 1 da ${modID}:?uldo, prenu !M! kartojn.",
+                                        "UPGRADE_DESCRIPTION":  "Kiam ajn vi forigas 1 da ${modID}:?uldo, prenu !M! kartojn."
+                                    },
+    "${modID}:Requiem":  {
+                                 "NAME":  "Rekviemo",
+                                 "DESCRIPTION":  "?iu *Mizero, kiun vi el?erpis, faras !D! da dama?o al hazarda malamiko",
+                                 "UPGRADE_DESCRIPTION":  "?iu *Mizero, kiun vi el?erpis, faras !D! da dama?o al hazarda malamiko",
+                                 "EXTENDED_DESCRIPTION":  [
+                                                              " (Faru entute !${modID}:HITS! trafojn)"
+                                                          ]
+                             },
+    "${modID}:DesperateMeasure":  {
+                                          "NAME":  "Malespera Rimedo",
+                                          "DESCRIPTION":  "Faru !D! da dama?o. NL Se tio ne mortigas la malamikon, perdu !M! da vivo.",
+                                          "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o. NL Se tio ne mortigas la malamikon, perdu !M! da vivo."
+                                      },
+    "${modID}:UnceasingWar":  {
+                                      "NAME":  "Senfina Milito",
+                                      "DESCRIPTION":  "Faru !D! da dama?o !${modID}:HITS! fojojn. NL Kiam ajn tio mortigas malamikon, plialtigu la trafojn de ?i tiu karto konstante je 1 por la resto de la serio. NL El?erpu.",
+                                      "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o !${modID}:HITS! fojojn. NL Kiam ajn tio mortigas malamikon, plialtigu la trafojn de ?i tiu karto konstante je 1 por la resto de la serio. NL El?erpu."
+                                  },
+    "${modID}:FinalJudgment":  {
+                                       "NAME":  "Fina Ju?o",
+                                       "DESCRIPTION":  "Ludebla nur se vi havas almena? 4 da ${modID}:?uldo. NL Faru !D! da dama?o al ?IUJ malamikoj. NL Forigu ?iujn ${modID}:Pekojn.",
+                                       "UPGRADE_DESCRIPTION":  "Ludebla nur se vi havas almena? 4 da ${modID}:?uldo. NL Faru !D! da dama?o al ?IUJ malamikoj. NL Forigu ?iujn ${modID}:Pekojn.",
+                                       "EXTENDED_DESCRIPTION":  [
+                                                                    "Vi bezonas almena? 4 da ${modID}:?uldo."
+                                                                ]
+                                   },
+    "${modID}:Blazing":  {
+                                 "NAME":  "Ardanta",
+                                 "DESCRIPTION":  "El?erpu ?iujn kartojn en via mano. NL Prenu !M! kartojn por ?iu el?erpita statkarto. NL El?erpu.",
+                                 "UPGRADE_DESCRIPTION":  "El?erpu ?iujn kartojn en via mano. NL Prenu !M! kartojn por ?iu el?erpita statkarto. NL El?erpu."
+                             },
+    "${modID}:RockSolid":  {
+                                   "NAME":  "Rokfirma",
+                                   "DESCRIPTION":  "Gajnu !B! da ?irmo. NL Perdu 3 da maks. vivo.",
+                                   "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL Perdu 3 da maks. vivo."
+                               },
+    "${modID}:Devotion":  {
+                                  "NAME":  "Devoteco",
+                                  "DESCRIPTION":  "Forigu ĉiujn viajn ${modID}:?uldojn, vundebla, malforta kaj fragila. NL Gajnu [E] por ĉiu forigita stako kaj prenu !M! kartojn. NL Elĉerpu",
+                                  "UPGRADE_DESCRIPTION":  "Forigu ĉiujn viajn ${modID}:?uldojn, vundebla, malforta kaj fragila. NL Gajnu [E] por ĉiu forigita stako kaj prenu !M! kartojn. NL Elĉerpu"
+                              },
+    "${modID}:Indignation":  {
+                                     "NAME":  "Indigno",
+                                     "DESCRIPTION":  "En la sekvontaj X vicoj, la unua karto, kiun vi ludas ?iuvice, kostas 0. NL El?erpu.",
+                                     "UPGRADE_DESCRIPTION":  "En la sekvontaj X+1 vicoj, la unua karto, kiun vi ludas ?iuvice, kostas 0. NL El?erpu."
+                                 },
+    "${modID}:BloodFeud":  {
+                                   "NAME":  "Sangovendo",
+                                   "DESCRIPTION":  "Aldonu 1 *Mizero al via mano. NL Tuj aktivigu !M!% de la ${modID}:Sango de ?iuj malamikoj.",
+                                   "UPGRADE_DESCRIPTION":  "Aldonu 1 *Mizero al via mano. NL Tuj aktivigu !M!% de la ${modID}:Sango de ?iuj malamikoj."
+                               },
+    "${modID}:VoidCall":  {
+                                  "NAME":  "Voko de la Vakuo",
+                                  "DESCRIPTION":  "Elektu 1 karton el via prenstako kaj aldonu ?in al via mano. ?i fari?as fantoma. NL El?erpu.",
+                                  "UPGRADE_DESCRIPTION":  "Elektu 1 karton el via prenstako kaj aldonu ?in al via mano. ?i fari?as fantoma."
+                              },
+    "${modID}:Spread":  {
+                                "NAME":  "Disvastigo",
+                                "DESCRIPTION":  "Aldonu !M! da ${modID}:Sango. NL Aldonu ?iujn malhelpojn de ?i tiu malamiko al ?iuj aliaj malamikoj.",
+                                "UPGRADE_DESCRIPTION":  "Aldonu !M! da ${modID}:Sango. NL Aldonu ?iujn malhelpojn de ?i tiu malamiko al ?iuj aliaj malamikoj."
+                            },
+    "${modID}:HungeringBattleWill":  {
+                                             "NAME":  "Malsata Batalvolo",
+                                             "DESCRIPTION":  "Gajnu [E] je la komenco de ?iu vico. NL Ricevu 3 da dama?o je la fino de ?iu vico.",
+                                             "UPGRADE_DESCRIPTION":  "Gajnu [E] je la komenco de ?iu vico. NL Ricevu 3 da dama?o je la fino de ?iu vico."
+                                         },
+    "${modID}:ExecutionForm":  {
+                                       "NAME":  "Formo de la Ju?o",
+                                       "DESCRIPTION":  "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo.",
+                                       "UPGRADE_DESCRIPTION":  "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo."
+                                   },
+    "${modID}:SinAvatar":  {
+                                   "NAME":  "Avataro de la Peko",
+                                   "DESCRIPTION":  "Gajnu je la fino de via vico !B! da ?irmo, plus !M! da ?irmo por ?iu stako da ${modID}:?uldo.",
+                                   "UPGRADE_DESCRIPTION":  "Gajnu je la fino de via vico !B! da ?irmo, plus !M! da ?irmo por ?iu stako da ${modID}:?uldo.",
+                                   "EXTENDED_DESCRIPTION":  [
+                                                                " (Gajnu entute !${modID}:TOTAL_BLOCK! da ?irmo)"
+                                                            ]
+                               },
+    "${modID}:Bloodbath":  {
+                                   "NAME":  "Sangobano",
+                                   "DESCRIPTION":  "Via unua atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o.",
+                                   "UPGRADE_DESCRIPTION":  "Via unua atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
+                               },
+    "${modID}:Overrigid":  {
+                                   "NAME":  "Tro Rigida",
+                                   "DESCRIPTION":  "Gajnu 5 da forto. NL ?iufoje kiam vi ludas atak-karton, ?i konstante perdas !M! da dama?o por la resto de la batalo.",
+                                   "UPGRADE_DESCRIPTION":  "Gajnu 5 da forto. NL ?iufoje kiam vi ludas atak-karton, ?i konstante perdas !M! da dama?o por la resto de la batalo."
+                               },
+    "${modID}:Entangled":  {
+                                   "NAME":  "Implikita",
+                                   "DESCRIPTION":  "Kiam ajn vi prenas ?i tiun karton, aldonu 1 kopion de ?i al via mano. NL El?erpu. NL Kiam ?i tiu karto estas el?erpita, aldonu 1 ?limo al via tira stako."
+                               },
+    "${modID}:Riot":  {
+                              "NAME":  "Ribelo",
+                              "DESCRIPTION":  "Faru !D! da dama?o X fojojn. NL ?iu ${modID}:?uldo, kiun vi havas, igas ?i tiun karton fari !M! da plia dama?o.",
+                              "UPGRADE_DESCRIPTION":  "Faru !D! da dama?o X fojojn. NL ?iu ${modID}:?uldo, kiun vi havas, igas ?i tiun karton fari !M! da plia dama?o.",
+                              "EXTENDED_DESCRIPTION":  [
+                                                           " (Faru !${modID}:TOTAL_DAMAGE! da dama?o po trafo)"
+                                                       ]
+                          },
+    "${modID}:Bloodstain":  {
+                                    "NAME":  "Sangomakulo",
+                                    "DESCRIPTION":  "Aldonu !M! da ${modID}:Sango. NL Ripetu ?i tion unufoje por ?iu ${modID}:?uldo, kiun vi havas. NL El?erpu.",
+                                    "UPGRADE_DESCRIPTION":  "Aldonu !M! da ${modID}:Sango. NL Ripetu ?i tion unufoje por ?iu ${modID}:?uldo, kiun vi havas."
+                                },
+    "${modID}:BrokenArmor":  {
+                                     "NAME":  "Rompita Kiraso",
+                                     "DESCRIPTION":  "Gajnu !B! da ?irmo. NL Gajnu 1 fragila.",
+                                     "UPGRADE_DESCRIPTION":  "Gajnu !B! da ?irmo. NL Gajnu 1 fragila."
+                                 },
+    "${modID}:FormPact":  {
+                                  "NAME":  "Formi Pakton",
+                                  "DESCRIPTION":  "Gajnu [E] [E]. NL Aldonu 1 *Mizero al via forĵeta stako",
+                                  "UPGRADE_DESCRIPTION":  "Gajnu [E] [E] [E]. NL Aldonu 1 *Mizero al via forĵeta stako"
+                              },
+    "${modID}:Fraud":  {
+                               "NAME":  "Fra?do",
+                               "DESCRIPTION":  "Prenu !M! kartojn. NL Gajnu !M! da ${modID}:Peko.",
+                               "UPGRADE_DESCRIPTION":  "Prenu !M! kartojn. NL Gajnu !M! da ${modID}:Peko."
+                           },
+    "${modID}:Mercy":  {
+                               "NAME":  "Kompatemo",
+                               "DESCRIPTION":  "Fantoma. NL El?erpu *Mizero en via mano je la fino de ?iu vico. NL Gajnu !M! da ${modID}:Peko.",
+                               "UPGRADE_DESCRIPTION":  "El?erpu *Mizero en via mano je la fino de ?iu vico. NL Gajnu !M! da ${modID}:Peko."
+                           },
+    "${modID}:Prepare":  {
+                                 "NAME":  "Prepari",
+                                 "DESCRIPTION":  "Fundamenta. NL Prenu !M! kartojn. NL Retenu vian manon ?i-vice. NL El?erpu.",
+                                 "UPGRADE_DESCRIPTION":  "Fundamenta. NL Prenu !M! kartojn. NL Retenu vian manon ?i-vice. NL El?erpu."
+                             },
+    "${modID}:Relapse":  {
+                                 "NAME":  "Recidivo",
+                                 "DESCRIPTION":  "La ${modID}:Sango de malamiko ne estas forigata ?i-vice.",
+                                 "UPGRADE_DESCRIPTION":  "La ${modID}:Sango de ?IUJ malamikoj ne estas forigata ?i-vice."
+                             },
+    "${modID}:SharedSuffering":  {
+                                         "NAME":  "Komuna Sufero",
+                                         "DESCRIPTION":  "Aldonu !M! da malforta kaj !M! da vundebla al ?IUJ malamikoj por ?iu ${modID}:?uldo, kiun vi havas. NL El?erpu.",
+                                         "UPGRADE_DESCRIPTION":  "Aldonu !M! da malforta kaj !M! da vundebla al ?IUJ malamikoj por ?iu ${modID}:?uldo, kiun vi havas. NL El?erpu."
+                                     },
+    "${modID}:Taboo":  {
+                               "NAME":  "Tabuo",
+                               "DESCRIPTION":  "Gajnu [E] por ?iu ${modID}:?uldo, kiun vi havas. NL Gajnu 1 da ${modID}:Limigo.",
+                               "UPGRADE_DESCRIPTION":  "Gajnu [E] por ?iu ${modID}:?uldo, kiun vi havas, plus 1. NL Gajnu 1 da ${modID}:Limigo.",
+                               "EXTENDED_DESCRIPTION":  [
+                                                            " (Vi ne povas gajni energion)",
+                                                            " (Gajnu !${modID}:TOTAL_ENERGY! da energio)",
+                                                            " (Gajnu !${modID}:TOTAL_ENERGY! da energio!)"
+                                                        ]
+                           }
 }

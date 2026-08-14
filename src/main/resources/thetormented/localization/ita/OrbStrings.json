@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Nome Orb",
+    "DESCRIPTION": [
+      "#yPassiva: All'inizio del tuo turno, pesca #b",
+      " carta.",
+      " carte.",
+      " NL #yEvocazione: Infligge #b",
+      " danni a tutti i nemici."
+    ]
+  }
+}

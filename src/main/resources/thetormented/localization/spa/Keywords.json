@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Sangrado",
+    "NAMES": [
+      "sangrado",
+      "sangrados"
+    ],
+    "DESCRIPTION": "Al inicio de su turno, pierde PV igual a sus acumulados de Sangrado y luego elimina la mitad de su Sangrado. Una herida profunda evita que se elimine Sangrado ese turno. Cuando una criatura sangrante recibe daño de ataque no bloqueado, gana #b1 de Sangrado."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Pecado",
+    "NAMES": [
+      "pecado",
+      "pecados"
+    ],
+    "DESCRIPTION": "Cada #b5 de Pecado que tengas otorga #b1 de Deuda."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Deuda",
+    "NAMES": [
+      "deuda",
+      "deudas"
+    ],
+    "DESCRIPTION": "Cada nivel de Deuda hace que recibas #b10% más de daño. Cuando la aplicación de una Deuda es bloqueada por un Artefacto, pierdes %%SIN_PER_DEBT%% de Pecado por cada Deuda bloqueada."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Restricción",
+    "NAMES": [
+      "restricción",
+      "restricciones"
+    ],
+    "DESCRIPTION": "No puedes ganar [E] hasta eliminar por completo toda tu Deuda. Eliminada al final de tu turno."
+  }
+]

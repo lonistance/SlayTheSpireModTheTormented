@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "O Atormentado",
+      "O Atormentado"
+    ],
+    "TEXT": [
+      "O sangue não pode lavar a miséria, mas alivia a dívida da maldição.",
+      "O Atormentado.",
+      "Caminhando por uma rua sem iluminação, você encontra várias figuras encapuzadas no meio de um ritual sombrio. Ao se aproximar, elas se viram para você em estranha sincronia. A mais alta delas mostra dentes afiados e estende uma mão longa e pálida em sua direção. NL ~\"Junte-se~ ~a~ ~nós~ ~irmão~, ~e~ ~sinta~ ~o~ ~calor~ ~da~ ~Spire.\"~"
+    ]
+  }
+}

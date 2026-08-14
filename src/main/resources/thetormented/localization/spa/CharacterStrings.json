@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "El Atormentado",
+      "El Atormentado"
+    ],
+    "TEXT": [
+      "La sangre no puede lavar la miseria, pero alivia la deuda de la maldición.",
+      "El Atormentado.",
+      "Al caminar por una calle sin luz, te encuentras con varias figuras encapuchadas en medio de un oscuro ritual. Al acercarte, se vuelven hacia ti en un inquietante unísono. La más alta de ellas muestra colmillos y extiende hacia ti una mano larga y pálida. NL ~\"Únete~ ~a~ ~nosotros~ ~hermano~, ~y~ ~siente~ ~el~ ~calor~ ~de~ ~la~ ~Spire.\"~"
+    ]
+  }
+}

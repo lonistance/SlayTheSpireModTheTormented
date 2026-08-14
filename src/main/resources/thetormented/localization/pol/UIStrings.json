@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "To jest",
+      "tablica ciągów znaków."
+    ],
+    "EXTRA_TEXT": [
+      "To jest kolejna",
+      "tablica ciągów znaków."
+    ],
+    "TEXT_DICT": {
+      "To": "Zawiera pary ciągów znaków, używane do pobierania wartości na podstawie kluczy.",
+      "To jest klucz": "To jest wartość."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Wybierz karty, które dodasz do ręki i które staną się Eteryczne."
+    ]
+  }
+}

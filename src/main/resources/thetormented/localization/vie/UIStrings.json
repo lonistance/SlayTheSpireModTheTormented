@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Đây là",
+      "một mảng các Chuỗi."
+    ],
+    "EXTRA_TEXT": [
+      "Đây là một",
+      "mảng các Chuỗi khác."
+    ],
+    "TEXT_DICT": {
+      "Đây là khóa": "Chứa các cặp Chuỗi, dùng để lấy giá trị dựa trên khóa.",
+      "Đây là một khóa": "Đây là một giá trị."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Chọn lá bài để thêm vào tay bạn và trở thành Tan biến."
+    ]
+  }
+}

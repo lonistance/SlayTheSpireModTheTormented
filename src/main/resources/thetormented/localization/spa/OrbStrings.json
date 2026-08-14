@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Nombre del Orbe",
+    "DESCRIPTION": [
+      "#yPasiva: Al inicio de tu turno, roba #b",
+      " carta.",
+      " cartas.",
+      " NL #yDescargar: Haz #b",
+      " de daño a todos los enemigos."
+    ]
+  }
+}

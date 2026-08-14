@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "Den Plagede",
+      "Den Plagede"
+    ],
+    "TEXT": [
+      "Blod kan ikke vaske bort elendighet, men lindre gjeld fra forbannelser.",
+      "Den Plagede.",
+      "Du vandrer ned en ubelyst gate og kommer over flere hettekledde skikkelser midt i et mørkt ritual. I det du nærmer deg, snur de seg mot deg i uhyggelig kor. Den høyeste blant dem blottstiller huggtenner og strekker en lang, blek hånd mot deg. NL ~\"Bli~ ~med~ ~oss~ ~bror,~ ~og~ ~kjenn~ ~varmen~ ~fra~ ~Spiren.\"~"
+    ]
+  }
+}

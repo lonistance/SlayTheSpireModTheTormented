@@ -1,0 +1,98 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Bon Reliquaire",
+    "FLAVOR": "Texte de flaveur affiché dans la vue détaillée du reliquaire.",
+    "DESCRIPTIONS": [
+      "Gagnez [E] au début de votre tour. [E] est une icône d'énergie."
+    ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "Lame Brisée Maudite",
+    "FLAVOR": "Une lame brisée qui a encore soif des péchés des autres.",
+    "DESCRIPTIONS": [
+      "Au début de chaque combat, améliorez une Frappe aléatoire et une Défense aléatoire pour la durée du combat. NL Au début de chaque tour, gagnez #b",
+      " ${modID}:Péché."
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "Hameçon Barbelé",
+    "FLAVOR": "Un cruel hameçon qui s'enfonce davantage à chaque déchirure de la chair.",
+    "DESCRIPTIONS": [
+      "Chaque fois que vous appliquez un ${modID}:Saignement, appliquez #b1 ${modID}:Saignement supplémentaire."
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "Coupe Frénétique",
+    "FLAVOR": "Un vin brassé dans la plus pure frénésie ; chaque toast épuise une vie de plus.",
+    "DESCRIPTIONS": [
+      "Chaque fois qu'un ennemi non invoqué meurt, récupérez #b8 PV."
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "Sceau du Contrat",
+    "FLAVOR": "Un contrat signé de sang, honoré uniquement par les purs.",
+    "DESCRIPTIONS": [
+      "À la fin du combat, si vous n'avez aucune ${modID}:Dette, gagnez #b15 or."
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "Charme de Récupération",
+    "FLAVOR": "Un charme qui apaise la douleur de chaque blessure.",
+    "DESCRIPTIONS": [
+      "Chaque fois que vous devriez perdre des PV, vous en perdez au plus #b18 à la place."
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "Bras de Gargouille",
+    "FLAVOR": "Une pierre ancienne qui transforme la purge en protection.",
+    "DESCRIPTIONS": [
+      "Chaque fois que vous retirez #b1 point d'un malus, gagnez #b1 point de Blocage."
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "Bannière Calcinée",
+    "FLAVOR": "Une bannière en lambeaux qui ne rallie que les mains vides.",
+    "DESCRIPTIONS": [
+      "À la fin de votre tour, si vous n'avez aucune carte en main, piochez #b2 cartes supplémentaires au début de votre prochain tour."
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "Épée Longue du Héros",
+    "FLAVOR": "Une lame forgée par la promesse de la rédemption.",
+    "DESCRIPTIONS": [
+      "Remplace Lame Brisée Maudite. NL À la récupération, améliorez toutes les Frappes et Défenses de votre deck. NL Au début de chaque tour, gagnez #b",
+      " ${modID}:Péché."
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "Lourdes Entraves",
+    "FLAVOR": "Un poids de fer qui enchaîne, et pourtant donne la force.",
+    "DESCRIPTIONS": [
+      "Au début de chaque tour, gagnez [E] . NL Au début de chaque combat, ajoutez 1 *Enchevêtré à votre pioche."
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "Pilon",
+    "FLAVOR": "Chaque battement du tambour éveille une étincelle d'énergie.",
+    "DESCRIPTIONS": [
+      "Chaque fois que vous Épuisez #b",
+      " cartes, gagnez [E] ."
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "Pièce sans Regret",
+    "FLAVOR": "Une pièce qui pardonne chaque faux pas.",
+    "DESCRIPTIONS": [
+      "Chaque fois que vous entrez dans une Boutique, gagnez #b",
+      " Or."
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "Lanterne de Pierre Noire",
+    "FLAVOR": "Sa lumière froide marque chaque affliction qu'elle attise.",
+    "DESCRIPTIONS": [
+      "La première fois que vous appliquez un malus à un ennemi à chaque combat, gagnez [E] ."
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "Marteau de Fer",
+    "FLAVOR": "Forgé sur l'enclume d'un combat sans fin.",
+    "DESCRIPTIONS": [
+      "Chaque fois que vous vainquez un Élite, améliorez #b",
+      " cartes aléatoires de votre deck."
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "Braise Immortelle",
+    "FLAVOR": "Une étincelle qui se nourrit du malheur et ne s'éteint jamais.",
+    "DESCRIPTIONS": [
+      "Chaque fois que vous subissez un malus, vous subissez #b25% de dégâts en moins. NL Infligez #b25% de dégâts supplémentaires aux ennemis affectés par un malus."
+    ]
+  }
+}

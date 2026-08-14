@@ -1,0 +1,98 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "良いレリック",
+    "FLAVOR": "レリック詳細表示に表示される説明文。",
+    "DESCRIPTIONS": [
+      "ターン開始時、 [E] を得る。 [E] はエナジーアイコンです。"
+    ]
+  }, "${modID}:CursedBrokenBlade": {
+    "NAME": "呪われし破剣",
+    "FLAVOR": "今もなお他人の罪を渇望する砕けた刃。",
+    "DESCRIPTIONS": [
+      "各戦闘開始時、この戦闘の間ランダムなストライクと防御を 1 枚ずつアップグレードする。 NL 各ターン開始時、 #b",
+      " ${modID}:罪 を得る。"
+    ]
+  }, "${modID}:BarbedHook": {
+    "NAME": "返し付きの鉤",
+    "FLAVOR": "肉を裂くたびにさらに深く食い込む残酷な鉤。",
+    "DESCRIPTIONS": [
+      "${modID}:出血 を与えるたび、 ${modID}:出血 を追加で #b1 与える。"
+    ]
+  }, "${modID}:FrenziedGoblet": {
+    "NAME": "狂乱の聖杯",
+    "FLAVOR": "純粋な狂乱で醸されたワイン。乾杯のたびに命が一つ失われる。",
+    "DESCRIPTIONS": [
+      "ミニオンでない敵が死亡するたび、HPを #b8 回復する。"
+    ]
+  }, "${modID}:ContractSeal": {
+    "NAME": "契約の印章",
+    "FLAVOR": "血で交わされた契約。ただ純粋な者のみが尊重する。",
+    "DESCRIPTIONS": [
+      "戦闘終了時、 ${modID}:負債 がない場合、 #b15 ゴールドを得る。"
+    ]
+  }, "${modID}:RecoveryCharm": {
+    "NAME": "回復のお守り",
+    "FLAVOR": "あらゆる傷から痛みを抜き取るお守り。",
+    "DESCRIPTIONS": [
+      "HPを失う場合、代わりに最大 #b18 しか失わない。"
+    ]
+  }, "${modID}:GargoyleArm": {
+    "NAME": "ガーゴイルの腕",
+    "FLAVOR": "浄化を防御へと変える古代の石。",
+    "DESCRIPTIONS": [
+      "デバフを #b1 レベル取り除くたび、ブロックを #b1 得る。"
+    ]
+  }, "${modID}:ScorchedBanner": {
+    "NAME": "焦げた旗",
+    "FLAVOR": "手ぶらの者だけを集めるぼろぼろの旗。",
+    "DESCRIPTIONS": [
+      "ターン終了時、手札がない場合、次のターン開始時カードを追加で #b2 枚引く。"
+    ]
+  }, "${modID}:HeroLongsword": {
+    "NAME": "英雄の長剣",
+    "FLAVOR": "贖罪の誓いから鍛え上げられた刃。",
+    "DESCRIPTIONS": [
+      "呪われし破剣 を置き換える。 NL 獲得時、デッキのすべてのストライクと防御をアップグレードする。 NL 各ターン開始時、 #b",
+      " ${modID}:罪 を得る。"
+    ]
+  }, "${modID}:HeavyFetters": {
+    "NAME": "重い足枷",
+    "FLAVOR": "束縛しながらも力を与える鉄の重り。",
+    "DESCRIPTIONS": [
+      "各ターン開始時、 [E] を得る。 NL 各戦闘開始時、山札に *もつれ を 1 枚加える。"
+    ]
+  }, "${modID}:Drumstick": {
+    "NAME": "ドラムスティック",
+    "FLAVOR": "太鼓の一打ごとにエネルギーの火花が生まれる。",
+    "DESCRIPTIONS": [
+      "カードを #b",
+      " 枚廃棄するたび、 [E] を得る。"
+    ]
+  }, "${modID}:RegretlessCoin": {
+    "NAME": "後悔なき硬貨",
+    "FLAVOR": "あらゆる失敗を許す硬貨。",
+    "DESCRIPTIONS": [
+      "ショップに入るたび、 #b",
+      " ゴールドを得る。"
+    ]
+  }, "${modID}:BlackstoneLantern": {
+    "NAME": "黒石のランタン",
+    "FLAVOR": "その冷たい光は、灯すものすべての苦悩を刻む。",
+    "DESCRIPTIONS": [
+      "各戦闘で初めて敵にデバフを与えたとき、 [E] を得る。"
+    ]
+  }, "${modID}:IronHammer": {
+    "NAME": "鉄のハンマー",
+    "FLAVOR": "果てなき戦いの金床の上で鍛えられた。",
+    "DESCRIPTIONS": [
+      "エリートを倒すたび、デッキのカードを #b",
+      " 枚ランダムにアップグレードする。"
+    ]
+  }, "${modID}:UndyingEmber": {
+    "NAME": "不滅の残り火",
+    "FLAVOR": "不幸を糧に決して消えない火花。",
+    "DESCRIPTIONS": [
+      "デバフを受けている間、受けるダメージが #b25% 減少する。 NL デバフを受けている敵に #b25% 多くのダメージを与える。"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Tên Sự Kiện",
+    "DESCRIPTIONS": [
+      "Đây là văn bản sự kiện, thường dùng để mô tả điều đang xảy ra.",
+      "#g~Đây~ #g~là~ #g~văn~ #g~bản~ #g~xanh~ #g~lá~ #g~và~ #g~lượn~ #g~sóng.~",
+      "#r@ĐỎ@ #r@VÀ@ #r@RUNG@ #r@ĐỘNG@ #r@CHỮ.@",
+      "#rĐỏ #gXanh lá #yVàng #bXanh dương #pTím. ~Lượn sóng~ @Rung động.@",
+      "Bạn phải đánh dấu từng từ một.",
+      "Bạn cũng có thể dùng mã màu hex [#ffffff]trắng[] như thế này để tô màu văn bản.",
+      "Mã màu hex cũng hoạt động trong văn bản lá bài! Nhưng không hoạt động trên từ khóa, trừ khi có một số cách xử lý."
+    ],
+    "OPTIONS": [
+      "[Mô Tả Hành Động] Thứ bạn thực sự nhận được.",
+      "[Từ Chối] #rMất #r1 #rHP #rTối #rđa. Điều xấu có màu đỏ.",
+      "[Chấp Nhận] #gNhận #gPhong #gThần. Điều tốt có màu xanh lá.",
+      "[Bỏ đi]",
+      "Chọn lá bài để loại bỏ. (Bạn cũng có thể nhét thêm văn bản như thế này vào đây.)"
+    ]
+  }
+}

@@ -6,7 +6,7 @@
       "blutung",
       "blutungen"
     ],
-    "DESCRIPTION": "Verliert zu Beginn seines Zuges LP in Höhe seiner Blutung, dann wird alle Blutung entfernt. Wenn eine blutende Kreatur ungeblockten Angriffsschaden erleidet, erhält sie #b1 Blutung."
+    "DESCRIPTION": "Verliert zu Beginn seines Zuges LP in Höhe seiner Blutung, dann wird die Hälfte seiner Blutung entfernt. Tiefe Wunden verhindern, dass Blutung in diesem Zug entfernt wird. Wenn eine blutende Kreatur ungeblockten Angriffsschaden erleidet, erhält sie #b1 Blutung."
   },
   {
     "ID": "sin",
@@ -24,7 +24,7 @@
       "schuld",
       "schulden"
     ],
-    "DESCRIPTION": "Jeder Stapel Schuld lässt dich #b10% mehr Schaden erleiden."
+    "DESCRIPTION": "Jeder Stapel Schuld lässt dich #b10% mehr Schaden erleiden. Wenn eine Schuld-Anwendung durch Artefakt geblockt wird, verlierst du %%SIN_PER_DEBT%% Sünde für jede geblockte Schuld."
   },
   {
     "ID": "restriction",

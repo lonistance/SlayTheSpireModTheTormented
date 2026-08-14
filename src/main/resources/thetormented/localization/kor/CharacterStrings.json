@@ -1,0 +1,13 @@
+{
+  "${modID}:TheTormented": {
+    "NAMES": [
+      "수형자",
+      "수형자"
+    ],
+    "TEXT": [
+      "피는 고통을 씻어내지 못하지만, 저주에서 빚 은 덜어낼 수 있습니다. NL 적의 피조차 그의 고통을 씻어내지 못합니다.",
+      "수형자",
+      "Navigating an unlit street, you come across several hooded figures in the midst of some dark ritual. As you approach, they turn to you in eerie unison. The tallest among them bares fanged teeth and extends a long, pale hand towards you. NL ~\"Join~ ~us~ ~brother~, ~and~ ~feel~ ~the~ ~warmth~ ~of~ ~the~ ~Spire.\"~"
+    ]
+  }
+}

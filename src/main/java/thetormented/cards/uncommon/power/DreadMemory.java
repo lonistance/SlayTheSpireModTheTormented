@@ -26,6 +26,15 @@ public class DreadMemory extends BaseCard {
     }
 
     @Override
+    public void upgrade() {
+        if (!this.upgraded) {
+            upgradeName();
+            // 升级后不再增加减伤，改为费用减 1
+            upgradeBaseCost(1);
+        }
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ApplyPowerAction(p, p, new DreadMemoryPower(p, p, this.magicNumber)));
     }

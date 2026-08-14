@@ -28,7 +28,7 @@ public class IndignationPower extends BasePower {
 
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
-        if (!this.usedThisTurn && card.type != AbstractCard.CardType.ATTACK) {
+        if (!this.usedThisTurn) {
             this.usedThisTurn = true;
             card.costForTurn = 0;
             card.isCostModifiedForTurn = true;

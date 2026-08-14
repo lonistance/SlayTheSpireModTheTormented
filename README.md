@@ -59,16 +59,34 @@ Cards weave these together: gain Sin, convert it into Debt, spend or purge Debt 
 
 ## Localization
 
-Six languages are bundled and chosen automatically by the game language setting:
+Twenty-four languages are bundled and chosen automatically by the game language setting:
 
 | Language | Code | Status |
 |---|---|---|
 | English | eng | Base (reference) |
 | 简体中文 | zhs | Complete; minor consistency issues pending |
+| 繁體中文 | zht | Validated, passes all checks |
 | Deutsch | deu | Complete; minor consistency issues pending |
 | Nederlands | dut | Validated, passes all checks |
 | Esperanto | epo | Validated, passes all checks |
 | Suomi | fin | Validated, passes all checks |
+| Français | fra | Validated, passes all checks |
+| Ελληνικά | gre | Validated, passes all checks |
+| Bahasa Indonesia | ind | Validated, passes all checks |
+| Italiano | ita | Validated, passes all checks |
+| 日本語 | jpn | Validated, passes all checks |
+| 한국어 | kor | Validated, passes all checks |
+| Norsk | nor | Validated, passes all checks |
+| Polski | pol | Validated, passes all checks |
+| Português (Brasil) | ptb | Validated, passes all checks |
+| Русский | rus | Validated, passes all checks |
+| Español | spa | Validated, passes all checks |
+| Srpski | srb | Validated, passes all checks |
+| Српски | srp | Validated, passes all checks |
+| ไทย | tha | Validated, passes all checks |
+| Türkçe | tur | Validated, passes all checks |
+| Українська | ukr | Validated, passes all checks |
+| Tiếng Việt | vie | Validated, passes all checks |
 
 Run the validation tool for any language:
 
@@ -107,7 +125,7 @@ src/main/resources/
 └── thetormented/
     ├── audio/        # Sound assets
     ├── images/       # Card, relic, power and character art
-    └── localization/ # eng / zhs / deu / dut / epo / fin
+    └── localization/ # eng / zhs / zht / deu / dut / epo / fin / fra / gre / ind / ita / jpn / kor / nor / pol / ptb / rus / spa / srp / srb / tha / tur / ukr / vie
 docs/                 # Localization spec
 tools/                # Localization validator
 ```

@@ -28,8 +28,8 @@ public class RelentlessEntanglement extends BaseCard implements UpdateDebtAction
     );
 
     // 数值常量定义（遵循常量不直接参与逻辑运算的规范）
-    private static final int BASE_DAMAGE = 4;
-    private static final int UPGRADE_DAMAGE = 1; // 升级后伤害提升 1 (4 + 1 = 5)
+    private static final int BASE_DAMAGE = 5;
+    private static final int UPGRADE_DAMAGE = 2; // 升级后伤害加 2 (5 + 2 = 7)
 
     public RelentlessEntanglement() {
         super(ID, STATS);

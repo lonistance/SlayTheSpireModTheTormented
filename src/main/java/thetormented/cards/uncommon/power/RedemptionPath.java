@@ -22,7 +22,8 @@ public class RedemptionPath extends BaseCard {
 
     public RedemptionPath() {
         super(ID, info);
-        setMagic(1, 1);
+        setMagic(1);
+        setCostUpgrade(0); // 升级后费用减 1（1 -> 0）
     }
 
     @Override

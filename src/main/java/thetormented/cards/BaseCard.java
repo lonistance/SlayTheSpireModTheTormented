@@ -6,8 +6,11 @@ import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import thetormented.BasicMod;
 import thetormented.util.CardStats;
+import thetormented.util.TextureLoader;
 import thetormented.util.TriFunction;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -83,6 +86,8 @@ public abstract class BaseCard extends CustomCard {
         this.damageUpgrade = 0;
         this.blockUpgrade = 0;
         this.magicUpgrade = 0;
+
+        refreshJokePortrait();
     }
 
     private static String getName(String ID) {
@@ -154,6 +159,52 @@ public abstract class BaseCard extends CustomCard {
     public abstract void use(AbstractPlayer p, AbstractMonster m);
 
     public abstract AbstractCard makecopy();
+
+    @Override
+    protected Texture getPortraitImage() {
+        if (!Settings.PLAYTESTER_ART_MODE) {
+            return super.getPortraitImage();
+        }
+        if (textureImg == null) {
+            return null;
+        }
+        String portraitPath = textureImg.substring(0, textureImg.length() - 4) + "_p.png";
+        Texture t = TextureLoader.getTextureNull(portraitPath, false);
+        if (t != null) {
+            return t;
+        }
+        return super.getPortraitImage();
+    }
+
+    private static boolean lastPlaytesterMode = Settings.PLAYTESTER_ART_MODE;
+
+    @Override
+    public void update() {
+        if (Settings.PLAYTESTER_ART_MODE != lastPlaytesterMode) {
+            lastPlaytesterMode = Settings.PLAYTESTER_ART_MODE;
+            String path = TextureLoader.getCardTextureString(removePrefix(this.cardID), type);
+            if (path != null && !path.equals(textureImg)) {
+                this.loadCardImage(path);
+                refreshJokePortrait();
+            }
+        }
+        super.update();
+    }
+
+    private void refreshJokePortrait() {
+        TextureAtlas.AtlasRegion region = null;
+        String testPath = TextureLoader.getCardTestTextureString(this.cardID, this.type);
+        if (testPath != null) {
+            Texture t = TextureLoader.getTextureNull(testPath, false);
+            if (t != null) {
+                region = new TextureAtlas.AtlasRegion(t, 0, 0, t.getWidth(), t.getHeight());
+            }
+        }
+        if (region == null && this.portrait != null) {
+            region = this.portrait;
+        }
+        this.jokePortrait = region;
+    }
 
     protected enum VariableType {
         DAMAGE,
@@ -514,6 +565,13 @@ public abstract class BaseCard extends CustomCard {
         }
     }
 
+    @Override
+    public void upgradeName()
+    {
+        super.upgradeName();
+        this.initializeDescription();
+    }
+
     protected void upgradeCustomVar(String key) {
         LocalVarInfo var = cardVariables.get(key);
         if (var == null) {
@@ -590,11 +648,11 @@ public abstract class BaseCard extends CustomCard {
             return;
         }
         String base = baseDescription();
-        if (isCardInHand()) {
-            String ext = getInjectedDescription();
-            if (ext != null && !ext.isEmpty()) {
-                this.rawDescription = base + ext;
-            }
+        String ext = isCardInHand() ? getInjectedDescription() : null;
+        if (ext != null && !ext.isEmpty()) {
+            this.rawDescription = base + ext;
+        } else {
+            this.rawDescription = base;
         }
         super.initializeDescription();
         this.rawDescription = base;
