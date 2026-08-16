@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
+import thetormented.powers.debuff.BleedPower;
 import thetormented.powers.debuff.DeepWoundPower;
 import thetormented.util.CardStats;
 
@@ -23,6 +24,7 @@ public class Relapse extends BaseCard {
     );
 
     private static final int DEEP_WOUND_AMT = 1;
+    private static final int BLEED_AMT = 3;
 
     public Relapse() {
         super(ID, STATS);
@@ -32,10 +34,12 @@ public class Relapse extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        // 先给目标（升级后为全体敌人）施加 3 层流血，再接原有 DeepWound 逻辑
         if (this.upgraded) {
-            // 升级后：给全体敌人施加 DeepWoundPower
+            // 升级后：给全体敌人施加 3 层流血 + DeepWoundPower
             for (AbstractMonster mo : AbstractDungeon.getCurrRoom().monsters.monsters) {
                 if (!mo.isDeadOrEscaped()) {
+                    this.addToBot(new ApplyPowerAction(mo, p, new BleedPower(mo, p, BLEED_AMT), BLEED_AMT));
                     this.addToBot(new ApplyPowerAction(
                             mo,
                             p,
@@ -45,8 +49,9 @@ public class Relapse extends BaseCard {
                 }
             }
         } else {
-            // 未升级：仅给指定单个敌人施加 DeepWoundPower
+            // 未升级：仅给指定单个敌人施加 3 层流血 + DeepWoundPower
             if (m != null) {
+                this.addToBot(new ApplyPowerAction(m, p, new BleedPower(m, p, BLEED_AMT), BLEED_AMT));
                 this.addToBot(new ApplyPowerAction(
                         m,
                         p,

@@ -194,7 +194,7 @@ if ($engData.ContainsKey("Keywords.json") -and $langData.ContainsKey("Keywords.j
 }
 
 # --- token coverage ---
-$dynVars = @("SIN", "BLEED", "BLOCK_THRESHOLD", "TOTAL_BLOCK", "CARD_ADD", "TOTAL_DAMAGE", "TOTAL_DRAW", "HITS", "TOTAL_ENERGY")
+$dynVars = @("SIN", "BLEED", "BLOCK_THRESHOLD", "TOTAL_BLOCK", "TOTAL_DAMAGE", "TOTAL_DRAW", "HITS", "TOTAL_ENERGY", "BLOCK", "PLAYS")
 # Char class: Latin letters incl. Vietnamese precomposed (U+1E00-\u1EFF), combining marks, Greek, Cyrillic, Thai, Hangul, kana, CJK.
 # Keyword/star tokens may be multi-word (space-separated); the check loops truncate at word boundaries if the full form is not covered.
 $kwClass = 'A-Za-z\u00C0-\u024F\u0300-\u036F\u0370-\u03FF\u0400-\u04FF\u0E00-\u0E7F\u1100-\u11FF\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF\u1E00-\u1EFF'

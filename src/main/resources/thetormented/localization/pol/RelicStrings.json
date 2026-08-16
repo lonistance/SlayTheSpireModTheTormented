@@ -1,98 +1,112 @@
 {
-  "${modID}:RelicID": {
-    "NAME": "Dobry relikt",
-    "FLAVOR": "Tekst smaku wyświetlany w widoku szczegółów reliktu.",
-    "DESCRIPTIONS": [
-      "Uzyskaj [E] na początku swojej tury. [E] to ikona energii."
-    ]
-  }, "${modID}:CursedBrokenBlade": {
-    "NAME": "Przeklęte złamane ostrze",
-    "FLAVOR": "Złamane ostrze, które wciąż pragnie grzechów innych.",
-    "DESCRIPTIONS": [
-      "Na początku każdej walki ulepsz losowy Cios i losową Obronę na czas trwania walki. NL Na początku każdej tury uzyskaj #b",
-      " ${modID}:Grzechu."
-    ]
-  }, "${modID}:BarbedHook": {
-    "NAME": "Zadziorny hak",
-    "FLAVOR": "Okrutny hak, który wbija się głębiej za każdym razem, gdy rozrywa ciało.",
-    "DESCRIPTIONS": [
-      "Za każdym razem, gdy nałożysz ${modID}:Krwawienie, nałóż #b1 dodatkowe ${modID}:Krwawienie."
-    ]
-  }, "${modID}:FrenziedGoblet": {
-    "NAME": "Szaleńczy kielich",
-    "FLAVOR": "Wino warzone w czystym szale; każdy toast wysysa kolejne życie.",
-    "DESCRIPTIONS": [
-      "Za każdym razem, gdy ginie wróg niebędący minionem, ulecz #b8 PZ."
-    ]
-  }, "${modID}:ContractSeal": {
-    "NAME": "Pieczęć kontraktu",
-    "FLAVOR": "Kontrakt podpisany krwią, honorowany tylko przez czystych.",
-    "DESCRIPTIONS": [
-      "Na koniec walki, jeśli nie masz ${modID}:Długu, uzyskaj #b15 złota."
-    ]
-  }, "${modID}:RecoveryCharm": {
-    "NAME": "Amulet ozdrowienia",
-    "FLAVOR": "Amulet, który wyciąga ból z każdej rany.",
-    "DESCRIPTIONS": [
-      "Za każdym razem, gdy miałbyś stracić PZ, zamiast tego tracisz co najwyżej #b18 PZ."
-    ]
-  }, "${modID}:GargoyleArm": {
-    "NAME": "Ramię gargulca",
-    "FLAVOR": "Starodawne kamienie, które zmieniają oczyszczanie w ochronę.",
-    "DESCRIPTIONS": [
-      "Za każdym razem, gdy usuniesz #b1 warstwę osłabienia, uzyskaj #b1 Bloku."
-    ]
-  }, "${modID}:ScorchedBanner": {
-    "NAME": "Osmalona chorągiew",
-    "FLAVOR": "Postrzępiona chorągiew, która gromadzi tylko tych z pustymi rękami.",
-    "DESCRIPTIONS": [
-      "Na koniec twojej tury, jeśli nie masz kart w ręce, dobierz #b2 dodatkowe karty na początku następnej tury."
-    ]
-  }, "${modID}:HeroLongsword": {
-    "NAME": "Długi miecz bohatera",
-    "FLAVOR": "Ostrze wykute z obietnicy odkupienia.",
-    "DESCRIPTIONS": [
-      "Zastępuje Przeklęte złamane ostrze. NL Po podniesieniu ulepsz wszystkie Ciosy i Obrony w swojej talii. NL Na początku każdej tury uzyskaj #b",
-      " ${modID}:Grzechu."
-    ]
-  }, "${modID}:HeavyFetters": {
-    "NAME": "Ciężkie kajdany",
-    "FLAVOR": "Żelazny ciężar, który wiąże, lecz daje siłę.",
-    "DESCRIPTIONS": [
-      "Na początku każdej tury uzyskaj [E]. NL Na początku każdej walki dodaj 1 *Splątanie do stosu dobierania."
-    ]
-  }, "${modID}:Drumstick": {
-    "NAME": "Pałeczka bębna",
-    "FLAVOR": "Każde uderzenie bębna rozbudza iskrę energii.",
-    "DESCRIPTIONS": [
-      "Za każde #b",
-      " wyczerpane karty uzyskaj [E]."
-    ]
-  }, "${modID}:RegretlessCoin": {
-    "NAME": "Moneta bez żalu",
-    "FLAVOR": "Moneta, która wybacza każdą potkniętą kartę.",
-    "DESCRIPTIONS": [
-      "Za każdym razem, gdy wejdziesz do Sklepu, uzyskaj #b",
-      " Złota."
-    ]
-  }, "${modID}:BlackstoneLantern": {
-    "NAME": "Latarnia z czarnego kamienia",
-    "FLAVOR": "Jej zimne światło znaczy każdą dolegliwość, którą rozpala.",
-    "DESCRIPTIONS": [
-      "Za pierwszym razem, gdy w każdej walce nałożysz wrogowi osłabienie, uzyskaj [E]."
-    ]
-  }, "${modID}:IronHammer": {
-    "NAME": "Żelazny młot",
-    "FLAVOR": "Wykuty na kowadle niekończącej się bitwy.",
-    "DESCRIPTIONS": [
-      "Za każdym razem, gdy pokonasz Elitę, ulepsz #b",
-      " losowe karty w swojej talii."
-    ]
-  }, "${modID}:UndyingEmber": {
-    "NAME": "Nieśmiertelny żar",
-    "FLAVOR": "Iskra, która żywi się nieszczęściem i nigdy nie gaśnie.",
-    "DESCRIPTIONS": [
-      "Za każdym razem, gdy masz osłabienie, otrzymujesz #b25% mniej obrażeń. NL Zadajesz #b25% więcej obrażeń wrogom, którzy mają osłabienie."
-    ]
-  }
+  "${modID}:RelicID":  {
+              "NAME":  "Dobry relikt",
+              "FLAVOR":  "Tekst smaku wyświetlany w widoku szczegółów reliktu.",
+              "DESCRIPTIONS":  [
+                        "Uzyskaj [E] na początku swojej tury. [E] to ikona energii."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "Przeklęte złamane ostrze",
+                    "FLAVOR":  "Złamane ostrze, które wciąż pragnie grzechów innych.",
+                    "DESCRIPTIONS":  [
+                              "Na początku każdej walki ulepsz losowy Cios i losową Obronę na czas trwania walki. NL Od 2. tury, uzyskaj #b na początku każdej tury",
+                              " ${modID}:Grzechu."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "Zadziorny hak",
+                "FLAVOR":  "Okrutny hak, który wbija się głębiej za każdym razem, gdy rozrywa ciało.",
+                "DESCRIPTIONS":  [
+                          "Za każdym razem, gdy nałożysz ${modID}:Krwawienie, nałóż #b1 dodatkowe ${modID}:Krwawienie."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "Szaleńczy kielich",
+                  "FLAVOR":  "Wino warzone w czystym szale; każdy toast wysysa kolejne życie.",
+                  "DESCRIPTIONS":  [
+                            "Za każdym razem, gdy ginie wróg niebędący minionem, ulecz #b8 PZ."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "Pieczęć kontraktu",
+                "FLAVOR":  "Kontrakt podpisany krwią, honorowany tylko przez czystych.",
+                "DESCRIPTIONS":  [
+                            "Na koniec walki, jeśli nie masz ${modID}:Długu, uzyskaj #b15 złota."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "Amulet ozdrowienia",
+                  "FLAVOR":  "Amulet, który wyciąga ból z każdej rany.",
+                  "DESCRIPTIONS":  [
+                            "Za każdym razem, gdy miałbyś stracić PZ, zamiast tego tracisz co najwyżej #b18 PZ."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "Ramię gargulca",
+                "FLAVOR":  "Starodawne kamienie, które zmieniają oczyszczanie w ochronę.",
+                "DESCRIPTIONS":  [
+                            "Za każdym razem, gdy usuniesz #b1 warstwę osłabienia, uzyskaj #b1 Bloku."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "Osmalona chorągiew",
+                  "FLAVOR":  "Postrzępiona chorągiew, która gromadzi tylko tych z pustymi rękami.",
+                  "DESCRIPTIONS":  [
+                            "Na koniec twojej tury, jeśli nie masz kart w ręce, dobierz #b2 dodatkowe karty na początku następnej tury."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "Długi miecz bohatera",
+                  "FLAVOR":  "Ostrze wykute z obietnicy odkupienia.",
+                  "DESCRIPTIONS":  [
+                            "Zastępuje Przeklęte złamane ostrze. NL Po podniesieniu ulepsz wszystkie Ciosy i Obrony w swojej talii. NL Od 2. tury, uzyskaj #b na początku każdej tury",
+                            " ${modID}:Grzechu."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "Ciężkie kajdany",
+                "FLAVOR":  "Żelazny ciężar, który wiąże, lecz daje siłę.",
+                "DESCRIPTIONS":  [
+                            "Na początku każdej tury uzyskaj [E]. NL Na początku każdej walki dodaj 1 *Splątanie do stosu dobierania."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "Pałeczka bębna",
+                "FLAVOR":  "Każde uderzenie bębna rozbudza iskrę energii.",
+                "DESCRIPTIONS":  [
+                          "Za każde #b",
+                          " wyczerpane karty uzyskaj [E]."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "Moneta bez żalu",
+                  "FLAVOR":  "Moneta, która wybacza każdą potkniętą kartę.",
+                  "DESCRIPTIONS":  [
+                            "Za każdym razem, gdy wejdziesz do Sklepu, uzyskaj #b",
+                            " Złota."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "Latarnia z czarnego kamienia",
+                    "FLAVOR":  "Jej zimne światło znaczy każdą dolegliwość, którą rozpala.",
+                    "DESCRIPTIONS":  [
+                              "Za pierwszym razem, gdy w każdej walce nałożysz wrogowi osłabienie, uzyskaj [E]."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "Żelazny młot",
+                "FLAVOR":  "Wykuty na kowadle niekończącej się bitwy.",
+                "DESCRIPTIONS":  [
+                          "Za każdym razem, gdy pokonasz Elitę, ulepsz #b",
+                          " losowe karty w swojej talii."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "Nieśmiertelny żar",
+                "FLAVOR":  "Iskra, która żywi się nieszczęściem i nigdy nie gaśnie.",
+                "DESCRIPTIONS":  [
+                            "Za każdym razem, gdy masz osłabienie, otrzymujesz #b25% mniej obrażeń. NL Zadajesz #b25% więcej obrażeń wrogom, którzy mają osłabienie."
+                          ]
+                }
 }

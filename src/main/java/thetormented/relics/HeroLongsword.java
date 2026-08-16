@@ -14,8 +14,16 @@ public class HeroLongsword extends BaseRelic {
     public static final String ID = makeID(HeroLongsword.class.getSimpleName());
     private static final int SIN_PER_TURN = 3;
 
+    // 第 1 回合不施加原罪，从第 2 回合起每回合开始施加（给玩家启动时间与容错）。
+    private boolean firstTurnSkipped = false;
+
     public HeroLongsword() {
         super(ID, "heroLongsword", Tormented.Meta.CARD_COLOR, RelicTier.BOSS, LandingSound.CLINK);
+    }
+
+    @Override
+    public void atBattleStartPreDraw() {
+        this.firstTurnSkipped = false;
     }
 
     @Override
@@ -31,6 +39,10 @@ public class HeroLongsword extends BaseRelic {
 
     @Override
     public void atTurnStart() {
+        if (!this.firstTurnSkipped) {
+            this.firstTurnSkipped = true;
+            return;
+        }
         this.flash();
         addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
         addToBot(new UpdateSinAction(AbstractDungeon.player, AbstractDungeon.player, SIN_PER_TURN));

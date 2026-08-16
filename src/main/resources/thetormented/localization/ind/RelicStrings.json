@@ -1,98 +1,112 @@
 {
-  "${modID}:RelicID": {
-    "NAME": "Relik Bagus",
-    "FLAVOR": "Teks rasa yang ditampilkan pada tampilan detail relik.",
-    "DESCRIPTIONS": [
-      "Dapatkan [E] pada awal giliranmu. [E] adalah ikon energi."
-    ]
-  }, "${modID}:CursedBrokenBlade": {
-    "NAME": "Bilah Rusak Terkutuk",
-    "FLAVOR": "Bilah yang hancur yang masih haus akan dosa orang lain.",
-    "DESCRIPTIONS": [
-      "Pada awal setiap pertarungan, tingkatkan satu Serangan acak dan satu Pertahanan acak untuk durasi pertarungan. NL Pada awal setiap giliran, dapatkan #b",
-      " ${modID}:Dosa."
-    ]
-  }, "${modID}:BarbedHook": {
-    "NAME": "Kait Berduri",
-    "FLAVOR": "Kait kejam yang semakin dalam setiap kali merobek daging.",
-    "DESCRIPTIONS": [
-      "Setiap kali kamu memberikan ${modID}:Perdarahan, berikan #b1 ${modID}:Perdarahan tambahan."
-    ]
-  }, "${modID}:FrenziedGoblet": {
-    "NAME": "Cawan Gila",
-    "FLAVOR": "Anggur yang dibuat dalam kegilaan murni; setiap bersulang menguras satu nyawa lagi.",
-    "DESCRIPTIONS": [
-      "Setiap kali musuh non-pengikut mati, pulihkan #b8 HP."
-    ]
-  }, "${modID}:ContractSeal": {
-    "NAME": "Segel Kontrak",
-    "FLAVOR": "Kontrak yang ditandatangani dengan darah, hanya dihormati oleh yang murni.",
-    "DESCRIPTIONS": [
-      "Pada akhir pertarungan, jika kamu tidak memiliki ${modID}:Utang, dapatkan #b15 emas."
-    ]
-  }, "${modID}:RecoveryCharm": {
-    "NAME": "Jimat Pemulihan",
-    "FLAVOR": "Jimat yang menarik perih dari setiap luka.",
-    "DESCRIPTIONS": [
-      "Setiap kali kamu akan kehilangan HP, kamu hanya kehilangan maksimal #b18 HP."
-    ]
-  }, "${modID}:GargoyleArm": {
-    "NAME": "Lengan Gargoyle",
-    "FLAVOR": "Batu kuno yang mengubah pembersihan menjadi perlindungan.",
-    "DESCRIPTIONS": [
-      "Setiap kali kamu menghilangkan #b1 lapisan efek negatif, dapatkan #b1 Blok."
-    ]
-  }, "${modID}:ScorchedBanner": {
-    "NAME": "Panji Hangus",
-    "FLAVOR": "Panji compang-camping yang hanya mengumpulkan mereka yang bertangan kosong.",
-    "DESCRIPTIONS": [
-      "Pada akhir giliranmu, jika kamu tidak memiliki kartu di tangan, ambil #b2 kartu tambahan pada awal giliran berikutnya."
-    ]
-  }, "${modID}:HeroLongsword": {
-    "NAME": "Pedang Panjang Sang Pahlawan",
-    "FLAVOR": "Bilah yang ditempa dari janji penebusan.",
-    "DESCRIPTIONS": [
-      "Menggantikan Bilah Rusak Terkutuk. NL Saat diambil, tingkatkan semua Serangan dan Pertahanan di dekmu. NL Pada awal setiap giliran, dapatkan #b",
-      " ${modID}:Dosa."
-    ]
-  }, "${modID}:HeavyFetters": {
-    "NAME": "Belenggu Berat",
-    "FLAVOR": "Beban besi yang mengikat, namun memberikan kekuatan.",
-    "DESCRIPTIONS": [
-      "Pada awal setiap giliran, dapatkan [E] . NL Pada awal setiap pertarungan, tambahkan 1 *Terjerat ke tumpukan tarikmu."
-    ]
-  }, "${modID}:Drumstick": {
-    "NAME": "Stik Drum",
-    "FLAVOR": "Setiap pukulan drum membangkitkan percikan energi.",
-    "DESCRIPTIONS": [
-      "Setiap kali kamu membuang #b",
-      " kartu, dapatkan [E] ."
-    ]
-  }, "${modID}:RegretlessCoin": {
-    "NAME": "Koin Tanpa Penyesalan",
-    "FLAVOR": "Koin yang memaafkan setiap langkah salah.",
-    "DESCRIPTIONS": [
-      "Setiap kali kamu memasuki Toko, dapatkan #b",
-      " Emas."
-    ]
-  }, "${modID}:BlackstoneLantern": {
-    "NAME": "Lentera Batu Hitam",
-    "FLAVOR": "Cahaya dinginnya menandai setiap penderitaan yang ditimbulkannya.",
-    "DESCRIPTIONS": [
-      "Pertama kali kamu memberikan efek negatif kepada musuh setiap pertarungan, dapatkan [E] ."
-    ]
-  }, "${modID}:IronHammer": {
-    "NAME": "Palu Besi",
-    "FLAVOR": "Ditempa di landasan pertempuran tanpa akhir.",
-    "DESCRIPTIONS": [
-      "Setiap kali kamu mengalahkan Elite, tingkatkan #b",
-      " kartu acak di dekmu."
-    ]
-  }, "${modID}:UndyingEmber": {
-    "NAME": "Bara Abadi",
-    "FLAVOR": "Percikan yang memakan kemalangan dan tidak pernah padam.",
-    "DESCRIPTIONS": [
-      "Setiap kali kamu memiliki efek negatif, terima #b25% lebih sedikit kerusakan. NL Berikan #b25% lebih banyak kerusakan kepada musuh yang memiliki efek negatif."
-    ]
-  }
+  "${modID}:RelicID":  {
+              "NAME":  "Relik Bagus",
+              "FLAVOR":  "Teks rasa yang ditampilkan pada tampilan detail relik.",
+              "DESCRIPTIONS":  [
+                        "Dapatkan [E] pada awal giliranmu. [E] adalah ikon energi."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "Bilah Rusak Terkutuk",
+                    "FLAVOR":  "Bilah yang hancur yang masih haus akan dosa orang lain.",
+                    "DESCRIPTIONS":  [
+                              "Pada awal setiap pertarungan, tingkatkan satu Serangan acak dan satu Pertahanan acak untuk durasi pertarungan. NL Mulai dari giliran ke-2, dapatkan #b pada awal setiap giliran",
+                              " ${modID}:Dosa."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "Kait Berduri",
+                "FLAVOR":  "Kait kejam yang semakin dalam setiap kali merobek daging.",
+                "DESCRIPTIONS":  [
+                          "Setiap kali kamu memberikan ${modID}:Perdarahan, berikan #b1 ${modID}:Perdarahan tambahan."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "Cawan Gila",
+                  "FLAVOR":  "Anggur yang dibuat dalam kegilaan murni; setiap bersulang menguras satu nyawa lagi.",
+                  "DESCRIPTIONS":  [
+                            "Setiap kali musuh non-pengikut mati, pulihkan #b8 HP."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "Segel Kontrak",
+                "FLAVOR":  "Kontrak yang ditandatangani dengan darah, hanya dihormati oleh yang murni.",
+                "DESCRIPTIONS":  [
+                            "Pada akhir pertarungan, jika kamu tidak memiliki ${modID}:Utang, dapatkan #b15 emas."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "Jimat Pemulihan",
+                  "FLAVOR":  "Jimat yang menarik perih dari setiap luka.",
+                  "DESCRIPTIONS":  [
+                            "Setiap kali kamu akan kehilangan HP, kamu hanya kehilangan maksimal #b18 HP."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "Lengan Gargoyle",
+                "FLAVOR":  "Batu kuno yang mengubah pembersihan menjadi perlindungan.",
+                "DESCRIPTIONS":  [
+                            "Setiap kali kamu menghilangkan #b1 lapisan efek negatif, dapatkan #b1 Blok."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "Panji Hangus",
+                  "FLAVOR":  "Panji compang-camping yang hanya mengumpulkan mereka yang bertangan kosong.",
+                  "DESCRIPTIONS":  [
+                            "Pada akhir giliranmu, jika kamu tidak memiliki kartu di tangan, ambil #b2 kartu tambahan pada awal giliran berikutnya."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "Pedang Panjang Sang Pahlawan",
+                  "FLAVOR":  "Bilah yang ditempa dari janji penebusan.",
+                  "DESCRIPTIONS":  [
+                            "Menggantikan Bilah Rusak Terkutuk. NL Saat diambil, tingkatkan semua Serangan dan Pertahanan di dekmu. NL Mulai dari giliran ke-2, dapatkan #b pada awal setiap giliran",
+                            " ${modID}:Dosa."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "Belenggu Berat",
+                "FLAVOR":  "Beban besi yang mengikat, namun memberikan kekuatan.",
+                "DESCRIPTIONS":  [
+                            "Pada awal setiap giliran, dapatkan [E] . NL Pada awal setiap pertarungan, tambahkan 1 *Terjerat ke tumpukan tarikmu."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "Stik Drum",
+                "FLAVOR":  "Setiap pukulan drum membangkitkan percikan energi.",
+                "DESCRIPTIONS":  [
+                          "Setiap kali kamu membuang #b",
+                          " kartu, dapatkan [E] ."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "Koin Tanpa Penyesalan",
+                  "FLAVOR":  "Koin yang memaafkan setiap langkah salah.",
+                  "DESCRIPTIONS":  [
+                            "Setiap kali kamu memasuki Toko, dapatkan #b",
+                            " Emas."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "Lentera Batu Hitam",
+                    "FLAVOR":  "Cahaya dinginnya menandai setiap penderitaan yang ditimbulkannya.",
+                    "DESCRIPTIONS":  [
+                              "Pertama kali kamu memberikan efek negatif kepada musuh setiap pertarungan, dapatkan [E] ."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "Palu Besi",
+                "FLAVOR":  "Ditempa di landasan pertempuran tanpa akhir.",
+                "DESCRIPTIONS":  [
+                          "Setiap kali kamu mengalahkan Elite, tingkatkan #b",
+                          " kartu acak di dekmu."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "Bara Abadi",
+                "FLAVOR":  "Percikan yang memakan kemalangan dan tidak pernah padam.",
+                "DESCRIPTIONS":  [
+                            "Setiap kali kamu memiliki efek negatif, terima #b25% lebih sedikit kerusakan. NL Berikan #b25% lebih banyak kerusakan kepada musuh yang memiliki efek negatif."
+                          ]
+                }
 }

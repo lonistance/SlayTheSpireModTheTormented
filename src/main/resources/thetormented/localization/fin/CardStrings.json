@@ -1,441 +1,447 @@
 {
-    "${modID}:ExampleCard":  {
-                                     "NAME":  "Esimerkkikortti",
-                                     "DESCRIPTION":  "Kuvaus. NL Toinen rivi.",
-                                     "UPGRADE_DESCRIPTION":  "Tämä teksti tulee automaattisesti käyttöön, jos kortti on paranneltu. Poista se, jos sitä ei tarvita.",
-                                     "EXTENDED_DESCRIPTION":  [
-                                                                  "Tähän voi lisätä lisää tekstiä.",
-                                                                  "Jos sinun täytyy käyttää sitä johonkin.",
-                                                                  "Blizzard on hyvä esimerkki tästä."
-                                                              ]
-                                 },
-    "${modID}:StrikeTormented":  {
-                                         "NAME":  "Isku",
-                                         "DESCRIPTION":  "Tee !D! vauriota.",
-                                         "UPGRADE_DESCRIPTION":  "Tee !D! vauriota."
-                                     },
-    "${modID}:DefendTormented":  {
-                                         "NAME":  "Puolustus",
-                                         "DESCRIPTION":  "Saa !B! Suojaa.",
-                                         "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa."
-                                     },
-    "${modID}:Rebel":  {
-                               "NAME":  "Kapinallinen",
-                               "DESCRIPTION":  "Tee !D! vauriota. NL Anna ${modID}:Verenvuotoa saman verran kuin aiheutat vauriota.",
-                               "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Anna ${modID}:Verenvuotoa saman verran kuin aiheutat vauriota.",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            "NL (Anna !M! ${modID}:Verenvuotoa)"
-                                                        ]
-                           },
-    "${modID}:Forgive":  {
-                                 "NAME":  "Anna anteeksi",
-                                 "DESCRIPTION":  "Saa !B! Suojaa. NL Vähennä !M! ${modID}:Syntiä.",
-                                 "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Vähennä !M! ${modID}:Syntiä."
-                             },
-    "${modID}:Slash":  {
-                               "NAME":  "Viilto",
-                               "DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! ${modID}:Verenvuotoa.",
-                               "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! ${modID}:Verenvuotoa."
-                           },
-    "${modID}:Rend":  {
-                              "NAME":  "Repeämä",
-                              "DESCRIPTION":  "Tee !D! vauriota. NL Jos vihollisella on ${modID}:Verenvuotoa, tee !M! ylimääräistä osumaa.",
-                              "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jos vihollisella on ${modID}:Verenvuotoa, tee !M! ylimääräistä osumaa."
-                          },
-    "${modID}:Pursuit":  {
-                                 "NAME":  "Takaa-ajo",
-                                 "DESCRIPTION":  "Voidaan pelata vain, jos viimeksi pelattu kortti tällä vuorolla oli hyökkäyskortti. NL Tee !D! vauriota.",
-                                 "UPGRADE_DESCRIPTION":  "Voidaan pelata vain, jos viimeksi pelattu kortti tällä vuorolla oli hyökkäyskortti. NL Tee !D! vauriota.",
-                                 "EXTENDED_DESCRIPTION":  [
-                                                              "Sinun täytyy pelata ensin hyökkäys tällä vuorolla."
-                                                          ]
-                             },
-    "${modID}:ArmSevering":  {
-                                     "NAME":  "Käsivarren katkaisu",
-                                     "DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! *Kurjuus käteesi.",
-                                     "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! *Kurjuus käteesi."
-                                 },
-    "${modID}:QuenchedBlade":  {
-                                       "NAME":  "Sammutettu terä",
-                                       "DESCRIPTION":  "Tee !D! vauriota. NL Parantele !M! korttia kädessäsi lopputaistelun ajaksi.",
-                                       "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Parantele !M! korttia kädessäsi lopputaistelun ajaksi."
-                                   },
-    "${modID}:CruelTorture":  {
-                                      "NAME":  "Julma kidutus",
-                                      "DESCRIPTION":  "Tee !D! vauriota. Saa !${modID}:SIN! ${modID}:Syntiä.",
-                                      "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. Saa !${modID}:SIN! ${modID}:Syntiä."
-                                  },
-    "${modID}:AtonementStrike":  {
-                                         "NAME":  "Sovituksen isku",
-                                         "DESCRIPTION":  "Tee !D! vauriota. Nosta !M! korttia, jos sinulla on ${modID}:Velkaa. NL Menetä sitten 4 ${modID}:Syntiä.",
-                                         "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. Nosta !M! korttia, jos sinulla on ${modID}:Velkaa. NL Menetä sitten 4 ${modID}:Syntiä."
-                                     },
-    "${modID}:UnrighteousGuilt":  {
-                                          "NAME":  "Väärä syyllisyys",
-                                          "DESCRIPTION":  "Tee !D! vauriota KAIKILLE vihollisille. Saa !${modID}:SIN! ${modID}:Syntiä.",
-                                          "UPGRADE_DESCRIPTION":  "Tee !D! vauriota KAIKILLE vihollisille. Saa !${modID}:SIN! ${modID}:Syntiä."
-                                      },
-    "${modID}:RelentlessEntanglement":  {
-                                                "NAME":  "Säälimätön kietoutuminen",
-                                                "DESCRIPTION":  "Tee !D! vauriota. NL Lisää se käteesi, jos ${modID}:Velka kasvoi."
-                                            },
-    "${modID}:Agony":  {
-                               "NAME":  "Agonia",
-                               "DESCRIPTION":  "Tee !D! vauriota. Lisää !M! Heikkoa ja !M! Haavoittuvaa.",
-                               "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. Lisää !M! Heikkoa ja !M! Haavoittuvaa."
-                           },
-    "${modID}:SacredLand":  {
-                                    "NAME":  "Pyhä maa",
-                                    "DESCRIPTION":  "Saa !B! Suojaa. Nosta !M! korttia, jos sinulla ei ole ${modID}:Velkaa. NL Muuten menetät 7 ${modID}:Syntiä.",
-                                    "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. Nosta !M! korttia, jos sinulla ei ole ${modID}:Velkaa. NL Muuten menetät 7 ${modID}:Syntiä."
-                                },
-    "${modID}:Loan":  {
-                              "NAME":  "Laina",
-                              "DESCRIPTION":  "Saa [E] [E] [E]. Seuraavalla vuorolla menetät [E].NL Kuluta",
-                              "UPGRADE_DESCRIPTION":  "Saa [E] [E] [E]. NL Seuraavalla vuorolla menetät [E].NL Kuluta NL Pidä"
-                          },
-    "${modID}:Firm":  {
-                              "NAME":  "Luja",
-                              "DESCRIPTION":  "Saa !B! Suojaa.NL Pidä",
-                              "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa.NL Pidä"
-                          },
-    "${modID}:Odyssey":  {
-                                 "NAME":  "Vaeltaminen",
-                                 "DESCRIPTION":  "Nosta !M! kortti.NL Kuluta 1 kortti. NL Jos kulutat tilakortin, vähennä 3 ${modID}:Syntiä",
-                                 "UPGRADE_DESCRIPTION":  "Nosta !M! korttia.NL Kuluta 1 kortti. NL Jos kulutat tilakortin, vähennä 3 ${modID}:Syntiä"
-                             },
-    "${modID}:BloodGuard":  {
-                                    "NAME":  "Verivartija",
-                                    "DESCRIPTION":  "Saa !B! Suojaa. NL Anna viholliselle !M! ${modID}:Verenvuotoa.",
-                                    "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Anna viholliselle !M! ${modID}:Verenvuotoa."
-                                },
-    "${modID}:PleaOfInnocence":  {
-                                         "NAME":  "Viattomuuden vetoomus",
-                                         "DESCRIPTION":  "Saa !B! Suojaa. NL Jokainen ${modID}:Velka antaa !M! enemmän Suojaa.",
-                                         "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Jokainen ${modID}:Velka antaa !M! enemmän Suojaa.",
-                                         "EXTENDED_DESCRIPTION":  [
-                                                                      " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
-                                                                  ]
-                                     },
-    "${modID}:PredictiveMeasures":  {
-                                            "NAME":  "Ennakoivat toimet",
-                                            "DESCRIPTION":  "Nosta !M! kortti. Jos se on Hyökkäys, se maksaa 0, kunnes se pelataan tällä vuorolla.",
-                                            "UPGRADE_DESCRIPTION":  "Nosta !M! kortti. Jos se on Hyökkäys, se maksaa 0, kunnes se pelataan tällä vuorolla."
-                                        },
-    "${modID}:Hostility":  {
-                                   "NAME":  "Vihamielisyys",
-                                   "DESCRIPTION":  "Jos Suojasi on alle !${modID}:BLOCK_THRESHOLD!, lisää kaikille vihollisille !M! Heikkoa. NL Saa !B! Suojaa",
-                                   "UPGRADE_DESCRIPTION":  "Jos Suojasi on alle !${modID}:BLOCK_THRESHOLD!, lisää kaikille vihollisille !M! Heikkoa. NL Saa !B! Suojaa"
-                               },
-    "${modID}:Shackles":  {
-                                  "NAME":  "Kahleet",
-                                  "DESCRIPTION":  "Lisää !${modID}:CARD_ADD! *Kurjuus. NL Saa !M! Suojaa jokaista kädessäsi olevaa tilakorttia kohden",
-                                  "UPGRADE_DESCRIPTION":  "Lisää !${modID}:CARD_ADD! *Kurjuus. NL Saa !M! Suojaa jokaista kädessäsi olevaa tilakorttia kohden",
-                                  "EXTENDED_DESCRIPTION":  [
-                                                               " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
-                                                           ]
-                              },
-    "${modID}:DeterringStrike":  {
-                                         "NAME":  "Peloteisku",
-                                         "DESCRIPTION":  "Tee !D! vauriota. NL Vihollinen menettää !M! Vahvuutta tällä vuorolla, jos vihollisen aikeena on hyökätä",
-                                         "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Vihollinen menettää !M! Vahvuutta tällä vuorolla, jos vihollisen aikeena on hyökätä"
-                                     },
-    "${modID}:HeavySmash":  {
-                                    "NAME":  "Raskas isku",
-                                    "DESCRIPTION":  "Voidaan pelata vain, jos sinulla on !M! ${modID}:Velkaa. Tee !D! vauriota",
-                                    "UPGRADE_DESCRIPTION":  "Voidaan pelata vain, jos sinulla on !M! ${modID}:Velkaa. Tee !D! vauriota",
-                                    "EXTENDED_DESCRIPTION":  [
-                                                                 "Voidaan pelata vain, jos sinulla on 2 ${modID}:Velkaa"
-                                                             ]
-                                },
-    "${modID}:SinsToBlades":  {
-                                      "NAME":  "Synnit teriksi",
-                                      "DESCRIPTION":  "Tee !D! vauriota. NL Nosta kortteja ${modID}:Velkaasi verran.",
-                                      "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Nosta kortteja ${modID}:Velkaasi verran plus 1.",
-                                      "EXTENDED_DESCRIPTION":  [
-                                                                   " (Nosta !${modID}:TOTAL_DRAW! korttia)"
-                                                               ]
-                                  },
-    "${modID}:ChaosDirty":  {
-                                    "NAME":  "Likainen kaaos",
-                                    "DESCRIPTION":  "Saa !${modID}:SIN! ${modID}:Syntiä. NL Tee !D! vauriota. Jokainen ${modID}:Velka antaa !M! ylimääräistä vauriota",
-                                    "UPGRADE_DESCRIPTION":  "Saa !${modID}:SIN! ${modID}:Syntiä. NL Tee !D! vauriota. Jokainen ${modID}:Velka antaa !M! ylimääräistä vauriota",
-                                    "EXTENDED_DESCRIPTION":  [
-                                                                 " (Tee !${modID}:TOTAL_DAMAGE! vauriota yhteensä)"
-                                                             ]
-                                },
-    "${modID}:TemperedSword":  {
-                                       "NAME":  "Karkaistu miekka",
-                                       "DESCRIPTION":  "Tee !D! vauriota. NL Jokainen kuluttamasi tilakortti antaa !M! ylimääräistä vauriota",
-                                       "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jokainen kuluttamasi tilakortti antaa !M! ylimääräistä vauriota",
-                                       "EXTENDED_DESCRIPTION":  [
-                                                                    " (Tee !${modID}:TOTAL_DAMAGE! vauriota yhteensä)"
-                                                                ]
-                                   },
-    "${modID}:Crush":  {
-                               "NAME":  "Murskaus",
-                               "DESCRIPTION":  "Tee !D! vauriota. NL Saa Suojaa vihollisen ${modID}:Verenvuodon verran",
-                               "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Saa Suojaa vihollisen ${modID}:Verenvuodon verran",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
-                                                        ]
-                           },
-    "${modID}:Unleash":  {
-                                 "NAME":  "Kartuttaa",
-                                 "DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Seuraavalla vuorolla saat [E]",
-                                 "UPGRADE_DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Seuraavalla vuorolla saat [E][E]"
-                             },
-    "${modID}:HeavyPast":  {
-                                   "NAME":  "Raskas menneisyys",
-                                   "DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Lisää 1 *Kurjuus nostopinoon ja 1 poistopinoon. NL Nosta !M! korttia.",
-                                   "UPGRADE_DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Lisää 1 *Kurjuus nostopinoon ja 1 poistopinoon. NL Nosta !M! korttia."
-                               },
-    "${modID}:Implication":  {
-                                     "NAME":  "Seuraus",
-                                     "DESCRIPTION":  "Kuluta 1 kortti kädestäsi. NL Tee !D! vauriota KAIKILLE vihollisille. NL Nosta 1 kortti jokaista vihollista kohden, jolla on ${modID}:Verenvuotoa ja johon kohdistit vauriota.",
-                                     "UPGRADE_DESCRIPTION":  "Kuluta 1 kortti kädestäsi. NL Tee !D! vauriota KAIKILLE vihollisille. NL Nosta 1 kortti jokaista vihollista kohden, jolla on ${modID}:Verenvuotoa ja johon kohdistit vauriota."
-                                 },
-    "${modID}:ConsecutiveKicks":  {
-                                          "NAME":  "Peräkkäiset potkut",
-                                          "DESCRIPTION":  "Tee !D! vauriota !M! kertaa",
-                                          "UPGRADE_DESCRIPTION":  "Tee !D! vauriota !M! kertaa"
-                                      },
-    "${modID}:MassiveBleeding":  {
-                                         "NAME":  "Massiivinen verenvuoto",
-                                         "DESCRIPTION":  "Tee !D! vauriota. NL Tee sitten vauriota vihollisen ${modID}:Verenvuodon verran",
-                                         "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Tee sitten vauriota kaksinkertaisen ${modID}:Verenvuodon verran",
-                                         "EXTENDED_DESCRIPTION":  [
-                                                                      " (Tee !${modID}:TOTAL_DAMAGE! vauriota yhteensä)"
-                                                                  ]
-                                     },
-    "${modID}:FaceDanger":  {
-                                    "NAME":  "Kohtaa vaara",
-                                    "DESCRIPTION":  "Tee !D! vauriota. NL Jokainen pelaamasi *Kurjuus vähentää tämän kortin energiahintaa 1 tässä taistelussa",
-                                    "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jokainen pelaamasi *Kurjuus vähentää tämän kortin energiahintaa 1 tässä taistelussa"
-                                },
-    "${modID}:Relief":  {
-                                "NAME":  "Helpotus",
-                                "DESCRIPTION":  "Lisää 2 *Kurjuus poistopinoon. NL Vuorosi lopussa kuluta kaikki kädessäsi olevat *Kurjuus.",
-                                "UPGRADE_DESCRIPTION":  "Synnynnäinen NL Lisää 2 *Kurjuus poistopinoon. NL Vuorosi lopussa kuluta kaikki kädessäsi olevat *Kurjuus."
-                            },
-    "${modID}:Misery":  {
-                                "NAME":  "Kurjuus",
-                                "DESCRIPTION":  "Kärsi 2 vauriota. NL Nosta 1 kortti. NL Kulutettu"
-                            },
-    "${modID}:Parry":  {
-                               "NAME":  "Torjunta",
-                               "DESCRIPTION":  "Saa !B! Suojaa. NL Aina kun sinuun hyökätään, heijasta torjumasi vaurio takaisin hyökkääjään.",
-                               "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Aina kun sinuun hyökätään, heijasta torjumasi vaurio takaisin hyökkääjään."
-                           },
-    "${modID}:Pardon":  {
-                                "NAME":  "Armahdus",
-                                "DESCRIPTION":  "Muuta KAIKKI kädessäsi olevat kortit satunnaisiksi korteiksi. NL Kun tämä kortti on pelattu !M! kertaa, se muuttuu satunnaiseksi Vahvuuskortiksi",
-                                "UPGRADE_DESCRIPTION":  "Muuta KAIKKI kädessäsi olevat kortit satunnaisiksi parannetuiksi korteiksi. NL Kun tämä kortti on pelattu !M! kertaa, se muuttuu satunnaiseksi parannetuksi Vahvuuskortiksi"
-                            },
-    "${modID}:Memorial":  {
-                                  "NAME":  "Muistomerkki",
-                                  "DESCRIPTION":  "Nosta 1 kortti. NL Jos nostettu kortti on Taito, menetä !M! ${modID}:Syntiä.",
-                                  "UPGRADE_DESCRIPTION":  "Nosta 1 kortti. NL Jos nostettu kortti on Taito, menetä !M! ${modID}:Syntiä."
-                              },
-    "${modID}:Boiling":  {
-                                 "NAME":  "Kiehuva",
-                                 "DESCRIPTION":  "Kuluta kaikki ei-Hyökkäys-kortit kädessäsi. NL Lisää !M! ${modID}:Verenvuotoa satunnaiselle viholliselle jokaista kulutettua korttia kohden.",
-                                 "UPGRADE_DESCRIPTION":  "Kuluta kaikki ei-Hyökkäys-kortit kädessäsi. NL Lisää !M! ${modID}:Verenvuotoa satunnaiselle viholliselle jokaista kulutettua korttia kohden."
-                             },
-    "${modID}:Grief":  {
-                               "NAME":  "Suru",
-                               "DESCRIPTION":  "Lisää 1 satunnainen tilakortti käteesi. NL Tällä vuorolla aina kun nostat kortin, lisää !M! ${modID}:Verenvuotoa KAIKILLE vihollisille.",
-                               "UPGRADE_DESCRIPTION":  "Lisää 1 satunnainen tilakortti käteesi. NL Tällä vuorolla aina kun nostat kortin, lisää !M! ${modID}:Verenvuotoa KAIKILLE vihollisille."
-                           },
-    "${modID}:BloodSea":  {
-                                  "NAME":  "Verenmeri",
-                                  "DESCRIPTION":  "Lisää !${modID}:BLEED! ${modID}:Verenvuotoa. NL Kerro vihollisen ${modID}:Verenvuoto !M!:llä. NL Kuluta",
-                                  "UPGRADE_DESCRIPTION":  "Lisää !${modID}:BLEED! ${modID}:Verenvuotoa. NL Kerro vihollisen ${modID}:Verenvuoto !M!:llä. NL Kuluta"
-                              },
-    "${modID}:RelentlessBleed":  {
-                                         "NAME":  "Säälimätön verenvuoto",
-                                         "DESCRIPTION":  "Lisää jokaisen vuoron alussa !M! ${modID}:Verenvuotoa KAIKILLE vihollisille.",
-                                         "UPGRADE_DESCRIPTION":  "Lisää jokaisen vuoron alussa !M! ${modID}:Verenvuotoa KAIKILLE vihollisille."
-                                     },
-    "${modID}:DreadMemory":  {
-                                     "NAME":  "Pelon muisto",
-                                     "DESCRIPTION":  "Jos sait tällä vuorolla ${modID}:Velkaa, viholliset tekevät !M!% vähemmän vauriota. NL Kestää vain vuoron, jolloin sait ${modID}:Velkaa.",
-                                     "UPGRADE_DESCRIPTION":  "Jos sait tällä vuorolla ${modID}:Velkaa, viholliset tekevät !M!% vähemmän vauriota. NL Kestää vain vuoron, jolloin sait ${modID}:Velkaa."
-                                 },
-    "${modID}:Trial":  {
-                               "NAME":  "Koetus",
-                               "DESCRIPTION":  "Saa !M! Vahvuutta ja !M! Näppäryyttä. NL Saa 1 Heikko.",
-                               "UPGRADE_DESCRIPTION":  "Saa !M! Vahvuutta ja !M! Näppäryyttä. NL Saa 1 Heikko."
-                           },
-    "${modID}:ReconcileFate":  {
-                                       "NAME":  "Kohtalon sovitus",
-                                       "DESCRIPTION":  "Aina kun luot tai kulutat *Kurjuus, saa !M! Suojaa.",
-                                       "UPGRADE_DESCRIPTION":  "Aina kun luot tai kulutat *Kurjuus, saa !M! Suojaa."
-                                   },
-    "${modID}:MangledFlesh":  {
-                                      "NAME":  "Silvottu liha",
-                                      "DESCRIPTION":  "Aina kun lisäät viholliselle 6 ${modID}:Verenvuotoa, tee KAIKILLE vihollisille !M! vauriota.",
-                                      "UPGRADE_DESCRIPTION":  "Aina kun lisäät viholliselle 6 ${modID}:Verenvuotoa, tee KAIKILLE vihollisille !M! vauriota."
-                                  },
-    "${modID}:BloodThorns":  {
-                                     "NAME":  "Veripiikit",
-                                     "DESCRIPTION":  "Aina kun vihollinen hyökkää sinua vastaan, lisää sille !M! ${modID}:Verenvuotoa.",
-                                     "UPGRADE_DESCRIPTION":  "Aina kun vihollinen hyökkää sinua vastaan, lisää sille !M! ${modID}:Verenvuotoa."
-                                 },
-    "${modID}:RedemptionPath":  {
-                                        "NAME":  "Lunastuksen polku",
-                                        "DESCRIPTION":  "Aina kun poistat 1 ${modID}:Velkaa, nosta !M! korttia.",
-                                        "UPGRADE_DESCRIPTION":  "Aina kun poistat 1 ${modID}:Velkaa, nosta !M! korttia."
-                                    },
-    "${modID}:Requiem":  {
-                                 "NAME":  "Requiem",
-                                 "DESCRIPTION":  "Jokainen kuluttamasi *Kurjuus tekee !D! vauriota satunnaiselle viholliselle",
-                                 "UPGRADE_DESCRIPTION":  "Jokainen kuluttamasi *Kurjuus tekee !D! vauriota satunnaiselle viholliselle",
-                                 "EXTENDED_DESCRIPTION":  [
-                                                              " (Tee !${modID}:HITS! osumaa yhteensä)"
-                                                          ]
-                             },
-    "${modID}:DesperateMeasure":  {
-                                          "NAME":  "Epätoivoinen keino",
-                                          "DESCRIPTION":  "Tee !D! vauriota. NL Jos tämä ei tapa vihollista, menetät !M! HP.",
-                                          "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jos tämä ei tapa vihollista, menetät !M! HP."
-                                      },
-    "${modID}:UnceasingWar":  {
-                                      "NAME":  "Loppumaton sota",
-                                      "DESCRIPTION":  "Tee !D! vauriota !${modID}:HITS! kertaa. NL Aina kun tämä tappaa vihollisen, lisää pysyvästi tämän kortin osumamäärää 1 loppumatkaksi. NL Kuluta",
-                                      "UPGRADE_DESCRIPTION":  "Tee !D! vauriota !${modID}:HITS! kertaa. NL Aina kun tämä tappaa vihollisen, lisää pysyvästi tämän kortin osumamäärää 1 loppumatkaksi. NL Kuluta"
-                                  },
-    "${modID}:FinalJudgment":  {
-                                       "NAME":  "Lopullinen tuomio",
-                                       "DESCRIPTION":  "Voidaan pelata vain, jos sinulla on vähintään 4 ${modID}:Velkaa. NL Tee !D! vauriota KAIKILLE vihollisille. NL Poista kaikki ${modID}:Synti.",
-                                       "UPGRADE_DESCRIPTION":  "Voidaan pelata vain, jos sinulla on vähintään 4 ${modID}:Velkaa. NL Tee !D! vauriota KAIKILLE vihollisille. NL Poista kaikki ${modID}:Synti.",
-                                       "EXTENDED_DESCRIPTION":  [
-                                                                    "Tarvitaan vähintään 4 ${modID}:Velkaa pelaamiseen."
-                                                                ]
-                                   },
-    "${modID}:Blazing":  {
-                                 "NAME":  "Roihuava",
-                                 "DESCRIPTION":  "Kuluta kaikki kortit kädessäsi. NL Nosta !M! korttia jokaista kulutettua tilakorttia kohden. NL Kuluta",
-                                 "UPGRADE_DESCRIPTION":  "Kuluta kaikki kortit kädessäsi. NL Nosta !M! korttia jokaista kulutettua tilakorttia kohden. NL Kuluta"
-                             },
-    "${modID}:RockSolid":  {
-                                   "NAME":  "Kivenkova",
-                                   "DESCRIPTION":  "Saa !B! Suojaa. NL Menetä 3 Maks. HP.",
-                                   "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Menetä 3 Maks. HP."
-                               },
-    "${modID}:Devotion":  {
-                                  "NAME":  "Omistautuminen",
-                                  "DESCRIPTION":  "Poista kaikki ${modID}:Velkasi, Haavoittuva, Heikko ja Hauras. NL Saa 1 energia ja nosta !M! korttia jokaista poistettua kasausta kohden. NL Kuluta",
-                                  "UPGRADE_DESCRIPTION":  "Poista kaikki ${modID}:Velkasi, Haavoittuva, Heikko ja Hauras. NL Saa 1 energia ja nosta !M! korttia jokaista poistettua kasausta kohden. NL Kuluta"
-                              },
-    "${modID}:Indignation":  {
-                                     "NAME":  "Närkästys",
-                                     "DESCRIPTION":  "Seuraavien X vuoron ajan ensimmäinen kortti, jonka pelaat joka vuoro, maksaa 0. NL Kuluta",
-                                     "UPGRADE_DESCRIPTION":  "Seuraavien X+1 vuoron ajan ensimmäinen kortti, jonka pelaat joka vuoro, maksaa 0. NL Kuluta"
-                                 },
-    "${modID}:BloodFeud":  {
-                                   "NAME":  "Verenkosto",
-                                   "DESCRIPTION":  "Lisää 1 *Kurjuus käteesi. NL Käynnistä välittömästi kaikkien vihollisten ${modID}:Verenvuodosta !M!%.",
-                                   "UPGRADE_DESCRIPTION":  "Lisää 1 *Kurjuus käteesi. NL Käynnistä välittömästi kaikkien vihollisten ${modID}:Verenvuodosta !M!%."
-                               },
-    "${modID}:VoidCall":  {
-                                  "NAME":  "Tyhjyyden kutsu",
-                                  "DESCRIPTION":  "Valitse 1 kortti nostopinostasi ja lisää se käteesi. Siitä tulee Aineeton. NL Kuluta",
-                                  "UPGRADE_DESCRIPTION":  "Valitse 1 kortti nostopinostasi ja lisää se käteesi. Siitä tulee Aineeton."
-                              },
-    "${modID}:Spread":  {
-                                "NAME":  "Levittäytyminen",
-                                "DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Lisää kaikki vihollisen heikkoudet kaikille muille vihollisille.",
-                                "UPGRADE_DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Lisää kaikki vihollisen heikkoudet kaikille muille vihollisille."
-                            },
-    "${modID}:HungeringBattleWill":  {
-                                             "NAME":  "Nälkäinen taistelutahto",
-                                             "DESCRIPTION":  "Saa jokaisen vuoron alussa [E]. NL Ota jokaisen vuoron lopussa 3 vahinkoa.",
-                                             "UPGRADE_DESCRIPTION":  "Saa jokaisen vuoron alussa [E]. NL Ota jokaisen vuoron lopussa 3 vahinkoa."
-                                         },
-    "${modID}:ExecutionForm":  {
-                                       "NAME":  "Tuomion muoto",
-                                       "DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään.",
-                                       "UPGRADE_DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään."
-                                   },
-    "${modID}:SinAvatar":  {
-                                   "NAME":  "Synnin ruumiillistuma",
-                                   "DESCRIPTION":  "Vuorosi lopussa saa !B! Suojaa plus !M! Suojaa jokaista ${modID}:Velkaa kohden.",
-                                   "UPGRADE_DESCRIPTION":  "Vuorosi lopussa saa !B! Suojaa plus !M! Suojaa jokaista ${modID}:Velkaa kohden.",
-                                   "EXTENDED_DESCRIPTION":  [
-                                                                " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
-                                                            ]
-                               },
-    "${modID}:Bloodbath":  {
-                                   "NAME":  "Verikylpy",
-                                   "DESCRIPTION":  "Ensimmäinen hyökkäyskortti, jonka pelaat joka vuoro, lisää ${modID}:Verenvuotoa suojaamattoman vaurion verran.",
-                                   "UPGRADE_DESCRIPTION":  "Ensimmäinen hyökkäyskortti, jonka pelaat joka vuoro, lisää ${modID}:Verenvuotoa aiheuttamansa suojaamattoman vaurion verran."
-                               },
-    "${modID}:Overrigid":  {
-                                   "NAME":  "Ylijäykkä",
-                                   "DESCRIPTION":  "Saa 5 Vahvuutta. NL Joka kerta kun pelaat hyökkäyskortin, se menettää pysyvästi !M! vauriota lopputaistelun ajaksi.",
-                                   "UPGRADE_DESCRIPTION":  "Saa 5 Vahvuutta. NL Joka kerta kun pelaat hyökkäyskortin, se menettää pysyvästi !M! vauriota lopputaistelun ajaksi."
-                               },
-    "${modID}:Entangled":  {
-                                   "NAME":  "Kietoutunut",
-                                   "DESCRIPTION":  "Aina kun nostat tämän kortin, lisää siitä 1 kopio käteesi. NL Kuluta NL Kun tämä kortti kulutetaan, lisää 1 Lima nostopinoon."
-                               },
-    "${modID}:Riot":  {
-                              "NAME":  "Mellakka",
-                              "DESCRIPTION":  "Tee !D! vauriota X kertaa. NL Jokainen ${modID}:Velka antaa tälle kortille !M! ylimääräistä vauriota.",
-                              "UPGRADE_DESCRIPTION":  "Tee !D! vauriota X kertaa. NL Jokainen ${modID}:Velka antaa tälle kortille !M! ylimääräistä vauriota.",
-                              "EXTENDED_DESCRIPTION":  [
-                                                           " (Tee !${modID}:TOTAL_DAMAGE! vauriota osumaa kohden)"
-                                                       ]
-                          },
-    "${modID}:Bloodstain":  {
-                                    "NAME":  "Veritahra",
-                                    "DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Tee tämä uudelleen kerran jokaista ${modID}:Velkaasi kohden. NL Kuluta.",
-                                    "UPGRADE_DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Tee tämä uudelleen kerran jokaista ${modID}:Velkaasi kohden."
-                                },
-    "${modID}:BrokenArmor":  {
-                                     "NAME":  "Särkynyt haarniska",
-                                     "DESCRIPTION":  "Saa !B! Suojaa. NL Saa 1 Hauras.",
-                                     "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Saa 1 Hauras."
-                                 },
-    "${modID}:FormPact":  {
-                                  "NAME":  "Liittosopimus",
-                                  "DESCRIPTION":  "Saa [E] [E]. NL Lisää 1 *Kurjuus hylkypinoon",
-                                  "UPGRADE_DESCRIPTION":  "Saa [E] [E] [E]. NL Lisää 1 *Kurjuus hylkypinoon"
-                              },
-    "${modID}:Fraud":  {
-                               "NAME":  "Petos",
-                               "DESCRIPTION":  "Nosta !M! korttia. NL Saa !M! ${modID}:Syntiä.",
-                               "UPGRADE_DESCRIPTION":  "Nosta !M! korttia. NL Saa !M! ${modID}:Syntiä."
-                           },
-    "${modID}:Mercy":  {
-                               "NAME":  "Armo",
-                               "DESCRIPTION":  "Aineeton. NL Kuluta kädessäsi olevat *Kurjuus jokaisen vuoron lopussa. NL Saa !M! ${modID}:Syntiä.",
-                               "UPGRADE_DESCRIPTION":  "Aineeton. NL Kuluta kädessäsi olevat *Kurjuus jokaisen vuoron lopussa. NL Saa !M! ${modID}:Syntiä."
-                           },
-    "${modID}:Prepare":  {
-                                 "NAME":  "Valmistaudu",
-                                 "DESCRIPTION":  "Synnynnäinen. NL Nosta !M! korttia. NL Pidä kätesi tällä vuorolla. NL Kuluta.",
-                                 "UPGRADE_DESCRIPTION":  "Synnynnäinen. NL Nosta !M! korttia. NL Pidä kätesi tällä vuorolla. NL Kuluta."
-                             },
-    "${modID}:Relapse":  {
-                                 "NAME":  "Uusiutuminen",
-                                 "DESCRIPTION":  "Vihollisen ${modID}:Verenvuotoa ei poisteta tällä vuorolla.",
-                                 "UPGRADE_DESCRIPTION":  "KAIKKIEN vihollisten ${modID}:Verenvuotoa ei poisteta tällä vuorolla."
-                             },
-    "${modID}:SharedSuffering":  {
-                                         "NAME":  "Jaettu kärsimys",
-                                         "DESCRIPTION":  "Jokaista ${modID}:Velkaasi kohden lisää !M! Heikkoa ja !M! Haavoittuvaa KAIKILLE vihollisille. NL Kuluta.",
-                                         "UPGRADE_DESCRIPTION":  "Jokaista ${modID}:Velkaasi kohden lisää !M! Heikkoa ja !M! Haavoittuvaa KAIKILLE vihollisille. NL Kuluta."
-                                     },
-    "${modID}:Taboo":  {
-                               "NAME":  "Tabu",
-                               "DESCRIPTION":  "Saa 1 energiaa jokaista ${modID}:Velkaasi kohden. NL Saa 1 ${modID}:Rajoitus.",
-                               "UPGRADE_DESCRIPTION":  "Saa 1 energiaa jokaista ${modID}:Velkaasi kohden plus 1. NL Saa 1 ${modID}:Rajoitus.",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            " (Ei voi saada energiaa)",
-                                                            " (Saa !${modID}:TOTAL_ENERGY! energiaa)",
-                                                            " (Saa !${modID}:TOTAL_ENERGY! energiaa!)"
-                                                        ]
-                           }
+  "${modID}:ExampleCard":  {
+                "NAME":  "Esimerkkikortti",
+                "DESCRIPTION":  "Kuvaus. NL Toinen rivi.",
+                "UPGRADE_DESCRIPTION":  "Tämä teksti tulee automaattisesti käyttöön, jos kortti on paranneltu. Poista se, jos sitä ei tarvita.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Tähän voi lisätä lisää tekstiä.",
+                               "Jos sinun täytyy käyttää sitä johonkin.",
+                               "Blizzard on hyvä esimerkki tästä."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Isku",
+                  "DESCRIPTION":  "Tee !D! vauriota.",
+                  "UPGRADE_DESCRIPTION":  "Tee !D! vauriota."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Puolustus",
+                  "DESCRIPTION":  "Saa !B! Suojaa.",
+                  "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Kapinallinen",
+              "DESCRIPTION":  "Tee !D! vauriota. NL Anna ${modID}:Verenvuotoa saman verran kuin aiheutat vauriota.",
+              "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Anna ${modID}:Verenvuotoa saman verran kuin aiheutat vauriota.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Anna !M! ${modID}:Verenvuotoa)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Anna anteeksi",
+              "DESCRIPTION":  "Saa !B! Suojaa. NL Vähennä !M! ${modID}:Syntiä.",
+              "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Vähennä !M! ${modID}:Syntiä."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Viilto",
+              "DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! ${modID}:Verenvuotoa.",
+              "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! ${modID}:Verenvuotoa."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Repeämä",
+             "DESCRIPTION":  "Tee !D! vauriota. NL Jos vihollisella on ${modID}:Verenvuotoa, tee !M! ylimääräistä osumaa.",
+             "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jos vihollisella on ${modID}:Verenvuotoa, tee !M! ylimääräistä osumaa."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Takaa-ajo",
+              "DESCRIPTION":  "Voidaan pelata vain, jos viimeksi pelattu kortti tällä vuorolla oli hyökkäyskortti. NL Tee !D! vauriota.",
+              "UPGRADE_DESCRIPTION":  "Voidaan pelata vain, jos viimeksi pelattu kortti tällä vuorolla oli hyökkäyskortti. NL Tee !D! vauriota.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Sinun täytyy pelata ensin hyökkäys tällä vuorolla."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Käsivarren katkaisu",
+                "DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! *Kurjuus käteesi.",
+                "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Lisää !M! *Kurjuus käteesi."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Sammutettu terä",
+                  "DESCRIPTION":  "Tee !D! vauriota. NL Parantele !M! korttia kädessäsi lopputaistelun ajaksi.",
+                  "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Parantele !M! korttia kädessäsi lopputaistelun ajaksi."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Julma kidutus",
+                 "DESCRIPTION":  "Tee !D! vauriota. Saa !${modID}:SIN! ${modID}:Syntiä.",
+                 "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. Saa !${modID}:SIN! ${modID}:Syntiä."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Sovituksen isku",
+                  "DESCRIPTION":  "Tee !D! vauriota. Nosta !M! korttia, jos sinulla on ${modID}:Velkaa. NL Menetä sitten 4 ${modID}:Syntiä.",
+                  "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. Nosta !M! korttia, jos sinulla on ${modID}:Velkaa. NL Menetä sitten 4 ${modID}:Syntiä."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Väärä syyllisyys",
+                   "DESCRIPTION":  "Tee !D! vauriota KAIKILLE vihollisille. Saa !${modID}:SIN! ${modID}:Syntiä.",
+                   "UPGRADE_DESCRIPTION":  "Tee !D! vauriota KAIKILLE vihollisille. Saa !${modID}:SIN! ${modID}:Syntiä."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Säälimätön kietoutuminen",
+                      "DESCRIPTION":  "Tee !D! vauriota. NL Lisää se käteesi, jos ${modID}:Velka kasvoi."
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Agonia",
+              "DESCRIPTION":  "Tee !D! vauriota. Lisää !M! Heikkoa ja !M! Haavoittuvaa.",
+              "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. Lisää !M! Heikkoa ja !M! Haavoittuvaa."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Pyhä maa",
+                "DESCRIPTION":  "Saa !B! Suojaa. NL Nosta !M! korttia, mutta 1 kortti vähemmän jokaista ${modID}:Velkaa kohden.",
+                "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Nosta !M! korttia, mutta 1 kortti vähemmän jokaista ${modID}:Velkaa kohden.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Nosta !M! korttia)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Laina",
+             "DESCRIPTION":  "Saa [E] [E] [E]. Seuraavalla vuorolla menetät [E].NL Kuluta",
+             "UPGRADE_DESCRIPTION":  "Saa [E] [E] [E]. NL Seuraavalla vuorolla menetät [E].NL Kuluta NL Pidä"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Luja",
+             "DESCRIPTION":  "Saa !B! Suojaa.NL Pidä",
+             "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa.NL Pidä"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Vaeltaminen",
+              "DESCRIPTION":  "Nosta !M! kortti.NL Kuluta 1 kortti. NL Jos kulutat tilakortin, vähennä 3 ${modID}:Syntiä",
+              "UPGRADE_DESCRIPTION":  "Nosta !M! korttia.NL Kuluta 1 kortti. NL Jos kulutat tilakortin, vähennä 3 ${modID}:Syntiä"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Verivartija",
+                "DESCRIPTION":  "Saa !B! Suojaa. NL Anna viholliselle !M! ${modID}:Verenvuotoa.",
+                "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Anna viholliselle !M! ${modID}:Verenvuotoa."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Viattomuuden vetoomus",
+                  "DESCRIPTION":  "Saa !B! Suojaa. NL Jokainen ${modID}:Velka antaa !M! enemmän Suojaa.",
+                  "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Jokainen ${modID}:Velka antaa !M! enemmän Suojaa.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Ennakoivat toimet",
+                    "DESCRIPTION":  "Nosta !M! kortti. Jos se on Hyökkäys, se maksaa 0, kunnes se pelataan tällä vuorolla.",
+                    "UPGRADE_DESCRIPTION":  "Nosta !M! kortti. Jos se on Hyökkäys, se maksaa 0, kunnes se pelataan tällä vuorolla."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Vihamielisyys",
+                "DESCRIPTION":  "Jos Suojasi on alle !${modID}:BLOCK_THRESHOLD!, lisää kaikille vihollisille !M! Heikkoa. NL Saa !B! Suojaa",
+                "UPGRADE_DESCRIPTION":  "Jos Suojasi on alle !${modID}:BLOCK_THRESHOLD!, lisää kaikille vihollisille !M! Heikkoa. NL Saa !B! Suojaa"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Kahleet",
+               "DESCRIPTION":  "Lisää 2 *Kurjuus. NL Saa !M! Suojaa jokaista kädessäsi olevaa tilakorttia kohden",
+               "UPGRADE_DESCRIPTION":  "Lisää 2 *Kurjuus. NL Saa !M! Suojaa jokaista kädessäsi olevaa tilakorttia kohden",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Peloteisku",
+                  "DESCRIPTION":  "Tee !D! vauriota. NL Vihollinen menettää !M! Vahvuutta tällä vuorolla, jos vihollisen aikeena on hyökätä",
+                  "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Vihollinen menettää !M! Vahvuutta tällä vuorolla, jos vihollisen aikeena on hyökätä"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Raskas isku",
+                "DESCRIPTION":  "Voidaan pelata vain, jos sinulla on !M! ${modID}:Velkaa. Tee !D! vauriota",
+                "UPGRADE_DESCRIPTION":  "Voidaan pelata vain, jos sinulla on !M! ${modID}:Velkaa. Tee !D! vauriota",
+                "EXTENDED_DESCRIPTION":  [
+                              "Voidaan pelata vain, jos sinulla on 2 ${modID}:Velkaa"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Synnit teriksi",
+                 "DESCRIPTION":  "Tee !D! vauriota. NL Nosta kortteja ${modID}:Velkaasi verran.",
+                 "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Nosta kortteja ${modID}:Velkaasi verran plus 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Nosta !${modID}:TOTAL_DRAW! korttia)"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Likainen kaaos",
+                "DESCRIPTION":  "Saa !${modID}:SIN! ${modID}:Syntiä. NL Tee !D! vauriota. Jokainen ${modID}:Velka antaa !M! ylimääräistä vauriota",
+                "UPGRADE_DESCRIPTION":  "Saa !${modID}:SIN! ${modID}:Syntiä. NL Tee !D! vauriota. Jokainen ${modID}:Velka antaa !M! ylimääräistä vauriota",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Karkaistu miekka",
+                  "DESCRIPTION":  "Tee !D! vauriota. NL Jokainen kuluttamasi tilakortti antaa !M! ylimääräistä vauriota",
+                  "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jokainen kuluttamasi tilakortti antaa !M! ylimääräistä vauriota",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Tee !${modID}:TOTAL_DAMAGE! vauriota yhteensä)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Murskaus",
+              "DESCRIPTION":  "Tee !D! vauriota. NL Saa Suojaa vihollisen ${modID}:Verenvuodon verran",
+              "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Saa Suojaa vihollisen ${modID}:Verenvuodon verran",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Kartuttaa",
+              "DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Seuraavalla vuorolla saat [E]",
+              "UPGRADE_DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Seuraavalla vuorolla saat [E][E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Raskas menneisyys",
+                "DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Lisää 1 *Kurjuus nostopinoon ja 1 poistopinoon. NL Nosta !M! korttia.",
+                "UPGRADE_DESCRIPTION":  "Tee !D! vauriota 2 kertaa. NL Lisää 1 *Kurjuus nostopinoon ja 1 poistopinoon. NL Nosta !M! korttia."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Seuraus",
+                "DESCRIPTION":  "Kuluta 1 kortti kädestäsi. NL Tee !D! vauriota KAIKILLE vihollisille. NL Nosta 1 kortti jokaista vihollista kohden, jolla on ${modID}:Verenvuotoa ja johon kohdistit vauriota.",
+                "UPGRADE_DESCRIPTION":  "Kuluta 1 kortti kädestäsi. NL Tee !D! vauriota KAIKILLE vihollisille. NL Nosta 1 kortti jokaista vihollista kohden, jolla on ${modID}:Verenvuotoa ja johon kohdistit vauriota."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Peräkkäiset potkut",
+                   "DESCRIPTION":  "Tee !D! vauriota !M! kertaa",
+                   "UPGRADE_DESCRIPTION":  "Tee !D! vauriota !M! kertaa"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Massiivinen verenvuoto",
+                  "DESCRIPTION":  "Tee !D! vauriota. NL Tee sitten vauriota vihollisen ${modID}:Verenvuodon verran",
+                  "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Tee sitten vauriota kaksinkertaisen ${modID}:Verenvuodon verran",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Tee !${modID}:TOTAL_DAMAGE! vauriota yhteensä)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Kohtaa vaara",
+                "DESCRIPTION":  "Tee !D! vauriota. NL Jokainen pelaamasi *Kurjuus vähentää tämän kortin energiahintaa 1 tässä taistelussa",
+                "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jokainen pelaamasi *Kurjuus vähentää tämän kortin energiahintaa 1 tässä taistelussa"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Helpotus",
+              "DESCRIPTION":  "Lisää 2 *Kurjuus poistopinoon. NL Vuorosi lopussa kuluta kaikki kädessäsi olevat *Kurjuus.",
+              "UPGRADE_DESCRIPTION":  "Synnynnäinen NL Lisää 2 *Kurjuus poistopinoon. NL Vuorosi lopussa kuluta kaikki kädessäsi olevat *Kurjuus."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Kurjuus",
+              "DESCRIPTION":  "Kärsi 2 vauriota. NL Nosta 1 kortti. NL Kulutettu"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Torjunta",
+              "DESCRIPTION":  "Saa !B! Suojaa. NL Aina kun sinuun hyökätään, heijasta torjumasi vaurio takaisin hyökkääjään.",
+              "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Aina kun sinuun hyökätään, heijasta torjumasi vaurio takaisin hyökkääjään."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Armahdus",
+              "DESCRIPTION":  "Muuta KAIKKI kädessäsi olevat kortit satunnaisiksi korteiksi. NL Kun tämä kortti on pelattu !M! kertaa, se muuttuu satunnaiseksi Vahvuuskortiksi",
+              "UPGRADE_DESCRIPTION":  "Muuta KAIKKI kädessäsi olevat kortit satunnaisiksi parannetuiksi korteiksi. NL Kun tämä kortti on pelattu !M! kertaa, se muuttuu satunnaiseksi parannetuksi Vahvuuskortiksi",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Pelattu !${modID}:PLAYS! kertaa)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Muistomerkki",
+               "DESCRIPTION":  "Nosta 1 kortti. NL Jos nostettu kortti on Taito, menetä !M! ${modID}:Syntiä.",
+               "UPGRADE_DESCRIPTION":  "Nosta 1 kortti. NL Jos nostettu kortti on Taito, menetä !M! ${modID}:Syntiä."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Kiehuva",
+              "DESCRIPTION":  "Kuluta kaikki ei-Hyökkäys-kortit kädessäsi. NL Lisää !M! ${modID}:Verenvuotoa satunnaiselle viholliselle jokaista kulutettua korttia kohden.",
+              "UPGRADE_DESCRIPTION":  "Kuluta kaikki ei-Hyökkäys-kortit kädessäsi. NL Lisää !M! ${modID}:Verenvuotoa satunnaiselle viholliselle jokaista kulutettua korttia kohden."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Suru",
+              "DESCRIPTION":  "Lisää 1 satunnainen tilakortti käteesi. NL Tällä vuorolla aina kun nostat kortin, lisää !M! ${modID}:Verenvuotoa KAIKILLE vihollisille.",
+              "UPGRADE_DESCRIPTION":  "Lisää 1 satunnainen tilakortti käteesi. NL Tällä vuorolla aina kun nostat kortin, lisää !M! ${modID}:Verenvuotoa KAIKILLE vihollisille."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Verenmeri",
+               "DESCRIPTION":  "Lisää !${modID}:BLEED! ${modID}:Verenvuotoa. NL Kerro vihollisen ${modID}:Verenvuoto !M!:llä. NL Kuluta",
+               "UPGRADE_DESCRIPTION":  "Lisää !${modID}:BLEED! ${modID}:Verenvuotoa. NL Kerro vihollisen ${modID}:Verenvuoto !M!:llä. NL Kuluta"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Säälimätön verenvuoto",
+                  "DESCRIPTION":  "Lisää jokaisen vuoron alussa !M! ${modID}:Verenvuotoa KAIKILLE vihollisille.",
+                  "UPGRADE_DESCRIPTION":  "Lisää jokaisen vuoron alussa !M! ${modID}:Verenvuotoa KAIKILLE vihollisille."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Pelon muisto",
+                "DESCRIPTION":  "Jos sait tällä vuorolla ${modID}:Velkaa, viholliset tekevät !M!% vähemmän vauriota. NL Kestää vain vuoron, jolloin sait ${modID}:Velkaa.",
+                "UPGRADE_DESCRIPTION":  "Jos sait tällä vuorolla ${modID}:Velkaa, viholliset tekevät !M!% vähemmän vauriota. NL Kestää vain vuoron, jolloin sait ${modID}:Velkaa."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Koetus",
+              "DESCRIPTION":  "Saa !M! Vahvuutta ja !M! Näppäryyttä. NL Saa 1 Heikko.",
+              "UPGRADE_DESCRIPTION":  "Saa !M! Vahvuutta ja !M! Näppäryyttä. NL Saa 1 Heikko."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Kohtalon sovitus",
+                  "DESCRIPTION":  "Aina kun luot tai kulutat *Kurjuus, saa !M! Suojaa.",
+                  "UPGRADE_DESCRIPTION":  "Aina kun luot tai kulutat *Kurjuus, saa !M! Suojaa."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Silvottu liha",
+                 "DESCRIPTION":  "Aina kun lisäät viholliselle 6 ${modID}:Verenvuotoa, tee KAIKILLE vihollisille !M! vauriota.",
+                 "UPGRADE_DESCRIPTION":  "Aina kun lisäät viholliselle 6 ${modID}:Verenvuotoa, tee KAIKILLE vihollisille !M! vauriota."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Veripiikit",
+                "DESCRIPTION":  "Aina kun vihollinen hyökkää sinua vastaan, lisää sille !M! ${modID}:Verenvuotoa.",
+                "UPGRADE_DESCRIPTION":  "Aina kun vihollinen hyökkää sinua vastaan, lisää sille !M! ${modID}:Verenvuotoa."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Lunastuksen polku",
+                  "DESCRIPTION":  "Aina kun poistat 1 ${modID}:Velkaa, nosta !M! korttia.",
+                  "UPGRADE_DESCRIPTION":  "Aina kun poistat 1 ${modID}:Velkaa, nosta !M! korttia."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Requiem",
+              "DESCRIPTION":  "Jokainen kuluttamasi *Kurjuus tekee !D! vauriota satunnaiselle viholliselle",
+              "UPGRADE_DESCRIPTION":  "Jokainen kuluttamasi *Kurjuus tekee !D! vauriota satunnaiselle viholliselle",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Tee !${modID}:HITS! osumaa yhteensä)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Epätoivoinen keino",
+                   "DESCRIPTION":  "Tee !D! vauriota. NL Jos tämä ei tapa vihollista, menetät !M! HP.",
+                   "UPGRADE_DESCRIPTION":  "Tee !D! vauriota. NL Jos tämä ei tapa vihollista, menetät !M! HP."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Loppumaton sota",
+                 "DESCRIPTION":  "Tee !D! vauriota !${modID}:HITS! kertaa. NL Aina kun tämä tappaa vihollisen, lisää pysyvästi tämän kortin osumamäärää 1 loppumatkaksi. NL Kuluta",
+                 "UPGRADE_DESCRIPTION":  "Tee !D! vauriota !${modID}:HITS! kertaa. NL Aina kun tämä tappaa vihollisen, lisää pysyvästi tämän kortin osumamäärää 1 loppumatkaksi. NL Kuluta"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Lopullinen tuomio",
+                  "DESCRIPTION":  "Voidaan pelata vain, jos sinulla on vähintään 4 ${modID}:Velkaa. NL Tee !D! vauriota KAIKILLE vihollisille. NL Poista kaikki ${modID}:Synti.",
+                  "UPGRADE_DESCRIPTION":  "Voidaan pelata vain, jos sinulla on vähintään 4 ${modID}:Velkaa. NL Tee !D! vauriota KAIKILLE vihollisille. NL Poista kaikki ${modID}:Synti.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Tarvitaan vähintään 4 ${modID}:Velkaa pelaamiseen."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Roihuava",
+              "DESCRIPTION":  "Kuluta kaikki kortit kädessäsi. NL Nosta !M! korttia jokaista kulutettua tilakorttia kohden. NL Kuluta",
+              "UPGRADE_DESCRIPTION":  "Kuluta kaikki kortit kädessäsi. NL Nosta !M! korttia jokaista kulutettua tilakorttia kohden. NL Kuluta"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Kivenkova",
+                "DESCRIPTION":  "Saa !B! Suojaa. NL Menetä 3 Maks. HP.",
+                "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Menetä 3 Maks. HP."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Omistautuminen",
+               "DESCRIPTION":  "Poista kaikki ${modID}:Velkasi, Haavoittuva, Heikko ja Hauras. NL Saa 1 energia ja nosta !M! korttia jokaista poistettua kasausta kohden. NL Kuluta",
+               "UPGRADE_DESCRIPTION":  "Poista kaikki ${modID}:Velkasi, Haavoittuva, Heikko ja Hauras. NL Saa 1 energia ja nosta !M! korttia jokaista poistettua kasausta kohden. NL Kuluta"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Närkästys",
+                "DESCRIPTION":  "Seuraavien X vuoron ajan ensimmäinen kortti, jonka pelaat joka vuoro, maksaa 0. NL Kuluta",
+                "UPGRADE_DESCRIPTION":  "Seuraavien X+1 vuoron ajan ensimmäinen kortti, jonka pelaat joka vuoro, maksaa 0. NL Kuluta"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Verenkosto",
+                "DESCRIPTION":  "Lisää 1 *Kurjuus käteesi. NL Käynnistä välittömästi kaikkien vihollisten ${modID}:Verenvuodosta !M!%.",
+                "UPGRADE_DESCRIPTION":  "Lisää 1 *Kurjuus käteesi. NL Käynnistä välittömästi kaikkien vihollisten ${modID}:Verenvuodosta !M!%."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Tyhjyyden kutsu",
+               "DESCRIPTION":  "Valitse 1 kortti nostopinostasi ja lisää se käteesi. Siitä tulee Aineeton. NL Kuluta",
+               "UPGRADE_DESCRIPTION":  "Valitse 1 kortti nostopinostasi ja lisää se käteesi. Siitä tulee Aineeton."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Levittäytyminen",
+              "DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Lisää kaikki vihollisen heikkoudet kaikille muille vihollisille.",
+              "UPGRADE_DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Lisää kaikki vihollisen heikkoudet kaikille muille vihollisille."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Nälkäinen taistelutahto",
+                    "DESCRIPTION":  "Saa jokaisen vuoron alussa [E]. NL Ota jokaisen vuoron lopussa 3 vahinkoa.",
+                    "UPGRADE_DESCRIPTION":  "Saa jokaisen vuoron alussa [E]. NL Ota jokaisen vuoron lopussa 3 vahinkoa."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Tuomion muoto",
+                  "DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään.",
+                  "UPGRADE_DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Synnin ruumiillistuma",
+                "DESCRIPTION":  "Vuorosi lopussa saa !B! Suojaa plus !M! Suojaa jokaista ${modID}:Velkaa kohden.",
+                "UPGRADE_DESCRIPTION":  "Vuorosi lopussa saa !B! Suojaa plus !M! Suojaa jokaista ${modID}:Velkaa kohden.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Saa !${modID}:TOTAL_BLOCK! Suojaa yhteensä)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Verikylpy",
+                "DESCRIPTION":  "Ensimmäinen hyökkäyskortti, jonka pelaat joka vuoro, lisää ${modID}:Verenvuotoa suojaamattoman vaurion verran.",
+                "UPGRADE_DESCRIPTION":  "Ensimmäinen hyökkäyskortti, jonka pelaat joka vuoro, lisää ${modID}:Verenvuotoa aiheuttamansa suojaamattoman vaurion verran."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Ylijäykkä",
+                "DESCRIPTION":  "Saa 5 Vahvuutta. NL Joka kerta kun pelaat hyökkäyskortin, se menettää pysyvästi !M! vauriota lopputaistelun ajaksi.",
+                "UPGRADE_DESCRIPTION":  "Saa 5 Vahvuutta. NL Joka kerta kun pelaat hyökkäyskortin, se menettää pysyvästi !M! vauriota lopputaistelun ajaksi."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Kietoutunut",
+                "DESCRIPTION":  "Aina kun nostat tämän kortin, lisää siitä 1 kopio käteesi. NL Kuluta NL Kun tämä kortti kulutetaan, lisää 1 Lima nostopinoon."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Mellakka",
+             "DESCRIPTION":  "Tee !D! vauriota X kertaa. NL Jokainen ${modID}:Velka antaa tälle kortille !M! ylimääräistä vauriota.",
+             "UPGRADE_DESCRIPTION":  "Tee !D! vauriota X kertaa. NL Jokainen ${modID}:Velka antaa tälle kortille !M! ylimääräistä vauriota.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Tee !${modID}:TOTAL_DAMAGE! vauriota osumaa kohden)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Veritahra",
+                "DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Tee tämä uudelleen kerran jokaista ${modID}:Velkaasi kohden. NL Kuluta.",
+                "UPGRADE_DESCRIPTION":  "Lisää !M! ${modID}:Verenvuotoa. NL Tee tämä uudelleen kerran jokaista ${modID}:Velkaasi kohden."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Särkynyt haarniska",
+                "DESCRIPTION":  "Saa !B! Suojaa. NL Joka kerta, kun pelaat tämän kortin, saat 2 vähemmän Suojaa（tässä taistelussa）.",
+                "UPGRADE_DESCRIPTION":  "Saa !B! Suojaa. NL Joka kerta, kun pelaat tämän kortin, saat 2 vähemmän Suojaa（tässä taistelussa）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Liittosopimus",
+               "DESCRIPTION":  "Saa [E] [E]. NL Lisää 1 *Kurjuus hylkypinoon",
+               "UPGRADE_DESCRIPTION":  "Saa [E] [E] [E]. NL Lisää 1 *Kurjuus hylkypinoon"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Petos",
+              "DESCRIPTION":  "Nosta !M! korttia. NL Saa !M! ${modID}:Syntiä.",
+              "UPGRADE_DESCRIPTION":  "Nosta !M! korttia. NL Saa !M! ${modID}:Syntiä."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Armo",
+              "DESCRIPTION":  "Aineeton. NL Kuluta kädessäsi olevat *Kurjuus jokaisen vuoron lopussa. NL Saa !M! ${modID}:Syntiä.",
+              "UPGRADE_DESCRIPTION":  "Aineeton. NL Kuluta kädessäsi olevat *Kurjuus jokaisen vuoron lopussa. NL Saa !M! ${modID}:Syntiä."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Valmistaudu",
+              "DESCRIPTION":  "Synnynnäinen. NL Nosta !M! korttia. NL Pidä kätesi tällä vuorolla. NL Kuluta.",
+              "UPGRADE_DESCRIPTION":  "Synnynnäinen. NL Nosta !M! korttia. NL Pidä kätesi tällä vuorolla. NL Kuluta."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Uusiutuminen",
+              "DESCRIPTION":  "Lisää 3 ${modID}:Verenvuotoa. NL Vihollisen ${modID}:Verenvuotoa ei poisteta yhden vuoron aikana.",
+              "UPGRADE_DESCRIPTION":  "Lisää 3 ${modID}:Verenvuotoa. NL KAIKKIEN vihollisten ${modID}:Verenvuotoa ei poisteta yhden vuoron aikana."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Jaettu kärsimys",
+                  "DESCRIPTION":  "Jokaista ${modID}:Velkaasi kohden lisää !M! Heikkoa ja !M! Haavoittuvaa KAIKILLE vihollisille. NL Kuluta.",
+                  "UPGRADE_DESCRIPTION":  "Jokaista ${modID}:Velkaasi kohden lisää !M! Heikkoa ja !M! Haavoittuvaa KAIKILLE vihollisille. NL Kuluta."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Tabu",
+              "DESCRIPTION":  "Saa 1 energiaa jokaista ${modID}:Velkaasi kohden. NL Saa 1 ${modID}:Rajoitus.",
+              "UPGRADE_DESCRIPTION":  "Saa 1 energiaa jokaista ${modID}:Velkaasi kohden plus 1. NL Saa 1 ${modID}:Rajoitus.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Ei voi saada energiaa)",
+                            " (Saa !${modID}:TOTAL_ENERGY! energiaa)",
+                            " (Saa !${modID}:TOTAL_ENERGY! energiaa!)"
+                          ]
+            }
 }

@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "Ultimative Kraft",
-                                 "DESCRIPTIONS":  [
-                                                      "Du bist sehr cool und stark."
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "Blutung",
-                                    "DESCRIPTIONS":  [
-                                                         "Verliert zu Beginn seines Zuges #b",
-                                                         " LP, dann wird alle Blutung entfernt. Wenn eine blutende Kreatur ungeblockten Angriffsschaden erleidet, erhält sie #b1 Blutung."
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "Sünde",
-                                  "DESCRIPTIONS":  [
-                                                       "Wenn du #b5 Sünde hast, erhalte ",
-                                                       " ${modID}:Schuld."
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "Schuld",
-                                   "DESCRIPTIONS":  [
-                                                        "Jeder Stapel Schuld lässt dich #b10% mehr Schaden erleiden. Erleidest ",
-                                                        "% mehr Schaden. NL Wenn eine Schuld-Anwendung durch Artefakt geblockt wird, verlierst du ",
-                                                        " Sünde für jede geblockte Schuld."
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "Energieverlust nächster Zug",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Verliere nächsten Zug [E]"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "Energiegewinn nächster Zug",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Erhalte nächsten Zug [E]"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "Gnade",
-                                    "DESCRIPTIONS":  [
-                                                         "Schuld verursacht diesen Zug keinen zusätzlichen Schaden"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "Tiefe Wunde",
-                                        "DESCRIPTIONS":  [
-                                                             "Blutung wird zu Beginn seines Zuges nicht entfernt."
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "Erleichterung",
-                                     "DESCRIPTIONS":  [
-                                                          "Verbrauche am Ende deines Zuges ALLE ",
-                                                          " in deiner Hand."
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "Parieren",
-                                    "DESCRIPTIONS":  [
-                                                         "Immer wenn du angegriffen wirst, reflektiere den abgewehrten Schaden auf den Angreifer."
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "Unermüdliche Blutung",
-                                              "DESCRIPTIONS":  [
-                                                                   "Füge zu Beginn jeder Runde ALLEN Gegnern #b",
-                                                                   " ${modID}:Blutung zu."
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "Trauer",
-                                    "DESCRIPTIONS":  [
-                                                         "In diesem Zug: Immer wenn du eine Karte ziehst, füge ALLEN Gegnern #b",
-                                                         " ${modID}:Blutung zu."
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "Furchtbare Erinnerung",
-                                          "DESCRIPTIONS":  [
-                                                               "Wenn du diesen Zug ${modID}:Schuld erhalten hast, verursachen Gegner #b",
-                                                               "% weniger Schaden."
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "Schicksal versöhnen",
-                                            "DESCRIPTIONS":  [
-                                                                 "Immer wenn du eine *Qual erzeugst oder verbrauchst, erhalte #b",
-                                                                 " Block."
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "Zerfetztes Fleisch",
-                                           "DESCRIPTIONS":  [
-                                                                "Immer wenn du einem Gegner 6 ${modID}:Blutung zufügst, füge allen Gegnern #b",
-                                                                " Schaden zu."
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "Blutdornen",
-                                          "DESCRIPTIONS":  [
-                                                               "Immer wenn ein Gegner dich angreift, füge ihm #b",
-                                                               " ${modID}:Blutung zu."
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "Pfad der Erlösung",
-                                             "DESCRIPTIONS":  [
-                                                                  "Immer wenn du 1 ${modID}:Schuld entfernst, ziehe #b",
-                                                                  " Karten."
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "Empörung",
-                                          "DESCRIPTIONS":  [
-                                                               "In den nächsten #b",
-                                                               " Zügen kostet die erste Nicht-Angriffskarte, die du pro Zug spielst, 0."
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "Gieriger Kampfwille",
-                                                  "DESCRIPTIONS":  [
-                                                                       "Erhalte zu Beginn jeder Runde [E]. NL Nimm am Ende jeder Runde 3 Schaden."
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "Eingestehen",
-                                      "DESCRIPTIONS":  [
-                                                           "Dieser Gegner erleidet #b50% mehr Schaden."
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "Form des Urteils",
-                                           "DESCRIPTIONS":  [
-                                                                "Du fügst Gegnern unter ",
-                                                                "% ihrer Max. LP 50% mehr Schaden zu."
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "Inkarnation der Sünde",
-                                        "DESCRIPTIONS":  [
-                                                             "Erhalte am Ende deines Zuges #b",
-                                                             " Block, plus #b",
-                                                             " Block für jeden Stapel ${modID}:Schuld."
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "Blutbad",
-                                        "DESCRIPTIONS":  [
-                                                             "Die ersten ",
-                                                             " in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "Übersteif",
-                                        "DESCRIPTIONS":  [
-                                                             "Jedes Mal, wenn du eine Angriffskarte spielst, verliert sie für den Rest des Kampfes dauerhaft ",
-                                                             " Schaden."
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "Einschränkung",
-                                          "DESCRIPTIONS":  [
-                                                               "Du kannst kein [E] erhalten. Wird am Ende deines Zuges entfernt."
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "Ultimative Kraft",
+              "DESCRIPTIONS":  [
+                         "Du bist sehr cool und stark."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Blutung",
+                "DESCRIPTIONS":  [
+                          "Verliert zu Beginn seines Zuges #b",
+                          " LP, dann wird alle Blutung entfernt. Wenn eine blutende Kreatur ungeblockten Angriffsschaden erleidet, erhält sie #b1 Blutung."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Sünde",
+               "DESCRIPTIONS":  [
+                          "Wenn du #b5 Sünde hast, erhalte ",
+                          " ${modID}:Schuld."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Schuld",
+                "DESCRIPTIONS":  [
+                          "Jeder Stapel Schuld lässt dich #b10% mehr Schaden erleiden. Erleidest ",
+                          "% mehr Schaden. NL Wenn eine Schuld-Anwendung durch Artefakt geblockt wird, verlierst du ",
+                          " Sünde für jede geblockte Schuld."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Energieverlust nächster Zug",
+                      "DESCRIPTIONS":  [
+                                 "Verliere nächsten Zug [E]"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Energiegewinn nächster Zug",
+                      "DESCRIPTIONS":  [
+                                 "Erhalte nächsten Zug [E]"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Gnade",
+                "DESCRIPTIONS":  [
+                          "Schuld verursacht diesen Zug keinen zusätzlichen Schaden"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Tiefe Wunde",
+                  "DESCRIPTIONS":  [
+                            "Blutung wird zu Beginn seines Zuges nicht entfernt."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Erleichterung",
+                "DESCRIPTIONS":  [
+                           "Verbrauche am Ende deines Zuges ALLE ",
+                           " in deiner Hand."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Parieren",
+                "DESCRIPTIONS":  [
+                          "Immer wenn du angegriffen wirst, reflektiere den abgewehrten Schaden auf den Angreifer."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Unermüdliche Blutung",
+                     "DESCRIPTIONS":  [
+                                "Füge zu Beginn jeder Runde ALLEN Gegnern #b",
+                                " ${modID}:Blutung zu."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Trauer",
+                "DESCRIPTIONS":  [
+                          "In diesem Zug: Immer wenn du eine Karte ziehst, füge ALLEN Gegnern #b",
+                          " ${modID}:Blutung zu."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Furchtbare Erinnerung",
+                   "DESCRIPTIONS":  [
+                              "Wenn du diesen Zug ${modID}:Schuld erhalten hast, verursachen Gegner #b",
+                              "% weniger Schaden."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Schicksal versöhnen",
+                    "DESCRIPTIONS":  [
+                              "Immer wenn du eine *Qual erzeugst oder verbrauchst, erhalte #b",
+                              " Block."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Zerfetztes Fleisch",
+                    "DESCRIPTIONS":  [
+                              "Immer wenn du einem Gegner 6 ${modID}:Blutung zufügst, füge allen Gegnern #b",
+                              " Schaden zu."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Blutdornen",
+                   "DESCRIPTIONS":  [
+                              "Immer wenn ein Gegner dich angreift, füge ihm #b",
+                              " ${modID}:Blutung zu."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Pfad der Erlösung",
+                    "DESCRIPTIONS":  [
+                               "Immer wenn du 1 ${modID}:Schuld entfernst, ziehe #b",
+                               " Karten."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Empörung",
+                   "DESCRIPTIONS":  [
+                              "In den nächsten #b",
+                              " Zügen kostet die erste Karte, die du pro Zug spielst, 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Gieriger Kampfwille",
+                       "DESCRIPTIONS":  [
+                                  "Erhalte zu Beginn jeder Runde [E]. NL Nimm am Ende jeder Runde 3 Schaden."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Eingestehen",
+                 "DESCRIPTIONS":  [
+                            "Dieser Gegner erleidet #b50% mehr Schaden."
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "Form des Urteils",
+                    "DESCRIPTIONS":  [
+                              "Du fügst Gegnern unter ",
+                              "% ihrer Max. LP 50% mehr Schaden zu."
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Inkarnation der Sünde",
+                  "DESCRIPTIONS":  [
+                            "Erhalte am Ende deines Zuges #b",
+                            " Block, plus #b",
+                            " Block für jeden Stapel ${modID}:Schuld."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Blutbad",
+                  "DESCRIPTIONS":  [
+                            "Die ersten ",
+                            " in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Übersteif",
+                  "DESCRIPTIONS":  [
+                            "Jedes Mal, wenn du eine Angriffskarte spielst, verliert sie für den Rest des Kampfes dauerhaft ",
+                            " Schaden."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Einschränkung",
+                   "DESCRIPTIONS":  [
+                              "Du kannst kein [E] erhalten. Wird am Ende deines Zuges entfernt."
+                            ]
+                 }
 }

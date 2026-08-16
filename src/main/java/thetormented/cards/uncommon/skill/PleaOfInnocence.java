@@ -1,4 +1,4 @@
-package thetormented.cards.common.skill;
+package thetormented.cards.uncommon.skill;
 
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;

@@ -116,6 +116,15 @@ public class TextureLoader {
         return null;
     }
 
+    public static String getCardTestPortraitString(final String cardID, final AbstractCard.CardType cardType)
+    {
+        String textureString = imagePath("cards_test/" + cardType.name().toLowerCase(Locale.ROOT) + "/" + removePrefix(cardID) + "_p.png");
+        if (Gdx.files.internal(textureString).exists()) {
+            return textureString;
+        }
+        return null;
+    }
+
     private static void loadTexture(final String textureString) throws GdxRuntimeException {
         loadTexture(textureString, false);
     }

@@ -1,15 +1,14 @@
 package thetormented.cards.common.attack;
 
-import com.evacipated.cardcrawl.mod.stslib.actions.common.MoveCardsAction;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.utility.DiscardToHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import thetormented.actions.RecoverToHandAction;
 import thetormented.actions.UpdateDebtAction;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
@@ -57,9 +56,13 @@ public class RelentlessEntanglement extends BaseCard implements UpdateDebtAction
 
     @Override
     public void onDebtIncrease(int amount) {
-        // 当血债增加 (amount > 0) 且当前卡牌位于弃牌堆中时，将其移回手牌
-        if (amount > 0 && AbstractDungeon.player.discardPile.contains(this)) {
-            addToBot(new DiscardToHandAction(this));
+        // 当血债增加 (amount > 0) 时，把弃牌堆中的本卡移回手牌。
+        // 不做“牌必须位于弃牌堆”的硬判定：恰逢原版洗牌动画窗口时
+        // （弃牌堆已被清空、卡尚未落位抽牌堆）卡牌同样应当被恢复；
+        // 恢复动作本身会等洗牌落位后再拉回（动画期间不触碰卡牌）。
+        if (amount > 0 && !AbstractDungeon.player.hand.contains(this)
+                && !AbstractDungeon.player.drawPile.contains(this)) {
+            addToBot(new RecoverToHandAction(this));
         }
     }
 

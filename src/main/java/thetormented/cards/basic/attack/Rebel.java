@@ -36,6 +36,27 @@ public class Rebel extends BaseCard {
     }
 
     @Override
+    protected String getInjectedDescription() {
+        String ext = extDescription(0);
+        if (ext == null) {
+            return null;
+        }
+        return ext.replace("!M!", String.valueOf(this.magicNumber));
+    }
+
+    @Override
+    public void applyPowers() {
+        super.applyPowers();
+        this.setMagic(this.damage);
+    }
+
+    @Override
+    public void calculateCardDamage(AbstractMonster m) {
+        super.calculateCardDamage(m);
+        this.setMagic(this.damage);
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (m != null) {
             // 1. 重新计算并获取经 Vulnerable(易伤)、Strength(力量) 等结算后的预计纸面伤害

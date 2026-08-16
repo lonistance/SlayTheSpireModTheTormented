@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "Pouvoir Ultime",
-                                 "DESCRIPTIONS":  [
-                                                      "Vous êtes très cool et très fort."
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "Saignement",
-                                    "DESCRIPTIONS":  [
-                                                         "Au début de son tour, perd #b",
-                                                         " PV, puis retire tout le Saignement. Quand une créature qui saigne subit des dégâts d\u0027attaque non bloqués, elle gagne #b1 Saignement."
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "Péché",
-                                  "DESCRIPTIONS":  [
-                                                       "Chaque fois que vous avez #b5 Péché, gagnez ",
-                                                       " ${modID}:Dette."
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "Dette",
-                                   "DESCRIPTIONS":  [
-                                                        "Chaque point de Dette fait subir #b10% de dégâts supplémentaires. Subissez ",
-                                                        "% de dégâts supplémentaires. NL Quand l\u0027application d\u0027une Dette est bloquée par un Artefact, vous perdez ",
-                                                        " Péché pour chaque Dette bloquée."
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "Perte d\u0027Énergie",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Perdez [E] au prochain tour"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "Bonus d\u0027Énergie",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Gagnez [E] au prochain tour"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "Clémence",
-                                    "DESCRIPTIONS":  [
-                                                         "La Dette ne fait aucun dégât supplémentaire ce tour"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "Blessure Profonde",
-                                        "DESCRIPTIONS":  [
-                                                             "Le Saignement n\u0027est pas retiré au début de son tour."
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "Soulagement",
-                                     "DESCRIPTIONS":  [
-                                                          "À la fin de votre tour, Épuisez TOUTES les ",
-                                                          " dans votre main."
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "Parade",
-                                    "DESCRIPTIONS":  [
-                                                         "Chaque fois que vous êtes attaqué, reflétez les dégâts que vous avez bloqués vers l\u0027attaquant."
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "Saignement Implacable",
-                                              "DESCRIPTIONS":  [
-                                                                   "Au début de chaque tour, applique #b",
-                                                                   " ${modID}:Saignement à TOUS les ennemis."
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "Chagrin",
-                                    "DESCRIPTIONS":  [
-                                                         "Ce tour, chaque fois que vous piochez une carte, applique #b",
-                                                         " ${modID}:Saignement à TOUS les ennemis."
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "Souvenir Terrible",
-                                          "DESCRIPTIONS":  [
-                                                               "Si vous avez gagné de la ${modID}:Dette ce tour, les ennemis infligent #b",
-                                                               "% de dégâts en moins."
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "Réconcilier le Destin",
-                                            "DESCRIPTIONS":  [
-                                                                 "Chaque fois que vous générez ou Épuisez une *Misère, gagnez #b",
-                                                                 " points de Blocage."
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "Chair Meurtrie",
-                                           "DESCRIPTIONS":  [
-                                                                "Chaque fois que vous appliquez 6 ${modID}:Saignement à un ennemi, infligez #b",
-                                                                " PV de dégâts à TOUS les ennemis."
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "Épines de Sang",
-                                          "DESCRIPTIONS":  [
-                                                               "Chaque fois qu\u0027un ennemi vous attaque, appliquez-lui #b",
-                                                               " ${modID}:Saignement."
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "Voie de la Rédemption",
-                                             "DESCRIPTIONS":  [
-                                                                  "Chaque fois que vous retirez 1 ${modID}:Dette, piochez #b",
-                                                                  " cartes."
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "Indignation",
-                                          "DESCRIPTIONS":  [
-                                                               "Pendant les #b",
-                                                               " prochains tours, la première carte hors Attaque que vous jouez chaque tour coûte 0."
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "Soif de Combat",
-                                                  "DESCRIPTIONS":  [
-                                                                       "Au début de chaque tour, gagnez [E] . NL À la fin de chaque tour, subissez 3 dégâts."
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "Capitulation",
-                                      "DESCRIPTIONS":  [
-                                                           "Cet ennemi subit #b50% de dégâts supplémentaires."
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "Forme de Jugement",
-                                           "DESCRIPTIONS":  [
-                                                                "Vous infligez 50% de dégâts supplémentaires aux ennemis ayant moins de ",
-                                                                "% de leurs PV max."
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "Incarnation du Péché",
-                                        "DESCRIPTIONS":  [
-                                                             "À la fin de votre tour, gagnez #b",
-                                                             " points de Blocage, plus #b",
-                                                             " points de Blocage pour chaque point de ${modID}:Dette."
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "Bain de Sang",
-                                        "DESCRIPTIONS":  [
-                                                             "Les ",
-                                                             " première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige."
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "Trop Rigide",
-                                        "DESCRIPTIONS":  [
-                                                             "Chaque fois que vous jouez une carte d\u0027Attaque, elle perd définitivement ",
-                                                             " PV de dégâts pour le reste du combat."
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "Restriction",
-                                          "DESCRIPTIONS":  [
-                                                               "Vous ne pouvez pas gagner [E]. Retirée à la fin de votre tour."
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "Pouvoir Ultime",
+              "DESCRIPTIONS":  [
+                         "Vous êtes très cool et très fort."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Saignement",
+                "DESCRIPTIONS":  [
+                          "Au début de son tour, perd #b",
+                          " PV, puis retire tout le Saignement. Quand une créature qui saigne subit des dégâts d\u0027attaque non bloqués, elle gagne #b1 Saignement."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Péché",
+               "DESCRIPTIONS":  [
+                          "Chaque fois que vous avez #b5 Péché, gagnez ",
+                          " ${modID}:Dette."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Dette",
+                "DESCRIPTIONS":  [
+                          "Chaque point de Dette fait subir #b10% de dégâts supplémentaires. Subissez ",
+                          "% de dégâts supplémentaires. NL Quand l\u0027application d\u0027une Dette est bloquée par un Artefact, vous perdez ",
+                          " Péché pour chaque Dette bloquée."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Perte d\u0027Énergie",
+                      "DESCRIPTIONS":  [
+                                 "Perdez [E] au prochain tour"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Bonus d\u0027Énergie",
+                      "DESCRIPTIONS":  [
+                                 "Gagnez [E] au prochain tour"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Clémence",
+                "DESCRIPTIONS":  [
+                          "La Dette ne fait aucun dégât supplémentaire ce tour"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Blessure Profonde",
+                  "DESCRIPTIONS":  [
+                            "Le Saignement n\u0027est pas retiré au début de son tour."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Soulagement",
+                "DESCRIPTIONS":  [
+                           "À la fin de votre tour, Épuisez TOUTES les ",
+                           " dans votre main."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Parade",
+                "DESCRIPTIONS":  [
+                          "Chaque fois que vous êtes attaqué, reflétez les dégâts que vous avez bloqués vers l\u0027attaquant."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Saignement Implacable",
+                     "DESCRIPTIONS":  [
+                                "Au début de chaque tour, applique #b",
+                                " ${modID}:Saignement à TOUS les ennemis."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Chagrin",
+                "DESCRIPTIONS":  [
+                          "Ce tour, chaque fois que vous piochez une carte, applique #b",
+                          " ${modID}:Saignement à TOUS les ennemis."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Souvenir Terrible",
+                   "DESCRIPTIONS":  [
+                              "Si vous avez gagné de la ${modID}:Dette ce tour, les ennemis infligent #b",
+                              "% de dégâts en moins."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Réconcilier le Destin",
+                    "DESCRIPTIONS":  [
+                              "Chaque fois que vous générez ou Épuisez une *Misère, gagnez #b",
+                              " points de Blocage."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Chair Meurtrie",
+                    "DESCRIPTIONS":  [
+                              "Chaque fois que vous appliquez 6 ${modID}:Saignement à un ennemi, infligez #b",
+                              " PV de dégâts à TOUS les ennemis."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Épines de Sang",
+                   "DESCRIPTIONS":  [
+                              "Chaque fois qu\u0027un ennemi vous attaque, appliquez-lui #b",
+                              " ${modID}:Saignement."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Voie de la Rédemption",
+                    "DESCRIPTIONS":  [
+                               "Chaque fois que vous retirez 1 ${modID}:Dette, piochez #b",
+                               " cartes."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Indignation",
+                   "DESCRIPTIONS":  [
+                              "Pendant les #b",
+                              " prochains tours, la première carte que vous jouez chaque tour coûte 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Soif de Combat",
+                       "DESCRIPTIONS":  [
+                                  "Au début de chaque tour, gagnez [E] . NL À la fin de chaque tour, subissez 3 dégâts."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Capitulation",
+                 "DESCRIPTIONS":  [
+                            "Cet ennemi subit #b50% de dégâts supplémentaires."
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "Forme de Jugement",
+                    "DESCRIPTIONS":  [
+                              "Vous infligez 50% de dégâts supplémentaires aux ennemis ayant moins de ",
+                              "% de leurs PV max."
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Incarnation du Péché",
+                  "DESCRIPTIONS":  [
+                            "À la fin de votre tour, gagnez #b",
+                            " points de Blocage, plus #b",
+                            " points de Blocage pour chaque point de ${modID}:Dette."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Bain de Sang",
+                  "DESCRIPTIONS":  [
+                            "Les ",
+                            " première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige."
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Trop Rigide",
+                  "DESCRIPTIONS":  [
+                            "Chaque fois que vous jouez une carte d\u0027Attaque, elle perd définitivement ",
+                            " PV de dégâts pour le reste du combat."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Restriction",
+                   "DESCRIPTIONS":  [
+                              "Vous ne pouvez pas gagner [E]. Retirée à la fin de votre tour."
+                            ]
+                 }
 }

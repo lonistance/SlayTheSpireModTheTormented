@@ -19,10 +19,10 @@ public class HeavyPast extends BaseCard {
 
     private static final int COST = 1;
     private static final int DAMAGE = 6;
-    private static final int UPG_DAMAGE = 1; // 6 -> 7
+    private static final int UPG_DAMAGE = 2; // 6 -> 8
     private static final int HITS = 2;       // 造成 2 次伤害
     private static final int DRAW_BASE = 1;
-    private static final int DRAW_UPG = 1;   // 抽牌 1 -> 2
+    private static final int DRAW_UPG = 0;   // 升级不增加抽牌数（保持 1）
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,

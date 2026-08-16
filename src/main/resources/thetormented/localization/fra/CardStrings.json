@@ -1,441 +1,447 @@
 {
-    "${modID}:ExampleCard":  {
-                                     "NAME":  "Nom",
-                                     "DESCRIPTION":  "Description. NL Deuxième ligne.",
-                                     "UPGRADE_DESCRIPTION":  "Ce texte sera automatiquement utilisé si la carte est améliorée. Supprimez-le si inutile.",
-                                     "EXTENDED_DESCRIPTION":  [
-                                                                  "Vous pouvez ajouter plus de texte ici.",
-                                                                  "Si vous en avez besoin pour quelque chose.",
-                                                                  "Blizzard est un bon exemple pour cela."
-                                                              ]
-                                 },
-    "${modID}:StrikeTormented":  {
-                                         "NAME":  "Frappe",
-                                         "DESCRIPTION":  "Inflige !D! points de dégâts.",
-                                         "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts."
-                                     },
-    "${modID}:DefendTormented":  {
-                                         "NAME":  "Défense",
-                                         "DESCRIPTION":  "Gagne !B! points de Blocage.",
-                                         "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage."
-                                     },
-    "${modID}:Rebel":  {
-                               "NAME":  "Rebelle",
-                               "DESCRIPTION":  "Inflige !D! points de dégâts. NL Inflige un ${modID}:Saignement égal aux dégâts infligés.",
-                               "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Inflige un ${modID}:Saignement égal aux dégâts infligés.",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            "NL (Inflige !M! ${modID}:Saignement)"
-                                                        ]
-                           },
-    "${modID}:Forgive":  {
-                                 "NAME":  "Absolution",
-                                 "DESCRIPTION":  "Gagne !B! points de Blocage. NL Réduit de !M! votre ${modID}:Péché.",
-                                 "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Réduit de !M! votre ${modID}:Péché."
-                             },
-    "${modID}:Slash":  {
-                               "NAME":  "Entaille",
-                               "DESCRIPTION":  "Inflige !D! points de dégâts. NL Applique !M! ${modID}:Saignement.",
-                               "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Applique !M! ${modID}:Saignement."
-                           },
-    "${modID}:Rend":  {
-                              "NAME":  "Déchirure",
-                              "DESCRIPTION":  "Inflige !D! points de dégâts. NL Si l\u0027ennemi a un ${modID}:Saignement, inflige !M! coups supplémentaires.",
-                              "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Si l\u0027ennemi a un ${modID}:Saignement, inflige !M! coups supplémentaires."
-                          },
-    "${modID}:Pursuit":  {
-                                 "NAME":  "Poursuite",
-                                 "DESCRIPTION":  "Ne peut être jouée que si la dernière carte jouée ce tour était une Attaque. NL Inflige !D! points de dégâts.",
-                                 "UPGRADE_DESCRIPTION":  "Ne peut être jouée que si la dernière carte jouée ce tour était une Attaque. NL Inflige !D! points de dégâts.",
-                                 "EXTENDED_DESCRIPTION":  [
-                                                              "Vous devez d\u0027abord jouer une Attaque ce tour."
-                                                          ]
-                             },
-    "${modID}:ArmSevering":  {
-                                     "NAME":  "Amputation",
-                                     "DESCRIPTION":  "Inflige !D! points de dégâts. NL Ajoute !M! *Misère dans votre main.",
-                                     "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Ajoute !M! *Misère dans votre main."
-                                 },
-    "${modID}:QuenchedBlade":  {
-                                       "NAME":  "Lame Trempée",
-                                       "DESCRIPTION":  "Inflige !D! points de dégâts. NL Améliore !M! cartes de votre main pour le reste du combat.",
-                                       "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Améliore !M! cartes de votre main pour le reste du combat."
-                                   },
-    "${modID}:CruelTorture":  {
-                                      "NAME":  "Torture Cruelle",
-                                      "DESCRIPTION":  "Inflige !D! points de dégâts. Gagne !${modID}:SIN! ${modID}:Péché.",
-                                      "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. Gagne !${modID}:SIN! ${modID}:Péché."
-                                  },
-    "${modID}:AtonementStrike":  {
-                                         "NAME":  "Frappe Expiatrice",
-                                         "DESCRIPTION":  "Inflige !D! points de dégâts. Pioche !M! cartes si vous avez une ${modID}:Dette. NL Perdez ensuite 4 ${modID}:Péché.",
-                                         "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. Pioche !M! cartes si vous avez une ${modID}:Dette. NL Perdez ensuite 4 ${modID}:Péché."
-                                     },
-    "${modID}:UnrighteousGuilt":  {
-                                          "NAME":  "Culpabilité Injuste",
-                                          "DESCRIPTION":  "Inflige !D! points de dégâts à TOUS les ennemis. Gagne !${modID}:SIN! ${modID}:Péché.",
-                                          "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts à TOUS les ennemis. Gagne !${modID}:SIN! ${modID}:Péché."
-                                      },
-    "${modID}:RelentlessEntanglement":  {
-                                                "NAME":  "Enchevêtrement Implacable",
-                                                "DESCRIPTION":  "Inflige !D! points de dégâts. NL Ajoutez-la dans votre main si votre ${modID}:Dette augmente"
-                                            },
-    "${modID}:Agony":  {
-                               "NAME":  "Agonie",
-                               "DESCRIPTION":  "Inflige !D! points de dégâts. Applique !M! #yFaiblesse et !M! #yVulnérable.",
-                               "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. Applique !M! #yFaiblesse et !M! #yVulnérable."
-                           },
-    "${modID}:SacredLand":  {
-                                    "NAME":  "Terre Sacrée",
-                                    "DESCRIPTION":  "Gagne !B! points de Blocage. Pioche !M! cartes si vous n\u0027avez pas de ${modID}:Dette. NL Sinon, perdez 7 ${modID}:Péché.",
-                                    "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. Pioche !M! cartes si vous n\u0027avez pas de ${modID}:Dette. NL Sinon, perdez 7 ${modID}:Péché."
-                                },
-    "${modID}:Loan":  {
-                              "NAME":  "Prêt",
-                              "DESCRIPTION":  "Gagnez [E] [E] [E]. Au tour suivant, perdez [E]. NL Épuisée",
-                              "UPGRADE_DESCRIPTION":  "Gagnez [E] [E] [E]. NL Au tour suivant, perdez [E]. NL Épuisée NL Retenue"
-                          },
-    "${modID}:Firm":  {
-                              "NAME":  "Fermeté",
-                              "DESCRIPTION":  "Gagne !B! points de Blocage. NL Retenue",
-                              "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Retenue"
-                          },
-    "${modID}:Odyssey":  {
-                                 "NAME":  "Errance",
-                                 "DESCRIPTION":  "Pioche !M! carte. NL Épuisez 1 carte. NL Si vous épuisez une carte de Statut, réduisez de 3 votre ${modID}:Péché.",
-                                 "UPGRADE_DESCRIPTION":  "Pioche !M! cartes. NL Épuisez 1 carte. NL Si vous épuisez une carte de Statut, réduisez de 3 votre ${modID}:Péché."
-                             },
-    "${modID}:BloodGuard":  {
-                                    "NAME":  "Garde de Sang",
-                                    "DESCRIPTION":  "Gagne !B! points de Blocage. NL Donne à un ennemi !M! ${modID}:Saignement.",
-                                    "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Donne à un ennemi !M! ${modID}:Saignement."
-                                },
-    "${modID}:PleaOfInnocence":  {
-                                         "NAME":  "Plaidoyer d\u0027Innocence",
-                                         "DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque ${modID}:Dette procure !M! points de Blocage supplémentaires.",
-                                         "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque ${modID}:Dette procure !M! points de Blocage supplémentaires.",
-                                         "EXTENDED_DESCRIPTION":  [
-                                                                      " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
-                                                                  ]
-                                     },
-    "${modID}:PredictiveMeasures":  {
-                                            "NAME":  "Mesures Prédictives",
-                                            "DESCRIPTION":  "Pioche !M! carte. Si c\u0027est une Attaque, elle coûte 0 jusqu\u0027à ce qu\u0027elle soit jouée ce tour.",
-                                            "UPGRADE_DESCRIPTION":  "Pioche !M! carte. Si c\u0027est une Attaque, elle coûte 0 jusqu\u0027à ce qu\u0027elle soit jouée ce tour."
-                                        },
-    "${modID}:Hostility":  {
-                                   "NAME":  "Hostilité",
-                                   "DESCRIPTION":  "Si votre Blocage est inférieur à !${modID}:BLOCK_THRESHOLD!, applique !M! #yFaiblesse à tous les ennemis. NL Gagne !B! points de Blocage",
-                                   "UPGRADE_DESCRIPTION":  "Si votre Blocage est inférieur à !${modID}:BLOCK_THRESHOLD!, applique !M! #yFaiblesse à tous les ennemis. NL Gagne !B! points de Blocage"
-                               },
-    "${modID}:Shackles":  {
-                                  "NAME":  "Entraves",
-                                  "DESCRIPTION":  "Ajoute !${modID}:CARD_ADD! *Misère. NL Gagne !M! points de Blocage pour chaque carte de Statut dans votre main",
-                                  "UPGRADE_DESCRIPTION":  "Ajoute !${modID}:CARD_ADD! *Misère. NL Gagne !M! points de Blocage pour chaque carte de Statut dans votre main",
-                                  "EXTENDED_DESCRIPTION":  [
-                                                               " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
-                                                           ]
-                              },
-    "${modID}:DeterringStrike":  {
-                                         "NAME":  "Frappe Dissuasive",
-                                         "DESCRIPTION":  "Inflige !D! points de dégâts. NL L\u0027ennemi perd !M! #yForce ce tour s\u0027il a l\u0027intention d\u0027attaquer",
-                                         "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL L\u0027ennemi perd !M! #yForce ce tour s\u0027il a l\u0027intention d\u0027attaquer"
-                                     },
-    "${modID}:HeavySmash":  {
-                                    "NAME":  "Châtiment",
-                                    "DESCRIPTION":  "Ne peut être jouée que si vous avez !M! ${modID}:Dette. Inflige !D! points de dégâts",
-                                    "UPGRADE_DESCRIPTION":  "Ne peut être jouée que si vous avez !M! ${modID}:Dette. Inflige !D! points de dégâts",
-                                    "EXTENDED_DESCRIPTION":  [
-                                                                 "Ne peut être jouée que si vous avez 2 ${modID}:Dette"
-                                                             ]
-                                },
-    "${modID}:SinsToBlades":  {
-                                      "NAME":  "Péchés en Lames",
-                                      "DESCRIPTION":  "Inflige !D! points de dégâts. NL Pioche autant de cartes que votre ${modID}:Dette.",
-                                      "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Pioche autant de cartes que votre ${modID}:Dette, plus 1.",
-                                      "EXTENDED_DESCRIPTION":  [
-                                                                   " (Pioche !${modID}:TOTAL_DRAW! carte(s))"
-                                                               ]
-                                  },
-    "${modID}:ChaosDirty":  {
-                                    "NAME":  "Chaos Sale",
-                                    "DESCRIPTION":  "Gagne !${modID}:SIN! ${modID}:Péchés. NL Inflige !D! points de dégâts. Chaque ${modID}:Dette que vous avez inflige !M! points de dégâts supplémentaires",
-                                    "UPGRADE_DESCRIPTION":  "Gagne !${modID}:SIN! ${modID}:Péchés. NL Inflige !D! points de dégâts. Chaque ${modID}:Dette que vous avez inflige !M! points de dégâts supplémentaires",
-                                    "EXTENDED_DESCRIPTION":  [
-                                                                 " (Inflige !${modID}:TOTAL_DAMAGE! points de dégâts au total)"
-                                                             ]
-                                },
-    "${modID}:TemperedSword":  {
-                                       "NAME":  "Épée Durcie",
-                                       "DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque carte de Statut que vous épuisez inflige !M! points de dégâts supplémentaires",
-                                       "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque carte de Statut que vous épuisez inflige !M! points de dégâts supplémentaires",
-                                       "EXTENDED_DESCRIPTION":  [
-                                                                    " (Inflige !${modID}:TOTAL_DAMAGE! points de dégâts au total)"
-                                                                ]
-                                   },
-    "${modID}:Crush":  {
-                               "NAME":  "Écrasement",
-                               "DESCRIPTION":  "Inflige !D! points de dégâts. NL Gagne un Blocage égal au ${modID}:Saignement de l\u0027ennemi",
-                               "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Gagne un Blocage égal au ${modID}:Saignement de l\u0027ennemi",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
-                                                        ]
-                           },
-    "${modID}:Unleash":  {
-                                 "NAME":  "Accumulation",
-                                 "DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Au tour suivant, gagnez [E]",
-                                 "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Au tour suivant, gagnez [E][E]"
-                             },
-    "${modID}:HeavyPast":  {
-                                   "NAME":  "Passé Lourd",
-                                   "DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Ajoute 1 *Misère dans votre pioche et 1 dans votre défausse. NL Piochez !M! cartes.",
-                                   "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Ajoute 1 *Misère dans votre pioche et 1 dans votre défausse. NL Piochez !M! cartes."
-                               },
-    "${modID}:Implication":  {
-                                     "NAME":  "Implication",
-                                     "DESCRIPTION":  "Épuisez 1 carte de votre main. NL Infligez !D! points de dégâts à TOUS les ennemis. NL Piochez 1 carte pour chaque ennemi ayant un ${modID}:Saignement à qui vous infligez des dégâts.",
-                                     "UPGRADE_DESCRIPTION":  "Épuisez 1 carte de votre main. NL Infligez !D! points de dégâts à TOUS les ennemis. NL Piochez 1 carte pour chaque ennemi ayant un ${modID}:Saignement à qui vous infligez des dégâts."
-                                 },
-    "${modID}:ConsecutiveKicks":  {
-                                          "NAME":  "Coups Consécutifs",
-                                          "DESCRIPTION":  "Inflige !D! points de dégâts !M! fois",
-                                          "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts !M! fois"
-                                      },
-    "${modID}:MassiveBleeding":  {
-                                         "NAME":  "Hémorragie Massive",
-                                         "DESCRIPTION":  "Inflige !D! points de dégâts. NL Puis inflige des dégâts égaux au ${modID}:Saignement de l\u0027ennemi",
-                                         "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Puis inflige des dégâts égaux à deux fois le ${modID}:Saignement de l\u0027ennemi",
-                                         "EXTENDED_DESCRIPTION":  [
-                                                                      " (Inflige !${modID}:TOTAL_DAMAGE! points de dégâts au total)"
-                                                                  ]
-                                     },
-    "${modID}:FaceDanger":  {
-                                    "NAME":  "Braver le Danger",
-                                    "DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque *Misère jouée réduit de 1 énergie son coût pour ce combat",
-                                    "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque *Misère jouée réduit de 1 énergie son coût pour ce combat"
-                                },
-    "${modID}:Relief":  {
-                                "NAME":  "Soulagement",
-                                "DESCRIPTION":  "Ajoute 2 *Misère dans votre défausse. NL À la fin de votre tour, Épuisez toutes les *Misère de votre main.",
-                                "UPGRADE_DESCRIPTION":  "Innée NL Ajoute 2 *Misère dans votre défausse. NL À la fin de votre tour, Épuisez toutes les *Misère de votre main."
-                            },
-    "${modID}:Misery":  {
-                                "NAME":  "Misère",
-                                "DESCRIPTION":  "Subissez 2 PV de dégâts. NL Piochez 1 carte. NL Épuisée"
-                            },
-    "${modID}:Parry":  {
-                               "NAME":  "Parade",
-                               "DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque fois que vous êtes attaqué, reflétez les dégâts que vous avez bloqués vers l\u0027attaquant.",
-                               "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque fois que vous êtes attaqué, reflétez les dégâts que vous avez bloqués vers l\u0027attaquant."
-                           },
-    "${modID}:Pardon":  {
-                                "NAME":  "Pardon",
-                                "DESCRIPTION":  "Transformez TOUTES les cartes de votre main en cartes aléatoires. NL Après !M! utilisations, cette carte se transforme en une carte de Pouvoir aléatoire",
-                                "UPGRADE_DESCRIPTION":  "Transformez TOUTES les cartes de votre main en cartes aléatoires améliorées. NL Après !M! utilisations, cette carte se transforme en une carte de Pouvoir aléatoire améliorée"
-                            },
-    "${modID}:Memorial":  {
-                                  "NAME":  "Mémorial",
-                                  "DESCRIPTION":  "Piochez 1 carte. NL Si la carte piochée est une Compétence, perdez !M! ${modID}:Péché.",
-                                  "UPGRADE_DESCRIPTION":  "Piochez 1 carte. NL Si la carte piochée est une Compétence, perdez !M! ${modID}:Péché."
-                              },
-    "${modID}:Boiling":  {
-                                 "NAME":  "Ébullition",
-                                 "DESCRIPTION":  "Épuisez toutes les cartes hors Attaque de votre main. NL Applique !M! ${modID}:Saignement à un ennemi au hasard pour chaque carte Épuisée.",
-                                 "UPGRADE_DESCRIPTION":  "Épuisez toutes les cartes hors Attaque de votre main. NL Applique !M! ${modID}:Saignement à un ennemi au hasard pour chaque carte Épuisée."
-                             },
-    "${modID}:Grief":  {
-                               "NAME":  "Chagrin",
-                               "DESCRIPTION":  "Ajoute 1 carte de Statut aléatoire dans votre main. NL Ce tour, chaque fois que vous piochez une carte, applique !M! ${modID}:Saignement à TOUS les ennemis.",
-                               "UPGRADE_DESCRIPTION":  "Ajoute 1 carte de Statut aléatoire dans votre main. NL Ce tour, chaque fois que vous piochez une carte, applique !M! ${modID}:Saignement à TOUS les ennemis."
-                           },
-    "${modID}:BloodSea":  {
-                                  "NAME":  "Mer de Sang",
-                                  "DESCRIPTION":  "Applique !${modID}:BLEED! ${modID}:Saignement. NL Multiplie le ${modID}:Saignement de cet ennemi par !M!. NL Épuisée",
-                                  "UPGRADE_DESCRIPTION":  "Applique !${modID}:BLEED! ${modID}:Saignement. NL Multiplie le ${modID}:Saignement de cet ennemi par !M!. NL Épuisée"
-                              },
-    "${modID}:RelentlessBleed":  {
-                                         "NAME":  "Saignement Implacable",
-                                         "DESCRIPTION":  "Au début de chaque tour, applique !M! ${modID}:Saignement à TOUS les ennemis.",
-                                         "UPGRADE_DESCRIPTION":  "Au début de chaque tour, applique !M! ${modID}:Saignement à TOUS les ennemis."
-                                     },
-    "${modID}:DreadMemory":  {
-                                     "NAME":  "Souvenir Terrible",
-                                     "DESCRIPTION":  "Si vous avez gagné de la ${modID}:Dette ce tour, les ennemis infligent !M!% de dégâts en moins. NL Ne dure que le tour où vous avez gagné de la ${modID}:Dette.",
-                                     "UPGRADE_DESCRIPTION":  "Si vous avez gagné de la ${modID}:Dette ce tour, les ennemis infligent !M!% de dégâts en moins. NL Ne dure que le tour où vous avez gagné de la ${modID}:Dette."
-                                 },
-    "${modID}:Trial":  {
-                               "NAME":  "Épreuve",
-                               "DESCRIPTION":  "Gagne !M! #yForce et !M! #yDextérité. NL Gagne 1 #yFaiblesse.",
-                               "UPGRADE_DESCRIPTION":  "Gagne !M! #yForce et !M! #yDextérité. NL Gagne 1 #yFaiblesse."
-                           },
-    "${modID}:ReconcileFate":  {
-                                       "NAME":  "Réconcilier le Destin",
-                                       "DESCRIPTION":  "Chaque fois que vous générez ou Épuisez une *Misère, gagnez !M! points de Blocage.",
-                                       "UPGRADE_DESCRIPTION":  "Chaque fois que vous générez ou Épuisez une *Misère, gagnez !M! points de Blocage."
-                                   },
-    "${modID}:MangledFlesh":  {
-                                      "NAME":  "Chair Meurtrie",
-                                      "DESCRIPTION":  "Chaque fois que vous appliquez 6 ${modID}:Saignement à un ennemi, infligez !M! points de dégâts à TOUS les ennemis.",
-                                      "UPGRADE_DESCRIPTION":  "Chaque fois que vous appliquez 6 ${modID}:Saignement à un ennemi, infligez !M! points de dégâts à TOUS les ennemis."
-                                  },
-    "${modID}:BloodThorns":  {
-                                     "NAME":  "Épines de Sang",
-                                     "DESCRIPTION":  "Chaque fois qu\u0027un ennemi vous attaque, appliquez-lui !M! ${modID}:Saignement.",
-                                     "UPGRADE_DESCRIPTION":  "Chaque fois qu\u0027un ennemi vous attaque, appliquez-lui !M! ${modID}:Saignement."
-                                 },
-    "${modID}:RedemptionPath":  {
-                                        "NAME":  "Voie de la Rédemption",
-                                        "DESCRIPTION":  "Chaque fois que vous retirez 1 ${modID}:Dette, piochez !M! cartes.",
-                                        "UPGRADE_DESCRIPTION":  "Chaque fois que vous retirez 1 ${modID}:Dette, piochez !M! cartes."
-                                    },
-    "${modID}:Requiem":  {
-                                 "NAME":  "Requiem",
-                                 "DESCRIPTION":  "Chaque *Misère que vous avez Épuisée inflige !D! points de dégâts à un ennemi aléatoire",
-                                 "UPGRADE_DESCRIPTION":  "Chaque *Misère que vous avez Épuisée inflige !D! points de dégâts à un ennemi aléatoire",
-                                 "EXTENDED_DESCRIPTION":  [
-                                                              " (Inflige !${modID}:HITS! coups au total)"
-                                                          ]
-                             },
-    "${modID}:DesperateMeasure":  {
-                                          "NAME":  "Mesure Désespérée",
-                                          "DESCRIPTION":  "Inflige !D! points de dégâts. NL Si cela ne tue pas l\u0027ennemi, perdez !M! PV.",
-                                          "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Si cela ne tue pas l\u0027ennemi, perdez !M! PV."
-                                      },
-    "${modID}:UnceasingWar":  {
-                                      "NAME":  "Guerre Incessante",
-                                      "DESCRIPTION":  "Inflige !D! points de dégâts !${modID}:HITS! fois. NL Chaque fois que cela tue un ennemi, augmentez définitivement de 1 le nombre de coups de cette carte pour le reste de la partie. NL Épuisée",
-                                      "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts !${modID}:HITS! fois. NL Chaque fois que cela tue un ennemi, augmentez définitivement de 1 le nombre de coups de cette carte pour le reste de la partie. NL Épuisée"
-                                  },
-    "${modID}:FinalJudgment":  {
-                                       "NAME":  "Jugement Dernier",
-                                       "DESCRIPTION":  "Jouable uniquement si vous avez au moins 4 ${modID}:Dette. NL Inflige !D! points de dégâts à TOUS les ennemis. NL Retire tout votre ${modID}:Péché.",
-                                       "UPGRADE_DESCRIPTION":  "Jouable uniquement si vous avez au moins 4 ${modID}:Dette. NL Inflige !D! points de dégâts à TOUS les ennemis. NL Retire tout votre ${modID}:Péché.",
-                                       "EXTENDED_DESCRIPTION":  [
-                                                                    "Nécessite au moins 4 ${modID}:Dette pour être jouée."
-                                                                ]
-                                   },
-    "${modID}:Blazing":  {
-                                 "NAME":  "Embrasement",
-                                 "DESCRIPTION":  "Épuisez toutes les cartes de votre main. NL Pioche !M! cartes pour chaque carte de Statut Épuisée. NL Épuisée",
-                                 "UPGRADE_DESCRIPTION":  "Épuisez toutes les cartes de votre main. NL Pioche !M! cartes pour chaque carte de Statut Épuisée. NL Épuisée"
-                             },
-    "${modID}:RockSolid":  {
-                                   "NAME":  "Roc Solide",
-                                   "DESCRIPTION":  "Gagne !B! points de Blocage. NL Perdez 3 PV max.",
-                                   "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Perdez 3 PV max."
-                               },
-    "${modID}:Devotion":  {
-                                  "NAME":  "Dévotion",
-                                  "DESCRIPTION":  "Retire tout votre ${modID}:Dette, #yVulnérable, #yFaiblesse et #yFragile. NL Pour chaque point retiré, gagnez 1 Énergie et piochez !M! cartes. NL Épuisée",
-                                  "UPGRADE_DESCRIPTION":  "Retire tout votre ${modID}:Dette, #yVulnérable, #yFaiblesse et #yFragile. NL Pour chaque point retiré, gagnez 1 Énergie et piochez !M! cartes. NL Épuisée"
-                              },
-    "${modID}:Indignation":  {
-                                     "NAME":  "Indignation",
-                                     "DESCRIPTION":  "Pendant les X prochains tours, la première carte que vous jouez chaque tour coûte 0. NL Épuisée",
-                                     "UPGRADE_DESCRIPTION":  "Pendant les X+1 prochains tours, la première carte que vous jouez chaque tour coûte 0. NL Épuisée"
-                                 },
-    "${modID}:BloodFeud":  {
-                                   "NAME":  "Vendetta",
-                                   "DESCRIPTION":  "Ajoute 1 *Misère dans votre main. NL Déclenche immédiatement !M!% de tout le ${modID}:Saignement des ennemis.",
-                                   "UPGRADE_DESCRIPTION":  "Ajoute 1 *Misère dans votre main. NL Déclenche immédiatement !M!% de tout le ${modID}:Saignement des ennemis."
-                               },
-    "${modID}:VoidCall":  {
-                                  "NAME":  "Appel du Néant",
-                                  "DESCRIPTION":  "Choisissez 1 carte de votre pioche et ajoutez-la à votre main. Elle devient #yÉthérée. NL Épuisée",
-                                  "UPGRADE_DESCRIPTION":  "Choisissez 1 carte de votre pioche et ajoutez-la à votre main. Elle devient #yÉthérée."
-                              },
-    "${modID}:Spread":  {
-                                "NAME":  "Propagation",
-                                "DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Applique tous les malus de cet ennemi à tous les autres ennemis.",
-                                "UPGRADE_DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Applique tous les malus de cet ennemi à tous les autres ennemis."
-                            },
-    "${modID}:HungeringBattleWill":  {
-                                             "NAME":  "Soif de Combat",
-                                             "DESCRIPTION":  "Au début de chaque tour, gagnez [E] . NL À la fin de chaque tour, subissez 3 dégâts.",
-                                             "UPGRADE_DESCRIPTION":  "Au début de chaque tour, gagnez [E] . NL À la fin de chaque tour, subissez 3 dégâts."
-                                         },
-    "${modID}:ExecutionForm":  {
-                                       "NAME":  "Forme de Jugement",
-                                       "DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max.",
-                                       "UPGRADE_DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max."
-                                   },
-    "${modID}:SinAvatar":  {
-                                   "NAME":  "Incarnation du Péché",
-                                   "DESCRIPTION":  "À la fin de votre tour, gagnez !B! points de Blocage, plus !M! points de Blocage pour chaque point de ${modID}:Dette.",
-                                   "UPGRADE_DESCRIPTION":  "À la fin de votre tour, gagnez !B! points de Blocage, plus !M! points de Blocage pour chaque point de ${modID}:Dette.",
-                                   "EXTENDED_DESCRIPTION":  [
-                                                                " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
-                                                            ]
-                               },
-    "${modID}:Bloodbath":  {
-                                   "NAME":  "Bain de Sang",
-                                   "DESCRIPTION":  "Votre première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige.",
-                                   "UPGRADE_DESCRIPTION":  "Votre première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige."
-                               },
-    "${modID}:Overrigid":  {
-                                   "NAME":  "Trop Rigide",
-                                   "DESCRIPTION":  "Gagne 5 #yForce. NL Chaque fois que vous jouez une carte d\u0027Attaque, elle perd définitivement !M! points de dégâts pour le reste du combat.",
-                                   "UPGRADE_DESCRIPTION":  "Gagne 5 #yForce. NL Chaque fois que vous jouez une carte d\u0027Attaque, elle perd définitivement !M! points de dégâts pour le reste du combat."
-                               },
-    "${modID}:Entangled":  {
-                                   "NAME":  "Enchevêtré",
-                                   "DESCRIPTION":  "Chaque fois que vous piochez cette carte, ajoutez 1 copie dans votre main. NL Épuisée NL Quand cette carte est épuisée, ajoutez 1 Gelée à votre pioche."
-                               },
-    "${modID}:Riot":  {
-                              "NAME":  "Émeute",
-                              "DESCRIPTION":  "Inflige !D! points de dégâts X fois. NL Chaque ${modID}:Dette que vous avez fait infliger à cette carte !M! points de dégâts supplémentaires.",
-                              "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts X fois. NL Chaque ${modID}:Dette que vous avez fait infliger à cette carte !M! points de dégâts supplémentaires.",
-                              "EXTENDED_DESCRIPTION":  [
-                                                           " (Inflige !${modID}:TOTAL_DAMAGE! points de dégâts par coup)"
-                                                       ]
-                          },
-    "${modID}:Bloodstain":  {
-                                    "NAME":  "Tache de Sang",
-                                    "DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Recommencez une fois pour chaque ${modID}:Dette que vous avez. NL Épuisée.",
-                                    "UPGRADE_DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Recommencez une fois pour chaque ${modID}:Dette que vous avez."
-                                },
-    "${modID}:BrokenArmor":  {
-                                     "NAME":  "Armure Brisée",
-                                     "DESCRIPTION":  "Gagne !B! points de Blocage. NL Gagne 1 #yFragile.",
-                                     "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Gagne 1 #yFragile."
-                                 },
-    "${modID}:FormPact":  {
-                                  "NAME":  "Pacte Scellé",
-                                  "DESCRIPTION":  "Gagnez [E] [E]. NL Ajoute 1 *Misère à votre défausse",
-                                  "UPGRADE_DESCRIPTION":  "Gagnez [E] [E] [E]. NL Ajoute 1 *Misère à votre défausse"
-                              },
-    "${modID}:Fraud":  {
-                               "NAME":  "Fraude",
-                               "DESCRIPTION":  "Pioche !M! cartes. NL Gagne !M! ${modID}:Péché.",
-                               "UPGRADE_DESCRIPTION":  "Pioche !M! cartes. NL Gagne !M! ${modID}:Péché."
-                           },
-    "${modID}:Mercy":  {
-                               "NAME":  "Clémence",
-                               "DESCRIPTION":  "#yÉthérée. NL Épuise les *Misère de votre main à la fin de chaque tour. NL Gagne !M! ${modID}:Péché.",
-                               "UPGRADE_DESCRIPTION":  "#yÉthérée. NL Épuise les *Misère de votre main à la fin de chaque tour. NL Gagne !M! ${modID}:Péché."
-                           },
-    "${modID}:Prepare":  {
-                                 "NAME":  "Préparation",
-                                 "DESCRIPTION":  "Innée. NL Pioche !M! cartes. NL Conservez votre main ce tour. NL Épuisée.",
-                                 "UPGRADE_DESCRIPTION":  "Innée. NL Pioche !M! cartes. NL Conservez votre main ce tour. NL Épuisée."
-                             },
-    "${modID}:Relapse":  {
-                                 "NAME":  "Rechute",
-                                 "DESCRIPTION":  "Le ${modID}:Saignement d\u0027un ennemi n\u0027est pas retiré ce tour.",
-                                 "UPGRADE_DESCRIPTION":  "Le ${modID}:Saignement de TOUS les ennemis n\u0027est pas retiré ce tour."
-                             },
-    "${modID}:SharedSuffering":  {
-                                         "NAME":  "Souffrance Partagée",
-                                         "DESCRIPTION":  "Pour chaque ${modID}:Dette que vous avez, applique !M! #yFaiblesse et !M! #yVulnérable à TOUS les ennemis. NL Épuisée.",
-                                         "UPGRADE_DESCRIPTION":  "Pour chaque ${modID}:Dette que vous avez, applique !M! #yFaiblesse et !M! #yVulnérable à TOUS les ennemis. NL Épuisée."
-                                     },
-    "${modID}:Taboo":  {
-                               "NAME":  "Tabou",
-                               "DESCRIPTION":  "Gagne 1 Énergie pour chaque ${modID}:Dette que vous avez. NL Gagne 1 ${modID}:Restriction.",
-                               "UPGRADE_DESCRIPTION":  "Gagne 1 Énergie pour chaque ${modID}:Dette que vous avez, plus 1. NL Gagne 1 ${modID}:Restriction.",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            " (Impossible de gagner de l\u0027énergie)",
-                                                            " (Gagne !${modID}:TOTAL_ENERGY! Énergie)",
-                                                            " (Gagne !${modID}:TOTAL_ENERGY! Énergie !)"
-                                                        ]
-                           }
+  "${modID}:ExampleCard":  {
+                "NAME":  "Nom",
+                "DESCRIPTION":  "Description. NL Deuxième ligne.",
+                "UPGRADE_DESCRIPTION":  "Ce texte sera automatiquement utilisé si la carte est améliorée. Supprimez-le si inutile.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Vous pouvez ajouter plus de texte ici.",
+                               "Si vous en avez besoin pour quelque chose.",
+                               "Blizzard est un bon exemple pour cela."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Frappe",
+                  "DESCRIPTION":  "Inflige !D! points de dégâts.",
+                  "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Défense",
+                  "DESCRIPTION":  "Gagne !B! points de Blocage.",
+                  "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Rebelle",
+              "DESCRIPTION":  "Inflige !D! points de dégâts. NL Inflige un ${modID}:Saignement égal aux dégâts infligés.",
+              "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Inflige un ${modID}:Saignement égal aux dégâts infligés.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Inflige !M! ${modID}:Saignement)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Absolution",
+              "DESCRIPTION":  "Gagne !B! points de Blocage. NL Réduit de !M! votre ${modID}:Péché.",
+              "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Réduit de !M! votre ${modID}:Péché."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Entaille",
+              "DESCRIPTION":  "Inflige !D! points de dégâts. NL Applique !M! ${modID}:Saignement.",
+              "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Applique !M! ${modID}:Saignement."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Déchirure",
+             "DESCRIPTION":  "Inflige !D! points de dégâts. NL Si l\u0027ennemi a un ${modID}:Saignement, inflige !M! coups supplémentaires.",
+             "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Si l\u0027ennemi a un ${modID}:Saignement, inflige !M! coups supplémentaires."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Poursuite",
+              "DESCRIPTION":  "Ne peut être jouée que si la dernière carte jouée ce tour était une Attaque. NL Inflige !D! points de dégâts.",
+              "UPGRADE_DESCRIPTION":  "Ne peut être jouée que si la dernière carte jouée ce tour était une Attaque. NL Inflige !D! points de dégâts.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Vous devez d\u0027abord jouer une Attaque ce tour."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Amputation",
+                "DESCRIPTION":  "Inflige !D! points de dégâts. NL Ajoute !M! *Misère dans votre main.",
+                "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Ajoute !M! *Misère dans votre main."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Lame Trempée",
+                  "DESCRIPTION":  "Inflige !D! points de dégâts. NL Améliore !M! cartes de votre main pour le reste du combat.",
+                  "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Améliore !M! cartes de votre main pour le reste du combat."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Torture Cruelle",
+                 "DESCRIPTION":  "Inflige !D! points de dégâts. Gagne !${modID}:SIN! ${modID}:Péché.",
+                 "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. Gagne !${modID}:SIN! ${modID}:Péché."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Frappe Expiatrice",
+                  "DESCRIPTION":  "Inflige !D! points de dégâts. Pioche !M! cartes si vous avez une ${modID}:Dette. NL Perdez ensuite 4 ${modID}:Péché.",
+                  "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. Pioche !M! cartes si vous avez une ${modID}:Dette. NL Perdez ensuite 4 ${modID}:Péché."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Culpabilité Injuste",
+                   "DESCRIPTION":  "Inflige !D! points de dégâts à TOUS les ennemis. Gagne !${modID}:SIN! ${modID}:Péché.",
+                   "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts à TOUS les ennemis. Gagne !${modID}:SIN! ${modID}:Péché."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Enchevêtrement Implacable",
+                      "DESCRIPTION":  "Inflige !D! points de dégâts. NL Ajoutez-la dans votre main si votre ${modID}:Dette augmente"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Agonie",
+              "DESCRIPTION":  "Inflige !D! points de dégâts. Applique !M! #yFaiblesse et !M! #yVulnérable.",
+              "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. Applique !M! #yFaiblesse et !M! #yVulnérable."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Terre Sacrée",
+                "DESCRIPTION":  "Gagne !B! points de Blocage. NL Piochez !M! cartes, mais 1 carte de moins par ${modID}:Dette que vous avez.",
+                "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Piochez !M! cartes, mais 1 carte de moins par ${modID}:Dette que vous avez.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Piochez !M! cartes)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Prêt",
+             "DESCRIPTION":  "Gagnez [E] [E] [E]. Au tour suivant, perdez [E]. NL Épuisée",
+             "UPGRADE_DESCRIPTION":  "Gagnez [E] [E] [E]. NL Au tour suivant, perdez [E]. NL Épuisée NL Retenue"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Fermeté",
+             "DESCRIPTION":  "Gagne !B! points de Blocage. NL Retenue",
+             "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Retenue"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Errance",
+              "DESCRIPTION":  "Pioche !M! carte. NL Épuisez 1 carte. NL Si vous épuisez une carte de Statut, réduisez de 3 votre ${modID}:Péché.",
+              "UPGRADE_DESCRIPTION":  "Pioche !M! cartes. NL Épuisez 1 carte. NL Si vous épuisez une carte de Statut, réduisez de 3 votre ${modID}:Péché."
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Garde de Sang",
+                "DESCRIPTION":  "Gagne !B! points de Blocage. NL Donne à un ennemi !M! ${modID}:Saignement.",
+                "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Donne à un ennemi !M! ${modID}:Saignement."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Plaidoyer d\u0027Innocence",
+                  "DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque ${modID}:Dette procure !M! points de Blocage supplémentaires.",
+                  "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque ${modID}:Dette procure !M! points de Blocage supplémentaires.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Mesures Prédictives",
+                    "DESCRIPTION":  "Pioche !M! carte. Si c\u0027est une Attaque, elle coûte 0 jusqu\u0027à ce qu\u0027elle soit jouée ce tour.",
+                    "UPGRADE_DESCRIPTION":  "Pioche !M! carte. Si c\u0027est une Attaque, elle coûte 0 jusqu\u0027à ce qu\u0027elle soit jouée ce tour."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Hostilité",
+                "DESCRIPTION":  "Si votre Blocage est inférieur à !${modID}:BLOCK_THRESHOLD!, applique !M! #yFaiblesse à tous les ennemis. NL Gagne !B! points de Blocage",
+                "UPGRADE_DESCRIPTION":  "Si votre Blocage est inférieur à !${modID}:BLOCK_THRESHOLD!, applique !M! #yFaiblesse à tous les ennemis. NL Gagne !B! points de Blocage"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Entraves",
+               "DESCRIPTION":  "Ajoute 2 *Misère. NL Gagne !M! points de Blocage pour chaque carte de Statut dans votre main",
+               "UPGRADE_DESCRIPTION":  "Ajoute 2 *Misère. NL Gagne !M! points de Blocage pour chaque carte de Statut dans votre main",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Frappe Dissuasive",
+                  "DESCRIPTION":  "Inflige !D! points de dégâts. NL L\u0027ennemi perd !M! #yForce ce tour s\u0027il a l\u0027intention d\u0027attaquer",
+                  "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL L\u0027ennemi perd !M! #yForce ce tour s\u0027il a l\u0027intention d\u0027attaquer"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Châtiment",
+                "DESCRIPTION":  "Ne peut être jouée que si vous avez !M! ${modID}:Dette. Inflige !D! points de dégâts",
+                "UPGRADE_DESCRIPTION":  "Ne peut être jouée que si vous avez !M! ${modID}:Dette. Inflige !D! points de dégâts",
+                "EXTENDED_DESCRIPTION":  [
+                              "Ne peut être jouée que si vous avez 2 ${modID}:Dette"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Péchés en Lames",
+                 "DESCRIPTION":  "Inflige !D! points de dégâts. NL Pioche autant de cartes que votre ${modID}:Dette.",
+                 "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Pioche autant de cartes que votre ${modID}:Dette, plus 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Pioche !${modID}:TOTAL_DRAW! carte(s))"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Chaos Sale",
+                "DESCRIPTION":  "Gagne !${modID}:SIN! ${modID}:Péchés. NL Inflige !D! points de dégâts. Chaque ${modID}:Dette que vous avez inflige !M! points de dégâts supplémentaires",
+                "UPGRADE_DESCRIPTION":  "Gagne !${modID}:SIN! ${modID}:Péchés. NL Inflige !D! points de dégâts. Chaque ${modID}:Dette que vous avez inflige !M! points de dégâts supplémentaires",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Épée Durcie",
+                  "DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque carte de Statut que vous épuisez inflige !M! points de dégâts supplémentaires",
+                  "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque carte de Statut que vous épuisez inflige !M! points de dégâts supplémentaires",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Inflige !${modID}:TOTAL_DAMAGE! points de dégâts au total)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Écrasement",
+              "DESCRIPTION":  "Inflige !D! points de dégâts. NL Gagne un Blocage égal au ${modID}:Saignement de l\u0027ennemi",
+              "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Gagne un Blocage égal au ${modID}:Saignement de l\u0027ennemi",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Accumulation",
+              "DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Au tour suivant, gagnez [E]",
+              "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Au tour suivant, gagnez [E][E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Passé Lourd",
+                "DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Ajoute 1 *Misère dans votre pioche et 1 dans votre défausse. NL Piochez !M! cartes.",
+                "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts 2 fois. NL Ajoute 1 *Misère dans votre pioche et 1 dans votre défausse. NL Piochez !M! cartes."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Implication",
+                "DESCRIPTION":  "Épuisez 1 carte de votre main. NL Infligez !D! points de dégâts à TOUS les ennemis. NL Piochez 1 carte pour chaque ennemi ayant un ${modID}:Saignement à qui vous infligez des dégâts.",
+                "UPGRADE_DESCRIPTION":  "Épuisez 1 carte de votre main. NL Infligez !D! points de dégâts à TOUS les ennemis. NL Piochez 1 carte pour chaque ennemi ayant un ${modID}:Saignement à qui vous infligez des dégâts."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Coups Consécutifs",
+                   "DESCRIPTION":  "Inflige !D! points de dégâts !M! fois",
+                   "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts !M! fois"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Hémorragie Massive",
+                  "DESCRIPTION":  "Inflige !D! points de dégâts. NL Puis inflige des dégâts égaux au ${modID}:Saignement de l\u0027ennemi",
+                  "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Puis inflige des dégâts égaux à deux fois le ${modID}:Saignement de l\u0027ennemi",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Inflige !${modID}:TOTAL_DAMAGE! points de dégâts au total)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Braver le Danger",
+                "DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque *Misère jouée réduit de 1 énergie son coût pour ce combat",
+                "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Chaque *Misère jouée réduit de 1 énergie son coût pour ce combat"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Soulagement",
+              "DESCRIPTION":  "Ajoute 2 *Misère dans votre défausse. NL À la fin de votre tour, Épuisez toutes les *Misère de votre main.",
+              "UPGRADE_DESCRIPTION":  "Innée NL Ajoute 2 *Misère dans votre défausse. NL À la fin de votre tour, Épuisez toutes les *Misère de votre main."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Misère",
+              "DESCRIPTION":  "Subissez 2 PV de dégâts. NL Piochez 1 carte. NL Épuisée"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Parade",
+              "DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque fois que vous êtes attaqué, reflétez les dégâts que vous avez bloqués vers l\u0027attaquant.",
+              "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque fois que vous êtes attaqué, reflétez les dégâts que vous avez bloqués vers l\u0027attaquant."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Pardon",
+              "DESCRIPTION":  "Transformez TOUTES les cartes de votre main en cartes aléatoires. NL Après !M! utilisations, cette carte se transforme en une carte de Pouvoir aléatoire",
+              "UPGRADE_DESCRIPTION":  "Transformez TOUTES les cartes de votre main en cartes aléatoires améliorées. NL Après !M! utilisations, cette carte se transforme en une carte de Pouvoir aléatoire améliorée",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Jouée !${modID}:PLAYS! fois)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Mémorial",
+               "DESCRIPTION":  "Piochez 1 carte. NL Si la carte piochée est une Compétence, perdez !M! ${modID}:Péché.",
+               "UPGRADE_DESCRIPTION":  "Piochez 1 carte. NL Si la carte piochée est une Compétence, perdez !M! ${modID}:Péché."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Ébullition",
+              "DESCRIPTION":  "Épuisez toutes les cartes hors Attaque de votre main. NL Applique !M! ${modID}:Saignement à un ennemi au hasard pour chaque carte Épuisée.",
+              "UPGRADE_DESCRIPTION":  "Épuisez toutes les cartes hors Attaque de votre main. NL Applique !M! ${modID}:Saignement à un ennemi au hasard pour chaque carte Épuisée."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Chagrin",
+              "DESCRIPTION":  "Ajoute 1 carte de Statut aléatoire dans votre main. NL Ce tour, chaque fois que vous piochez une carte, applique !M! ${modID}:Saignement à TOUS les ennemis.",
+              "UPGRADE_DESCRIPTION":  "Ajoute 1 carte de Statut aléatoire dans votre main. NL Ce tour, chaque fois que vous piochez une carte, applique !M! ${modID}:Saignement à TOUS les ennemis."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Mer de Sang",
+               "DESCRIPTION":  "Applique !${modID}:BLEED! ${modID}:Saignement. NL Multiplie le ${modID}:Saignement de cet ennemi par !M!. NL Épuisée",
+               "UPGRADE_DESCRIPTION":  "Applique !${modID}:BLEED! ${modID}:Saignement. NL Multiplie le ${modID}:Saignement de cet ennemi par !M!. NL Épuisée"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Saignement Implacable",
+                  "DESCRIPTION":  "Au début de chaque tour, applique !M! ${modID}:Saignement à TOUS les ennemis.",
+                  "UPGRADE_DESCRIPTION":  "Au début de chaque tour, applique !M! ${modID}:Saignement à TOUS les ennemis."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Souvenir Terrible",
+                "DESCRIPTION":  "Si vous avez gagné de la ${modID}:Dette ce tour, les ennemis infligent !M!% de dégâts en moins. NL Ne dure que le tour où vous avez gagné de la ${modID}:Dette.",
+                "UPGRADE_DESCRIPTION":  "Si vous avez gagné de la ${modID}:Dette ce tour, les ennemis infligent !M!% de dégâts en moins. NL Ne dure que le tour où vous avez gagné de la ${modID}:Dette."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Épreuve",
+              "DESCRIPTION":  "Gagne !M! #yForce et !M! #yDextérité. NL Gagne 1 #yFaiblesse.",
+              "UPGRADE_DESCRIPTION":  "Gagne !M! #yForce et !M! #yDextérité. NL Gagne 1 #yFaiblesse."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Réconcilier le Destin",
+                  "DESCRIPTION":  "Chaque fois que vous générez ou Épuisez une *Misère, gagnez !M! points de Blocage.",
+                  "UPGRADE_DESCRIPTION":  "Chaque fois que vous générez ou Épuisez une *Misère, gagnez !M! points de Blocage."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Chair Meurtrie",
+                 "DESCRIPTION":  "Chaque fois que vous appliquez 6 ${modID}:Saignement à un ennemi, infligez !M! points de dégâts à TOUS les ennemis.",
+                 "UPGRADE_DESCRIPTION":  "Chaque fois que vous appliquez 6 ${modID}:Saignement à un ennemi, infligez !M! points de dégâts à TOUS les ennemis."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Épines de Sang",
+                "DESCRIPTION":  "Chaque fois qu\u0027un ennemi vous attaque, appliquez-lui !M! ${modID}:Saignement.",
+                "UPGRADE_DESCRIPTION":  "Chaque fois qu\u0027un ennemi vous attaque, appliquez-lui !M! ${modID}:Saignement."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Voie de la Rédemption",
+                  "DESCRIPTION":  "Chaque fois que vous retirez 1 ${modID}:Dette, piochez !M! cartes.",
+                  "UPGRADE_DESCRIPTION":  "Chaque fois que vous retirez 1 ${modID}:Dette, piochez !M! cartes."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Requiem",
+              "DESCRIPTION":  "Chaque *Misère que vous avez Épuisée inflige !D! points de dégâts à un ennemi aléatoire",
+              "UPGRADE_DESCRIPTION":  "Chaque *Misère que vous avez Épuisée inflige !D! points de dégâts à un ennemi aléatoire",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Inflige !${modID}:HITS! coups au total)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Mesure Désespérée",
+                   "DESCRIPTION":  "Inflige !D! points de dégâts. NL Si cela ne tue pas l\u0027ennemi, perdez !M! PV.",
+                   "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts. NL Si cela ne tue pas l\u0027ennemi, perdez !M! PV."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Guerre Incessante",
+                 "DESCRIPTION":  "Inflige !D! points de dégâts !${modID}:HITS! fois. NL Chaque fois que cela tue un ennemi, augmentez définitivement de 1 le nombre de coups de cette carte pour le reste de la partie. NL Épuisée",
+                 "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts !${modID}:HITS! fois. NL Chaque fois que cela tue un ennemi, augmentez définitivement de 1 le nombre de coups de cette carte pour le reste de la partie. NL Épuisée"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Jugement Dernier",
+                  "DESCRIPTION":  "Jouable uniquement si vous avez au moins 4 ${modID}:Dette. NL Inflige !D! points de dégâts à TOUS les ennemis. NL Retire tout votre ${modID}:Péché.",
+                  "UPGRADE_DESCRIPTION":  "Jouable uniquement si vous avez au moins 4 ${modID}:Dette. NL Inflige !D! points de dégâts à TOUS les ennemis. NL Retire tout votre ${modID}:Péché.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Nécessite au moins 4 ${modID}:Dette pour être jouée."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Embrasement",
+              "DESCRIPTION":  "Épuisez toutes les cartes de votre main. NL Pioche !M! cartes pour chaque carte de Statut Épuisée. NL Épuisée",
+              "UPGRADE_DESCRIPTION":  "Épuisez toutes les cartes de votre main. NL Pioche !M! cartes pour chaque carte de Statut Épuisée. NL Épuisée"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Roc Solide",
+                "DESCRIPTION":  "Gagne !B! points de Blocage. NL Perdez 3 PV max.",
+                "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Perdez 3 PV max."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Dévotion",
+               "DESCRIPTION":  "Retire tout votre ${modID}:Dette, #yVulnérable, #yFaiblesse et #yFragile. NL Pour chaque point retiré, gagnez 1 Énergie et piochez !M! cartes. NL Épuisée",
+               "UPGRADE_DESCRIPTION":  "Retire tout votre ${modID}:Dette, #yVulnérable, #yFaiblesse et #yFragile. NL Pour chaque point retiré, gagnez 1 Énergie et piochez !M! cartes. NL Épuisée"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Indignation",
+                "DESCRIPTION":  "Pendant les X prochains tours, la première carte que vous jouez chaque tour coûte 0. NL Épuisée",
+                "UPGRADE_DESCRIPTION":  "Pendant les X+1 prochains tours, la première carte que vous jouez chaque tour coûte 0. NL Épuisée"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Vendetta",
+                "DESCRIPTION":  "Ajoute 1 *Misère dans votre main. NL Déclenche immédiatement !M!% de tout le ${modID}:Saignement des ennemis.",
+                "UPGRADE_DESCRIPTION":  "Ajoute 1 *Misère dans votre main. NL Déclenche immédiatement !M!% de tout le ${modID}:Saignement des ennemis."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Appel du Néant",
+               "DESCRIPTION":  "Choisissez 1 carte de votre pioche et ajoutez-la à votre main. Elle devient #yÉthérée. NL Épuisée",
+               "UPGRADE_DESCRIPTION":  "Choisissez 1 carte de votre pioche et ajoutez-la à votre main. Elle devient #yÉthérée."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Propagation",
+              "DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Applique tous les malus de cet ennemi à tous les autres ennemis.",
+              "UPGRADE_DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Applique tous les malus de cet ennemi à tous les autres ennemis."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Soif de Combat",
+                    "DESCRIPTION":  "Au début de chaque tour, gagnez [E] . NL À la fin de chaque tour, subissez 3 dégâts.",
+                    "UPGRADE_DESCRIPTION":  "Au début de chaque tour, gagnez [E] . NL À la fin de chaque tour, subissez 3 dégâts."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Forme de Jugement",
+                  "DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max.",
+                  "UPGRADE_DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Incarnation du Péché",
+                "DESCRIPTION":  "À la fin de votre tour, gagnez !B! points de Blocage, plus !M! points de Blocage pour chaque point de ${modID}:Dette.",
+                "UPGRADE_DESCRIPTION":  "À la fin de votre tour, gagnez !B! points de Blocage, plus !M! points de Blocage pour chaque point de ${modID}:Dette.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Gagne !${modID}:TOTAL_BLOCK! points de Blocage au total)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Bain de Sang",
+                "DESCRIPTION":  "Votre première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige.",
+                "UPGRADE_DESCRIPTION":  "Votre première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Trop Rigide",
+                "DESCRIPTION":  "Gagne 5 #yForce. NL Chaque fois que vous jouez une carte d\u0027Attaque, elle perd définitivement !M! points de dégâts pour le reste du combat.",
+                "UPGRADE_DESCRIPTION":  "Gagne 5 #yForce. NL Chaque fois que vous jouez une carte d\u0027Attaque, elle perd définitivement !M! points de dégâts pour le reste du combat."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Enchevêtré",
+                "DESCRIPTION":  "Chaque fois que vous piochez cette carte, ajoutez 1 copie dans votre main. NL Épuisée NL Quand cette carte est épuisée, ajoutez 1 Gelée à votre pioche."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Émeute",
+             "DESCRIPTION":  "Inflige !D! points de dégâts X fois. NL Chaque ${modID}:Dette que vous avez fait infliger à cette carte !M! points de dégâts supplémentaires.",
+             "UPGRADE_DESCRIPTION":  "Inflige !D! points de dégâts X fois. NL Chaque ${modID}:Dette que vous avez fait infliger à cette carte !M! points de dégâts supplémentaires.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Inflige !${modID}:TOTAL_DAMAGE! points de dégâts par coup)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Tache de Sang",
+                "DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Recommencez une fois pour chaque ${modID}:Dette que vous avez. NL Épuisée.",
+                "UPGRADE_DESCRIPTION":  "Applique !M! ${modID}:Saignement. NL Recommencez une fois pour chaque ${modID}:Dette que vous avez."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Armure Brisée",
+                "DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque fois que vous jouez cette carte, gagnez 2 points de Blocage de moins（dans ce combat）.",
+                "UPGRADE_DESCRIPTION":  "Gagne !B! points de Blocage. NL Chaque fois que vous jouez cette carte, gagnez 2 points de Blocage de moins（dans ce combat）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Pacte Scellé",
+               "DESCRIPTION":  "Gagnez [E] [E]. NL Ajoute 1 *Misère à votre défausse",
+               "UPGRADE_DESCRIPTION":  "Gagnez [E] [E] [E]. NL Ajoute 1 *Misère à votre défausse"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Fraude",
+              "DESCRIPTION":  "Pioche !M! cartes. NL Gagne !M! ${modID}:Péché.",
+              "UPGRADE_DESCRIPTION":  "Pioche !M! cartes. NL Gagne !M! ${modID}:Péché."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Clémence",
+              "DESCRIPTION":  "#yÉthérée. NL Épuise les *Misère de votre main à la fin de chaque tour. NL Gagne !M! ${modID}:Péché.",
+              "UPGRADE_DESCRIPTION":  "#yÉthérée. NL Épuise les *Misère de votre main à la fin de chaque tour. NL Gagne !M! ${modID}:Péché."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Préparation",
+              "DESCRIPTION":  "Innée. NL Pioche !M! cartes. NL Conservez votre main ce tour. NL Épuisée.",
+              "UPGRADE_DESCRIPTION":  "Innée. NL Pioche !M! cartes. NL Conservez votre main ce tour. NL Épuisée."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Rechute",
+              "DESCRIPTION":  "Appliquez 3 ${modID}:Saignement. NL Le ${modID}:Saignement d\u0027un ennemi n\u0027est pas retiré pendant un tour.",
+              "UPGRADE_DESCRIPTION":  "Appliquez 3 ${modID}:Saignement. NL Le ${modID}:Saignement de TOUS les ennemis n\u0027est pas retiré pendant un tour."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Souffrance Partagée",
+                  "DESCRIPTION":  "Pour chaque ${modID}:Dette que vous avez, applique !M! #yFaiblesse et !M! #yVulnérable à TOUS les ennemis. NL Épuisée.",
+                  "UPGRADE_DESCRIPTION":  "Pour chaque ${modID}:Dette que vous avez, applique !M! #yFaiblesse et !M! #yVulnérable à TOUS les ennemis. NL Épuisée."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Tabou",
+              "DESCRIPTION":  "Gagne 1 Énergie pour chaque ${modID}:Dette que vous avez. NL Gagne 1 ${modID}:Restriction.",
+              "UPGRADE_DESCRIPTION":  "Gagne 1 Énergie pour chaque ${modID}:Dette que vous avez, plus 1. NL Gagne 1 ${modID}:Restriction.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Impossible de gagner de l\u0027énergie)",
+                            " (Gagne !${modID}:TOTAL_ENERGY! Énergie)",
+                            " (Gagne !${modID}:TOTAL_ENERGY! Énergie !)"
+                          ]
+            }
 }

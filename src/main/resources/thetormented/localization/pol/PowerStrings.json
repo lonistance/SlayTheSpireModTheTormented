@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "Najwyższa moc",
-                                 "DESCRIPTIONS":  [
-                                                      "Jesteś bardzo Fajny i Silny."
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "Krwawienie",
-                                    "DESCRIPTIONS":  [
-                                                         "Na początku swojej tury tracisz #b",
-                                                         " PZ, po czym całe Krwawienie zostaje usunięte. Gdy krwawiąca istota otrzymuje niezablokowane obrażenia od ataku, uzyskuje #b1 Krwawienia."
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "Grzech",
-                                  "DESCRIPTIONS":  [
-                                                       "Gdy masz #b5 Grzechu, uzyskujesz ",
-                                                       " Długu."
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "Dług",
-                                   "DESCRIPTIONS":  [
-                                                        "Każdy Dług sprawia, że otrzymujesz #b10% więcej obrażeń. Otrzymujesz ",
-                                                        "% więcej obrażeń. NL Gdy aplikacja Długu zostanie zablokowana przez Hart, tracisz ",
-                                                        " Grzechu za każdy zablokowany Dług."
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "Utrata energii",
-                                                 "DESCRIPTIONS":  [
-                                                                      "W następnej turze tracisz [E]"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "Zysk energii",
-                                                 "DESCRIPTIONS":  [
-                                                                      "W następnej turze uzyskujesz [E]"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "Miłosierdzie",
-                                    "DESCRIPTIONS":  [
-                                                         "Dług nie zadaje w tej turze dodatkowych obrażeń"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "Głęboka rana",
-                                        "DESCRIPTIONS":  [
-                                                             "Krwawienie nie jest usuwane na początku swojej tury."
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "Ulga",
-                                     "DESCRIPTIONS":  [
-                                                          "Na koniec twojej tury wyczerp WSZYSTKIE ",
-                                                          " w twojej ręce."
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "Parada",
-                                    "DESCRIPTIONS":  [
-                                                         "Za każdym razem, gdy jesteś atakowany, odbij zablokowane obrażenia z powrotem na atakującego."
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "Nieustanne krwawienie",
-                                              "DESCRIPTIONS":  [
-                                                                   "Na początku każdej tury nałóż #b",
-                                                                   " Krwawienia WSZYSTKIM wrogom."
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "Żałoba",
-                                    "DESCRIPTIONS":  [
-                                                         "W tej turze, za każdym razem, gdy dobierzesz kartę, nałóż #b",
-                                                         " Krwawienia WSZYSTKIM wrogom."
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "Straszne wspomnienie",
-                                          "DESCRIPTIONS":  [
-                                                               "Jeśli w tej turze uzyskałeś Dług, wrogowie zadają #b",
-                                                               "% mniej obrażeń."
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "Pojednanie z losem",
-                                            "DESCRIPTIONS":  [
-                                                                 "Za każdym razem, gdy stworzysz lub wyczerpiesz *Nędza, uzyskaj #b",
-                                                                 " Bloku."
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "Okaleczone ciało",
-                                           "DESCRIPTIONS":  [
-                                                                "Za każdym razem, gdy nałożysz wrogowi 6 Krwawienia, zadaj wszystkim wrogom #b",
-                                                                " obrażeń."
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "Krwawe ciernie",
-                                          "DESCRIPTIONS":  [
-                                                               "Za każdym razem, gdy wróg cię atakuje, nałóż mu #b",
-                                                               " Krwawienia."
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "Ścieżka odkupienia",
-                                             "DESCRIPTIONS":  [
-                                                                  "Za każdym razem, gdy usuniesz 1 Dług, dobierz #b",
-                                                                  " karty."
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "Oburzenie",
-                                          "DESCRIPTIONS":  [
-                                                               "Przez następne #b",
-                                                               " tur pierwsza zagrana w każdej turze karta niebędąca Atakiem kosztuje 0."
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "Głodna wola walki",
-                                                  "DESCRIPTIONS":  [
-                                                                       "Na początku każdej tury uzyskaj [E]. NL Na końcu każdej tury otrzymujesz 3 obrażeń."
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "Ustępstwo",
-                                      "DESCRIPTIONS":  [
-                                                           "Ten wróg otrzymuje #b50% więcej obrażeń."
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "Forma wyroku",
-                                           "DESCRIPTIONS":  [
-                                                                "Zadajesz 50% więcej obrażeń wrogom poniżej ",
-                                                                "% ich maks. PZ."
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "Wcielenie grzechu",
-                                        "DESCRIPTIONS":  [
-                                                             "Na koniec twojej tury uzyskaj #b",
-                                                             " Bloku, plus #b",
-                                                             " Bloku za każdą warstwę Długu."
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "Krwawa łaźnia",
-                                        "DESCRIPTIONS":  [
-                                                             "Pierwsze ",
-                                                             " zagrana w każdej turze karta ataku nakłada Krwawienie równe niezablokowanym obrażeniom, która zadaje."
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "Przesztywniały",
-                                        "DESCRIPTIONS":  [
-                                                             "Za każdym razem, gdy zagrasz kartę ataku, trwale traci ona ",
-                                                             " obrażeń do końca walki."
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "Ograniczenie",
-                                          "DESCRIPTIONS":  [
-                                                               "Nie możesz uzyskać [E]. Usuwane na koniec twojej tury."
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "Najwyższa moc",
+              "DESCRIPTIONS":  [
+                         "Jesteś bardzo Fajny i Silny."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Krwawienie",
+                "DESCRIPTIONS":  [
+                          "Na początku swojej tury tracisz #b",
+                          " PZ, po czym całe Krwawienie zostaje usunięte. Gdy krwawiąca istota otrzymuje niezablokowane obrażenia od ataku, uzyskuje #b1 Krwawienia."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Grzech",
+               "DESCRIPTIONS":  [
+                          "Gdy masz #b5 Grzechu, uzyskujesz ",
+                          " Długu."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Dług",
+                "DESCRIPTIONS":  [
+                          "Każdy Dług sprawia, że otrzymujesz #b10% więcej obrażeń. Otrzymujesz ",
+                          "% więcej obrażeń. NL Gdy aplikacja Długu zostanie zablokowana przez Hart, tracisz ",
+                          " Grzechu za każdy zablokowany Dług."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Utrata energii",
+                      "DESCRIPTIONS":  [
+                                 "W następnej turze tracisz [E]"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Zysk energii",
+                      "DESCRIPTIONS":  [
+                                 "W następnej turze uzyskujesz [E]"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Miłosierdzie",
+                "DESCRIPTIONS":  [
+                          "Dług nie zadaje w tej turze dodatkowych obrażeń"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Głęboka rana",
+                  "DESCRIPTIONS":  [
+                            "Krwawienie nie jest usuwane na początku swojej tury."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Ulga",
+                "DESCRIPTIONS":  [
+                           "Na koniec twojej tury wyczerp WSZYSTKIE ",
+                           " w twojej ręce."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Parada",
+                "DESCRIPTIONS":  [
+                          "Za każdym razem, gdy jesteś atakowany, odbij zablokowane obrażenia z powrotem na atakującego."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Nieustanne krwawienie",
+                     "DESCRIPTIONS":  [
+                                "Na początku każdej tury nałóż #b",
+                                " Krwawienia WSZYSTKIM wrogom."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Żałoba",
+                "DESCRIPTIONS":  [
+                          "W tej turze, za każdym razem, gdy dobierzesz kartę, nałóż #b",
+                          " Krwawienia WSZYSTKIM wrogom."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Straszne wspomnienie",
+                   "DESCRIPTIONS":  [
+                              "Jeśli w tej turze uzyskałeś Dług, wrogowie zadają #b",
+                              "% mniej obrażeń."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Pojednanie z losem",
+                    "DESCRIPTIONS":  [
+                              "Za każdym razem, gdy stworzysz lub wyczerpiesz *Nędza, uzyskaj #b",
+                              " Bloku."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Okaleczone ciało",
+                    "DESCRIPTIONS":  [
+                              "Za każdym razem, gdy nałożysz wrogowi 6 Krwawienia, zadaj wszystkim wrogom #b",
+                              " obrażeń."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Krwawe ciernie",
+                   "DESCRIPTIONS":  [
+                              "Za każdym razem, gdy wróg cię atakuje, nałóż mu #b",
+                              " Krwawienia."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Ścieżka odkupienia",
+                    "DESCRIPTIONS":  [
+                               "Za każdym razem, gdy usuniesz 1 Dług, dobierz #b",
+                               " karty."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Oburzenie",
+                   "DESCRIPTIONS":  [
+                              "Przez następne #b",
+                              " tur pierwsza zagrana w każdej turze karta kosztuje 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Głodna wola walki",
+                       "DESCRIPTIONS":  [
+                                  "Na początku każdej tury uzyskaj [E]. NL Na końcu każdej tury otrzymujesz 3 obrażeń."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Ustępstwo",
+                 "DESCRIPTIONS":  [
+                            "Ten wróg otrzymuje #b50% więcej obrażeń."
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "Forma wyroku",
+                    "DESCRIPTIONS":  [
+                              "Zadajesz 50% więcej obrażeń wrogom poniżej ",
+                              "% ich maks. PZ."
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Wcielenie grzechu",
+                  "DESCRIPTIONS":  [
+                            "Na koniec twojej tury uzyskaj #b",
+                            " Bloku, plus #b",
+                            " Bloku za każdą warstwę Długu."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Krwawa łaźnia",
+                  "DESCRIPTIONS":  [
+                            "Pierwsze ",
+                            " zagrana w każdej turze karta ataku nakłada Krwawienie równe niezablokowanym obrażeniom, która zadaje."
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Przesztywniały",
+                  "DESCRIPTIONS":  [
+                            "Za każdym razem, gdy zagrasz kartę ataku, trwale traci ona ",
+                            " obrażeń do końca walki."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Ograniczenie",
+                   "DESCRIPTIONS":  [
+                              "Nie możesz uzyskać [E]. Usuwane na koniec twojej tury."
+                            ]
+                 }
 }

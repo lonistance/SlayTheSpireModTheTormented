@@ -42,14 +42,16 @@
 | `!${modID}:大写词!` | 动态变量 token（运行时数值） | **一律原样保留，不翻译**（白名单见 §4） |
 | `*卡名` | 引用某张卡（如 `*Misery`） | 替换为 `*<该卡在 CardStrings 中的译名>`，必须与该卡 NAME 完全一致；**始终用 NAME 原形**，即使正文语法上更自然的是变形（dut/fin/epo 均如此，保证 tooltip 命中；epo 曾误用宾格 `*Mizerojn`，已修正） |
 
+**关键词空格规则（强制）**：`DESCRIPTION` / `UPGRADE_DESCRIPTION` / `EXTENDED_DESCRIPTION` 中**所有被注册的关键词 token（`${modID}:X`）必须紧跟一个空格**（紧接其后是空格或行尾），禁止与标点（`。`/`，`/`.`/`NL` 等）或下一词直接连写。理由：tooltip 按精确词形命中，前后粘连会破坏可读性与各语言一致性（jpn 先行规则见 §7）。示例：`... ${modID}:Bleed won't ...`（空格）✓；`...${modID}:流血。`✗（无空格）。
+
 ## 4. 动态变量 token 白名单（禁止翻译）
 
 ```
-SIN  BLEED  BLOCK_THRESHOLD  TOTAL_BLOCK  CARD_ADD  TOTAL_DAMAGE  TOTAL_DRAW  HITS  TOTAL_ENERGY
+SIN  BLEED  BLOCK_THRESHOLD  TOTAL_BLOCK  TOTAL_DAMAGE  TOTAL_DRAW  HITS  TOTAL_ENERGY  PLAYS
 ```
 
 来源：`BaseCard.java` 的 `QuickDynamicVariable` / `setCustomVar`（key 经 `makeID` 注册为 `thetormented:<KEY>`）。
-出现形态示例：`!${modID}:SIN!`、`!${modID}:BLEED!`、`!${modID}:TOTAL_BLOCK!`、`!${modID}:BLOCK_THRESHOLD!`、`!${modID}:CARD_ADD!`、`!${modID}:TOTAL_DAMAGE!`、`!${modID}:TOTAL_DRAW!`、`!${modID}:HITS!`、`!${modID}:TOTAL_ENERGY!`。
+出现形态示例：`!${modID}:SIN!`、`!${modID}:BLEED!`、`!${modID}:TOTAL_BLOCK!`、`!${modID}:BLOCK_THRESHOLD!`、`!${modID}:TOTAL_DAMAGE!`、`!${modID}:TOTAL_DRAW!`、`!${modID}:HITS!`、`!${modID}:TOTAL_ENERGY!`、`!${modID}:PLAYS!`。
 注意：`!${modID}:BLEED!` / `!${modID}:SIN!` 是动态变量（数值），与关键词 token `${modID}:Bleed` / `${modID}:Sin` 不是一回事，不能互换。
 
 关键词同样支持绑定运行时数值：`%%SIN_PER_DEBT%%` 标记（`BasicMod.registerKeyword` 注册时替换为 `SinPower.SIN_PER_DEBT`）。与 PowerStrings 的"分段+代码插入"不同，Keywords 的 `DESCRIPTION` 是单串，数字必须写成该标记。调整原罪↔血债折算比时**只改 `SinPower.SIN_PER_DEBT` 一处**，24 种语言的 DebtPower 与关键词文本全部自动同步。
@@ -156,4 +158,5 @@ SIN  BLEED  BLOCK_THRESHOLD  TOTAL_BLOCK  CARD_ADD  TOTAL_DAMAGE  TOTAL_DRAW  HI
 - 旧伤复发（`Relapse`/`DeepWoundPower`）批次：`DeepWoundPower` 语义由"流血只减少 50%"改为"回合开始时**保留全部流血**"（`BleedPower.atStartOfTurn` 不再 ReducePower，有 DeepWound 即不移除、也不减少）；24 语言 `DeepWoundPower` 描述已同步改为"…不会被移除"（eng：`Bleed is not removed at the start of its turn.`；zhs：`回合开始时，流血 不会被移除。`）；24 语言校验回归：22 语言 PASS，zhs/deu 仍为既有失败（与本批无关）
 - 旧伤复发（50% 保留）批次（本批）：`DeepWoundPower` 语义回调为"回合开始时只移除一半流血"——新增可调常量 `DeepWoundPower.BLEED_RETAIN_PERCENT = 50`（单点调整，后续改数值只动这一处），`BleedPower.atStartOfTurn` 有 DeepWound 时按 `amount - amount*BLEED_RETAIN_PERCENT/100` ReducePower；24 语言 `DeepWoundPower` 描述扩为 2 段（`DESCRIPTIONS[0] + BLEED_RETAIN_PERCENT + DESCRIPTIONS[1]`，运行时拼接，仿 `DebtPower` 的 `SIN_PER_DEBT` 模式），eng：`Bleed is reduced by 50% at the start of its turn.`；zhs：`回合开始时，流血 只移除 50%。`；24 语言 `Relapse` 卡牌描述同步（eng：`An enemy's Bleed is reduced by 50%...`/zhs：`…只会被移除 50%`，数值 50% 已写入卡面文本，若改常量需同步卡面文案）；24 语言校验回归：22 语言 PASS，zhs/deu 仍为既有失败（与本批无关）
 - 本批 13 新语言（ptb/zht/kor/nor/pol/rus/spa/srb/srp/tha/tur/ukr/vie）全部 PASS 0/0，官方句式为基准；角色名与 6 关键词译词见 §7
+- 措辞批次（本批）：`Relapse` 24 语言 `DESCRIPTION`/`UPGRADE_DESCRIPTION` 尾句重写——"在本回合内不移除"改为"**在一回合内**不移除"（eng：`An enemy's ${modID}:Bleed won't be removed for one turn.` / 升级 `ALL enemies' ...`；zhs：`一名敌人身上的 ${modID}:流血 不会在一回合内移除`）；eng 顺带修 `A enemy's`→`An enemy's`；同时确立「关键词 token 必须紧跟空格」全局规则（见 §3）。`BrokenArmor` 24 语言 `DESCRIPTION` 重写：`!${modID}:BLOCK!`→原生 `!B!`、删除换行后的"施加 1 层脆弱"句（代码不再施加脆弱，改为打出后 `baseBlock` 直减 2 并每场战斗复位）、文本统一为"获得 !B! 格挡 / 每次打出减少 2 点（本场战斗）"句式、顺带把部分语言的半角全角混杂括号统一（zhs `（每场战斗重置）` 等保持现状）；24 语言校验回归：22 语言 PASS，zhs/deu 仍为既有失败（与本批无关）
 - 官方基准解包：`C:\Users\Administrator\AppData\Local\Temp\opencode\basemod_extract\`

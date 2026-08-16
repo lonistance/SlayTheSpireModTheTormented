@@ -1,98 +1,112 @@
 {
-  "${modID}:RelicID": {
-    "NAME": "좋은 유물",
-    "FLAVOR": "유물 상세 보기에서 표시되는 설명 문구입니다.",
-    "DESCRIPTIONS": [
-      "턴 시작 시 [E] 를 얻습니다. [E] 는 에너지 아이콘입니다."
-    ]
-  }, "${modID}:CursedBrokenBlade": {
-    "NAME": "저주받은 부러진 칼날",
-    "FLAVOR": "다른 이들의 죄 를 갈망하는 부서진 칼날입니다.",
-    "DESCRIPTIONS": [
-      "전투 시작 시 무작위 타격 1 장과 수비 1 장을 이번 전투 동안 강화합니다. NL 매 턴 시작 시 #b",
-      " 의 ${modID}:죄 를 얻습니다."
-    ]
-  }, "${modID}:BarbedHook": {
-    "NAME": "갈고리",
-    "FLAVOR": "살을 찢을 때마다 더 깊이 파고드는 잔혹한 갈고리입니다.",
-    "DESCRIPTIONS": [
-      "${modID}:출혈 을 부여할 때마다 ${modID}:출혈 을 #b1 추가로 부여합니다."
-    ]
-  }, "${modID}:FrenziedGoblet": {
-    "NAME": "광란의 술잔",
-    "FLAVOR": "순수한 광란으로 빚은 술, 잔을 들 때마다 생명 하나가 사라집니다.",
-    "DESCRIPTIONS": [
-      "하수인이 아닌 적이 죽을 때마다 체력을 #b8 회복합니다."
-    ]
-  }, "${modID}:ContractSeal": {
-    "NAME": "계약 인장",
-    "FLAVOR": "피로 서명된 계약, 오직 순수한 자만이 지킵니다.",
-    "DESCRIPTIONS": [
-      "전투 종료 시 ${modID}:빚 이 없으면 골드를 #b15 얻습니다."
-    ]
-  }, "${modID}:RecoveryCharm": {
-    "NAME": "회복 부적",
-    "FLAVOR": "모든 상처의 아픔을 거두는 부적입니다.",
-    "DESCRIPTIONS": [
-      "체력을 잃을 때마다 최대 #b18 의 체력만 잃습니다."
-    ]
-  }, "${modID}:GargoyleArm": {
-    "NAME": "가고일의 팔",
-    "FLAVOR": "정화를 수호로 바꾸는 고대의 돌입니다.",
-    "DESCRIPTIONS": [
-      "해로운 효과를 #b1 층 제거할 때마다 방어도를 #b1 얻습니다."
-    ]
-  }, "${modID}:ScorchedBanner": {
-    "NAME": "그을린 깃발",
-    "FLAVOR": "빈손의 자만을 일으키는 너덜너덜한 깃발입니다.",
-    "DESCRIPTIONS": [
-      "턴 종료 시 손에 카드가 없다면 다음 턴 시작 시 카드를 #b2 장 추가로 뽑습니다."
-    ]
-  }, "${modID}:HeroLongsword": {
-    "NAME": "영웅의 장검",
-    "FLAVOR": "구원의 약속으로 단조된 칼날입니다.",
-    "DESCRIPTIONS": [
-      "저주받은 부러진 칼날 을 대체합니다. NL 획득 시 덱의 모든 타격 과 수비 를 강화합니다. NL 매 턴 시작 시 #b",
-      " 의 ${modID}:죄 를 얻습니다."
-    ]
-  }, "${modID}:HeavyFetters": {
-    "NAME": "무거운 족쇄",
-    "FLAVOR": "묶는 쇠의 무게, 그것이 오히려 힘을 줍니다.",
-    "DESCRIPTIONS": [
-      "매 턴 시작 시 [E] 를 얻습니다. NL 전투 시작 시 *얽힘 을 1 장 뽑을 카드 더미에 추가합니다."
-    ]
-  }, "${modID}:Drumstick": {
-    "NAME": "북채",
-    "FLAVOR": "북이 울릴 때마다 에너지의 불꽃이 타오릅니다.",
-    "DESCRIPTIONS": [
-      "카드를 #b",
-      " 장 소멸시킬 때마다 [E] 를 얻습니다."
-    ]
-  }, "${modID}:RegretlessCoin": {
-    "NAME": "후회 없는 동전",
-    "FLAVOR": "모든 실수를 용서하는 동전입니다.",
-    "DESCRIPTIONS": [
-      "상점에 들어갈 때마다 #b",
-      " 의 골드를 얻습니다."
-    ]
-  }, "${modID}:BlackstoneLantern": {
-    "NAME": "흑요석 등불",
-    "FLAVOR": "차가운 빛이 앓는 모든 고통을 비춥니다.",
-    "DESCRIPTIONS": [
-      "전투마다 처음으로 적에게 해로운 효과를 부여할 때 [E] 를 얻습니다."
-    ]
-  }, "${modID}:IronHammer": {
-    "NAME": "철 망치",
-    "FLAVOR": "끝없는 전투의 모루 위에서 단조되었습니다.",
-    "DESCRIPTIONS": [
-      "엘리트를 처치할 때마다 덱의 카드를 #b",
-      " 장 무작위로 강화합니다."
-    ]
-  }, "${modID}:UndyingEmber": {
-    "NAME": "꺼지지 않는 불씨",
-    "FLAVOR": "불운을 먹고 자라 결코 꺼지지 않는 불꽃입니다.",
-    "DESCRIPTIONS": [
-      "해로운 효과가 있는 동안 받는 피해가 #b25% 감소합니다. NL 해로운 효과가 있는 적에게 주는 피해가 #b25% 증가합니다."
-    ]
-  }
+  "${modID}:RelicID":  {
+              "NAME":  "좋은 유물",
+              "FLAVOR":  "유물 상세 보기에서 표시되는 설명 문구입니다.",
+              "DESCRIPTIONS":  [
+                        "턴 시작 시 [E] 를 얻습니다. [E] 는 에너지 아이콘입니다."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "저주받은 부러진 칼날",
+                    "FLAVOR":  "다른 이들의 죄 를 갈망하는 부서진 칼날입니다.",
+                    "DESCRIPTIONS":  [
+                              "전투 시작 시 무작위 타격 1 장과 수비 1 장을 이번 전투 동안 강화합니다. NL 2번째 턴부터, 매 턴 시작 시 #b 획득",
+                              " 의 ${modID}:죄 를 얻습니다."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "갈고리",
+                "FLAVOR":  "살을 찢을 때마다 더 깊이 파고드는 잔혹한 갈고리입니다.",
+                "DESCRIPTIONS":  [
+                          "${modID}:출혈 을 부여할 때마다 ${modID}:출혈 을 #b1 추가로 부여합니다."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "광란의 술잔",
+                  "FLAVOR":  "순수한 광란으로 빚은 술, 잔을 들 때마다 생명 하나가 사라집니다.",
+                  "DESCRIPTIONS":  [
+                            "하수인이 아닌 적이 죽을 때마다 체력을 #b8 회복합니다."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "계약 인장",
+                "FLAVOR":  "피로 서명된 계약, 오직 순수한 자만이 지킵니다.",
+                "DESCRIPTIONS":  [
+                            "전투 종료 시 ${modID}:빚 이 없으면 골드를 #b15 얻습니다."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "회복 부적",
+                  "FLAVOR":  "모든 상처의 아픔을 거두는 부적입니다.",
+                  "DESCRIPTIONS":  [
+                            "체력을 잃을 때마다 최대 #b18 의 체력만 잃습니다."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "가고일의 팔",
+                "FLAVOR":  "정화를 수호로 바꾸는 고대의 돌입니다.",
+                "DESCRIPTIONS":  [
+                            "해로운 효과를 #b1 층 제거할 때마다 방어도를 #b1 얻습니다."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "그을린 깃발",
+                  "FLAVOR":  "빈손의 자만을 일으키는 너덜너덜한 깃발입니다.",
+                  "DESCRIPTIONS":  [
+                            "턴 종료 시 손에 카드가 없다면 다음 턴 시작 시 카드를 #b2 장 추가로 뽑습니다."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "영웅의 장검",
+                  "FLAVOR":  "구원의 약속으로 단조된 칼날입니다.",
+                  "DESCRIPTIONS":  [
+                            "저주받은 부러진 칼날 을 대체합니다. NL 획득 시 덱의 모든 타격 과 수비 를 강화합니다. NL 2번째 턴부터, 매 턴 시작 시 #b 획득",
+                            " 의 ${modID}:죄 를 얻습니다."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "무거운 족쇄",
+                "FLAVOR":  "묶는 쇠의 무게, 그것이 오히려 힘을 줍니다.",
+                "DESCRIPTIONS":  [
+                            "매 턴 시작 시 [E] 를 얻습니다. NL 전투 시작 시 *얽힘 을 1 장 뽑을 카드 더미에 추가합니다."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "북채",
+                "FLAVOR":  "북이 울릴 때마다 에너지의 불꽃이 타오릅니다.",
+                "DESCRIPTIONS":  [
+                          "카드를 #b",
+                          " 장 소멸시킬 때마다 [E] 를 얻습니다."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "후회 없는 동전",
+                  "FLAVOR":  "모든 실수를 용서하는 동전입니다.",
+                  "DESCRIPTIONS":  [
+                            "상점에 들어갈 때마다 #b",
+                            " 의 골드를 얻습니다."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "흑요석 등불",
+                    "FLAVOR":  "차가운 빛이 앓는 모든 고통을 비춥니다.",
+                    "DESCRIPTIONS":  [
+                              "전투마다 처음으로 적에게 해로운 효과를 부여할 때 [E] 를 얻습니다."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "철 망치",
+                "FLAVOR":  "끝없는 전투의 모루 위에서 단조되었습니다.",
+                "DESCRIPTIONS":  [
+                          "엘리트를 처치할 때마다 덱의 카드를 #b",
+                          " 장 무작위로 강화합니다."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "꺼지지 않는 불씨",
+                "FLAVOR":  "불운을 먹고 자라 결코 꺼지지 않는 불꽃입니다.",
+                "DESCRIPTIONS":  [
+                            "해로운 효과가 있는 동안 받는 피해가 #b25% 감소합니다. NL 해로운 효과가 있는 적에게 주는 피해가 #b25% 증가합니다."
+                          ]
+                }
 }

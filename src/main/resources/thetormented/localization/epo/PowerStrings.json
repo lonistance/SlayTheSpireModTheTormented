@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "Supera Povo",
-                                 "DESCRIPTIONS":  [
-                                                      "Vi estas tre mojosa kaj forta."
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "Sango",
-                                    "DESCRIPTIONS":  [
-                                                         "Perdas je la komenco de sia vico #b",
-                                                         " da vivo, tiam ?iu Sango estas forigita. Se sanganta esta?o prenas ne?irmitan atakdama?on, ?i gajnas #b1 Sango."
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "Peko",
-                                  "DESCRIPTIONS":  [
-                                                       "Se vi havas #b5 da Peko, vi gajnas ",
-                                                       " ${modID}:?uldo."
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "?uldo",
-                                   "DESCRIPTIONS":  [
-                                                        "?iu stako da ?uldo igas vin preni #b10% pli da dama?o. Vi prenas ",
-                                                        "% pli da dama?o. NL Kiam ?uldo-aplikado estas blokita de Artefakto, vi perdas ",
-                                                        " da Peko por ?iu blokita ?uldo."
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "Perdo de Energio la Sekvontan Vicon",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Perdu [E] la sekvontan vicon"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "Gajno de Energio la Sekvontan Vicon",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Gajnu [E] la sekvontan vicon"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "Kompatemo",
-                                    "DESCRIPTIONS":  [
-                                                         "?uldo ne ka?zas plian dama?on ?i-vice"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "Profunda Vundo",
-                                        "DESCRIPTIONS":  [
-                                                             "Sango ne estas forigita je la komenco de sia vico."
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "Konsolo",
-                                     "DESCRIPTIONS":  [
-                                                          "El?erpu ?IUN ",
-                                                          " en via mano je la fino de via vico."
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "Parado",
-                                    "DESCRIPTIONS":  [
-                                                         "Kiam ajn vi estas atakata, resendu la ?irmitan dama?on al la atakanto."
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "Sen?esa Sangado",
-                                              "DESCRIPTIONS":  [
-                                                                   "Aldonu al ?IUJ malamikoj je la komenco de ?iu vico #b",
-                                                                   " da ${modID}:Sango."
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "Doloro",
-                                    "DESCRIPTIONS":  [
-                                                         "?i-vice: Kiam ajn vi prenas karton, aldonu al ?IUJ malamikoj #b",
-                                                         " da ${modID}:Sango."
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "Timinda Memoro",
-                                          "DESCRIPTIONS":  [
-                                                               "Se vi gajnis ${modID}:?uldon ?i-vice, malamikoj faras #b",
-                                                               "% malpli da dama?o."
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "Repacigi la Sorton",
-                                            "DESCRIPTIONS":  [
-                                                                 "Kiam ajn vi kreas a? el?erpas *Mizero, gajnu #b",
-                                                                 " da ?irmo."
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "Kripligita Karno",
-                                           "DESCRIPTIONS":  [
-                                                                "Kiam ajn vi aldonas 6 da ${modID}:Sango al malamiko, faru #b",
-                                                                " da dama?o al ?IUJ malamikoj."
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "Sangaj Dornoj",
-                                          "DESCRIPTIONS":  [
-                                                               "Kiam ajn malamiko atakas vin, aldonu #b",
-                                                               " da ${modID}:Sango al ?i."
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "Vojo de Ela?eto",
-                                             "DESCRIPTIONS":  [
-                                                                  "Kiam ajn vi forigas 1 da ${modID}:?uldo, prenu #b",
-                                                                  " kartojn."
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "Indigno",
-                                          "DESCRIPTIONS":  [
-                                                               "En la sekvontaj #b",
-                                                               " vicoj, la unua ne-ataka karto, kiun vi ludas ?iuvice, kostas 0."
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "Malsata Batalvolo",
-                                                  "DESCRIPTIONS":  [
-                                                                       "Gajnu [E] je la komenco de ?iu vico. NL Ricevu 3 da dama?o je la fino de ?iu vico."
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "Koncedi",
-                                      "DESCRIPTIONS":  [
-                                                           "?i tiu malamiko prenas #b50% pli da dama?o."
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "Formo de la Ju?o",
-                                           "DESCRIPTIONS":  [
-                                                                "Vi faras 50% pli da dama?o al malamikoj sub ",
-                                                                "% de ilia maks. vivo."
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "Avataro de la Peko",
-                                        "DESCRIPTIONS":  [
-                                                             "Gajnu je la fino de via vico #b",
-                                                             " da ?irmo, plus #b",
-                                                             " da ?irmo por ?iu stako da ${modID}:?uldo."
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "Sangobano",
-                                        "DESCRIPTIONS":  [
-                                                             "La unuaj ",
-                                                             " atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "Tro Rigida",
-                                        "DESCRIPTIONS":  [
-                                                             "?iufoje kiam vi ludas atak-karton, ?i konstante perdas por la resto de la batalo ",
-                                                             " da dama?o."
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "Limigo",
-                                          "DESCRIPTIONS":  [
-                                                               "Vi ne povas gajni [E]. Estas forigita je la fino de via vico."
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "Supera Povo",
+              "DESCRIPTIONS":  [
+                         "Vi estas tre mojosa kaj forta."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Sango",
+                "DESCRIPTIONS":  [
+                          "Perdas je la komenco de sia vico #b",
+                          " da vivo, tiam ?iu Sango estas forigita. Se sanganta esta?o prenas ne?irmitan atakdama?on, ?i gajnas #b1 Sango."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Peko",
+               "DESCRIPTIONS":  [
+                          "Se vi havas #b5 da Peko, vi gajnas ",
+                          " ${modID}:?uldo."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "?uldo",
+                "DESCRIPTIONS":  [
+                          "?iu stako da ?uldo igas vin preni #b10% pli da dama?o. Vi prenas ",
+                          "% pli da dama?o. NL Kiam ?uldo-aplikado estas blokita de Artefakto, vi perdas ",
+                          " da Peko por ?iu blokita ?uldo."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Perdo de Energio la Sekvontan Vicon",
+                      "DESCRIPTIONS":  [
+                                 "Perdu [E] la sekvontan vicon"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Gajno de Energio la Sekvontan Vicon",
+                      "DESCRIPTIONS":  [
+                                 "Gajnu [E] la sekvontan vicon"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Kompatemo",
+                "DESCRIPTIONS":  [
+                          "?uldo ne ka?zas plian dama?on ?i-vice"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Profunda Vundo",
+                  "DESCRIPTIONS":  [
+                            "Sango ne estas forigita je la komenco de sia vico."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Konsolo",
+                "DESCRIPTIONS":  [
+                           "El?erpu ?IUN ",
+                           " en via mano je la fino de via vico."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Parado",
+                "DESCRIPTIONS":  [
+                          "Kiam ajn vi estas atakata, resendu la ?irmitan dama?on al la atakanto."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Sen?esa Sangado",
+                     "DESCRIPTIONS":  [
+                                "Aldonu al ?IUJ malamikoj je la komenco de ?iu vico #b",
+                                " da ${modID}:Sango."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Doloro",
+                "DESCRIPTIONS":  [
+                          "?i-vice: Kiam ajn vi prenas karton, aldonu al ?IUJ malamikoj #b",
+                          " da ${modID}:Sango."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Timinda Memoro",
+                   "DESCRIPTIONS":  [
+                              "Se vi gajnis ${modID}:?uldon ?i-vice, malamikoj faras #b",
+                              "% malpli da dama?o."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Repacigi la Sorton",
+                    "DESCRIPTIONS":  [
+                              "Kiam ajn vi kreas a? el?erpas *Mizero, gajnu #b",
+                              " da ?irmo."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Kripligita Karno",
+                    "DESCRIPTIONS":  [
+                              "Kiam ajn vi aldonas 6 da ${modID}:Sango al malamiko, faru #b",
+                              " da dama?o al ?IUJ malamikoj."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Sangaj Dornoj",
+                   "DESCRIPTIONS":  [
+                              "Kiam ajn malamiko atakas vin, aldonu #b",
+                              " da ${modID}:Sango al ?i."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Vojo de Ela?eto",
+                    "DESCRIPTIONS":  [
+                               "Kiam ajn vi forigas 1 da ${modID}:?uldo, prenu #b",
+                               " kartojn."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Indigno",
+                   "DESCRIPTIONS":  [
+                              "En la sekvontaj #b",
+                              " vicoj, la unua karto, kiun vi ludas ĉiuvice, kostas 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Malsata Batalvolo",
+                       "DESCRIPTIONS":  [
+                                  "Gajnu [E] je la komenco de ?iu vico. NL Ricevu 3 da dama?o je la fino de ?iu vico."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Koncedi",
+                 "DESCRIPTIONS":  [
+                            "?i tiu malamiko prenas #b50% pli da dama?o."
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "Formo de la Ju?o",
+                    "DESCRIPTIONS":  [
+                              "Vi faras 50% pli da dama?o al malamikoj sub ",
+                              "% de ilia maks. vivo."
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Avataro de la Peko",
+                  "DESCRIPTIONS":  [
+                            "Gajnu je la fino de via vico #b",
+                            " da ?irmo, plus #b",
+                            " da ?irmo por ?iu stako da ${modID}:?uldo."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Sangobano",
+                  "DESCRIPTIONS":  [
+                            "La unuaj ",
+                            " atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Tro Rigida",
+                  "DESCRIPTIONS":  [
+                            "?iufoje kiam vi ludas atak-karton, ?i konstante perdas por la resto de la batalo ",
+                            " da dama?o."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Limigo",
+                   "DESCRIPTIONS":  [
+                              "Vi ne povas gajni [E]. Estas forigita je la fino de via vico."
+                            ]
+                 }
 }

@@ -24,8 +24,8 @@ public class Grief extends BaseCard {
 
     private static final int COST = 1;
     private static final int STATUS_ADD = 1;
-    private static final int BLEED_BASE = 4;   // 3 -> 4
-    private static final int BLEED_UPG = 1; // 4 -> 5
+    private static final int BLEED_BASE = 3;   // 4 -> 3
+    private static final int BLEED_UPG = 1; // 3 -> 4
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,

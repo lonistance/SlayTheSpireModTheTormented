@@ -300,6 +300,127 @@
 - **修复**：`TriggerBleedAction` 改为按 `percent` 一次性结算 `amount * percent / 100`
   （血仇 75%，升级 150%），并加 `> 0` 守卫。验证：伤害与描述百分比一致。
 
+**#17 赦免变化卡牌——原手牌从未真正移除，只是被藏起来**
+- **现象**：打出赦免（Pardon）后，原手牌其实还留在手牌里，被缩到 12%（不可见的"幽灵牌"），
+  而替换牌则被**重复加入**——先原位替换一次，飞入特效的构造函数又追加一次——手牌布局
+  错乱，出现"本应临时移除的牌仍在手牌中、只是看不见"的现象；第 3 次打出的能力牌变换
+  同样重复。
+- **根因**：实现只加了官方 `ExhaustCardEffect`（动画）与 `shrink()`，再用
+  `hand.group.set(idx, replacement)` 占位，而反编译字节码显示 `ShowCardAndAddToHandEffect`
+  构造函数内部会调用 `hand.addToHand`——两张替换牌同时进手牌。另外照抄官方消耗路径
+  （`moveToExhaustPile`）不行：它会触发全部 `onExhaust` 钩子（如枯树枝），与"只播动画
+  不真消耗"的需求矛盾。
+- **修复**：原牌改为 `hand.removeCard(c)` 真正移出手牌（纯列表移除、零钩子），只叠加官方
+  `ExhaustCardEffect` 做燃烧质感，**不触发任何真实消耗**；替换牌改用官方
+  `MakeTempCardInHandAction`（与枯树枝 `new MakeTempCardInHandAction(
+  AbstractDungeon.returnTrulyRandomCardInCombat().makeCopy(), false)` 同一写法）——内部会
+  标记已见、复制一张并播放飞入手牌动画，还处理手牌已满的边界；第 3 次变换分支只保留
+  `this.exhaust = true`，由官方收尾流程（`UseCardAction` → `moveToExhaustPile`）完成真正的
+  消耗（自带动画与钩子），不再手动占位。3 张排除牌（赦免 / 无休战火 / 处刑形态）保持不变。
+  验证：无重复牌、无幽灵牌；被移除的牌不触发任何消耗钩子；工程编译通过。
+
+**#18 暴乱 Rebel——图鉴里无论开关如何都显示 Beta 画风**
+- **现象**：在卡牌图鉴中，暴乱（Rebel）始终渲染测试画风（cards_test）插画而不是正式插画，
+  即使 Beta 画风开关已关闭；其余模组卡都正常显示正式插画。
+- **根因**：**并非模组代码 Bug**。按卡持久化的 Beta 偏好 `UnlockTracker.betaCardPref`
+  （文件 `preferences/STSBetaCardPreference`）里遗留了 `"thetormented:Rebel": "true"`
+  （其余卡全是 `false`；`.backUp` 文件证实上一个值就是 `false`）。
+  `AbstractCard.render()` 每帧读取该偏好，为 true 时绘制 `jokePortrait`（本模组
+  `BaseCard.refreshJokePortrait()` 将其指向 cards_test 贴图），因此在偏好翻回 false 之前，
+  图鉴缩略图不可能显示正式图。
+- **修复**：将持久化偏好条目重置为 `"false"`（已确认游戏已关闭；原文件另存为 `.backUp2`）。
+  弹出预览里点 Beta 图标按钮写入的就是同一个键，游戏内也可复现并复原该修复。
+- **验证**：偏好文件现为 `"thetormented:Rebel": "false"`；在偏好为 false 且
+  `PLAYTESTER_ART_MODE` 关闭时，`render()` 走 `renderPortrait` 分支，显示正式插画。
+
+
+
+**#19 卡牌弹窗大图：之前使用了错误的做法，这是补救错误的一次尝试**
+- **症状**：开启测试（cards_test）画风时，卡牌弹窗的大图把 250×190 的小卡图拉伸成左上角裁切的残影；点升级预览或测试画风开关时结果不稳定（显示正式大图还是残影取决于操作顺序）。
+- **根因**：上一版 `LoadPortraitImg` 前缀把 250×190 的小卡图塞进了大图槽位 `portraitImg`，而 `renderPortrait()` 始终用硬编码源矩形 (0,0,500,380) 绘制它，小图被裁切拉伸成残影；且非 null 的 portraitImg 会让 Basemod 的官方兜底失效（`OpenFix$OpenTextureFix` 仅在 `portraitImg == null` 时生效）。Basemod 的 `UpgradeChangesPortraitPatch$ToggleUpgrade`（插入在 `updateUpgradePreview` 的 `isViewingUpgrade` 访问点、每帧执行）还会把 portraitImg 换成官方大图而无视 beta 状态，导致升级预览每帧都把测试画风覆盖回正式插画。上一轮修复走了错误的方向，这里记录并予以补救。
+- **修复**：portraitImg 现在只放 500×380 的 `_p` 大图：beta 开启时加载 `cards_test/<类型>/<卡名>_p.png`（缺失则交给原版/Basemod 官方流程兜底）；beta 关闭时完全不干预（删掉了错误的小图覆盖做法）。新增 `update()` 每帧兜底：只要 Tormented 卡需要 beta 大图、且当前 portraitImg 不是我们放置的 beta 纹理，就销毁并换回 beta `_p` 纹理，升级预览的覆盖不再能把测试画风改回正式画风；`close()` 重置跟踪引用。纹理身份比对保证无人替换时每帧零开销。
+- **验证**：javac 编译通过；无任何纹理被双重销毁（谁替换字段谁负责销毁旧值，与原版/Basemod 语义一致）。
+
+**#20 平衡调整批次：七张卡重新调校（Shackles / RelentlessBleed / MangledFlesh / Grief / Relapse / BrokenArmor / SacredLand）**
+- **Shackles**（现为罕见 UNCOMMON，移入 `uncommon\skill`）：手牌数判定并不可靠——`use()` 在卡牌离开手牌之前执行，实际边界与文本描述不一致；判定已改为显式（卡牌仍在手牌时 `hand.size() >= 10`），补牌数与总格挡预览遵循同一条规则。升级后每张状态牌提供的格挡由 6 提高到 8。
+- **RelentlessBleed**：基础 4 → 6，升级 6 → 8。
+- **MangledFlesh**：基础 5 → 7，升级 7 → 9。
+- **Grief**：基础流血 4 → 3（升级 3 → 4）。
+- **Relapse**：现在先对其目标施加 3 层流血，再施加「流血不会被移除」效果。
+- **BrokenArmor**（重做，现为 1 费普通 COMMON，移入 `common\skill`）：新定位——获得 10 点（升级 14 点）格挡，每打出一次少 2 点（最低 0），每场战斗重置。规避了原版 `ModifyBlockAction` 的坑（其负值钳制写到 `baseDamage` 而非 `baseBlock`），改用普通字段记录打出次数；新增补丁（`CombatStartPatch`）在每场战斗开始时清零；预览通过动态变量 `!${modID}:BLOCK!` 实时显示有效格挡。
+- **SacredLand**：去掉了反直觉的条件分支（「无血债抽 2 张，否则失去 7 点原罪」）；现在每有 1 点血债就少抽 1 张（最低 0 张；基础 2、升级 3），并通过 `EXTENDED_DESCRIPTION` 实时显示有效抽牌数。
+- **本地化**：Relapse / BrokenArmor / SacredLand 的文本在全部 24 种语言中更新（流血令牌取自各语言 Keywords.json）；新增的 `BLOCK` 动态变量已加入 `validate_localization.ps1` 白名单；全语言校验通过。
+
+**#21 Rebel 的 EXTENDED_DESCRIPTION 从未生效；ReconcileFate 把一次批量生成的 Misery 只算成 1 张**
+- **现象**：(1) Rebel 的附文「施加 !M! 流血」即使在手牌中也不显示；(2) 一次生成多张 Misery 的卡（Shackles 加 2 张、HeavyPast 抽牌堆+弃牌堆各 1 张、Relief 加 2 张），每批只触发 1 次 ReconcileFate。
+- **根因**：(1) 手牌实时注入的骨架（`BaseCard.initializeDescription()` / `getInjectedDescription()`）早已就绪，但 Rebel 从未重写 `getInjectedDescription()`；(2) 触发钩子挂在 `MakeTempCardIn*Action.makeNewCard` / `update` 上，无法承载「逐张」语义：手牌动作的批量由私有 `addToHand` 对 `amount` 字段的 table-switch 驱动（手牌满的溢出分支会整批跳过），单个回调里拿不到真实张数。
+- **修复**：(1) Rebel 按 SacredLand 同款方式重写 `getInjectedDescription()`，并在 `applyPowers()` / `calculateCardDamage()` 中把 `magicNumber` 同步为纸面伤害，`!M!` 显示精确的流血量；(2) 钩子移到 `ShowCardAndAddTo{Hand,Discard,DrawPile}Effect` 的构造器上——每张生成的卡恰好对应一个 effect，一次生成 N 张就恰好触发 N 次，溢出/批量/循环的内部细节一概不影响正确性（8 个构造器重载全部覆盖）。
+- **验证**：javac 全量编译通过（174 个类）；onExhaust 计数路径未改动。
+
+**#22 混沌污化（ChaosDirty）每打出一次基础伤害就变高**
+- **现象**：卡面基础伤害随每次打出永久增长（每完成一次原罪→血债转化 +1），「造成 !D! 伤害」的数字一路走高，而不是稳定在 6（升级 7）。
+- **根因**：`applyPowers()` / `calculateCardDamage()` 覆写把血债加成临时写入 `this.baseDamage`（事后还原）。这条还原并不安全：原版 `AbstractCard` 对应逻辑会在污染值存活期间执行 `this.damage = this.baseDamage`，伤害字段带着「基础+加成」残留到下一次重算；而混沌污化每打出一次都会把原罪永久转化为更多血债，于是面板基础伤害随打出次数一路抬升。该字段污染还与 `BaseCard` 自身的 `TOTAL_DAMAGE`（VariableType.DAMAGE）变量链互相纠缠——该变量的计算也会临时改写 `baseDamage` 并递归进入这些覆写。
+- **修复**：删除两个覆写；血债加成改由 `TOTAL_DAMAGE` 变量的 preCalc 承载（VariableType.DAMAGE 链在 `BaseCard` 的临时环境中完成「基础+加成+力量/易伤」结算并还原全部字段）。卡面 D 恢复纯净基础值；含血债加成的总伤害仍通过 EXT 附文的 `!${modID}:TOTAL_DAMAGE!` 实时显示。
+- **验证**：javac 全量编译通过（174 个类）；结算时 `PollutedChaosDamageAction` 读取的 `card.baseDamage` 不再被污染。
+
+**#23 措辞与重做批次：Relapse 文案、Relapse/BrokenArmor 本地化修正、BrokenArmor 重做（#20 后续）、ChaosDirty 预览修复（#22 后续）、仓库级规则**
+- **Relapse 措辞**：24 语言 `DESCRIPTION`/`UPGRADE_DESCRIPTION` 两句全部重写——「流血不会被移除」从句由「本回合」改为「一回合内」（eng：`An enemy's <Bleed> won't be removed for one turn.`／升级 `ALL enemies' ...`；zhs：`一名敌人身上的 ... 不会在一回合内移除`）；eng 顺手修正 `A enemy's` → `An enemy's`。"施加 3 层流血"前缀中既有的错误流血令牌一并修正（kor `출혈를` → `출혈을`、vie `Chảy` → `Chảy máu`）——这两个令牌原先不被 NAMES 覆盖，`validate_localization.ps1` 早已会报错，随本批修复。
+- **BrokenArmor 重做（取代 #20 的衰减机制）**：不再施加脆弱，也不再经 `playsPlayed` 计次数；`use()` 先正常获得格挡（`GainBlockAction(p, p, this.block)`），随后直接 `this.baseBlock = Math.max(0, this.baseBlock - 2)`（每次打出减 2，不为负）。新增 `initialBaseBlock`（`upgrade()` 时同步）替代计数，`CombatStartPatch` 改为战斗开始时把 `baseBlock` 复位为 `initialBaseBlock`，衰减依旧每场战斗重置。`BLOCK` 动态变量已删除，卡面 `!B!` 直接显示当前（已衰减的）格挡。24 语言 `BrokenArmor` 文案全部重写：删除「施加 1 层脆弱」句与 `!${modID}:BLOCK!` 令牌（改用原生 `!B!`），并按语言归一化措辞（如 `（en este combate）` 等全角括号修正为半角 `(...)`），示例 eng：`"Gain !B! Block. NL Each play grants 2 less Block (resets each combat)."`。
+- **ChaosDirty 预览修复（取代 #22 方案）**：`TOTAL_DAMAGE` 由 `VariableType.DAMAGE` 链改走纯算术变量（`VariableType.MAGIC` 默认分支）；其 preCalc（`基础 + 当前血债 × 魔法数值`）全程不碰 `baseDamage`/`damage`，卡面 D 保持纯净（6／升级 7），!M! 显示真实升级后的魔法数值。删除了"预测本次打出会转化多少血债"的加成逻辑——预览口径统一为"当前血债 × 魔法"，各状态均符合预期：未升级总计 12（6+2×3）、升级总计 15（7+2×4）、弃牌堆中血债为 4 时 23（7+4×4）。结算伤害（`PollutedChaosDamageAction`）未改动。
+- **仓库级规则**：仓库根新增 `AGENTS.md`，固化为强制流程——每次修改（代码/文案/文档/工具脚本）完成后必须同步更新 `CHANGELOG.md` 与 `CHANGELOG.zh-CN.md`（新条目插在末尾 `---` 之前，编号续用），并记录编译/本地化/编码约定。`docs/LOCALIZATION_SPEC.md` 新增全局规则：任何卡牌描述中已注册的关键词 token（`${modID}:X`）必须紧跟一个空格（原 §7 的 jpn 先例提升为全局约束），§10 附本批记录。
+- **验证**：javac 全量编译通过（174 个类，EXIT=0）；24 语言全部通过 `validate_localization.ps1`（kor/vie 的令牌错误已随本批修复）；zhs/deu 的残留英文为既有启发式警告，与本批无关。
+
+**#24 Shackles 重做（#20 后续）与 ReconcileFatePower 触发重做**
+- **Shackles 重做（取代 #20 的「满手只补 1 张」规则）**：无论手牌是否满都**始终加入 2 张苦痛**（`MakeTempCardInHandAction(new Misery(), 2)`），与「依然是添加 2 张 Misery」的设计一致；只有「格挡计算」在满手时按有效落位计数：打出时手牌满 10 张（`use()` 内 `p.hand.size()` 仍含本卡）按 2 张中有效加入的 1 张计算格挡，否则按 2 张。删除了此前「满手时 `CARD_ADD` 显示 1」的变量变换，`!CARD_ADD!` 恒显示 2；`TOTAL_BLOCK` 预览 preCalc 与 `use()` 对齐（手牌状态数 + 有效加张数：满手 +1／否则 +2）× 魔法值，预览与实际格挡保持同步。
+- **ReconcileFatePower 触发重做（修复重复触发）**：旧实现按 effect 构造器调用次数触发，而同一张生成的卡可能被多个 effect 实例包装（如随机落位抽牌 effect 在 `update()` 里同时 new 了 6 参与 3 参两个构造器），导致一次生成触发多次：HeavyPast 生成 2 张实际触发 3 次、Shackles 生成 2 张实际触发 4 次。现改为**按卡实例去重**：`onMiseryCardCreated` 对每张 Misery 实例仅触发一次（静态 `Set<AbstractCard> firedCards` 判重），无论一张卡被几个 effect 实例包装，生成 N 张恰好触发 N 次。集合在 `CombatStartPatch`（与 BrokenArmor 复位同点）每场战斗开始清空，跨战斗的同实例仍可重新计数。耗尽触发不受影响。
+- **验证**：javac 全量编译通过（EXIT=0）。文案零改动（`!CARD_ADD!` 仍显示 2），本地化无需变动。
+
+**#25 CursedBrokenBlade / HeroLongsword：原罪从第 2 回合起每回合施加**
+- **机制**：两件遗物不再于每场战斗的第 1 回合开始时施加原罪；自第 2 回合起每回合开始时照常施加 3 点原罪。实现：新增 `firstTurnSkipped` 标志（每场战斗第一次 `atTurnStart()` 调用跳过，后续调用正常施加），战斗开始时复位——`CursedBrokenBlade.atBattleStartPreDraw()` 现顺带复位该标志，`HeroLongsword` 新增仅复位标志的 `atBattleStartPreDraw()`。目的：避免原罪开局即雪球式积累导致暴毙，给玩家启动时间与容错机会。
+- **本地化**：两件遗物 `DESCRIPTIONS[0]` 中最后的 ` NL ` 之后的“每回合开始获得 X 原罪”句在全部 24 语言改写为“从第 2 回合起每回合开始获得”（示例 eng：`At the start of each turn from the 2nd turn onward, gain #b`；zhs：`从第 2 回合起，每回合开始时获得 #b`）。`DESCRIPTIONS[1]` 及其它条目不动。
+- **验证**：javac 全量编译通过（EXIT=0）；`validate_localization.ps1` 24 语言全部 PASS（eng 的 630 条与 zhs 的 3 条残留英文为既有启发式警告，含 `RelicID` 模板条目）。
+
+**#26 ChaosDirty：删除总伤预览 EXT（取代 #22/#23 的 TOTAL_DAMAGE 方案）**
+- **问题**：`!${modID}:TOTAL_DAMAGE!` 总伤预览在游戏内依旧不准——#22（VariableType.DAMAGE 链）与 #23（纯算术 MAGIC 变量：`基础 + 当前血债 × 魔法`）之后仍不正确；实际伤害结算（`PollutedChaosDamageAction`，等待本次打出引发的原罪→血债转化后再计算）是对的。
+- **修复（采纳用户选项：删除预览）**：`ChaosDirty.java` 删除 `TOTAL_DAMAGE` 自定义变量注册、`getInjectedDescription()` 覆写与不再使用的 `getDebtDamageBonus()` 辅助方法；卡面仅保留基础描述。24 语言的 `ChaosDirty` `EXTENDED_DESCRIPTION` 全部置空（对齐空数组，EXT/UPGRADE 对齐校验仍通过）。其它自注册同名 `TOTAL_DAMAGE` 变量的卡（TemperedSword、Riot、MassiveBleeding）不受影响。
+- **验证**：javac 全量编译通过（EXIT=0）；`validate_localization.ps1` 24 语言全部 PASS（警告与基线一致）。
+
+**#27 VoidCall：被附加“虚无”的卡牌描述中显示“虚无”关键词**
+- **问题**：VoidCall 给卡牌设置 `isEthereal = true` 后，卡面没有任何提示（原版行为：运行期附加的虚无不会出现在卡面描述上），玩家难以辨认。
+- **修复（未改动任何卡牌类）**：新增 `thetormented/patches/EtherealMarkerPatch.java`——以 `WeakHashMap` 记录被 VoidCall 附加的卡实例（身份语义，卡被 GC 后自动清理；`VoidCallAction` 设置 `isEthereal = true` 后立即调用 `markEthereal()` 记录），并以 `AbstractCard.initializeDescription()`（总入口，内部会转发中文分支）postfix 钩子，在被标记且 ethereal 的卡每次重建描述时追加一行当前语言的关键词名（经 `languagePack.getKeywordString("ethereal").ETHEREAL.NAMES[0]` 获取，兜底 "Ethereal"），如 zhs 显示「虚无。」。由于直接取原版关键词表本地化名，无需新增任何 24 语文案；每次重建只追加一行、天然无累积，未打标的卡完全不受影响。
+- **修订（同条目）**：初版使用 ModTheSpire 的 `SpireField` 注入，在启动期首个 `AbstractCard` 构造时即 NPE（构造器内 `initializeDescription` 执行时注入字段引用尚未初始化，见启动崩溃日志）；改为上述纯 Java 弱引用身份映射，重新编译通过、启动崩溃消除。
+- **验证**：javac 全量编译通过（EXIT=0）。本地化零改动。
+
+**#28 HeavyPast：升级不再增加抽牌数（升级改为伤害 +2）**
+- **机制**：升级前为「抽牌 1 -> 2、伤害 6 -> 7」；现在升级伤害 +2（6 -> 8，`UPG_DAMAGE = 2`），抽牌保持 1（`DRAW_UPG` 改为 `0`，`setMagic(DRAW_BASE, 0)`）。两次伤害均按升级后数值结算（2 x 8 = 16 总伤）；Misery 进场（抽牌堆 1 + 弃牌堆 1）不变。
+- **本地化**：零改动——24 语言两种描述本就用动态 `!M!` token，「Draw !M! cards.」升级后自动显示 1。
+- **验证**：javac 全量编译通过（EXIT=0）。等待用户进游戏确认实际效果后本条才算定稿。
+
+**#29 Pardon 打出次数附文 / Indignation 首张牌 0 费显示 / VoidCall 修复补刀 / Shackles 残留 CARD_ADD 清理**
+- **Pardon**：新增动态变量 `!${modID}:PLAYS!`（VariableType.MAGIC，preCalc 读实例 `plays` 字段）与 `getInjectedDescription()` → `EXTENDED_DESCRIPTION[0]` 附文「(此牌已打出 N 次)」，24 语言均已新增该条 EXT 文案。手牌中悬停实时显示累计打出次数，每次 `applyPowers` 刷新；`validate_localization.ps1` 白名单与 `docs/LOCALIZATION_SPEC.md` §4 同步加入 `PLAYS`。
+- **Indignation（激愤）**：24 语言 Power 描述去掉「非攻击」限定（代码本就对任意类型的首张牌免费），与卡牌描述「第 1 张牌」口径一致；新增视觉预告——`IndignationPower.atStartOfTurn` 把当前所有手牌临时显示为 0 费（`costForTurn = 0` + `isCostModifiedForTurn = true`；字节码确认引擎在 `applyStartOfTurnPowers` 之前已对手牌执行 `resetAttributes`，故不会被清掉）；打出第 1 张牌后（`onPlayCard`）恢复其余手牌实际费用显示（`costForTurn = c.cost` 并清标志，第一张本身仍免费）；若整回合未打出任何牌，`atEndOfTurn` 统一恢复所有手牌。
+- **VoidCall（#27 第二次修订，补充首次修复的盲区）**：初版补丁（标记 + `initializeDescription` postfix）只在**本 mod `BaseCard`** 的 `applyPowers`/`calculateCardDamage` 覆写路径（且 `getInjectedDescription()` 非空）触发描述重建——原版及其他 mod 的卡永远不重建，「虚无」行始终不出现。修复：`VoidCallAction` 在 `markEthereal(c)` 后显式调用 `c.initializeDescription()`（幂等，postfix 恰好追加一行），关键词行立即常驻。
+- **Shackles（#24 补漏）**：23 种语言仍残留已删除的 `!${modID}:CARD_ADD!` 模板（仅 zhs 是 #24 新文案），本次在 `DESCRIPTION`/`UPGRADE_DESCRIPTION` 中统一替换为「2」（与始终添加 2 张的语义一致）；`CARD_ADD` 从 `validate_localization.ps1` 白名单及 `LOCALIZATION_SPEC.md` §4 移除。
+- **验证**：javac 全量编译通过（EXIT=0，174 类）；`validate_localization.ps1` 24 语言全部 PASS（警告与基线一致）。等待用户重新打包进游戏确认。
+
+**#30 RelentlessEntanglement：原版洗牌动画窗口期恢复丢失——隐蔽 bug，已知局限，视为正常现象**
+- **我们发现了这个隐蔽的 bug**：当增加 Sin 导致增加 Debt、而此刻恰好发生了洗牌事件时，由于原版游戏播放完动画才会将牌从弃牌堆移动到抽牌堆，此时 RelentlessEntanglement 既不在弃牌堆也不在抽牌堆——尽管触发了增加 Debt 的监听，但卡牌没有被恢复。
+- **成因涉及原版游戏就存在、且至今没有修复的 bug**：原版 `ShuffleVfx` 启动时立即清空弃牌堆并把卡牌交给动画，动画播完才将卡牌落位到抽牌堆；窗口期内卡牌“悬空”，不属于任何正常牌组——一切基于位置的恢复手段（`DiscardToHandAction`、以及我们基于牌组遍历的通知）都无法命中它。而在动画进行中移动卡牌（vfx 仍持有其引用时拖回手牌）会破坏动画收尾、造成卡牌重复，因此从单张卡侧无法安全绕过。
+- **修复尝试（没有成功）**：把排队执行的 `DiscardToHandAction` 替换为自定义 `RecoverToHandAction`——轮询等待洗牌落位：卡在弃牌堆则照常拉回；洗牌动画已将其送入抽牌堆则从抽牌堆拉回；动画窗口期内绝不触碰卡牌。该尝试覆盖了“监听触发时卡仍在弃牌堆”的时序，但**没有彻底成功**——当增加 Debt 的触发恰落在动画窗口内（卡已悬空、通知遍历根本不会命中它）时，恢复依旧丢失，与修复前一致。
+- **结论**：考虑到这张牌本身的数值已经合格，且触发频率相对较低，不会产生显著影响，请玩家将其视为正常现象。本地化零改动；javac 全量编译通过（EXIT=0）。
+
+**#31 VoidCall 两处修复：retain 卡附加虚无后不消耗；虚无关键词行超出卡面**
+- **问题 1（retain 卡不消耗）**：VoidCall 对拥有保留词条的卡（Firm、升级后的 Loan）附加虚无后，回合结束时该卡仍留在手牌、没有被消耗。根因是**原版固有行为**：回复节 `DiscardAtEndOfTurnAction` 先把 retain/selfRetain 卡移入 limbo 暂存（稍后 `RestoreRetainedCardsAction` 放回手牌），而耗虚钩子 `AbstractCard.triggerOnEndOfPlayerTurn` 只遍历手牌克隆——limbo 中的卡永远不会被遍历到、永不消耗。原版不存在 adopt「保留+虚无」组合卡，故从未暴露；且「保留」与虚无（回合末消失）语义本就相悖。
+- **修复 1**：`VoidCallAction` 附加虚无时同步清除 `retain`/`selfRetain` 字段——卡失去保留词条后正常走耗虚流程（`DiscardAtEndOfTurnAction` 中虚无卡的 `ExhaustSpecificCardAction` 入队先于丢弃动作执行，不会误入弃牌堆）。Firm/升级 Loan 等任意保留牌被 VoidCall 选中时，虚无现在真实生效：回合结束时消耗。
+- **问题 2（虚无行超出卡面）**：「虚无。」关键词行被推到卡面左侧屏幕外（视觉上像混入了多余空格/tab）。根因：补丁用 `new DescriptionLine(text, 1000.0f)`，而原版渲染以 `card.x − line.width × drawScale / 2` 定位每行左端——1000f 的假宽度把该行推到卡面外。
+- **修复 2**：`EtherealMarkerPatch` 改用原版同款测量：`new GlyphLayout(FontHelper.cardDescFont_N, text).width`（AbstractCard 的静态 `gl` 是 private 不能复用，故自行构造，字体在初始化时 scale=1.0，与原版 initializeDescription 的测量口径一致）。
+- **验证**：javac 全量编译通过（EXIT=0）。文案零改动（无需 validate）。等待用户重新打包进游戏确认：Firm/升级 Loan 被 VoidCall 附加后回合结束正确消耗；虚无行紧贴描述末行显示在卡面内。
+
+**#32 v1.0.1 正式补丁发布**
+- **内容**：本版替换了部分遗物贴图，修复了 Beta art 的卡牌预览（cards_test）问题，复查了所有卡牌的实现并修复已知卡牌 bug，并对部分卡牌进行了调整与重做。
+- **本版累积改动（#20-#31）**：遗物贴图替换；Beta art 卡牌大图预览修复（LoadPortraitImg 重做、cards_test/<类型>/_p.png 规则、逐帧兜底，#19）；全卡牌复查与既有 bug 修复（VoidCall #27/#29/#31、ChaosDirty #22/#23/#26、Rebel #21、ReconcileFate #21/#24、RelentlessEntanglement #30 已知局限如实记录、Indignation #29、Pardon #29、Shackles #20/#24/#29、BrokenArmor #20/#23、SacredLand #20、HeavyPast #28、Relapse #23，及遗物重做 CursedBrokenBlade/HeroLongsword #25）；24 语言全量校验。
+- **技术**：pom.xml 版本号 1.0.0 -> 1.0.1；jar 基于全新编译重建（javac EXIT=0，151 个源文件），并修复了 ModTheSpire.json 描述字段的编码损坏（GBK 误写导致的右单引号与中文标点乱码）。
+- **验证**：javac 全量编译 EXIT=0；alidate_localization.ps1 24 语言全部 PASS。
 ---
 
 ### 帮助翻译你的语言

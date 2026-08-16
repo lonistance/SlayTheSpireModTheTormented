@@ -22,7 +22,7 @@ public class RelentlessBleed extends BaseCard {
 
     public RelentlessBleed() {
         super(ID, info);
-        setMagic(3, 1);
+        setMagic(4, 2);
     }
 
     @Override

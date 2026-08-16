@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "究極の力",
-                                 "DESCRIPTIONS":  [
-                                                      "あなたはとてもクールで強い。"
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "出血",
-                                    "DESCRIPTIONS":  [
-                                                         "ターン開始時、 #b",
-                                                         " HPを失った後、すべての出血を取り除く。ブロックされなかった攻撃ダメージを受けた出血中のクリーチャーは、出血 #b1 を得る。"
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "罪",
-                                  "DESCRIPTIONS":  [
-                                                       "罪を #b5 持つと、 ",
-                                                       " 負債を得る。"
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "負債",
-                                   "DESCRIPTIONS":  [
-                                                        "負債は #b10% 多くのダメージを受ける。 ",
-                                                        "% 多くのダメージを受ける。 NL 負債の付与が人の作りし物に相殺されたとき、相殺された負債 1 につき罪を ",
-                                                        " 失う。"
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "次ターンのエネルギー減少",
-                                                 "DESCRIPTIONS":  [
-                                                                      "次のターン、 [E] を失う"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "次ターンのエネルギー増加",
-                                                 "DESCRIPTIONS":  [
-                                                                      "次のターン、 [E] を得る"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "慈悲",
-                                    "DESCRIPTIONS":  [
-                                                         "このターン中、負債は追加ダメージを与えない"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "深手",
-                                        "DESCRIPTIONS":  [
-                                                             "ターン開始時、出血は取り除かれない。"
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "救済",
-                                     "DESCRIPTIONS":  [
-                                                          "ターン終了時、手札のすべての ",
-                                                          " を廃棄する。"
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "受け流し",
-                                    "DESCRIPTIONS":  [
-                                                         "攻撃されるたび、ブロックしたダメージを攻撃者に反射する。"
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "執拗な出血",
-                                              "DESCRIPTIONS":  [
-                                                                   "各ターン開始時、敵全体に #b",
-                                                                   " 出血を与える。"
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "悲哀",
-                                    "DESCRIPTIONS":  [
-                                                         "このターン中、カードを引くたび、敵全体に #b",
-                                                         " 出血を与える。"
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "戦慄の記憶",
-                                          "DESCRIPTIONS":  [
-                                                               "このターン中に負債を得た場合、敵が与えるダメージが #b",
-                                                               "% 減少する。"
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "運命の和解",
-                                            "DESCRIPTIONS":  [
-                                                                 "*悲惨 を生成または廃棄するたび、 #b",
-                                                                 " ブロックを得る。"
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "引き裂かれた肉",
-                                           "DESCRIPTIONS":  [
-                                                                "敵に 出血 を 6 与えるたび、敵全体に #b",
-                                                                " ダメージを与える。"
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "血のトゲ",
-                                          "DESCRIPTIONS":  [
-                                                               "敵に攻撃されるたび、その敵に #b",
-                                                               " 出血を与える。"
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "贖罪の道",
-                                             "DESCRIPTIONS":  [
-                                                                  "負債を 1 取り除くたび、カードを #b",
-                                                                  " 枚引く。"
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "義憤",
-                                          "DESCRIPTIONS":  [
-                                                               "次の #b",
-                                                               " ターン中、各ターンで最初にプレイする非アタックカードのコストが 0 になる。"
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "渇望する戦意",
-                                                  "DESCRIPTIONS":  [
-                                                                       "各ターン開始時、 [E] を得る。 NL 各ターン終了時、ダメージを 3 受ける。"
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "降伏",
-                                      "DESCRIPTIONS":  [
-                                                           "この敵は #b50% 多くのダメージを受ける。"
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "審判の形態",
-                                           "DESCRIPTIONS":  [
-                                                                "最大HPの ",
-                                                                "% 未満の敵に 50% 多くのダメージを与える。"
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "罪の化身",
-                                        "DESCRIPTIONS":  [
-                                                             "ターン終了時、 #b",
-                                                             " ブロックを得る。さらに負債 #b",
-                                                             " ごとにブロックを 追加で得る。"
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "血祭り",
-                                        "DESCRIPTIONS":  [
-                                                             "最初の ",
-                                                             " アタックカードをプレイしたとき、ブロックされなかったダメージに等しい出血を与える。"
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "過度の硬直",
-                                        "DESCRIPTIONS":  [
-                                                             "アタックカードをプレイするたび、この戦闘中永続的に ",
-                                                             " ダメージを失う。"
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "制限",
-                                          "DESCRIPTIONS":  [
-                                                               "[E] を得られない。ターン終了時に取り除かれる。"
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "究極の力",
+              "DESCRIPTIONS":  [
+                         "あなたはとてもクールで強い。"
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "出血",
+                "DESCRIPTIONS":  [
+                          "ターン開始時、 #b",
+                          " HPを失った後、すべての出血を取り除く。ブロックされなかった攻撃ダメージを受けた出血中のクリーチャーは、出血 #b1 を得る。"
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "罪",
+               "DESCRIPTIONS":  [
+                          "罪を #b5 持つと、 ",
+                          " 負債を得る。"
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "負債",
+                "DESCRIPTIONS":  [
+                          "負債は #b10% 多くのダメージを受ける。 ",
+                          "% 多くのダメージを受ける。 NL 負債の付与が人の作りし物に相殺されたとき、相殺された負債 1 につき罪を ",
+                          " 失う。"
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "次ターンのエネルギー減少",
+                      "DESCRIPTIONS":  [
+                                 "次のターン、 [E] を失う"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "次ターンのエネルギー増加",
+                      "DESCRIPTIONS":  [
+                                 "次のターン、 [E] を得る"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "慈悲",
+                "DESCRIPTIONS":  [
+                          "このターン中、負債は追加ダメージを与えない"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "深手",
+                  "DESCRIPTIONS":  [
+                            "ターン開始時、出血は取り除かれない。"
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "救済",
+                "DESCRIPTIONS":  [
+                           "ターン終了時、手札のすべての ",
+                           " を廃棄する。"
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "受け流し",
+                "DESCRIPTIONS":  [
+                          "攻撃されるたび、ブロックしたダメージを攻撃者に反射する。"
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "執拗な出血",
+                     "DESCRIPTIONS":  [
+                                "各ターン開始時、敵全体に #b",
+                                " 出血を与える。"
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "悲哀",
+                "DESCRIPTIONS":  [
+                          "このターン中、カードを引くたび、敵全体に #b",
+                          " 出血を与える。"
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "戦慄の記憶",
+                   "DESCRIPTIONS":  [
+                              "このターン中に負債を得た場合、敵が与えるダメージが #b",
+                              "% 減少する。"
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "運命の和解",
+                    "DESCRIPTIONS":  [
+                              "*悲惨 を生成または廃棄するたび、 #b",
+                              " ブロックを得る。"
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "引き裂かれた肉",
+                    "DESCRIPTIONS":  [
+                              "敵に 出血 を 6 与えるたび、敵全体に #b",
+                              " ダメージを与える。"
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "血のトゲ",
+                   "DESCRIPTIONS":  [
+                              "敵に攻撃されるたび、その敵に #b",
+                              " 出血を与える。"
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "贖罪の道",
+                    "DESCRIPTIONS":  [
+                               "負債を 1 取り除くたび、カードを #b",
+                               " 枚引く。"
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "義憤",
+                   "DESCRIPTIONS":  [
+                              "次の #b",
+                              " ターン中、各ターンで最初にプレイするカードのコストが 0 になる。"
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "渇望する戦意",
+                       "DESCRIPTIONS":  [
+                                  "各ターン開始時、 [E] を得る。 NL 各ターン終了時、ダメージを 3 受ける。"
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "降伏",
+                 "DESCRIPTIONS":  [
+                            "この敵は #b50% 多くのダメージを受ける。"
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "審判の形態",
+                    "DESCRIPTIONS":  [
+                              "最大HPの ",
+                              "% 未満の敵に 50% 多くのダメージを与える。"
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "罪の化身",
+                  "DESCRIPTIONS":  [
+                            "ターン終了時、 #b",
+                            " ブロックを得る。さらに負債 #b",
+                            " ごとにブロックを 追加で得る。"
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "血祭り",
+                  "DESCRIPTIONS":  [
+                            "最初の ",
+                            " アタックカードをプレイしたとき、ブロックされなかったダメージに等しい出血を与える。"
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "過度の硬直",
+                  "DESCRIPTIONS":  [
+                            "アタックカードをプレイするたび、この戦闘中永続的に ",
+                            " ダメージを失う。"
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "制限",
+                   "DESCRIPTIONS":  [
+                              "[E] を得られない。ターン終了時に取り除かれる。"
+                            ]
+                 }
 }

@@ -1,98 +1,112 @@
 {
-  "${modID}:RelicID": {
-    "NAME": "Dobra relikvija",
-    "FLAVOR": "Tekst priče prikazan u detaljnom prikazu relikvije.",
-    "DESCRIPTIONS": [
-      "Zadobi [E] na početku svog poteza. [E] je ikona energije."
-    ]
-  }, "${modID}:CursedBrokenBlade": {
-    "NAME": "Prokleta slomljena oštrica",
-    "FLAVOR": "Slomljena oštrica koja i dalje žudi za grehovima drugih.",
-    "DESCRIPTIONS": [
-      "Na početku svake borbe, poboljšaj nasumični Udarac i nasumičnu Odbranu do kraja borbe. NL Na početku svakog poteza, zadobi #b",
-      " ${modID}:Greha."
-    ]
-  }, "${modID}:BarbedHook": {
-    "NAME": "Trnovita kuka",
-    "FLAVOR": "Okrutna kuka koja sve dublje zariva svaki put kad razdere meso.",
-    "DESCRIPTIONS": [
-      "Kad god naneseš ${modID}:Krvarenje, nanesi #b1 dodatno ${modID}:Krvarenje."
-    ]
-  }, "${modID}:FrenziedGoblet": {
-    "NAME": "Pomamni pehar",
-    "FLAVOR": "Vino spravljeno u čistoj pomami; svaka zdravica ispija još jedan život.",
-    "DESCRIPTIONS": [
-      "Kad god umre neprijatelj koji nije podanik, zaleči #b8 ž. p."
-    ]
-  }, "${modID}:ContractSeal": {
-    "NAME": "Pečat ugovora",
-    "FLAVOR": "Ugovor potpisan krvlju, koji poštuju samo čisti.",
-    "DESCRIPTIONS": [
-      "Na kraju borbe, ako nemaš ${modID}:Duga, zadobi #b15 zlata."
-    ]
-  }, "${modID}:RecoveryCharm": {
-    "NAME": "Amajlija oporavka",
-    "FLAVOR": "Amajlija koja izvlači bol iz svake rane.",
-    "DESCRIPTIONS": [
-      "Kad god bi izgubio ž. p., umesto toga izgubi najviše #b18 ž. p."
-    ]
-  }, "${modID}:GargoyleArm": {
-    "NAME": "Gargojlova ruka",
-    "FLAVOR": "Drevni kamen koji pretvara čišćenje u zaštitu.",
-    "DESCRIPTIONS": [
-      "Kad god ukloniš #b1 sloj negativnog efekta, zadobi #b1 odbrane."
-    ]
-  }, "${modID}:ScorchedBanner": {
-    "NAME": "Opaljena zastava",
-    "FLAVOR": "Poderana zastava koja okuplja samo praznih ruku.",
-    "DESCRIPTIONS": [
-      "Na kraju tvog poteza, ako nemaš karte u ruci, vuci #b2 dodatne karte na početku sledećeg poteza."
-    ]
-  }, "${modID}:HeroLongsword": {
-    "NAME": "Junački mač",
-    "FLAVOR": "Oštrica iskovana od obećanja iskupljenja.",
-    "DESCRIPTIONS": [
-      "Zamenjuje Prokletu slomljenu oštricu. NL Po preuzimanju, poboljšaj sve Udarce i Odbrane u svom špilu. NL Na početku svakog poteza, zadobi #b",
-      " ${modID}:Greha."
-    ]
-  }, "${modID}:HeavyFetters": {
-    "NAME": "Teški okovi",
-    "FLAVOR": "Gvozdena težina koja sputava, ali daje snagu.",
-    "DESCRIPTIONS": [
-      "Na početku svakog poteza, zadobi [E]. NL Na početku svake borbe, dodaj 1 *Zapetljan u gomilu za vučenje."
-    ]
-  }, "${modID}:Drumstick": {
-    "NAME": "Bubnjača",
-    "FLAVOR": "Svaki udarac bubnja budi iskru energije.",
-    "DESCRIPTIONS": [
-      "Svaki put kad iscrpiš #b",
-      " karte, zadobi [E]."
-    ]
-  }, "${modID}:RegretlessCoin": {
-    "NAME": "Novčić bez kajanja",
-    "FLAVOR": "Novčić koji prašta svaki pogrešan korak.",
-    "DESCRIPTIONS": [
-      "Kad god uđeš u Prodavnicu, zadobi #b",
-      " zlata."
-    ]
-  }, "${modID}:BlackstoneLantern": {
-    "NAME": "Fenjer od crnog kamena",
-    "FLAVOR": "Njegovo hladno svetlo obeležava svaku nevolju koju zapali.",
-    "DESCRIPTIONS": [
-      "Prvi put kad naneseš negativan efekat neprijatelju svake borbe, zadobi [E]."
-    ]
-  }, "${modID}:IronHammer": {
-    "NAME": "Gvozdeni čekić",
-    "FLAVOR": "Iskovan na nakovnju beskrajne bitke.",
-    "DESCRIPTIONS": [
-      "Kad god pobediš Elitu, poboljšaj #b",
-      " nasumične karte u svom špilu."
-    ]
-  }, "${modID}:UndyingEmber": {
-    "NAME": "Neugasivi žar",
-    "FLAVOR": "Iskra koja se hrani nesrećom i nikada se ne gasi.",
-    "DESCRIPTIONS": [
-      "Kad god imaš negativan efekat, primi #b25% manje štete. NL Zadaj #b25% više štete neprijateljima koji imaju negativan efekat."
-    ]
-  }
+  "${modID}:RelicID":  {
+              "NAME":  "Dobra relikvija",
+              "FLAVOR":  "Tekst priče prikazan u detaljnom prikazu relikvije.",
+              "DESCRIPTIONS":  [
+                        "Zadobi [E] na početku svog poteza. [E] je ikona energije."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "Prokleta slomljena oštrica",
+                    "FLAVOR":  "Slomljena oštrica koja i dalje žudi za grehovima drugih.",
+                    "DESCRIPTIONS":  [
+                              "Na početku svake borbe, poboljšaj nasumični Udarac i nasumičnu Odbranu do kraja borbe. NL Od 2. poteza, zadobi #b na početku svakog poteza",
+                              " ${modID}:Greha."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "Trnovita kuka",
+                "FLAVOR":  "Okrutna kuka koja sve dublje zariva svaki put kad razdere meso.",
+                "DESCRIPTIONS":  [
+                          "Kad god naneseš ${modID}:Krvarenje, nanesi #b1 dodatno ${modID}:Krvarenje."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "Pomamni pehar",
+                  "FLAVOR":  "Vino spravljeno u čistoj pomami; svaka zdravica ispija još jedan život.",
+                  "DESCRIPTIONS":  [
+                            "Kad god umre neprijatelj koji nije podanik, zaleči #b8 ž. p."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "Pečat ugovora",
+                "FLAVOR":  "Ugovor potpisan krvlju, koji poštuju samo čisti.",
+                "DESCRIPTIONS":  [
+                            "Na kraju borbe, ako nemaš ${modID}:Duga, zadobi #b15 zlata."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "Amajlija oporavka",
+                  "FLAVOR":  "Amajlija koja izvlači bol iz svake rane.",
+                  "DESCRIPTIONS":  [
+                            "Kad god bi izgubio ž. p., umesto toga izgubi najviše #b18 ž. p."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "Gargojlova ruka",
+                "FLAVOR":  "Drevni kamen koji pretvara čišćenje u zaštitu.",
+                "DESCRIPTIONS":  [
+                            "Kad god ukloniš #b1 sloj negativnog efekta, zadobi #b1 odbrane."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "Opaljena zastava",
+                  "FLAVOR":  "Poderana zastava koja okuplja samo praznih ruku.",
+                  "DESCRIPTIONS":  [
+                            "Na kraju tvog poteza, ako nemaš karte u ruci, vuci #b2 dodatne karte na početku sledećeg poteza."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "Junački mač",
+                  "FLAVOR":  "Oštrica iskovana od obećanja iskupljenja.",
+                  "DESCRIPTIONS":  [
+                            "Zamenjuje Prokletu slomljenu oštricu. NL Po preuzimanju, poboljšaj sve Udarce i Odbrane u svom špilu. NL Od 2. poteza, zadobi #b na početku svakog poteza",
+                            " ${modID}:Greha."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "Teški okovi",
+                "FLAVOR":  "Gvozdena težina koja sputava, ali daje snagu.",
+                "DESCRIPTIONS":  [
+                            "Na početku svakog poteza, zadobi [E]. NL Na početku svake borbe, dodaj 1 *Zapetljan u gomilu za vučenje."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "Bubnjača",
+                "FLAVOR":  "Svaki udarac bubnja budi iskru energije.",
+                "DESCRIPTIONS":  [
+                          "Svaki put kad iscrpiš #b",
+                          " karte, zadobi [E]."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "Novčić bez kajanja",
+                  "FLAVOR":  "Novčić koji prašta svaki pogrešan korak.",
+                  "DESCRIPTIONS":  [
+                            "Kad god uđeš u Prodavnicu, zadobi #b",
+                            " zlata."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "Fenjer od crnog kamena",
+                    "FLAVOR":  "Njegovo hladno svetlo obeležava svaku nevolju koju zapali.",
+                    "DESCRIPTIONS":  [
+                              "Prvi put kad naneseš negativan efekat neprijatelju svake borbe, zadobi [E]."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "Gvozdeni čekić",
+                "FLAVOR":  "Iskovan na nakovnju beskrajne bitke.",
+                "DESCRIPTIONS":  [
+                          "Kad god pobediš Elitu, poboljšaj #b",
+                          " nasumične karte u svom špilu."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "Neugasivi žar",
+                "FLAVOR":  "Iskra koja se hrani nesrećom i nikada se ne gasi.",
+                "DESCRIPTIONS":  [
+                            "Kad god imaš negativan efekat, primi #b25% manje štete. NL Zadaj #b25% više štete neprijateljima koji imaju negativan efekat."
+                          ]
+                }
 }

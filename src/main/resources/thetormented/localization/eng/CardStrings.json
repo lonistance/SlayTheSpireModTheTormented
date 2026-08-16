@@ -1,441 +1,447 @@
 {
-    "${modID}:ExampleCard":  {
-                                     "NAME":  "Name",
-                                     "DESCRIPTION":  "Description. NL Second line.",
-                                     "UPGRADE_DESCRIPTION":  "This will automatically be used if the card is upgraded. Remove it if unneeded.",
-                                     "EXTENDED_DESCRIPTION":  [
-                                                                  "You can put more text in here.",
-                                                                  "If you need to use it for stuff.",
-                                                                  "Blizzard is a good example for this."
-                                                              ]
-                                 },
-    "${modID}:StrikeTormented":  {
-                                         "NAME":  "Strike",
-                                         "DESCRIPTION":  "Deal !D! damage.",
-                                         "UPGRADE_DESCRIPTION":  "Deal !D! damage."
-                                     },
-    "${modID}:DefendTormented":  {
-                                         "NAME":  "Defend",
-                                         "DESCRIPTION":  "Gain !B! BLOCK.",
-                                         "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK."
-                                     },
-    "${modID}:Rebel":  {
-                               "NAME":  "Rebel",
-                               "DESCRIPTION":  "Deal !D! damage. NL Give ${modID}:Bleed that equals to it will make.",
-                               "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Give ${modID}:Bleed that equals to it will make.",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            "NL (Give !M! ${modID}:Bleed)"
-                                                        ]
-                           },
-    "${modID}:Forgive":  {
-                                 "NAME":  "Forgive",
-                                 "DESCRIPTION":  "Gain !B! BLOCK. NL Decrease !M! ${modID}:Sin.",
-                                 "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK. NL Decrease !M! ${modID}:Sin."
-                             },
-    "${modID}:Slash":  {
-                               "NAME":  "Slash",
-                               "DESCRIPTION":  "Deal !D! damage. NL Apply !M! ${modID}:Bleed.",
-                               "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Apply !M! ${modID}:Bleed."
-                           },
-    "${modID}:Rend":  {
-                              "NAME":  "Rend",
-                              "DESCRIPTION":  "Deal !D! damage. NL If the enemy has ${modID}:Bleed,deal !M! extra hits.",
-                              "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL If the enemy has ${modID}:Bleed,deal !M! extra hits."
-                          },
-    "${modID}:Pursuit":  {
-                                 "NAME":  "Pursuit",
-                                 "DESCRIPTION":  "Can only be played if the last played card was an attack cards in this turn. NL Deal !D! damage.",
-                                 "UPGRADE_DESCRIPTION":  "Can only be played if the last played card was an attack cards in this turn. NL Deal !D! damage.",
-                                 "EXTENDED_DESCRIPTION":  [
-                                                              "Need to play an Attack first this turn."
-                                                          ]
-                             },
-    "${modID}:ArmSevering":  {
-                                     "NAME":  "Arm Severing",
-                                     "DESCRIPTION":  "Deal !D! damage. NL Add !M! *Misery in your hand.",
-                                     "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Add !M! *Misery in your hand."
-                                 },
-    "${modID}:QuenchedBlade":  {
-                                       "NAME":  "Quenched Blade",
-                                       "DESCRIPTION":  "Deal !D! damage. NL Upgrade !M! cards in your hand for the rest of combat.",
-                                       "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Upgrade !M! cards in your hand for the rest of combat."
-                                   },
-    "${modID}:CruelTorture":  {
-                                      "NAME":  "Cruel Torture",
-                                      "DESCRIPTION":  "Deal !D! damage.Gain !${modID}:SIN! ${modID}:Sin.",
-                                      "UPGRADE_DESCRIPTION":  "Deal !D! damage.Gain !${modID}:SIN! ${modID}:Sin."
-                                  },
-    "${modID}:AtonementStrike":  {
-                                         "NAME":  "Atonement Strike",
-                                         "DESCRIPTION":  "Deal !D! damage.Draw !M! cards if you have ${modID}:Debt. NL Then, lose 4 ${modID}:Sin.",
-                                         "UPGRADE_DESCRIPTION":  "Deal !D! damage.Draw !M! cards if you have ${modID}:Debt. NL Then, lose 4 ${modID}:Sin."
-                                     },
-    "${modID}:UnrighteousGuilt":  {
-                                          "NAME":  "Unrighteous Guilt",
-                                          "DESCRIPTION":  "Deal !D! damage to ALL enemy.Gain !${modID}:SIN! ${modID}:Sin.",
-                                          "UPGRADE_DESCRIPTION":  "Deal !D! damage to ALL enemy.Gain !${modID}:SIN! ${modID}:Sin."
-                                      },
-    "${modID}:RelentlessEntanglement":  {
-                                                "NAME":  "Relentless Entanglement",
-                                                "DESCRIPTION":  "Deal !D! damage. NL Add it to hand if increase ${modID}:Debt"
-                                            },
-    "${modID}:Agony":  {
-                               "NAME":  "Agony",
-                               "DESCRIPTION":  "Deal !D! damage.Apply !M! Weak and !M! vulnerable.",
-                               "UPGRADE_DESCRIPTION":  "Deal !D! damage.Apply !M! Weak and !M! vulnerable."
-                           },
-    "${modID}:SacredLand":  {
-                                    "NAME":  "Sacred Land",
-                                    "DESCRIPTION":  "Gain !B! Block.Draw !M! cards if you have no ${modID}:Debt. NL Otherwise, lose 7 ${modID}:Sin.",
-                                    "UPGRADE_DESCRIPTION":  "Gain !B! Block.Draw !M! cards if you have no ${modID}:Debt. NL Otherwise, lose 7 ${modID}:Sin."
-                                },
-    "${modID}:Loan":  {
-                              "NAME":  "Loan",
-                              "DESCRIPTION":  "Gain [E] [E] [E].Next turn, lose [E].NL Exhaust",
-                              "UPGRADE_DESCRIPTION":  "Gain [E] [E] [E]. NL Next turn, lose [E].NL Exhaust NL Retain"
-                          },
-    "${modID}:Firm":  {
-                              "NAME":  "Firm",
-                              "DESCRIPTION":  "Gain !B! BLOCK.NL Retain",
-                              "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK.NL Retain"
-                          },
-    "${modID}:Odyssey":  {
-                                 "NAME":  "Odyssey",
-                                 "DESCRIPTION":  "Draw !M! card.NL Exhaust 1 card. NL If you exhaust status card, decrease 3 ${modID}:Sin",
-                                 "UPGRADE_DESCRIPTION":  "Draw !M! cards.NL Exhaust 1 card. NL If you exhaust status card, decrease 3 ${modID}:Sin"
-                             },
-    "${modID}:BloodGuard":  {
-                                    "NAME":  "BloodGuard",
-                                    "DESCRIPTION":  "Gain !B! BLOCK. NL Give an enemy !M! ${modID}:Bleed.",
-                                    "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK. NL Give an enemy !M! ${modID}:Bleed."
-                                },
-    "${modID}:PleaOfInnocence":  {
-                                         "NAME":  "Plea Of Innocence",
-                                         "DESCRIPTION":  "Gain !B! BLOCK. NL Each ${modID}:Debt makes !M! more BLOCK.",
-                                         "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK. NL Each ${modID}:Debt makes !M! more BLOCK.",
-                                         "EXTENDED_DESCRIPTION":  [
-                                                                      " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
-                                                                  ]
-                                     },
-    "${modID}:PredictiveMeasures":  {
-                                            "NAME":  "Predictive Measures",
-                                            "DESCRIPTION":  "Draw !M! card. If it is an Attack, it costs 0 until played this turn.",
-                                            "UPGRADE_DESCRIPTION":  "Draw !M! card. If it is an Attack, it costs 0 until played this turn."
-                                        },
-    "${modID}:Hostility":  {
-                                   "NAME":  "Hostility",
-                                   "DESCRIPTION":  "If your BLOCK is under !${modID}:BLOCK_THRESHOLD!,give all enemy !M! weak. NL Gain !B! BLOCK",
-                                   "UPGRADE_DESCRIPTION":  "If your BLOCK is under !${modID}:BLOCK_THRESHOLD!,give all enemy !M! weak. NL Gain !B! BLOCK"
-                               },
-    "${modID}:Shackles":  {
-                                  "NAME":  "Shackles",
-                                  "DESCRIPTION":  "Add !${modID}:CARD_ADD! *Misery. NL Gain !M! BLOCK for each status in your hand",
-                                  "UPGRADE_DESCRIPTION":  "Add !${modID}:CARD_ADD! *Misery. NL Gain !M! BLOCK for each status in your hand",
-                                  "EXTENDED_DESCRIPTION":  [
-                                                               " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
-                                                           ]
-                              },
-    "${modID}:DeterringStrike":  {
-                                         "NAME":  "Deterring Strike",
-                                         "DESCRIPTION":  "Deal !D! damage. NL Enemy loss !M! strength this turn if the enemy\u0027s intend is attack",
-                                         "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Enemy loss !M! strength this turn if the enemy\u0027s intend is attack"
-                                     },
-    "${modID}:HeavySmash":  {
-                                    "NAME":  "Heavy Smash",
-                                    "DESCRIPTION":  "Can only be played if has !M! ${modID}:Debt. Deal !D! damage",
-                                    "UPGRADE_DESCRIPTION":  "Can only be played if has !M! ${modID}:Debt. Deal !D! damage",
-                                    "EXTENDED_DESCRIPTION":  [
-                                                                 "Can only be played if has 2 ${modID}:Debt"
-                                                             ]
-                                },
-    "${modID}:SinsToBlades":  {
-                                      "NAME":  "Sins to Blades",
-                                      "DESCRIPTION":  "Deal !D! damage. NL Draw cards equal to your ${modID}:Debt.",
-                                      "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Draw cards equal to your ${modID}:Debt plus 1.",
-                                      "EXTENDED_DESCRIPTION":  [
-                                                                   " (Draw !${modID}:TOTAL_DRAW! card(s))"
-                                                               ]
-                                  },
-    "${modID}:ChaosDirty":  {
-                                    "NAME":  "Chaos Dirty",
-                                    "DESCRIPTION":  "Gain !${modID}:SIN! ${modID}:Sins. NL Deal !D! damage. Each ${modID}:Debt you have deals !M! extra damage",
-                                    "UPGRADE_DESCRIPTION":  "Gain !${modID}:SIN! ${modID}:Sins. NL Deal !D! damage. Each ${modID}:Debt you have deals !M! extra damage",
-                                    "EXTENDED_DESCRIPTION":  [
-                                                                 " (Deal !${modID}:TOTAL_DAMAGE! damage in total)"
-                                                             ]
-                                },
-    "${modID}:TemperedSword":  {
-                                       "NAME":  "Tempered Sword",
-                                       "DESCRIPTION":  "Deal !D! damage. NL Each status you exhaust deals !M! extra damage",
-                                       "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Each status you exhaust deals !M! extra damage",
-                                       "EXTENDED_DESCRIPTION":  [
-                                                                    " (Deal !${modID}:TOTAL_DAMAGE! damage in total)"
-                                                                ]
-                                   },
-    "${modID}:Crush":  {
-                               "NAME":  "Crush",
-                               "DESCRIPTION":  "Deal !D! damage. NL Gain BLOCK that equals to ${modID}:Bleed the enemy has",
-                               "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Gain BLOCK that equals to ${modID}:Bleed the enemy has",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
-                                                        ]
-                           },
-    "${modID}:Unleash":  {
-                                 "NAME":  "Unleash",
-                                 "DESCRIPTION":  "Deal !D! damage 2 times. NL Next turn gain [E]",
-                                 "UPGRADE_DESCRIPTION":  "Deal !D! damage 2 times. NL Next turn gain [E][E]"
-                             },
-    "${modID}:HeavyPast":  {
-                                   "NAME":  "Heavy Past",
-                                   "DESCRIPTION":  "Deal !D! damage 2 times. NL Add 1 *Misery to your draw pile and 1 to your discard pile. NL Draw !M! cards.",
-                                   "UPGRADE_DESCRIPTION":  "Deal !D! damage 2 times. NL Add 1 *Misery to your draw pile and 1 to your discard pile. NL Draw !M! cards."
-                               },
-    "${modID}:Implication":  {
-                                     "NAME":  "Implication",
-                                     "DESCRIPTION":  "Exhaust 1 card from your hand. NL Deal !D! damage to ALL enemies. NL For each enemy with ${modID}:Bleed dealt damage to, draw 1 card.",
-                                     "UPGRADE_DESCRIPTION":  "Exhaust 1 card from your hand. NL Deal !D! damage to ALL enemies. NL For each enemy with ${modID}:Bleed dealt damage to, draw 1 card."
-                                 },
-    "${modID}:ConsecutiveKicks":  {
-                                          "NAME":  "Consecutive Kicks",
-                                          "DESCRIPTION":  "Deal !D! damage !M! times",
-                                          "UPGRADE_DESCRIPTION":  "Deal !D! damage !M! times"
-                                      },
-    "${modID}:MassiveBleeding":  {
-                                         "NAME":  "Massive Bleeding",
-                                         "DESCRIPTION":  "Deal !D! damage. NL Then deal damage that equals to ${modID}:Bleed the enemy has",
-                                         "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Then deal damage that equals to twice the ${modID}:Bleed the enemy has",
-                                         "EXTENDED_DESCRIPTION":  [
-                                                                      " (Deal !${modID}:TOTAL_DAMAGE! damage in total)"
-                                                                  ]
-                                     },
-    "${modID}:FaceDanger":  {
-                                    "NAME":  "Face Danger",
-                                    "DESCRIPTION":  "Deal !D! damage. NL Each *Misery you played decreases 1 energy it costs this combat",
-                                    "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Each *Misery you played decreases 1 energy it costs this combat"
-                                },
-    "${modID}:Relief":  {
-                                "NAME":  "Relief",
-                                "DESCRIPTION":  "Add 2 *Misery to your discard pile. NL At the end of your turn, Exhaust all *Misery in your hand.",
-                                "UPGRADE_DESCRIPTION":  "Innate NL Add 2 *Misery to your discard pile. NL At the end of your turn, Exhaust all *Misery in your hand."
-                            },
-    "${modID}:Misery":  {
-                                "NAME":  "Misery",
-                                "DESCRIPTION":  "Suffer 2 damage. NL Draw 1 card. NL Exhausted"
-                            },
-    "${modID}:Parry":  {
-                               "NAME":  "Parry",
-                               "DESCRIPTION":  "Gain !B! Block. NL Whenever you are attacked, reflect the damage you blocked back to the attacker.",
-                               "UPGRADE_DESCRIPTION":  "Gain !B! Block. NL Whenever you are attacked, reflect the damage you blocked back to the attacker."
-                           },
-    "${modID}:Pardon":  {
-                                "NAME":  "Pardon",
-                                "DESCRIPTION":  "Transform ALL cards in your hand into random cards. NL After being played !M! times, transform into a random Power card",
-                                "UPGRADE_DESCRIPTION":  "Transform ALL cards in your hand into random upgraded cards. NL After being played !M! times, transform into a random upgraded Power card"
-                            },
-    "${modID}:Memorial":  {
-                                  "NAME":  "Memorial",
-                                  "DESCRIPTION":  "Draw 1 card. NL If the card drawn is a Skill, lose !M! ${modID}:Sin.",
-                                  "UPGRADE_DESCRIPTION":  "Draw 1 card. NL If the card drawn is a Skill, lose !M! ${modID}:Sin."
-                              },
-    "${modID}:Boiling":  {
-                                 "NAME":  "Boiling",
-                                 "DESCRIPTION":  "Exhaust all non-Attack cards in your hand. NL Apply !M! ${modID}:Bleed to a random enemy for each card Exhausted.",
-                                 "UPGRADE_DESCRIPTION":  "Exhaust all non-Attack cards in your hand. NL Apply !M! ${modID}:Bleed to a random enemy for each card Exhausted."
-                             },
-    "${modID}:Grief":  {
-                               "NAME":  "Grief",
-                               "DESCRIPTION":  "Add 1 random Status card to your hand. NL This turn, whenever you draw a card, apply !M! ${modID}:Bleed to ALL enemies.",
-                               "UPGRADE_DESCRIPTION":  "Add 1 random Status card to your hand. NL This turn, whenever you draw a card, apply !M! ${modID}:Bleed to ALL enemies."
-                           },
-    "${modID}:BloodSea":  {
-                                  "NAME":  "Sea of Blood",
-                                  "DESCRIPTION":  "Apply !${modID}:BLEED! ${modID}:Bleed. NL Multiply that enemy\u0027s ${modID}:Bleed by !M!. NL Exhaust",
-                                  "UPGRADE_DESCRIPTION":  "Apply !${modID}:BLEED! ${modID}:Bleed. NL Multiply that enemy\u0027s ${modID}:Bleed by !M!. NL Exhaust"
-                              },
-    "${modID}:RelentlessBleed":  {
-                                         "NAME":  "Relentless Bleed",
-                                         "DESCRIPTION":  "At the start of each turn, apply !M! ${modID}:Bleed to ALL enemies.",
-                                         "UPGRADE_DESCRIPTION":  "At the start of each turn, apply !M! ${modID}:Bleed to ALL enemies."
-                                     },
-    "${modID}:DreadMemory":  {
-                                     "NAME":  "Dread Memory",
-                                     "DESCRIPTION":  "If you gained ${modID}:Debt this turn, enemies deal !M!% less damage. NL Only lasts for the turn you gained ${modID}:Debt.",
-                                     "UPGRADE_DESCRIPTION":  "If you gained ${modID}:Debt this turn, enemies deal !M!% less damage. NL Only lasts for the turn you gained ${modID}:Debt."
-                                 },
-    "${modID}:Trial":  {
-                               "NAME":  "Trial",
-                               "DESCRIPTION":  "Gain !M! Strength and !M! Dexterity. NL Gain 1 Weak.",
-                               "UPGRADE_DESCRIPTION":  "Gain !M! Strength and !M! Dexterity. NL Gain 1 Weak."
-                           },
-    "${modID}:ReconcileFate":  {
-                                       "NAME":  "Reconcile Fate",
-                                       "DESCRIPTION":  "Whenever you generate or Exhaust a *Misery, gain !M! Block.",
-                                       "UPGRADE_DESCRIPTION":  "Whenever you generate or Exhaust a *Misery, gain !M! Block."
-                                   },
-    "${modID}:MangledFlesh":  {
-                                      "NAME":  "Mangled Flesh",
-                                      "DESCRIPTION":  "Whenever you apply 6 ${modID}:Bleed to an enemy, deal !M! damage to ALL enemies.",
-                                      "UPGRADE_DESCRIPTION":  "Whenever you apply 6 ${modID}:Bleed to an enemy, deal !M! damage to ALL enemies."
-                                  },
-    "${modID}:BloodThorns":  {
-                                     "NAME":  "Blood Thorns",
-                                     "DESCRIPTION":  "Whenever an enemy attacks you, apply !M! ${modID}:Bleed to it.",
-                                     "UPGRADE_DESCRIPTION":  "Whenever an enemy attacks you, apply !M! ${modID}:Bleed to it."
-                                 },
-    "${modID}:RedemptionPath":  {
-                                        "NAME":  "Path of Redemption",
-                                        "DESCRIPTION":  "Whenever you remove 1 ${modID}:Debt, draw !M! cards.",
-                                        "UPGRADE_DESCRIPTION":  "Whenever you remove 1 ${modID}:Debt, draw !M! cards."
-                                    },
-    "${modID}:Requiem":  {
-                                 "NAME":  "Requiem",
-                                 "DESCRIPTION":  "Each *Misery you Exhausted deals !D! damage to a random enemy",
-                                 "UPGRADE_DESCRIPTION":  "Each *Misery you Exhausted deals !D! damage to a random enemy",
-                                 "EXTENDED_DESCRIPTION":  [
-                                                              " (Deal !${modID}:HITS! hits in total)"
-                                                          ]
-                             },
-    "${modID}:DesperateMeasure":  {
-                                          "NAME":  "Desperate Measure",
-                                          "DESCRIPTION":  "Deal !D! damage. NL If this doesn\u0027t kill the enemy, lose !M! HP.",
-                                          "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL If this doesn\u0027t kill the enemy, lose !M! HP."
-                                      },
-    "${modID}:UnceasingWar":  {
-                                      "NAME":  "Unceasing War",
-                                      "DESCRIPTION":  "Deal !D! damage !${modID}:HITS! times. NL Whenever this kills an enemy, permanently increase this card\u0027s hit count by 1 for the rest of the run. NL Exhaust",
-                                      "UPGRADE_DESCRIPTION":  "Deal !D! damage !${modID}:HITS! times. NL Whenever this kills an enemy, permanently increase this card\u0027s hit count by 1 for the rest of the run. NL Exhaust"
-                                  },
-    "${modID}:FinalJudgment":  {
-                                       "NAME":  "Final Judgment",
-                                       "DESCRIPTION":  "Only playable if you have at least 4 ${modID}:Debt. NL Deal !D! damage to ALL enemies. NL Remove all ${modID}:Sin.",
-                                       "UPGRADE_DESCRIPTION":  "Only playable if you have at least 4 ${modID}:Debt. NL Deal !D! damage to ALL enemies. NL Remove all ${modID}:Sin.",
-                                       "EXTENDED_DESCRIPTION":  [
-                                                                    "Need at least 4 ${modID}:Debt to play."
-                                                                ]
-                                   },
-    "${modID}:Blazing":  {
-                                 "NAME":  "Blazing",
-                                 "DESCRIPTION":  "Exhaust all cards in your hand. NL Draw !M! cards for each Status card Exhausted. NL Exhaust",
-                                 "UPGRADE_DESCRIPTION":  "Exhaust all cards in your hand. NL Draw !M! cards for each Status card Exhausted. NL Exhaust"
-                             },
-    "${modID}:RockSolid":  {
-                                   "NAME":  "Rock Solid",
-                                   "DESCRIPTION":  "Gain !B! Block. NL Lose 3 Max HP.",
-                                   "UPGRADE_DESCRIPTION":  "Gain !B! Block. NL Lose 3 Max HP."
-                               },
-    "${modID}:Devotion":  {
-                                  "NAME":  "Devotion",
-                                  "DESCRIPTION":  "Remove all of your ${modID}:Debt, Vulnerable, Weak, and Frail. NL For each stack removed, gain [E] and draw !M! cards. NL Exhaust",
-                                  "UPGRADE_DESCRIPTION":  "Remove all of your ${modID}:Debt, Vulnerable, Weak, and Frail. NL For each stack removed, gain [E] and draw !M! cards. NL Exhaust"
-                              },
-    "${modID}:Indignation":  {
-                                     "NAME":  "Indignation",
-                                     "DESCRIPTION":  "For the next X turns, the first card you play each turn costs 0. NL Exhaust",
-                                     "UPGRADE_DESCRIPTION":  "For the next X+1 turns, the first card you play each turn costs 0. NL Exhaust"
-                                 },
-    "${modID}:BloodFeud":  {
-                                   "NAME":  "Blood Feud",
-                                   "DESCRIPTION":  "Add 1 *Misery to your hand. NL Immediately trigger all enemies\u0027 ${modID}:Bleed, dealing !M!% of the amount.",
-                                   "UPGRADE_DESCRIPTION":  "Add 1 *Misery to your hand. NL Immediately trigger all enemies\u0027 ${modID}:Bleed, dealing !M!% of the amount."
-                               },
-    "${modID}:VoidCall":  {
-                                  "NAME":  "Void Call",
-                                  "DESCRIPTION":  "Choose 1 card from your draw pile and add it to your hand. It becomes Ethereal. NL Exhaust",
-                                  "UPGRADE_DESCRIPTION":  "Choose 1 card from your draw pile and add it to your hand. It becomes Ethereal."
-                              },
-    "${modID}:Spread":  {
-                                "NAME":  "Spread",
-                                "DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Apply all of that enemy\u0027s debuffs to all other enemies.",
-                                "UPGRADE_DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Apply all of that enemy\u0027s debuffs to all other enemies."
-                            },
-    "${modID}:HungeringBattleWill":  {
-                                             "NAME":  "Hungering Battle Will",
-                                             "DESCRIPTION":  "At the start of each turn, gain [E] . NL At the end of each turn, take 3 damage.",
-                                             "UPGRADE_DESCRIPTION":  "At the start of each turn, gain [E] . NL At the end of each turn, take 3 damage."
-                                         },
-    "${modID}:ExecutionForm":  {
-                                       "NAME":  "Execution Form",
-                                       "DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP.",
-                                       "UPGRADE_DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP."
-                                   },
-    "${modID}:SinAvatar":  {
-                                   "NAME":  "Incarnation of Sin",
-                                   "DESCRIPTION":  "At the end of your turn, gain !B! Block, plus !M! Block for each stack of ${modID}:Debt.",
-                                   "UPGRADE_DESCRIPTION":  "At the end of your turn, gain !B! Block, plus !M! Block for each stack of ${modID}:Debt.",
-                                   "EXTENDED_DESCRIPTION":  [
-                                                                " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
-                                                            ]
-                               },
-    "${modID}:Bloodbath":  {
-                                   "NAME":  "Bloodbath",
-                                   "DESCRIPTION":  "Your first attack card played each turn applies ${modID}:Bleed equal to the unblocked damage it deals.",
-                                   "UPGRADE_DESCRIPTION":  "Your first attack card played each turn applies ${modID}:Bleed equal to the unblocked damage it deals."
-                               },
-    "${modID}:Overrigid":  {
-                                   "NAME":  "Overrigid",
-                                   "DESCRIPTION":  "Gain 5 Strength. NL Each time you play an Attack card, it permanently loses !M! damage for the rest of combat.",
-                                   "UPGRADE_DESCRIPTION":  "Gain 5 Strength. NL Each time you play an Attack card, it permanently loses !M! damage for the rest of combat."
-                               },
-    "${modID}:Entangled":  {
-                                   "NAME":  "Entangled",
-                                   "DESCRIPTION":  "Whenever you draw this card, add 1 copy of it to your hand. NL Exhaust NL When this card is exhausted, add a Slimed to your draw pile."
-                               },
-    "${modID}:Riot":  {
-                              "NAME":  "Riot",
-                              "DESCRIPTION":  "Deal !D! damage X times. NL Each ${modID}:Debt you have makes this card deal !M! extra damage.",
-                              "UPGRADE_DESCRIPTION":  "Deal !D! damage X times. NL Each ${modID}:Debt you have makes this card deal !M! extra damage.",
-                              "EXTENDED_DESCRIPTION":  [
-                                                           " (Deal !${modID}:TOTAL_DAMAGE! damage per hit)"
-                                                       ]
-                          },
-    "${modID}:Bloodstain":  {
-                                    "NAME":  "Bloodstain",
-                                    "DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Do this again once for each ${modID}:Debt you have. NL Exhaust.",
-                                    "UPGRADE_DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Do this again once for each ${modID}:Debt you have."
-                                },
-    "${modID}:BrokenArmor":  {
-                                     "NAME":  "Broken Armor",
-                                     "DESCRIPTION":  "Gain !B! Block. NL Gain 1 Frail.",
-                                     "UPGRADE_DESCRIPTION":  "Gain !B! Block. NL Gain 1 Frail."
-                                 },
-    "${modID}:FormPact":  {
-                                  "NAME":  "Form Pact",
-                                  "DESCRIPTION":  "Gain [E] [E]. NL Add 1 *Misery to your discard pile",
-                                  "UPGRADE_DESCRIPTION":  "Gain [E] [E] [E]. NL Add 1 *Misery to your discard pile"
-                              },
-    "${modID}:Fraud":  {
-                               "NAME":  "Fraud",
-                               "DESCRIPTION":  "Draw !M! cards. NL Gain !M! ${modID}:Sin.",
-                               "UPGRADE_DESCRIPTION":  "Draw !M! cards. NL Gain !M! ${modID}:Sin."
-                           },
-    "${modID}:Mercy":  {
-                               "NAME":  "Mercy",
-                               "DESCRIPTION":  "Ethereal. NL Exhaust *Misery in your hand at the end of each turn. NL Gain !M! ${modID}:Sin.",
-                               "UPGRADE_DESCRIPTION":  "Ethereal. NL Exhaust *Misery in your hand at the end of each turn. NL Gain !M! ${modID}:Sin."
-                           },
-    "${modID}:Prepare":  {
-                                 "NAME":  "Prepare",
-                                 "DESCRIPTION":  "Innate. NL Draw !M! cards. NL Retain your hand this turn. NL Exhaust.",
-                                 "UPGRADE_DESCRIPTION":  "Innate. NL Draw !M! cards. NL Retain your hand this turn. NL Exhaust."
-                             },
-    "${modID}:Relapse":  {
-                                 "NAME":  "Relapse",
-                                 "DESCRIPTION":  "A enemy\u0027s ${modID}:Bleed won\u0027t be removed this turn.",
-                                 "UPGRADE_DESCRIPTION":  "ALL enemies\u0027 ${modID}:Bleed won\u0027t be removed this turn."
-                             },
-    "${modID}:SharedSuffering":  {
-                                         "NAME":  "Shared Suffering",
-                                         "DESCRIPTION":  "For each ${modID}:Debt you have, apply !M! Weak and !M! Vulnerable to ALL enemies. NL Exhaust.",
-                                         "UPGRADE_DESCRIPTION":  "For each ${modID}:Debt you have, apply !M! Weak and !M! Vulnerable to ALL enemies. NL Exhaust."
-                                     },
-    "${modID}:Taboo":  {
-                               "NAME":  "Taboo",
-                               "DESCRIPTION":  "Gain 1 Energy for each ${modID}:Debt you have. NL Gain 1 ${modID}:Restriction.",
-                               "UPGRADE_DESCRIPTION":  "Gain 1 Energy for each ${modID}:Debt you have, plus 1. NL Gain 1 ${modID}:Restriction.",
-                               "EXTENDED_DESCRIPTION":  [
-                                                            " (Cannot gain energy)",
-                                                            " (Gain !${modID}:TOTAL_ENERGY! Energy)",
-                                                            " (Gain !${modID}:TOTAL_ENERGY! Energy!)"
-                                                        ]
-                           }
+  "${modID}:ExampleCard":  {
+                "NAME":  "Name",
+                "DESCRIPTION":  "Description. NL Second line.",
+                "UPGRADE_DESCRIPTION":  "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+                "EXTENDED_DESCRIPTION":  [
+                               "You can put more text in here.",
+                               "If you need to use it for stuff.",
+                               "Blizzard is a good example for this."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Strike",
+                  "DESCRIPTION":  "Deal !D! damage.",
+                  "UPGRADE_DESCRIPTION":  "Deal !D! damage."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Defend",
+                  "DESCRIPTION":  "Gain !B! BLOCK.",
+                  "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Rebel",
+              "DESCRIPTION":  "Deal !D! damage. NL Give ${modID}:Bleed that equals to it will make.",
+              "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Give ${modID}:Bleed that equals to it will make.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Give !M! ${modID}:Bleed)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Forgive",
+              "DESCRIPTION":  "Gain !B! BLOCK. NL Decrease !M! ${modID}:Sin.",
+              "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK. NL Decrease !M! ${modID}:Sin."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Slash",
+              "DESCRIPTION":  "Deal !D! damage. NL Apply !M! ${modID}:Bleed.",
+              "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Apply !M! ${modID}:Bleed."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Rend",
+             "DESCRIPTION":  "Deal !D! damage. NL If the enemy has ${modID}:Bleed,deal !M! extra hits.",
+             "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL If the enemy has ${modID}:Bleed,deal !M! extra hits."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Pursuit",
+              "DESCRIPTION":  "Can only be played if the last played card was an attack cards in this turn. NL Deal !D! damage.",
+              "UPGRADE_DESCRIPTION":  "Can only be played if the last played card was an attack cards in this turn. NL Deal !D! damage.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Need to play an Attack first this turn."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Arm Severing",
+                "DESCRIPTION":  "Deal !D! damage. NL Add !M! *Misery in your hand.",
+                "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Add !M! *Misery in your hand."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Quenched Blade",
+                  "DESCRIPTION":  "Deal !D! damage. NL Upgrade !M! cards in your hand for the rest of combat.",
+                  "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Upgrade !M! cards in your hand for the rest of combat."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Cruel Torture",
+                 "DESCRIPTION":  "Deal !D! damage.Gain !${modID}:SIN! ${modID}:Sin.",
+                 "UPGRADE_DESCRIPTION":  "Deal !D! damage.Gain !${modID}:SIN! ${modID}:Sin."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Atonement Strike",
+                  "DESCRIPTION":  "Deal !D! damage.Draw !M! cards if you have ${modID}:Debt. NL Then, lose 4 ${modID}:Sin.",
+                  "UPGRADE_DESCRIPTION":  "Deal !D! damage.Draw !M! cards if you have ${modID}:Debt. NL Then, lose 4 ${modID}:Sin."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Unrighteous Guilt",
+                   "DESCRIPTION":  "Deal !D! damage to ALL enemy.Gain !${modID}:SIN! ${modID}:Sin.",
+                   "UPGRADE_DESCRIPTION":  "Deal !D! damage to ALL enemy.Gain !${modID}:SIN! ${modID}:Sin."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Relentless Entanglement",
+                      "DESCRIPTION":  "Deal !D! damage. NL Add it to hand if increase ${modID}:Debt"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Agony",
+              "DESCRIPTION":  "Deal !D! damage.Apply !M! Weak and !M! vulnerable.",
+              "UPGRADE_DESCRIPTION":  "Deal !D! damage.Apply !M! Weak and !M! vulnerable."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Sacred Land",
+                "DESCRIPTION":  "Gain !B! Block. NL Draw !M! cards, drawing 1 fewer card for each ${modID}:Debt you have.",
+                "UPGRADE_DESCRIPTION":  "Gain !B! Block. NL Draw !M! cards, drawing 1 fewer card for each ${modID}:Debt you have.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Draw !M! cards)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Loan",
+             "DESCRIPTION":  "Gain [E] [E] [E].Next turn, lose [E].NL Exhaust",
+             "UPGRADE_DESCRIPTION":  "Gain [E] [E] [E]. NL Next turn, lose [E].NL Exhaust NL Retain"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Firm",
+             "DESCRIPTION":  "Gain !B! BLOCK.NL Retain",
+             "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK.NL Retain"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Odyssey",
+              "DESCRIPTION":  "Draw !M! card.NL Exhaust 1 card. NL If you exhaust status card, decrease 3 ${modID}:Sin",
+              "UPGRADE_DESCRIPTION":  "Draw !M! cards.NL Exhaust 1 card. NL If you exhaust status card, decrease 3 ${modID}:Sin"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "BloodGuard",
+                "DESCRIPTION":  "Gain !B! BLOCK. NL Give an enemy !M! ${modID}:Bleed.",
+                "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK. NL Give an enemy !M! ${modID}:Bleed."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Plea Of Innocence",
+                  "DESCRIPTION":  "Gain !B! BLOCK. NL Each ${modID}:Debt makes !M! more BLOCK.",
+                  "UPGRADE_DESCRIPTION":  "Gain !B! BLOCK. NL Each ${modID}:Debt makes !M! more BLOCK.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Predictive Measures",
+                    "DESCRIPTION":  "Draw !M! card. If it is an Attack, it costs 0 until played this turn.",
+                    "UPGRADE_DESCRIPTION":  "Draw !M! card. If it is an Attack, it costs 0 until played this turn."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Hostility",
+                "DESCRIPTION":  "If your BLOCK is under !${modID}:BLOCK_THRESHOLD!,give all enemy !M! weak. NL Gain !B! BLOCK",
+                "UPGRADE_DESCRIPTION":  "If your BLOCK is under !${modID}:BLOCK_THRESHOLD!,give all enemy !M! weak. NL Gain !B! BLOCK"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Shackles",
+               "DESCRIPTION":  "Add 2 *Misery. NL Gain !M! BLOCK for each status in your hand",
+               "UPGRADE_DESCRIPTION":  "Add 2 *Misery. NL Gain !M! BLOCK for each status in your hand",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Deterring Strike",
+                  "DESCRIPTION":  "Deal !D! damage. NL Enemy loss !M! strength this turn if the enemy\u0027s intend is attack",
+                  "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Enemy loss !M! strength this turn if the enemy\u0027s intend is attack"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Heavy Smash",
+                "DESCRIPTION":  "Can only be played if has !M! ${modID}:Debt. Deal !D! damage",
+                "UPGRADE_DESCRIPTION":  "Can only be played if has !M! ${modID}:Debt. Deal !D! damage",
+                "EXTENDED_DESCRIPTION":  [
+                              "Can only be played if has 2 ${modID}:Debt"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Sins to Blades",
+                 "DESCRIPTION":  "Deal !D! damage. NL Draw cards equal to your ${modID}:Debt.",
+                 "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Draw cards equal to your ${modID}:Debt plus 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Draw !${modID}:TOTAL_DRAW! card(s))"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Chaos Dirty",
+                "DESCRIPTION":  "Gain !${modID}:SIN! ${modID}:Sins. NL Deal !D! damage. Each ${modID}:Debt you have deals !M! extra damage",
+                "UPGRADE_DESCRIPTION":  "Gain !${modID}:SIN! ${modID}:Sins. NL Deal !D! damage. Each ${modID}:Debt you have deals !M! extra damage",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Tempered Sword",
+                  "DESCRIPTION":  "Deal !D! damage. NL Each status you exhaust deals !M! extra damage",
+                  "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Each status you exhaust deals !M! extra damage",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Deal !${modID}:TOTAL_DAMAGE! damage in total)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Crush",
+              "DESCRIPTION":  "Deal !D! damage. NL Gain BLOCK that equals to ${modID}:Bleed the enemy has",
+              "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Gain BLOCK that equals to ${modID}:Bleed the enemy has",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Unleash",
+              "DESCRIPTION":  "Deal !D! damage 2 times. NL Next turn gain [E]",
+              "UPGRADE_DESCRIPTION":  "Deal !D! damage 2 times. NL Next turn gain [E][E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Heavy Past",
+                "DESCRIPTION":  "Deal !D! damage 2 times. NL Add 1 *Misery to your draw pile and 1 to your discard pile. NL Draw !M! cards.",
+                "UPGRADE_DESCRIPTION":  "Deal !D! damage 2 times. NL Add 1 *Misery to your draw pile and 1 to your discard pile. NL Draw !M! cards."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Implication",
+                "DESCRIPTION":  "Exhaust 1 card from your hand. NL Deal !D! damage to ALL enemies. NL For each enemy with ${modID}:Bleed dealt damage to, draw 1 card.",
+                "UPGRADE_DESCRIPTION":  "Exhaust 1 card from your hand. NL Deal !D! damage to ALL enemies. NL For each enemy with ${modID}:Bleed dealt damage to, draw 1 card."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Consecutive Kicks",
+                   "DESCRIPTION":  "Deal !D! damage !M! times",
+                   "UPGRADE_DESCRIPTION":  "Deal !D! damage !M! times"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Massive Bleeding",
+                  "DESCRIPTION":  "Deal !D! damage. NL Then deal damage that equals to ${modID}:Bleed the enemy has",
+                  "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Then deal damage that equals to twice the ${modID}:Bleed the enemy has",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Deal !${modID}:TOTAL_DAMAGE! damage in total)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Face Danger",
+                "DESCRIPTION":  "Deal !D! damage. NL Each *Misery you played decreases 1 energy it costs this combat",
+                "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL Each *Misery you played decreases 1 energy it costs this combat"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Relief",
+              "DESCRIPTION":  "Add 2 *Misery to your discard pile. NL At the end of your turn, Exhaust all *Misery in your hand.",
+              "UPGRADE_DESCRIPTION":  "Innate NL Add 2 *Misery to your discard pile. NL At the end of your turn, Exhaust all *Misery in your hand."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Misery",
+              "DESCRIPTION":  "Suffer 2 damage. NL Draw 1 card. NL Exhausted"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Parry",
+              "DESCRIPTION":  "Gain !B! Block. NL Whenever you are attacked, reflect the damage you blocked back to the attacker.",
+              "UPGRADE_DESCRIPTION":  "Gain !B! Block. NL Whenever you are attacked, reflect the damage you blocked back to the attacker."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Pardon",
+              "DESCRIPTION":  "Transform ALL cards in your hand into random cards. NL After being played !M! times, transform into a random Power card",
+              "UPGRADE_DESCRIPTION":  "Transform ALL cards in your hand into random upgraded cards. NL After being played !M! times, transform into a random upgraded Power card",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Played !${modID}:PLAYS! time(s))"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Memorial",
+               "DESCRIPTION":  "Draw 1 card. NL If the card drawn is a Skill, lose !M! ${modID}:Sin.",
+               "UPGRADE_DESCRIPTION":  "Draw 1 card. NL If the card drawn is a Skill, lose !M! ${modID}:Sin."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Boiling",
+              "DESCRIPTION":  "Exhaust all non-Attack cards in your hand. NL Apply !M! ${modID}:Bleed to a random enemy for each card Exhausted.",
+              "UPGRADE_DESCRIPTION":  "Exhaust all non-Attack cards in your hand. NL Apply !M! ${modID}:Bleed to a random enemy for each card Exhausted."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Grief",
+              "DESCRIPTION":  "Add 1 random Status card to your hand. NL This turn, whenever you draw a card, apply !M! ${modID}:Bleed to ALL enemies.",
+              "UPGRADE_DESCRIPTION":  "Add 1 random Status card to your hand. NL This turn, whenever you draw a card, apply !M! ${modID}:Bleed to ALL enemies."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Sea of Blood",
+               "DESCRIPTION":  "Apply !${modID}:BLEED! ${modID}:Bleed. NL Multiply that enemy\u0027s ${modID}:Bleed by !M!. NL Exhaust",
+               "UPGRADE_DESCRIPTION":  "Apply !${modID}:BLEED! ${modID}:Bleed. NL Multiply that enemy\u0027s ${modID}:Bleed by !M!. NL Exhaust"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Relentless Bleed",
+                  "DESCRIPTION":  "At the start of each turn, apply !M! ${modID}:Bleed to ALL enemies.",
+                  "UPGRADE_DESCRIPTION":  "At the start of each turn, apply !M! ${modID}:Bleed to ALL enemies."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Dread Memory",
+                "DESCRIPTION":  "If you gained ${modID}:Debt this turn, enemies deal !M!% less damage. NL Only lasts for the turn you gained ${modID}:Debt.",
+                "UPGRADE_DESCRIPTION":  "If you gained ${modID}:Debt this turn, enemies deal !M!% less damage. NL Only lasts for the turn you gained ${modID}:Debt."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Trial",
+              "DESCRIPTION":  "Gain !M! Strength and !M! Dexterity. NL Gain 1 Weak.",
+              "UPGRADE_DESCRIPTION":  "Gain !M! Strength and !M! Dexterity. NL Gain 1 Weak."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Reconcile Fate",
+                  "DESCRIPTION":  "Whenever you generate or Exhaust a *Misery, gain !M! Block.",
+                  "UPGRADE_DESCRIPTION":  "Whenever you generate or Exhaust a *Misery, gain !M! Block."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Mangled Flesh",
+                 "DESCRIPTION":  "Whenever you apply 6 ${modID}:Bleed to an enemy, deal !M! damage to ALL enemies.",
+                 "UPGRADE_DESCRIPTION":  "Whenever you apply 6 ${modID}:Bleed to an enemy, deal !M! damage to ALL enemies."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Blood Thorns",
+                "DESCRIPTION":  "Whenever an enemy attacks you, apply !M! ${modID}:Bleed to it.",
+                "UPGRADE_DESCRIPTION":  "Whenever an enemy attacks you, apply !M! ${modID}:Bleed to it."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Path of Redemption",
+                  "DESCRIPTION":  "Whenever you remove 1 ${modID}:Debt, draw !M! cards.",
+                  "UPGRADE_DESCRIPTION":  "Whenever you remove 1 ${modID}:Debt, draw !M! cards."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Requiem",
+              "DESCRIPTION":  "Each *Misery you Exhausted deals !D! damage to a random enemy",
+              "UPGRADE_DESCRIPTION":  "Each *Misery you Exhausted deals !D! damage to a random enemy",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Deal !${modID}:HITS! hits in total)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Desperate Measure",
+                   "DESCRIPTION":  "Deal !D! damage. NL If this doesn\u0027t kill the enemy, lose !M! HP.",
+                   "UPGRADE_DESCRIPTION":  "Deal !D! damage. NL If this doesn\u0027t kill the enemy, lose !M! HP."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Unceasing War",
+                 "DESCRIPTION":  "Deal !D! damage !${modID}:HITS! times. NL Whenever this kills an enemy, permanently increase this card\u0027s hit count by 1 for the rest of the run. NL Exhaust",
+                 "UPGRADE_DESCRIPTION":  "Deal !D! damage !${modID}:HITS! times. NL Whenever this kills an enemy, permanently increase this card\u0027s hit count by 1 for the rest of the run. NL Exhaust"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Final Judgment",
+                  "DESCRIPTION":  "Only playable if you have at least 4 ${modID}:Debt. NL Deal !D! damage to ALL enemies. NL Remove all ${modID}:Sin.",
+                  "UPGRADE_DESCRIPTION":  "Only playable if you have at least 4 ${modID}:Debt. NL Deal !D! damage to ALL enemies. NL Remove all ${modID}:Sin.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Need at least 4 ${modID}:Debt to play."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Blazing",
+              "DESCRIPTION":  "Exhaust all cards in your hand. NL Draw !M! cards for each Status card Exhausted. NL Exhaust",
+              "UPGRADE_DESCRIPTION":  "Exhaust all cards in your hand. NL Draw !M! cards for each Status card Exhausted. NL Exhaust"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Rock Solid",
+                "DESCRIPTION":  "Gain !B! Block. NL Lose 3 Max HP.",
+                "UPGRADE_DESCRIPTION":  "Gain !B! Block. NL Lose 3 Max HP."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Devotion",
+               "DESCRIPTION":  "Remove all of your ${modID}:Debt, Vulnerable, Weak, and Frail. NL For each stack removed, gain [E] and draw !M! cards. NL Exhaust",
+               "UPGRADE_DESCRIPTION":  "Remove all of your ${modID}:Debt, Vulnerable, Weak, and Frail. NL For each stack removed, gain [E] and draw !M! cards. NL Exhaust"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Indignation",
+                "DESCRIPTION":  "For the next X turns, the first card you play each turn costs 0. NL Exhaust",
+                "UPGRADE_DESCRIPTION":  "For the next X+1 turns, the first card you play each turn costs 0. NL Exhaust"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Blood Feud",
+                "DESCRIPTION":  "Add 1 *Misery to your hand. NL Immediately trigger all enemies\u0027 ${modID}:Bleed, dealing !M!% of the amount.",
+                "UPGRADE_DESCRIPTION":  "Add 1 *Misery to your hand. NL Immediately trigger all enemies\u0027 ${modID}:Bleed, dealing !M!% of the amount."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Void Call",
+               "DESCRIPTION":  "Choose 1 card from your draw pile and add it to your hand. It becomes Ethereal. NL Exhaust",
+               "UPGRADE_DESCRIPTION":  "Choose 1 card from your draw pile and add it to your hand. It becomes Ethereal."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Spread",
+              "DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Apply all of that enemy\u0027s debuffs to all other enemies.",
+              "UPGRADE_DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Apply all of that enemy\u0027s debuffs to all other enemies."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Hungering Battle Will",
+                    "DESCRIPTION":  "At the start of each turn, gain [E] . NL At the end of each turn, take 3 damage.",
+                    "UPGRADE_DESCRIPTION":  "At the start of each turn, gain [E] . NL At the end of each turn, take 3 damage."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Execution Form",
+                  "DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP.",
+                  "UPGRADE_DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Incarnation of Sin",
+                "DESCRIPTION":  "At the end of your turn, gain !B! Block, plus !M! Block for each stack of ${modID}:Debt.",
+                "UPGRADE_DESCRIPTION":  "At the end of your turn, gain !B! Block, plus !M! Block for each stack of ${modID}:Debt.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Gain !${modID}:TOTAL_BLOCK! Block in total)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Bloodbath",
+                "DESCRIPTION":  "Your first attack card played each turn applies ${modID}:Bleed equal to the unblocked damage it deals.",
+                "UPGRADE_DESCRIPTION":  "Your first attack card played each turn applies ${modID}:Bleed equal to the unblocked damage it deals."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Overrigid",
+                "DESCRIPTION":  "Gain 5 Strength. NL Each time you play an Attack card, it permanently loses !M! damage for the rest of combat.",
+                "UPGRADE_DESCRIPTION":  "Gain 5 Strength. NL Each time you play an Attack card, it permanently loses !M! damage for the rest of combat."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Entangled",
+                "DESCRIPTION":  "Whenever you draw this card, add 1 copy of it to your hand. NL Exhaust NL When this card is exhausted, add a Slimed to your draw pile."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Riot",
+             "DESCRIPTION":  "Deal !D! damage X times. NL Each ${modID}:Debt you have makes this card deal !M! extra damage.",
+             "UPGRADE_DESCRIPTION":  "Deal !D! damage X times. NL Each ${modID}:Debt you have makes this card deal !M! extra damage.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Deal !${modID}:TOTAL_DAMAGE! damage per hit)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Bloodstain",
+                "DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Do this again once for each ${modID}:Debt you have. NL Exhaust.",
+                "UPGRADE_DESCRIPTION":  "Apply !M! ${modID}:Bleed. NL Do this again once for each ${modID}:Debt you have."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Broken Armor",
+                "DESCRIPTION":  "Gain !B! Block. NL Each play grants 2 less Block (resets each combat).",
+                "UPGRADE_DESCRIPTION":  "Gain !B! Block. NL Each play grants 2 less Block (resets each combat)."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Form Pact",
+               "DESCRIPTION":  "Gain [E] [E]. NL Add 1 *Misery to your discard pile",
+               "UPGRADE_DESCRIPTION":  "Gain [E] [E] [E]. NL Add 1 *Misery to your discard pile"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Fraud",
+              "DESCRIPTION":  "Draw !M! cards. NL Gain !M! ${modID}:Sin.",
+              "UPGRADE_DESCRIPTION":  "Draw !M! cards. NL Gain !M! ${modID}:Sin."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Mercy",
+              "DESCRIPTION":  "Ethereal. NL Exhaust *Misery in your hand at the end of each turn. NL Gain !M! ${modID}:Sin.",
+              "UPGRADE_DESCRIPTION":  "Ethereal. NL Exhaust *Misery in your hand at the end of each turn. NL Gain !M! ${modID}:Sin."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Prepare",
+              "DESCRIPTION":  "Innate. NL Draw !M! cards. NL Retain your hand this turn. NL Exhaust.",
+              "UPGRADE_DESCRIPTION":  "Innate. NL Draw !M! cards. NL Retain your hand this turn. NL Exhaust."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Relapse",
+              "DESCRIPTION":  "Apply 3 ${modID}:Bleed. NL An enemy\u0027s ${modID}:Bleed won\u0027t be removed for one turn.",
+              "UPGRADE_DESCRIPTION":  "Apply 3 ${modID}:Bleed. NL ALL enemies\u0027 ${modID}:Bleed won\u0027t be removed for one turn."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Shared Suffering",
+                  "DESCRIPTION":  "For each ${modID}:Debt you have, apply !M! Weak and !M! Vulnerable to ALL enemies. NL Exhaust.",
+                  "UPGRADE_DESCRIPTION":  "For each ${modID}:Debt you have, apply !M! Weak and !M! Vulnerable to ALL enemies. NL Exhaust."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Taboo",
+              "DESCRIPTION":  "Gain 1 Energy for each ${modID}:Debt you have. NL Gain 1 ${modID}:Restriction.",
+              "UPGRADE_DESCRIPTION":  "Gain 1 Energy for each ${modID}:Debt you have, plus 1. NL Gain 1 ${modID}:Restriction.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Cannot gain energy)",
+                            " (Gain !${modID}:TOTAL_ENERGY! Energy)",
+                            " (Gain !${modID}:TOTAL_ENERGY! Energy!)"
+                          ]
+            }
 }

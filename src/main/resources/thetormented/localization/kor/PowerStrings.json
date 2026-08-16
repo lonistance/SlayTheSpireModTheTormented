@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "궁극의 힘",
-                                 "DESCRIPTIONS":  [
-                                                      "당신은 매우 멋지고 강합니다."
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "출혈",
-                                    "DESCRIPTIONS":  [
-                                                         "턴 시작 시 체력을 #b",
-                                                         " 잃고, 출혈 을 모두 제거합니다. 출혈 상태인 생물이 막히지 않은 공격 피해를 받으면 출혈 을 #b1 얻습니다."
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "죄",
-                                  "DESCRIPTIONS":  [
-                                                       "죄 가 #b5 있으면 ",
-                                                       " 의 빚 을 얻습니다."
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "빚",
-                                   "DESCRIPTIONS":  [
-                                                        "빚 이 한 층 있을 때마다 #b10% 더 많은 피해를 받습니다. 현재 ",
-                                                        "% 더 받습니다. NL 빚 부여가 인공물에 막히면, 막힌 빚 1당 죄 를 ",
-                                                        " 잃습니다."
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "다음 턴 에너지 상실",
-                                                 "DESCRIPTIONS":  [
-                                                                      "다음 턴에 [E] 를 잃습니다"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "다음 턴 에너지 획득",
-                                                 "DESCRIPTIONS":  [
-                                                                      "다음 턴에 [E] 를 얻습니다"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "자비",
-                                    "DESCRIPTIONS":  [
-                                                         "이번 턴 동안 빚 이 추가 피해를 주지 않습니다"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "깊은 상처",
-                                        "DESCRIPTIONS":  [
-                                                             "턴 시작 시 출혈 을 제거하지 않습니다."
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "안도",
-                                     "DESCRIPTIONS":  [
-                                                          "턴 종료 시 손에 있는 모든 ",
-                                                          " 을 소멸시킵니다."
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "패리",
-                                    "DESCRIPTIONS":  [
-                                                         "공격을 받을 때마다 막아낸 피해만큼 공격자에게 되돌려줍니다."
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "끊임없는 출혈",
-                                              "DESCRIPTIONS":  [
-                                                                   "매 턴 시작 시 모든 적에게 출혈 을 #b",
-                                                                   " 부여합니다."
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "비탄",
-                                    "DESCRIPTIONS":  [
-                                                         "이번 턴 동안 카드를 뽑을 때마다 모든 적에게 출혈 을 #b",
-                                                         " 부여합니다."
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "공포의 기억",
-                                          "DESCRIPTIONS":  [
-                                                               "이번 턴에 빚 을 얻었다면 적들이 주는 피해가 #b",
-                                                               "% 감소합니다."
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "운명의 화해",
-                                            "DESCRIPTIONS":  [
-                                                                 "*고통 을 생성하거나 소멸시킬 때마다 방어도를 #b",
-                                                                 " 얻습니다."
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "찢긴 살",
-                                           "DESCRIPTIONS":  [
-                                                                "적에게 출혈 을 6 부여할 때마다 모든 적에게 피해를 #b",
-                                                                " 줍니다."
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "피의 가시",
-                                          "DESCRIPTIONS":  [
-                                                               "적이 당신을 공격할 때마다 그 적에게 출혈 을 #b",
-                                                               " 부여합니다."
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "구원의 길",
-                                             "DESCRIPTIONS":  [
-                                                                  "빚 을 1 제거할 때마다 카드를 #b",
-                                                                  " 장 뽑습니다."
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "격분",
-                                          "DESCRIPTIONS":  [
-                                                               "다음 #b",
-                                                               " 턴 동안 매 턴 처음 사용하는 비공격 카드의 비용이 0 이 됩니다."
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "굶주린 투지",
-                                                  "DESCRIPTIONS":  [
-                                                                       "매 턴 시작 시 [E] 를 얻습니다. NL 매 턴 종료 시 피해를 3 받습니다."
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "판결",
-                                      "DESCRIPTIONS":  [
-                                                           "이 적이 받는 피해가 #b50% 증가합니다."
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "심판의 형태",
-                                           "DESCRIPTIONS":  [
-                                                                "최대 체력이 #b",
-                                                                "% 미만인 적에게 주는 피해가 50% 증가합니다."
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "죄의 화신",
-                                        "DESCRIPTIONS":  [
-                                                             "턴 종료 시 방어도를 #b",
-                                                             " 얻고, 빚 이 한 층마다 방어도를 #b",
-                                                             " 추가로 얻습니다."
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "피의 학살",
-                                        "DESCRIPTIONS":  [
-                                                             "매 턴 처음 사용하는 ",
-                                                             " 공격 카드는 막히지 않은 피해만큼 출혈 을 부여합니다."
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "과도한 강직",
-                                        "DESCRIPTIONS":  [
-                                                             "공격 카드를 사용할 때마다 이번 전투 동안 그 카드의 피해량이 영구히 ",
-                                                             " 감소합니다."
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "제약",
-                                          "DESCRIPTIONS":  [
-                                                               "모든 빚 을 완전히 제거하지 않는 한 [E] 를 얻을 수 없습니다. 턴 종료 시 제거됩니다."
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "궁극의 힘",
+              "DESCRIPTIONS":  [
+                         "당신은 매우 멋지고 강합니다."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "출혈",
+                "DESCRIPTIONS":  [
+                          "턴 시작 시 체력을 #b",
+                          " 잃고, 출혈 을 모두 제거합니다. 출혈 상태인 생물이 막히지 않은 공격 피해를 받으면 출혈 을 #b1 얻습니다."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "죄",
+               "DESCRIPTIONS":  [
+                          "죄 가 #b5 있으면 ",
+                          " 의 빚 을 얻습니다."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "빚",
+                "DESCRIPTIONS":  [
+                          "빚 이 한 층 있을 때마다 #b10% 더 많은 피해를 받습니다. 현재 ",
+                          "% 더 받습니다. NL 빚 부여가 인공물에 막히면, 막힌 빚 1당 죄 를 ",
+                          " 잃습니다."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "다음 턴 에너지 상실",
+                      "DESCRIPTIONS":  [
+                                 "다음 턴에 [E] 를 잃습니다"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "다음 턴 에너지 획득",
+                      "DESCRIPTIONS":  [
+                                 "다음 턴에 [E] 를 얻습니다"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "자비",
+                "DESCRIPTIONS":  [
+                          "이번 턴 동안 빚 이 추가 피해를 주지 않습니다"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "깊은 상처",
+                  "DESCRIPTIONS":  [
+                            "턴 시작 시 출혈 을 제거하지 않습니다."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "안도",
+                "DESCRIPTIONS":  [
+                           "턴 종료 시 손에 있는 모든 ",
+                           " 을 소멸시킵니다."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "패리",
+                "DESCRIPTIONS":  [
+                          "공격을 받을 때마다 막아낸 피해만큼 공격자에게 되돌려줍니다."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "끊임없는 출혈",
+                     "DESCRIPTIONS":  [
+                                "매 턴 시작 시 모든 적에게 출혈 을 #b",
+                                " 부여합니다."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "비탄",
+                "DESCRIPTIONS":  [
+                          "이번 턴 동안 카드를 뽑을 때마다 모든 적에게 출혈 을 #b",
+                          " 부여합니다."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "공포의 기억",
+                   "DESCRIPTIONS":  [
+                              "이번 턴에 빚 을 얻었다면 적들이 주는 피해가 #b",
+                              "% 감소합니다."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "운명의 화해",
+                    "DESCRIPTIONS":  [
+                              "*고통 을 생성하거나 소멸시킬 때마다 방어도를 #b",
+                              " 얻습니다."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "찢긴 살",
+                    "DESCRIPTIONS":  [
+                              "적에게 출혈 을 6 부여할 때마다 모든 적에게 피해를 #b",
+                              " 줍니다."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "피의 가시",
+                   "DESCRIPTIONS":  [
+                              "적이 당신을 공격할 때마다 그 적에게 출혈 을 #b",
+                              " 부여합니다."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "구원의 길",
+                    "DESCRIPTIONS":  [
+                               "빚 을 1 제거할 때마다 카드를 #b",
+                               " 장 뽑습니다."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "격분",
+                   "DESCRIPTIONS":  [
+                              "다음 #b",
+                              " 턴 동안 매 턴 처음 사용하는 카드의 비용이 0 이 됩니다."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "굶주린 투지",
+                       "DESCRIPTIONS":  [
+                                  "매 턴 시작 시 [E] 를 얻습니다. NL 매 턴 종료 시 피해를 3 받습니다."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "판결",
+                 "DESCRIPTIONS":  [
+                            "이 적이 받는 피해가 #b50% 증가합니다."
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "심판의 형태",
+                    "DESCRIPTIONS":  [
+                              "최대 체력이 #b",
+                              "% 미만인 적에게 주는 피해가 50% 증가합니다."
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "죄의 화신",
+                  "DESCRIPTIONS":  [
+                            "턴 종료 시 방어도를 #b",
+                            " 얻고, 빚 이 한 층마다 방어도를 #b",
+                            " 추가로 얻습니다."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "피의 학살",
+                  "DESCRIPTIONS":  [
+                            "매 턴 처음 사용하는 ",
+                            " 공격 카드는 막히지 않은 피해만큼 출혈 을 부여합니다."
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "과도한 강직",
+                  "DESCRIPTIONS":  [
+                            "공격 카드를 사용할 때마다 이번 전투 동안 그 카드의 피해량이 영구히 ",
+                            " 감소합니다."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "제약",
+                   "DESCRIPTIONS":  [
+                              "모든 빚 을 완전히 제거하지 않는 한 [E] 를 얻을 수 없습니다. 턴 종료 시 제거됩니다."
+                            ]
+                 }
 }

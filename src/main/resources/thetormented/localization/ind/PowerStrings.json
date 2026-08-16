@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "Kekuatan Tertinggi",
-                                 "DESCRIPTIONS":  [
-                                                      "Kamu sangat Keren dan Kuat."
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "Perdarahan",
-                                    "DESCRIPTIONS":  [
-                                                         "Pada awal gilirannya, kehilangan #b",
-                                                         " HP, lalu hilangkan semua Perdarahan. Saat makhluk yang berdarah menerima kerusakan serangan yang tidak diblok, dapatkan #b1 Perdarahan."
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "Dosa",
-                                  "DESCRIPTIONS":  [
-                                                       "Saat kamu memiliki #b5 Dosa, dapatkan ",
-                                                       " ${modID}:Utang."
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "Utang",
-                                   "DESCRIPTIONS":  [
-                                                        "Setiap Utang menerima #b10% lebih banyak kerusakan. Menerima ",
-                                                        "% lebih banyak kerusakan. NL Saat pemberian Utang diblokir oleh Artefak, kamu kehilangan ",
-                                                        " Dosa untuk setiap 1 Utang yang diblokir."
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "Kehilangan Energi",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Kehilangan [E] pada giliran berikutnya"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "Memperoleh Energi",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Memperoleh [E] pada giliran berikutnya"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "Belas Kasih",
-                                    "DESCRIPTIONS":  [
-                                                         "Utang tidak memberikan kerusakan ekstra pada giliran ini"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "Luka Dalam",
-                                        "DESCRIPTIONS":  [
-                                                             "Perdarahan tidak dihilangkan pada awal gilirannya."
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "Kelegaan",
-                                     "DESCRIPTIONS":  [
-                                                          "Pada akhir giliranmu, buang SEMUA ",
-                                                          " di tanganmu."
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "Tangkisan",
-                                    "DESCRIPTIONS":  [
-                                                         "Setiap kali kamu diserang, pantulkan kerusakan yang kamu blok kembali ke penyerang."
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "Perdarahan Tanpa Henti",
-                                              "DESCRIPTIONS":  [
-                                                                   "Pada awal setiap giliran, berikan #b",
-                                                                   " ${modID}:Perdarahan kepada SEMUA musuh."
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "Duka",
-                                    "DESCRIPTIONS":  [
-                                                         "Pada giliran ini, setiap kali kamu mengambil kartu, berikan #b",
-                                                         " ${modID}:Perdarahan kepada SEMUA musuh."
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "Kenangan Mengerikan",
-                                          "DESCRIPTIONS":  [
-                                                               "Jika kamu memperoleh ${modID}:Utang pada giliran ini, musuh memberikan #b",
-                                                               "% lebih sedikit kerusakan."
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "Rekonsiliasi",
-                                            "DESCRIPTIONS":  [
-                                                                 "Setiap kali kamu membuat atau membuang *Sengsara, dapatkan #b",
-                                                                 " Blok."
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "Daging Remuk",
-                                           "DESCRIPTIONS":  [
-                                                                "Setiap kali kamu memberikan 6 ${modID}:Perdarahan kepada musuh, berikan #b",
-                                                                " kerusakan kepada SEMUA musuh."
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "Duri Darah",
-                                          "DESCRIPTIONS":  [
-                                                               "Setiap kali musuh menyerangmu, berikan #b",
-                                                               " ${modID}:Perdarahan kepadanya."
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "Jalan Penebusan",
-                                             "DESCRIPTIONS":  [
-                                                                  "Setiap kali kamu menghilangkan 1 ${modID}:Utang, ambil #b",
-                                                                  " kartu."
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "Kemarahan",
-                                          "DESCRIPTIONS":  [
-                                                               "Untuk #b",
-                                                               " giliran berikutnya, kartu non-Serangan pertama yang kamu mainkan setiap giliran berbiaya 0."
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "Nafsu Bertarung",
-                                                  "DESCRIPTIONS":  [
-                                                                       "Pada awal setiap giliran, dapatkan [E] . NL Pada akhir setiap giliran, menerima 3 kerusakan."
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "Menyerah",
-                                      "DESCRIPTIONS":  [
-                                                           "Musuh ini menerima #b50% lebih banyak kerusakan."
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "Wujud Penghakiman",
-                                           "DESCRIPTIONS":  [
-                                                                "Kamu memberikan 50% lebih banyak kerusakan kepada musuh di bawah ",
-                                                                "% HP Maks mereka."
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "Penjelmaan Dosa",
-                                        "DESCRIPTIONS":  [
-                                                             "Pada akhir giliranmu, dapatkan #b",
-                                                             " Blok, ditambah #b",
-                                                             " Blok untuk setiap lapisan ${modID}:Utang."
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "Pemandian Darah",
-                                        "DESCRIPTIONS":  [
-                                                             "Kartu Serangan ",
-                                                             " pertama yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan."
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "Terlalu Kaku",
-                                        "DESCRIPTIONS":  [
-                                                             "Setiap kali kamu memainkan kartu Serangan, kartu itu secara permanen kehilangan ",
-                                                             " kerusakan untuk sisa pertarungan."
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "Pembatasan",
-                                          "DESCRIPTIONS":  [
-                                                               "Kamu tidak dapat memperoleh [E]. Dihilangkan pada akhir giliranmu."
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "Kekuatan Tertinggi",
+              "DESCRIPTIONS":  [
+                         "Kamu sangat Keren dan Kuat."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Perdarahan",
+                "DESCRIPTIONS":  [
+                          "Pada awal gilirannya, kehilangan #b",
+                          " HP, lalu hilangkan semua Perdarahan. Saat makhluk yang berdarah menerima kerusakan serangan yang tidak diblok, dapatkan #b1 Perdarahan."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Dosa",
+               "DESCRIPTIONS":  [
+                          "Saat kamu memiliki #b5 Dosa, dapatkan ",
+                          " ${modID}:Utang."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Utang",
+                "DESCRIPTIONS":  [
+                          "Setiap Utang menerima #b10% lebih banyak kerusakan. Menerima ",
+                          "% lebih banyak kerusakan. NL Saat pemberian Utang diblokir oleh Artefak, kamu kehilangan ",
+                          " Dosa untuk setiap 1 Utang yang diblokir."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Kehilangan Energi",
+                      "DESCRIPTIONS":  [
+                                 "Kehilangan [E] pada giliran berikutnya"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Memperoleh Energi",
+                      "DESCRIPTIONS":  [
+                                 "Memperoleh [E] pada giliran berikutnya"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Belas Kasih",
+                "DESCRIPTIONS":  [
+                          "Utang tidak memberikan kerusakan ekstra pada giliran ini"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Luka Dalam",
+                  "DESCRIPTIONS":  [
+                            "Perdarahan tidak dihilangkan pada awal gilirannya."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Kelegaan",
+                "DESCRIPTIONS":  [
+                           "Pada akhir giliranmu, buang SEMUA ",
+                           " di tanganmu."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Tangkisan",
+                "DESCRIPTIONS":  [
+                          "Setiap kali kamu diserang, pantulkan kerusakan yang kamu blok kembali ke penyerang."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Perdarahan Tanpa Henti",
+                     "DESCRIPTIONS":  [
+                                "Pada awal setiap giliran, berikan #b",
+                                " ${modID}:Perdarahan kepada SEMUA musuh."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Duka",
+                "DESCRIPTIONS":  [
+                          "Pada giliran ini, setiap kali kamu mengambil kartu, berikan #b",
+                          " ${modID}:Perdarahan kepada SEMUA musuh."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Kenangan Mengerikan",
+                   "DESCRIPTIONS":  [
+                              "Jika kamu memperoleh ${modID}:Utang pada giliran ini, musuh memberikan #b",
+                              "% lebih sedikit kerusakan."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Rekonsiliasi",
+                    "DESCRIPTIONS":  [
+                              "Setiap kali kamu membuat atau membuang *Sengsara, dapatkan #b",
+                              " Blok."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Daging Remuk",
+                    "DESCRIPTIONS":  [
+                              "Setiap kali kamu memberikan 6 ${modID}:Perdarahan kepada musuh, berikan #b",
+                              " kerusakan kepada SEMUA musuh."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Duri Darah",
+                   "DESCRIPTIONS":  [
+                              "Setiap kali musuh menyerangmu, berikan #b",
+                              " ${modID}:Perdarahan kepadanya."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Jalan Penebusan",
+                    "DESCRIPTIONS":  [
+                               "Setiap kali kamu menghilangkan 1 ${modID}:Utang, ambil #b",
+                               " kartu."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Kemarahan",
+                   "DESCRIPTIONS":  [
+                              "Untuk #b",
+                              " giliran berikutnya, kartu pertama yang kamu mainkan setiap giliran berbiaya 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Nafsu Bertarung",
+                       "DESCRIPTIONS":  [
+                                  "Pada awal setiap giliran, dapatkan [E] . NL Pada akhir setiap giliran, menerima 3 kerusakan."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Menyerah",
+                 "DESCRIPTIONS":  [
+                            "Musuh ini menerima #b50% lebih banyak kerusakan."
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "Wujud Penghakiman",
+                    "DESCRIPTIONS":  [
+                              "Kamu memberikan 50% lebih banyak kerusakan kepada musuh di bawah ",
+                              "% HP Maks mereka."
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Penjelmaan Dosa",
+                  "DESCRIPTIONS":  [
+                            "Pada akhir giliranmu, dapatkan #b",
+                            " Blok, ditambah #b",
+                            " Blok untuk setiap lapisan ${modID}:Utang."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Pemandian Darah",
+                  "DESCRIPTIONS":  [
+                            "Kartu Serangan ",
+                            " pertama yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan."
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Terlalu Kaku",
+                  "DESCRIPTIONS":  [
+                            "Setiap kali kamu memainkan kartu Serangan, kartu itu secara permanen kehilangan ",
+                            " kerusakan untuk sisa pertarungan."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Pembatasan",
+                   "DESCRIPTIONS":  [
+                              "Kamu tidak dapat memperoleh [E]. Dihilangkan pada akhir giliranmu."
+                            ]
+                 }
 }

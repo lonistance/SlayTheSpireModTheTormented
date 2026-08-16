@@ -1,170 +1,170 @@
 {
-    "${modID}:PowerID":  {
-                                 "NAME":  "Ultimat kraft",
-                                 "DESCRIPTIONS":  [
-                                                      "Du er veldig kul og sterk."
-                                                  ]
-                             },
-    "${modID}:BleedPower":  {
-                                    "NAME":  "Blødning",
-                                    "DESCRIPTIONS":  [
-                                                         "I starten av runden sin, mist #b",
-                                                         " HP, og fjern deretter all Blødning. Når en blødende skapning tar ublokkert angrepsskade, får den #b1 Blødning."
-                                                     ]
-                                },
-    "${modID}:SinPower":  {
-                                  "NAME":  "Synd",
-                                  "DESCRIPTIONS":  [
-                                                       "Når du har #b5 Synd, får du ",
-                                                       " ${modID}:Gjeld."
-                                                   ]
-                              },
-    "${modID}:DebtPower":  {
-                                   "NAME":  "Gjeld",
-                                   "DESCRIPTIONS":  [
-                                                        "Hver Gjeld gir #b10% mer Skade. Du tar ",
-                                                        "% mer Skade. NL Når en Gjeld-påføring blokkeres av Magimotstand, mister du ",
-                                                        " Synd for hver blokkerte Gjeld."
-                                                    ]
-                               },
-    "${modID}:LoseEnergyNextTurnPower":  {
-                                                 "NAME":  "Mist energi neste runde",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Mist [E] neste runde"
-                                                                  ]
-                                             },
-    "${modID}:GainEnergyNextTurnPower":  {
-                                                 "NAME":  "Få energi neste runde",
-                                                 "DESCRIPTIONS":  [
-                                                                      "Få [E] neste runde"
-                                                                  ]
-                                             },
-    "${modID}:MercyPower":  {
-                                    "NAME":  "Nåde",
-                                    "DESCRIPTIONS":  [
-                                                         "Gjeld gir ingen ekstra Skade denne runden"
-                                                     ]
-                                },
-    "${modID}:DeepWoundPower":  {
-                                        "NAME":  "Dypt sår",
-                                        "DESCRIPTIONS":  [
-                                                             "Blødning fjernes ikke i starten av runden sin."
-                                                         ]
-                                    },
-    "${modID}:ReliefPower":  {
-                                     "NAME":  "Lettelse",
-                                     "DESCRIPTIONS":  [
-                                                          "På slutten av runden din, vrak ALLE ",
-                                                          " på hånda."
-                                                      ]
-                                 },
-    "${modID}:ParryPower":  {
-                                    "NAME":  "Parering",
-                                    "DESCRIPTIONS":  [
-                                                         "Når du blir angrepet, reflekter den blokkerte Skaden tilbake til angriperen."
-                                                     ]
-                                },
-    "${modID}:RelentlessBleedPower":  {
-                                              "NAME":  "Nådeløs blødning",
-                                              "DESCRIPTIONS":  [
-                                                                   "I starten av hver runde, påfør #b",
-                                                                   " ${modID}:Blødning til ALLE fiender."
-                                                               ]
-                                          },
-    "${modID}:GriefPower":  {
-                                    "NAME":  "Sorg",
-                                    "DESCRIPTIONS":  [
-                                                         "Denne runden, hver gang du trekker et kort, påfør #b",
-                                                         " ${modID}:Blødning til ALLE fiender."
-                                                     ]
-                                },
-    "${modID}:DreadMemoryPower":  {
-                                          "NAME":  "Uhyggelig minne",
-                                          "DESCRIPTIONS":  [
-                                                               "Hvis du fikk ${modID}:Gjeld denne runden, påfører fiender #b",
-                                                               "% mindre Skade."
-                                                           ]
-                                      },
-    "${modID}:ReconcileFatePower":  {
-                                            "NAME":  "Forsoning med skjebnen",
-                                            "DESCRIPTIONS":  [
-                                                                 "Hver gang du skaper eller vraker en *Elendighet, få #b",
-                                                                 " Skadeblokkering."
-                                                             ]
-                                        },
-    "${modID}:MangledFleshPower":  {
-                                           "NAME":  "Lemlestet kjøtt",
-                                           "DESCRIPTIONS":  [
-                                                                "Hver gang du påfører en fiende 6 Blødning, påfør #b",
-                                                                " Skade til ALLE fiender."
-                                                            ]
-                                       },
-    "${modID}:BloodThornsPower":  {
-                                          "NAME":  "Blodtorner",
-                                          "DESCRIPTIONS":  [
-                                                               "Hver gang en fiende angriper deg, påfør #b",
-                                                               " ${modID}:Blødning til den."
-                                                           ]
-                                      },
-    "${modID}:RedemptionPathPower":  {
-                                             "NAME":  "Forløsningens vei",
-                                             "DESCRIPTIONS":  [
-                                                                  "Hver gang du fjerner 1 ${modID}:Gjeld, trekk #b",
-                                                                  " kort."
-                                                              ]
-                                         },
-    "${modID}:IndignationPower":  {
-                                          "NAME":  "Forargelse",
-                                          "DESCRIPTIONS":  [
-                                                               "I de neste #b",
-                                                               " rundene koster det første ikke-angreps-kortet du spiller hver runde 0."
-                                                           ]
-                                      },
-    "${modID}:HungeringBattleWillPower":  {
-                                                  "NAME":  "Sulten kampvilje",
-                                                  "DESCRIPTIONS":  [
-                                                                       "I starten av hver runde, få [E] . NL På slutten av hver runde, ta 3 skade."
-                                                                   ]
-                                              },
-    "${modID}:ConcedePower":  {
-                                      "NAME":  "Overgivelse",
-                                      "DESCRIPTIONS":  [
-                                                           "Denne fienden tar #b50% mer Skade."
-                                                       ]
-                                  },
-    "${modID}:JudgmentFormPower":  {
-                                           "NAME":  "Dommens form",
-                                           "DESCRIPTIONS":  [
-                                                                "Du påfører 50% mer Skade til fiender under ",
-                                                                "% av sin maks HP."
-                                                            ]
-                                       },
-    "${modID}:SinAvatarPower":  {
-                                        "NAME":  "Syndens inkarnasjon",
-                                        "DESCRIPTIONS":  [
-                                                             "På slutten av runden din, få #b",
-                                                             " Skadeblokkering, pluss #b",
-                                                             " Skadeblokkering for hver stabel ${modID}:Gjeld."
-                                                         ]
-                                    },
-    "${modID}:BloodbathPower":  {
-                                        "NAME":  "Blodbad",
-                                        "DESCRIPTIONS":  [
-                                                             "De første ",
-                                                             " angrepskortet som spilles hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører."
-                                                         ]
-                                    },
-    "${modID}:OverrigidPower":  {
-                                        "NAME":  "Overstiv",
-                                        "DESCRIPTIONS":  [
-                                                             "Hver gang du spiller et angrepskort, mister det permanent ",
-                                                             " Skade for resten av kampen."
-                                                         ]
-                                    },
-    "${modID}:RestrictionPower":  {
-                                          "NAME":  "Restriksjon",
-                                          "DESCRIPTIONS":  [
-                                                               "Du kan ikke få [E]. Fjernes ved slutten av runden din."
-                                                           ]
-                                      }
+  "${modID}:PowerID":  {
+              "NAME":  "Ultimat kraft",
+              "DESCRIPTIONS":  [
+                         "Du er veldig kul og sterk."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Blødning",
+                "DESCRIPTIONS":  [
+                          "I starten av runden sin, mist #b",
+                          " HP, og fjern deretter all Blødning. Når en blødende skapning tar ublokkert angrepsskade, får den #b1 Blødning."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Synd",
+               "DESCRIPTIONS":  [
+                          "Når du har #b5 Synd, får du ",
+                          " ${modID}:Gjeld."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Gjeld",
+                "DESCRIPTIONS":  [
+                          "Hver Gjeld gir #b10% mer Skade. Du tar ",
+                          "% mer Skade. NL Når en Gjeld-påføring blokkeres av Magimotstand, mister du ",
+                          " Synd for hver blokkerte Gjeld."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Mist energi neste runde",
+                      "DESCRIPTIONS":  [
+                                 "Mist [E] neste runde"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Få energi neste runde",
+                      "DESCRIPTIONS":  [
+                                 "Få [E] neste runde"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Nåde",
+                "DESCRIPTIONS":  [
+                          "Gjeld gir ingen ekstra Skade denne runden"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Dypt sår",
+                  "DESCRIPTIONS":  [
+                            "Blødning fjernes ikke i starten av runden sin."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Lettelse",
+                "DESCRIPTIONS":  [
+                           "På slutten av runden din, vrak ALLE ",
+                           " på hånda."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Parering",
+                "DESCRIPTIONS":  [
+                          "Når du blir angrepet, reflekter den blokkerte Skaden tilbake til angriperen."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Nådeløs blødning",
+                     "DESCRIPTIONS":  [
+                                "I starten av hver runde, påfør #b",
+                                " ${modID}:Blødning til ALLE fiender."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Sorg",
+                "DESCRIPTIONS":  [
+                          "Denne runden, hver gang du trekker et kort, påfør #b",
+                          " ${modID}:Blødning til ALLE fiender."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Uhyggelig minne",
+                   "DESCRIPTIONS":  [
+                              "Hvis du fikk ${modID}:Gjeld denne runden, påfører fiender #b",
+                              "% mindre Skade."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Forsoning med skjebnen",
+                    "DESCRIPTIONS":  [
+                              "Hver gang du skaper eller vraker en *Elendighet, få #b",
+                              " Skadeblokkering."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Lemlestet kjøtt",
+                    "DESCRIPTIONS":  [
+                              "Hver gang du påfører en fiende 6 Blødning, påfør #b",
+                              " Skade til ALLE fiender."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Blodtorner",
+                   "DESCRIPTIONS":  [
+                              "Hver gang en fiende angriper deg, påfør #b",
+                              " ${modID}:Blødning til den."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Forløsningens vei",
+                    "DESCRIPTIONS":  [
+                               "Hver gang du fjerner 1 ${modID}:Gjeld, trekk #b",
+                               " kort."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Forargelse",
+                   "DESCRIPTIONS":  [
+                              "I de neste #b",
+                              " rundene koster det første kortet du spiller hver runde 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Sulten kampvilje",
+                       "DESCRIPTIONS":  [
+                                  "I starten av hver runde, få [E] . NL På slutten av hver runde, ta 3 skade."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Overgivelse",
+                 "DESCRIPTIONS":  [
+                            "Denne fienden tar #b50% mer Skade."
+                          ]
+               },
+  "${modID}:JudgmentFormPower":  {
+                    "NAME":  "Dommens form",
+                    "DESCRIPTIONS":  [
+                              "Du påfører 50% mer Skade til fiender under ",
+                              "% av sin maks HP."
+                            ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Syndens inkarnasjon",
+                  "DESCRIPTIONS":  [
+                            "På slutten av runden din, få #b",
+                            " Skadeblokkering, pluss #b",
+                            " Skadeblokkering for hver stabel ${modID}:Gjeld."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Blodbad",
+                  "DESCRIPTIONS":  [
+                            "De første ",
+                            " angrepskortet som spilles hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører."
+                          ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Overstiv",
+                  "DESCRIPTIONS":  [
+                            "Hver gang du spiller et angrepskort, mister det permanent ",
+                            " Skade for resten av kampen."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Restriksjon",
+                   "DESCRIPTIONS":  [
+                              "Du kan ikke få [E]. Fjernes ved slutten av runden din."
+                            ]
+                 }
 }

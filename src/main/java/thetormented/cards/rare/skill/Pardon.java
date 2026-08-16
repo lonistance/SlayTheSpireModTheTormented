@@ -1,13 +1,12 @@
-package thetormented.cards.uncommon.skill;
+package thetormented.cards.rare.skill;
 
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.helpers.CardLibrary;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.cardManip.ExhaustCardEffect;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToHandEffect;
 import thetormented.cards.BaseCard;
 import thetormented.cards.rare.attack.UnceasingWar;
 import thetormented.cards.rare.power.ExecutionForm;
@@ -35,15 +34,21 @@ public class Pardon extends BaseCard {
     public Pardon() {
         super(ID, info);
         setMagic(PLAYS_TO_TRANSFORM); // 3, both base and upgraded
+        // 动态显示“此牌已打出 N 次”（EXTENDED_DESCRIPTION[0]）
+        setCustomVar("PLAYS", VariableType.MAGIC, 0, 0, (c, m, base) -> ((Pardon) c).plays);
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        return extDescription(0);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        CardGroup hand = p.hand;
         ArrayList<AbstractCard> originals = new ArrayList<>();
         ArrayList<AbstractCard> replacements = new ArrayList<>();
-        for (int i = 0; i < hand.group.size(); i++) {
-            AbstractCard c = hand.group.get(i);
+        for (int i = 0; i < p.hand.group.size(); i++) {
+            AbstractCard c = p.hand.group.get(i);
             if (c == this) {
                 continue;
             }
@@ -55,48 +60,33 @@ public class Pardon extends BaseCard {
             replacements.add(replacement);
         }
 
-        // 先为每张原牌播放"被消耗"动画（仅视觉，不真正消耗）
+        // 真正把原牌从手牌中移除（removeCard 为纯列表移除，不触发任何消耗类钩子），
+        // 再播放官方消耗动画（ExhaustCardEffect 仅视觉：音效/火星/淡出）
         for (AbstractCard c : originals) {
             c.untip();
             c.unhover();
             c.unfadeOut();
-            playExhaustVisual(c);
+            p.hand.removeCard(c);
+            AbstractDungeon.effectList.add(new ExhaustCardEffect(c));
         }
+        p.hand.refreshHandLayout();
 
-        // 替换手牌内容，并为每张生成牌播放"加入手牌"动画
-        for (int i = 0; i < originals.size(); i++) {
-            AbstractCard old = originals.get(i);
-            AbstractCard replacement = replacements.get(i);
-            int idx = hand.group.indexOf(old);
-            if (idx < 0) {
-                continue;
-            }
-            hand.group.set(idx, replacement);
-            playAddedToHandVisual(replacement);
+        // 生成方式与官方 DeadBranch 一致：MakeTempCardInHandAction 内部会 markCardAsSeen、
+        // 复制一张并播放"飞入手中"动画，同时处理手牌已满等边界
+        for (AbstractCard replacement : replacements) {
+            this.addToBot(new MakeTempCardInHandAction(replacement, false));
         }
-        hand.refreshHandLayout();
 
         this.plays++;
         if (this.plays >= this.magicNumber) {
             AbstractCard powerCard = getRandomPowerCard();
-            int index = hand.group.indexOf(this);
-            if (powerCard != null && index >= 0) {
-                playExhaustVisual(this);
-                hand.group.set(index, powerCard);
-                playAddedToHandVisual(powerCard);
-                hand.refreshHandLayout();
+            if (powerCard != null) {
+                // use() 返回后官方流程会真正消耗本牌（UseCardAction -> moveToExhaustPile，
+                // 已自带消耗动画与消耗钩子），这里只需声明消耗并生成能力牌
                 this.exhaust = true;
+                this.addToBot(new MakeTempCardInHandAction(powerCard, false));
             }
         }
-    }
-
-    private void playExhaustVisual(AbstractCard card) {
-        card.shrink();
-        AbstractDungeon.effectsQueue.add(new ExhaustCardEffect(card));
-    }
-
-    private void playAddedToHandVisual(AbstractCard card) {
-        AbstractDungeon.effectsQueue.add(new ShowCardAndAddToHandEffect(card));
     }
 
     private boolean isExcluded(AbstractCard c) {
