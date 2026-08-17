@@ -420,7 +420,27 @@
 - **内容**：本版替换了部分遗物贴图，修复了 Beta art 的卡牌预览（cards_test）问题，复查了所有卡牌的实现并修复已知卡牌 bug，并对部分卡牌进行了调整与重做。
 - **本版累积改动（#20-#31）**：遗物贴图替换；Beta art 卡牌大图预览修复（LoadPortraitImg 重做、cards_test/<类型>/_p.png 规则、逐帧兜底，#19）；全卡牌复查与既有 bug 修复（VoidCall #27/#29/#31、ChaosDirty #22/#23/#26、Rebel #21、ReconcileFate #21/#24、RelentlessEntanglement #30 已知局限如实记录、Indignation #29、Pardon #29、Shackles #20/#24/#29、BrokenArmor #20/#23、SacredLand #20、HeavyPast #28、Relapse #23，及遗物重做 CursedBrokenBlade/HeroLongsword #25）；24 语言全量校验。
 - **技术**：pom.xml 版本号 1.0.0 -> 1.0.1；jar 基于全新编译重建（javac EXIT=0，151 个源文件），并修复了 ModTheSpire.json 描述字段的编码损坏（GBK 误写导致的右单引号与中文标点乱码）。
-- **验证**：javac 全量编译 EXIT=0；alidate_localization.ps1 24 语言全部 PASS。
+- **验证**：javac 全量编译 EXIT=0；validate_localization.ps1 24 语言全部 PASS。
+**#33 HeroLongsword 崩溃修复：拾取遗物后 ConcurrentModificationException**
+- **现象**：拾取 HeroLongsword（落位动画结束后）游戏崩溃，`java.util.ConcurrentModificationException` 抛自 `OverlayMenu.update(OverlayMenu.java:69)`（`ArrayList$Itr.next`）。
+- **根因（字节码验证）**：`OverlayMenu.update()` 每帧用 for-each 迭代 `AbstractDungeon.player.relics` 并调用 `r.update()`（源码第 69 行；字节码 PC 82-119）。新获得遗物的"落位"恰好发生在这个循环内部：原版 `AbstractRelic.update()` 检测到 `isAnimating` 飞行到达 `targetX/targetY` 后置 `isDone = true` 并调用 `onEquip()`（字节码 PC 376-437）。我们的 `HeroLongsword.onEquip()` 调用了 `AbstractDungeon.player.loseRelic(CursedBrokenBlade.ID)`，把该遗物从正在迭代的同一列表中结构性移除——下一次 `Iterator.next()` 即抛 CME。（原版 `loseRelic` 自身是安全的迭代模式：先扫描、循环结束后才 remove；崩溃由外层 OverlayMenu 的迭代器引发。）
+- **修复**：`HeroLongsword.onEquip()` 不再同步移除遗物——开局打击/防御的升级仍在 `onEquip` 内立即执行；`loseRelic(CursedBrokenBlade.ID)` 改为并入 `AbstractDungeon.effectList` 的一次性特效（0.05 秒）递延执行：特效在下一帧更新，彼时对 `player.relics` 已无存活迭代器，碎刃照常移除。
+- **验证**：javac 全量编译 EXIT=0（151 个源文件）。文案零改动（无需 validate）。等待玩家进游戏确认：Boss 遗物屏拾取 HeroLongsword 落位后碎刃被移除、游戏不再崩溃。
+**#34 CharacterStrings 重写：角色简介、Spire Heart 攻击台词、Vampires 首句逐字对齐（24 语言）**
+- **内容**：24 种语言的 `CharacterStrings.json` 三条 TEXT 全部重写。
+  - **TEXT[0]（选人界面简介）**：由原来的单句口号扩写为 4 句背景故事（素材取自 Steam 描述）：被预言"灾厄之子"的战士、行处战争与死亡相随的不灭诅咒、为终结降世灾祸立约攀塔的旅程、"原罪/血债/流血"机制（机制名逐语言对齐各 PowerStrings.json 的现译，如 罪/血债/流血、Sin/Debt/Bleed、Péché/Dette/Saignement 等），收尾"这一次不为荣耀，而是为了赎罪"。
+  - **TEXT[1]（Spire Heart 攻击台词，`getSpireHeartText`）**：全新赎罪台词——杀死心脏即可完成契约、诅咒随之解除，"这是唯一的赎罪之路"，末句"你举起了手中的剑"（各语言用其第二人称，如 vie "Ngươi giơ thanh kiếm trong tay lên."）。
+  - **TEXT[2]（Vampires 问候，`getVampireText`）**：逐字复制原版 `Vampires` 事件 `DESCRIPTIONS[0]`（自 desktop-1.0.jar 按语言提取）——事件将正确定向称呼男性角色（如 zhs "加入我们，兄弟"）；此前 zhs 文件里残留的是英文原文。
+- **技术**：译稿先落为 TSV 对照表，再由 ASCII-only 的 PowerShell 脚本统一写回；JSON 保持仓库既有格式（CRLF、2 空格缩进、UTF-8 无 BOM、键与 NAMES 原样保留）；TEXT[2] 从 jar 提取内容程序化复制，保证逐字节一致（24/24 比对通过）。
+- **后续修复（启动崩溃）**：初版应用脚本把 24 个文件的 JSON 顶层键全部写坏为 `"$"`（PowerShell 字符串插值吃掉了 `${modID}` 后缀）且清空了 NAMES，导致游戏启动即崩溃——`Tormented.getNames(Tormented.java:45)` 处 NPE（`getCharacterString("thetormented:TheTormented")` 查无此键返回 null）。已将 24 个文件全部重建：键与 NAMES 逐字恢复自 HEAD，新 TEXT 从损坏文件中抢救保留。重新验证：无 BOM、键/NAMES/TEXT 完整，`validate_localization.ps1` 24 语言再次全部 PASS。
+- **验证**：`validate_localization.ps1` 24 语言全部 PASS、total fails=0（eng 627 条 / zhs 3 条英文残留词警告为既有基线，非本次引入）。
+
+**#35 自定义碎心结局过场框架（图片待补）：The Tormented 不再借用 Ironclad 的结局画面**
+- **问题**：击败心脏后原版进入 `TrueVictoryRoom`，其构造器执行 `new Cutscene(player.chosenClass)`；`Cutscene` 构造器按 `PlayerClass` 分发（1-4 为四名原版角色），mod 角色落入 `default:` 分支——直接回退到 Ironclad 的结局插画（`images/scenes/redBg.jpg` + `ironclad1-3.png`）。字节码验证：`TrueVictoryRoom.<init>`（PC 12-25）创建过场；`Cutscene` 构造器 tableswitch 1/2/3/4 -> ironclad/silent/defect/watcher 面板，`default` -> ironclad；`CutscenePanel` 通过 `ImageMaster.loadImage` 加载贴图，文件缺失时返回 null（仅记日志）。
+- **修复**：新增 `thetormented/patches/VictoryCutscenePatch.java` —— 对 `Cutscene.<init>`（paramtypez `{AbstractPlayer.PlayerClass.class}`）的 Postfix 补丁。当 `AbstractDungeon.player.chosenClass == Tormented.Meta.TORMENTED` 时，加载本 mod 自己的背景与 3 张面板图，经 `ReflectionHacks.setPrivate` 替换私有字段 `bgImg`/`panels`；任一张图加载失败则放弃替换、维持原版（Ironclad）过场，缺图绝不导致崩溃。素材文件约定（放入 `src/main/resources/thetormented/images/character/`）：`endingBg.jpg`（全屏背景，1920x1080）与 `ending1.png`/`ending2.png`/`ending3.png`（插画面板；非 16:10 时绘制区为 WIDTH x (HEIGHT + 110 x scale)，见 `Cutscene.renderImg`）。
+- **素材已就位**：`endingBg.jpg` + `ending1/2/3.png` 均为 1920x1200（16:10，正好落入原版全屏绘制分支 `isSixteenByTen`，不裁切）。
+- **预览验证（独立工具，不入库）**：针对 `desktop-1.0.jar` 的 libGDX/LWJGL2 桌面程序（资源解析与游戏内一致：LWJGL2 internal = classpath，mod 路径从资源目录解析），逐字节复刻 `Cutscene.update`/`updateSceneChange`/`updateFadeIn`/`updateFadeOut`/`updateIfDone` 与 `CutscenePanel.update`/`activate`/`fadeOut`/`render`（含原版 isDone 后每帧重复 `fadeOut()` 的原生行为）。结果：4 次 `ImageMaster.loadImage` 全部 OK（1920x1200）；完整时间线（黑场约 2s -> P1 5s -> P2 -> P3 -> 全体淡出 -> 背景淡出 -> 结算屏）跑完且零异常；预览裸环境特有的 `ImageMaster.WHITE_SQUARE_IMG` 为 null（游戏内绝不为 null）用自建 1x1 白纹兜底。
+- **验证**：javac 全量编译 EXIT=0（180 类）。文案零改动。jar 已重建（`target/thetormented-cutscene.jar`，909 条目 / 180 类）并部署到 `mods/thetormented.jar`（旧版备份 `thetormented.jar.bak-1.0.2-pre-cutscene`），`copy/thetormented.jar` 同步。待玩家用 The Tormented 击败心脏后游戏内实机确认。
 ---
 
 ### 帮助翻译你的语言
