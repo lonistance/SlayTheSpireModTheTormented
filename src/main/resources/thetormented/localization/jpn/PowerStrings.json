@@ -132,12 +132,12 @@
                             "この敵は #b50% 多くのダメージを受ける。"
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "審判の形態",
                     "DESCRIPTIONS":  [
-                              "最大HPの ",
-                              "% 未満の敵に 50% 多くのダメージを与える。"
-                            ]
+                            "最初の ",
+                            " アタックカードをプレイしたとき、ブロックされなかったダメージに等しい出血を与える。"
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "罪の化身",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "血祭り",
                   "DESCRIPTIONS":  [
-                            "最初の ",
-                            " アタックカードをプレイしたとき、ブロックされなかったダメージに等しい出血を与える。"
-                          ]
+                              "最大HPの ",
+                              "% 未満の敵に 50% 多くのダメージを与える。"
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "過度の硬直",

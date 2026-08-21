@@ -132,12 +132,12 @@
                             "Musuh ini menerima #b50% lebih banyak kerusakan."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Wujud Penghakiman",
                     "DESCRIPTIONS":  [
-                              "Kamu memberikan 50% lebih banyak kerusakan kepada musuh di bawah ",
-                              "% HP Maks mereka."
-                            ]
+                            "Kartu Serangan ",
+                            " pertama yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Penjelmaan Dosa",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Pemandian Darah",
                   "DESCRIPTIONS":  [
-                            "Kartu Serangan ",
-                            " pertama yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan."
-                          ]
+                              "Kamu memberikan 50% lebih banyak kerusakan kepada musuh di bawah ",
+                              "% HP Maks mereka."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Terlalu Kaku",

@@ -132,12 +132,12 @@
                             "Dieser Gegner erleidet #b50% mehr Schaden."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Form des Urteils",
                     "DESCRIPTIONS":  [
-                              "Du fügst Gegnern unter ",
-                              "% ihrer Max. LP 50% mehr Schaden zu."
-                            ]
+                            "Die ersten ",
+                            " in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Inkarnation der Sünde",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Blutbad",
                   "DESCRIPTIONS":  [
-                            "Die ersten ",
-                            " in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
-                          ]
+                              "Du fügst Gegnern unter ",
+                              "% ihrer Max. LP 50% mehr Schaden zu."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Übersteif",

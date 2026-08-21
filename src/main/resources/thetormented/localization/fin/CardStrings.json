@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Tuomion muoto",
-                  "DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään.",
-                  "UPGRADE_DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään."
+                  "DESCRIPTION":  "Ensimmäinen hyökkäyskortti, jonka pelaat joka vuoro, lisää ${modID}:Verenvuotoa suojaamattoman vaurion verran.",
+                  "UPGRADE_DESCRIPTION":  "Ensimmäiset kaksi hyökkäyskorttia, jotka pelaat joka vuoro, lisäävät ${modID}:Verenvuotoa suojaamattoman vaurion verran."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Synnin ruumiillistuma",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Verikylpy",
-                "DESCRIPTION":  "Ensimmäinen hyökkäyskortti, jonka pelaat joka vuoro, lisää ${modID}:Verenvuotoa suojaamattoman vaurion verran.",
-                "UPGRADE_DESCRIPTION":  "Ensimmäinen hyökkäyskortti, jonka pelaat joka vuoro, lisää ${modID}:Verenvuotoa aiheuttamansa suojaamattoman vaurion verran."
+                "DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään.",
+                "UPGRADE_DESCRIPTION":  "Tee 50% enemmän vauriota vihollisille, jotka ovat alle !M!% maksimi-HP:stään."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Ylijäykkä",

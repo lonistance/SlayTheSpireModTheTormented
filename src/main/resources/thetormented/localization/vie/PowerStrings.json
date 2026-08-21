@@ -132,12 +132,12 @@
                             "Quân địch này chịu thêm #b50% sát thương."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Hình Thái Phán Quyết",
                     "DESCRIPTIONS":  [
-                              "Bạn gây thêm 50% sát thương lên quân địch dưới ",
-                              "% HP tối đa của chúng."
-                            ]
+                            "",
+                            " lá Tấn công đầu tiên chơi mỗi lượt gây Chảy máu bằng sát thương không bị đỡ của nó."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Hóa Thân Của Tội Lỗi",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Tắm Máu",
                   "DESCRIPTIONS":  [
-                            "",
-                            " lá Tấn công đầu tiên chơi mỗi lượt gây Chảy máu bằng sát thương không bị đỡ của nó."
-                          ]
+                              "Bạn gây thêm 50% sát thương lên quân địch dưới ",
+                              "% HP tối đa của chúng."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Quá Cứng Nhắc",

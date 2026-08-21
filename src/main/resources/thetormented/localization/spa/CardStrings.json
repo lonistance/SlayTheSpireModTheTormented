@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Forma de Juicio",
-                  "DESCRIPTION":  "Haz 50% más de daño a enemigos por debajo del !M!% de sus PV máximos.",
-                  "UPGRADE_DESCRIPTION":  "Haz 50% más de daño a enemigos por debajo del !M!% de sus PV máximos."
+                  "DESCRIPTION":  "Tu primera carta de Ataque jugada cada turno aplica ${modID}:Sangrado igual al daño no bloqueado que haga.",
+                  "UPGRADE_DESCRIPTION":  "Tus dos primeras cartas de Ataque jugadas cada turno aplican ${modID}:Sangrado igual al daño no bloqueado que hagan."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Encarnación del Pecado",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Baño de Sangre",
-                "DESCRIPTION":  "Tu primera carta de Ataque jugada cada turno aplica ${modID}:Sangrado igual al daño no bloqueado que haga.",
-                "UPGRADE_DESCRIPTION":  "Tu primera carta de Ataque jugada cada turno aplica ${modID}:Sangrado igual al daño no bloqueado que haga."
+                "DESCRIPTION":  "Haz 50% más de daño a enemigos por debajo del !M!% de sus PV máximos.",
+                "UPGRADE_DESCRIPTION":  "Haz 50% más de daño a enemigos por debajo del !M!% de sus PV máximos."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Demasiado Rígido",

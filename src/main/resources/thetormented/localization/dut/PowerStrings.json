@@ -132,12 +132,12 @@
                             "Deze vijand loopt #b50% meer schade op."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Vorm van het Oordeel",
                     "DESCRIPTIONS":  [
-                              "Je richt 50% meer schade aan op vijanden onder ",
-                              "% van hun Max LP."
-                            ]
+                            "De eerste ",
+                            " in elke beurt gespeelde Aanvalskaart past ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Avatar van de Zonde",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Bloedbad",
                   "DESCRIPTIONS":  [
-                            "De eerste ",
-                            " in elke beurt gespeelde Aanvalskaart past ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade."
-                          ]
+                              "Je richt 50% meer schade aan op vijanden onder ",
+                              "% van hun Max LP."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Overstijf",

@@ -132,12 +132,12 @@
                             "Ten wróg otrzymuje #b50% więcej obrażeń."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Forma wyroku",
                     "DESCRIPTIONS":  [
-                              "Zadajesz 50% więcej obrażeń wrogom poniżej ",
-                              "% ich maks. PZ."
-                            ]
+                            "Pierwsze ",
+                            " zagrana w każdej turze karta ataku nakłada Krwawienie równe niezablokowanym obrażeniom, która zadaje."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Wcielenie grzechu",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Krwawa łaźnia",
                   "DESCRIPTIONS":  [
-                            "Pierwsze ",
-                            " zagrana w każdej turze karta ataku nakłada Krwawienie równe niezablokowanym obrażeniom, która zadaje."
-                          ]
+                              "Zadajesz 50% więcej obrażeń wrogom poniżej ",
+                              "% ich maks. PZ."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Przesztywniały",

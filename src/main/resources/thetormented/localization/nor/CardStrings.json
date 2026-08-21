@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Dommens form",
-                  "DESCRIPTION":  "Påfør 50% mer Skade til fiender under !M!% av sin maks HP.",
-                  "UPGRADE_DESCRIPTION":  "Påfør 50% mer Skade til fiender under !M!% av sin maks HP."
+                  "DESCRIPTION":  "Det første angrepskortet du spiller hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører.",
+                  "UPGRADE_DESCRIPTION":  "De to første angrepskortene du spiller hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden de påfører."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Syndens inkarnasjon",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Blodbad",
-                "DESCRIPTION":  "Det første angrepskortet du spiller hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører.",
-                "UPGRADE_DESCRIPTION":  "Det første angrepskortet du spiller hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører."
+                "DESCRIPTION":  "Påfør 50% mer Skade til fiender under !M!% av sin maks HP.",
+                "UPGRADE_DESCRIPTION":  "Påfør 50% mer Skade til fiender under !M!% av sin maks HP."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Overstiv",

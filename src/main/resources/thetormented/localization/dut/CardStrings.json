@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Vorm van het Oordeel",
-                  "DESCRIPTION":  "Richt 50% meer schade aan op vijanden onder !M!% van hun Max LP.",
-                  "UPGRADE_DESCRIPTION":  "Richt 50% meer schade aan op vijanden onder !M!% van hun Max LP."
+                  "DESCRIPTION":  "Je eerste in elke beurt gespeelde Aanvalskaart past ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade.",
+                  "UPGRADE_DESCRIPTION":  "Je eerste twee in elke beurt gespeelde Aanvalskaarten passen ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Avatar van de Zonde",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Bloedbad",
-                "DESCRIPTION":  "Je eerste in elke beurt gespeelde Aanvalskaart past ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade.",
-                "UPGRADE_DESCRIPTION":  "Je eerste in elke beurt gespeelde Aanvalskaart past ${modID}:Bloeden toe gelijk aan de ongeBlokkeerde schade."
+                "DESCRIPTION":  "Richt 50% meer schade aan op vijanden onder !M!% van hun Max LP.",
+                "UPGRADE_DESCRIPTION":  "Richt 50% meer schade aan op vijanden onder !M!% van hun Max LP."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Overstijf",

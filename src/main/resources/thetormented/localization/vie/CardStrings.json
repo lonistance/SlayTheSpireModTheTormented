@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Hình Thái Phán Quyết",
-                  "DESCRIPTION":  "Gây thêm 50% sát thương lên quân địch dưới !M!% HP tối đa của chúng.",
-                  "UPGRADE_DESCRIPTION":  "Gây thêm 50% sát thương lên quân địch dưới !M!% HP tối đa của chúng."
+                  "DESCRIPTION":  "Lá Tấn công đầu tiên bạn chơi mỗi lượt gây ${modID}:Chảy máu bằng sát thương không bị đỡ của nó.",
+                  "UPGRADE_DESCRIPTION":  "Hai lá Tấn công đầu tiên bạn chơi mỗi lượt gây ${modID}:Chảy máu bằng sát thương không bị đỡ của chúng."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Hóa Thân Của Tội Lỗi",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Tắm Máu",
-                "DESCRIPTION":  "Lá Tấn công đầu tiên bạn chơi mỗi lượt gây ${modID}:Chảy máu bằng sát thương không bị đỡ của nó.",
-                "UPGRADE_DESCRIPTION":  "Lá Tấn công đầu tiên bạn chơi mỗi lượt gây ${modID}:Chảy máu bằng sát thương không bị đỡ của nó."
+                "DESCRIPTION":  "Gây thêm 50% sát thương lên quân địch dưới !M!% HP tối đa của chúng.",
+                "UPGRADE_DESCRIPTION":  "Gây thêm 50% sát thương lên quân địch dưới !M!% HP tối đa của chúng."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Quá Cứng Nhắc",

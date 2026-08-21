@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Oblik suda",
-                  "DESCRIPTION":  "Zadaj 50% više štete neprijateljima ispod !M!% njihovih maks. ž. p.",
-                  "UPGRADE_DESCRIPTION":  "Zadaj 50% više štete neprijateljima ispod !M!% njihovih maks. ž. p."
+                  "DESCRIPTION":  "Tvoja prva karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje.",
+                  "UPGRADE_DESCRIPTION":  "Tvoje prve dve karte napada odigrane svakog poteza nanose ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaju."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Inkarnacija greha",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Krvoproliće",
-                "DESCRIPTION":  "Tvoja prva karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje.",
-                "UPGRADE_DESCRIPTION":  "Tvoja prva karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje."
+                "DESCRIPTION":  "Zadaj 50% više štete neprijateljima ispod !M!% njihovih maks. ž. p.",
+                "UPGRADE_DESCRIPTION":  "Zadaj 50% više štete neprijateljima ispod !M!% njihovih maks. ž. p."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Previše ukočen",

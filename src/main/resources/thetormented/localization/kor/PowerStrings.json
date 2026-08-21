@@ -132,12 +132,12 @@
                             "이 적이 받는 피해가 #b50% 증가합니다."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "심판의 형태",
                     "DESCRIPTIONS":  [
-                              "최대 체력이 #b",
-                              "% 미만인 적에게 주는 피해가 50% 증가합니다."
-                            ]
+                            "매 턴 처음 사용하는 ",
+                            " 공격 카드는 막히지 않은 피해만큼 출혈 을 부여합니다."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "죄의 화신",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "피의 학살",
                   "DESCRIPTIONS":  [
-                            "매 턴 처음 사용하는 ",
-                            " 공격 카드는 막히지 않은 피해만큼 출혈 을 부여합니다."
-                          ]
+                              "최대 체력이 #b",
+                              "% 미만인 적에게 주는 피해가 50% 증가합니다."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "과도한 강직",

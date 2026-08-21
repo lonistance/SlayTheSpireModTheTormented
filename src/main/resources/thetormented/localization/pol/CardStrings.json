@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Forma wyroku",
-                  "DESCRIPTION":  "Zadajesz o 50% więcej obrażeń wrogom poniżej !M!% ich maks. PZ.",
-                  "UPGRADE_DESCRIPTION":  "Zadajesz o 50% więcej obrażeń wrogom poniżej !M!% ich maks. PZ."
+                  "DESCRIPTION":  "Pierwsza zagrana w każdej turze karta ataku nakłada ${modID}:Krwawienie równe niezablokowanym obrażeniom, które zadaje.",
+                  "UPGRADE_DESCRIPTION":  "Pierwsze dwie karty ataku zagrane w każdej turze nakładają ${modID}:Krwawienie równe niezablokowanym obrażeniom, które zadają."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Wcielenie grzechu",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Krwawa łaźnia",
-                "DESCRIPTION":  "Pierwsza zagrana w każdej turze karta ataku nakłada ${modID}:Krwawienie równe niezablokowanym obrażeniom, które zadaje.",
-                "UPGRADE_DESCRIPTION":  "Pierwsza zagrana w każdej turze karta ataku nakłada ${modID}:Krwawienie równe niezablokowanym obrażeniom, która zadaje."
+                "DESCRIPTION":  "Zadajesz o 50% więcej obrażeń wrogom poniżej !M!% ich maks. PZ.",
+                "UPGRADE_DESCRIPTION":  "Zadajesz o 50% więcej obrażeń wrogom poniżej !M!% ich maks. PZ."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Przesztywniały",

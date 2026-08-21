@@ -132,12 +132,12 @@
                             "?i tiu malamiko prenas #b50% pli da dama?o."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Formo de la Ju?o",
                     "DESCRIPTIONS":  [
-                              "Vi faras 50% pli da dama?o al malamikoj sub ",
-                              "% de ilia maks. vivo."
-                            ]
+                            "La unuaj ",
+                            " atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Avataro de la Peko",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Sangobano",
                   "DESCRIPTIONS":  [
-                            "La unuaj ",
-                            " atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
-                          ]
+                              "Vi faras 50% pli da dama?o al malamikoj sub ",
+                              "% de ilia maks. vivo."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Tro Rigida",

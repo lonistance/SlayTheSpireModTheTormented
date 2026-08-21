@@ -132,12 +132,12 @@
                             "Este enemigo recibe #b50% más de daño."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Forma de Juicio",
                     "DESCRIPTIONS":  [
-                              "Haces 50% más de daño a enemigos por debajo del ",
-                              "% de sus PV máximos."
-                            ]
+                            "Las primeras ",
+                            " carta de Ataque jugada cada turno aplica Sangrado igual al daño no bloqueado que haga."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Encarnación del Pecado",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Baño de Sangre",
                   "DESCRIPTIONS":  [
-                            "Las primeras ",
-                            " carta de Ataque jugada cada turno aplica Sangrado igual al daño no bloqueado que haga."
-                          ]
+                              "Haces 50% más de daño a enemigos por debajo del ",
+                              "% de sus PV máximos."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Demasiado Rígido",

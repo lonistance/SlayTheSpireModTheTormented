@@ -132,12 +132,12 @@
                             "Ovaj neprijatelj prima #b50% više štete."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Oblik suda",
                     "DESCRIPTIONS":  [
-                              "Zadaješ 50% više štete neprijateljima ispod ",
-                              "% njihovih maks. ž. p."
-                            ]
+                            "Tvoja prva ",
+                            " karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Inkarnacija greha",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Krvoproliće",
                   "DESCRIPTIONS":  [
-                            "Tvoja prva ",
-                            " karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje."
-                          ]
+                              "Zadaješ 50% više štete neprijateljima ispod ",
+                              "% njihovih maks. ž. p."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Previše ukočen",

@@ -132,12 +132,12 @@
                             "Denne fienden tar #b50% mer Skade."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Dommens form",
                     "DESCRIPTIONS":  [
-                              "Du påfører 50% mer Skade til fiender under ",
-                              "% av sin maks HP."
-                            ]
+                            "De første ",
+                            " angrepskortet som spilles hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Syndens inkarnasjon",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Blodbad",
                   "DESCRIPTIONS":  [
-                            "De første ",
-                            " angrepskortet som spilles hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører."
-                          ]
+                              "Du påfører 50% mer Skade til fiender under ",
+                              "% av sin maks HP."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Overstiv",

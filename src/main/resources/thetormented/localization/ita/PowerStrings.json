@@ -132,12 +132,12 @@
                             "Questo nemico subisce #b50% danni in più."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Forma di Giudizio",
                     "DESCRIPTIONS":  [
-                              "Infliggi 50% danni in più ai nemici sotto ",
-                              "% dei loro PF massimi."
-                            ]
+                            "Le prime ",
+                            " carta Attacco giocata ogni turno applica Sanguinamento pari ai danni non bloccati che infligge."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Incarnazione del Peccato",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Bagno di Sangue",
                   "DESCRIPTIONS":  [
-                            "Le prime ",
-                            " carta Attacco giocata ogni turno applica Sanguinamento pari ai danni non bloccati che infligge."
-                          ]
+                              "Infliggi 50% danni in più ai nemici sotto ",
+                              "% dei loro PF massimi."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Troppo Rigido",

@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Execution Form",
-                  "DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP.",
-                  "UPGRADE_DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP."
+                  "DESCRIPTION":  "Your first attack card played each turn applies ${modID}:Bleed equal to the unblocked damage it deals.",
+                  "UPGRADE_DESCRIPTION":  "Your first 2 attack cards played each turn apply ${modID}:Bleed equal to the unblocked damage they deal."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Incarnation of Sin",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Bloodbath",
-                "DESCRIPTION":  "Your first attack card played each turn applies ${modID}:Bleed equal to the unblocked damage it deals.",
-                "UPGRADE_DESCRIPTION":  "Your first attack card played each turn applies ${modID}:Bleed equal to the unblocked damage it deals."
+                "DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP.",
+                "UPGRADE_DESCRIPTION":  "Deal 50% more damage to enemies below !M!% of their Max HP."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Overrigid",

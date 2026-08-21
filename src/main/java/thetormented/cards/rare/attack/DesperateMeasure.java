@@ -14,7 +14,7 @@ public class DesperateMeasure extends BaseCard {
     private static final int COST = 1;
     private static final int BASE_DAMAGE = 24;
     private static final int UPG_DAMAGE = 6; // 24 -> 30
-    private static final int HP_LOSS = 7;
+    private static final int HP_LOSS = 6;
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,

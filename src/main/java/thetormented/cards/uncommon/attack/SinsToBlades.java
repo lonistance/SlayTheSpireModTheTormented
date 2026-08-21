@@ -17,7 +17,7 @@ public class SinsToBlades extends BaseCard {
 
     // 常量定义，避免硬编码参与计算或函数调用
     private static final int CARD_COST = 1;
-    private static final int BASE_DAMAGE = 8;
+    private static final int BASE_DAMAGE = 10;
     private static final int UPGRADE_PLUS_DAMAGE = 2;
     private static final int BASE_EXTRA_DRAW = 0;
     private static final int UPGRADE_PLUS_DRAW = 1;

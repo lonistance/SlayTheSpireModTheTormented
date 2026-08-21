@@ -4,6 +4,7 @@ import com.evacipated.cardcrawl.mod.stslib.actions.common.SelectCardsInHandActio
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -42,20 +43,7 @@ public class Implication extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // 1. 消耗 1 张手牌
-        addToBot(new SelectCardsInHandAction(
-                1,
-                "Exhaust",
-                false, // 不可取消
-                false, // 不可选择0张
-                card -> true,
-                abstractCards -> {
-                    for (AbstractCard c : abstractCards) {
-                        p.hand.moveToExhaustPile(c);
-                        c.exhaust = true;
-                    }
-                    abstractCards.clear();
-                }
-        ));
+        this.addToBot(new ExhaustAction(1, false));
 
         // 2. 对所有敌人造成伤害
         addToBot(new DamageAllEnemiesAction(

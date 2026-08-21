@@ -441,6 +441,35 @@
 - **素材已就位**：`endingBg.jpg` + `ending1/2/3.png` 均为 1920x1200（16:10，正好落入原版全屏绘制分支 `isSixteenByTen`，不裁切）。
 - **预览验证（独立工具，不入库）**：针对 `desktop-1.0.jar` 的 libGDX/LWJGL2 桌面程序（资源解析与游戏内一致：LWJGL2 internal = classpath，mod 路径从资源目录解析），逐字节复刻 `Cutscene.update`/`updateSceneChange`/`updateFadeIn`/`updateFadeOut`/`updateIfDone` 与 `CutscenePanel.update`/`activate`/`fadeOut`/`render`（含原版 isDone 后每帧重复 `fadeOut()` 的原生行为）。结果：4 次 `ImageMaster.loadImage` 全部 OK（1920x1200）；完整时间线（黑场约 2s -> P1 5s -> P2 -> P3 -> 全体淡出 -> 背景淡出 -> 结算屏）跑完且零异常；预览裸环境特有的 `ImageMaster.WHITE_SQUARE_IMG` 为 null（游戏内绝不为 null）用自建 1x1 白纹兜底。
 - **验证**：javac 全量编译 EXIT=0（180 类）。文案零改动。jar 已重建（`target/thetormented-cutscene.jar`，909 条目 / 180 类）并部署到 `mods/thetormented.jar`（旧版备份 `thetormented.jar.bak-1.0.2-pre-cutscene`），`copy/thetormented.jar` 同步。待玩家用 The Tormented 击败心脏后游戏内实机确认。
+
+**#36 Beta Art 预览：关闭 Beta Art 后，已打开的放大预览立即恢复原版大图（#19 后续）**
+- **症状**：游戏启动时全局 Beta Art 开启，之后在设置或预览内的单卡开关中关闭 Beta Art，已打开的 `SingleCardViewPopup` 仍显示旧的测试画风大图；卡牌总览网格能正常切回原图。反方向（关 -> 开）一直正常。
+- **根因**：#19 的 `EnforceBetaPortrait`（`update()` Postfix）只处理了"开启"方向——`wantBetaArt(card)` 为 false 时仅把 `lastBetaPortrait` 标记置 null 就返回，`portraitImg` 槽位仍挂着旧 beta 纹理，也没有任何代码为仍在打开状态的弹窗重跑原版/Basemod 大图加载。
+- **修复**：beta 关闭的那一帧现在会主动反向恢复：dispose 自己创建的 beta 纹理 → 清空 `portraitImg` → 经 `ReflectionHacks.privateMethod` 重跑原版 `loadPortraitImg()`；若原版仍留 null（mod 卡没有 `1024Portraits` 文件），再按 Basemod `OpenFix$OpenTextureFix` 在 open() 时的同一逻辑、用公开 API `CustomCard.getPortraitImage(card)` 填官方 `_p` 大图（不自行猜测路径；该 Basemod 修复只挂在 `open()` 上，运行中不会自动补跑）。恢复仅在"我们自己的纹理还挂在槽位上"时触发（`cur == lastBetaPortrait` 身份比对），其余情况每帧空转、零开销。纹理所有权收紧：替换/恢复路径只 dispose 自己创建的纹理；原版 `close()` 本身就会 dispose 并置空 `portraitImg`（字节码已验证），因此 close 钩子刻意只丢弃标记引用、不再重复 dispose（避免双重释放）。
+- **验证**：javac 全量编译通过（EXIT=0）。文案零改动。
+
+**#37 Beta Art 预览重构（#36 后续）：状态机驱动 + 严格纹理所有权**
+- **#36 的缺陷**：恢复动作以 `cur == lastBetaPortrait` 身份比对作为闸门——但这个身份不是"当前大图是否归我们管"的可靠判据。`lastBetaPortrait` 是静态字段（每次启动 JVM 归零），而槽位里的纹理可能来自原版、Basemod 的 `OpenFix$OpenTextureFix`，甚至 Basemod 自己的 beta 大图选择逻辑（`CustomCard.getPortraitImage` 会按 `PLAYTESTER_ART_MODE`/`betaCardPref` 选 `_b_p`），身份比对可能跳过本应执行的恢复；反过来 `applyBetaPortrait` 会无条件 dispose 槽位里现有的纹理——那可能是**共享缓存纹理**（全局测试模式开启时 `BaseCard.getPortraitImage()` 返回 `TextureLoader` 缓存），dispose 掉会污染缓存，波及卡牌总览等其他使用者。
+- **修复**：把两件事彻底拆开。(1) *状态机*：新增 `trackedCard`/`trackedBetaState`/`hasTrackedState`，检测换卡与 Beta 开关翻转（含游戏重启后首次出现）；状态变化只触发一次 `applyBetaPortrait`（开）或 `restoreNormalPortrait`（关）。Beta 开且状态未变时，仅当槽位不再是我们的大图才放回（对抗升级预览覆盖）；Beta 关且状态未变时每帧零操作。(2) *所有权*：全补丁范围内只有与 `lastBetaPortrait` 相同的纹理才会被 dispose（apply/drop/restore 三处统一）；别人的纹理只覆盖引用、绝不 dispose——与原版自身 reload 不 dispose 旧图的泄漏语义一致。`restoreNormalPortrait` 不再靠判断归属决定是否行动：有自家纹理则 dispose，然后无条件清空槽位、重跑原版 `loadPortraitImg()`；若原版仍留 null，再以公开 API `CustomCard.getPortraitImage(card)` 镜像 Basemod `OpenFix$OpenTextureFix` 兜底官方 `_p` 大图。`close()` 只重置状态机、不 dispose（原版 close 已 dispose `portraitImg`，字节码已验证）。
+- **验证**：javac 全量编译通过（EXIT=0）。文案零改动。
+
+**#38 ExecutionForm 与 Bloodbath 效果互换（卡牌、能力、图标、24 语言全量同步）**
+- **改动**：两张稀有能力牌机制对调。ExecutionForm（3 费）改为流血引擎：每回合打出的前 1（升级 2）张攻击牌，按其未被格挡的伤害施加流血。Bloodbath（2 费）改为虚无并获得阈值增益：对生命值低于 50%（升级 75%）最大生命的敌人造成伤害+25%；旧的"升级减费 2→1"随旧机制一并移除。
+- **能力类名跟随卡牌**：阈值逻辑（原 JudgmentFormPower）现居 BloodbathPower；流血逻辑（原 BloodbathPower）现居 ExecutionFormPower。POWER_ID 随类名生成：thetormented:ExecutionFormPower / thetormented:BloodbathPower。
+- **图标相应互换**：JudgmentFormPower.png 改为 BloodbathPower.png，BloodbathPower.png 改为 ExecutionFormPower.png（普通+large/ 两套）；JudgmentFormPower 文件不再存在。
+- **本地化（24 语言）**：PowerStrings——键 ${modID}:JudgmentFormPower 更名为 ${modID}:ExecutionFormPower，两条目 DESCRIPTIONS 互换，NAME 各语言保留。CardStrings——两卡的 DESCRIPTION/UPGRADE_DESCRIPTION 互换；ExecutionForm 的 UPGRADE_DESCRIPTION 按语言新译（"前2张攻击牌…"）。另修复 zhs/zht 既有缺陷：流血能力描述把数字拼在句中（"…第一张攻击牌1对敌人…"）；两段现已为数字留位（"前 1/2 张攻击牌"）。
+- **验证**：validate_localization.ps1 24 语言全部 PASS；javac 全量编译 EXIT=0（179 类）；jar 已重建（target/thetormented-swap2.jar，908 条目）并部署到 mods/thetormented.jar（旧版备份 thetormented.jar.bak-1.0.2-pre-swap）。
+
+**#40 BaseCard Beta Art 模式同步：实例注册表广播修复卡牌总览/战斗牌库残留画风**
+- **症状**：启动时全局 Beta Art 开启后关闭，卡牌总览网格与战斗抽牌堆/弃牌堆中的卡牌仍保留测试画风；弹窗（SingleCardViewPopup）恢复正常。根因：`BaseCard.update()` 使用单一 `static lastPlaytesterMode` 标志——一旦任意实例（通常是战斗手牌副本）消费了该标志，其余实例（库单例、抽牌堆/弃牌堆卡）永远不会检测到模式翻转。
+- **修复**：用版本号广播架构替代一次性静态标志。`WeakHashMap` 的 `ALL_INSTANCES` 注册表追踪所有存活的 `BaseCard` 实例（GC 时自动清理）；`static globalModeVersion` 计数器在模式翻转时递增；每个实例持有自己的 `syncedModeVersion`。任意实例的 `update()` 检测到不匹配时调用 `notifyGlobalModeChanged()`，遍历注册表强制所有实例执行 `syncToCurrentMode()`（loadCardImage + refreshJokePortrait）——包括库单例与不常调用 `update()` 的抽牌堆/弃牌堆卡。
+- **验证**：javac 全量编译 EXIT=0（180 类）。文案零改动（无需 validate）。待玩家实机确认：开启 Beta Art → 关闭 → 卡牌总览网格 + 战斗抽牌堆/弃牌堆全部恢复正常画风；Rebel 的 jokePortrait 区域已更新；SingleCardViewPopup 正常。
+
+**#39 v1.0.3 正式版发布**
+- **本版变更**（累计 #33-#38）：HeroLongsword 拾取后 ConcurrentModificationException 崩溃修复（#33）；CharacterStrings 全面重写——真实角色简介、Spire Heart 攻击台词、Vampires 问候逐字对齐 24 语言（#34）；自定义碎心结局过场框架与专属插画（#35）；Beta Art 预览修复——单卡开关反向恢复（#36）与状态机重构+严格纹理所有权（#37）；ExecutionForm 与 Bloodbath 效果互换，能力类改名、图标互换、24 语言全量同步（#38）。
+- **技术**：pom.xml / ModTheSpire.json 版本号 1.0.2 → 1.0.3。
+- **验证**：javac 全量编译 EXIT=0（179 类）；validate_localization.ps1 24 语言全部 PASS；jar 已部署到 mods/thetormented.jar 及 Steam 创意工坊 content 目录。
+
 ---
 
 ### 帮助翻译你的语言

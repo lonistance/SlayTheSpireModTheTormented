@@ -132,12 +132,12 @@
                             "Bu düşman #b%50 daha fazla hasar alır."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Yargı Formu",
                     "DESCRIPTIONS":  [
-                              "Maksimum CP\u0027si ",
-                              "%\u0027in altında olan düşmanlara %50 daha fazla hasar verirsin."
-                            ]
+                            "Her tur oynadığın ilk ",
+                            " saldırı kartı, kalkanlanmamış verdiği hasar kadar Kanama uygular."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Günahın Bedeni",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Kan Banyosu",
                   "DESCRIPTIONS":  [
-                            "Her tur oynadığın ilk ",
-                            " saldırı kartı, kalkanlanmamış verdiği hasar kadar Kanama uygular."
-                          ]
+                              "Maksimum CP\u0027si ",
+                              "%\u0027in altında olan düşmanlara %50 daha fazla hasar verirsin."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Aşırı Sert",

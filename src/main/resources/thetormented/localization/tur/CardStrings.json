@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Yargı Formu",
-                  "DESCRIPTION":  "Maksimum CP\u0027si !M!%\u0027in altında olan düşmanlara %50 daha fazla hasar ver.",
-                  "UPGRADE_DESCRIPTION":  "Maksimum CP\u0027si !M!%\u0027in altında olan düşmanlara %50 daha fazla hasar ver."
+                  "DESCRIPTION":  "Her tur oynadığın ilk saldırı kartı, kalkanlanmamış verdiği hasar kadar ${modID}:Kanama uygular.",
+                  "UPGRADE_DESCRIPTION":  "Her tur oynadığın ilk iki saldırı kartı, kalkanlanmamış verdikleri hasar kadar ${modID}:Kanama uygular."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Günahın Bedeni",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Kan Banyosu",
-                "DESCRIPTION":  "Her tur oynadığın ilk saldırı kartı, kalkanlanmamış verdiği hasar kadar ${modID}:Kanama uygular.",
-                "UPGRADE_DESCRIPTION":  "Her tur oynadığın ilk saldırı kartı, kalkanlanmamış verdiği hasar kadar ${modID}:Kanama uygular."
+                "DESCRIPTION":  "Maksimum CP\u0027si !M!%\u0027in altında olan düşmanlara %50 daha fazla hasar ver.",
+                "UPGRADE_DESCRIPTION":  "Maksimum CP\u0027si !M!%\u0027in altında olan düşmanlara %50 daha fazla hasar ver."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Aşırı Sert",

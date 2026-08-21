@@ -20,8 +20,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
+import java.util.WeakHashMap;
 
 import static thetormented.util.GeneralUtils.removePrefix;
 import static thetormented.util.TextureLoader.getCardTextureString;
@@ -88,6 +91,43 @@ public abstract class BaseCard extends CustomCard {
         this.magicUpgrade = 0;
 
         refreshJokePortrait();
+
+        ALL_INSTANCES.add(this);
+    }
+
+    // Static registry for global mode sync
+    private static final Set<BaseCard> ALL_INSTANCES = Collections.newSetFromMap(new WeakHashMap<>());
+    private static int globalModeVersion = Settings.PLAYTESTER_ART_MODE ? 1 : 0;
+
+    // Instance sync state
+    private int syncedModeVersion = globalModeVersion;
+
+    @Override
+    public void update() {
+        boolean currentGlobal = Settings.PLAYTESTER_ART_MODE;
+        int currentVersion = globalModeVersion;
+        if (syncedModeVersion != currentVersion) {
+            syncToCurrentMode();
+        } else if (currentGlobal != (syncedModeVersion == 1)) {
+            notifyGlobalModeChanged();
+        }
+        super.update();
+    }
+
+    public final void syncToCurrentMode() {
+        String path = TextureLoader.getCardTextureString(removePrefix(this.cardID), type);
+        if (path != null && !path.equals(textureImg)) {
+            this.loadCardImage(path);
+            refreshJokePortrait();
+        }
+        syncedModeVersion = globalModeVersion;
+    }
+
+    private static void notifyGlobalModeChanged() {
+        globalModeVersion = Settings.PLAYTESTER_ART_MODE ? 1 : 0;
+        for (BaseCard c : ALL_INSTANCES) {
+            c.syncToCurrentMode();
+        }
     }
 
     private static String getName(String ID) {
@@ -174,21 +214,6 @@ public abstract class BaseCard extends CustomCard {
             return t;
         }
         return super.getPortraitImage();
-    }
-
-    private static boolean lastPlaytesterMode = Settings.PLAYTESTER_ART_MODE;
-
-    @Override
-    public void update() {
-        if (Settings.PLAYTESTER_ART_MODE != lastPlaytesterMode) {
-            lastPlaytesterMode = Settings.PLAYTESTER_ART_MODE;
-            String path = TextureLoader.getCardTextureString(removePrefix(this.cardID), type);
-            if (path != null && !path.equals(textureImg)) {
-                this.loadCardImage(path);
-                refreshJokePortrait();
-            }
-        }
-        super.update();
     }
 
     private void refreshJokePortrait() {

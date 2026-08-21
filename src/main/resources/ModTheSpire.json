@@ -1,11 +1,11 @@
 {
-  "modid": "${modID}",
-  "name": "${project.name}",
-  "author_list": ["${author}"],
-  "description": "!(project.description)",
-  "version": "${project.version}",
-  "sts_version": "${SlayTheSpire.version}",
-  "mts_version": "${ModTheSpire.version}",
+  "modid": "thetormented",
+  "name": "The Tormented",
+  "author_list": ["lonistance(Based on BasicMod https://github.com/Alchyr/BasicMod.git)"],
+  "description": "Once the tribe’s mightiest blade, he hewed the right arm from an ancient in single combat. For that insolence, the god laid a curse upon him: wherever his feet should fall, war would kindle, and only by draining his enemies’ blood to the dregs could he buy a brief respite from his guilt. To shatter that doom, he struck a covenant with Neow, the goddess of renewal, and set his course toward the Spire, there to tear out the very root of the blight.\n他曾是部落至强的战士，在一对一决斗中，一剑斩断了一位先古之民的右臂。神明因这冒犯而降下诅咒：无论他行至何处，战火必随之燃起；唯有将敌人之血放尽，方得片刻洗刷罪孽。为破除这宿命，他与复苏之神涅奥立下誓约，踏上高塔之路，铲除荒疫的根源。",
+  "version": "1.0.3",
+  "sts_version": "12-18-2022",
+  "mts_version": "3.30.0",
   "dependencies": ["basemod", "stslib"],
   "update_json": ""
 }

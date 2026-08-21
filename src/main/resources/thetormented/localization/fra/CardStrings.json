@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Forme de Jugement",
-                  "DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max.",
-                  "UPGRADE_DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max."
+                  "DESCRIPTION":  "Votre première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige.",
+                  "UPGRADE_DESCRIPTION":  "Vos deux premières cartes d\u0027Attaque jouées chaque tour appliquent un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elles infligent."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Incarnation du Péché",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Bain de Sang",
-                "DESCRIPTION":  "Votre première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige.",
-                "UPGRADE_DESCRIPTION":  "Votre première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige."
+                "DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max.",
+                "UPGRADE_DESCRIPTION":  "Inflige 50% de dégâts supplémentaires aux ennemis ayant moins de !M!% de leurs PV max."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Trop Rigide",

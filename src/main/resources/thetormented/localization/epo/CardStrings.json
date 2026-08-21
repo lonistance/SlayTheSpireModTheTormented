@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Formo de la Ju?o",
-                  "DESCRIPTION":  "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo.",
-                  "UPGRADE_DESCRIPTION":  "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo."
+                  "DESCRIPTION":  "Via unua atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o.",
+                  "UPGRADE_DESCRIPTION":  "Viaj unuaj du atak-kartoj luditaj ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Avataro de la Peko",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Sangobano",
-                "DESCRIPTION":  "Via unua atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o.",
-                "UPGRADE_DESCRIPTION":  "Via unua atak-karto ludita ?iuvice aldonas ${modID}:Sangon egale al la ne?irmita dama?o."
+                "DESCRIPTION":  "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo.",
+                "UPGRADE_DESCRIPTION":  "Faru 50% pli da dama?o al malamikoj sub !M!% de ilia maks. vivo."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Tro Rigida",

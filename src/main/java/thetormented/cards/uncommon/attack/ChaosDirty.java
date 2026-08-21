@@ -13,11 +13,11 @@ public class ChaosDirty extends BaseCard {
     public static final String ID = makeID(ChaosDirty.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int BASE_DAMAGE = 6;   // 5 -> 6
+    private static final int BASE_DAMAGE = 8;
     private static final int UPGRADE_DAMAGE = 1;
     private static final int BASE_MAGIC = 3;
     private static final int UPGRADE_MAGIC = 1;
-    private static final int SIN_GAIN = 10;
+    private static final int SIN_GAIN = 6;
 
     public ChaosDirty() {
         super(ID, new CardStats(

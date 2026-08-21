@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Form des Urteils",
-                  "DESCRIPTION":  "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu.",
-                  "UPGRADE_DESCRIPTION":  "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu."
+                  "DESCRIPTION":  "Deine erste in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu.",
+                  "UPGRADE_DESCRIPTION":  "Deine ersten beiden in jeder Runde gespielten Angriffskarten fügen ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Inkarnation der Sünde",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Blutbad",
-                "DESCRIPTION":  "Deine erste in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu.",
-                "UPGRADE_DESCRIPTION":  "Deine erste in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
+                "DESCRIPTION":  "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu.",
+                "UPGRADE_DESCRIPTION":  "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Übersteif",

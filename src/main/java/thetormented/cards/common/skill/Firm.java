@@ -13,7 +13,7 @@ public class Firm extends BaseCard {
 
     // 基础数值常量
     private static final int CARD_COST = 1;
-    private static final int BASE_BLOCK = 10;
+    private static final int BASE_BLOCK = 9;
     private static final int UPGRADE_BLOCK_ADD = 3; // 升级增加3点格挡 (9 + 3 = 12)
 
     // 卡牌属性配置

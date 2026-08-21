@@ -6,16 +6,15 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
 import thetormented.character.Tormented;
-import thetormented.powers.buff.JudgmentFormPower;
+import thetormented.powers.buff.ExecutionFormPower;
 import thetormented.util.CardStats;
 
 public class ExecutionForm extends BaseCard {
     public static final String ID = makeID(ExecutionForm.class.getSimpleName());
 
     private static final int COST = 3;
-    // 原本设定即为 50% -> 75%，此前代码实现中打错了数字（25% -> 25%）
-    private static final int BASE_THRESHOLD = 50;
-    private static final int UPG_THRESHOLD = 25; // 50% -> 75%
+    private static final int BASE_ATTACKS = 1;
+    private static final int UPG_ATTACKS = 1; // 1 -> 2
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -27,12 +26,12 @@ public class ExecutionForm extends BaseCard {
 
     public ExecutionForm() {
         super(ID, info);
-        setMagic(BASE_THRESHOLD, UPG_THRESHOLD);
+        setMagic(BASE_ATTACKS, UPG_ATTACKS);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new ApplyPowerAction(p, p, new JudgmentFormPower(p, this.magicNumber), this.magicNumber));
+        addToBot(new ApplyPowerAction(p, p, new ExecutionFormPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override

@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Forma di Giudizio",
-                  "DESCRIPTION":  "Infligge 50% danni in più ai nemici sotto !M!% dei loro PF massimi.",
-                  "UPGRADE_DESCRIPTION":  "Infligge 50% danni in più ai nemici sotto !M!% dei loro PF massimi."
+                  "DESCRIPTION":  "Il tuo primo Attacco giocato ogni turno applica ${modID}:Sanguinamento pari ai danni non bloccati che infligge.",
+                  "UPGRADE_DESCRIPTION":  "I tuoi primi due Attacchi giocati ogni turno applicano ${modID}:Sanguinamento pari ai danni non bloccati che infliggono."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Incarnazione del Peccato",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Bagno di Sangue",
-                "DESCRIPTION":  "Il tuo primo Attacco giocato ogni turno applica ${modID}:Sanguinamento pari ai danni non bloccati che infligge.",
-                "UPGRADE_DESCRIPTION":  "Il tuo primo Attacco giocato ogni turno applica ${modID}:Sanguinamento pari ai danni non bloccati che infligge."
+                "DESCRIPTION":  "Infligge 50% danni in più ai nemici sotto !M!% dei loro PF massimi.",
+                "UPGRADE_DESCRIPTION":  "Infligge 50% danni in più ai nemici sotto !M!% dei loro PF massimi."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Troppo Rigido",

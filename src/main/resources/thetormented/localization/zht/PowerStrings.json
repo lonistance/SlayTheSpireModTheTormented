@@ -132,12 +132,12 @@
                             "該敵人受到的傷害增加 #b50%。"
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "罪刑形態",
                     "DESCRIPTIONS":  [
-                              "你對生命值低於 #b",
-                              "% 的敵人造成的傷害增加 50%。"
-                            ]
+                            "每回合你打出的前 ",
+                            " 張攻擊牌，對敵人施加等同於其未被 格擋 傷害的 流血。"
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "罪孽化身",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "血腥屠戮",
                   "DESCRIPTIONS":  [
-                            "每回合你打出的第一張攻擊牌",
-                            "對敵人施加等同於其未被 格擋 傷害的 流血。"
-                          ]
+                              "你對生命值低於 #b",
+                              "% 的敵人造成的傷害增加 50%。"
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "過剛易折",

@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "審判の形態",
-                  "DESCRIPTION":  "最大HPの !M!% 未満の敵に 50% 多くのダメージを与える。",
-                  "UPGRADE_DESCRIPTION":  "最大HPの !M!% 未満の敵に 50% 多くのダメージを与える。"
+                  "DESCRIPTION":  "各ターンで最初にプレイするアタックカードは、ブロックされなかったダメージに等しい ${modID}:出血 を与える。",
+                  "UPGRADE_DESCRIPTION":  "各ターンで最初にプレイする2枚のアタックカードは、ブロックされなかったダメージに等しい ${modID}:出血 を与える。"
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "罪の化身",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "血祭り",
-                "DESCRIPTION":  "各ターンで最初にプレイするアタックカードは、ブロックされなかったダメージに等しい ${modID}:出血 を与える。",
-                "UPGRADE_DESCRIPTION":  "各ターンで最初にプレイするアタックカードは、ブロックされなかったダメージに等しい ${modID}:出血 を与える。"
+                "DESCRIPTION":  "最大HPの !M!% 未満の敵に 50% 多くのダメージを与える。",
+                "UPGRADE_DESCRIPTION":  "最大HPの !M!% 未満の敵に 50% 多くのダメージを与える。"
               },
   "${modID}:Overrigid":  {
                 "NAME":  "過度の硬直",

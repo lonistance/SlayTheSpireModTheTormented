@@ -27,10 +27,9 @@ public class AtonementStrike extends BaseCard {
 
     // 2. 卡牌数值配置变量
     private static final int DAMAGE_BASE = 8;
-    private static final int DAMAGE_UPGRADE = 1; // 升级后增加 1（总共 9）
+    private static final int DAMAGE_UPGRADE = 3; // 升级后增加 1（总共 9）
 
     private static final int DRAW_BASE = 2;
-    private static final int DRAW_UPGRADE = 1; // 升级后增加 1（总共 3）
 
     private static final int SIN_LOSS = 4; // 然后降低 4 点原罪
 
@@ -39,7 +38,7 @@ public class AtonementStrike extends BaseCard {
 
         // 初始化伤害与魔法数字（抽牌数）
         setDamage(DAMAGE_BASE, DAMAGE_UPGRADE);
-        setMagic(DRAW_BASE, DRAW_UPGRADE);
+        setMagic(DRAW_BASE);
 
         // 添加“打击”标签（Strike Tag）
         this.tags.add(CardTags.STRIKE);

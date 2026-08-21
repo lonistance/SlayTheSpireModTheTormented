@@ -132,12 +132,12 @@
                             "This enemy takes #b50% more damage."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Execution Form",
                     "DESCRIPTIONS":  [
-                              "You deal 50% more damage to enemies below ",
-                              "% of their Max HP."
-                            ]
+                            "The first ",
+                            " attack card played each turn applies Bleed equal to the unblocked damage it deals."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Incarnation of Sin",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Bloodbath",
                   "DESCRIPTIONS":  [
-                            "The first ",
-                            " attack card played each turn applies Bleed equal to the unblocked damage it deals."
-                          ]
+                              "You deal 50% more damage to enemies below ",
+                              "% of their Max HP."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Overrigid",

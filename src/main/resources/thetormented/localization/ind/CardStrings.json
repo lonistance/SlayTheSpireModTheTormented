@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "Wujud Penghakiman",
-                  "DESCRIPTION":  "Berikan 50% lebih banyak kerusakan kepada musuh di bawah !M!% HP Maks mereka.",
-                  "UPGRADE_DESCRIPTION":  "Berikan 50% lebih banyak kerusakan kepada musuh di bawah !M!% HP Maks mereka."
+                  "DESCRIPTION":  "Kartu Serangan pertamamu yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan.",
+                  "UPGRADE_DESCRIPTION":  "Dua Kartu Serangan pertamamu yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan."
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "Penjelmaan Dosa",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "Pemandian Darah",
-                "DESCRIPTION":  "Kartu Serangan pertamamu yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan.",
-                "UPGRADE_DESCRIPTION":  "Kartu Serangan pertamamu yang dimainkan setiap giliran memberikan ${modID}:Perdarahan setara dengan kerusakan tidak terblok yang diberikan."
+                "DESCRIPTION":  "Berikan 50% lebih banyak kerusakan kepada musuh di bawah !M!% HP Maks mereka.",
+                "UPGRADE_DESCRIPTION":  "Berikan 50% lebih banyak kerusakan kepada musuh di bawah !M!% HP Maks mereka."
               },
   "${modID}:Overrigid":  {
                 "NAME":  "Terlalu Kaku",

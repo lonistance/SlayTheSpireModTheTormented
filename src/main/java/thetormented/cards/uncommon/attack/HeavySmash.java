@@ -17,8 +17,8 @@ public class HeavySmash extends BaseCard {
 
     // 声明常量变量，避免数字/字符串硬编码参与计算或函数调用
     private static final int CARD_COST = 1;
-    private static final int BASE_DAMAGE = 15;
-    private static final int UPGRADE_PLUS_DAMAGE = 5; // 15 -> 20
+    private static final int BASE_DAMAGE = 14;
+    private static final int UPGRADE_PLUS_DAMAGE = 4; // 14 -> 18
     private static final int REQUIRED_DEBT_AMOUNT = 2;
 
     private static final String DEBT_POWER_ID = DebtPower.POWER_ID;

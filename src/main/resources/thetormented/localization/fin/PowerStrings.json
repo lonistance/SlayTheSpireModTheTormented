@@ -132,12 +132,12 @@
                             "Tämä vihollinen saa #b50% enemmän vauriota."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Tuomion muoto",
                     "DESCRIPTIONS":  [
-                              "Aiheutat 50% enemmän vauriota vihollisille, joiden HP on alle ",
-                              "% maksimista."
-                            ]
+                            "Ensimmäinen ",
+                            " hyökkäyskortti joka vuoro lisää ${modID}:Verenvuotoa suojaamattoman vaurion verran."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Synnin ruumiillistuma",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Verikylpy",
                   "DESCRIPTIONS":  [
-                            "Ensimmäinen ",
-                            " hyökkäyskortti joka vuoro lisää ${modID}:Verenvuotoa suojaamattoman vaurion verran."
-                          ]
+                              "Aiheutat 50% enemmän vauriota vihollisille, joiden HP on alle ",
+                              "% maksimista."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Ylijäykkä",

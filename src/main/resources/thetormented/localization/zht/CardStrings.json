@@ -361,8 +361,8 @@
                   },
   "${modID}:ExecutionForm":  {
                   "NAME":  "罪刑形態",
-                  "DESCRIPTION":  "對生命值低於 !M!% 的敵人造成的傷害增加 50%。",
-                  "UPGRADE_DESCRIPTION":  "對生命值低於 !M!% 的敵人造成的傷害增加 50%。"
+                  "DESCRIPTION":  "每回合你打出的第一張攻擊牌對敵人施加等同於其未被 格擋 傷害的 ${modID}:流血。",
+                  "UPGRADE_DESCRIPTION":  "每回合你打出的前2張攻擊牌對敵人施加等同於其未被 格擋 傷害的 ${modID}:流血。"
                 },
   "${modID}:SinAvatar":  {
                 "NAME":  "罪孽化身",
@@ -374,8 +374,8 @@
               },
   "${modID}:Bloodbath":  {
                 "NAME":  "血腥屠戮",
-                "DESCRIPTION":  "每回合你打出的第一張攻擊牌對敵人施加等同於其未被 格擋 傷害的 ${modID}:流血。",
-                "UPGRADE_DESCRIPTION":  "每回合你打出的第一張攻擊牌對敵人施加等同於其未被 格擋 傷害的 ${modID}:流血。"
+                "DESCRIPTION":  "對生命值低於 !M!% 的敵人造成的傷害增加 50%。",
+                "UPGRADE_DESCRIPTION":  "對生命值低於 !M!% 的敵人造成的傷害增加 50%。"
               },
   "${modID}:Overrigid":  {
                 "NAME":  "過剛易折",

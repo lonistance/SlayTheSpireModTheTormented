@@ -132,12 +132,12 @@
                             "Cet ennemi subit #b50% de dégâts supplémentaires."
                           ]
                },
-  "${modID}:JudgmentFormPower":  {
+  "${modID}:ExecutionFormPower":  {
                     "NAME":  "Forme de Jugement",
                     "DESCRIPTIONS":  [
-                              "Vous infligez 50% de dégâts supplémentaires aux ennemis ayant moins de ",
-                              "% de leurs PV max."
-                            ]
+                            "Les ",
+                            " première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige."
+                          ]
                   },
   "${modID}:SinAvatarPower":  {
                   "NAME":  "Incarnation du Péché",
@@ -150,9 +150,9 @@
   "${modID}:BloodbathPower":  {
                   "NAME":  "Bain de Sang",
                   "DESCRIPTIONS":  [
-                            "Les ",
-                            " première carte d\u0027Attaque jouée chaque tour applique un ${modID}:Saignement égal aux dégâts non bloqués qu\u0027elle inflige."
-                          ]
+                              "Vous infligez 50% de dégâts supplémentaires aux ennemis ayant moins de ",
+                              "% de leurs PV max."
+                            ]
                 },
   "${modID}:OverrigidPower":  {
                   "NAME":  "Trop Rigide",
