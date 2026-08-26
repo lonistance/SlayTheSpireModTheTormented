@@ -14,7 +14,7 @@ public class Overrigid extends BaseCard {
     public static final String ID = makeID(Overrigid.class.getSimpleName());
 
     private static final int COST = 1;
-    private static final int STRENGTH = 4;
+    private static final int STRENGTH = 5;
     private static final int PENALTY = 2;
     private static final int UPG_PENALTY = -1; // 2 -> 1
 

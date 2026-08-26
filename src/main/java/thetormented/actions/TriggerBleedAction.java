@@ -9,10 +9,10 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import thetormented.powers.debuff.BleedPower;
 
 public class TriggerBleedAction extends AbstractGameAction {
-    private final int ticks;
+    private final int percent;
 
-    public TriggerBleedAction(int ticks) {
-        this.ticks = ticks;
+    public TriggerBleedAction(int percent) {
+        this.percent = percent;
         this.actionType = ActionType.DAMAGE;
     }
 
@@ -26,8 +26,9 @@ public class TriggerBleedAction extends AbstractGameAction {
             if (bleed == null || bleed.amount <= 0) {
                 continue;
             }
-            for (int i = 0; i < this.ticks; i++) {
-                DamageInfo info = new DamageInfo(mo, bleed.amount, DamageInfo.DamageType.HP_LOSS);
+            int dmg = bleed.amount * this.percent / 100;
+            if (dmg > 0) {
+                DamageInfo info = new DamageInfo(mo, dmg, DamageInfo.DamageType.HP_LOSS);
                 this.addToTop(new DamageAction(mo, info, AttackEffect.POISON));
             }
         }

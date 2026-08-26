@@ -23,10 +23,10 @@ public class QuenchedBlade extends BaseCard {
     //These will be used in the constructor. Technically you can just use the values directly,
     //but constants at the top of the file are easy to adjust.
     private static final int DAMAGE = 7;
-    private static final int UPG_DAMAGE = 3;
+    private static final int UPG_DAMAGE = 1; // 升级后伤害加 1（升级后 8）
 
     private static final int UPG_NUM = 2;
-    private static final int UPG_UPG_NUM = 1;
+    private static final int UPG_UPG_NUM = 2; // 升级后升级牌数加 1（升级后 4 张）
 
     public QuenchedBlade() {
         super(ID, info); //Pass the required information to the BaseCard constructor.

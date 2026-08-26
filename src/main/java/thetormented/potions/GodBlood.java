@@ -10,7 +10,7 @@ public class GodBlood extends BasePotion {
     public static final String POTION_ID = makeID(GodBlood.class.getSimpleName());
 
     public GodBlood() {
-        super(POTION_ID, 18, PotionRarity.COMMON, PotionSize.H, PotionColor.WHITE);
+        super(POTION_ID, 12, PotionRarity.COMMON, PotionSize.H, PotionColor.WHITE);
         this.isThrown = true;
         this.targetRequired = true;
     }

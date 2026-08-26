@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Ceci est",
+      "un tableau de chaînes."
+    ],
+    "EXTRA_TEXT": [
+      "Ceci est un autre",
+      "tableau de chaînes."
+    ],
+    "TEXT_DICT": {
+      "Ceci": "Contient des paires de chaînes, utilisées pour obtenir des valeurs selon les clés.",
+      "Ceci est une clé": "Ceci est une valeur."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Choisissez des cartes à ajouter à votre main et à rendre Éthérées."
+    ]
+  }
+}

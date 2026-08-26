@@ -1,0 +1,447 @@
+{
+  "${modID}:ExampleCard":  {
+                "NAME":  "İsim",
+                "DESCRIPTION":  "Açıklama. NL İkinci satır.",
+                "UPGRADE_DESCRIPTION":  "Bu kart geliştirilirse bu otomatik olarak kullanılır. Gerekmiyorsa kaldırın.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Daha fazla metin koyabilirsin.",
+                               "Bir şeyler için kullanman gerekirse.",
+                               "Bunun için Blizzard iyi bir örnektir."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Darbe",
+                  "DESCRIPTION":  "!D! hasar ver.",
+                  "UPGRADE_DESCRIPTION":  "!D! hasar ver."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Savunma",
+                  "DESCRIPTION":  "!B! Blok kazan.",
+                  "UPGRADE_DESCRIPTION":  "!B! Blok kazan."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "İsyancı",
+              "DESCRIPTION":  "!D! hasar ver. NL Verdiği hasara eşit ${modID}:Kanama ver.",
+              "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Verdiği hasara eşit ${modID}:Kanama ver.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (!M! ${modID}:Kanama ver)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Affet",
+              "DESCRIPTION":  "!B! Blok kazan. NL !M! ${modID}:Günah azalt.",
+              "UPGRADE_DESCRIPTION":  "!B! Blok kazan. NL !M! ${modID}:Günah azalt."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Kesme",
+              "DESCRIPTION":  "!D! hasar ver. NL !M! ${modID}:Kanama uygula.",
+              "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL !M! ${modID}:Kanama uygula."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Parçalama",
+             "DESCRIPTION":  "!D! hasar ver. NL Eğer düşmanda ${modID}:Kanama varsa !M! ekstra vuruş yap.",
+             "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Eğer düşmanda ${modID}:Kanama varsa !M! ekstra vuruş yap."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Takip",
+              "DESCRIPTION":  "Yalnızca bu tur oynadığın son kart bir Saldırı kartıysa oynanabilir. NL !D! hasar ver.",
+              "UPGRADE_DESCRIPTION":  "Yalnızca bu tur oynadığın son kart bir Saldırı kartıysa oynanabilir. NL !D! hasar ver.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Önce bu turda bir Saldırı oynaman gerekiyor."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Kol Kesme",
+                "DESCRIPTION":  "!D! hasar ver. NL Eline !M! *Sefalet ekle.",
+                "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Eline !M! *Sefalet ekle."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Söndürülmüş Kılıç",
+                  "DESCRIPTION":  "!D! hasar ver. NL Dövüşün geri kalanı boyunca elindeki !M! kartı Geliştir.",
+                  "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Dövüşün geri kalanı boyunca elindeki !M! kartı Geliştir."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Zalim İşkence",
+                 "DESCRIPTION":  "!D! hasar ver.!${modID}:SIN! ${modID}:Günah kazan.",
+                 "UPGRADE_DESCRIPTION":  "!D! hasar ver.!${modID}:SIN! ${modID}:Günah kazan."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Kefaret Darbesi",
+                  "DESCRIPTION":  "!D! hasar ver.Eğer ${modID}:Borç varsa !M! kart çek. NL Ardından 4 ${modID}:Günah kaybet.",
+                  "UPGRADE_DESCRIPTION":  "!D! hasar ver.Eğer ${modID}:Borç varsa !M! kart çek. NL Ardından 4 ${modID}:Günah kaybet."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Haksız Suçluluk",
+                   "DESCRIPTION":  "TÜM düşmanlara !D! hasar ver.!${modID}:SIN! ${modID}:Günah kazan.",
+                   "UPGRADE_DESCRIPTION":  "TÜM düşmanlara !D! hasar ver.!${modID}:SIN! ${modID}:Günah kazan."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Amansız Dolanma",
+                      "DESCRIPTION":  "!D! hasar ver. NL ${modID}:Borç artarsa onu eline ekle"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Istırap",
+              "DESCRIPTION":  "!D! hasar ver.!M! Zayıf ve !M! Savunmasız uygula.",
+              "UPGRADE_DESCRIPTION":  "!D! hasar ver.!M! Zayıf ve !M! Savunmasız uygula."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Kutsal Topraklar",
+                "DESCRIPTION":  "!B! Blok kazan. NL Sahip olduğun her ${modID}:Borç için 1 eksik olmak üzere !M! kart çek.",
+                "UPGRADE_DESCRIPTION":  "!B! Blok kazan. NL Sahip olduğun her ${modID}:Borç için 1 eksik olmak üzere !M! kart çek.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (!M! kart çek)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Kredi",
+             "DESCRIPTION":  "[E] [E] [E] kazan.Sonraki tur [E] kaybet.NL Tüket",
+             "UPGRADE_DESCRIPTION":  "[E] [E] [E] kazan. NL Sonraki tur [E] kaybet.NL Tüket NL Saklanır"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Sağlam",
+             "DESCRIPTION":  "!B! Blok kazan.NL Saklanır",
+             "UPGRADE_DESCRIPTION":  "!B! Blok kazan.NL Saklanır"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Gezgin",
+              "DESCRIPTION":  "!M! kart çek.NL 1 kart Tüket. NL Durum kartı Tüketirsen 3 ${modID}:Günah azalt",
+              "UPGRADE_DESCRIPTION":  "!M! kart çek.NL 1 kart Tüket. NL Durum kartı Tüketirsen 3 ${modID}:Günah azalt"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Kan Muhafızı",
+                "DESCRIPTION":  "!B! Blok kazan. NL Bir düşmana !M! ${modID}:Kanama ver.",
+                "UPGRADE_DESCRIPTION":  "!B! Blok kazan. NL Bir düşmana !M! ${modID}:Kanama ver."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Masumiyet Yalvarışı",
+                  "DESCRIPTION":  "!B! Blok kazan. NL Her ${modID}:Borç !M! daha fazla Blok sağlar.",
+                  "UPGRADE_DESCRIPTION":  "!B! Blok kazan. NL Her ${modID}:Borç !M! daha fazla Blok sağlar.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Toplamda !${modID}:TOTAL_BLOCK! Blok kazan)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Öngörücü Tedbirler",
+                    "DESCRIPTION":  "!M! kart çek. Saldırıysa, bu tur oynanana kadar maliyeti 0 olur.",
+                    "UPGRADE_DESCRIPTION":  "!M! kart çek. Saldırıysa, bu tur oynanana kadar maliyeti 0 olur."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Düşmanlık",
+                "DESCRIPTION":  "Bloğun !${modID}:BLOCK_THRESHOLD! altındaysa tüm düşmanlara !M! Zayıf ver. NL !B! Blok kazan",
+                "UPGRADE_DESCRIPTION":  "Bloğun !${modID}:BLOCK_THRESHOLD! altındaysa tüm düşmanlara !M! Zayıf ver. NL !B! Blok kazan"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Pratikalar",
+               "DESCRIPTION":  "2 *Sefalet ekle. NL Elindeki her Durum kartı için !M! Blok kazan",
+               "UPGRADE_DESCRIPTION":  "2 *Sefalet ekle. NL Elindeki her Durum kartı için !M! Blok kazan",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Toplamda !${modID}:TOTAL_BLOCK! Blok kazan)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Caydırıcı Darbe",
+                  "DESCRIPTION":  "!D! hasar ver. NL Düşmanın niyeti saldırıysa bu tur !M! Güç kaybeder",
+                  "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Düşmanın niyeti saldırıysa bu tur !M! Güç kaybeder"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Ağır Vuruş",
+                "DESCRIPTION":  "Yalnızca !M! ${modID}:Borç varsa oynanabilir. !D! hasar ver",
+                "UPGRADE_DESCRIPTION":  "Yalnızca !M! ${modID}:Borç varsa oynanabilir. !D! hasar ver",
+                "EXTENDED_DESCRIPTION":  [
+                              "Yalnızca 2 ${modID}:Borç varsa oynanabilir"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Günahlardan Bıçaklara",
+                 "DESCRIPTION":  "!D! hasar ver. NL Sahip olduğun ${modID}:Borç kadar kart çek.",
+                 "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Sahip olduğun ${modID}:Borç artı 1 kadar kart çek.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (!${modID}:TOTAL_DRAW! kart çek)"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Düzensiz Kaos",
+                "DESCRIPTION":  "!${modID}:SIN! ${modID}:Günahlar kazan. NL !D! hasar ver. Sahip olduğun her ${modID}:Borç !M! ekstra hasar verir",
+                "UPGRADE_DESCRIPTION":  "!${modID}:SIN! ${modID}:Günahlar kazan. NL !D! hasar ver. Sahip olduğun her ${modID}:Borç !M! ekstra hasar verir",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Temperli Kılıç",
+                  "DESCRIPTION":  "!D! hasar ver. NL Tüketilen her Durum kartı !M! ekstra hasar verir",
+                  "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Tüketilen her Durum kartı !M! ekstra hasar verir",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Toplamda !${modID}:TOTAL_DAMAGE! hasar ver)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Ezme",
+              "DESCRIPTION":  "!D! hasar ver. NL Düşmanda olan ${modID}:Kanama kadar Blok kazan",
+              "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Düşmanda olan ${modID}:Kanama kadar Blok kazan",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Toplamda !${modID}:TOTAL_BLOCK! Blok kazan)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Biriktirme",
+              "DESCRIPTION":  "2 kez !D! hasar ver. NL Sonraki tur [E] kazan",
+              "UPGRADE_DESCRIPTION":  "2 kez !D! hasar ver. NL Sonraki tur [E][E] kazan"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Ağır Geçmiş",
+                "DESCRIPTION":  "!D! hasarı 2 kez ver. NL Çekme yığınına 1 ve atma yığınına 1 *Sefalet ekle. NL !M! kart çek.",
+                "UPGRADE_DESCRIPTION":  "!D! hasarı 2 kez ver. NL Çekme yığınına 1 ve atma yığınına 1 *Sefalet ekle. NL !M! kart çek."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "İma",
+                "DESCRIPTION":  "Elindeki 1 kartı Tüket. NL TÜM düşmanlara !D! hasar ver. NL ${modID}:Kanama olan bir düşmana hasar verdiğinde 1 kart çek.",
+                "UPGRADE_DESCRIPTION":  "Elindeki 1 kartı Tüket. NL TÜM düşmanlara !D! hasar ver. NL ${modID}:Kanama olan bir düşmana hasar verdiğinde 1 kart çek."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Ardışık Tekmeler",
+                   "DESCRIPTION":  "!M! kez !D! hasar ver",
+                   "UPGRADE_DESCRIPTION":  "!M! kez !D! hasar ver"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Devasa Kanama",
+                  "DESCRIPTION":  "!D! hasar ver. NL Ardından düşmanda olan ${modID}:Kanama kadar hasar ver",
+                  "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Ardından düşmanda olan ${modID}:Kanama miktarının iki katı kadar hasar ver",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Toplamda !${modID}:TOTAL_DAMAGE! hasar ver)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Tehlikeyle Yüzleş",
+                "DESCRIPTION":  "!D! hasar ver. NL Oynadığın her *Sefalet bu dövüş boyunca maliyetini 1 azaltır",
+                "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Oynadığın her *Sefalet bu dövüş boyunca maliyetini 1 azaltır"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Rahatlama",
+              "DESCRIPTION":  "Atma yığınına 2 *Sefalet ekle. NL Tur sonunda elindeki tüm *Sefalet\u0027i Tüket.",
+              "UPGRADE_DESCRIPTION":  "Yerleşik NL Atma yığınına 2 *Sefalet ekle. NL Tur sonunda elindeki tüm *Sefalet\u0027i Tüket."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Sefalet",
+              "DESCRIPTION":  "2 hasar al. NL 1 kart çek. NL Tüketilir"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Savuşturma",
+              "DESCRIPTION":  "!B! Blok kazan. NL Ne zaman saldırıya uğrarsan, blokladığın hasarı saldırana geri yansıt.",
+              "UPGRADE_DESCRIPTION":  "!B! Blok kazan. NL Ne zaman saldırıya uğrarsan, blokladığın hasarı saldırana geri yansıt."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Bağışlama",
+              "DESCRIPTION":  "Elindeki TÜM kartları rastgele kartlara dönüştürür. NL Bu kart !M! kez oynandıktan sonra rastgele bir Güç kartına dönüşür",
+              "UPGRADE_DESCRIPTION":  "Elindeki TÜM kartları rastgele yükseltilmiş kartlara dönüştürür. NL Bu kart !M! kez oynandıktan sonra rastgele bir yükseltilmiş Güç kartına dönüşür",
+              "EXTENDED_DESCRIPTION":  [
+                            " (!${modID}:PLAYS! kez oynandı)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Anıt",
+               "DESCRIPTION":  "1 kart çek. NL Çekilen kart bir Yetenek ise !M! ${modID}:Günah kaybet.",
+               "UPGRADE_DESCRIPTION":  "1 kart çek. NL Çekilen kart bir Yetenek ise !M! ${modID}:Günah kaybet."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Kaynama",
+              "DESCRIPTION":  "Elindeki Saldırı olmayan tüm kartları Tüket. NL Tüketilen her kart için rastgele 1 düşmana !M! ${modID}:Kanama uygula.",
+              "UPGRADE_DESCRIPTION":  "Elindeki Saldırı olmayan tüm kartları Tüket. NL Tüketilen her kart için rastgele 1 düşmana !M! ${modID}:Kanama uygula."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Keder",
+              "DESCRIPTION":  "Eline 1 rastgele Durum kartı ekle. NL Bu tur ne zaman kart çekersen TÜM düşmanlara !M! ${modID}:Kanama uygula.",
+              "UPGRADE_DESCRIPTION":  "Eline 1 rastgele Durum kartı ekle. NL Bu tur ne zaman kart çekersen TÜM düşmanlara !M! ${modID}:Kanama uygula."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Kan Denizi",
+               "DESCRIPTION":  "!${modID}:BLEED! ${modID}:Kanama uygula. NL O düşmanın sahip olduğu ${modID}:Kanama miktarını !M! ile çarp. NL Tüket",
+               "UPGRADE_DESCRIPTION":  "!${modID}:BLEED! ${modID}:Kanama uygula. NL O düşmanın sahip olduğu ${modID}:Kanama miktarını !M! ile çarp. NL Tüket"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Amansız Kanama",
+                  "DESCRIPTION":  "Her tur başında TÜM düşmanlara !M! ${modID}:Kanama uygula.",
+                  "UPGRADE_DESCRIPTION":  "Her tur başında TÜM düşmanlara !M! ${modID}:Kanama uygula."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Korkunç Anı",
+                "DESCRIPTION":  "Bu tur ${modID}:Borç kazandıysan düşmanlar !M!% daha az hasar verir. NL Yalnızca ${modID}:Borç kazandığın tur boyunca sürer.",
+                "UPGRADE_DESCRIPTION":  "Bu tur ${modID}:Borç kazandıysan düşmanlar !M!% daha az hasar verir. NL Yalnızca ${modID}:Borç kazandığın tur boyunca sürer."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Çile",
+              "DESCRIPTION":  "!M! Güç ve !M! Çeviklik kazan. NL 1 Zayıf kazan.",
+              "UPGRADE_DESCRIPTION":  "!M! Güç ve !M! Çeviklik kazan. NL 1 Zayıf kazan."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Kaderi Uzlaştır",
+                  "DESCRIPTION":  "Ne zaman bir *Sefalet oluşturur veya Tüketirsen !M! Blok kazan.",
+                  "UPGRADE_DESCRIPTION":  "Ne zaman bir *Sefalet oluşturur veya Tüketirsen !M! Blok kazan."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Parçalanmış Et",
+                 "DESCRIPTION":  "Bir düşmana 6 ${modID}:Kanama uyguladığında TÜM düşmanlara !M! hasar ver.",
+                 "UPGRADE_DESCRIPTION":  "Bir düşmana 6 ${modID}:Kanama uyguladığında TÜM düşmanlara !M! hasar ver."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Kan Dikenleri",
+                "DESCRIPTION":  "Ne zaman bir düşman sana saldırırsa ona !M! ${modID}:Kanama uygula.",
+                "UPGRADE_DESCRIPTION":  "Ne zaman bir düşman sana saldırırsa ona !M! ${modID}:Kanama uygula."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Kurtuluş Yolu",
+                  "DESCRIPTION":  "Ne zaman 1 ${modID}:Borç kaldırırsan !M! kart çek.",
+                  "UPGRADE_DESCRIPTION":  "Ne zaman 1 ${modID}:Borç kaldırırsan !M! kart çek."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Ağıt",
+              "DESCRIPTION":  "Tüketilen her *Sefalet rastgele bir düşmana !D! hasar verir",
+              "UPGRADE_DESCRIPTION":  "Tüketilen her *Sefalet rastgele bir düşmana !D! hasar verir",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Toplamda !${modID}:HITS! vuruş)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Çaresiz Önlem",
+                   "DESCRIPTION":  "!D! hasar ver. NL Bu düşmanı öldürmezse !M! CP kaybet.",
+                   "UPGRADE_DESCRIPTION":  "!D! hasar ver. NL Bu düşmanı öldürmezse !M! CP kaybet."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Bitmeyen Savaş",
+                 "DESCRIPTION":  "!${modID}:HITS! kez !D! hasar ver. NL Bu bir düşmanı öldürdüğünde, bu kartın vuruş sayısı koşunun geri kalanı boyunca kalıcı olarak 1 artar. NL Tüket",
+                 "UPGRADE_DESCRIPTION":  "!${modID}:HITS! kez !D! hasar ver. NL Bu bir düşmanı öldürdüğünde, bu kartın vuruş sayısı koşunun geri kalanı boyunca kalıcı olarak 1 artar. NL Tüket"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Son Yargı",
+                  "DESCRIPTION":  "Yalnızca en az 4 ${modID}:Borç varsa oynanabilir. NL TÜM düşmanlara !D! hasar ver. NL Tüm ${modID}:Günah kaldır.",
+                  "UPGRADE_DESCRIPTION":  "Yalnızca en az 4 ${modID}:Borç varsa oynanabilir. NL TÜM düşmanlara !D! hasar ver. NL Tüm ${modID}:Günah kaldır.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Oynamak için en az 4 ${modID}:Borç gerekir."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Kavurucu",
+              "DESCRIPTION":  "Elindeki tüm kartları Tüket. NL Tüketilen her Durum kartı için !M! kart çek. NL Tüket",
+              "UPGRADE_DESCRIPTION":  "Elindeki tüm kartları Tüket. NL Tüketilen her Durum kartı için !M! kart çek. NL Tüket"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Kaya Gibi Sağlam",
+                "DESCRIPTION":  "!B! Blok kazan. NL 3 Maksimum CP kaybet.",
+                "UPGRADE_DESCRIPTION":  "!B! Blok kazan. NL 3 Maksimum CP kaybet."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Bağlılık",
+               "DESCRIPTION":  "Tüm ${modID}:Borç, Savunmasız, Zayıf ve Kırılgan\u0027ını kaldır. NL Kaldırılan her kademe için 1 Enerji kazan ve !M! kart çek. NL Tüket",
+               "UPGRADE_DESCRIPTION":  "Tüm ${modID}:Borç, Savunmasız, Zayıf ve Kırılgan\u0027ını kaldır. NL Kaldırılan her kademe için 1 Enerji kazan ve !M! kart çek. NL Tüket"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Öfke",
+                "DESCRIPTION":  "Sonraki X tur boyunca her tur oynadığın ilk kartın maliyeti 0 olur. NL Tüket",
+                "UPGRADE_DESCRIPTION":  "Sonraki X+1 tur boyunca her tur oynadığın ilk kartın maliyeti 0 olur. NL Tüket"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Kan Davası",
+                "DESCRIPTION":  "Eline 1 *Sefalet ekle. NL Tüm düşmanların sahip olduğu ${modID}:Kanama miktarının !M!%\u0027ini anında tetikle.",
+                "UPGRADE_DESCRIPTION":  "Eline 1 *Sefalet ekle. NL Tüm düşmanların sahip olduğu ${modID}:Kanama miktarının !M!%\u0027ini anında tetikle."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Boşluk Çağrısı",
+               "DESCRIPTION":  "Çekme yığınından 1 kart seç ve eline ekle. Ruhani olur. NL Tüket",
+               "UPGRADE_DESCRIPTION":  "Çekme yığınından 1 kart seç ve eline ekle. Ruhani olur."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Yayılma",
+              "DESCRIPTION":  "!M! ${modID}:Kanama uygula. NL O düşmanın tüm olumsuz etkilerini diğer tüm düşmanlara uygula.",
+              "UPGRADE_DESCRIPTION":  "!M! ${modID}:Kanama uygula. NL O düşmanın tüm olumsuz etkilerini diğer tüm düşmanlara uygula."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Aç Savaş İradesi",
+                    "DESCRIPTION":  "Her tur başında [E] kazan. NL Her tur sonunda 3 hasar al.",
+                    "UPGRADE_DESCRIPTION":  "Her tur başında [E] kazan. NL Her tur sonunda 3 hasar al."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Yargı Formu",
+                  "DESCRIPTION":  "Her tur oynadığın ilk saldırı kartı, kalkanlanmamış verdiği hasar kadar ${modID}:Kanama uygular.",
+                  "UPGRADE_DESCRIPTION":  "Her tur oynadığın ilk iki saldırı kartı, kalkanlanmamış verdikleri hasar kadar ${modID}:Kanama uygular."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Günahın Bedeni",
+                "DESCRIPTION":  "Tur sonunda !B! Blok, artı sahip olduğun her ${modID}:Borç kademesi için !M! Blok kazan.",
+                "UPGRADE_DESCRIPTION":  "Tur sonunda !B! Blok, artı sahip olduğun her ${modID}:Borç kademesi için !M! Blok kazan.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Toplamda !${modID}:TOTAL_BLOCK! Blok kazan)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Kan Banyosu",
+                "DESCRIPTION":  "Maksimum CP\u0027si !M!%\u0027in altında olan düşmanlara %50 daha fazla hasar ver.",
+                "UPGRADE_DESCRIPTION":  "Maksimum CP\u0027si !M!%\u0027in altında olan düşmanlara %50 daha fazla hasar ver."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Aşırı Sert",
+                "DESCRIPTION":  "5 Güç kazan. NL Ne zaman bir Saldırı kartı oynarsan, dövüşün geri kalanı boyunca kalıcı olarak !M! hasar kaybeder.",
+                "UPGRADE_DESCRIPTION":  "5 Güç kazan. NL Ne zaman bir Saldırı kartı oynarsan, dövüşün geri kalanı boyunca kalıcı olarak !M! hasar kaybeder."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Dolaşık",
+                "DESCRIPTION":  "Ne zaman bu kartı çekersen eline 1 kopyasını ekle. NL Tüket NL Bu kart tüketildiğinde, çekme desteine 1 Sümük ekle."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "İsyan",
+             "DESCRIPTION":  "X kez !D! hasar ver. NL Sahip olduğun her ${modID}:Borç bu kartın !M! ekstra hasar vermesini sağlar.",
+             "UPGRADE_DESCRIPTION":  "X kez !D! hasar ver. NL Sahip olduğun her ${modID}:Borç bu kartın !M! ekstra hasar vermesini sağlar.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Vuruş başına !${modID}:TOTAL_DAMAGE! hasar)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Kan Lekesi",
+                "DESCRIPTION":  "!M! ${modID}:Kanama uygula. NL Sahip olduğun her ${modID}:Borç için bunu bir kez daha yap. NL Tüket.",
+                "UPGRADE_DESCRIPTION":  "!M! ${modID}:Kanama uygula. NL Sahip olduğun her ${modID}:Borç için bunu bir kez daha yap."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Kırık Zırh",
+                "DESCRIPTION":  "!B! Blok kazan. NL Bu kartı her oynadığında kazanılan Blok 2 azalır（bu savaşta）.",
+                "UPGRADE_DESCRIPTION":  "!B! Blok kazan. NL Bu kartı her oynadığında kazanılan Blok 2 azalır（bu savaşta）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Form Anlaşması",
+               "DESCRIPTION":  "[E] [E] kazan. NL Atık destesine 1 *Sefalet ekle",
+               "UPGRADE_DESCRIPTION":  "[E] [E] [E] kazan. NL Atık destesine 1 *Sefalet ekle"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Sahtekarlık",
+              "DESCRIPTION":  "!M! kart çek. NL !M! ${modID}:Günah kazan.",
+              "UPGRADE_DESCRIPTION":  "!M! kart çek. NL !M! ${modID}:Günah kazan."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Merhamet",
+              "DESCRIPTION":  "Ruhani. NL Her tur sonunda elindeki *Sefalet\u0027i Tüket. NL !M! ${modID}:Günah kazan.",
+              "UPGRADE_DESCRIPTION":  "Ruhani. NL Her tur sonunda elindeki *Sefalet\u0027i Tüket. NL !M! ${modID}:Günah kazan."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Hazırlan",
+              "DESCRIPTION":  "Yerleşik. NL !M! kart çek. NL Bu tur elini Sakla. NL Tüket.",
+              "UPGRADE_DESCRIPTION":  "Yerleşik. NL !M! kart çek. NL Bu tur elini Sakla. NL Tüket."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Nüks",
+              "DESCRIPTION":  "3 ${modID}:Kanama uygula. NL Bir düşmanın sahip olduğu ${modID}:Kanama bir tur boyunca kaldırılmaz.",
+              "UPGRADE_DESCRIPTION":  "3 ${modID}:Kanama uygula. NL TÜM düşmanların sahip olduğu ${modID}:Kanama bir tur boyunca kaldırılmaz."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Paylaşılan Istırap",
+                  "DESCRIPTION":  "Sahip olduğun her ${modID}:Borç için TÜM düşmanlara !M! Zayıf ve !M! Savunmasız uygula. NL Tüket.",
+                  "UPGRADE_DESCRIPTION":  "Sahip olduğun her ${modID}:Borç için TÜM düşmanlara !M! Zayıf ve !M! Savunmasız uygula. NL Tüket."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Tabu",
+              "DESCRIPTION":  "Sahip olduğun her ${modID}:Borç için 1 Enerji kazan. NL 1 ${modID}:Kısıtlama kazan.",
+              "UPGRADE_DESCRIPTION":  "Sahip olduğun her ${modID}:Borç için 1 Enerji kazan, artı 1. NL 1 ${modID}:Kısıtlama kazan.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Enerji kazanılamaz)",
+                            " (!${modID}:TOTAL_ENERGY! Enerji kazan)",
+                            " (!${modID}:TOTAL_ENERGY! Enerji kazan!)"
+                          ]
+            }
+}

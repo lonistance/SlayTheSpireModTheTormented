@@ -1,145 +1,170 @@
 {
-  "${modID}:PowerID": {
-    "NAME": "Ultimate Power",
-    "DESCRIPTIONS": [
-      "You are Very Cool and Strong."
-    ]
-  }, "${modID}:BleedPower": {
-  "NAME": "Bleed",
-  "DESCRIPTIONS": [
-    "At the start of its turn, lose #b",
-    " HP,then remove all bleed.When bleeding creature under unblocked attack,gain #b1 Bleed."
-  ]
-  }, "${modID}:SinPower": {
-  "NAME": "Sin",
-  "DESCRIPTIONS": [
-    "When you have #b5 Sin, gain ",
-    " Debt."
-  ]
-  }, "${modID}:DebtPower": {
-  "NAME": "Debt",
-  "DESCRIPTIONS": [
-    "Each debt suffers #b10% more damage.Suffering ",
-    "% more damage."
-  ]
-  }, "${modID}:LoseEnergyNextTurnPower": {
-  "NAME": "LoseEnergyNextTurn",
-  "DESCRIPTIONS": [
-    "Lose [E] at your next turn"
-  ]
-}, "${modID}:GainEnergyNextTurnPower": {
-  "NAME": "GainEnergyNextTurn",
-  "DESCRIPTIONS": [
-    "Gain [E] at your next turn"
-  ]
-}, "${modID}:MercyPower": {
-  "NAME": "Mercy",
-  "DESCRIPTIONS": [
-    "Debt deals no extra damage this turn"
-  ]
-},"${modID}:DeepWoundPower": {
-  "NAME": "DeepWound",
-  "DESCRIPTIONS": [
-    "Only reduce 50% Bleed this turn"
-  ]
-  }, "${modID}:ReliefPower": {
-  "NAME": "Relief",
-  "DESCRIPTIONS": [
-    "At the end of your turn, Exhaust ALL ",
-    " in your hand."
-  ]
-  }, "${modID}:ParryPower": {
-  "NAME": "Parry",
-  "DESCRIPTIONS": [
-    "Whenever you are attacked, reflect the damage you blocked back to the attacker."
-  ]
-  }, "${modID}:RelentlessBleedPower": {
-  "NAME": "Relentless Bleed",
-  "DESCRIPTIONS": [
-    "At the start of each turn, apply #b",
-    " Bleed to ALL enemies."
-  ]
-  }, "${modID}:GriefPower": {
-  "NAME": "Grief",
-  "DESCRIPTIONS": [
-    "This turn, whenever you draw a card, apply #b",
-    " Bleed to ALL enemies."
-  ]
-  }, "${modID}:DreadMemoryPower": {
-  "NAME": "Dread Memory",
-  "DESCRIPTIONS": [
-    "If you gained Debt this turn, enemies deal #b",
-    "% less damage."
-  ]
-  }, "${modID}:ReconcileFatePower": {
-  "NAME": "Reconcile Fate",
-  "DESCRIPTIONS": [
-    "Whenever you generate or Exhaust a *Misery, gain #b",
-    " Block."
-  ]
-  }, "${modID}:MangledFleshPower": {
-  "NAME": "Mangled Flesh",
-  "DESCRIPTIONS": [
-    "Whenever you apply 6 Bleed to an enemy, deal #b",
-    " damage to it."
-  ]
-  }, "${modID}:BloodThornsPower": {
-  "NAME": "Blood Thorns",
-  "DESCRIPTIONS": [
-    "Whenever an enemy attacks you, apply #b",
-    " Bleed to it."
-  ]
-  }, "${modID}:RedemptionPathPower": {
-  "NAME": "Path of Redemption",
-  "DESCRIPTIONS": [
-    "Whenever you remove 1 Debt, draw #b",
-    " cards."
-  ]
-  }, "${modID}:IndignationPower": {
-  "NAME": "Indignation",
-  "DESCRIPTIONS": [
-    "For the next #b",
-    " turns, the first non-Attack card you play each turn costs 0."
-  ]
-  }, "${modID}:HungeringBattleWillPower": {
-  "NAME": "Hungering Battle Will",
-  "DESCRIPTIONS": [
-    "At the start of each turn, gain [E] . At the end of your turn, if no enemy was killed this turn, take 3 damage."
-  ]
-  }, "${modID}:ConcedePower": {
-  "NAME": "Concede",
-  "DESCRIPTIONS": [
-    "This enemy takes #b50% more damage."
-  ]
-  }, "${modID}:JudgmentFormPower": {
-  "NAME": "Form of Judgment",
-  "DESCRIPTIONS": [
-    "You deal 50% more damage to enemies below ",
-    "% of their Max HP."
-  ]
-  }, "${modID}:SinAvatarPower": {
-  "NAME": "Incarnation of Sin",
-  "DESCRIPTIONS": [
-    "At the end of your turn, gain #b",
-    " Block, plus #b",
-    " Block for each stack of Debt."
-  ]
-  }, "${modID}:BloodbathPower": {
-  "NAME": "Bloodbath",
-  "DESCRIPTIONS": [
-    "The first ",
-    " attack card(s) played each turn apply Bleed equal to the unblocked damage they deal."
-  ]
-  }, "${modID}:OverrigidPower": {
-  "NAME": "Overrigid",
-  "DESCRIPTIONS": [
-    "Each time you play an Attack card, it permanently loses ",
-    " damage for the rest of combat."
-  ]
-  }, "${modID}:RestrictionPower": {
-  "NAME": "Restriction",
-  "DESCRIPTIONS": [
-    "You cannot gain [E]. Removed at the end of your turn."
-  ]
-  }
+  "${modID}:PowerID":  {
+              "NAME":  "Ultimate Power",
+              "DESCRIPTIONS":  [
+                         "You are Very Cool and Strong."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Bleed",
+                "DESCRIPTIONS":  [
+                          "At the start of its turn, lose #b",
+                          " HP,then remove all bleed.When bleeding creature under unblocked attack,gain #b1 Bleed."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Sin",
+               "DESCRIPTIONS":  [
+                          "When you have #b5 Sin, gain ",
+                          " Debt."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Debt",
+                "DESCRIPTIONS":  [
+                          "Each debt suffers #b10% more damage.Suffering ",
+                          "% more damage. NL When a Debt application is blocked by Artifact, lose ",
+                          " Sin for each 1 Debt blocked."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "LoseEnergyNextTurn",
+                      "DESCRIPTIONS":  [
+                                 "Lose [E] at your next turn"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "GainEnergyNextTurn",
+                      "DESCRIPTIONS":  [
+                                 "Gain [E] at your next turn"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Mercy",
+                "DESCRIPTIONS":  [
+                          "Debt deals no extra damage this turn"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "DeepWound",
+                  "DESCRIPTIONS":  [
+                            "Bleed is not removed at the start of its turn."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Relief",
+                "DESCRIPTIONS":  [
+                           "At the end of your turn, Exhaust ALL ",
+                           " in your hand."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Parry",
+                "DESCRIPTIONS":  [
+                          "Whenever you are attacked, reflect the damage you blocked back to the attacker."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Relentless Bleed",
+                     "DESCRIPTIONS":  [
+                                "At the start of each turn, apply #b",
+                                " Bleed to ALL enemies."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Grief",
+                "DESCRIPTIONS":  [
+                          "This turn, whenever you draw a card, apply #b",
+                          " Bleed to ALL enemies."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Dread Memory",
+                   "DESCRIPTIONS":  [
+                              "If you gained Debt this turn, enemies deal #b",
+                              "% less damage."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Reconcile Fate",
+                    "DESCRIPTIONS":  [
+                              "Whenever you generate or Exhaust a *Misery, gain #b",
+                              " Block."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Mangled Flesh",
+                    "DESCRIPTIONS":  [
+                              "Whenever you apply 6 Bleed to an enemy, deal #b",
+                              " damage to ALL enemies."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Blood Thorns",
+                   "DESCRIPTIONS":  [
+                              "Whenever an enemy attacks you, apply #b",
+                              " Bleed to it."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Path of Redemption",
+                    "DESCRIPTIONS":  [
+                               "Whenever you remove 1 Debt, draw #b",
+                               " cards."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Indignation",
+                   "DESCRIPTIONS":  [
+                              "For the next #b",
+                              " turns, the first card you play each turn costs 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Hungering Battle Will",
+                       "DESCRIPTIONS":  [
+                                  "At the start of each turn, gain [E] . NL At the end of each turn, take 3 damage."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Concede",
+                 "DESCRIPTIONS":  [
+                            "This enemy takes #b50% more damage."
+                          ]
+               },
+  "${modID}:ExecutionFormPower":  {
+                    "NAME":  "Execution Form",
+                    "DESCRIPTIONS":  [
+                            "The first ",
+                            " attack card played each turn applies Bleed equal to the unblocked damage it deals."
+                          ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Incarnation of Sin",
+                  "DESCRIPTIONS":  [
+                            "At the end of your turn, gain #b",
+                            " Block, plus #b",
+                            " Block for each stack of Debt."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Bloodbath",
+                  "DESCRIPTIONS":  [
+                              "You deal 50% more damage to enemies below ",
+                              "% of their Max HP."
+                            ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Overrigid",
+                  "DESCRIPTIONS":  [
+                            "Each time you play an Attack card, it permanently loses ",
+                            " damage for the rest of combat."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Restriction",
+                   "DESCRIPTIONS":  [
+                              "You cannot gain [E]. Removed at the end of your turn."
+                            ]
+                 }
 }

@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Máu Thần",
+    "DESCRIPTIONS": [
+      "Gây #b",
+      " ${modID}:Chảy máu lên một quân địch."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Giọt Lệ",
+    "DESCRIPTIONS": [
+      "Giữ lại bài trên tay trong #b1 lượt."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Rượu Phục Sinh",
+    "DESCRIPTIONS": [
+      "Nhận #b1 Năng lượng. NL Bốc #b2 lá bài."
+    ]
+  }
+}

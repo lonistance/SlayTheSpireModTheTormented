@@ -1,0 +1,41 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Krwawienie",
+    "NAMES": [
+      "krwawienie",
+      "krwawienia",
+      "krwawieniu"
+    ],
+    "DESCRIPTION": "Na początku swojej tury tracisz PZ równe warstwom ${modID}:Krwawienia, następnie usuwana jest połowa Krwawienia. Głęboka rana zapobiega usunięciu Krwawienia w tej turze. Gdy krwawiąca istota otrzymuje niezablokowane obrażenia od ataku, uzyskuje #b1 Krwawienia."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Grzech",
+    "NAMES": [
+      "grzech",
+      "grzechu",
+      "grzechy",
+      "grzechów"
+    ],
+    "DESCRIPTION": "Każde #b5 ${modID}:Grzechu, które masz, daje #b1 Długu."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Dług",
+    "NAMES": [
+      "dług",
+      "długu",
+      "długi"
+    ],
+    "DESCRIPTION": "Każda warstwa ${modID}:Długu sprawia, że otrzymujesz #b10% więcej obrażeń. Gdy aplikacja Długu zostanie zablokowana przez Hart, tracisz %%SIN_PER_DEBT%% Grzechu za każdy zablokowany Dług."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Ograniczenie",
+    "NAMES": [
+      "ograniczenie"
+    ],
+    "DESCRIPTION": "Nie możesz uzyskać [E], dopóki w pełni nie usuniesz całego swojego ${modID}:Długu. Usuwane na koniec twojej tury."
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Sanguinamento",
+    "NAMES": [
+      "sanguinamento",
+      "sanguinamenti"
+    ],
+    "DESCRIPTION": "All'inizio del suo turno, perde PF pari ai suoi livelli di Sanguinamento, poi metà del suo Sanguinamento viene rimosso. Una ferita profonda impedisce la rimozione del Sanguinamento in quel turno. Quando una creatura sanguinante subisce danni da un attacco non bloccato, ottiene #b1 Sanguinamento."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Peccato",
+    "NAMES": [
+      "peccato",
+      "peccati"
+    ],
+    "DESCRIPTION": "Ogni #b5 Peccato che hai fornisce #b1 Debito."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Debito",
+    "NAMES": [
+      "debito",
+      "debiti"
+    ],
+    "DESCRIPTION": "Ogni livello di Debito ti fa subire #b10% danni in più. Quando l'applicazione di un Debito viene bloccata da un Artefatto, perdi %%SIN_PER_DEBT%% Peccato per ogni Debito bloccato."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Restrizione",
+    "NAMES": [
+      "restrizione",
+      "restrizioni"
+    ],
+    "DESCRIPTION": "Non puoi ottenere [E] a meno che tu non rimuova completamente tutto il tuo Debito. Rimossa alla fine del tuo turno."
+  }
+]

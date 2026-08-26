@@ -4,7 +4,6 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -21,6 +20,9 @@ public class BleedPower extends BasePower {
     private static final boolean IS_TURN_BASED = true;
     private static final int BLEED_INCREMENT_ON_DAMAGE = 1;
 
+    // 每回合保留的流血百分比（后续可调整）
+    public static final int BLEED_RETAIN_PERCENT = 50;
+
     public BleedPower(AbstractCreature owner, int amount) {
         super(POWER_ID, POWER_TYPE, IS_TURN_BASED, owner, null, amount);
     }
@@ -31,7 +33,7 @@ public class BleedPower extends BasePower {
 
     /**
      * 回合开始时：造成等同于流血层数的伤害
-     * 检测是否有 DeepWoundPower，有则保留 50% 流血，无则直接移除
+     * 检测是否有 DeepWoundPower（旧伤复发），有则流血本回合完全不移除，无则只移除 (100 - BLEED_RETAIN_PERCENT)%
      */
     @Override
     public void atStartOfTurn() {
@@ -46,14 +48,15 @@ public class BleedPower extends BasePower {
             // 2. 检测敌人身上是否有 DeepWoundPower
             AbstractPower deepWound = this.owner.getPower(DeepWoundPower.POWER_ID);
 
-            if (deepWound != null) {
-                // 有 DeepWoundPower 时，流血层数减少 50%（向上取整，确保例如 1 层时减少 1 层）
-                int reduceAmount = (int) Math.ceil(this.amount * 0.5);
-                this.addToBot(new ReducePowerAction(this.owner, this.owner, this, reduceAmount));
-            } else {
-                // 没有 DeepWoundPower 时，全部移除
-                this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+            if (deepWound == null) {
+                // 没有 DeepWoundPower 时，只移除 (100 - BLEED_RETAIN_PERCENT)% 的流血
+                int kept = this.amount * BLEED_RETAIN_PERCENT / 100;
+                int removeAmount = this.amount - kept;
+                if (removeAmount > 0) {
+                    this.addToBot(new ReducePowerAction(this.owner, this.owner, this, removeAmount));
+                }
             }
+            // 有 DeepWoundPower 时：流血本回合完全不移除
         }
     }
 

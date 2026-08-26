@@ -1,0 +1,447 @@
+{
+  "${modID}:ExampleCard":  {
+                "NAME":  "Navn",
+                "DESCRIPTION":  "Beskrivelse. NL Andre linje.",
+                "UPGRADE_DESCRIPTION":  "Dette brukes automatisk hvis kortet er oppgradert. Fjern det hvis det ikke trengs.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Du kan legge mer tekst her.",
+                               "Hvis du trenger den til noe.",
+                               "Blizzard er et godt eksempel på dette."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Slag",
+                  "DESCRIPTION":  "Påfør !D! Skade.",
+                  "UPGRADE_DESCRIPTION":  "Påfør !D! Skade."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Forsvar",
+                  "DESCRIPTION":  "Blokker !B! Skade.",
+                  "UPGRADE_DESCRIPTION":  "Blokker !B! Skade."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Opprører",
+              "DESCRIPTION":  "Påfør !D! Skade. NL Gi ${modID}:Blødning tilsvarende skaden du påfører.",
+              "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Gi ${modID}:Blødning tilsvarende skaden du påfører.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Gi !M! ${modID}:Blødning)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Tilgi",
+              "DESCRIPTION":  "Blokker !B! Skade. NL Reduser ${modID}:Synden med !M!.",
+              "UPGRADE_DESCRIPTION":  "Blokker !B! Skade. NL Reduser ${modID}:Synden med !M!."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Hugg",
+              "DESCRIPTION":  "Påfør !D! Skade. NL Påfør !M! ${modID}:Blødning.",
+              "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Påfør !M! ${modID}:Blødning."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Rive",
+             "DESCRIPTION":  "Påfør !D! Skade. NL Hvis fienden har ${modID}:Blødning, påfør !M! ekstra treff.",
+             "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Hvis fienden har ${modID}:Blødning, påfør !M! ekstra treff."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Jakt",
+              "DESCRIPTION":  "Kan bare spilles hvis det sist spilte kortet denne runden var et angrep. NL Påfør !D! Skade.",
+              "UPGRADE_DESCRIPTION":  "Kan bare spilles hvis det sist spilte kortet denne runden var et angrep. NL Påfør !D! Skade.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Du må spille et angrep først denne runden."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Armavkapping",
+                "DESCRIPTION":  "Påfør !D! Skade. NL Legg !M! *Elendighet på hånda.",
+                "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Legg !M! *Elendighet på hånda."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Slukket klinge",
+                  "DESCRIPTION":  "Påfør !D! Skade. NL Oppgrader !M! kort på hånda for resten av kampen.",
+                  "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Oppgrader !M! kort på hånda for resten av kampen."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Grusom tortur",
+                 "DESCRIPTION":  "Påfør !D! Skade. Få !${modID}:SIN! ${modID}:Synd.",
+                 "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. Få !${modID}:SIN! ${modID}:Synd."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Soningsslag",
+                  "DESCRIPTION":  "Påfør !D! Skade. Trekk !M! kort hvis du har ${modID}:Gjeld. NL Mist deretter 4 ${modID}:Synd.",
+                  "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. Trekk !M! kort hvis du har ${modID}:Gjeld. NL Mist deretter 4 ${modID}:Synd."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Urettferdig skyld",
+                   "DESCRIPTION":  "Påfør ALLE fiender !D! Skade. Få !${modID}:SIN! ${modID}:Synd.",
+                   "UPGRADE_DESCRIPTION":  "Påfør ALLE fiender !D! Skade. Få !${modID}:SIN! ${modID}:Synd."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Nådeløs sammenfiltring",
+                      "DESCRIPTION":  "Påfør !D! Skade. NL Legg det til på hånda hvis ${modID}:Gjeld øker"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Kval",
+              "DESCRIPTION":  "Påfør !D! Skade. Svekk med !M! og gjør !M! Sårbar.",
+              "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. Svekk med !M! og gjør !M! Sårbar."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Hellig land",
+                "DESCRIPTION":  "Blokker !B! Skade. NL Trekk !M! kort, men 1 kort mindre for hver ${modID}:Gjeld du har.",
+                "UPGRADE_DESCRIPTION":  "Blokker !B! Skade. NL Trekk !M! kort, men 1 kort mindre for hver ${modID}:Gjeld du har.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Trekk !M! kort)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Lån",
+             "DESCRIPTION":  "Få [E] [E] [E]. Neste runde, mist [E].NL Vrakes",
+             "UPGRADE_DESCRIPTION":  "Få [E] [E] [E]. NL Neste runde, mist [E].NL Vrakes NL Behold"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Fast",
+             "DESCRIPTION":  "Blokker !B! Skade.NL Behold",
+             "UPGRADE_DESCRIPTION":  "Blokker !B! Skade.NL Behold"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Vandring",
+              "DESCRIPTION":  "Trekk !M! kort.NL Vrak 1 kort. NL Hvis du vraker et statuskort, reduser ${modID}:Synden med 3",
+              "UPGRADE_DESCRIPTION":  "Trekk !M! kort.NL Vrak 1 kort. NL Hvis du vraker et statuskort, reduser ${modID}:Synden med 3"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Blodvakt",
+                "DESCRIPTION":  "Blokker !B! Skade. NL Gi en fiende !M! ${modID}:Blødning.",
+                "UPGRADE_DESCRIPTION":  "Blokker !B! Skade. NL Gi en fiende !M! ${modID}:Blødning."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Uskyldsbønn",
+                  "DESCRIPTION":  "Blokker !B! Skade. NL For hver ${modID}:Gjeld får du !M! mer Skadeblokkering.",
+                  "UPGRADE_DESCRIPTION":  "Blokker !B! Skade. NL For hver ${modID}:Gjeld får du !M! mer Skadeblokkering.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Få !${modID}:TOTAL_BLOCK! Skadeblokkering totalt)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Forebyggende tiltak",
+                    "DESCRIPTION":  "Trekk !M! kort. Hvis det er et angrep, koster det 0 til det spilles denne runden.",
+                    "UPGRADE_DESCRIPTION":  "Trekk !M! kort. Hvis det er et angrep, koster det 0 til det spilles denne runden."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Fiendtlighet",
+                "DESCRIPTION":  "Hvis Skadeblokkeringen din er under !${modID}:BLOCK_THRESHOLD!, svekk alle fiender med !M!. NL Blokker !B! Skade",
+                "UPGRADE_DESCRIPTION":  "Hvis Skadeblokkeringen din er under !${modID}:BLOCK_THRESHOLD!, svekk alle fiender med !M!. NL Blokker !B! Skade"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Lenker",
+               "DESCRIPTION":  "Legg 2 *Elendighet på hånda. NL Få !M! Skadeblokkering for hvert statuskort på hånda",
+               "UPGRADE_DESCRIPTION":  "Legg 2 *Elendighet på hånda. NL Få !M! Skadeblokkering for hvert statuskort på hånda",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Få !${modID}:TOTAL_BLOCK! Skadeblokkering totalt)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Avskrekkingsslag",
+                  "DESCRIPTION":  "Påfør !D! Skade. NL Fienden mister !M! Styrke denne runden hvis den planlegger å angripe",
+                  "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Fienden mister !M! Styrke denne runden hvis den planlegger å angripe"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Tung knusing",
+                "DESCRIPTION":  "Kan bare spilles hvis du har !M! ${modID}:Gjeld. Påfør !D! Skade",
+                "UPGRADE_DESCRIPTION":  "Kan bare spilles hvis du har !M! ${modID}:Gjeld. Påfør !D! Skade",
+                "EXTENDED_DESCRIPTION":  [
+                              "Kan bare spilles hvis du har 2 ${modID}:Gjeld"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Synder til klinger",
+                 "DESCRIPTION":  "Påfør !D! Skade. NL Trekk kort tilsvarende din ${modID}:Gjeld.",
+                 "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Trekk kort tilsvarende din ${modID}:Gjeld pluss 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Trekk !${modID}:TOTAL_DRAW! kort)"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Skittent kaos",
+                "DESCRIPTION":  "Få !${modID}:SIN! ${modID}:Synder. NL Påfør !D! Skade. Hver ${modID}:Gjeld du har gir !M! ekstra Skade",
+                "UPGRADE_DESCRIPTION":  "Få !${modID}:SIN! ${modID}:Synder. NL Påfør !D! Skade. Hver ${modID}:Gjeld du har gir !M! ekstra Skade",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Herdet sverd",
+                  "DESCRIPTION":  "Påfør !D! Skade. NL Hvert statuskort du vraker gir !M! ekstra Skade",
+                  "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Hvert statuskort du vraker gir !M! ekstra Skade",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Påfør !${modID}:TOTAL_DAMAGE! Skade totalt)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Knus",
+              "DESCRIPTION":  "Påfør !D! Skade. NL Få Skadeblokkering tilsvarende fiendens ${modID}:Blødning",
+              "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Få Skadeblokkering tilsvarende fiendens ${modID}:Blødning",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Få !${modID}:TOTAL_BLOCK! Skadeblokkering totalt)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Akkumulere",
+              "DESCRIPTION":  "Påfør !D! Skade 2 ganger. NL Neste runde får du [E]",
+              "UPGRADE_DESCRIPTION":  "Påfør !D! Skade 2 ganger. NL Neste runde får du [E][E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Tung fortid",
+                "DESCRIPTION":  "Påfør !D! Skade 2 ganger. NL Legg 1 *Elendighet i trekkebunken og 1 i kastebunken. NL Trekk !M! kort.",
+                "UPGRADE_DESCRIPTION":  "Påfør !D! Skade 2 ganger. NL Legg 1 *Elendighet i trekkebunken og 1 i kastebunken. NL Trekk !M! kort."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Konsekvens",
+                "DESCRIPTION":  "Vrak 1 kort fra hånden din. NL Påfør !D! Skade til ALLE fiender. NL Trekk 1 kort for hver fiende med ${modID}:Blødning du påfører skade.",
+                "UPGRADE_DESCRIPTION":  "Vrak 1 kort fra hånden din. NL Påfør !D! Skade til ALLE fiender. NL Trekk 1 kort for hver fiende med ${modID}:Blødning du påfører skade."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Påfølgende spark",
+                   "DESCRIPTION":  "Påfør !D! Skade !M! ganger",
+                   "UPGRADE_DESCRIPTION":  "Påfør !D! Skade !M! ganger"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Massiv blødning",
+                  "DESCRIPTION":  "Påfør !D! Skade. NL Påfør deretter skade tilsvarende fiendens ${modID}:Blødning",
+                  "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Påfør deretter skade tilsvarende dobbelt fiendens ${modID}:Blødning",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Påfør !${modID}:TOTAL_DAMAGE! Skade totalt)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Møt faren",
+                "DESCRIPTION":  "Påfør !D! Skade. NL Hver *Elendighet du har spilt reduserer dette kortets energikostnad med 1 denne kampen",
+                "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Hver *Elendighet du har spilt reduserer dette kortets energikostnad med 1 denne kampen"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Lettelse",
+              "DESCRIPTION":  "Legg 2 *Elendighet i kastebunken. NL På slutten av runden din, vrak alle *Elendighet på hånda.",
+              "UPGRADE_DESCRIPTION":  "Startkort NL Legg 2 *Elendighet i kastebunken. NL På slutten av runden din, vrak alle *Elendighet på hånda."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Elendighet",
+              "DESCRIPTION":  "Lid 2 Skade. NL Trekk 1 kort. NL Vrakes"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Parering",
+              "DESCRIPTION":  "Blokker !B! Skade. NL Når du blir angrepet, reflekter den blokkerte Skaden tilbake til angriperen.",
+              "UPGRADE_DESCRIPTION":  "Blokker !B! Skade. NL Når du blir angrepet, reflekter den blokkerte Skaden tilbake til angriperen."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Benådning",
+              "DESCRIPTION":  "Forvandler ALLE kort på hånden din til tilfeldige kort. NL Etter å ha blitt spilt !M! ganger, forvandler dette kortet seg til et tilfeldig Kraftkort",
+              "UPGRADE_DESCRIPTION":  "Forvandler ALLE kort på hånden din til tilfeldige forbedrede kort. NL Etter å ha blitt spilt !M! ganger, forvandler dette kortet seg til et tilfeldig forbedret Kraftkort",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Spilt !${modID}:PLAYS! ganger)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Minnesmerke",
+               "DESCRIPTION":  "Trekk 1 kort. NL Hvis kortet som trekkes er en Ferdighet, mist !M! ${modID}:Synd.",
+               "UPGRADE_DESCRIPTION":  "Trekk 1 kort. NL Hvis kortet som trekkes er en Ferdighet, mist !M! ${modID}:Synd."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Kokende",
+              "DESCRIPTION":  "Vrak alle kort som ikke er angrep på hånda. NL Påfør en tilfeldig fiende !M! ${modID}:Blødning for hvert vrakede kort.",
+              "UPGRADE_DESCRIPTION":  "Vrak alle kort som ikke er angrep på hånda. NL Påfør en tilfeldig fiende !M! ${modID}:Blødning for hvert vrakede kort."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Sorg",
+              "DESCRIPTION":  "Legg 1 tilfeldig statuskort på hånda. NL Denne runden, hver gang du trekker et kort, påfør ALLE fiender !M! ${modID}:Blødning.",
+              "UPGRADE_DESCRIPTION":  "Legg 1 tilfeldig statuskort på hånda. NL Denne runden, hver gang du trekker et kort, påfør ALLE fiender !M! ${modID}:Blødning."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Blodhav",
+               "DESCRIPTION":  "Påfør !${modID}:BLEED! ${modID}:Blødning. NL Multipliser fiendens ${modID}:Blødning med !M!. NL Vrakes",
+               "UPGRADE_DESCRIPTION":  "Påfør !${modID}:BLEED! ${modID}:Blødning. NL Multipliser fiendens ${modID}:Blødning med !M!. NL Vrakes"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Nådeløs blødning",
+                  "DESCRIPTION":  "I starten av hver runde, påfør ALLE fiender !M! ${modID}:Blødning.",
+                  "UPGRADE_DESCRIPTION":  "I starten av hver runde, påfør ALLE fiender !M! ${modID}:Blødning."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Uhyggelig minne",
+                "DESCRIPTION":  "Hvis du fikk ${modID}:Gjeld denne runden, påfører fiender !M!% mindre Skade. NL Varer bare den runden du fikk ${modID}:Gjeld.",
+                "UPGRADE_DESCRIPTION":  "Hvis du fikk ${modID}:Gjeld denne runden, påfører fiender !M!% mindre Skade. NL Varer bare den runden du fikk ${modID}:Gjeld."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Prøvelse",
+              "DESCRIPTION":  "Få !M! Styrke og !M! Smidighet. NL Få 1 Svakhet.",
+              "UPGRADE_DESCRIPTION":  "Få !M! Styrke og !M! Smidighet. NL Få 1 Svakhet."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Forsoning med skjebnen",
+                  "DESCRIPTION":  "Hver gang du skaper eller vraker en *Elendighet, få !M! Skadeblokkering.",
+                  "UPGRADE_DESCRIPTION":  "Hver gang du skaper eller vraker en *Elendighet, få !M! Skadeblokkering."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Lemlestet kjøtt",
+                 "DESCRIPTION":  "Hver gang du påfører en fiende 6 ${modID}:Blødning, påfør ALLE fiender !M! Skade.",
+                 "UPGRADE_DESCRIPTION":  "Hver gang du påfører en fiende 6 ${modID}:Blødning, påfør ALLE fiender !M! Skade."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Blodtorner",
+                "DESCRIPTION":  "Hver gang en fiende angriper deg, påfør den !M! ${modID}:Blødning.",
+                "UPGRADE_DESCRIPTION":  "Hver gang en fiende angriper deg, påfør den !M! ${modID}:Blødning."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Forløsningens vei",
+                  "DESCRIPTION":  "Hver gang du fjerner 1 ${modID}:Gjeld, trekk !M! kort.",
+                  "UPGRADE_DESCRIPTION":  "Hver gang du fjerner 1 ${modID}:Gjeld, trekk !M! kort."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Rekviem",
+              "DESCRIPTION":  "Hver *Elendighet du har vraket påfører en tilfeldig fiende !D! Skade",
+              "UPGRADE_DESCRIPTION":  "Hver *Elendighet du har vraket påfører en tilfeldig fiende !D! Skade",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Påfører !${modID}:HITS! treff totalt)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Fortvilt tiltak",
+                   "DESCRIPTION":  "Påfør !D! Skade. NL Hvis dette ikke dreper fienden, mist !M! HP.",
+                   "UPGRADE_DESCRIPTION":  "Påfør !D! Skade. NL Hvis dette ikke dreper fienden, mist !M! HP."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Uopphørlig krig",
+                 "DESCRIPTION":  "Påfør !D! Skade !${modID}:HITS! ganger. NL Hver gang dette dreper en fiende, øk dette kortets treffantall permanent med 1 for resten av løpet. NL Vrakes",
+                 "UPGRADE_DESCRIPTION":  "Påfør !D! Skade !${modID}:HITS! ganger. NL Hver gang dette dreper en fiende, øk dette kortets treffantall permanent med 1 for resten av løpet. NL Vrakes"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Endelig dom",
+                  "DESCRIPTION":  "Kan bare spilles hvis du har minst 4 ${modID}:Gjeld. NL Påfør ALLE fiender !D! Skade. NL Fjern all ${modID}:Synd.",
+                  "UPGRADE_DESCRIPTION":  "Kan bare spilles hvis du har minst 4 ${modID}:Gjeld. NL Påfør ALLE fiender !D! Skade. NL Fjern all ${modID}:Synd.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Du trenger minst 4 ${modID}:Gjeld for å spille dette."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Flammende",
+              "DESCRIPTION":  "Vrak alle kort på hånda. NL Trekk !M! kort for hvert vrakede statuskort. NL Vrakes",
+              "UPGRADE_DESCRIPTION":  "Vrak alle kort på hånda. NL Trekk !M! kort for hvert vrakede statuskort. NL Vrakes"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Klippefast",
+                "DESCRIPTION":  "Blokker !B! Skade. NL Mist 3 maks HP.",
+                "UPGRADE_DESCRIPTION":  "Blokker !B! Skade. NL Mist 3 maks HP."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Hengivenhet",
+               "DESCRIPTION":  "Fjern all din ${modID}:Gjeld, Sårbar, Svakhet og Skrøpelig. NL For hver fjernede stabel, få 1 Energi og trekk !M! kort. NL Vrakes",
+               "UPGRADE_DESCRIPTION":  "Fjern all din ${modID}:Gjeld, Sårbar, Svakhet og Skrøpelig. NL For hver fjernede stabel, få 1 Energi og trekk !M! kort. NL Vrakes"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Forargelse",
+                "DESCRIPTION":  "I de neste X rundene koster det første kortet du spiller hver runde 0. NL Vrakes",
+                "UPGRADE_DESCRIPTION":  "I de neste X+1 rundene koster det første kortet du spiller hver runde 0. NL Vrakes"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Blodfeide",
+                "DESCRIPTION":  "Legg 1 *Elendighet på hånda. NL Utløs umiddelbart !M!% av alle fiendens ${modID}:Blødning.",
+                "UPGRADE_DESCRIPTION":  "Legg 1 *Elendighet på hånda. NL Utløs umiddelbart !M!% av alle fiendens ${modID}:Blødning."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Tomrommets kall",
+               "DESCRIPTION":  "Velg 1 kort fra trekkebunken og legg det på hånda. Det blir Eterisk. NL Vrakes",
+               "UPGRADE_DESCRIPTION":  "Velg 1 kort fra trekkebunken og legg det på hånda. Det blir Eterisk."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Spredning",
+              "DESCRIPTION":  "Påfør !M! ${modID}:Blødning. NL Påfør alle fiendens nedgraderinger til alle andre fiender.",
+              "UPGRADE_DESCRIPTION":  "Påfør !M! ${modID}:Blødning. NL Påfør alle fiendens nedgraderinger til alle andre fiender."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Sulten kampvilje",
+                    "DESCRIPTION":  "I starten av hver runde, få [E] . NL På slutten av hver runde, ta 3 skade.",
+                    "UPGRADE_DESCRIPTION":  "I starten av hver runde, få [E] . NL På slutten av hver runde, ta 3 skade."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Dommens form",
+                  "DESCRIPTION":  "Det første angrepskortet du spiller hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden det påfører.",
+                  "UPGRADE_DESCRIPTION":  "De to første angrepskortene du spiller hver runde påfører ${modID}:Blødning tilsvarende den ublokkerte skaden de påfører."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Syndens inkarnasjon",
+                "DESCRIPTION":  "På slutten av runden din, få !B! Skadeblokkering, pluss !M! Skadeblokkering for hver stabel ${modID}:Gjeld.",
+                "UPGRADE_DESCRIPTION":  "På slutten av runden din, få !B! Skadeblokkering, pluss !M! Skadeblokkering for hver stabel ${modID}:Gjeld.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Få !${modID}:TOTAL_BLOCK! Skadeblokkering totalt)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Blodbad",
+                "DESCRIPTION":  "Påfør 50% mer Skade til fiender under !M!% av sin maks HP.",
+                "UPGRADE_DESCRIPTION":  "Påfør 50% mer Skade til fiender under !M!% av sin maks HP."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Overstiv",
+                "DESCRIPTION":  "Få 5 Styrke. NL Hver gang du spiller et angrepskort, mister det permanent !M! Skade for resten av kampen.",
+                "UPGRADE_DESCRIPTION":  "Få 5 Styrke. NL Hver gang du spiller et angrepskort, mister det permanent !M! Skade for resten av kampen."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Floket",
+                "DESCRIPTION":  "Hver gang du trekker dette kortet, legg 1 kopi av det på hånda. NL Vrakes NL Når dette kortet vrakes, legg 1 Slim til trekkstokken."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Opptøyer",
+             "DESCRIPTION":  "Påfør !D! Skade X ganger. NL Hver ${modID}:Gjeld du har får dette kortet til å påføre !M! ekstra Skade.",
+             "UPGRADE_DESCRIPTION":  "Påfør !D! Skade X ganger. NL Hver ${modID}:Gjeld du har får dette kortet til å påføre !M! ekstra Skade.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Påfør !${modID}:TOTAL_DAMAGE! Skade per treff)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Blodflekk",
+                "DESCRIPTION":  "Påfør !M! ${modID}:Blødning. NL Gjør dette igjen en gang for hver ${modID}:Gjeld du har. NL Vrakes.",
+                "UPGRADE_DESCRIPTION":  "Påfør !M! ${modID}:Blødning. NL Gjør dette igjen en gang for hver ${modID}:Gjeld du har."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Knust rustning",
+                "DESCRIPTION":  "Blokker !B! Skade. NL Hver gang du spiller dette kortet, blokkerer du 2 mindre Skade（i denne kampen）.",
+                "UPGRADE_DESCRIPTION":  "Blokker !B! Skade. NL Hver gang du spiller dette kortet, blokkerer du 2 mindre Skade（i denne kampen）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Pakt",
+               "DESCRIPTION":  "Få [E] [E]. NL Legg 1 *Elendighet til kastestokken",
+               "UPGRADE_DESCRIPTION":  "Få [E] [E] [E]. NL Legg 1 *Elendighet til kastestokken"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Svindel",
+              "DESCRIPTION":  "Trekk !M! kort. NL Få !M! ${modID}:Synd.",
+              "UPGRADE_DESCRIPTION":  "Trekk !M! kort. NL Få !M! ${modID}:Synd."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Nåde",
+              "DESCRIPTION":  "Eterisk. NL Vrak *Elendighet på hånda på slutten av hver runde. NL Få !M! ${modID}:Synd.",
+              "UPGRADE_DESCRIPTION":  "Eterisk. NL Vrak *Elendighet på hånda på slutten av hver runde. NL Få !M! ${modID}:Synd."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Forberedelse",
+              "DESCRIPTION":  "Startkort. NL Trekk !M! kort. NL Behold hånda denne runden. NL Vrakes.",
+              "UPGRADE_DESCRIPTION":  "Startkort. NL Trekk !M! kort. NL Behold hånda denne runden. NL Vrakes."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Tilbakefall",
+              "DESCRIPTION":  "Påfør 3 ${modID}:Blødning. NL En fiendes ${modID}:Blødning fjernes ikke i én runde.",
+              "UPGRADE_DESCRIPTION":  "Påfør 3 ${modID}:Blødning. NL ALLE fiendens ${modID}:Blødning fjernes ikke i én runde."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Delt lidelse",
+                  "DESCRIPTION":  "For hver ${modID}:Gjeld du har, svekk ALLE fiender med !M! og gjør dem !M! Sårbar. NL Vrakes.",
+                  "UPGRADE_DESCRIPTION":  "For hver ${modID}:Gjeld du har, svekk ALLE fiender med !M! og gjør dem !M! Sårbar. NL Vrakes."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Tabu",
+              "DESCRIPTION":  "Få 1 Energi for hver ${modID}:Gjeld du har. NL Få 1 ${modID}:Restriksjon.",
+              "UPGRADE_DESCRIPTION":  "Få 1 Energi for hver ${modID}:Gjeld du har, pluss 1. NL Få 1 ${modID}:Restriksjon.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Kan ikke få energi)",
+                            " (Få !${modID}:TOTAL_ENERGY! Energi)",
+                            " (Få !${modID}:TOTAL_ENERGY! Energi!)"
+                          ]
+            }
+}

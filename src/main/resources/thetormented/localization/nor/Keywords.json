@@ -1,0 +1,40 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Blødning",
+    "NAMES": [
+      "blødning",
+      "blødningen",
+      "blødninger"
+    ],
+    "DESCRIPTION": "I starten av runden sin mister den HP tilsvarende blødningsstablene sine, og fjerner deretter halvparten av Blødningen. Dype sår hindrer Blødning i å bli fjernet den runden. Når en blødende skapning tar ublokkert angrepsskade, får den #b1 Blødning."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Synd",
+    "NAMES": [
+      "synd",
+      "synden",
+      "synder"
+    ],
+    "DESCRIPTION": "For hver #b5 Synd du har, får du #b1 Gjeld."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Gjeld",
+    "NAMES": [
+      "gjeld",
+      "gjelden"
+    ],
+    "DESCRIPTION": "Hver stabel Gjeld gjør at du tar #b10% mer Skade. Når en Gjeld-påføring blokkeres av Magimotstand, mister du %%SIN_PER_DEBT%% Synd for hver blokkerte Gjeld."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Restriksjon",
+    "NAMES": [
+      "restriksjon",
+      "restriksjonen"
+    ],
+    "DESCRIPTION": "Du kan ikke få [E] med mindre du fullstendig fjerner all Gjeld. Fjernes ved slutten av runden din."
+  }
+]

@@ -1,98 +1,112 @@
 {
-  "${modID}:RelicID": {
-    "NAME": "Gutes Relikt",
-    "FLAVOR": "Flavor-Text, der in der detaillierten Reliktansicht angezeigt wird.",
-    "DESCRIPTIONS": [
-      "Erhalte [E] zu Beginn deines Zuges. [E] ist ein Energiesymbol."
-    ]
-  }, "${modID}:CursedBrokenBlade": {
-    "NAME": "Verfluchte zerbrochene Klinge",
-    "FLAVOR": "Eine zerbrochene Klinge, die noch immer nach den Sünden anderer dürstet.",
-    "DESCRIPTIONS": [
-      "Verbessere zu Beginn jedes Kampfes für die Dauer des Kampfes einen zufälligen Schlag und eine zufällige Verteidigung. NL Erhalte zu Beginn jedes Zuges #b",
-      " ${modID}:Sünde."
-    ]
-  }, "${modID}:BarbedHook": {
-    "NAME": "Widerhaken",
-    "FLAVOR": "Ein grausamer Haken, der jedes Mal tiefer gräbt, wenn er Fleisch zerreißt.",
-    "DESCRIPTIONS": [
-      "Immer wenn du ${modID}:Blutung zufügst, füge #b1 zusätzliche ${modID}:Blutung zu."
-    ]
-  }, "${modID}:FrenziedGoblet": {
-    "NAME": "Wilder Kelch",
-    "FLAVOR": "In purer Raserei gebrauter Wein; jeder Toast saugt ein weiteres Leben aus.",
-    "DESCRIPTIONS": [
-      "Immer wenn ein Nicht-Statistengegner stirbt, heile #b8 LP."
-    ]
-  }, "${modID}:ContractSeal": {
-    "NAME": "Vertragssiegel",
-    "FLAVOR": "Ein in Blut unterzeichneter Vertrag, der nur von den Reinen gehalten wird.",
-    "DESCRIPTIONS": [
-      "Erhalte am Ende des Kampfes, wenn du keine ${modID}:Schuld hast, #b15 Gold."
-    ]
-  }, "${modID}:RecoveryCharm": {
-    "NAME": "Erholungscharme",
-    "FLAVOR": "Ein Charme, der jeder Wunde den Stich nimmt.",
-    "DESCRIPTIONS": [
-      "Immer wenn du LP verlieren würdest, verlierst du stattdessen höchstens #b18 LP."
-    ]
-  }, "${modID}:GargoyleArm": {
-    "NAME": "Gargoyle-Arm",
-    "FLAVOR": "Alter Stein, der Läuterung in Schutz verwandelt.",
-    "DESCRIPTIONS": [
-      "Immer wenn du #b1 Stapel eines Debuffs entfernst, erhalte #b1 Block."
-    ]
-  }, "${modID}:ScorchedBanner": {
-    "NAME": "Versengtes Banner",
-    "FLAVOR": "Ein zerschlissenes Banner, das nur die Leeren zusammenruft.",
-    "DESCRIPTIONS": [
-      "Wenn du am Ende deines Zuges keine Karten in der Hand hast, ziehe zu Beginn deines nächsten Zuges #b2 zusätzliche Karten."
-    ]
-  }, "${modID}:HeroLongsword": {
-    "NAME": "Langschwert des Helden",
-    "FLAVOR": "Eine Klinge, geschmiedet aus dem Versprechen der Erlösung.",
-    "DESCRIPTIONS": [
-      "Ersetzt Verfluchte zerbrochene Klinge. NL Verbessere beim Aufheben alle Schläge und Verteidigungen in deinem Deck. NL Erhalte zu Beginn jedes Zuges #b",
-      " ${modID}:Sünde."
-    ]
-  }, "${modID}:HeavyFetters": {
-    "NAME": "Schwere Fesseln",
-    "FLAVOR": "Ein eisernes Gewicht, das fesselt und dennoch Kraft verleiht.",
-    "DESCRIPTIONS": [
-      "Erhalte zu Beginn jedes Zuges [E]. NL Füge zu Beginn jedes Kampfes deinem Nachziehstapel 1 *Verstrickt hinzu."
-    ]
-  }, "${modID}:Drumstick": {
-    "NAME": "Trommelstock",
-    "FLAVOR": "Jeder Trommelschlag entfacht einen Funken Energie.",
-    "DESCRIPTIONS": [
-      "Jedes Mal, wenn du #b",
-      " Karten verbrauchst, erhalte [E]."
-    ]
-  }, "${modID}:RegretlessCoin": {
-    "NAME": "Reuelose Münze",
-    "FLAVOR": "Eine Münze, die jeden Fehltritt vergibt.",
-    "DESCRIPTIONS": [
-      "Immer wenn du einen Laden betrittst, erhalte #b",
-      " Gold."
-    ]
-  }, "${modID}:BlackstoneLantern": {
-    "NAME": "Schwarzstein-Laterne",
-    "FLAVOR": "Ihr kaltes Licht markiert jedes Leiden, das sie entfacht.",
-    "DESCRIPTIONS": [
-      "Das erste Mal, wenn du einem Gegner pro Kampf einen Debuff zufügst, erhalte [E]."
-    ]
-  }, "${modID}:IronHammer": {
-    "NAME": "Eisenhammer",
-    "FLAVOR": "Auf dem Amboss endloser Schlachten geschmiedet.",
-    "DESCRIPTIONS": [
-      "Immer wenn du einen Elite besiegst, verbessere #b",
-      " zufällige Karten in deinem Deck."
-    ]
-  }, "${modID}:UndyingEmber": {
-    "NAME": "Unsterbliche Glut",
-    "FLAVOR": "Ein Funke, der sich von Missgeschick ernährt und niemals erlischt.",
-    "DESCRIPTIONS": [
-      "Immer wenn du einen Debuff hast, erleidest du #b25% weniger Schaden. NL Füge Gegnern mit einem Debuff #b25% mehr Schaden zu."
-    ]
-  }
+  "${modID}:RelicID":  {
+              "NAME":  "Gutes Relikt",
+              "FLAVOR":  "Flavor-Text, der in der detaillierten Reliktansicht angezeigt wird.",
+              "DESCRIPTIONS":  [
+                        "Erhalte [E] zu Beginn deines Zuges. [E] ist ein Energiesymbol."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "Verfluchte zerbrochene Klinge",
+                    "FLAVOR":  "Eine zerbrochene Klinge, die noch immer nach den Sünden anderer dürstet.",
+                    "DESCRIPTIONS":  [
+                              "Verbessere zu Beginn jedes Kampfes für die Dauer des Kampfes einen zufälligen Schlag und eine zufällige Verteidigung. NL Ab dem 2. Zug erhalte zu Beginn jedes Zuges #b",
+                              " ${modID}:Sünde."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "Widerhaken",
+                "FLAVOR":  "Ein grausamer Haken, der jedes Mal tiefer gräbt, wenn er Fleisch zerreißt.",
+                "DESCRIPTIONS":  [
+                          "Immer wenn du ${modID}:Blutung zufügst, füge #b1 zusätzliche ${modID}:Blutung zu."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "Wilder Kelch",
+                  "FLAVOR":  "In purer Raserei gebrauter Wein; jeder Toast saugt ein weiteres Leben aus.",
+                  "DESCRIPTIONS":  [
+                            "Immer wenn ein Nicht-Statistengegner stirbt, heile #b8 LP."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "Vertragssiegel",
+                "FLAVOR":  "Ein in Blut unterzeichneter Vertrag, der nur von den Reinen gehalten wird.",
+                "DESCRIPTIONS":  [
+                            "Erhalte am Ende des Kampfes, wenn du keine ${modID}:Schuld hast, #b15 Gold."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "Erholungscharme",
+                  "FLAVOR":  "Ein Charme, der jeder Wunde den Stich nimmt.",
+                  "DESCRIPTIONS":  [
+                            "Immer wenn du LP verlieren würdest, verlierst du stattdessen höchstens #b18 LP."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "Gargoyle-Arm",
+                "FLAVOR":  "Alter Stein, der Läuterung in Schutz verwandelt.",
+                "DESCRIPTIONS":  [
+                            "Immer wenn du #b1 Stapel eines Debuffs entfernst, erhalte #b1 Block."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "Versengtes Banner",
+                  "FLAVOR":  "Ein zerschlissenes Banner, das nur die Leeren zusammenruft.",
+                  "DESCRIPTIONS":  [
+                            "Wenn du am Ende deines Zuges keine Karten in der Hand hast, ziehe zu Beginn deines nächsten Zuges #b2 zusätzliche Karten."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "Langschwert des Helden",
+                  "FLAVOR":  "Eine Klinge, geschmiedet aus dem Versprechen der Erlösung.",
+                  "DESCRIPTIONS":  [
+                            "Ersetzt Verfluchte zerbrochene Klinge. NL Verbessere beim Aufheben alle Schläge und Verteidigungen in deinem Deck. NL Ab dem 2. Zug erhalte zu Beginn jedes Zuges #b",
+                            " ${modID}:Sünde."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "Schwere Fesseln",
+                "FLAVOR":  "Ein eisernes Gewicht, das fesselt und dennoch Kraft verleiht.",
+                "DESCRIPTIONS":  [
+                            "Erhalte zu Beginn jedes Zuges [E]. NL Füge zu Beginn jedes Kampfes deinem Nachziehstapel 1 *Verstrickt hinzu."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "Trommelstock",
+                "FLAVOR":  "Jeder Trommelschlag entfacht einen Funken Energie.",
+                "DESCRIPTIONS":  [
+                          "Jedes Mal, wenn du #b",
+                          " Karten verbrauchst, erhalte [E]."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "Reuelose Münze",
+                  "FLAVOR":  "Eine Münze, die jeden Fehltritt vergibt.",
+                  "DESCRIPTIONS":  [
+                            "Immer wenn du einen Laden betrittst, erhalte #b",
+                            " Gold."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "Schwarzstein-Laterne",
+                    "FLAVOR":  "Ihr kaltes Licht markiert jedes Leiden, das sie entfacht.",
+                    "DESCRIPTIONS":  [
+                              "Das erste Mal, wenn du einem Gegner pro Kampf einen Debuff zufügst, erhalte [E]."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "Eisenhammer",
+                "FLAVOR":  "Auf dem Amboss endloser Schlachten geschmiedet.",
+                "DESCRIPTIONS":  [
+                          "Immer wenn du einen Elite besiegst, verbessere #b",
+                          " zufällige Karten in deinem Deck."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "Unsterbliche Glut",
+                "FLAVOR":  "Ein Funke, der sich von Missgeschick ernährt und niemals erlischt.",
+                "DESCRIPTIONS":  [
+                            "Immer wenn du einen Debuff hast, erleidest du #b25% weniger Schaden. NL Füge Gegnern mit einem Debuff #b25% mehr Schaden zu."
+                          ]
+                }
 }

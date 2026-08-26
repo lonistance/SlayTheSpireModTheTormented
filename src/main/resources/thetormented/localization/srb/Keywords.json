@@ -1,0 +1,40 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Krvarenje",
+    "NAMES": [
+      "krvarenje",
+      "krvarenja",
+      "krvarenju"
+    ],
+    "DESCRIPTION": "Na početku svog poteza, izgubi ž. p. jednak broju svojih krvarenja, potom ukloni polovinu svojih krvarenja. Duboka rana sprečava uklanjanje krvarenja tog poteza. Kada stvorenje koje krvari primi štetu od neblokiranog napada, zadobi #b1 krvarenje."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Greh",
+    "NAMES": [
+      "greh",
+      "greha",
+      "grehe"
+    ],
+    "DESCRIPTION": "Svakih #b5 greha koje imaš daje #b1 ${modID}:Dug."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Dug",
+    "NAMES": [
+      "dug",
+      "duga",
+      "dugu"
+    ],
+    "DESCRIPTION": "Svaki sloj duga čini da primaš #b10% više štete. Kada je primena duga blokirana Zaštitom, gubiš %%SIN_PER_DEBT%% greha za svaki blokirani dug."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Ograničenje",
+    "NAMES": [
+      "ograničenje"
+    ],
+    "DESCRIPTION": "Ne možeš zadobiti [E] dok potpuno ne ukloniš sav svoj dug. Uklanja se na kraju tvog poteza."
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Perdarahan",
+    "NAMES": [
+      "perdarahan"
+    ],
+    "DESCRIPTION": "Pada awal gilirannya, kehilangan HP sebesar jumlah Perdarahan yang dimilikinya, lalu setengah Perdarahan dihilangkan. Luka dalam mencegah Perdarahan dihilangkan pada giliran itu. Saat makhluk yang berdarah menerima kerusakan serangan yang tidak diblok, ia mendapat #b1 Perdarahan."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Dosa",
+    "NAMES": [
+      "dosa"
+    ],
+    "DESCRIPTION": "Setiap #b5 Dosa yang kamu miliki memberikan #b1 Utang."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Utang",
+    "NAMES": [
+      "utang"
+    ],
+    "DESCRIPTION": "Setiap lapisan Utang membuatmu menerima #b10% lebih banyak kerusakan. Saat pemberian Utang diblokir oleh Artefak, kamu kehilangan %%SIN_PER_DEBT%% Dosa untuk setiap 1 Utang yang diblokir."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Pembatasan",
+    "NAMES": [
+      "pembatasan"
+    ],
+    "DESCRIPTION": "Kamu tidak dapat memperoleh [E] kecuali kamu menghilangkan seluruh Utangmu. Dihilangkan pada akhir giliranmu."
+  }
+]

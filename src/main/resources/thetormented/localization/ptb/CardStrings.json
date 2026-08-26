@@ -1,0 +1,447 @@
+{
+  "${modID}:ExampleCard":  {
+                "NAME":  "Nome",
+                "DESCRIPTION":  "Descrição. NL Segunda linha.",
+                "UPGRADE_DESCRIPTION":  "Isso será usado automaticamente se a carta for aprimorada. Remova se não for necessário.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Você pode colocar mais texto aqui.",
+                               "Se você precisar usar para algo.",
+                               "Blizzard é um bom exemplo para isso."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Golpe",
+                  "DESCRIPTION":  "Cause !D! de dano.",
+                  "UPGRADE_DESCRIPTION":  "Cause !D! de dano."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Defesa",
+                  "DESCRIPTION":  "Ganhe !B! de Proteção.",
+                  "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Rebelde",
+              "DESCRIPTION":  "Cause !D! de dano. NL Cause ${modID}:Sangramento igual ao dano causado.",
+              "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Cause ${modID}:Sangramento igual ao dano causado.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Cause !M! de ${modID}:Sangramento)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Perdão",
+              "DESCRIPTION":  "Ganhe !B! de Proteção. NL Reduza !M! ${modID}:Pecado.",
+              "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Reduza !M! ${modID}:Pecado."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Corte",
+              "DESCRIPTION":  "Cause !D! de dano. NL Aplique !M! de ${modID}:Sangramento.",
+              "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Aplique !M! de ${modID}:Sangramento."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Rasgo",
+             "DESCRIPTION":  "Cause !D! de dano. NL Se o inimigo tiver ${modID}:Sangramento, cause !M! golpes adicionais.",
+             "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Se o inimigo tiver ${modID}:Sangramento, cause !M! golpes adicionais."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Perseguição",
+              "DESCRIPTION":  "Só pode ser jogada se a última carta jogada neste turno for uma carta de Ataque. NL Cause !D! de dano.",
+              "UPGRADE_DESCRIPTION":  "Só pode ser jogada se a última carta jogada neste turno for uma carta de Ataque. NL Cause !D! de dano.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Você precisa jogar um Ataque primeiro neste turno."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Amputação",
+                "DESCRIPTION":  "Cause !D! de dano. NL Adicione !M! *Miséria à sua mão.",
+                "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Adicione !M! *Miséria à sua mão."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Lâmina Temperada",
+                  "DESCRIPTION":  "Cause !D! de dano. NL Aprimore !M! cartas da sua mão pelo resto do combate.",
+                  "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Aprimore !M! cartas da sua mão pelo resto do combate."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Tortura Cruel",
+                 "DESCRIPTION":  "Cause !D! de dano. Ganhe !${modID}:SIN! ${modID}:Pecado.",
+                 "UPGRADE_DESCRIPTION":  "Cause !D! de dano. Ganhe !${modID}:SIN! ${modID}:Pecado."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Golpe de Expiação",
+                  "DESCRIPTION":  "Cause !D! de dano. Compre !M! cartas se você tiver ${modID}:Dívida. NL Depois, perca 4 de ${modID}:Pecado.",
+                  "UPGRADE_DESCRIPTION":  "Cause !D! de dano. Compre !M! cartas se você tiver ${modID}:Dívida. NL Depois, perca 4 de ${modID}:Pecado."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Culpa Injusta",
+                   "DESCRIPTION":  "Cause !D! de dano a TODOS os inimigos. Ganhe !${modID}:SIN! ${modID}:Pecado.",
+                   "UPGRADE_DESCRIPTION":  "Cause !D! de dano a TODOS os inimigos. Ganhe !${modID}:SIN! ${modID}:Pecado."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Emaranhamento Implacável",
+                      "DESCRIPTION":  "Cause !D! de dano. NL Adicione-a à sua mão se a ${modID}:Dívida aumentar"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Agonia",
+              "DESCRIPTION":  "Cause !D! de dano. Aplique !M! de Fraqueza e !M! de Vulnerabilidade.",
+              "UPGRADE_DESCRIPTION":  "Cause !D! de dano. Aplique !M! de Fraqueza e !M! de Vulnerabilidade."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Terra Sagrada",
+                "DESCRIPTION":  "Ganhe !B! de Proteção. NL Compre !M! cartas, mas 1 carta a menos para cada ${modID}:Dívida que você tiver.",
+                "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Compre !M! cartas, mas 1 carta a menos para cada ${modID}:Dívida que você tiver.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Compre !M! cartas)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Empréstimo",
+             "DESCRIPTION":  "Ganhe [E] [E] [E]. No próximo turno, perca [E]. NL Exaurir",
+             "UPGRADE_DESCRIPTION":  "Ganhe [E] [E] [E]. NL No próximo turno, perca [E]. NL Exaurir NL Reter"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Firmeza",
+             "DESCRIPTION":  "Ganhe !B! de Proteção. NL Reter",
+             "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Reter"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Peregrinação",
+              "DESCRIPTION":  "Compre !M! carta. NL Exaura 1 carta. NL Se você exaurir uma carta de condição, reduza 3 ${modID}:Pecado",
+              "UPGRADE_DESCRIPTION":  "Compre !M! cartas. NL Exaura 1 carta. NL Se você exaurir uma carta de condição, reduza 3 ${modID}:Pecado"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Guarda de Sangue",
+                "DESCRIPTION":  "Ganhe !B! de Proteção. NL Dê a um inimigo !M! de ${modID}:Sangramento.",
+                "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Dê a um inimigo !M! de ${modID}:Sangramento."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Súplica de Inocência",
+                  "DESCRIPTION":  "Ganhe !B! de Proteção. NL Cada ${modID}:Dívida fornece !M! de Proteção extra.",
+                  "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Cada ${modID}:Dívida fornece !M! de Proteção extra.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Ganhe !${modID}:TOTAL_BLOCK! de Proteção no total)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Medidas Preventivas",
+                    "DESCRIPTION":  "Compre !M! carta. Se for um Ataque, ela custa 0 até ser jogada neste turno.",
+                    "UPGRADE_DESCRIPTION":  "Compre !M! carta. Se for um Ataque, ela custa 0 até ser jogada neste turno."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Hostilidade",
+                "DESCRIPTION":  "Se a sua Proteção estiver abaixo de !${modID}:BLOCK_THRESHOLD!, aplique !M! de Fraqueza a todos os inimigos. NL Ganhe !B! de Proteção",
+                "UPGRADE_DESCRIPTION":  "Se a sua Proteção estiver abaixo de !${modID}:BLOCK_THRESHOLD!, aplique !M! de Fraqueza a todos os inimigos. NL Ganhe !B! de Proteção"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Grilhões",
+               "DESCRIPTION":  "Adicione 2 *Miséria. NL Ganhe !M! de Proteção para cada condição na sua mão",
+               "UPGRADE_DESCRIPTION":  "Adicione 2 *Miséria. NL Ganhe !M! de Proteção para cada condição na sua mão",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Ganhe !${modID}:TOTAL_BLOCK! de Proteção no total)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Golpe Dissuasório",
+                  "DESCRIPTION":  "Cause !D! de dano. NL O inimigo perde !M! de Força neste turno se a intenção dele for atacar",
+                  "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL O inimigo perde !M! de Força neste turno se a intenção dele for atacar"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Golpe Pesado",
+                "DESCRIPTION":  "Só pode ser jogada se você tiver !M! ${modID}:Dívida. Cause !D! de dano",
+                "UPGRADE_DESCRIPTION":  "Só pode ser jogada se você tiver !M! ${modID}:Dívida. Cause !D! de dano",
+                "EXTENDED_DESCRIPTION":  [
+                              "Só pode ser jogada se você tiver 2 ${modID}:Dívida"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Pecados em Lâminas",
+                 "DESCRIPTION":  "Cause !D! de dano. NL Compre cartas igual à sua ${modID}:Dívida.",
+                 "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Compre cartas igual à sua ${modID}:Dívida, mais 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Compre !${modID}:TOTAL_DRAW! carta(s))"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Caos Sujo",
+                "DESCRIPTION":  "Ganhe !${modID}:SIN! ${modID}:Pecados. NL Cause !D! de dano. Cada ${modID}:Dívida que você tiver causa !M! de dano extra",
+                "UPGRADE_DESCRIPTION":  "Ganhe !${modID}:SIN! ${modID}:Pecados. NL Cause !D! de dano. Cada ${modID}:Dívida que você tiver causa !M! de dano extra",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Espada Temperada",
+                  "DESCRIPTION":  "Cause !D! de dano. NL Cada condição que você exaurir causa !M! de dano extra",
+                  "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Cada condição que você exaurir causa !M! de dano extra",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Cause !${modID}:TOTAL_DAMAGE! de dano no total)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Esmagamento",
+              "DESCRIPTION":  "Cause !D! de dano. NL Ganhe Proteção igual ao ${modID}:Sangramento do inimigo",
+              "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Ganhe Proteção igual ao ${modID}:Sangramento do inimigo",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Ganhe !${modID}:TOTAL_BLOCK! de Proteção no total)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Acumular",
+              "DESCRIPTION":  "Cause !D! de dano 2 vezes. NL No próximo turno, ganhe [E]",
+              "UPGRADE_DESCRIPTION":  "Cause !D! de dano 2 vezes. NL No próximo turno, ganhe [E][E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Passado Pesado",
+                "DESCRIPTION":  "Cause !D! de dano 2 vezes. NL Adicione 1 *Miséria à pilha de compra e 1 à pilha de descarte. NL Compre !M! cartas.",
+                "UPGRADE_DESCRIPTION":  "Cause !D! de dano 2 vezes. NL Adicione 1 *Miséria à pilha de compra e 1 à pilha de descarte. NL Compre !M! cartas."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Implicação",
+                "DESCRIPTION":  "Exaura 1 carta da sua mão. NL Cause !D! de dano a TODOS os inimigos. NL Compre 1 carta para cada inimigo com ${modID}:Sangramento que receber dano.",
+                "UPGRADE_DESCRIPTION":  "Exaura 1 carta da sua mão. NL Cause !D! de dano a TODOS os inimigos. NL Compre 1 carta para cada inimigo com ${modID}:Sangramento que receber dano."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Chutes Consecutivos",
+                   "DESCRIPTION":  "Cause !D! de dano !M! vezes",
+                   "UPGRADE_DESCRIPTION":  "Cause !D! de dano !M! vezes"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Sangramento Massivo",
+                  "DESCRIPTION":  "Cause !D! de dano. NL Depois, cause dano igual ao ${modID}:Sangramento do inimigo",
+                  "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Depois, cause dano igual ao dobro do ${modID}:Sangramento do inimigo",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Cause !${modID}:TOTAL_DAMAGE! de dano no total)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Encare o Perigo",
+                "DESCRIPTION":  "Cause !D! de dano. NL Cada *Miséria que você jogar reduz em 1 a energia que ela custa neste combate",
+                "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Cada *Miséria que você jogar reduz em 1 a energia que ela custa neste combate"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Alívio",
+              "DESCRIPTION":  "Adicione 2 *Miséria à pilha de descarte. NL No fim do seu turno, exaurir todas as *Miséria da sua mão.",
+              "UPGRADE_DESCRIPTION":  "Inato. NL Adicione 2 *Miséria à pilha de descarte. NL No fim do seu turno, exaurir todas as *Miséria da sua mão."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Miséria",
+              "DESCRIPTION":  "Sofra 2 de dano. NL Compre 1 carta. NL Exaurida"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Aparar",
+              "DESCRIPTION":  "Ganhe !B! de Proteção. NL Sempre que você for atacado, reflita o dano que você bloqueou de volta ao atacante.",
+              "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Sempre que você for atacado, reflita o dano que você bloqueou de volta ao atacante."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Clemença",
+              "DESCRIPTION":  "Transforme TODAS as cartas em sua mão em cartas aleatórias. NL Depois de ser jogada !M! vezes, esta carta se transforma em uma carta de Poder aleatória",
+              "UPGRADE_DESCRIPTION":  "Transforme TODAS as cartas em sua mão em cartas aleatórias aprimoradas. NL Depois de ser jogada !M! vezes, esta carta se transforma em uma carta de Poder aleatória aprimorada",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Jogada !${modID}:PLAYS! vezes)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Memorial",
+               "DESCRIPTION":  "Compre 1 carta. NL Se a carta comprada for uma Habilidade, perca !M! de ${modID}:Pecado.",
+               "UPGRADE_DESCRIPTION":  "Compre 1 carta. NL Se a carta comprada for uma Habilidade, perca !M! de ${modID}:Pecado."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Fervura",
+              "DESCRIPTION":  "Exaura todas as cartas que não sejam de Ataque da sua mão. NL Aplique !M! de ${modID}:Sangramento a um inimigo aleatório para cada carta exaurida.",
+              "UPGRADE_DESCRIPTION":  "Exaura todas as cartas que não sejam de Ataque da sua mão. NL Aplique !M! de ${modID}:Sangramento a um inimigo aleatório para cada carta exaurida."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Pesar",
+              "DESCRIPTION":  "Adicione 1 carta de condição aleatória à sua mão. NL Neste turno, sempre que você comprar uma carta, aplique !M! de ${modID}:Sangramento a TODOS os inimigos.",
+              "UPGRADE_DESCRIPTION":  "Adicione 1 carta de condição aleatória à sua mão. NL Neste turno, sempre que você comprar uma carta, aplique !M! de ${modID}:Sangramento a TODOS os inimigos."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Mar de Sangue",
+               "DESCRIPTION":  "Aplique !${modID}:BLEED! de ${modID}:Sangramento. NL Multiplique o ${modID}:Sangramento daquele inimigo por !M!. NL Exaurir",
+               "UPGRADE_DESCRIPTION":  "Aplique !${modID}:BLEED! de ${modID}:Sangramento. NL Multiplique o ${modID}:Sangramento daquele inimigo por !M!. NL Exaurir"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Sangramento Implacável",
+                  "DESCRIPTION":  "No início de cada turno, aplique !M! de ${modID}:Sangramento a TODOS os inimigos.",
+                  "UPGRADE_DESCRIPTION":  "No início de cada turno, aplique !M! de ${modID}:Sangramento a TODOS os inimigos."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Memória Terrível",
+                "DESCRIPTION":  "Se você ganhou ${modID}:Dívida neste turno, os inimigos causam !M!% menos de dano. NL Dura apenas no turno em que você ganhou ${modID}:Dívida.",
+                "UPGRADE_DESCRIPTION":  "Se você ganhou ${modID}:Dívida neste turno, os inimigos causam !M!% menos de dano. NL Dura apenas no turno em que você ganhou ${modID}:Dívida."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Provação",
+              "DESCRIPTION":  "Ganhe !M! de Força e !M! de Destreza. NL Ganhe 1 de Fraqueza.",
+              "UPGRADE_DESCRIPTION":  "Ganhe !M! de Força e !M! de Destreza. NL Ganhe 1 de Fraqueza."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Conciliar o Destino",
+                  "DESCRIPTION":  "Sempre que você gerar ou exaurir uma *Miséria, ganhe !M! de Proteção.",
+                  "UPGRADE_DESCRIPTION":  "Sempre que você gerar ou exaurir uma *Miséria, ganhe !M! de Proteção."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Carne Despedaçada",
+                 "DESCRIPTION":  "Sempre que você aplicar 6 de ${modID}:Sangramento a um inimigo, cause !M! de dano a TODOS os inimigos.",
+                 "UPGRADE_DESCRIPTION":  "Sempre que você aplicar 6 de ${modID}:Sangramento a um inimigo, cause !M! de dano a TODOS os inimigos."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Espinhos de Sangue",
+                "DESCRIPTION":  "Sempre que um inimigo atacar você, aplique !M! de ${modID}:Sangramento a ele.",
+                "UPGRADE_DESCRIPTION":  "Sempre que um inimigo atacar você, aplique !M! de ${modID}:Sangramento a ele."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Caminho da Redenção",
+                  "DESCRIPTION":  "Sempre que você remover 1 ${modID}:Dívida, compre !M! cartas.",
+                  "UPGRADE_DESCRIPTION":  "Sempre que você remover 1 ${modID}:Dívida, compre !M! cartas."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Réquiem",
+              "DESCRIPTION":  "Cada *Miséria que você exauriu causa !D! de dano a um inimigo aleatório",
+              "UPGRADE_DESCRIPTION":  "Cada *Miséria que você exauriu causa !D! de dano a um inimigo aleatório",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Cause !${modID}:HITS! golpes no total)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Medida Desesperada",
+                   "DESCRIPTION":  "Cause !D! de dano. NL Se isso não matar o inimigo, perca !M! PV.",
+                   "UPGRADE_DESCRIPTION":  "Cause !D! de dano. NL Se isso não matar o inimigo, perca !M! PV."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Guerra Incessante",
+                 "DESCRIPTION":  "Cause !D! de dano !${modID}:HITS! vezes. NL Sempre que isto matar um inimigo, aumente permanentemente o número de golpes desta carta em 1 pelo resto da partida. NL Exaurir",
+                 "UPGRADE_DESCRIPTION":  "Cause !D! de dano !${modID}:HITS! vezes. NL Sempre que isto matar um inimigo, aumente permanentemente o número de golpes desta carta em 1 pelo resto da partida. NL Exaurir"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Julgamento Final",
+                  "DESCRIPTION":  "Só pode ser jogada se você tiver pelo menos 4 ${modID}:Dívida. NL Cause !D! de dano a TODOS os inimigos. NL Remova todo o seu ${modID}:Pecado.",
+                  "UPGRADE_DESCRIPTION":  "Só pode ser jogada se você tiver pelo menos 4 ${modID}:Dívida. NL Cause !D! de dano a TODOS os inimigos. NL Remova todo o seu ${modID}:Pecado.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Você precisa de pelo menos 4 ${modID}:Dívida para jogar."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Incandescente",
+              "DESCRIPTION":  "Exaura todas as cartas da sua mão. NL Compre !M! cartas para cada carta de condição exaurida. NL Exaurir",
+              "UPGRADE_DESCRIPTION":  "Exaura todas as cartas da sua mão. NL Compre !M! cartas para cada carta de condição exaurida. NL Exaurir"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Sólido como Rocha",
+                "DESCRIPTION":  "Ganhe !B! de Proteção. NL Perca 3 de PV máximo.",
+                "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Perca 3 de PV máximo."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Devoção",
+               "DESCRIPTION":  "Remova todo o seu ${modID}:Dívida, Vulnerabilidade, Fraqueza e Frágil. NL Para cada acumulado removido, ganhe 1 Energia e compre !M! cartas. NL Exaurir",
+               "UPGRADE_DESCRIPTION":  "Remova todo o seu ${modID}:Dívida, Vulnerabilidade, Fraqueza e Frágil. NL Para cada acumulado removido, ganhe 1 Energia e compre !M! cartas. NL Exaurir"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Indignação",
+                "DESCRIPTION":  "Nos próximos X turnos, a primeira carta que você jogar em cada turno custa 0. NL Exaurir",
+                "UPGRADE_DESCRIPTION":  "Nos próximos X+1 turnos, a primeira carta que você jogar em cada turno custa 0. NL Exaurir"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Faida de Sangue",
+                "DESCRIPTION":  "Adicione 1 *Miséria à sua mão. NL Acione imediatamente !M!% do ${modID}:Sangramento de todos os inimigos.",
+                "UPGRADE_DESCRIPTION":  "Adicione 1 *Miséria à sua mão. NL Acione imediatamente !M!% do ${modID}:Sangramento de todos os inimigos."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Chamado do Vazio",
+               "DESCRIPTION":  "Escolha 1 carta da sua pilha de compra e adicione-a à sua mão. Ela se torna Etérea. NL Exaurir",
+               "UPGRADE_DESCRIPTION":  "Escolha 1 carta da sua pilha de compra e adicione-a à sua mão. Ela se torna Etérea."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Propagação",
+              "DESCRIPTION":  "Aplique !M! de ${modID}:Sangramento. NL Aplique todos os efeitos negativos daquele inimigo a todos os outros inimigos.",
+              "UPGRADE_DESCRIPTION":  "Aplique !M! de ${modID}:Sangramento. NL Aplique todos os efeitos negativos daquele inimigo a todos os outros inimigos."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Vontade de Batalha Faminta",
+                    "DESCRIPTION":  "No início de cada turno, ganhe [E] . NL No final de cada turno, receba 3 de dano.",
+                    "UPGRADE_DESCRIPTION":  "No início de cada turno, ganhe [E] . NL No final de cada turno, receba 3 de dano."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Forma de Julgamento",
+                  "DESCRIPTION":  "A sua primeira carta de Ataque jogada em cada turno aplica ${modID}:Sangramento igual ao dano não bloqueado que ela causa.",
+                  "UPGRADE_DESCRIPTION":  "As suas duas primeiras cartas de Ataque jogadas em cada turno aplicam ${modID}:Sangramento igual ao dano não bloqueado que elas causam."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Encarnação do Pecado",
+                "DESCRIPTION":  "No fim do seu turno, ganhe !B! de Proteção, mais !M! de Proteção para cada acumulado de ${modID}:Dívida.",
+                "UPGRADE_DESCRIPTION":  "No fim do seu turno, ganhe !B! de Proteção, mais !M! de Proteção para cada acumulado de ${modID}:Dívida.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Ganhe !${modID}:TOTAL_BLOCK! de Proteção no total)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Banho de Sangue",
+                "DESCRIPTION":  "Cause 50% a mais de dano a inimigos abaixo de !M!% do PV máximo deles.",
+                "UPGRADE_DESCRIPTION":  "Cause 50% a mais de dano a inimigos abaixo de !M!% do PV máximo deles."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Rígido Demais",
+                "DESCRIPTION":  "Ganhe 5 de Força. NL Cada vez que você jogar uma carta de Ataque, ela perde permanentemente !M! de dano pelo resto do combate.",
+                "UPGRADE_DESCRIPTION":  "Ganhe 5 de Força. NL Cada vez que você jogar uma carta de Ataque, ela perde permanentemente !M! de dano pelo resto do combate."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Emaranhado",
+                "DESCRIPTION":  "Sempre que você comprar esta carta, adicione 1 cópia dela à sua mão. NL Exaurir NL Quando esta carta for exaurida, adicione 1 Meleca à pilha de compra."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Revolta",
+             "DESCRIPTION":  "Cause !D! de dano X vezes. NL Cada ${modID}:Dívida que você tiver faz esta carta causar !M! de dano extra.",
+             "UPGRADE_DESCRIPTION":  "Cause !D! de dano X vezes. NL Cada ${modID}:Dívida que você tiver faz esta carta causar !M! de dano extra.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Cause !${modID}:TOTAL_DAMAGE! de dano por golpe)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Mancha de Sangue",
+                "DESCRIPTION":  "Aplique !M! de ${modID}:Sangramento. NL Repita isso mais uma vez para cada ${modID}:Dívida que você tiver. NL Exaurir.",
+                "UPGRADE_DESCRIPTION":  "Aplique !M! de ${modID}:Sangramento. NL Repita isso mais uma vez para cada ${modID}:Dívida que você tiver."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Armadura Quebrada",
+                "DESCRIPTION":  "Ganhe !B! de Proteção. NL Cada vez que jogar, ganhe 2 a menos de Proteção（nesta batalha）.",
+                "UPGRADE_DESCRIPTION":  "Ganhe !B! de Proteção. NL Cada vez que jogar, ganhe 2 a menos de Proteção（nesta batalha）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Pacto de Forma",
+               "DESCRIPTION":  "Ganhe [E] [E]. NL Adicione 1 *Miséria à pilha de descarte",
+               "UPGRADE_DESCRIPTION":  "Ganhe [E] [E] [E]. NL Adicione 1 *Miséria à pilha de descarte"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Fraude",
+              "DESCRIPTION":  "Compre !M! cartas. NL Ganhe !M! ${modID}:Pecado.",
+              "UPGRADE_DESCRIPTION":  "Compre !M! cartas. NL Ganhe !M! ${modID}:Pecado."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Misericórdia",
+              "DESCRIPTION":  "Etérea. NL Exaurir as *Miséria da sua mão no fim de cada turno. NL Ganhe !M! ${modID}:Pecado.",
+              "UPGRADE_DESCRIPTION":  "Etérea. NL Exaurir as *Miséria da sua mão no fim de cada turno. NL Ganhe !M! ${modID}:Pecado."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Preparação",
+              "DESCRIPTION":  "Inato. NL Compre !M! cartas. NL Retenha a sua mão neste turno. NL Exaurir.",
+              "UPGRADE_DESCRIPTION":  "Inato. NL Compre !M! cartas. NL Retenha a sua mão neste turno. NL Exaurir."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Recaída",
+              "DESCRIPTION":  "Aplique 3 ${modID}:Sangramento. NL O ${modID}:Sangramento de um inimigo não será removido por um turno.",
+              "UPGRADE_DESCRIPTION":  "Aplique 3 ${modID}:Sangramento. NL O ${modID}:Sangramento de TODOS os inimigos não será removido por um turno."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Sofrimento Compartilhado",
+                  "DESCRIPTION":  "Para cada ${modID}:Dívida que você tiver, aplique !M! de Fraqueza e !M! de Vulnerabilidade a TODOS os inimigos. NL Exaurir.",
+                  "UPGRADE_DESCRIPTION":  "Para cada ${modID}:Dívida que você tiver, aplique !M! de Fraqueza e !M! de Vulnerabilidade a TODOS os inimigos. NL Exaurir."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Tabu",
+              "DESCRIPTION":  "Ganhe 1 Energia para cada ${modID}:Dívida que você tiver. NL Ganhe 1 ${modID}:Restrição.",
+              "UPGRADE_DESCRIPTION":  "Ganhe 1 Energia para cada ${modID}:Dívida que você tiver, mais 1. NL Ganhe 1 ${modID}:Restrição.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Não é possível ganhar energia)",
+                            " (Ganhe !${modID}:TOTAL_ENERGY! de Energia)",
+                            " (Ganhe !${modID}:TOTAL_ENERGY! de Energia!)"
+                          ]
+            }
+}

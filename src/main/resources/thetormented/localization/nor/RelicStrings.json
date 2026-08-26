@@ -1,0 +1,112 @@
+{
+  "${modID}:RelicID":  {
+              "NAME":  "God relikvie",
+              "FLAVOR":  "Smakstekst vist i den detaljerte relikvievisingen.",
+              "DESCRIPTIONS":  [
+                        "Få [E] i starten av runden din. [E] er et energiikon."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "Forbannet brukket klinge",
+                    "FLAVOR":  "En knust klinge som fortsatt tørster etter andres synder.",
+                    "DESCRIPTIONS":  [
+                              "I starten av hver kamp, oppgrader et tilfeldig Slag og et tilfeldig Forsvar for kampens varighet. NL Fra 2. runde, få #b i starten av hver runde",
+                              " ${modID}:Synd."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "Pigget krok",
+                "FLAVOR":  "En grusom krok som graver dypere hver gang den river i kjøtt.",
+                "DESCRIPTIONS":  [
+                          "Hver gang du påfører ${modID}:Blødning, påfør #b1 ekstra ${modID}:Blødning."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "Vanvittig beger",
+                  "FLAVOR":  "Vin brygget i ren vanvidd; hver skål tapper nok et liv.",
+                  "DESCRIPTIONS":  [
+                            "Når en fiende som ikke er en minion dør, helbreder du #b8 HP."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "Kontraktsegl",
+                "FLAVOR":  "En kontrakt signert i blod, bare æret av de rene.",
+                "DESCRIPTIONS":  [
+                            "Ved slutten av kampen, hvis du ikke har ${modID}:Gjeld, få #b15 gull."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "Gjenopprettingssjarm",
+                  "FLAVOR":  "En sjarm som trekker stingen ut av hvert sår.",
+                  "DESCRIPTIONS":  [
+                            "Når du skulle miste HP, mister du høyst #b18 HP i stedet."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "Gargoylearm",
+                "FLAVOR":  "Gammel stein som gjør renselse til beskyttelse.",
+                "DESCRIPTIONS":  [
+                            "Hver gang du fjerner #b1 stabel av en nedgradering, få #b1 Skadeblokkering."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "Svidde fane",
+                  "FLAVOR":  "Et fillete banner som bare samler de tomhendte.",
+                  "DESCRIPTIONS":  [
+                            "På slutten av runden din, hvis du ikke har kort på hånda, trekk #b2 ekstra kort i starten av neste runde."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "Heltens langsverd",
+                  "FLAVOR":  "En klinge smidd av løfter om forløsning.",
+                  "DESCRIPTIONS":  [
+                            "Erstatter Forbannet brukket klinge. NL Ved oppsamling, oppgrader alle Slag og Forsvar i kortstokken din. NL Fra 2. runde, få #b i starten av hver runde",
+                            " ${modID}:Synd."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "Tunge lenker",
+                "FLAVOR":  "En jernvekt som binder, men gir styrke.",
+                "DESCRIPTIONS":  [
+                            "I starten av hver runde, få [E] . NL I starten av hver kamp, legg 1 *Floket i trekkebunken din."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "Trommestikke",
+                "FLAVOR":  "Hvert trommeslag vekker en gnist av energi.",
+                "DESCRIPTIONS":  [
+                          "Hver gang du vraker #b",
+                          " kort, få [E] ."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "Angerløs mynt",
+                  "FLAVOR":  "En mynt som tilgir hvert feiltrinn.",
+                  "DESCRIPTIONS":  [
+                            "Hver gang du går inn i en butikk, få #b",
+                            " Gull."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "Svartsteinslanterne",
+                    "FLAVOR":  "Det kalde lyset merker hver plage det vekker.",
+                    "DESCRIPTIONS":  [
+                              "Første gang du påfører en fiende en nedgradering hver kamp, få [E] ."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "Jernhammer",
+                "FLAVOR":  "Smidd på ambolten til endeløse kamper.",
+                "DESCRIPTIONS":  [
+                          "Hver gang du beseirer en Elite, oppgrader #b",
+                          " tilfeldige kort i kortstokken din."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "Udødelig glør",
+                "FLAVOR":  "En gnist som lever på ulykke og aldri slukner.",
+                "DESCRIPTIONS":  [
+                            "Når du har en nedgradering, ta #b25% mindre Skade. NL Påfør #b25% mer Skade til fiender som har en nedgradering."
+                          ]
+                }
+}

@@ -5,11 +5,13 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.utils.GdxRuntimeException;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.Settings;
 
 import java.util.HashMap;
 import java.util.Locale;
 
 import static thetormented.BasicMod.*;
+import static thetormented.util.GeneralUtils.removePrefix;
 
 public class TextureLoader {
     private static final HashMap<String, Texture> textures = new HashMap<>();
@@ -83,7 +85,8 @@ public class TextureLoader {
 
     public static String getCardTextureString(final String cardName, final AbstractCard.CardType cardType)
     {
-        String textureString = imagePath("cards/" + cardType.name().toLowerCase(Locale.ROOT) + "/" + cardName + ".png");
+        String folder = Settings.PLAYTESTER_ART_MODE ? "cards_test" : "cards";
+        String textureString = imagePath(folder + "/" + cardType.name().toLowerCase(Locale.ROOT) + "/" + cardName + ".png");
 
         FileHandle h = Gdx.files.internal(textureString);
         if (!h.exists())
@@ -102,6 +105,24 @@ public class TextureLoader {
         }
 
         return textureString;
+    }
+
+    public static String getCardTestTextureString(final String cardID, final AbstractCard.CardType cardType)
+    {
+        String textureString = imagePath("cards_test/" + cardType.name().toLowerCase(Locale.ROOT) + "/" + removePrefix(cardID) + ".png");
+        if (Gdx.files.internal(textureString).exists()) {
+            return textureString;
+        }
+        return null;
+    }
+
+    public static String getCardTestPortraitString(final String cardID, final AbstractCard.CardType cardType)
+    {
+        String textureString = imagePath("cards_test/" + cardType.name().toLowerCase(Locale.ROOT) + "/" + removePrefix(cardID) + "_p.png");
+        if (Gdx.files.internal(textureString).exists()) {
+            return textureString;
+        }
+        return null;
     }
 
     private static void loadTexture(final String textureString) throws GdxRuntimeException {

@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Nama Peristiwa",
+    "DESCRIPTIONS": [
+      "Ini adalah teks peristiwa, umumnya digunakan untuk menggambarkan apa yang terjadi.",
+      "#g~Ini~ #g~adalah~ #g~teks~ #g~hijau~ #g~dan~ #g~bergelombang.~",
+      "#r@MERAH@ #r@DAN@ #r@BERGETAR@ #r@TEKS.@",
+      "#rMerah #gHijau #yKuning #bBiru #pUngu. ~Bergelombang~ @bergetar.@",
+      "Kamu harus menandai setiap kata satu per satu.",
+      "Kamu juga dapat menggunakan kode warna hex seperti [#ffffff]putih[] untuk mewarnai teks.",
+      "Kode warna hex juga berfungsi dalam teks kartu! Tapi tidak pada kata kunci, tanpa beberapa cara kerja tambahan."
+    ],
+    "OPTIONS": [
+      "[Deskripsi Tindakan] Apa yang sebenarnya kamu dapatkan.",
+      "[Penolakan] #rKehilangan #r1 #rHP #rMaks. Hal buruk berwarna merah.",
+      "[Penerimaan] #gDapatkan #gApoteosis. Hal baik berwarna hijau.",
+      "[Tinggalkan]",
+      "Pilih kartu untuk dihilangkan. (Kamu juga dapat menambahkan teks ekstra seperti ini di sini.)"
+    ]
+  }
+}

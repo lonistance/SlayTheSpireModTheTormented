@@ -1,0 +1,447 @@
+{
+  "${modID}:ExampleCard":  {
+                "NAME":  "名前",
+                "DESCRIPTION":  "説明。 NL 2行目。",
+                "UPGRADE_DESCRIPTION":  "カードがアップグレードされた場合に自動的に使用されます。不要なら削除してください。",
+                "EXTENDED_DESCRIPTION":  [
+                               "ここにテキストを追加できます。",
+                               "何かに使う必要がある場合。",
+                               "ブリザードはこれの良い例です。"
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "ストライク",
+                  "DESCRIPTION":  "!D! ダメージを与える。",
+                  "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。"
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "防御",
+                  "DESCRIPTION":  "!B! ブロックを得る。",
+                  "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。"
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "反逆",
+              "DESCRIPTION":  "!D! ダメージを与える。 NL 与えたダメージに等しい ${modID}:出血 を与える。",
+              "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL 与えたダメージに等しい ${modID}:出血 を与える。",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL （${modID}:出血 を !M! 与える）"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "赦し",
+              "DESCRIPTION":  "!B! ブロックを得る。 NL ${modID}:罪 を !M! 減らす。",
+              "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL ${modID}:罪 を !M! 減らす。"
+            },
+  "${modID}:Slash":  {
+              "NAME":  "斬撃",
+              "DESCRIPTION":  "!D! ダメージを与える。 NL ${modID}:出血 を !M! 与える。",
+              "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL ${modID}:出血 を !M! 与える。"
+            },
+  "${modID}:Rend":  {
+             "NAME":  "引き裂き",
+             "DESCRIPTION":  "!D! ダメージを与える。 NL 敵が ${modID}:出血 を受けている場合、追加で !M! 回攻撃する。",
+             "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL 敵が ${modID}:出血 を受けている場合、追加で !M! 回攻撃する。"
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "追撃",
+              "DESCRIPTION":  "このターン中に最後にプレイしたカードがアタックカードのときのみプレイできる。 NL !D! ダメージを与える。",
+              "UPGRADE_DESCRIPTION":  "このターン中に最後にプレイしたカードがアタックカードのときのみプレイできる。 NL !D! ダメージを与える。",
+              "EXTENDED_DESCRIPTION":  [
+                             "このターン中にアタックカードを先にプレイする必要がある。"
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "断腕",
+                "DESCRIPTION":  "!D! ダメージを与える。 NL 手札に *悲惨 を !M! 枚加える。",
+                "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL 手札に *悲惨 を !M! 枚加える。"
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "焼き入れの刃",
+                  "DESCRIPTION":  "!D! ダメージを与える。 NL この戦闘の間、手札のカードを !M! 枚アップグレードする。",
+                  "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL この戦闘の間、手札のカードを !M! 枚アップグレードする。"
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "残虐の拷問",
+                 "DESCRIPTION":  "!D! ダメージを与える。 ${modID}:罪 を !${modID}:SIN! 得る。",
+                 "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 ${modID}:罪 を !${modID}:SIN! 得る。"
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "贖罪のストライク",
+                  "DESCRIPTION":  "!D! ダメージを与える。 ${modID}:負債 がある場合、カードを !M! 枚引く。 NL その後、${modID}:罪 を 4 失う。",
+                  "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 ${modID}:負債 がある場合、カードを !M! 枚引く。 NL その後、${modID}:罪 を 4 失う。"
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "不義の罪",
+                   "DESCRIPTION":  "敵全体に !D! ダメージを与える。 ${modID}:罪 を !${modID}:SIN! 得る。",
+                   "UPGRADE_DESCRIPTION":  "敵全体に !D! ダメージを与える。 ${modID}:罪 を !${modID}:SIN! 得る。"
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "執拗なもつれ",
+                      "DESCRIPTION":  "!D! ダメージを与える。 NL ${modID}:負債 が増えた場合、このカードを手札に加える。"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "苦悶",
+              "DESCRIPTION":  "!D! ダメージを与える。 脱力 !M! と 弱体 !M! を与える。",
+              "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 脱力 !M! と 弱体 !M! を与える。"
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "聖地",
+                "DESCRIPTION":  "!B! ブロックを得る。 NL カードを !M! 枚引く。${modID}:負債 1 につき 1 枚少なくなる。",
+                "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL カードを !M! 枚引く。${modID}:負債 1 につき 1 枚少なくなる。",
+                "EXTENDED_DESCRIPTION":  [
+                              "（!M! 枚引く）"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "借金",
+             "DESCRIPTION":  "[E] [E] [E] を得る。 次のターン、 [E] を失う。 NL 廃棄",
+             "UPGRADE_DESCRIPTION":  "[E] [E] [E] を得る。 NL 次のターン、 [E] を失う。 NL 廃棄 NL 保留"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "堅固",
+             "DESCRIPTION":  "!B! ブロックを得る。 NL 保留",
+             "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL 保留"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "放浪",
+              "DESCRIPTION":  "カードを !M! 枚引く。 NL カードを 1 枚廃棄する。 NL 状態異常カードを廃棄した場合、${modID}:罪 を 3 減らす。",
+              "UPGRADE_DESCRIPTION":  "カードを !M! 枚引く。 NL カードを 1 枚廃棄する。 NL 状態異常カードを廃棄した場合、${modID}:罪 を 3 減らす。"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "血の守護",
+                "DESCRIPTION":  "!B! ブロックを得る。 NL 敵 1 体に ${modID}:出血 を !M! 与える。",
+                "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL 敵 1 体に ${modID}:出血 を !M! 与える。"
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "無実の嘆願",
+                  "DESCRIPTION":  "!B! ブロックを得る。 NL ${modID}:負債 1 につき、ブロックを !M! 追加で得る。",
+                  "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL ${modID}:負債 1 につき、ブロックを !M! 追加で得る。",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " （合計でブロックを !${modID}:TOTAL_BLOCK! 得る）"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "予測的措置",
+                    "DESCRIPTION":  "カードを !M! 枚引く。 アタックカードの場合、このターンプレイされるまでコストが 0 になる。",
+                    "UPGRADE_DESCRIPTION":  "カードを !M! 枚引く。 アタックカードの場合、このターンプレイされるまでコストが 0 になる。"
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "敵意",
+                "DESCRIPTION":  "あなたのブロックが !${modID}:BLOCK_THRESHOLD! 未満の場合、敵全体に 脱力 !M! を与える。 NL !B! ブロックを得る",
+                "UPGRADE_DESCRIPTION":  "あなたのブロックが !${modID}:BLOCK_THRESHOLD! 未満の場合、敵全体に 脱力 !M! を与える。 NL !B! ブロックを得る"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "鎖",
+               "DESCRIPTION":  "手札に *悲惨 を 2 枚加える。 NL 手札の状態異常カード 1 枚につき、ブロックを !M! 得る",
+               "UPGRADE_DESCRIPTION":  "手札に *悲惨 を 2 枚加える。 NL 手札の状態異常カード 1 枚につき、ブロックを !M! 得る",
+               "EXTENDED_DESCRIPTION":  [
+                              " （合計でブロックを !${modID}:TOTAL_BLOCK! 得る）"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "威嚇のストライク",
+                  "DESCRIPTION":  "!D! ダメージを与える。 NL 敵の意図が攻撃の場合、このターン中その敵の筋力を !M! 減らす",
+                  "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL 敵の意図が攻撃の場合、このターン中その敵の筋力を !M! 減らす"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "重撃",
+                "DESCRIPTION":  "!M! ${modID}:負債 があるときのみプレイできる。 !D! ダメージを与える",
+                "UPGRADE_DESCRIPTION":  "!M! ${modID}:負債 があるときのみプレイできる。 !D! ダメージを与える",
+                "EXTENDED_DESCRIPTION":  [
+                              "${modID}:負債 を 2 持っているときのみプレイできる。"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "罪は刃へ",
+                 "DESCRIPTION":  "!D! ダメージを与える。 NL あなたの ${modID}:負債 に等しい枚数のカードを引く。",
+                 "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL あなたの ${modID}:負債 に等しい枚数のカードを引く。プラス 1 枚。",
+                 "EXTENDED_DESCRIPTION":  [
+                                " （カードを !${modID}:TOTAL_DRAW! 枚引く）"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "汚れた混沌",
+                "DESCRIPTION":  "${modID}:罪 を !${modID}:SIN! 得る。 NL !D! ダメージを与える。 あなたの ${modID}:負債 1 につき、追加で !M! ダメージを与える",
+                "UPGRADE_DESCRIPTION":  "${modID}:罪 を !${modID}:SIN! 得る。 NL !D! ダメージを与える。 あなたの ${modID}:負債 1 につき、追加で !M! ダメージを与える",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "鍛えられた剣",
+                  "DESCRIPTION":  "!D! ダメージを与える。 NL 廃棄した状態異常カード 1 枚につき、追加で !M! ダメージを与える",
+                  "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL 廃棄した状態異常カード 1 枚につき、追加で !M! ダメージを与える",
+                  "EXTENDED_DESCRIPTION":  [
+                                " （合計で !${modID}:TOTAL_DAMAGE! ダメージを与える）"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "粉砕",
+              "DESCRIPTION":  "!D! ダメージを与える。 NL 敵の ${modID}:出血 に等しいブロックを得る",
+              "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL 敵の ${modID}:出血 に等しいブロックを得る",
+              "EXTENDED_DESCRIPTION":  [
+                            " （合計でブロックを !${modID}:TOTAL_BLOCK! 得る）"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "蓄積",
+              "DESCRIPTION":  "!D! ダメージを 2 回与える。 NL 次のターン、 [E] を得る",
+              "UPGRADE_DESCRIPTION":  "!D! ダメージを 2 回与える。 NL 次のターン、 [E] [E] を得る"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "重い過去",
+                "DESCRIPTION":  "!D! ダメージを 2 回与える。 NL 山札に *悲惨 を 1 枚、捨て札に 1 枚加える。 NL カードを !M! 枚引く。",
+                "UPGRADE_DESCRIPTION":  "!D! ダメージを 2 回与える。 NL 山札に *悲惨 を 1 枚、捨て札に 1 枚加える。 NL カードを !M! 枚引く。"
+              },
+  "${modID}:Implication":  {
+                "NAME":  "連座",
+                "DESCRIPTION":  "手札のカードを 1 枚廃棄する。 NL すべての敵に !D! ダメージを与える。 NL ${modID}:出血 を受けている敵にダメージを与えるたび、カードを 1 枚引く。",
+                "UPGRADE_DESCRIPTION":  "手札のカードを 1 枚廃棄する。 NL すべての敵に !D! ダメージを与える。 NL ${modID}:出血 を受けている敵にダメージを与えるたび、カードを 1 枚引く。"
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "連続蹴り",
+                   "DESCRIPTION":  "!D! ダメージを !M! 回与える",
+                   "UPGRADE_DESCRIPTION":  "!D! ダメージを !M! 回与える"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "大出血",
+                  "DESCRIPTION":  "!D! ダメージを与える。 NL その後、敵の ${modID}:出血 に等しいダメージを与える",
+                  "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL その後、敵の ${modID}:出血 の 2 倍に等しいダメージを与える",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " （合計で !${modID}:TOTAL_DAMAGE! ダメージを与える）"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "危険に立ち向かう",
+                "DESCRIPTION":  "!D! ダメージを与える。 NL この戦闘中、プレイした *悲惨 1 枚につきこのカードのコストが 1 減少する",
+                "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL この戦闘中、プレイした *悲惨 1 枚につきこのカードのコストが 1 減少する"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "救済",
+              "DESCRIPTION":  "捨て札に *悲惨 を 2 枚加える。 NL ターン終了時、手札のすべての *悲惨 を廃棄する。",
+              "UPGRADE_DESCRIPTION":  "天賦 NL 捨て札に *悲惨 を 2 枚加える。 NL ターン終了時、手札のすべての *悲惨 を廃棄する。"
+            },
+  "${modID}:Misery":  {
+              "NAME":  "悲惨",
+              "DESCRIPTION":  "2 ダメージを受ける。 NL カードを 1 枚引く。 NL 廃棄"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "受け流し",
+              "DESCRIPTION":  "!B! ブロックを得る。 NL 攻撃されるたび、ブロックしたダメージを攻撃者に反射する。",
+              "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL 攻撃されるたび、ブロックしたダメージを攻撃者に反射する。"
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "恩赦",
+              "DESCRIPTION":  "手札のすべてのカードをランダムなカードに変化させる. NL このカードを !M! 回プレイすると、ランダムなパワーカードに変化する",
+              "UPGRADE_DESCRIPTION":  "手札のすべてのカードをランダムな強化されたカードに変化させる. NL このカードを !M! 回プレイすると、ランダムな強化されたパワーカードに変化する",
+              "EXTENDED_DESCRIPTION":  [
+                            " (プレイ回数：!${modID}:PLAYS! 回)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "追悼",
+               "DESCRIPTION":  "カードを 1 枚引く。 NL 引いたカードがスキルなら、${modID}:罪 を !M! 失う。",
+               "UPGRADE_DESCRIPTION":  "カードを 1 枚引く。 NL 引いたカードがスキルなら、${modID}:罪 を !M! 失う。"
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "沸騰",
+              "DESCRIPTION":  "手札のすべての非アタックカードを廃棄する。 NL 廃棄したカード 1 枚につき、ランダムな敵 1 体に ${modID}:出血 を !M! 与える。",
+              "UPGRADE_DESCRIPTION":  "手札のすべての非アタックカードを廃棄する。 NL 廃棄したカード 1 枚につき、ランダムな敵 1 体に ${modID}:出血 を !M! 与える。"
+            },
+  "${modID}:Grief":  {
+              "NAME":  "悲哀",
+              "DESCRIPTION":  "ランダムな状態異常カードを 1 枚手札に加える。 NL このターン中、カードを引くたび、敵全体に ${modID}:出血 を !M! 与える。",
+              "UPGRADE_DESCRIPTION":  "ランダムな状態異常カードを 1 枚手札に加える。 NL このターン中、カードを引くたび、敵全体に ${modID}:出血 を !M! 与える。"
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "血の海",
+               "DESCRIPTION":  "敵に ${modID}:出血 を !${modID}:BLEED! 与える。 NL その敵の ${modID}:出血 を !M! 倍にする。 NL 廃棄",
+               "UPGRADE_DESCRIPTION":  "敵に ${modID}:出血 を !${modID}:BLEED! 与える。 NL その敵の ${modID}:出血 を !M! 倍にする。 NL 廃棄"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "執拗な出血",
+                  "DESCRIPTION":  "各ターン開始時、敵全体に ${modID}:出血 を !M! 与える。",
+                  "UPGRADE_DESCRIPTION":  "各ターン開始時、敵全体に ${modID}:出血 を !M! 与える。"
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "戦慄の記憶",
+                "DESCRIPTION":  "このターン中に ${modID}:負債 を得た場合、敵が与えるダメージが !M!% 減少する。 NL この効果は ${modID}:負債 を得たターン中のみ持続する。",
+                "UPGRADE_DESCRIPTION":  "このターン中に ${modID}:負債 を得た場合、敵が与えるダメージが !M!% 減少する。 NL この効果は ${modID}:負債 を得たターン中のみ持続する。"
+              },
+  "${modID}:Trial":  {
+              "NAME":  "試練",
+              "DESCRIPTION":  "筋力 !M! と 敏捷性 !M! を得る。 NL 脱力 1 を得る。",
+              "UPGRADE_DESCRIPTION":  "筋力 !M! と 敏捷性 !M! を得る。 NL 脱力 1 を得る。"
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "運命の和解",
+                  "DESCRIPTION":  "*悲惨 を生成または廃棄するたび、ブロックを !M! 得る。",
+                  "UPGRADE_DESCRIPTION":  "*悲惨 を生成または廃棄するたび、ブロックを !M! 得る。"
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "引き裂かれた肉",
+                 "DESCRIPTION":  "敵に 出血 を 6 与えるたび、敵全体に !M! ダメージを与える。",
+                 "UPGRADE_DESCRIPTION":  "敵に 出血 を 6 与えるたび、敵全体に !M! ダメージを与える。"
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "血のトゲ",
+                "DESCRIPTION":  "敵に攻撃されるたび、その敵に ${modID}:出血 を !M! 与える。",
+                "UPGRADE_DESCRIPTION":  "敵に攻撃されるたび、その敵に ${modID}:出血 を !M! 与える。"
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "贖罪の道",
+                  "DESCRIPTION":  "${modID}:負債 を 1 取り除くたび、カードを !M! 枚引く。",
+                  "UPGRADE_DESCRIPTION":  "${modID}:負債 を 1 取り除くたび、カードを !M! 枚引く。"
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "鎮魂歌",
+              "DESCRIPTION":  "廃棄した *悲惨 1 枚につき、ランダムな敵に !D! ダメージを与える",
+              "UPGRADE_DESCRIPTION":  "廃棄した *悲惨 1 枚につき、ランダムな敵に !D! ダメージを与える",
+              "EXTENDED_DESCRIPTION":  [
+                             " （合計 !${modID}:HITS! 回の攻撃）"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "捨て身の一手",
+                   "DESCRIPTION":  "!D! ダメージを与える。 NL これで敵を倒せなかった場合、HPを !M! 失う。",
+                   "UPGRADE_DESCRIPTION":  "!D! ダメージを与える。 NL これで敵を倒せなかった場合、HPを !M! 失う。"
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "終わりなき戦争",
+                 "DESCRIPTION":  "!D! ダメージを !${modID}:HITS! 回与える。 NL これが敵を倒すたび、このランの間このカードの攻撃回数が永続的に 1 増加する。 NL 廃棄",
+                 "UPGRADE_DESCRIPTION":  "!D! ダメージを !${modID}:HITS! 回与える。 NL これが敵を倒すたび、このランの間このカードの攻撃回数が永続的に 1 増加する。 NL 廃棄"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "最終審判",
+                  "DESCRIPTION":  "${modID}:負債 を 4 以上持っているときのみプレイできる。 NL 敵全体に !D! ダメージを与える。 NL すべての ${modID}:罪 を取り除く。",
+                  "UPGRADE_DESCRIPTION":  "${modID}:負債 を 4 以上持っているときのみプレイできる。 NL 敵全体に !D! ダメージを与える。 NL すべての ${modID}:罪 を取り除く。",
+                  "EXTENDED_DESCRIPTION":  [
+                                "プレイするには ${modID}:負債 を 4 以上持っている必要がある。"
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "灼熱",
+              "DESCRIPTION":  "手札のすべてのカードを廃棄する。 NL 廃棄した状態異常カード 1 枚につき、カードを !M! 枚引く。 NL 廃棄",
+              "UPGRADE_DESCRIPTION":  "手札のすべてのカードを廃棄する。 NL 廃棄した状態異常カード 1 枚につき、カードを !M! 枚引く。 NL 廃棄"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "岩のように頑丈",
+                "DESCRIPTION":  "!B! ブロックを得る。 NL 最大HPを 3 失う。",
+                "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL 最大HPを 3 失う。"
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "献身",
+               "DESCRIPTION":  "あなたの ${modID}:負債、弱体、脱力 と 脆弱化 をすべて取り除く。 NL 取り除いたレベル 1 につき、エネルギーを 1 得てカードを !M! 枚引く。 NL 廃棄",
+               "UPGRADE_DESCRIPTION":  "あなたの ${modID}:負債、弱体、脱力 と 脆弱化 をすべて取り除く。 NL 取り除いたレベル 1 につき、エネルギーを 1 得てカードを !M! 枚引く。 NL 廃棄"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "義憤",
+                "DESCRIPTION":  "次の X ターン中、各ターンで最初にプレイするカードのコストが 0 になる。 NL 廃棄",
+                "UPGRADE_DESCRIPTION":  "次の X+1 ターン中、各ターンで最初にプレイするカードのコストが 0 になる。 NL 廃棄"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "血の確執",
+                "DESCRIPTION":  "手札に *悲惨 を 1 枚加える。 NL 敵全体の ${modID}:出血 の !M!% を直ちに発動させる。",
+                "UPGRADE_DESCRIPTION":  "手札に *悲惨 を 1 枚加える。 NL 敵全体の ${modID}:出血 の !M!% を直ちに発動させる。"
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "虚空の呼び声",
+               "DESCRIPTION":  "山札からカードを 1 枚選び、手札に加える。 それはエセリアルになる。 NL 廃棄",
+               "UPGRADE_DESCRIPTION":  "山札からカードを 1 枚選び、手札に加える。 それはエセリアルになる。"
+             },
+  "${modID}:Spread":  {
+              "NAME":  "伝播",
+              "DESCRIPTION":  "${modID}:出血 を !M! 与える。 NL その敵のすべてのデバフを他のすべての敵に与える。",
+              "UPGRADE_DESCRIPTION":  "${modID}:出血 を !M! 与える。 NL その敵のすべてのデバフを他のすべての敵に与える。"
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "渇望する戦意",
+                    "DESCRIPTION":  "各ターン開始時、 [E] を得る。 NL 各ターン終了時、ダメージを 3 受ける。",
+                    "UPGRADE_DESCRIPTION":  "各ターン開始時、 [E] を得る。 NL 各ターン終了時、ダメージを 3 受ける。"
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "審判の形態",
+                  "DESCRIPTION":  "各ターンで最初にプレイするアタックカードは、ブロックされなかったダメージに等しい ${modID}:出血 を与える。",
+                  "UPGRADE_DESCRIPTION":  "各ターンで最初にプレイする2枚のアタックカードは、ブロックされなかったダメージに等しい ${modID}:出血 を与える。"
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "罪の化身",
+                "DESCRIPTION":  "ターン終了時、!B! ブロックを得る。さらに ${modID}:負債 1 レベルごとにブロックを !M! 追加で得る。",
+                "UPGRADE_DESCRIPTION":  "ターン終了時、!B! ブロックを得る。さらに ${modID}:負債 1 レベルごとにブロックを !M! 追加で得る。",
+                "EXTENDED_DESCRIPTION":  [
+                              " （合計でブロックを !${modID}:TOTAL_BLOCK! 得る）"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "血祭り",
+                "DESCRIPTION":  "最大HPの !M!% 未満の敵に 50% 多くのダメージを与える。",
+                "UPGRADE_DESCRIPTION":  "最大HPの !M!% 未満の敵に 50% 多くのダメージを与える。"
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "過度の硬直",
+                "DESCRIPTION":  "筋力 5 を得る。 NL アタックカードをプレイするたび、この戦闘中永続的に !M! ダメージを失う。",
+                "UPGRADE_DESCRIPTION":  "筋力 5 を得る。 NL アタックカードをプレイするたび、この戦闘中永続的に !M! ダメージを失う。"
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "もつれ",
+                "DESCRIPTION":  "このカードを引くたび、その複製を手札に 1 枚加える。 NL 廃棄 NL このカードが廃棄されたとき、 スライム を 1 枚ドローパイルに加える。"
+              },
+  "${modID}:Riot":  {
+             "NAME":  "暴動",
+             "DESCRIPTION":  "!D! ダメージを X 回与える。 NL あなたの ${modID}:負債 1 につき、このカードは追加で !M! ダメージを与える。",
+             "UPGRADE_DESCRIPTION":  "!D! ダメージを X 回与える。 NL あなたの ${modID}:負債 1 につき、このカードは追加で !M! ダメージを与える。",
+             "EXTENDED_DESCRIPTION":  [
+                            " （1 回ごとに !${modID}:TOTAL_DAMAGE! ダメージ）"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "血痕",
+                "DESCRIPTION":  "${modID}:出血 を !M! 与える。 NL あなたの ${modID}:負債 1 につき、これを 1 回繰り返す。 NL 廃棄",
+                "UPGRADE_DESCRIPTION":  "${modID}:出血 を !M! 与える。 NL あなたの ${modID}:負債 1 につき、これを 1 回繰り返す。"
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "砕けた鎧",
+                "DESCRIPTION":  "!B! ブロックを得る。 NL このカードをプレイするたびに、得るブロックが 2 減る（この戦闘中）。",
+                "UPGRADE_DESCRIPTION":  "!B! ブロックを得る。 NL このカードをプレイするたびに、得るブロックが 2 減る（この戦闘中）。"
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "契約の形",
+               "DESCRIPTION":  "[E] [E] を得る。 NL ディスカードパイルに *悲惨 を 1 枚加える",
+               "UPGRADE_DESCRIPTION":  "[E] [E] [E] を得る。 NL ディスカードパイルに *悲惨 を 1 枚加える"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "詐欺",
+              "DESCRIPTION":  "カードを !M! 枚引く。 NL ${modID}:罪 を !M! 得る。",
+              "UPGRADE_DESCRIPTION":  "カードを !M! 枚引く。 NL ${modID}:罪 を !M! 得る。"
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "慈悲",
+              "DESCRIPTION":  "エセリアル。 NL 各ターン終了時、手札の *悲惨 を廃棄する。 NL ${modID}:罪 を !M! 得る。",
+              "UPGRADE_DESCRIPTION":  "エセリアル。 NL 各ターン終了時、手札の *悲惨 を廃棄する。 NL ${modID}:罪 を !M! 得る。"
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "準備",
+              "DESCRIPTION":  "天賦。 NL カードを !M! 枚引く。 NL このターン中、手札を保留する。 NL 廃棄。",
+              "UPGRADE_DESCRIPTION":  "天賦。 NL カードを !M! 枚引く。 NL このターン中、手札を保留する。 NL 廃棄。"
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "再発",
+              "DESCRIPTION":  "3 の${modID}:出血を付与する。 NL 敵 1 体の ${modID}:出血 は1 ターン中取り除かれない。",
+              "UPGRADE_DESCRIPTION":  "3 の${modID}:出血を付与する。 NL 敵全体の ${modID}:出血 は1 ターン中取り除かれない。"
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "共有された苦しみ",
+                  "DESCRIPTION":  "あなたの ${modID}:負債 1 につき、敵全体に 脱力 !M! と 弱体 !M! を与える。 NL 廃棄。",
+                  "UPGRADE_DESCRIPTION":  "あなたの ${modID}:負債 1 につき、敵全体に 脱力 !M! と 弱体 !M! を与える。 NL 廃棄。"
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "禁忌",
+              "DESCRIPTION":  "あなたの ${modID}:負債 1 につき、エネルギーを 1 得る。 NL ${modID}:制限 を 1 得る。",
+              "UPGRADE_DESCRIPTION":  "あなたの ${modID}:負債 1 につき、エネルギーを 1 得る。プラス 1。 NL ${modID}:制限 を 1 得る。",
+              "EXTENDED_DESCRIPTION":  [
+                            "（エネルギーを得られない）",
+                            "（エネルギーを !${modID}:TOTAL_ENERGY! 得る）",
+                            "（エネルギーを !${modID}:TOTAL_ENERGY! 得る！）"
+                          ]
+            }
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Chảy Máu",
+    "NAMES": [
+      "chảy máu"
+    ],
+    "DESCRIPTION": "Vào đầu lượt của nó, mất HP bằng số tầng Chảy máu của nó, sau đó loại bỏ một nửa Chảy máu. Vết thương sâu ngăn Chảy máu bị loại bỏ trong lượt đó. Khi một sinh vật đang Chảy máu chịu sát thương tấn công không bị đỡ, nó nhận #b1 Chảy máu."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Tội Lỗi",
+    "NAMES": [
+      "tội lỗi"
+    ],
+    "DESCRIPTION": "Mỗi #b5 Tội lỗi bạn có ban cho #b1 Nợ."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Nợ",
+    "NAMES": [
+      "nợ"
+    ],
+    "DESCRIPTION": "Mỗi tầng Nợ khiến bạn phải chịu thêm #b10% sát thương. Khi Nợ bị chặn bởi Thánh tích, bạn mất %%SIN_PER_DEBT%% Tội lỗi cho mỗi 1 Nợ bị chặn."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Hạn Chế",
+    "NAMES": [
+      "hạn chế"
+    ],
+    "DESCRIPTION": "Bạn không thể nhận [E] trừ khi loại bỏ hoàn toàn toàn bộ Nợ của bạn. Bị loại bỏ vào cuối lượt của bạn."
+  }
+]

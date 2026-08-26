@@ -1,0 +1,37 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Saignement",
+    "NAMES": [
+      "saignement"
+    ],
+    "DESCRIPTION": "Au début de son tour, perd des PV égaux à son nombre de Saignement, puis la moitié de son Saignement est retirée. Une blessure profonde empêche tout retrait de Saignement ce tour-ci. Quand une créature qui saigne subit des dégâts d'attaque non bloqués, elle gagne #b1 Saignement."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Péché",
+    "NAMES": [
+      "péché",
+      "péchés"
+    ],
+    "DESCRIPTION": "Chaque fois que vous avez #b5 Péché, vous gagnez #b1 Dette."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Dette",
+    "NAMES": [
+      "dette",
+      "dettes"
+    ],
+    "DESCRIPTION": "Chaque point de Dette vous fait subir #b10% de dégâts supplémentaires. Quand l'application d'une Dette est bloquée par un Artefact, vous perdez %%SIN_PER_DEBT%% Péché pour chaque Dette bloquée."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Restriction",
+    "NAMES": [
+      "restriction",
+      "restrictions"
+    ],
+    "DESCRIPTION": "Vous ne pouvez pas gagner [E] tant que vous n'avez pas entièrement retiré toute votre Dette. Retirée à la fin de votre tour."
+  }
+]

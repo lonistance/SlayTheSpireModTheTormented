@@ -16,7 +16,8 @@ public class TemperedSword extends BaseCard {
 
     private static final int COST = 1;
     private static final int BASE_DAMAGE = 8;
-    private static final int DAMAGE_PER_STATUS = 2;
+    private static final int UPG_BASE_DAMAGE = 2;
+    private static final int DAMAGE_PER_STATUS = 3; // 基础增伤加 1
     private static final int UPG_DAMAGE_PER_STATUS = 1; // 3 -> 4
 
     private static final CardStats info = new CardStats(
@@ -29,9 +30,9 @@ public class TemperedSword extends BaseCard {
 
     public TemperedSword() {
         super(ID, info);
-        // 基础伤害 8 点（未升级与升级后均保持 8 点）
-        setDamage(BASE_DAMAGE);
-        // 设置加成系数：未升级 2，升级后 3
+        // 基础伤害 8 点
+        setDamage(BASE_DAMAGE, UPG_BASE_DAMAGE);
+        // 设置加成系数：未升级 3，升级后 4
         setMagic(DAMAGE_PER_STATUS, UPG_DAMAGE_PER_STATUS);
 
         // 实时预览：总伤害 = 基础伤害 + 消耗状态牌加成（力量/易伤由 applyPowers 计算）

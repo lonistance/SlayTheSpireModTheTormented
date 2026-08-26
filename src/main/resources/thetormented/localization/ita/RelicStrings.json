@@ -1,0 +1,112 @@
+{
+  "${modID}:RelicID":  {
+              "NAME":  "Buona Reliquia",
+              "FLAVOR":  "Testo descrittivo mostrato nella vista dettagliata della reliquia.",
+              "DESCRIPTIONS":  [
+                        "Ottieni [E] all\u0027inizio del tuo turno. [E] è un\u0027icona di energia."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "Lama Spezzata Maledetta",
+                    "FLAVOR":  "Una lama frantumata che brama ancora i peccati degli altri.",
+                    "DESCRIPTIONS":  [
+                              "All\u0027inizio di ogni combattimento, potenzia un Colpo casuale e una Difesa casuale per la durata del combattimento. NL Dal 2° turno, ottieni #b all\u0027inizio di ogni turno",
+                              " ${modID}:Peccato."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "Amo Barbato",
+                "FLAVOR":  "Un amo crudele che scava più a fondo ogni volta che lacera la carne.",
+                "DESCRIPTIONS":  [
+                          "Ogni volta che applichi ${modID}:Sanguinamento, applica #b1 ${modID}:Sanguinamento aggiuntivo."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "Calice Frenetico",
+                  "FLAVOR":  "Vino fermentato nella pura frenesia; ogni brindisi drena un\u0027altra vita.",
+                  "DESCRIPTIONS":  [
+                            "Ogni volta che un nemico non-minion muore, curi #b8 PF."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "Sigillo del Contratto",
+                "FLAVOR":  "Un contratto firmato nel sangue, onorato solo dai puri.",
+                "DESCRIPTIONS":  [
+                            "Alla fine del combattimento, se non hai ${modID}:Debito, ottieni #b15 oro."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "Amuleto di Recupero",
+                  "FLAVOR":  "Un amuleto che toglie il bruciore da ogni ferita.",
+                  "DESCRIPTIONS":  [
+                            "Ogni volta che perderesti PF, ne perdi al massimo #b18."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "Braccio di Gargolla",
+                "FLAVOR":  "Antica pietra che trasforma la purificazione in protezione.",
+                "DESCRIPTIONS":  [
+                            "Ogni volta che rimuovi #b1 livello di una penalità, ottieni #b1 Blocco."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "Stendardo Bruciato",
+                  "FLAVOR":  "Uno stendardo a brandelli che raduna solo chi ha le mani vuote.",
+                  "DESCRIPTIONS":  [
+                            "Alla fine del tuo turno, se non hai carte in mano, pesca #b2 carte aggiuntive all\u0027inizio del tuo prossimo turno."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "Spadone dell\u0027Eroe",
+                  "FLAVOR":  "Una lama forgiata dalla promessa di redenzione.",
+                  "DESCRIPTIONS":  [
+                            "Sostituisce la Lama Spezzata Maledetta. NL Quando la raccogli, potenzia tutti i Colpi e le Difese nel tuo mazzo. NL Dal 2° turno, ottieni #b all\u0027inizio di ogni turno",
+                            " ${modID}:Peccato."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "Ferri Pesanti",
+                "FLAVOR":  "Un peso di ferro che lega, eppure dona forza.",
+                "DESCRIPTIONS":  [
+                            "All\u0027inizio di ogni turno, ottieni [E] . NL All\u0027inizio di ogni combattimento, aggiungi 1 *Intricato al tuo mazzo di pesca."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "Bacchetta del Tamburo",
+                "FLAVOR":  "Ogni battito del tamburo risveglia una scintilla di energia.",
+                "DESCRIPTIONS":  [
+                          "Ogni volta che esaurisci #b",
+                          " carte, ottieni [E] ."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "Moneta Senza Rimorsi",
+                  "FLAVOR":  "Una moneta che perdona ogni passo falso.",
+                  "DESCRIPTIONS":  [
+                            "Ogni volta che entri in un Negozio, ottieni #b",
+                            " Oro."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "Lanterna di Pietranera",
+                    "FLAVOR":  "La sua luce fredda segna ogni afflizione che alimenta.",
+                    "DESCRIPTIONS":  [
+                              "La prima volta che applichi una penalità a un nemico in ogni combattimento, ottieni [E] ."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "Martello di Ferro",
+                "FLAVOR":  "Forgiato sull\u0027incudine di infinite battaglie.",
+                "DESCRIPTIONS":  [
+                          "Ogni volta che sconfiggi un Elite, potenzia #b",
+                          " carte casuali nel tuo mazzo."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "Braciere Immortale",
+                "FLAVOR":  "Una scintilla che si nutre delle disgrazie e non si spegne mai.",
+                "DESCRIPTIONS":  [
+                            "Ogni volta che hai una penalità, subisci #b25% danni in meno. NL Infliggi #b25% danni in più ai nemici che hanno una penalità."
+                          ]
+                }
+}

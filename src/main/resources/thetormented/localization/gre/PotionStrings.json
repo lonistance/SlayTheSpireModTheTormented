@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Αίμα Θεού",
+    "DESCRIPTIONS": [
+      "Εφαρμόζει #b",
+      " ${modID}:Αιμορραγία σε έναν εχθρό."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Δάκρυ",
+    "DESCRIPTIONS": [
+      "Κρατάει το χέρι σας για #b1 γύρο."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Κρασί Ανάστασης",
+    "DESCRIPTIONS": [
+      "Κερδίζετε #b1 Ενέργεια. NL Τραβάτε #b2 κάρτες."
+    ]
+  }
+}

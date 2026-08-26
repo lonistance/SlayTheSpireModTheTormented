@@ -5,14 +5,17 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.rare.attack.UnceasingWar;
 
 public class UnceasingWarKillAction extends AbstractGameAction {
-    public UnceasingWarKillAction(AbstractMonster target) {
+    private final boolean countKill;
+
+    public UnceasingWarKillAction(AbstractMonster target, boolean countKill) {
         this.target = target;
+        this.countKill = countKill;
         this.actionType = ActionType.DAMAGE;
     }
 
     @Override
     public void update() {
-        if (this.target != null && this.target.isDeadOrEscaped()) {
+        if (this.countKill && this.target != null && this.target.isDeadOrEscaped()) {
             UnceasingWar.onKill();
         }
         this.isDone = true;

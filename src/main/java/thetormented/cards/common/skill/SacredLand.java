@@ -23,30 +23,39 @@ public class SacredLand extends BaseCard {
     );
     // 2. 数值配置变量（便于后续调整平衡性）
     private static final int BLOCK_BASE = 6;
-    private static final int BLOCK_UPGRADE = 3; // 升级后增加 3（总共 9）
-    private static final int DRAW_AMOUNT = 2;   // 满足条件时抽 2 张牌
-    private static final int DRAW_UPGRADE = 1;
+    private static final int BLOCK_UPGRADE = 2; // 升级后格挡 8
+    private static final int DRAW_AMOUNT = 2;   // 基础抽 2 张牌
+    private static final int DRAW_UPGRADE = 1;  // 升级后抽 3 张牌
 
     public SacredLand() {
         super(ID, info);
         // 设置基础格挡与升级增加量
         setBlock(BLOCK_BASE, BLOCK_UPGRADE);
         // 将抽牌数存入 magicNumber
-        setMagic(DRAW_AMOUNT,DRAW_UPGRADE);
+        setMagic(DRAW_AMOUNT, DRAW_UPGRADE);
+    }
+
+    // 每有 1 点血债就少抽 1 张，最低抽 0 张
+    private int getEffectiveDraw() {
+        return Math.max(0, this.magicNumber - getPlayerPowerAmount(DebtPower.POWER_ID));
+    }
+
+    @Override
+    protected String getInjectedDescription() {
+        String ext = extDescription(0);
+        if (ext == null) {
+            return null;
+        }
+        return ext.replace("!M!", String.valueOf(getEffectiveDraw()));
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         // 1. 获得基础格挡
-        int currentBlock = this.block;
-        this.addToBot(new GainBlockAction(p, p, currentBlock));
+        addToBot(new GainBlockAction(p, p, this.block));
 
-        // 2. 检测玩家是否没有 DebtPower（血债）
-        boolean hasDebt = p.hasPower(DebtPower.POWER_ID) && p.getPower(DebtPower.POWER_ID).amount > 0;
-
-        if (!hasDebt) {
-            this.addToBot(new DrawCardAction(p, this.magicNumber));
-        }
+        // 2. 抽牌：每有 1 点血债少抽 1 张
+        addToBot(new DrawCardAction(p, getEffectiveDraw()));
     }
 
     @Override

@@ -13,7 +13,6 @@ public class VoidCall extends BaseCard {
 
     private static final int COST = 0;
     private static final int BASE_CARDS = 1;
-    private static final int UPG_CARDS = 1; // 1 -> 2
 
     private static final CardStats info = new CardStats(
             Tormented.Meta.CARD_COLOR,
@@ -25,9 +24,8 @@ public class VoidCall extends BaseCard {
 
     public VoidCall() {
         super(ID, info);
-        setMagic(BASE_CARDS, UPG_CARDS);
-        setInnate(true);
-        setExhaust(true);
+        setMagic(BASE_CARDS);
+        setExhaust(true, false); // 基础消耗，升级后去除消耗
     }
 
     @Override

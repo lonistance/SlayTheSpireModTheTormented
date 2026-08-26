@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Ini adalah",
+      "array dari String."
+    ],
+    "EXTRA_TEXT": [
+      "Ini adalah array",
+      "String lainnya."
+    ],
+    "TEXT_DICT": {
+      "Ini": "Berisi pasangan String, digunakan untuk mendapatkan nilai berdasarkan kunci.",
+      "Ini adalah kunci": "Ini adalah nilai."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Pilih kartu untuk ditambahkan ke tanganmu dan jadikan Sementara."
+    ]
+  }
+}

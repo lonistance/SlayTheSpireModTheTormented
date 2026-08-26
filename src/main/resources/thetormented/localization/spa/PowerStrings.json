@@ -1,0 +1,170 @@
+{
+  "${modID}:PowerID":  {
+              "NAME":  "Poder Supremo",
+              "DESCRIPTIONS":  [
+                         "Eres muy Genial y Fuerte."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Sangrado",
+                "DESCRIPTIONS":  [
+                          "Al inicio de su turno, pierde #b",
+                          " PV y luego elimina todo el Sangrado. Cuando una criatura sangrante recibe daño de ataque no bloqueado, gana #b1 de Sangrado."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Pecado",
+               "DESCRIPTIONS":  [
+                          "Cuando tengas #b5 de Pecado, gana ",
+                          " de Deuda."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Deuda",
+                "DESCRIPTIONS":  [
+                          "Cada deuda hace que sufras #b10% más de daño. Sufriendo ",
+                          "% más de daño. NL Cuando la aplicación de una Deuda es bloqueada por un Artefacto, pierdes ",
+                          " de Pecado por cada Deuda bloqueada."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "PerderEnergíaAlSiguienteTurno",
+                      "DESCRIPTIONS":  [
+                                 "Pierde [E] al siguiente turno"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "GanarEnergíaAlSiguienteTurno",
+                      "DESCRIPTIONS":  [
+                                 "Gana [E] al siguiente turno"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Misericordia",
+                "DESCRIPTIONS":  [
+                          "La Deuda no hace daño extra en este turno"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Herida Profunda",
+                  "DESCRIPTIONS":  [
+                            "El Sangrado no se elimina al inicio de su turno."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Alivio",
+                "DESCRIPTIONS":  [
+                           "Al final de tu turno, agota TODAS las ",
+                           " en tu mano."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Parada",
+                "DESCRIPTIONS":  [
+                          "Cada vez que seas atacado, refleja el daño que bloqueaste de vuelta al atacante."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Sangrado Implacable",
+                     "DESCRIPTIONS":  [
+                                "Al inicio de cada turno, aplica #b",
+                                " de Sangrado a TODOS los enemigos."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Pena",
+                "DESCRIPTIONS":  [
+                          "En este turno, cada vez que robes una carta, aplica #b",
+                          " de Sangrado a TODOS los enemigos."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Memoria Aterradora",
+                   "DESCRIPTIONS":  [
+                              "Si ganaste Deuda en este turno, los enemigos hacen #b",
+                              "% menos de daño."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Reconciliar el Destino",
+                    "DESCRIPTIONS":  [
+                              "Cada vez que generes o agotes una *Misería, gana #b",
+                              " de Bloqueo."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Carne Destrozada",
+                    "DESCRIPTIONS":  [
+                              "Cada vez que apliques 6 de Sangrado a un enemigo, haz #b",
+                              " de daño a TODOS los enemigos."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Espinas de Sangre",
+                   "DESCRIPTIONS":  [
+                              "Cada vez que un enemigo te ataque, aplícale #b",
+                              " de Sangrado."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Camino de la Redención",
+                    "DESCRIPTIONS":  [
+                               "Cada vez que elimines 1 de Deuda, roba #b",
+                               " cartas."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Indignación",
+                   "DESCRIPTIONS":  [
+                              "Durante los próximos #b",
+                              " turnos, la primera carta que juegues cada turno cuesta 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Voluntad de Batalla Hambrienta",
+                       "DESCRIPTIONS":  [
+                                  "Al inicio de cada turno, gana [E] . NL Al final de cada turno, recibe 3 de daño."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Conceder",
+                 "DESCRIPTIONS":  [
+                            "Este enemigo recibe #b50% más de daño."
+                          ]
+               },
+  "${modID}:ExecutionFormPower":  {
+                    "NAME":  "Forma de Juicio",
+                    "DESCRIPTIONS":  [
+                            "Las primeras ",
+                            " carta de Ataque jugada cada turno aplica Sangrado igual al daño no bloqueado que haga."
+                          ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Encarnación del Pecado",
+                  "DESCRIPTIONS":  [
+                            "Al final de tu turno, gana #b",
+                            " de Bloqueo, más #b",
+                            " de Bloqueo por cada nivel de Deuda."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Baño de Sangre",
+                  "DESCRIPTIONS":  [
+                              "Haces 50% más de daño a enemigos por debajo del ",
+                              "% de sus PV máximos."
+                            ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Demasiado Rígido",
+                  "DESCRIPTIONS":  [
+                            "Cada vez que juegues una carta de Ataque, pierde permanentemente ",
+                            " de daño hasta el fin del combate."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Restricción",
+                   "DESCRIPTIONS":  [
+                              "No puedes ganar [E]. Eliminada al final de tu turno."
+                            ]
+                 }
+}

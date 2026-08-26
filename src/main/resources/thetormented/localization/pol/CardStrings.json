@@ -1,0 +1,447 @@
+{
+  "${modID}:ExampleCard":  {
+                "NAME":  "Przykładowa karta",
+                "DESCRIPTION":  "Opis. NL Druga linia.",
+                "UPGRADE_DESCRIPTION":  "Ten tekst zostanie automatycznie użyty, jeśli karta jest ulepszona. Usuń go, jeśli nie jest potrzebny.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Możesz tu umieścić więcej tekstu.",
+                               "Jeśli potrzebujesz go do czegoś.",
+                               "Burza śnieżna jest dobrym przykładem."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Cios",
+                  "DESCRIPTION":  "Zadaj !D! obrażeń.",
+                  "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Obrona",
+                  "DESCRIPTION":  "Uzyskaj !B! Bloku.",
+                  "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Buntownik",
+              "DESCRIPTION":  "Zadaj !D! obrażeń. NL Nałóż ${modID}:Krwawienie równe zadanym obrażeniom.",
+              "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Nałóż ${modID}:Krwawienie równe zadanym obrażeniom.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Nałóż !M! ${modID}:Krwawienia)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Przebaczenie",
+              "DESCRIPTION":  "Uzyskaj !B! Bloku. NL Zmniejsz ${modID}:Grzech o !M!.",
+              "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku. NL Zmniejsz ${modID}:Grzech o !M!."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Cięcie",
+              "DESCRIPTION":  "Zadaj !D! obrażeń. NL Nałóż !M! ${modID}:Krwawienia.",
+              "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Nałóż !M! ${modID}:Krwawienia."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Rozdarcie",
+             "DESCRIPTION":  "Zadaj !D! obrażeń. NL Jeśli wróg ma ${modID}:Krwawienie, zadaj !M! dodatkowych trafień.",
+             "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Jeśli wróg ma ${modID}:Krwawienie, zadaj !M! dodatkowych trafień."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Pościg",
+              "DESCRIPTION":  "Można zagrać tylko, jeśli ostatnią zagraną w tej turze kartą była karta ataku. NL Zadaj !D! obrażeń.",
+              "UPGRADE_DESCRIPTION":  "Można zagrać tylko, jeśli ostatnią zagraną w tej turze kartą była karta ataku. NL Zadaj !D! obrażeń.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Musisz najpierw w tej turze zagrać Atak."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Odcięcie ramienia",
+                "DESCRIPTION":  "Zadaj !D! obrażeń. NL Dodaj !M! *Nędza do ręki.",
+                "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Dodaj !M! *Nędza do ręki."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Zahartowane ostrze",
+                  "DESCRIPTION":  "Zadaj !D! obrażeń. NL Ulepsz !M! karty w ręce do końca walki.",
+                  "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Ulepsz !M! karty w ręce do końca walki."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Okrutna tortura",
+                 "DESCRIPTION":  "Zadaj !D! obrażeń. Uzyskaj !${modID}:SIN! ${modID}:Grzechu.",
+                 "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. Uzyskaj !${modID}:SIN! ${modID}:Grzechu."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Cios pokutny",
+                  "DESCRIPTION":  "Zadaj !D! obrażeń. Dobierz !M! karty, jeśli masz ${modID}:Dług. NL Następnie tracisz 4 ${modID}:Grzechu.",
+                  "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. Dobierz !M! karty, jeśli masz ${modID}:Dług. NL Następnie tracisz 4 ${modID}:Grzechu."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Niesprawiedliwa wina",
+                   "DESCRIPTION":  "Zadaj !D! obrażeń WSZYSTKIM wrogom. Uzyskaj !${modID}:SIN! ${modID}:Grzechu.",
+                   "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń WSZYSTKIM wrogom. Uzyskaj !${modID}:SIN! ${modID}:Grzechu."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Bezlitosne splątanie",
+                      "DESCRIPTION":  "Zadaj !D! obrażeń. NL Dodaj ją do ręki, jeśli twój ${modID}:Dług wzrośnie"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Agonia",
+              "DESCRIPTION":  "Zadaj !D! obrażeń. Nałóż !M! Słabości i !M! Podatności.",
+              "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. Nałóż !M! Słabości i !M! Podatności."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Święta ziemia",
+                "DESCRIPTION":  "Uzyskaj !B! Bloku. NL Dobierz !M! karty, ale 1 kartę mniej za każdy poziom ${modID}:Długu.",
+                "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku. NL Dobierz !M! karty, ale 1 kartę mniej za każdy poziom ${modID}:Długu.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Dobierz !M! karty)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Pożyczka",
+             "DESCRIPTION":  "Uzyskaj [E] [E] [E]. W następnej turze tracisz [E].NL Wyczerpanie",
+             "UPGRADE_DESCRIPTION":  "Uzyskaj [E] [E] [E]. NL W następnej turze tracisz [E].NL Wyczerpanie NL Zachowaj"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Niezłomny",
+             "DESCRIPTION":  "Uzyskaj !B! Bloku.NL Zachowaj",
+             "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku.NL Zachowaj"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Wędrówka",
+              "DESCRIPTION":  "Dobierz !M! kartę.NL Wyczerp 1 kartę. NL Jeśli wyczerpiesz kartę Stanu, zmniejsz ${modID}:Grzech o 3",
+              "UPGRADE_DESCRIPTION":  "Dobierz !M! karty.NL Wyczerp 1 kartę. NL Jeśli wyczerpiesz kartę Stanu, zmniejsz ${modID}:Grzech o 3"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Strażnik krwi",
+                "DESCRIPTION":  "Uzyskaj !B! Bloku. NL Zadaj wrogowi !M! ${modID}:Krwawienia.",
+                "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku. NL Zadaj wrogowi !M! ${modID}:Krwawienia."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Prośba o niewinność",
+                  "DESCRIPTION":  "Uzyskaj !B! Bloku. NL Każdy ${modID}:Dług daje !M! więcej Bloku.",
+                  "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku. NL Każdy ${modID}:Dług daje !M! więcej Bloku.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Uzyskaj łącznie !${modID}:TOTAL_BLOCK! Bloku)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Środki zapobiegawcze",
+                    "DESCRIPTION":  "Dobierz !M! kartę. Jeśli to Atak, kosztuje 0, dopóki nie zostanie zagrana w tej turze.",
+                    "UPGRADE_DESCRIPTION":  "Dobierz !M! kartę. Jeśli to Atak, kosztuje 0, dopóki nie zostanie zagrana w tej turze."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Wrogość",
+                "DESCRIPTION":  "Jeśli twój Blok jest poniżej !${modID}:BLOCK_THRESHOLD!, nałóż wszystkim wrogom !M! Słabości. NL Uzyskaj !B! Bloku",
+                "UPGRADE_DESCRIPTION":  "Jeśli twój Blok jest poniżej !${modID}:BLOCK_THRESHOLD!, nałóż wszystkim wrogom !M! Słabości. NL Uzyskaj !B! Bloku"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Kajdany",
+               "DESCRIPTION":  "Dodaj 2 *Nędza. NL Uzyskaj !M! Bloku za każdą kartę Stanu w twojej ręce",
+               "UPGRADE_DESCRIPTION":  "Dodaj 2 *Nędza. NL Uzyskaj !M! Bloku za każdą kartę Stanu w twojej ręce",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Uzyskaj łącznie !${modID}:TOTAL_BLOCK! Bloku)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Cios odstraszający",
+                  "DESCRIPTION":  "Zadaj !D! obrażeń. NL Wróg traci !M! Siły w tej turze, jeśli zamierza zaatakować",
+                  "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Wróg traci !M! Siły w tej turze, jeśli zamierza zaatakować"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Ciężki cios",
+                "DESCRIPTION":  "Można zagrać tylko, jeśli masz !M! ${modID}:Długu. Zadaj !D! obrażeń",
+                "UPGRADE_DESCRIPTION":  "Można zagrać tylko, jeśli masz !M! ${modID}:Długu. Zadaj !D! obrażeń",
+                "EXTENDED_DESCRIPTION":  [
+                              "Można zagrać tylko, jeśli masz 2 ${modID}:Długu"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Grzechy na ostrza",
+                 "DESCRIPTION":  "Zadaj !D! obrażeń. NL Dobierz tyle kart, ile wynosi twój ${modID}:Dług.",
+                 "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Dobierz tyle kart, ile wynosi twój ${modID}:Dług, plus 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Dobierz !${modID}:TOTAL_DRAW! karty)"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Brudny chaos",
+                "DESCRIPTION":  "Uzyskaj !${modID}:SIN! ${modID}:Grzechów. NL Zadaj !D! obrażeń. Każdy ${modID}:Dług, który masz, zadaje !M! dodatkowych obrażeń",
+                "UPGRADE_DESCRIPTION":  "Uzyskaj !${modID}:SIN! ${modID}:Grzechów. NL Zadaj !D! obrażeń. Każdy ${modID}:Dług, który masz, zadaje !M! dodatkowych obrażeń",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Zahartowany miecz",
+                  "DESCRIPTION":  "Zadaj !D! obrażeń. NL Każda wyczerpana przez ciebie karta Stanu zadaje !M! dodatkowych obrażeń",
+                  "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Każda wyczerpana przez ciebie karta Stanu zadaje !M! dodatkowych obrażeń",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Zadaj łącznie !${modID}:TOTAL_DAMAGE! obrażeń)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Zmiażdżenie",
+              "DESCRIPTION":  "Zadaj !D! obrażeń. NL Uzyskaj Blok równy ${modID}:Krwawieniu wroga",
+              "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Uzyskaj Blok równy ${modID}:Krwawieniu wroga",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Uzyskaj łącznie !${modID}:TOTAL_BLOCK! Bloku)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Kumulacja",
+              "DESCRIPTION":  "Zadaj !D! obrażeń 2 razy. NL W następnej turze uzyskaj [E]",
+              "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń 2 razy. NL W następnej turze uzyskaj [E][E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Ciężka przeszłość",
+                "DESCRIPTION":  "Zadaj !D! obrażeń 2 razy. NL Dodaj 1 *Nędza do stosu dobierania i 1 do stosu odrzucenia. NL Dobierz !M! karty.",
+                "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń 2 razy. NL Dodaj 1 *Nędza do stosu dobierania i 1 do stosu odrzucenia. NL Dobierz !M! karty."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Implikacja",
+                "DESCRIPTION":  "Wyczerp 1 kartę z ręki. NL Zadaj !D! obrażeń WSZYSTKIM wrogom. NL Dobierz 1 kartę za każdego wroga, który ma ${modID}:Krwawienie, któremu zadasz obrażenia.",
+                "UPGRADE_DESCRIPTION":  "Wyczerp 1 kartę z ręki. NL Zadaj !D! obrażeń WSZYSTKIM wrogom. NL Dobierz 1 kartę za każdego wroga, który ma ${modID}:Krwawienie, któremu zadasz obrażenia."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Kolejne kopnięcia",
+                   "DESCRIPTION":  "Zadaj !D! obrażeń !M! razy",
+                   "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń !M! razy"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Masywne krwawienie",
+                  "DESCRIPTION":  "Zadaj !D! obrażeń. NL Następnie zadaj obrażenia równe ${modID}:Krwawieniu wroga",
+                  "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Następnie zadaj obrażenia równe podwójnemu ${modID}:Krwawieniu wroga",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Zadaj łącznie !${modID}:TOTAL_DAMAGE! obrażeń)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Staw czoła niebezpieczeństwu",
+                "DESCRIPTION":  "Zadaj !D! obrażeń. NL Każda zagrana przez ciebie *Nędza zmniejsza jej koszt energii o 1 w tej walce",
+                "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Każda zagrana przez ciebie *Nędza zmniejsza jej koszt energii o 1 w tej walce"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Ulga",
+              "DESCRIPTION":  "Dodaj 2 *Nędza do stosu odrzucenia. NL Na koniec twojej tury wyczerp wszystkie *Nędza w twojej ręce.",
+              "UPGRADE_DESCRIPTION":  "Wrodzona NL Dodaj 2 *Nędza do stosu odrzucenia. NL Na koniec twojej tury wyczerp wszystkie *Nędza w twojej ręce."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Nędza",
+              "DESCRIPTION":  "Otrzymujesz 2 obrażenia. NL Dobierz 1 kartę. NL Wyczerpana"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Parada",
+              "DESCRIPTION":  "Uzyskaj !B! Bloku. NL Za każdym razem, gdy jesteś atakowany, odbij zablokowane obrażenia z powrotem na atakującego.",
+              "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku. NL Za każdym razem, gdy jesteś atakowany, odbij zablokowane obrażenia z powrotem na atakującego."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Ułaskawienie",
+              "DESCRIPTION":  "Przemień WSZYSTKIE karty w ręce w losowe karty. NL Po zagraniu tej karty !M! razy, przemienia się ona w losową kartę Mocy",
+              "UPGRADE_DESCRIPTION":  "Przemień WSZYSTKIE karty w ręce w losowe ulepszone karty. NL Po zagraniu tej karty !M! razy, przemienia się ona w losową ulepszoną kartę Mocy",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Zagrana !${modID}:PLAYS! razy)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Pomnik",
+               "DESCRIPTION":  "Dobierz 1 kartę. NL Jeśli dobrana karta jest Umiejętnością, tracisz !M! ${modID}:Grzechu.",
+               "UPGRADE_DESCRIPTION":  "Dobierz 1 kartę. NL Jeśli dobrana karta jest Umiejętnością, tracisz !M! ${modID}:Grzechu."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Wrzenie",
+              "DESCRIPTION":  "Wyczerp wszystkie karty niebędące Atakiem w twojej ręce. NL Nałóż !M! ${modID}:Krwawienia losowemu wrogowi za każdą wyczerpaną kartę.",
+              "UPGRADE_DESCRIPTION":  "Wyczerp wszystkie karty niebędące Atakiem w twojej ręce. NL Nałóż !M! ${modID}:Krwawienia losowemu wrogowi za każdą wyczerpaną kartę."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Żałoba",
+              "DESCRIPTION":  "Dodaj 1 losową kartę Stanu do twojej ręki. NL W tej turze, za każdym razem, gdy dobierzesz kartę, nałóż !M! ${modID}:Krwawienia WSZYSTKIM wrogom.",
+              "UPGRADE_DESCRIPTION":  "Dodaj 1 losową kartę Stanu do twojej ręki. NL W tej turze, za każdym razem, gdy dobierzesz kartę, nałóż !M! ${modID}:Krwawienia WSZYSTKIM wrogom."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Morze krwi",
+               "DESCRIPTION":  "Nałóż !${modID}:BLEED! ${modID}:Krwawienia. NL Pomnóż ${modID}:Krwawienie tego wroga przez !M!. NL Wyczerpanie",
+               "UPGRADE_DESCRIPTION":  "Nałóż !${modID}:BLEED! ${modID}:Krwawienia. NL Pomnóż ${modID}:Krwawienie tego wroga przez !M!. NL Wyczerpanie"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Nieustanne krwawienie",
+                  "DESCRIPTION":  "Na początku każdej tury nałóż !M! ${modID}:Krwawienia WSZYSTKIM wrogom.",
+                  "UPGRADE_DESCRIPTION":  "Na początku każdej tury nałóż !M! ${modID}:Krwawienia WSZYSTKIM wrogom."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Straszne wspomnienie",
+                "DESCRIPTION":  "Jeśli w tej turze uzyskałeś ${modID}:Dług, wrogowie zadają !M!% mniej obrażeń. NL Działa tylko w turze, w której uzyskałeś ${modID}:Dług.",
+                "UPGRADE_DESCRIPTION":  "Jeśli w tej turze uzyskałeś ${modID}:Dług, wrogowie zadają !M!% mniej obrażeń. NL Działa tylko w turze, w której uzyskałeś ${modID}:Dług."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Próba",
+              "DESCRIPTION":  "Uzyskaj !M! Siły i !M! Zręczności. NL Uzyskaj 1 Słabość.",
+              "UPGRADE_DESCRIPTION":  "Uzyskaj !M! Siły i !M! Zręczności. NL Uzyskaj 1 Słabość."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Pojednanie z losem",
+                  "DESCRIPTION":  "Za każdym razem, gdy stworzysz lub wyczerpiesz *Nędza, uzyskaj !M! Bloku.",
+                  "UPGRADE_DESCRIPTION":  "Za każdym razem, gdy stworzysz lub wyczerpiesz *Nędza, uzyskaj !M! Bloku."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Okaleczone ciało",
+                 "DESCRIPTION":  "Za każdym razem, gdy nałożysz wrogowi 6 ${modID}:Krwawienia, zadaj WSZYSTKIM wrogom !M! obrażeń.",
+                 "UPGRADE_DESCRIPTION":  "Za każdym razem, gdy nałożysz wrogowi 6 ${modID}:Krwawienia, zadaj WSZYSTKIM wrogom !M! obrażeń."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Krwawe ciernie",
+                "DESCRIPTION":  "Za każdym razem, gdy wróg cię atakuje, nałóż mu !M! ${modID}:Krwawienia.",
+                "UPGRADE_DESCRIPTION":  "Za każdym razem, gdy wróg cię atakuje, nałóż mu !M! ${modID}:Krwawienia."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Ścieżka odkupienia",
+                  "DESCRIPTION":  "Za każdym razem, gdy usuniesz 1 ${modID}:Dług, dobierz !M! karty.",
+                  "UPGRADE_DESCRIPTION":  "Za każdym razem, gdy usuniesz 1 ${modID}:Dług, dobierz !M! karty."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Requiem",
+              "DESCRIPTION":  "Każda wyczerpana przez ciebie *Nędza zadaje !D! obrażeń losowemu wrogowi",
+              "UPGRADE_DESCRIPTION":  "Każda wyczerpana przez ciebie *Nędza zadaje !D! obrażeń losowemu wrogowi",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Zadaj łącznie !${modID}:HITS! trafień)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Desperacki środek",
+                   "DESCRIPTION":  "Zadaj !D! obrażeń. NL Jeśli to nie zabije wroga, tracisz !M! PZ.",
+                   "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń. NL Jeśli to nie zabije wroga, tracisz !M! PZ."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Nieustanna wojna",
+                 "DESCRIPTION":  "Zadaj !D! obrażeń !${modID}:HITS! razy. NL Za każdym razem, gdy ta karta zabije wroga, trwale zwiększa swoją liczbę trafień o 1 do końca wyprawy. NL Wyczerpanie",
+                 "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń !${modID}:HITS! razy. NL Za każdym razem, gdy ta karta zabije wroga, trwale zwiększa swoją liczbę trafień o 1 do końca wyprawy. NL Wyczerpanie"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Ostateczny wyrok",
+                  "DESCRIPTION":  "Można zagrać tylko, jeśli masz co najmniej 4 ${modID}:Długi. NL Zadaj !D! obrażeń WSZYSTKIM wrogom. NL Usuń wszystkie ${modID}:Grzechy.",
+                  "UPGRADE_DESCRIPTION":  "Można zagrać tylko, jeśli masz co najmniej 4 ${modID}:Długi. NL Zadaj !D! obrażeń WSZYSTKIM wrogom. NL Usuń wszystkie ${modID}:Grzechy.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Aby zagrać, potrzebujesz co najmniej 4 ${modID}:Długi."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Płonący",
+              "DESCRIPTION":  "Wyczerp wszystkie karty w twojej ręce. NL Dobierz !M! karty za każdą wyczerpaną kartę Stanu. NL Wyczerpanie",
+              "UPGRADE_DESCRIPTION":  "Wyczerp wszystkie karty w twojej ręce. NL Dobierz !M! karty za każdą wyczerpaną kartę Stanu. NL Wyczerpanie"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Twardy jak skała",
+                "DESCRIPTION":  "Uzyskaj !B! Bloku. NL Tracisz 3 maks. PZ.",
+                "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku. NL Tracisz 3 maks. PZ."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Oddanie",
+               "DESCRIPTION":  "Usuń cały swój ${modID}:Dług, Podatność, Słabość i Kruchość. NL Za każdą usuniętą warstwę uzyskaj 1 Energię i dobierz !M! karty. NL Wyczerpanie",
+               "UPGRADE_DESCRIPTION":  "Usuń cały swój ${modID}:Dług, Podatność, Słabość i Kruchość. NL Za każdą usuniętą warstwę uzyskaj 1 Energię i dobierz !M! karty. NL Wyczerpanie"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Oburzenie",
+                "DESCRIPTION":  "Przez następne X tur pierwsza zagrana w każdej turze karta kosztuje 0. NL Wyczerpanie",
+                "UPGRADE_DESCRIPTION":  "Przez następne X+1 tur pierwsza zagrana w każdej turze karta kosztuje 0. NL Wyczerpanie"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Krwawe porachunki",
+                "DESCRIPTION":  "Dodaj 1 *Nędza do twojej ręki. NL Natychmiast wywołaj !M!% ${modID}:Krwawienia wszystkich wrogów.",
+                "UPGRADE_DESCRIPTION":  "Dodaj 1 *Nędza do twojej ręki. NL Natychmiast wywołaj !M!% ${modID}:Krwawienia wszystkich wrogów."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Wezwanie pustki",
+               "DESCRIPTION":  "Wybierz 1 kartę ze stosu dobierania i dodaj ją do ręki. Staje się Eteryczna. NL Wyczerpanie",
+               "UPGRADE_DESCRIPTION":  "Wybierz 1 kartę ze stosu dobierania i dodaj ją do ręki. Staje się Eteryczna."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Rozprzestrzenienie",
+              "DESCRIPTION":  "Nałóż !M! ${modID}:Krwawienia. NL Nałóż wszystkie osłabienia tego wroga na wszystkich pozostałych wrogów.",
+              "UPGRADE_DESCRIPTION":  "Nałóż !M! ${modID}:Krwawienia. NL Nałóż wszystkie osłabienia tego wroga na wszystkich pozostałych wrogów."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Głodna wola walki",
+                    "DESCRIPTION":  "Na początku każdej tury uzyskaj [E]. NL Na końcu każdej tury otrzymujesz 3 obrażeń.",
+                    "UPGRADE_DESCRIPTION":  "Na początku każdej tury uzyskaj [E]. NL Na końcu każdej tury otrzymujesz 3 obrażeń."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Forma wyroku",
+                  "DESCRIPTION":  "Pierwsza zagrana w każdej turze karta ataku nakłada ${modID}:Krwawienie równe niezablokowanym obrażeniom, które zadaje.",
+                  "UPGRADE_DESCRIPTION":  "Pierwsze dwie karty ataku zagrane w każdej turze nakładają ${modID}:Krwawienie równe niezablokowanym obrażeniom, które zadają."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Wcielenie grzechu",
+                "DESCRIPTION":  "Na koniec twojej tury uzyskaj !B! Bloku, plus !M! Bloku za każdą warstwę ${modID}:Długu.",
+                "UPGRADE_DESCRIPTION":  "Na koniec twojej tury uzyskaj !B! Bloku, plus !M! Bloku za każdą warstwę ${modID}:Długu.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Uzyskaj łącznie !${modID}:TOTAL_BLOCK! Bloku)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Krwawa łaźnia",
+                "DESCRIPTION":  "Zadajesz o 50% więcej obrażeń wrogom poniżej !M!% ich maks. PZ.",
+                "UPGRADE_DESCRIPTION":  "Zadajesz o 50% więcej obrażeń wrogom poniżej !M!% ich maks. PZ."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Przesztywniały",
+                "DESCRIPTION":  "Uzyskaj 5 Siły. NL Za każdym razem, gdy zagrasz kartę ataku, trwale traci ona !M! obrażeń do końca walki.",
+                "UPGRADE_DESCRIPTION":  "Uzyskaj 5 Siły. NL Za każdym razem, gdy zagrasz kartę ataku, trwale traci ona !M! obrażeń do końca walki."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Splątanie",
+                "DESCRIPTION":  "Za każdym razem, gdy dobierzesz tę kartę, dodaj 1 jej kopię do ręki. NL Wyczerpanie NL Gdy ta karta zostanie wyczerpana, dodaj 1 Szlam na stos dobierania."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Zamieszki",
+             "DESCRIPTION":  "Zadaj !D! obrażeń X razy. NL Każdy ${modID}:Dług, który masz, sprawia, że ta karta zadaje !M! dodatkowych obrażeń.",
+             "UPGRADE_DESCRIPTION":  "Zadaj !D! obrażeń X razy. NL Każdy ${modID}:Dług, który masz, sprawia, że ta karta zadaje !M! dodatkowych obrażeń.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Zadaj !${modID}:TOTAL_DAMAGE! obrażeń na trafienie)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Plama krwi",
+                "DESCRIPTION":  "Nałóż !M! ${modID}:Krwawienia. NL Zrób to ponownie raz za każdy ${modID}:Dług, który masz. NL Wyczerpanie.",
+                "UPGRADE_DESCRIPTION":  "Nałóż !M! ${modID}:Krwawienia. NL Zrób to ponownie raz za każdy ${modID}:Dług, który masz."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Złamana zbroja",
+                "DESCRIPTION":  "Uzyskaj !B! Bloku. NL Za każdym razem, gdy zagrasz tę kartę, uzyskujesz 2 mniej Bloku（w tej walce）.",
+                "UPGRADE_DESCRIPTION":  "Uzyskaj !B! Bloku. NL Za każdym razem, gdy zagrasz tę kartę, uzyskujesz 2 mniej Bloku（w tej walce）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Pakt formy",
+               "DESCRIPTION":  "Uzyskaj [E] [E]. NL Dodaj 1 *Nędza na stos odrzuconych",
+               "UPGRADE_DESCRIPTION":  "Uzyskaj [E] [E] [E]. NL Dodaj 1 *Nędza na stos odrzuconych"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Oszustwo",
+              "DESCRIPTION":  "Dobierz !M! karty. NL Uzyskaj !M! ${modID}:Grzechu.",
+              "UPGRADE_DESCRIPTION":  "Dobierz !M! karty. NL Uzyskaj !M! ${modID}:Grzechu."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Miłosierdzie",
+              "DESCRIPTION":  "Eteryczna. NL Wyczerp *Nędza w twojej ręce na koniec każdej tury. NL Uzyskaj !M! ${modID}:Grzechu.",
+              "UPGRADE_DESCRIPTION":  "Eteryczna. NL Wyczerp *Nędza w twojej ręce na koniec każdej tury. NL Uzyskaj !M! ${modID}:Grzechu."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Przygotowanie",
+              "DESCRIPTION":  "Wrodzona. NL Dobierz !M! karty. NL Zachowaj rękę w tej turze. NL Wyczerpanie.",
+              "UPGRADE_DESCRIPTION":  "Wrodzona. NL Dobierz !M! karty. NL Zachowaj rękę w tej turze. NL Wyczerpanie."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Nawrót",
+              "DESCRIPTION":  "Nałóż 3 ${modID}:Krwawienie. NL ${modID}:Krwawienie wroga nie zostanie usunięte przez jedną turę.",
+              "UPGRADE_DESCRIPTION":  "Nałóż 3 ${modID}:Krwawienie. NL ${modID}:Krwawienie WSZYSTKICH wrogów nie zostanie usunięte przez jedną turę."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Wspólne cierpienie",
+                  "DESCRIPTION":  "Za każdy ${modID}:Dług, który masz, nałóż !M! Słabości i !M! Podatności WSZYSTKIM wrogom. NL Wyczerpanie.",
+                  "UPGRADE_DESCRIPTION":  "Za każdy ${modID}:Dług, który masz, nałóż !M! Słabości i !M! Podatności WSZYSTKIM wrogom. NL Wyczerpanie."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Tabu",
+              "DESCRIPTION":  "Uzyskaj 1 Energię za każdy ${modID}:Dług, który masz. NL Uzyskaj 1 ${modID}:Ograniczenie.",
+              "UPGRADE_DESCRIPTION":  "Uzyskaj 1 Energię za każdy ${modID}:Dług, który masz, plus 1. NL Uzyskaj 1 ${modID}:Ograniczenie.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Nie można uzyskać energii)",
+                            " (Uzyskaj !${modID}:TOTAL_ENERGY! Energii)",
+                            " (Uzyskaj !${modID}:TOTAL_ENERGY! Energii!)"
+                          ]
+            }
+}

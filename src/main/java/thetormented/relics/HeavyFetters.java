@@ -29,6 +29,11 @@ public class HeavyFetters extends BaseRelic {
     }
 
     @Override
+    public String getUpdatedDescription() {
+        return DESCRIPTIONS[0];
+    }
+
+    @Override
     public AbstractRelic makeCopy() {
         return new HeavyFetters();
     }

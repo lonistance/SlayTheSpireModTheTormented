@@ -1,0 +1,447 @@
+{
+  "${modID}:ExampleCard":  {
+                "NAME":  "Tên",
+                "DESCRIPTION":  "Mô tả. NL Dòng thứ hai.",
+                "UPGRADE_DESCRIPTION":  "Đoạn này sẽ tự động được dùng nếu lá bài được nâng cấp. Bỏ nó đi nếu không cần thiết.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Bạn có thể đặt thêm văn bản vào đây.",
+                               "Nếu bạn cần dùng nó cho việc gì đó.",
+                               "Bão Tuyết là một ví dụ tốt cho việc này."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Đánh",
+                  "DESCRIPTION":  "Gây !D! sát thương.",
+                  "UPGRADE_DESCRIPTION":  "Gây !D! sát thương."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Phòng Thủ",
+                  "DESCRIPTION":  "Nhận !B! Giáp.",
+                  "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Nổi Loạn",
+              "DESCRIPTION":  "Gây !D! sát thương. NL Gây ${modID}:Chảy máu bằng lượng sát thương gây ra.",
+              "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Gây ${modID}:Chảy máu bằng lượng sát thương gây ra.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Gây !M! ${modID}:Chảy máu)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Tha Thứ",
+              "DESCRIPTION":  "Nhận !B! Giáp. NL Giảm !M! ${modID}:Tội lỗi.",
+              "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp. NL Giảm !M! ${modID}:Tội lỗi."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Chém",
+              "DESCRIPTION":  "Gây !D! sát thương. NL Gây !M! ${modID}:Chảy máu.",
+              "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Gây !M! ${modID}:Chảy máu."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Xé Toạc",
+             "DESCRIPTION":  "Gây !D! sát thương. NL Nếu quân địch có ${modID}:Chảy máu, gây thêm !M! đòn.",
+             "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Nếu quân địch có ${modID}:Chảy máu, gây thêm !M! đòn."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Truy Đuổi",
+              "DESCRIPTION":  "Chỉ có thể chơi nếu lá bài được chơi trước đó trong lượt này là lá Tấn công. NL Gây !D! sát thương.",
+              "UPGRADE_DESCRIPTION":  "Chỉ có thể chơi nếu lá bài được chơi trước đó trong lượt này là lá Tấn công. NL Gây !D! sát thương.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Cần chơi một lá Tấn công trước trong lượt này."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Chém Đứt Tay",
+                "DESCRIPTION":  "Gây !D! sát thương. NL Thêm !M! lá *Khốn Khổ vào tay bạn.",
+                "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Thêm !M! lá *Khốn Khổ vào tay bạn."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Lưỡi Kiếm Đã Tôi",
+                  "DESCRIPTION":  "Gây !D! sát thương. NL Nâng cấp !M! lá bài trong tay bạn đến hết trận đấu.",
+                  "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Nâng cấp !M! lá bài trong tay bạn đến hết trận đấu."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Tra Tấn Tàn Nhẫn",
+                 "DESCRIPTION":  "Gây !D! sát thương.Nhận !${modID}:SIN! ${modID}:Tội lỗi.",
+                 "UPGRADE_DESCRIPTION":  "Gây !D! sát thương.Nhận !${modID}:SIN! ${modID}:Tội lỗi."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Đòn Chuộc Tội",
+                  "DESCRIPTION":  "Gây !D! sát thương.Bốc !M! lá bài nếu có ${modID}:Nợ. NL Sau đó mất 4 ${modID}:Tội lỗi.",
+                  "UPGRADE_DESCRIPTION":  "Gây !D! sát thương.Bốc !M! lá bài nếu có ${modID}:Nợ. NL Sau đó mất 4 ${modID}:Tội lỗi."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Tội Lỗi Bất Chính",
+                   "DESCRIPTION":  "Gây !D! sát thương lên TẤT CẢ quân địch.Nhận !${modID}:SIN! ${modID}:Tội lỗi.",
+                   "UPGRADE_DESCRIPTION":  "Gây !D! sát thương lên TẤT CẢ quân địch.Nhận !${modID}:SIN! ${modID}:Tội lỗi."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Rối Rắm Không Ngừng",
+                      "DESCRIPTION":  "Gây !D! sát thương. NL Thêm lá này vào tay nếu ${modID}:Nợ tăng."
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Đau Đớn",
+              "DESCRIPTION":  "Gây !D! sát thương.Gây !M! Yếu và !M! Sơ hở.",
+              "UPGRADE_DESCRIPTION":  "Gây !D! sát thương.Gây !M! Yếu và !M! Sơ hở."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Vùng Đất Thiêng",
+                "DESCRIPTION":  "Nhận !B! Giáp. NL Rút !M! lá bài, ít hơn 1 lá cho mỗi ${modID}:Nợ bạn có.",
+                "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp. NL Rút !M! lá bài, ít hơn 1 lá cho mỗi ${modID}:Nợ bạn có.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Rút !M! lá bài)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Khoản Vay",
+             "DESCRIPTION":  "Nhận [E] [E] [E].Lượt sau, mất [E].NL Đốt",
+             "UPGRADE_DESCRIPTION":  "Nhận [E] [E] [E]. NL Lượt sau, mất [E].NL Đốt NL Giữ"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Kiên Định",
+             "DESCRIPTION":  "Nhận !B! Giáp.NL Giữ",
+             "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp.NL Giữ"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Lãng Du",
+              "DESCRIPTION":  "Bốc !M! lá bài.NL Đốt 1 lá bài. NL Nếu bạn đốt lá Trạng thái, giảm 3 ${modID}:Tội lỗi",
+              "UPGRADE_DESCRIPTION":  "Bốc !M! lá bài.NL Đốt 1 lá bài. NL Nếu bạn đốt lá Trạng thái, giảm 3 ${modID}:Tội lỗi"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Lá Chắn Máu",
+                "DESCRIPTION":  "Nhận !B! Giáp. NL Gây !M! ${modID}:Chảy máu lên một quân địch.",
+                "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp. NL Gây !M! ${modID}:Chảy máu lên một quân địch."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Lời Xin Vô Tội",
+                  "DESCRIPTION":  "Nhận !B! Giáp. NL Mỗi ${modID}:Nợ tăng thêm !M! Giáp.",
+                  "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp. NL Mỗi ${modID}:Nợ tăng thêm !M! Giáp.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Nhận !${modID}:TOTAL_BLOCK! Giáp tổng cộng)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Biện Pháp Dự Đoán",
+                    "DESCRIPTION":  "Bốc !M! lá bài. Nếu đó là lá Tấn công, nó tốn 0 cho đến khi được chơi trong lượt này.",
+                    "UPGRADE_DESCRIPTION":  "Bốc !M! lá bài. Nếu đó là lá Tấn công, nó tốn 0 cho đến khi được chơi trong lượt này."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Thù Địch",
+                "DESCRIPTION":  "Nếu Giáp của bạn dưới !${modID}:BLOCK_THRESHOLD!,gây !M! Yếu lên TẤT CẢ quân địch. NL Nhận !B! Giáp",
+                "UPGRADE_DESCRIPTION":  "Nếu Giáp của bạn dưới !${modID}:BLOCK_THRESHOLD!,gây !M! Yếu lên TẤT CẢ quân địch. NL Nhận !B! Giáp"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Xiềng Xích",
+               "DESCRIPTION":  "Thêm 2 lá *Khốn Khổ. NL Nhận !M! Giáp với mỗi lá Trạng thái trong tay bạn",
+               "UPGRADE_DESCRIPTION":  "Thêm 2 lá *Khốn Khổ. NL Nhận !M! Giáp với mỗi lá Trạng thái trong tay bạn",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Nhận !${modID}:TOTAL_BLOCK! Giáp tổng cộng)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Đòn Răn Đe",
+                  "DESCRIPTION":  "Gây !D! sát thương. NL Quân địch mất !M! Sức mạnh trong lượt này nếu quân địch định tấn công",
+                  "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Quân địch mất !M! Sức mạnh trong lượt này nếu quân địch định tấn công"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Cú Đập Nặng",
+                "DESCRIPTION":  "Chỉ có thể chơi nếu có !M! ${modID}:Nợ. Gây !D! sát thương",
+                "UPGRADE_DESCRIPTION":  "Chỉ có thể chơi nếu có !M! ${modID}:Nợ. Gây !D! sát thương",
+                "EXTENDED_DESCRIPTION":  [
+                              "Chỉ có thể chơi nếu có 2 ${modID}:Nợ"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Tội Hóa Kiếm",
+                 "DESCRIPTION":  "Gây !D! sát thương. NL Bốc số lá bài bằng ${modID}:Nợ của bạn.",
+                 "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Bốc số lá bài bằng ${modID}:Nợ của bạn cộng 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Bốc !${modID}:TOTAL_DRAW! lá bài)"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Hỗn Loạn Bẩn Thỉu",
+                "DESCRIPTION":  "Nhận !${modID}:SIN! ${modID}:Tội lỗi. NL Gây !D! sát thương. Mỗi ${modID}:Nợ bạn có gây thêm !M! sát thương",
+                "UPGRADE_DESCRIPTION":  "Nhận !${modID}:SIN! ${modID}:Tội lỗi. NL Gây !D! sát thương. Mỗi ${modID}:Nợ bạn có gây thêm !M! sát thương",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Kiếm Tôi Luyện",
+                  "DESCRIPTION":  "Gây !D! sát thương. NL Mỗi lá Trạng thái bạn đốt gây thêm !M! sát thương",
+                  "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Mỗi lá Trạng thái bạn đốt gây thêm !M! sát thương",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Tổng cộng gây !${modID}:TOTAL_DAMAGE! sát thương)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Đè Bẹp",
+              "DESCRIPTION":  "Gây !D! sát thương. NL Nhận Giáp bằng lượng ${modID}:Chảy máu quân địch đang có",
+              "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Nhận Giáp bằng lượng ${modID}:Chảy máu quân địch đang có",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Nhận !${modID}:TOTAL_BLOCK! Giáp tổng cộng)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Tích Lũy",
+              "DESCRIPTION":  "Gây !D! sát thương 2 lần. NL Lượt sau nhận [E]",
+              "UPGRADE_DESCRIPTION":  "Gây !D! sát thương 2 lần. NL Lượt sau nhận [E] [E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Quá Khứ Nặng Nề",
+                "DESCRIPTION":  "Gây !D! sát thương 2 lần. NL Thêm 1 lá *Khốn Khổ vào chồng bài bốc và 1 vào chồng bài bỏ. NL Bốc !M! lá bài.",
+                "UPGRADE_DESCRIPTION":  "Gây !D! sát thương 2 lần. NL Thêm 1 lá *Khốn Khổ vào chồng bài bốc và 1 vào chồng bài bỏ. NL Bốc !M! lá bài."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Hàm Ý",
+                "DESCRIPTION":  "Đốt 1 lá bài trên tay. NL Gây !D! sát thương lên TẤT CẢ quân địch. NL Rút 1 lá bài cho mỗi quân địch có ${modID}:Chảy máu bị gây sát thương.",
+                "UPGRADE_DESCRIPTION":  "Đốt 1 lá bài trên tay. NL Gây !D! sát thương lên TẤT CẢ quân địch. NL Rút 1 lá bài cho mỗi quân địch có ${modID}:Chảy máu bị gây sát thương."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Đá Liên Hoàn",
+                   "DESCRIPTION":  "Gây !D! sát thương !M! lần",
+                   "UPGRADE_DESCRIPTION":  "Gây !D! sát thương !M! lần"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Chảy Máu Trầm Trọng",
+                  "DESCRIPTION":  "Gây !D! sát thương. NL Sau đó gây sát thương bằng lượng ${modID}:Chảy máu quân địch đang có",
+                  "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Sau đó gây sát thương bằng gấp đôi lượng ${modID}:Chảy máu quân địch đang có",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Tổng cộng gây !${modID}:TOTAL_DAMAGE! sát thương)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Đối Mặt Nguy Hiểm",
+                "DESCRIPTION":  "Gây !D! sát thương. NL Mỗi lá *Khốn Khổ bạn đã chơi giảm 1 Năng lượng giá của lá này trong trận đấu",
+                "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Mỗi lá *Khốn Khổ bạn đã chơi giảm 1 Năng lượng giá của lá này trong trận đấu"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Nhẹ Nhõm",
+              "DESCRIPTION":  "Thêm 2 lá *Khốn Khổ vào chồng bài bỏ. NL Vào cuối lượt của bạn, Đốt tất cả *Khốn Khổ trong tay bạn.",
+              "UPGRADE_DESCRIPTION":  "Nội sinh NL Thêm 2 lá *Khốn Khổ vào chồng bài bỏ. NL Vào cuối lượt của bạn, Đốt tất cả *Khốn Khổ trong tay bạn."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Khốn Khổ",
+              "DESCRIPTION":  "Chịu 2 sát thương. NL Bốc 1 lá bài. NL Đã đốt"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Đỡ Đòn",
+              "DESCRIPTION":  "Nhận !B! Giáp. NL Mỗi khi bạn bị tấn công, phản lại sát thương bạn đã đỡ cho kẻ tấn công.",
+              "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp. NL Mỗi khi bạn bị tấn công, phản lại sát thương bạn đã đỡ cho kẻ tấn công."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Ân Xá",
+              "DESCRIPTION":  "Biến TẤT CẢ các lá bài trên tay thành lá bài ngẫu nhiên. NL Sau khi được chơi !M! lần, lá bài này biến thành lá bài Sức Mạnh ngẫu nhiên",
+              "UPGRADE_DESCRIPTION":  "Biến TẤT CẢ các lá bài trên tay thành lá bài ngẫu nhiên đã được nâng cấp. NL Sau khi được chơi !M! lần, lá bài này biến thành lá bài Sức Mạnh ngẫu nhiên đã được nâng cấp",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Đã chơi !${modID}:PLAYS! lần)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Tưởng Niệm",
+               "DESCRIPTION":  "Bốc 1 lá bài. NL Nếu lá bài bốc được là Kỹ năng, mất !M! ${modID}:Tội lỗi.",
+               "UPGRADE_DESCRIPTION":  "Bốc 1 lá bài. NL Nếu lá bài bốc được là Kỹ năng, mất !M! ${modID}:Tội lỗi."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Sôi Sục",
+              "DESCRIPTION":  "Đốt tất cả lá không phải Tấn công trong tay bạn. NL Gây !M! ${modID}:Chảy máu lên 1 quân địch ngẫu nhiên với mỗi lá bài đã đốt.",
+              "UPGRADE_DESCRIPTION":  "Đốt tất cả lá không phải Tấn công trong tay bạn. NL Gây !M! ${modID}:Chảy máu lên 1 quân địch ngẫu nhiên với mỗi lá bài đã đốt."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Đau Buồn",
+              "DESCRIPTION":  "Thêm 1 lá Trạng thái ngẫu nhiên vào tay bạn. NL Lượt này, mỗi khi bạn bốc một lá bài, gây !M! ${modID}:Chảy máu lên TẤT CẢ quân địch.",
+              "UPGRADE_DESCRIPTION":  "Thêm 1 lá Trạng thái ngẫu nhiên vào tay bạn. NL Lượt này, mỗi khi bạn bốc một lá bài, gây !M! ${modID}:Chảy máu lên TẤT CẢ quân địch."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Biển Máu",
+               "DESCRIPTION":  "Gây !${modID}:BLEED! ${modID}:Chảy máu. NL Nhân ${modID}:Chảy máu của quân địch đó lên !M!. NL Đốt",
+               "UPGRADE_DESCRIPTION":  "Gây !${modID}:BLEED! ${modID}:Chảy máu. NL Nhân ${modID}:Chảy máu của quân địch đó lên !M!. NL Đốt"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Chảy Máu Không Ngừng",
+                  "DESCRIPTION":  "Vào đầu mỗi lượt, gây !M! ${modID}:Chảy máu lên TẤT CẢ quân địch.",
+                  "UPGRADE_DESCRIPTION":  "Vào đầu mỗi lượt, gây !M! ${modID}:Chảy máu lên TẤT CẢ quân địch."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Ký Ức Kinh Hoàng",
+                "DESCRIPTION":  "Nếu bạn nhận ${modID}:Nợ trong lượt này, quân địch gây ít hơn !M!% sát thương. NL Chỉ kéo dài trong lượt bạn nhận ${modID}:Nợ.",
+                "UPGRADE_DESCRIPTION":  "Nếu bạn nhận ${modID}:Nợ trong lượt này, quân địch gây ít hơn !M!% sát thương. NL Chỉ kéo dài trong lượt bạn nhận ${modID}:Nợ."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Thử Thách",
+              "DESCRIPTION":  "Nhận !M! Sức mạnh và !M! Linh hoạt. NL Nhận 1 Yếu.",
+              "UPGRADE_DESCRIPTION":  "Nhận !M! Sức mạnh và !M! Linh hoạt. NL Nhận 1 Yếu."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Hòa Giải Số Phận",
+                  "DESCRIPTION":  "Mỗi khi bạn tạo ra hoặc Đốt một lá *Khốn Khổ, nhận !M! Giáp.",
+                  "UPGRADE_DESCRIPTION":  "Mỗi khi bạn tạo ra hoặc Đốt một lá *Khốn Khổ, nhận !M! Giáp."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Thân Xác Tan Nát",
+                 "DESCRIPTION":  "Mỗi khi bạn gây 6 ${modID}:Chảy máu cho một quân địch, gây !M! sát thương lên TẤT CẢ quân địch.",
+                 "UPGRADE_DESCRIPTION":  "Mỗi khi bạn gây 6 ${modID}:Chảy máu cho một quân địch, gây !M! sát thương lên TẤT CẢ quân địch."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Gai Máu",
+                "DESCRIPTION":  "Mỗi khi quân địch tấn công bạn, gây !M! ${modID}:Chảy máu lên nó.",
+                "UPGRADE_DESCRIPTION":  "Mỗi khi quân địch tấn công bạn, gây !M! ${modID}:Chảy máu lên nó."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Con Đường Chuộc Tội",
+                  "DESCRIPTION":  "Mỗi khi bạn loại bỏ 1 ${modID}:Nợ, bốc !M! lá bài.",
+                  "UPGRADE_DESCRIPTION":  "Mỗi khi bạn loại bỏ 1 ${modID}:Nợ, bốc !M! lá bài."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Khúc Cầu Hồn",
+              "DESCRIPTION":  "Mỗi lá *Khốn Khổ bạn đã Đốt gây !D! sát thương lên một quân địch ngẫu nhiên",
+              "UPGRADE_DESCRIPTION":  "Mỗi lá *Khốn Khổ bạn đã Đốt gây !D! sát thương lên một quân địch ngẫu nhiên",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Tổng cộng gây !${modID}:HITS! đòn)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Biện Pháp Tuyệt Vọng",
+                   "DESCRIPTION":  "Gây !D! sát thương. NL Nếu lá này không giết được quân địch, mất !M! HP.",
+                   "UPGRADE_DESCRIPTION":  "Gây !D! sát thương. NL Nếu lá này không giết được quân địch, mất !M! HP."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Cuộc Chiến Bất Tận",
+                 "DESCRIPTION":  "Gây !D! sát thương !${modID}:HITS! lần. NL Mỗi khi lá này giết một quân địch, vĩnh viễn tăng số đòn của lá này lên 1 trong phần còn lại của chuyến đi. NL Đốt",
+                 "UPGRADE_DESCRIPTION":  "Gây !D! sát thương !${modID}:HITS! lần. NL Mỗi khi lá này giết một quân địch, vĩnh viễn tăng số đòn của lá này lên 1 trong phần còn lại của chuyến đi. NL Đốt"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Phán Quyết Cuối Cùng",
+                  "DESCRIPTION":  "Chỉ có thể chơi nếu bạn có ít nhất 4 ${modID}:Nợ. NL Gây !D! sát thương lên TẤT CẢ quân địch. NL Loại bỏ toàn bộ ${modID}:Tội lỗi.",
+                  "UPGRADE_DESCRIPTION":  "Chỉ có thể chơi nếu bạn có ít nhất 4 ${modID}:Nợ. NL Gây !D! sát thương lên TẤT CẢ quân địch. NL Loại bỏ toàn bộ ${modID}:Tội lỗi.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Cần ít nhất 4 ${modID}:Nợ để chơi."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Rực Cháy",
+              "DESCRIPTION":  "Đốt tất cả lá bài trong tay bạn. NL Bốc !M! lá bài với mỗi lá Trạng thái đã đốt. NL Đốt",
+              "UPGRADE_DESCRIPTION":  "Đốt tất cả lá bài trong tay bạn. NL Bốc !M! lá bài với mỗi lá Trạng thái đã đốt. NL Đốt"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Vững Như Đá",
+                "DESCRIPTION":  "Nhận !B! Giáp. NL Mất 3 HP tối đa.",
+                "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp. NL Mất 3 HP tối đa."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Sùng Kính",
+               "DESCRIPTION":  "Loại bỏ toàn bộ ${modID}:Nợ, Sơ hở, Yếu và Mong manh của bạn. NL Với mỗi tầng đã loại bỏ, nhận 1 Năng lượng và bốc !M! lá bài. NL Đốt",
+               "UPGRADE_DESCRIPTION":  "Loại bỏ toàn bộ ${modID}:Nợ, Sơ hở, Yếu và Mong manh của bạn. NL Với mỗi tầng đã loại bỏ, nhận 1 Năng lượng và bốc !M! lá bài. NL Đốt"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Phẫn Nộ",
+                "DESCRIPTION":  "Trong X lượt tới, lá bài đầu tiên bạn chơi mỗi lượt tốn 0. NL Đốt",
+                "UPGRADE_DESCRIPTION":  "Trong X+1 lượt tới, lá bài đầu tiên bạn chơi mỗi lượt tốn 0. NL Đốt"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Mối Thù Máu",
+                "DESCRIPTION":  "Thêm 1 lá *Khốn Khổ vào tay bạn. NL Kích hoạt ngay !M!% ${modID}:Chảy máu của TẤT CẢ quân địch.",
+                "UPGRADE_DESCRIPTION":  "Thêm 1 lá *Khốn Khổ vào tay bạn. NL Kích hoạt ngay !M!% ${modID}:Chảy máu của TẤT CẢ quân địch."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Tiếng Gọi Hư Không",
+               "DESCRIPTION":  "Chọn 1 lá bài từ chồng bài bốc và thêm nó vào tay bạn. Nó trở thành Tan biến. NL Đốt",
+               "UPGRADE_DESCRIPTION":  "Chọn 1 lá bài từ chồng bài bốc và thêm nó vào tay bạn. Nó trở thành Tan biến."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Lây Lan",
+              "DESCRIPTION":  "Gây !M! ${modID}:Chảy máu. NL Gây toàn bộ hiệu ứng bất lợi của quân địch đó lên tất cả quân địch khác.",
+              "UPGRADE_DESCRIPTION":  "Gây !M! ${modID}:Chảy máu. NL Gây toàn bộ hiệu ứng bất lợi của quân địch đó lên tất cả quân địch khác."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Ý Chí Chiến Đấu Khát Máu",
+                    "DESCRIPTION":  "Vào đầu mỗi lượt, nhận [E] . NL Vào cuối mỗi lượt, nhận 3 sát thương.",
+                    "UPGRADE_DESCRIPTION":  "Vào đầu mỗi lượt, nhận [E] . NL Vào cuối mỗi lượt, nhận 3 sát thương."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Hình Thái Phán Quyết",
+                  "DESCRIPTION":  "Lá Tấn công đầu tiên bạn chơi mỗi lượt gây ${modID}:Chảy máu bằng sát thương không bị đỡ của nó.",
+                  "UPGRADE_DESCRIPTION":  "Hai lá Tấn công đầu tiên bạn chơi mỗi lượt gây ${modID}:Chảy máu bằng sát thương không bị đỡ của chúng."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Hóa Thân Của Tội Lỗi",
+                "DESCRIPTION":  "Vào cuối lượt của bạn, nhận !B! Giáp, cộng thêm !M! Giáp với mỗi tầng ${modID}:Nợ.",
+                "UPGRADE_DESCRIPTION":  "Vào cuối lượt của bạn, nhận !B! Giáp, cộng thêm !M! Giáp với mỗi tầng ${modID}:Nợ.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Nhận !${modID}:TOTAL_BLOCK! Giáp tổng cộng)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Tắm Máu",
+                "DESCRIPTION":  "Gây thêm 50% sát thương lên quân địch dưới !M!% HP tối đa của chúng.",
+                "UPGRADE_DESCRIPTION":  "Gây thêm 50% sát thương lên quân địch dưới !M!% HP tối đa của chúng."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Quá Cứng Nhắc",
+                "DESCRIPTION":  "Nhận 5 Sức mạnh. NL Mỗi khi bạn chơi một lá Tấn công, nó vĩnh viễn mất !M! sát thương trong phần còn lại của trận đấu.",
+                "UPGRADE_DESCRIPTION":  "Nhận 5 Sức mạnh. NL Mỗi khi bạn chơi một lá Tấn công, nó vĩnh viễn mất !M! sát thương trong phần còn lại của trận đấu."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Rối Rắm",
+                "DESCRIPTION":  "Mỗi khi bạn bốc lá bài này, thêm 1 bản sao của nó vào tay bạn. NL Đốt NL Khi lá này bị đốt, thêm 1 Chất nhờn vào chồng rút."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Bạo Loạn",
+             "DESCRIPTION":  "Gây !D! sát thương X lần. NL Mỗi ${modID}:Nợ bạn có khiến lá bài này gây thêm !M! sát thương.",
+             "UPGRADE_DESCRIPTION":  "Gây !D! sát thương X lần. NL Mỗi ${modID}:Nợ bạn có khiến lá bài này gây thêm !M! sát thương.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Gây !${modID}:TOTAL_DAMAGE! sát thương mỗi đòn)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Vết Máu",
+                "DESCRIPTION":  "Gây !M! ${modID}:Chảy máu. NL Lặp lại thêm một lần với mỗi ${modID}:Nợ bạn có. NL Đốt.",
+                "UPGRADE_DESCRIPTION":  "Gây !M! ${modID}:Chảy máu. NL Lặp lại thêm một lần với mỗi ${modID}:Nợ bạn có."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Giáp Vỡ",
+                "DESCRIPTION":  "Nhận !B! Giáp. NL Mỗi lần chơi, lượng Giáp nhận được giảm 2（trong trận này）.",
+                "UPGRADE_DESCRIPTION":  "Nhận !B! Giáp. NL Mỗi lần chơi, lượng Giáp nhận được giảm 2（trong trận này）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Khế Ước Hình Thái",
+               "DESCRIPTION":  "Nhận [E] [E]. NL Thêm 1 lá *Khốn Khổ vào chồng bỏ",
+               "UPGRADE_DESCRIPTION":  "Nhận [E] [E] [E]. NL Thêm 1 lá *Khốn Khổ vào chồng bỏ"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Lừa Đảo",
+              "DESCRIPTION":  "Bốc !M! lá bài. NL Nhận !M! ${modID}:Tội lỗi.",
+              "UPGRADE_DESCRIPTION":  "Bốc !M! lá bài. NL Nhận !M! ${modID}:Tội lỗi."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Khoan Dung",
+              "DESCRIPTION":  "Tan biến. NL Đốt các lá *Khốn Khổ trong tay bạn vào cuối mỗi lượt. NL Nhận !M! ${modID}:Tội lỗi.",
+              "UPGRADE_DESCRIPTION":  "Tan biến. NL Đốt các lá *Khốn Khổ trong tay bạn vào cuối mỗi lượt. NL Nhận !M! ${modID}:Tội lỗi."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Chuẩn Bị",
+              "DESCRIPTION":  "Nội sinh. NL Bốc !M! lá bài. NL Giữ lại bài trên tay trong lượt này. NL Đốt.",
+              "UPGRADE_DESCRIPTION":  "Nội sinh. NL Bốc !M! lá bài. NL Giữ lại bài trên tay trong lượt này. NL Đốt."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Tái Phát",
+              "DESCRIPTION":  "Gây 3 ${modID}:Chảy máu. NL Trong một lượt, ${modID}:Chảy máu của một quân địch sẽ không bị loại bỏ.",
+              "UPGRADE_DESCRIPTION":  "Gây 3 ${modID}:Chảy máu. NL Trong một lượt, ${modID}:Chảy máu của TẤT CẢ quân địch sẽ không bị loại bỏ."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Cùng Chịu Đau Khổ",
+                  "DESCRIPTION":  "Với mỗi ${modID}:Nợ bạn có, gây !M! Yếu và !M! Sơ hở lên TẤT CẢ quân địch. NL Đốt.",
+                  "UPGRADE_DESCRIPTION":  "Với mỗi ${modID}:Nợ bạn có, gây !M! Yếu và !M! Sơ hở lên TẤT CẢ quân địch. NL Đốt."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Điều Cấm Kỵ",
+              "DESCRIPTION":  "Nhận 1 Năng lượng với mỗi ${modID}:Nợ bạn có. NL Nhận 1 ${modID}:Hạn chế.",
+              "UPGRADE_DESCRIPTION":  "Nhận 1 Năng lượng với mỗi ${modID}:Nợ bạn có, cộng 1. NL Nhận 1 ${modID}:Hạn chế.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Không thể nhận năng lượng)",
+                            " (Nhận !${modID}:TOTAL_ENERGY! Năng lượng)",
+                            " (Nhận !${modID}:TOTAL_ENERGY! Năng lượng!)"
+                          ]
+            }
+}

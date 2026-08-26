@@ -1,0 +1,40 @@
+[
+  {
+    "ID": "bleed",
+    "PROPER_NAME": "Kanama",
+    "NAMES": [
+      "kanama",
+      "kanaması",
+      "kanamaya"
+    ],
+    "DESCRIPTION": "Kendi turunun başında, Kanama kademesi kadar CP kaybeder, ardından Kanamasının yarısı kaldırılır. Derin yara, o turda Kanamanın kaldırılmasını engeller. Kanaması olan bir yaratık kalkanlanmamış saldırı hasarı aldığında #b1 Kanama kazanır."
+  },
+  {
+    "ID": "sin",
+    "PROPER_NAME": "Günah",
+    "NAMES": [
+      "günah",
+      "günahlar",
+      "günahı"
+    ],
+    "DESCRIPTION": "Sahip olduğun her #b5 Günah #b1 Borç kazandırır."
+  },
+  {
+    "ID": "debt",
+    "PROPER_NAME": "Borç",
+    "NAMES": [
+      "borç",
+      "borcun",
+      "borcunu"
+    ],
+    "DESCRIPTION": "Her Borç kademesi #b%10 daha fazla hasar aldırır. Bir Borç uygulaması Yapı tarafından engellendiğinde, engellenen her Borç için %%SIN_PER_DEBT%% Günah kaybedersin."
+  },
+  {
+    "ID": "restriction",
+    "PROPER_NAME": "Kısıtlama",
+    "NAMES": [
+      "kısıtlama"
+    ],
+    "DESCRIPTION": "Borçlarını tamamen kaldırmadıkça [E] kazanamazsın. Tur sonunda kaldırılır."
+  }
+]

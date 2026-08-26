@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Ime događaja",
+    "DESCRIPTIONS": [
+      "Ovo je tekst događaja, koji se obično koristi da opiše šta se dešava.",
+      "#g~Ovaj~ #g~tekst~ #g~je~ #g~zelen~ #g~i~ #g~talasast.~",
+      "#r@CRVENO@ #r@I@ #r@VIBRIRAJUĆE@ #r@TEKST.@",
+      "#rCrvena #gZelena #yŽuta #bPlava #pLjubičasta. ~Talasasto~ @vibriranje.@",
+      "Moraš označiti svaku reč pojedinačno.",
+      "Takođe možeš koristiti [#ffffff]bele[] heksadecimalne kodove boja ovako da obojiš tekst.",
+      "Heksadecimalni kodovi boja takođe rade u tekstu karte! Ali ne i na ključnim rečima, bez nekih trikova."
+    ],
+    "OPTIONS": [
+      "[Opis radnje] Šta zapravo dobijaš.",
+      "[Odbijanje] #rIzgubi #r1 #rMaks. #rž. #rp. Loše stvari su crvene.",
+      "[Prihvatanje] #gZadobi #gApotozu. Dobre stvari su zelene.",
+      "[Napusti]",
+      "Izaberi kartu koju ćeš ukloniti. (Takođe možeš dodati dodatni tekst ovako.)"
+    ]
+  }
+}

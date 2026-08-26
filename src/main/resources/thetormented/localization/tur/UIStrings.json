@@ -1,0 +1,20 @@
+{
+  "${modID}:Example": {
+    "TEXT": [
+      "Bu",
+      "bir String dizisidir."
+    ],
+    "EXTRA_TEXT": [
+      "Bu başka bir",
+      "String dizisidir."
+    ],
+    "TEXT_DICT": {
+      "Bu": "Anahtarlara dayalı değerler almak için kullanılan String çiftlerini içerir.",
+      "Bu bir anahtar": "Bu bir değerdir."
+    }
+  }, "${modID}:VoidCallAction": {
+    "TEXT": [
+      "Eline ekleyip Ruhani yapmak için kartları seç."
+    ]
+  }
+}

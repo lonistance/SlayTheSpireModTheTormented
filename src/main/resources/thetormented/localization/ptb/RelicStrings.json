@@ -1,0 +1,112 @@
+{
+  "${modID}:RelicID":  {
+              "NAME":  "Relíquia Boa",
+              "FLAVOR":  "Texto de sabor exibido na visão detalhada da relíquia.",
+              "DESCRIPTIONS":  [
+                        "Ganhe [E] no início do seu turno. [E] é um ícone de energia."
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "Lâmina Quebrada Amaldiçoada",
+                    "FLAVOR":  "Uma lâmina despedaçada que ainda tem sede dos pecados dos outros.",
+                    "DESCRIPTIONS":  [
+                              "No início de cada combate, aprimore um Golpe aleatório e uma Defesa aleatória durante o combate. NL A partir do 2º turno, ganhe #b no início de cada turno",
+                              " ${modID}:Pecado."
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "Gancho Farpado",
+                "FLAVOR":  "Um gancho cruel que se aprofunda cada vez que rasga a carne.",
+                "DESCRIPTIONS":  [
+                          "Sempre que você aplicar ${modID}:Sangramento, aplique #b1 de ${modID}:Sangramento adicional."
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "Cálice Frenético",
+                  "FLAVOR":  "Vinho fermentado em pura frenesi; cada brinde drena outra vida.",
+                  "DESCRIPTIONS":  [
+                            "Sempre que um inimigo que não seja lacaio morrer, cure #b8 PV."
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "Selo do Contrato",
+                "FLAVOR":  "Um contrato assinado com sangue, honrado apenas pelos puros.",
+                "DESCRIPTIONS":  [
+                            "No fim do combate, se você não tiver ${modID}:Dívida, ganhe #b15 de ouro."
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "Amuleto de Recuperação",
+                  "FLAVOR":  "Um amuleto que tira a dor de cada ferida.",
+                  "DESCRIPTIONS":  [
+                            "Sempre que você perderia PV, você perde no máximo #b18 PV em vez disso."
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "Braço de Gárgula",
+                "FLAVOR":  "Pedra antiga que transforma purgação em proteção.",
+                "DESCRIPTIONS":  [
+                            "Sempre que você remover #b1 acumulado de um efeito negativo, ganhe #b1 de Proteção."
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "Estandarte Chamuscado",
+                  "FLAVOR":  "Um estandarte esfarrapado que reúne apenas os de mãos vazias.",
+                  "DESCRIPTIONS":  [
+                            "No fim do seu turno, se você não tiver cartas na mão, compre #b2 cartas adicionais no início do seu próximo turno."
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "Espada Longa do Herói",
+                  "FLAVOR":  "Uma lâmina forjada a partir da promessa de redenção.",
+                  "DESCRIPTIONS":  [
+                            "Substitui a Lâmina Quebrada Amaldiçoada. NL Ao pegar, aprimore todos os Golpes e Defesas do seu baralho. NL A partir do 2º turno, ganhe #b no início de cada turno",
+                            " ${modID}:Pecado."
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "Algemas Pesadas",
+                "FLAVOR":  "Um peso de ferro que prende, mas concede força.",
+                "DESCRIPTIONS":  [
+                            "No início de cada turno, ganhe [E] . NL No início de cada combate, adicione 1 *Emaranhado à sua pilha de compra."
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "Baqueta",
+                "FLAVOR":  "Cada batida do tambor desperta uma centelha de energia.",
+                "DESCRIPTIONS":  [
+                          "Toda vez que você Exaurir #b",
+                          " cartas, ganhe [E] ."
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "Moeda Sem Remorso",
+                  "FLAVOR":  "Uma moeda que perdoa cada passo em falso.",
+                  "DESCRIPTIONS":  [
+                            "Sempre que você entrar em uma Loja, ganhe #b",
+                            " de ouro."
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "Lanterna de Pedra Negra",
+                    "FLAVOR":  "Sua luz fria marca cada aflição que ela acende.",
+                    "DESCRIPTIONS":  [
+                              "Na primeira vez em que você aplicar um efeito negativo a um inimigo em cada combate, ganhe [E] ."
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "Martelo de Ferro",
+                "FLAVOR":  "Forjado na bigorna de batalhas intermináveis.",
+                "DESCRIPTIONS":  [
+                          "Sempre que você derrotar um Elite, aprimore #b",
+                          " cartas aleatórias do seu baralho."
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "Brasa Imortal",
+                "FLAVOR":  "Uma centelha que se alimenta de infortúnio e nunca se apaga.",
+                "DESCRIPTIONS":  [
+                            "Sempre que você tiver um efeito negativo, receba #b25% menos de dano. NL Cause #b25% a mais de dano a inimigos que tenham um efeito negativo."
+                          ]
+                }
+}

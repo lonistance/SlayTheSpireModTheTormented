@@ -20,9 +20,9 @@ public class BloodGuard extends BaseCard {
             1                               // 1 Cost
     );
 
-    private static final int BASE_BLOCK = 6;
+    private static final int BASE_BLOCK = 5;
     private static final int UPGRADE_BLOCK = 2;
-    private static final int BASE_MAGIC = 6;
+    private static final int BASE_MAGIC = 5;
     private static final int UPGRADE_MAGIC = 2;
 
     public BloodGuard() {

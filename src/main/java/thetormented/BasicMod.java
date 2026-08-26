@@ -10,6 +10,7 @@ import thetormented.character.Tormented;
 import thetormented.potions.GodBlood;
 import thetormented.potions.RevivalWine;
 import thetormented.potions.TearDrop;
+import thetormented.powers.buff.SinPower;
 import thetormented.relics.BaseRelic;
 import thetormented.util.GeneralUtils;
 import thetormented.util.KeywordInfo;
@@ -169,6 +170,7 @@ public class BasicMod implements
     }
 
     private void registerKeyword(KeywordInfo info) {
+        info.DESCRIPTION = info.DESCRIPTION.replace("%%SIN_PER_DEBT%%", Integer.toString(SinPower.SIN_PER_DEBT));
         BaseMod.addKeyword(modID.toLowerCase(), info.PROPER_NAME, info.NAMES, info.DESCRIPTION, info.COLOR);
         if (!info.ID.isEmpty())
         {

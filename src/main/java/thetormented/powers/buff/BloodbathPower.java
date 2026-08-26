@@ -1,10 +1,12 @@
 package thetormented.powers.buff;
 
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import thetormented.actions.ApplyBleedAction;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import thetormented.powers.BasePower;
 
 import static thetormented.BasicMod.makeID;
@@ -15,30 +17,41 @@ public class BloodbathPower extends BasePower {
     private static final PowerType POWER_TYPE = PowerType.BUFF;
     private static final boolean IS_TURN_BASED = false;
 
-    private int chargesLeft;
-    private boolean pendingAttack;
-
     public BloodbathPower(AbstractCreature owner, int amount) {
         super(POWER_ID, POWER_TYPE, IS_TURN_BASED, owner, amount);
-        this.chargesLeft = amount;
-        this.pendingAttack = false;
     }
 
-    @Override
-    public void onPlayCard(AbstractCard card, AbstractMonster m) {
-        if (card.type == AbstractCard.CardType.ATTACK) {
-            this.pendingAttack = this.chargesLeft > 0;
-            if (this.pendingAttack) {
-                this.chargesLeft--;
+    private boolean isBelowThreshold(AbstractMonster m) {
+        return m.currentHealth < m.maxHealth * this.amount / 100.0f;
+    }
+
+    private void syncConcede(AbstractMonster m) {
+        if (m.isDead || m.isDying || m.isEscaping) {
+            return;
+        }
+        AbstractPower concede = m.getPower(ConcedePower.POWER_ID);
+        if (isBelowThreshold(m)) {
+            if (concede == null) {
+                this.addToBot(new ApplyPowerAction(m, this.owner, new ConcedePower(m, this.owner, 1), 1));
+            }
+        } else if (concede != null) {
+            this.addToBot(new RemoveSpecificPowerAction(m, this.owner, ConcedePower.POWER_ID));
+        }
+    }
+
+    private void syncAllMonsters() {
+        if (AbstractDungeon.getMonsters() == null || AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            return;
+        }
+        for (AbstractMonster m : AbstractDungeon.getMonsters().monsters) {
+            if (m != null) {
+                syncConcede(m);
             }
         }
     }
 
     @Override
     public void onAttack(DamageInfo info, int damageAmount, AbstractCreature target) {
-        if (!this.pendingAttack) {
-            return;
-        }
         if (info.type != DamageInfo.DamageType.NORMAL) {
             return;
         }
@@ -48,13 +61,21 @@ public class BloodbathPower extends BasePower {
         if (damageAmount <= 0) {
             return;
         }
-        addToBot(new ApplyBleedAction(target, this.owner, damageAmount));
+        if (target instanceof AbstractMonster) {
+            syncConcede((AbstractMonster) target);
+        }
     }
 
     @Override
     public void atStartOfTurn() {
-        this.chargesLeft = this.amount;
-        this.pendingAttack = false;
+        syncAllMonsters();
+    }
+
+    @Override
+    public void atEndOfTurn(boolean isPlayerTurn) {
+        if (isPlayerTurn) {
+            syncAllMonsters();
+        }
     }
 
     @Override

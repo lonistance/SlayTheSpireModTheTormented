@@ -14,7 +14,7 @@ import thetormented.powers.debuff.DebtPower;
 
 
 public class UpdateDebtAction extends AbstractGameAction {
-    private static final int SIN_PER_DEBT = 5;
+    private static final int SIN_PER_DEBT = SinPower.SIN_PER_DEBT;
 
     public UpdateDebtAction(AbstractCreature target, AbstractCreature source, int debtChange) {
         this.target = target;

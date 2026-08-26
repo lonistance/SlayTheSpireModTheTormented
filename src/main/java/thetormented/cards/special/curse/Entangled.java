@@ -1,7 +1,9 @@
 package thetormented.cards.special.curse;
 
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.status.Slimed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import thetormented.cards.BaseCard;
@@ -32,6 +34,11 @@ public class Entangled extends BaseCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+    }
+
+    @Override
+    public void triggerOnExhaust() {
+        addToBot(new MakeTempCardInDrawPileAction(new Slimed(), 1, true, true));
     }
 
     @Override

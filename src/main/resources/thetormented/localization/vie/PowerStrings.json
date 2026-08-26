@@ -1,0 +1,170 @@
+{
+  "${modID}:PowerID":  {
+              "NAME":  "Sức Mạnh Tối Thượng",
+              "DESCRIPTIONS":  [
+                         "Bạn Rất Ngầu và Mạnh Mẽ."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Chảy Máu",
+                "DESCRIPTIONS":  [
+                          "Vào đầu lượt của nó, mất #b",
+                          " HP, sau đó loại bỏ toàn bộ Chảy máu. Khi sinh vật đang Chảy máu chịu sát thương tấn công không bị đỡ, nhận #b1 Chảy máu."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Tội Lỗi",
+               "DESCRIPTIONS":  [
+                          "Khi bạn có #b5 Tội lỗi, nhận ",
+                          " Nợ."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Nợ",
+                "DESCRIPTIONS":  [
+                          "Mỗi Nợ chịu thêm #b10% sát thương. Chịu ",
+                          "% sát thương thêm. NL Khi Nợ bị chặn bởi Thánh tích, bạn mất ",
+                          " Tội lỗi cho mỗi 1 Nợ bị chặn."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Mất Năng Lượng Lượt Sau",
+                      "DESCRIPTIONS":  [
+                                 "Mất [E] vào lượt sau của bạn"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Nhận Năng Lượng Lượt Sau",
+                      "DESCRIPTIONS":  [
+                                 "Nhận [E] vào lượt sau của bạn"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Khoan Dung",
+                "DESCRIPTIONS":  [
+                          "Nợ không gây thêm sát thương trong lượt này"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Vết Thương Sâu",
+                  "DESCRIPTIONS":  [
+                            "Chảy máu không bị loại bỏ vào đầu lượt của nó."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Nhẹ Nhõm",
+                "DESCRIPTIONS":  [
+                           "Vào cuối lượt của bạn, Đốt TẤT CẢ ",
+                           " trong tay bạn."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Đỡ Đòn",
+                "DESCRIPTIONS":  [
+                          "Mỗi khi bạn bị tấn công, phản lại sát thương bạn đã đỡ cho kẻ tấn công."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Chảy Máu Không Ngừng",
+                     "DESCRIPTIONS":  [
+                                "Vào đầu mỗi lượt, gây #b",
+                                " Chảy máu lên TẤT CẢ quân địch."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Đau Buồn",
+                "DESCRIPTIONS":  [
+                          "Lượt này, mỗi khi bạn bốc một lá bài, gây #b",
+                          " Chảy máu lên TẤT CẢ quân địch."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Ký Ức Kinh Hoàng",
+                   "DESCRIPTIONS":  [
+                              "Nếu bạn nhận Nợ trong lượt này, quân địch gây #b",
+                              "% ít sát thương hơn."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Hòa Giải Số Phận",
+                    "DESCRIPTIONS":  [
+                              "Mỗi khi bạn tạo ra hoặc Đốt một lá *Khốn Khổ, nhận #b",
+                              " Giáp."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Thân Xác Tan Nát",
+                    "DESCRIPTIONS":  [
+                              "Mỗi khi bạn gây 6 Chảy máu cho một quân địch, gây #b",
+                              " sát thương lên TẤT CẢ quân địch."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Gai Máu",
+                   "DESCRIPTIONS":  [
+                              "Mỗi khi quân địch tấn công bạn, gây #b",
+                              " Chảy máu lên nó."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Con Đường Chuộc Tội",
+                    "DESCRIPTIONS":  [
+                               "Mỗi khi bạn loại bỏ 1 Nợ, bốc #b",
+                               " lá bài."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Phẫn Nộ",
+                   "DESCRIPTIONS":  [
+                              "Trong #b",
+                              " lượt tới, lá bài đầu tiên bạn chơi mỗi lượt tốn 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Ý Chí Chiến Đấu Khát Máu",
+                       "DESCRIPTIONS":  [
+                                  "Vào đầu mỗi lượt, nhận [E] . NL Vào cuối mỗi lượt, nhận 3 sát thương."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Nhượng Bộ",
+                 "DESCRIPTIONS":  [
+                            "Quân địch này chịu thêm #b50% sát thương."
+                          ]
+               },
+  "${modID}:ExecutionFormPower":  {
+                    "NAME":  "Hình Thái Phán Quyết",
+                    "DESCRIPTIONS":  [
+                            "",
+                            " lá Tấn công đầu tiên chơi mỗi lượt gây Chảy máu bằng sát thương không bị đỡ của nó."
+                          ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Hóa Thân Của Tội Lỗi",
+                  "DESCRIPTIONS":  [
+                            "Vào cuối lượt của bạn, nhận #b",
+                            " Giáp, cộng thêm #b",
+                            " Giáp với mỗi tầng Nợ."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Tắm Máu",
+                  "DESCRIPTIONS":  [
+                              "Bạn gây thêm 50% sát thương lên quân địch dưới ",
+                              "% HP tối đa của chúng."
+                            ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Quá Cứng Nhắc",
+                  "DESCRIPTIONS":  [
+                            "Mỗi khi bạn chơi một lá Tấn công, nó vĩnh viễn mất ",
+                            " sát thương trong phần còn lại của trận đấu."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Hạn Chế",
+                   "DESCRIPTIONS":  [
+                              "Bạn không thể nhận [E]. Bị loại bỏ vào cuối lượt của bạn."
+                            ]
+                 }
+}

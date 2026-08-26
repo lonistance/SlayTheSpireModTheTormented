@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "神の血",
+    "DESCRIPTIONS": [
+      "敵に #b",
+      " ${modID}:出血 を与える。"
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "涙の滴",
+    "DESCRIPTIONS": [
+      "このターン、手札を #b1 ターン保留する。"
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "復活のワイン",
+    "DESCRIPTIONS": [
+      "エネルギーを #b1 得る。 NL カードを #b2 枚引く。"
+    ]
+  }
+}

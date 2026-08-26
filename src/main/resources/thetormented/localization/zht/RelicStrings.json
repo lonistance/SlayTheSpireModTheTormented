@@ -1,0 +1,112 @@
+{
+  "${modID}:RelicID":  {
+              "NAME":  "優質遺物",
+              "FLAVOR":  "遺物詳細檢視中顯示的風味文字。",
+              "DESCRIPTIONS":  [
+                        "在你的回合開始時獲得 [E]。[E] 是能量圖示。"
+                        ]
+            },
+  "${modID}:CursedBrokenBlade":  {
+                    "NAME":  "詛咒斷劍",
+                    "FLAVOR":  "一把斷裂的劍，仍渴求著他人的罪孽。",
+                    "DESCRIPTIONS":  [
+                              "戰鬥開始時，隨機升級 1 張 打擊 和 1 張 防禦 （僅限本場戰鬥）。 NL 從第 2 回合起，每個回合開始時獲得 #b",
+                              " 層 ${modID}:原罪。"
+                            ]
+                  },
+  "${modID}:BarbedHook":  {
+                "NAME":  "倒刺鉤",
+                "FLAVOR":  "一枚殘忍的鉤子，撕裂血肉時只會越陷越深。",
+                "DESCRIPTIONS":  [
+                          "每當你給予 ${modID}:流血 時，額外給予 #b1 層 ${modID}:流血。"
+                        ]
+              },
+  "${modID}:FrenziedGoblet":  {
+                  "NAME":  "狂亂酒杯",
+                  "FLAVOR":  "以純粹的狂亂釀造的美酒，每一次舉杯都終結一條性命。",
+                  "DESCRIPTIONS":  [
+                            "每當非爪牙敵人死亡時，恢復 #b8 點生命。"
+                          ]
+                },
+  "${modID}:ContractSeal":  {
+                "NAME":  "契約印章",
+                "FLAVOR":  "以鮮血簽署的契約，唯有純淨之人才配得到它的回報。",
+                "DESCRIPTIONS":  [
+                            "戰鬥結束時，若你沒有任何 ${modID}:血債 ，獲得 #b15 金幣。"
+                          ]
+                },
+  "${modID}:RecoveryCharm":  {
+                  "NAME":  "復甦護符",
+                  "FLAVOR":  "一枚撫平每一道傷口的護符。",
+                  "DESCRIPTIONS":  [
+                            "每次失去生命時，最多失去 #b18 點生命。"
+                          ]
+                },
+  "${modID}:GargoyleArm":  {
+                "NAME":  "石像手臂",
+                "FLAVOR":  "古老的石像之臂，把每一次淨化都化為守護。",
+                "DESCRIPTIONS":  [
+                            "每當你移除 #b1 層負面效果時，獲得 #b1 點 格擋。"
+                        ]
+              },
+  "${modID}:ScorchedBanner":  {
+                  "NAME":  "燒焦旗幟",
+                  "FLAVOR":  "一面破舊的旗幟，只為兩手空空之人振作。",
+                  "DESCRIPTIONS":  [
+                            "回合結束時，若你沒有手牌，下回合開始時多抽 #b2 張牌。"
+                          ]
+                },
+  "${modID}:HeroLongsword":  {
+                  "NAME":  "英雄長劍",
+                  "FLAVOR":  "一把由救贖之誓鍛造而成的長劍。",
+                  "DESCRIPTIONS":  [
+                            "替換詛咒斷劍。 NL 拾起時，升級牌組中的全部 打擊 和 防禦。 NL 從第 2 回合起，每個回合開始時獲得 #b",
+                            " 層 ${modID}:原罪。"
+                          ]
+                },
+  "${modID}:HeavyFetters":  {
+                "NAME":  "沉重腳鐐",
+                "FLAVOR":  "沉重的束縛，亦賜予力量。",
+                "DESCRIPTIONS":  [
+                            "每回合開始時獲得 [E]。 NL 每場戰鬥開始時，將 1 張 *糾纏 加入你的抽牌堆。"
+                          ]
+                },
+  "${modID}:Drumstick":  {
+                "NAME":  "鼓槌",
+                "FLAVOR":  "鼓點起落之間，力量源源不絕。",
+                "DESCRIPTIONS":  [
+                          "每消耗 #b",
+                          " 張牌，獲得 [E]。"
+                        ]
+              },
+  "${modID}:RegretlessCoin":  {
+                  "NAME":  "無悔錢幣",
+                  "FLAVOR":  "一枚對每一次失足都既往不咎的錢幣。",
+                  "DESCRIPTIONS":  [
+                            "每當你進入商店時，獲得 #b",
+                            " 金幣。"
+                          ]
+                },
+  "${modID}:BlackstoneLantern":  {
+                    "NAME":  "黑石提燈",
+                    "FLAVOR":  "冰冷的火光，映照著每一次點燃的苦難。",
+                    "DESCRIPTIONS":  [
+                              "每場戰鬥中，你第 1 次對敵人施加負面效果時，獲得 [E]。"
+                            ]
+                  },
+  "${modID}:IronHammer":  {
+                "NAME":  "鐵錘",
+                "FLAVOR":  "在無盡戰火的鐵砧上鍛造而成。",
+                "DESCRIPTIONS":  [
+                          "每當你打敗精英敵人時，隨機升級牌組中的 #b",
+                          " 張牌。"
+                        ]
+              },
+  "${modID}:UndyingEmber":  {
+                "NAME":  "不滅火種",
+                "FLAVOR":  "以厄運為薪的火焰，生生不息。",
+                "DESCRIPTIONS":  [
+                            "當你帶有負面狀態時，受到的傷害降低 #b25%。 NL 你對帶有負面狀態的敵人造成的傷害提高 #b25%。"
+                          ]
+                }
+}

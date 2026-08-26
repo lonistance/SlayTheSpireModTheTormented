@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Guds blod",
+    "DESCRIPTIONS": [
+      "Påfør #b",
+      " ${modID}:Blødning til en fiende."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Tåredråpe",
+    "DESCRIPTIONS": [
+      "Behold hånda i #b1 runde."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Gjenopplivingsvin",
+    "DESCRIPTIONS": [
+      "Få #b1 Energi. NL Trekk #b2 kort."
+    ]
+  }
+}

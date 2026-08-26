@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Nazwa wydarzenia",
+    "DESCRIPTIONS": [
+      "To jest tekst wydarzenia, zazwyczaj opisujący to, co się dzieje.",
+      "#g~To~ #g~jest~ #g~zielony~ #g~i~ #g~falujący~ #g~tekst.~",
+      "#r@CZERWONY@ #r@I@ #r@WIBRUJĄCY@ #r@TEKST.@",
+      "#rCzerwony #gZielony #yŻółty #bNiebieski #pFioletowy. ~Falujący~ @wibrujący.@",
+      "Musisz oznaczyć każde słowo osobno.",
+      "Możesz też użyć kodów kolorów hex w formacie [#ffffff]biały[] w ten sposób, aby pokolorować tekst.",
+      "Kody kolorów hex działają również w tekście kart! Ale nie na słowach kluczowych, bez pewnych obejść."
+    ],
+    "OPTIONS": [
+      "[Opis działania] To, co faktycznie otrzymujesz.",
+      "[Odmowa] #rTracisz #r1 #rMaks. #rPZ. Złe rzeczy są czerwone.",
+      "[Akceptacja] #gUzyskaj #gApoteozę. Dobre rzeczy są zielone.",
+      "[Odejdź]",
+      "Wybierz kartę do usunięcia. (Możesz też dodać tutaj dodatkowy tekst.)"
+    ]
+  }
+}

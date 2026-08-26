@@ -22,7 +22,7 @@ public class MangledFlesh extends BaseCard {
 
     public MangledFlesh() {
         super(ID, info);
-        setMagic(4, 1);
+        setMagic(5, 2);
     }
 
     @Override

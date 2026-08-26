@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import thetormented.powers.BasePower;
 import thetormented.powers.buff.MercyPower;
+import thetormented.powers.buff.SinPower;
 
 import static thetormented.BasicMod.makeID;
 
@@ -63,6 +64,6 @@ public class DebtPower extends BasePower {
     @Override
     public void updateDescription() {
         int totalPercent = this.amount * (int) (DAMAGE_INCREASE_PER_STACK * 100);
-        this.description = DESCRIPTIONS[0] + totalPercent + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + totalPercent + DESCRIPTIONS[1] + SinPower.SIN_PER_DEBT + DESCRIPTIONS[2];
     }
 }

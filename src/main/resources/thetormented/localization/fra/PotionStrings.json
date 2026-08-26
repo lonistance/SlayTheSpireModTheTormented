@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "Sang Divin",
+    "DESCRIPTIONS": [
+      "Applique #b",
+      " ${modID}:Saignement à un ennemi."
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "Goutte de Larme",
+    "DESCRIPTIONS": [
+      "Conservez votre main pendant #b1 tour."
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "Vin de Résurrection",
+    "DESCRIPTIONS": [
+      "Gagnez #b1 Énergie. NL Piochez #b2 cartes."
+    ]
+  }
+}

@@ -1,360 +1,447 @@
 {
-  "${modID}:ExampleCard": {
-    "NAME": "Name",
-    "DESCRIPTION": "Beschreibung. NL Zweite Zeile.",
-    "UPGRADE_DESCRIPTION": "Wird automatisch verwendet, wenn die Karte verbessert ist. Entfernen, falls nicht benötigt.",
-    "EXTENDED_DESCRIPTION": [
-      "Hier kannst du weiteren Text einfügen.",
-      "Falls du ihn für irgendetwas brauchst.",
-      "Blizzard ist hierfür ein gutes Beispiel."
-    ]
-  }, "${modID}:StrikeTormented": {
-    "NAME": "Schlag",
-    "DESCRIPTION": "Füge !D! Schaden zu.",
-    "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu."
-  }, "${modID}:DefendTormented": {
-  "NAME": "Verteidigung",
-  "DESCRIPTION": "Erhalte !B! Block.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block."
-  }, "${modID}:Rebel": {
-  "NAME": "Rebell",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge ${modID}:Blutung in Höhe des Schadens zu, den diese Karte verursacht.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Füge ${modID}:Blutung in Höhe des Schadens zu, den diese Karte verursacht.",
-  "EXTENDED_DESCRIPTION": [
-    "NL (Füge !M! ${modID}:Blutung zu)"
-  ]
-  }, "${modID}:Forgive": {
-  "NAME": "Vergeben",
-  "DESCRIPTION": "Erhalte !B! Block. NL Verringere !M! ${modID}:Sünde.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Verringere !M! ${modID}:Sünde."
-  }, "${modID}:Slash": {
-  "NAME": "Schnitt",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge !M! ${modID}:Blutung zu.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Füge !M! ${modID}:Blutung zu."
-  }, "${modID}:Rend": {
-  "NAME": "Aufreißen",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Wenn der Gegner ${modID}:Blutung hat, füge !M! zusätzliche Treffer zu.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Wenn der Gegner ${modID}:Blutung hat, füge !M! zusätzliche Treffer zu."
-  }, "${modID}:Pursuit": {
-  "NAME": "Verfolgung",
-  "DESCRIPTION": "Nur spielbar, wenn deine zuletzt gespielte Karte in diesem Zug ein Angriff war. NL Füge !D! Schaden zu.",
-  "UPGRADE_DESCRIPTION": "Nur spielbar, wenn deine zuletzt gespielte Karte in diesem Zug ein Angriff war. NL Füge !D! Schaden zu.",
-  "EXTENDED_DESCRIPTION": ["Du musst zuerst in diesem Zug einen Angriff spielen."]
-  }, "${modID}:ArmSevering": {
-  "NAME": "Armabtrennung",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge deiner Hand !M! *Qual hinzu.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Füge deiner Hand !M! *Qual hinzu."
-  }, "${modID}:QuenchedBlade": {
-  "NAME": "Gelöschte Klinge",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Verbessere für den Rest des Kampfes !M! Karten in deiner Hand.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Verbessere für den Rest des Kampfes !M! Karten in deiner Hand."
-  },"${modID}:CruelTorture": {
-  "NAME": "Grausame Folter",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde."
-  },"${modID}:AtonementStrike": {
-  "NAME": "Sühneschlag",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Ziehe !M! Karten, wenn du ${modID}:Schuld hast.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Ziehe !M! Karten, wenn du ${modID}:Schuld hast."
-  },"${modID}:UnrighteousGuilt": {
-  "NAME": "Ungerechte Schuld",
-  "DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde.",
-  "UPGRADE_DESCRIPTION": "Füge ALLEN Gegnern !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde."
-  },"${modID}:RelentlessEntanglement": {
-  "NAME": "Unermüdliche Verstrickung",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge diese Karte deiner Hand hinzu, wenn deine ${modID}:Schuld zunimmt"
-},"${modID}:Agony": {
-  "NAME": "Qualen",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge !M! Schwach und !M! Verwundbar zu.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Füge !M! Schwach und !M! Verwundbar zu."
-  },"${modID}:SacredLand": {
-  "NAME": "Heiliges Land",
-  "DESCRIPTION": "Erhalte !B! Block. NL Ziehe !M! Karten, wenn du keine ${modID}:Schuld hast.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Ziehe !M! Karten, wenn du keine ${modID}:Schuld hast."
-  },"${modID}:Loan": {
-  "NAME": "Darlehen",
-  "DESCRIPTION": "Erhalte [E] [E] [E]. NL Verliere nächsten Zug [E]. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "Erhalte [E] [E] [E]. NL Verliere nächsten Zug [E]. NL Verbrauchen NL Behalten"
-  },"${modID}:Firm": {
-  "NAME": "Fest",
-  "DESCRIPTION": "Erhalte !B! Block. NL Behalten",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Behalten"
-  },"${modID}:Wandering": {
-  "NAME": "Umherirren",
-  "DESCRIPTION": "Ziehe !M! Karte(n). NL Verbrauche 1 Karte. NL Wenn du eine Statuskarte verbrauchst, verringere 3 ${modID}:Sünde",
-  "UPGRADE_DESCRIPTION": "Ziehe !M! Karten. NL Verbrauche 1 Karte. NL Wenn du eine Statuskarte verbrauchst, verringere 3 ${modID}:Sünde"
-},"${modID}:BloodGuard": {
-  "NAME": "Blutschutz",
-  "DESCRIPTION": "Erhalte !B! Block. NL Füge einem Gegner !M! ${modID}:Blutung zu.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Füge einem Gegner !M! ${modID}:Blutung zu."
-  },"${modID}:PleaOfInnocence": {
-  "NAME": "Plädoyer der Unschuld",
-  "DESCRIPTION": "Erhalte !B! Block. NL Jede ${modID}:Schuld gewährt !M! zusätzlichen Block.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Jede ${modID}:Schuld gewährt !M! zusätzlichen Block.",
-  "EXTENDED_DESCRIPTION": [
-    " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
-  ]
-  },"${modID}:PredictiveMeasures": {
-  "NAME": "Vorausschauende Maßnahmen",
-  "DESCRIPTION": "Ziehe !M! Karte. Wenn es ein Angriff ist, kostet er bis zum Spielen in diesem Zug 0.",
-  "UPGRADE_DESCRIPTION": "Ziehe !M! Karte. Wenn es ein Angriff ist, kostet er bis zum Spielen in diesem Zug 0."
-  }, "${modID}:Hostility": {
-  "NAME": "Feindseligkeit",
-  "DESCRIPTION": "Wenn dein Block unter !${modID}:BLOCK_THRESHOLD! liegt, füge allen Gegnern !M! Schwach zu. NL Erhalte !B! Block",
-  "UPGRADE_DESCRIPTION": "Wenn dein Block unter !${modID}:BLOCK_THRESHOLD! liegt, füge allen Gegnern !M! Schwach zu. NL Erhalte !B! Block"
-  }, "${modID}:Shackles": {
-  "NAME": "Fesseln",
-  "DESCRIPTION": "Füge deiner Hand !${modID}:CARD_ADD! *Qual hinzu. NL Erhalte !M! Block für jede Statuskarte in deiner Hand",
-  "UPGRADE_DESCRIPTION": "Füge deiner Hand !${modID}:CARD_ADD! *Qual hinzu. NL Erhalte !M! Block für jede Statuskarte in deiner Hand",
-  "EXTENDED_DESCRIPTION": [
-    " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
-  ]
-  }, "${modID}:DeterringStrike": {
-  "NAME": "Abschreckungsschlag",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Der Gegner verliert diesen Zug !M! Stärke, wenn seine Absicht ein Angriff ist",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Der Gegner verliert diesen Zug !M! Stärke, wenn seine Absicht ein Angriff ist"
-  },"${modID}:HeavySmite": {
-  "NAME": "Schwerer Schlag",
-  "DESCRIPTION": "Nur spielbar, wenn du mindestens !M! ${modID}:Schuld hast. Füge !D! Schaden zu",
-  "UPGRADE_DESCRIPTION": "Nur spielbar, wenn du mindestens !M! ${modID}:Schuld hast. Füge !D! Schaden zu",
-  "EXTENDED_DESCRIPTION": [
-    "Du brauchst mindestens 2 ${modID}:Schuld"
-  ]
-}, "${modID}:SinsToBlades": {
-  "NAME": "Sünden zu Klingen",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Ziehe Karten in Höhe deiner ${modID}:Schuld.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Ziehe Karten in Höhe deiner ${modID}:Schuld plus 1.",
-  "EXTENDED_DESCRIPTION": [
-    " (Ziehe insgesamt !${modID}:TOTAL_DRAW! Karte(n))"
-  ]
-}, "${modID}:ChaosDirty": {
-  "NAME": "Schmutziges Chaos",
-  "DESCRIPTION": "Erhalte !${modID}:SIN! ${modID}:Sünde. NL Füge !D! Schaden zu. Jede ${modID}:Schuld, die du hast, verursacht !M! zusätzlichen Schaden",
-  "UPGRADE_DESCRIPTION": "Erhalte !${modID}:SIN! ${modID}:Sünde. NL Füge !D! Schaden zu. Jede ${modID}:Schuld, die du hast, verursacht !M! zusätzlichen Schaden",
-  "EXTENDED_DESCRIPTION": [
-    " (Füge insgesamt !${modID}:TOTAL_DAMAGE! Schaden zu)"
-  ]
-},"${modID}:TemperedSword": {
-  "NAME": "Gehärtetes Schwert",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Jede Statuskarte, die du verbrauchst, verursacht !M! zusätzlichen Schaden",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Jede Statuskarte, die du verbrauchst, verursacht !M! zusätzlichen Schaden",
-  "EXTENDED_DESCRIPTION": [
-    " (Füge insgesamt !${modID}:TOTAL_DAMAGE! Schaden zu)"
-  ]
-},"${modID}:Crush": {
-  "NAME": "Zermalmen",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte Block in Höhe der ${modID}:Blutung des Gegners",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Erhalte Block in Höhe der ${modID}:Blutung des Gegners",
-  "EXTENDED_DESCRIPTION": [
-    " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
-  ]
-}, "${modID}:Accumulate": {
-  "NAME": "Ansammeln",
-  "DESCRIPTION": "Füge !D! Schaden 2-mal zu. NL Erhalte nächsten Zug [E]",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden 2-mal zu. NL Erhalte nächsten Zug [E][E]"
-},"${modID}:HeavyPast": {
-  "NAME": "Schwere Vergangenheit",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge deinem Nachzieh- und Ablagestapel je 1 *Qual hinzu",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Füge deinem Nachzieh- und Ablagestapel je 1 *Qual hinzu"
-},"${modID}:Implication": {
-  "NAME": "Implikation",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge dann allen Gegnern mit ${modID}:Blutung !D! Schaden zu."
-},"${modID}:ConsecutiveKicks": {
-  "NAME": "Serien-Kicks",
-  "DESCRIPTION": "Füge !D! Schaden !M!-mal zu",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden !M!-mal zu"
-},"${modID}:MassiveBleeding": {
-  "NAME": "Massive Blutung",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Füge dann Schaden in Höhe der ${modID}:Blutung des Gegners zu",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Füge dann Schaden in Höhe des Doppelten der ${modID}:Blutung des Gegners zu",
-  "EXTENDED_DESCRIPTION": [
-    " (Füge insgesamt !${modID}:TOTAL_DAMAGE! Schaden zu)"
-  ]
-},"${modID}:FaceDanger": {
-  "NAME": "Der Gefahr trotzen",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Jede *Qual, die du spielst, verringert die Kosten dieser Karte in diesem Kampf um 1"
-}, "${modID}:Relief": {
-  "NAME": "Erleichterung",
-  "DESCRIPTION": "Verbrauche am Ende deines Zuges alle *Qual in deiner Hand.",
-  "UPGRADE_DESCRIPTION": "Angeboren NL Verbrauche am Ende deines Zuges alle *Qual in deiner Hand."
-  }, "${modID}:Misery": {
-  "NAME": "Qual",
-  "DESCRIPTION": "Erleide 2 Schaden. NL Ziehe 1 Karte. NL Verbrauchen"
-  }, "${modID}:Parry": {
-  "NAME": "Parieren",
-  "DESCRIPTION": "Erhalte !B! Block. NL Immer wenn du angegriffen wirst, reflektiere den abgewehrten Schaden auf den Angreifer.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Immer wenn du angegriffen wirst, reflektiere den abgewehrten Schaden auf den Angreifer."
-  }, "${modID}:Pardon": {
-  "NAME": "Begnadigung",
-  "DESCRIPTION": "Entferne je 1 Stapel ${modID}:Schuld, Verwundbar, Schwach und Gebrechlich. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "Entferne je 1 Stapel ${modID}:Schuld, Verwundbar, Schwach und Gebrechlich."
-  }, "${modID}:Memorial": {
-  "NAME": "Gedenken",
-  "DESCRIPTION": "Wenn du keine ${modID}:Schuld hast, erhalte !B! Block und ziehe !M! Karten. NL Erhalte !${modID}:SIN! ${modID}:Sünde.",
-  "UPGRADE_DESCRIPTION": "Wenn du keine ${modID}:Schuld hast, erhalte !B! Block und ziehe !M! Karten. NL Erhalte !${modID}:SIN! ${modID}:Sünde."
-  }, "${modID}:Boiling": {
-  "NAME": "Sieden",
-  "DESCRIPTION": "Verbrauche alle Nicht-Angriffskarten in deiner Hand. NL Füge ALLEN Gegnern für jede verbrauchte Karte !M! ${modID}:Blutung zu.",
-  "UPGRADE_DESCRIPTION": "Verbrauche alle Nicht-Angriffskarten in deiner Hand. NL Füge ALLEN Gegnern für jede verbrauchte Karte !M! ${modID}:Blutung zu."
-  }, "${modID}:Grief": {
-  "NAME": "Trauer",
-  "DESCRIPTION": "Füge deiner Hand 1 zufällige Statuskarte hinzu. NL In diesem Zug: Immer wenn du eine Karte ziehst, füge ALLEN Gegnern !M! ${modID}:Blutung zu.",
-  "UPGRADE_DESCRIPTION": "Füge deiner Hand 1 zufällige Statuskarte hinzu. NL In diesem Zug: Immer wenn du eine Karte ziehst, füge ALLEN Gegnern !M! ${modID}:Blutung zu."
-  }, "${modID}:BloodSea": {
-  "NAME": "Meer aus Blut",
-  "DESCRIPTION": "Füge !${modID}:BLEED! ${modID}:Blutung zu. NL Multipliziere die ${modID}:Blutung des Gegners mit !M!. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "Füge !${modID}:BLEED! ${modID}:Blutung zu. NL Multipliziere die ${modID}:Blutung des Gegners mit !M!. NL Verbrauchen"
-  }, "${modID}:RelentlessBleed": {
-  "NAME": "Unermüdliche Blutung",
-  "DESCRIPTION": "Füge zu Beginn jeder Runde ALLEN Gegnern !M! ${modID}:Blutung zu.",
-  "UPGRADE_DESCRIPTION": "Füge zu Beginn jeder Runde ALLEN Gegnern !M! ${modID}:Blutung zu."
-  }, "${modID}:DreadMemory": {
-  "NAME": "Furchtbare Erinnerung",
-  "DESCRIPTION": "Wenn du diesen Zug ${modID}:Schuld erhalten hast, verursachen Gegner !M!% weniger Schaden. NL Gilt nur in dem Zug, in dem du ${modID}:Schuld erhalten hast.",
-  "UPGRADE_DESCRIPTION": "Wenn du diesen Zug ${modID}:Schuld erhalten hast, verursachen Gegner !M!% weniger Schaden. NL Gilt nur in dem Zug, in dem du ${modID}:Schuld erhalten hast."
-  }, "${modID}:Trial": {
-  "NAME": "Prüfung",
-  "DESCRIPTION": "Erhalte !M! Stärke und !M! Geschicklichkeit. NL Erhalte 2 Schwach.",
-  "UPGRADE_DESCRIPTION": "Erhalte !M! Stärke und !M! Geschicklichkeit. NL Erhalte 2 Schwach."
-  }, "${modID}:ReconcileFate": {
-  "NAME": "Schicksal versöhnen",
-  "DESCRIPTION": "Immer wenn du eine *Qual erzeugst oder verbrauchst, erhalte !M! Block.",
-  "UPGRADE_DESCRIPTION": "Immer wenn du eine *Qual erzeugst oder verbrauchst, erhalte !M! Block."
-  }, "${modID}:MangledFlesh": {
-  "NAME": "Zerfetztes Fleisch",
-  "DESCRIPTION": "Immer wenn du einem Gegner 6 ${modID}:Blutung zufügst, füge ihm !M! Schaden zu.",
-  "UPGRADE_DESCRIPTION": "Immer wenn du einem Gegner 6 ${modID}:Blutung zufügst, füge ihm !M! Schaden zu."
-  }, "${modID}:BloodThorns": {
-  "NAME": "Blutdornen",
-  "DESCRIPTION": "Immer wenn ein Gegner dich angreift, füge ihm !M! ${modID}:Blutung zu.",
-  "UPGRADE_DESCRIPTION": "Immer wenn ein Gegner dich angreift, füge ihm !M! ${modID}:Blutung zu."
-  }, "${modID}:RedemptionPath": {
-  "NAME": "Pfad der Erlösung",
-  "DESCRIPTION": "Immer wenn du 1 ${modID}:Schuld entfernst, ziehe !M! Karten.",
-  "UPGRADE_DESCRIPTION": "Immer wenn du 1 ${modID}:Schuld entfernst, ziehe !M! Karten."
-  }, "${modID}:Requiem": {
-  "NAME": "Requiem",
-  "DESCRIPTION": "Jede *Qual, die du verbraucht hast, fügt einem zufälligen Gegner !D! Schaden zu",
-  "UPGRADE_DESCRIPTION": "Jede *Qual, die du verbraucht hast, fügt einem zufälligen Gegner !D! Schaden zu",
-  "EXTENDED_DESCRIPTION": [
-    " (Verursache insgesamt !${modID}:HITS! Treffer)"
-  ]
-  }, "${modID}:DesperateMeasure": {
-  "NAME": "Verzweifelte Maßnahme",
-  "DESCRIPTION": "Füge !D! Schaden zu. NL Wenn dies den Gegner nicht tötet, verliere !M! LP.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden zu. NL Wenn dies den Gegner nicht tötet, verliere !M! LP."
-  }, "${modID}:UnceasingWar": {
-  "NAME": "Endloser Krieg",
-  "DESCRIPTION": "Füge !D! Schaden !${modID}:HITS!-mal zu. NL Immer wenn dies einen Gegner tötet, erhöhe die Trefferzahl dieser Karte für den Rest des Laufs dauerhaft um 1. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden !${modID}:HITS!-mal zu. NL Immer wenn dies einen Gegner tötet, erhöhe die Trefferzahl dieser Karte für den Rest des Laufs dauerhaft um 1. NL Verbrauchen"
-  }, "${modID}:FinalJudgment": {
-  "NAME": "Letztes Urteil",
-  "DESCRIPTION": "Nur spielbar, wenn du mindestens 4 ${modID}:Schuld hast. NL Füge ALLEN Gegnern !D! Schaden zu. NL Entferne alle ${modID}:Sünde.",
-  "UPGRADE_DESCRIPTION": "Nur spielbar, wenn du mindestens 4 ${modID}:Schuld hast. NL Füge ALLEN Gegnern !D! Schaden zu. NL Entferne alle ${modID}:Sünde.",
-  "EXTENDED_DESCRIPTION": [
-    "Du brauchst mindestens 4 ${modID}:Schuld."
-  ]
-  }, "${modID}:Blazing": {
-  "NAME": "Lodernd",
-  "DESCRIPTION": "Verbrauche alle Karten in deiner Hand. NL Ziehe für jede verbrauchte Statuskarte !M! Karten. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "Verbrauche alle Karten in deiner Hand. NL Ziehe für jede verbrauchte Statuskarte !M! Karten. NL Verbrauchen"
-  }, "${modID}:RockSolid": {
-  "NAME": "Felsenfest",
-  "DESCRIPTION": "Erhalte !B! Block. NL Verliere 3 Max. LP.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Verliere 3 Max. LP."
-  }, "${modID}:Devotion": {
-  "NAME": "Hingabe",
-  "DESCRIPTION": "Entferne alle deine ${modID}:Schuld, Verwundbar und Schwach. NL Erhalte für jeden entfernten Stapel [E] und ziehe !M! Karten. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "Entferne alle deine ${modID}:Schuld, Verwundbar und Schwach. NL Erhalte für jeden entfernten Stapel [E] und ziehe !M! Karten. NL Verbrauchen"
-  }, "${modID}:Indignation": {
-  "NAME": "Empörung",
-  "DESCRIPTION": "In den nächsten X Zügen kostet die erste Nicht-Angriffskarte, die du pro Zug spielst, 0. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "In den nächsten X+1 Zügen kostet die erste Nicht-Angriffskarte, die du pro Zug spielst, 0. NL Verbrauchen"
-  }, "${modID}:BloodFeud": {
-  "NAME": "Blutfehde",
-  "DESCRIPTION": "Füge deiner Hand 1 *Qual hinzu. NL Löse sofort die ${modID}:Blutung aller Gegner !M!-mal aus.",
-  "UPGRADE_DESCRIPTION": "Füge deiner Hand 1 *Qual hinzu. NL Löse sofort die ${modID}:Blutung aller Gegner !M!-mal aus."
-  }, "${modID}:VoidCall": {
-  "NAME": "Ruf der Leere",
-  "DESCRIPTION": "Angeboren. NL Wähle 1 Karte aus deinem Nachziehstapel und füge sie deiner Hand hinzu. Sie wird Ätherisch. NL Verbrauchen",
-  "UPGRADE_DESCRIPTION": "Angeboren. NL Wähle 2 Karten aus deinem Nachziehstapel und füge sie deiner Hand hinzu. Sie werden Ätherisch. NL Verbrauchen"
-  }, "${modID}:Spread": {
-  "NAME": "Ausbreitung",
-  "DESCRIPTION": "Füge !M! ${modID}:Blutung zu. NL Füge alle Debuffs dieses Gegners allen anderen Gegnern zu.",
-  "UPGRADE_DESCRIPTION": "Füge !M! ${modID}:Blutung zu. NL Füge alle Debuffs dieses Gegners allen anderen Gegnern zu."
-  }, "${modID}:HungeringBattleWill": {
-  "NAME": "Gieriger Kampfwille",
-  "DESCRIPTION": "Erhalte zu Beginn jeder Runde [E]. Verliere am Ende deiner Runde 3 LP, wenn in dieser Runde kein Gegner getötet wurde.",
-  "UPGRADE_DESCRIPTION": "Erhalte zu Beginn jeder Runde [E]. Verliere am Ende deiner Runde 3 LP, wenn in dieser Runde kein Gegner getötet wurde."
-  }, "${modID}:JudgmentForm": {
-  "NAME": "Form des Urteils",
-  "DESCRIPTION": "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu.",
-  "UPGRADE_DESCRIPTION": "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu."
-  }, "${modID}:SinAvatar": {
-  "NAME": "Inkarnation der Sünde",
-  "DESCRIPTION": "Erhalte am Ende deines Zuges !B! Block, plus !M! Block für jeden Stapel ${modID}:Schuld.",
-  "UPGRADE_DESCRIPTION": "Erhalte am Ende deines Zuges !B! Block, plus !M! Block für jeden Stapel ${modID}:Schuld.",
-  "EXTENDED_DESCRIPTION": [
-    " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
-  ]
-  }, "${modID}:Bloodbath": {
-  "NAME": "Blutbad",
-  "DESCRIPTION": "Deine erste in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu.",
-  "UPGRADE_DESCRIPTION": "Deine ersten !M! in jeder Runde gespielten Angriffskarten fügen ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
-  }, "${modID}:Overrigid": {
-  "NAME": "Übersteif",
-  "DESCRIPTION": "Erhalte 4 Stärke. NL Jedes Mal, wenn du eine Angriffskarte spielst, verliert sie für den Rest des Kampfes dauerhaft !M! Schaden.",
-  "UPGRADE_DESCRIPTION": "Erhalte 4 Stärke. NL Jedes Mal, wenn du eine Angriffskarte spielst, verliert sie für den Rest des Kampfes dauerhaft !M! Schaden."
-  }, "${modID}:Entangled": {
-  "NAME": "Verstrickt",
-  "DESCRIPTION": "Immer wenn du diese Karte ziehst, füge deiner Hand 1 Kopie davon hinzu. NL Verbrauchen"
-  }, "${modID}:Riot": {
-  "NAME": "Aufruhr",
-  "DESCRIPTION": "Füge !D! Schaden X-mal zu. NL Jede ${modID}:Schuld, die du hast, lässt diese Karte !M! zusätzlichen Schaden verursachen.",
-  "UPGRADE_DESCRIPTION": "Füge !D! Schaden X-mal zu. NL Jede ${modID}:Schuld, die du hast, lässt diese Karte !M! zusätzlichen Schaden verursachen.",
-  "EXTENDED_DESCRIPTION": [
-    " (Füge !${modID}:TOTAL_DAMAGE! Schaden pro Treffer zu)"
-  ]
-  }, "${modID}:Bloodstain": {
-  "NAME": "Blutfleck",
-  "DESCRIPTION": "Füge !M! ${modID}:Blutung zu. NL Wiederhole dies einmal für jede ${modID}:Schuld, die du hast.",
-  "UPGRADE_DESCRIPTION": "Füge !M! ${modID}:Blutung zu. NL Wiederhole dies einmal für jede ${modID}:Schuld, die du hast."
-  }, "${modID}:BrokenArmor": {
-  "NAME": "Zerbrochene Rüstung",
-  "DESCRIPTION": "Erhalte !B! Block. NL Erhalte !M! Schwach.",
-  "UPGRADE_DESCRIPTION": "Erhalte !B! Block. NL Erhalte !M! Schwach."
-  }, "${modID}:FormPact": {
-  "NAME": "Pakt schließen",
-  "DESCRIPTION": "Erhalte [E] [E]. NL Füge deiner Hand 1 *Qual hinzu.",
-  "UPGRADE_DESCRIPTION": "Erhalte [E] [E] [E]. NL Füge deiner Hand 1 *Qual hinzu."
-  }, "${modID}:Fraud": {
-  "NAME": "Betrug",
-  "DESCRIPTION": "Ziehe !M! Karten. NL Erhalte !M! ${modID}:Sünde.",
-  "UPGRADE_DESCRIPTION": "Ziehe !M! Karten. NL Erhalte !M! ${modID}:Sünde."
-  }, "${modID}:Mercy": {
-  "NAME": "Gnade",
-  "DESCRIPTION": "Ätherisch. NL Verbrauche am Ende jeder Runde *Qual in deiner Hand. NL Erhalte !M! ${modID}:Sünde.",
-  "UPGRADE_DESCRIPTION": "Verbrauche am Ende jeder Runde *Qual in deiner Hand. NL Erhalte !M! ${modID}:Sünde."
-  }, "${modID}:Prepare": {
-  "NAME": "Vorbereiten",
-  "DESCRIPTION": "Angeboren. NL Ziehe !M! Karten. NL Behalte deine Hand in diesem Zug. NL Verbrauchen.",
-  "UPGRADE_DESCRIPTION": "Angeboren. NL Ziehe !M! Karten. NL Behalte deine Hand in diesem Zug. NL Verbrauchen."
-  }, "${modID}:Relapse": {
-  "NAME": "Rückfall",
-  "DESCRIPTION": "Die ${modID}:Blutung eines Gegners wird in diesem Zug nicht entfernt.",
-  "UPGRADE_DESCRIPTION": "Die ${modID}:Blutung ALLER Gegner wird in diesem Zug nicht entfernt."
-  }, "${modID}:SharedSuffering": {
-  "NAME": "Geteiltes Leid",
-  "DESCRIPTION": "Füge für jede ${modID}:Schuld, die du hast, ALLEN Gegnern !M! Schwach und !M! Verwundbar zu. NL Verbrauchen.",
-  "UPGRADE_DESCRIPTION": "Füge für jede ${modID}:Schuld, die du hast, ALLEN Gegnern !M! Schwach und !M! Verwundbar zu. NL Verbrauchen."
-  }, "${modID}:Taboo": {
-  "NAME": "Tabu",
-  "DESCRIPTION": "Erhalte für jede ${modID}:Schuld, die du hast, [E]. NL Erhalte 1 ${modID}:Einschränkung.",
-  "UPGRADE_DESCRIPTION": "Erhalte für jede ${modID}:Schuld, die du hast, plus 1 [E]. NL Erhalte 1 ${modID}:Einschränkung.",
-  "EXTENDED_DESCRIPTION": [
-    " (Kann keine Energie erhalten)",
-    " (Erhalte !${modID}:TOTAL_ENERGY! Energie)",
-    " (Erhalte !${modID}:TOTAL_ENERGY! Energie!)"
-  ]
-  }
+  "${modID}:ExampleCard":  {
+                "NAME":  "Name",
+                "DESCRIPTION":  "Beschreibung. NL Zweite Zeile.",
+                "UPGRADE_DESCRIPTION":  "Wird automatisch verwendet, wenn die Karte verbessert ist. Entfernen, falls nicht benötigt.",
+                "EXTENDED_DESCRIPTION":  [
+                               "Hier kannst du weiteren Text einfügen.",
+                               "Falls du ihn für irgendetwas brauchst.",
+                               "Blizzard ist hierfür ein gutes Beispiel."
+                             ]
+              },
+  "${modID}:StrikeTormented":  {
+                  "NAME":  "Schlag",
+                  "DESCRIPTION":  "Füge !D! Schaden zu.",
+                  "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu."
+                },
+  "${modID}:DefendTormented":  {
+                  "NAME":  "Verteidigung",
+                  "DESCRIPTION":  "Erhalte !B! Block.",
+                  "UPGRADE_DESCRIPTION":  "Erhalte !B! Block."
+                },
+  "${modID}:Rebel":  {
+              "NAME":  "Rebell",
+              "DESCRIPTION":  "Füge !D! Schaden zu. NL Füge ${modID}:Blutung in Höhe des Schadens zu, den diese Karte verursacht.",
+              "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Füge ${modID}:Blutung in Höhe des Schadens zu, den diese Karte verursacht.",
+              "EXTENDED_DESCRIPTION":  [
+                            "NL (Füge !M! ${modID}:Blutung zu)"
+                          ]
+            },
+  "${modID}:Forgive":  {
+              "NAME":  "Vergeben",
+              "DESCRIPTION":  "Erhalte !B! Block. NL Verringere !M! ${modID}:Sünde.",
+              "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Verringere !M! ${modID}:Sünde."
+            },
+  "${modID}:Slash":  {
+              "NAME":  "Schnitt",
+              "DESCRIPTION":  "Füge !D! Schaden zu. NL Füge !M! ${modID}:Blutung zu.",
+              "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Füge !M! ${modID}:Blutung zu."
+            },
+  "${modID}:Rend":  {
+             "NAME":  "Aufreißen",
+             "DESCRIPTION":  "Füge !D! Schaden zu. NL Wenn der Gegner ${modID}:Blutung hat, füge !M! zusätzliche Treffer zu.",
+             "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Wenn der Gegner ${modID}:Blutung hat, füge !M! zusätzliche Treffer zu."
+           },
+  "${modID}:Pursuit":  {
+              "NAME":  "Verfolgung",
+              "DESCRIPTION":  "Nur spielbar, wenn deine zuletzt gespielte Karte in diesem Zug ein Angriff war. NL Füge !D! Schaden zu.",
+              "UPGRADE_DESCRIPTION":  "Nur spielbar, wenn deine zuletzt gespielte Karte in diesem Zug ein Angriff war. NL Füge !D! Schaden zu.",
+              "EXTENDED_DESCRIPTION":  [
+                             "Du musst zuerst in diesem Zug einen Angriff spielen."
+                           ]
+            },
+  "${modID}:ArmSevering":  {
+                "NAME":  "Armabtrennung",
+                "DESCRIPTION":  "Füge !D! Schaden zu. NL Füge deiner Hand !M! *Qual hinzu.",
+                "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Füge deiner Hand !M! *Qual hinzu."
+              },
+  "${modID}:QuenchedBlade":  {
+                  "NAME":  "Gelöschte Klinge",
+                  "DESCRIPTION":  "Füge !D! Schaden zu. NL Verbessere für den Rest des Kampfes !M! Karten in deiner Hand.",
+                  "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Verbessere für den Rest des Kampfes !M! Karten in deiner Hand."
+                },
+  "${modID}:CruelTorture":  {
+                 "NAME":  "Grausame Folter",
+                 "DESCRIPTION":  "Füge !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde.",
+                 "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde."
+               },
+  "${modID}:AtonementStrike":  {
+                  "NAME":  "Sühneschlag",
+                  "DESCRIPTION":  "Füge !D! Schaden zu. NL Ziehe !M! Karten, wenn du ${modID}:Schuld hast. NL Verliere danach 4 ${modID}:Sünde.",
+                  "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Ziehe !M! Karten, wenn du ${modID}:Schuld hast. NL Verliere danach 4 ${modID}:Sünde."
+                },
+  "${modID}:UnrighteousGuilt":  {
+                   "NAME":  "Ungerechte Schuld",
+                   "DESCRIPTION":  "Füge ALLEN Gegnern !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde.",
+                   "UPGRADE_DESCRIPTION":  "Füge ALLEN Gegnern !D! Schaden zu. NL Erhalte !${modID}:SIN! ${modID}:Sünde."
+                 },
+  "${modID}:RelentlessEntanglement":  {
+                      "NAME":  "Unermüdliche Verstrickung",
+                      "DESCRIPTION":  "Füge !D! Schaden zu. NL Füge diese Karte deiner Hand hinzu, wenn deine ${modID}:Schuld zunimmt"
+                    },
+  "${modID}:Agony":  {
+              "NAME":  "Qualen",
+              "DESCRIPTION":  "Füge !D! Schaden zu. NL Füge !M! Schwach und !M! Verwundbar zu.",
+              "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Füge !M! Schwach und !M! Verwundbar zu."
+            },
+  "${modID}:SacredLand":  {
+                "NAME":  "Heiliges Land",
+                "DESCRIPTION":  "Erhalte !B! Block. NL Ziehe !M! Karten, aber 1 Karte weniger für jede ${modID}:Schuld, die du hast.",
+                "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Ziehe !M! Karten, aber 1 Karte weniger für jede ${modID}:Schuld, die du hast.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Ziehe !M! Karten)"
+                            ]
+              },
+  "${modID}:Loan":  {
+             "NAME":  "Darlehen",
+             "DESCRIPTION":  "Erhalte [E] [E] [E]. NL Verliere nächsten Zug [E]. NL Verbrauchen",
+             "UPGRADE_DESCRIPTION":  "Erhalte [E] [E] [E]. NL Verliere nächsten Zug [E]. NL Verbrauchen NL Behalten"
+           },
+  "${modID}:Firm":  {
+             "NAME":  "Fest",
+             "DESCRIPTION":  "Erhalte !B! Block. NL Behalten",
+             "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Behalten"
+           },
+  "${modID}:Odyssey":  {
+              "NAME":  "Umherirren",
+              "DESCRIPTION":  "Ziehe !M! Karte(n). NL Verbrauche 1 Karte. NL Wenn du eine Statuskarte verbrauchst, verringere 3 ${modID}:Sünde",
+              "UPGRADE_DESCRIPTION":  "Ziehe !M! Karten. NL Verbrauche 1 Karte. NL Wenn du eine Statuskarte verbrauchst, verringere 3 ${modID}:Sünde"
+            },
+  "${modID}:BloodGuard":  {
+                "NAME":  "Blutschutz",
+                "DESCRIPTION":  "Erhalte !B! Block. NL Füge einem Gegner !M! ${modID}:Blutung zu.",
+                "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Füge einem Gegner !M! ${modID}:Blutung zu."
+              },
+  "${modID}:PleaOfInnocence":  {
+                  "NAME":  "Plädoyer der Unschuld",
+                  "DESCRIPTION":  "Erhalte !B! Block. NL Jede ${modID}:Schuld gewährt !M! zusätzlichen Block.",
+                  "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Jede ${modID}:Schuld gewährt !M! zusätzlichen Block.",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
+                               ]
+                },
+  "${modID}:PredictiveMeasures":  {
+                    "NAME":  "Vorausschauende Maßnahmen",
+                    "DESCRIPTION":  "Ziehe !M! Karte. Wenn es ein Angriff ist, kostet er bis zum Spielen in diesem Zug 0.",
+                    "UPGRADE_DESCRIPTION":  "Ziehe !M! Karte. Wenn es ein Angriff ist, kostet er bis zum Spielen in diesem Zug 0."
+                  },
+  "${modID}:Hostility":  {
+                "NAME":  "Feindseligkeit",
+                "DESCRIPTION":  "Wenn dein Block unter !${modID}:BLOCK_THRESHOLD! liegt, füge allen Gegnern !M! Schwach zu. NL Erhalte !B! Block",
+                "UPGRADE_DESCRIPTION":  "Wenn dein Block unter !${modID}:BLOCK_THRESHOLD! liegt, füge allen Gegnern !M! Schwach zu. NL Erhalte !B! Block"
+              },
+  "${modID}:Shackles":  {
+               "NAME":  "Fesseln",
+               "DESCRIPTION":  "Füge deiner Hand 2 *Qual hinzu. NL Erhalte !M! Block für jede Statuskarte in deiner Hand",
+               "UPGRADE_DESCRIPTION":  "Füge deiner Hand 2 *Qual hinzu. NL Erhalte !M! Block für jede Statuskarte in deiner Hand",
+               "EXTENDED_DESCRIPTION":  [
+                              " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
+                            ]
+             },
+  "${modID}:DeterringStrike":  {
+                  "NAME":  "Abschreckungsschlag",
+                  "DESCRIPTION":  "Füge !D! Schaden zu. NL Der Gegner verliert diesen Zug !M! Stärke, wenn seine Absicht ein Angriff ist",
+                  "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Der Gegner verliert diesen Zug !M! Stärke, wenn seine Absicht ein Angriff ist"
+                },
+  "${modID}:HeavySmash":  {
+                "NAME":  "Schwerer Schlag",
+                "DESCRIPTION":  "Nur spielbar, wenn du mindestens !M! ${modID}:Schuld hast. Füge !D! Schaden zu",
+                "UPGRADE_DESCRIPTION":  "Nur spielbar, wenn du mindestens !M! ${modID}:Schuld hast. Füge !D! Schaden zu",
+                "EXTENDED_DESCRIPTION":  [
+                              "Du brauchst mindestens 2 ${modID}:Schuld"
+                            ]
+              },
+  "${modID}:SinsToBlades":  {
+                 "NAME":  "Sünden zu Klingen",
+                 "DESCRIPTION":  "Füge !D! Schaden zu. NL Ziehe Karten in Höhe deiner ${modID}:Schuld.",
+                 "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Ziehe Karten in Höhe deiner ${modID}:Schuld plus 1.",
+                 "EXTENDED_DESCRIPTION":  [
+                                " (Ziehe insgesamt !${modID}:TOTAL_DRAW! Karte(n))"
+                              ]
+               },
+  "${modID}:ChaosDirty":  {
+                "NAME":  "Schmutziges Chaos",
+                "DESCRIPTION":  "Erhalte !${modID}:SIN! ${modID}:Sünde. NL Füge !D! Schaden zu. Jede ${modID}:Schuld, die du hast, verursacht !M! zusätzlichen Schaden",
+                "UPGRADE_DESCRIPTION":  "Erhalte !${modID}:SIN! ${modID}:Sünde. NL Füge !D! Schaden zu. Jede ${modID}:Schuld, die du hast, verursacht !M! zusätzlichen Schaden",
+                "EXTENDED_DESCRIPTION":  [
+
+                            ]
+              },
+  "${modID}:TemperedSword":  {
+                  "NAME":  "Gehärtetes Schwert",
+                  "DESCRIPTION":  "Füge !D! Schaden zu. NL Jede Statuskarte, die du verbrauchst, verursacht !M! zusätzlichen Schaden",
+                  "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Jede Statuskarte, die du verbrauchst, verursacht !M! zusätzlichen Schaden",
+                  "EXTENDED_DESCRIPTION":  [
+                                " (Füge insgesamt !${modID}:TOTAL_DAMAGE! Schaden zu)"
+                              ]
+                },
+  "${modID}:Crush":  {
+              "NAME":  "Zermalmen",
+              "DESCRIPTION":  "Füge !D! Schaden zu. NL Erhalte Block in Höhe der ${modID}:Blutung des Gegners",
+              "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Erhalte Block in Höhe der ${modID}:Blutung des Gegners",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
+                          ]
+            },
+  "${modID}:Unleash":  {
+              "NAME":  "Ansammeln",
+              "DESCRIPTION":  "Füge !D! Schaden 2-mal zu. NL Erhalte nächsten Zug [E]",
+              "UPGRADE_DESCRIPTION":  "Füge !D! Schaden 2-mal zu. NL Erhalte nächsten Zug [E][E]"
+            },
+  "${modID}:HeavyPast":  {
+                "NAME":  "Schwere Vergangenheit",
+                "DESCRIPTION":  "Füge !D! Schaden 2-mal zu. NL Füge deinem Nachzieh- und Ablagestapel je 1 *Qual hinzu. NL Ziehe !M! Karten.",
+                "UPGRADE_DESCRIPTION":  "Füge !D! Schaden 2-mal zu. NL Füge deinem Nachzieh- und Ablagestapel je 1 *Qual hinzu. NL Ziehe !M! Karten."
+              },
+  "${modID}:Implication":  {
+                "NAME":  "Implikation",
+                "DESCRIPTION":  "Verbrauche 1 Karte aus deiner Hand. NL Füge allen Gegnern !D! Schaden zu. NL Ziehe 1 Karte für jeden Gegner mit ${modID}:Blutung, dem du Schaden zugefügt hast.",
+                "UPGRADE_DESCRIPTION":  "Verbrauche 1 Karte aus deiner Hand. NL Füge allen Gegnern !D! Schaden zu. NL Ziehe 1 Karte für jeden Gegner mit ${modID}:Blutung, dem du Schaden zugefügt hast."
+              },
+  "${modID}:ConsecutiveKicks":  {
+                   "NAME":  "Serien-Kicks",
+                   "DESCRIPTION":  "Füge !D! Schaden !M!-mal zu",
+                   "UPGRADE_DESCRIPTION":  "Füge !D! Schaden !M!-mal zu"
+                 },
+  "${modID}:MassiveBleeding":  {
+                  "NAME":  "Massive Blutung",
+                  "DESCRIPTION":  "Füge !D! Schaden zu. NL Füge dann Schaden in Höhe der ${modID}:Blutung des Gegners zu",
+                  "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Füge dann Schaden in Höhe des Doppelten der ${modID}:Blutung des Gegners zu",
+                  "EXTENDED_DESCRIPTION":  [
+                                 " (Füge insgesamt !${modID}:TOTAL_DAMAGE! Schaden zu)"
+                               ]
+                },
+  "${modID}:FaceDanger":  {
+                "NAME":  "Der Gefahr trotzen",
+                "DESCRIPTION":  "Füge !D! Schaden zu. NL Jede *Qual, die du spielst, verringert die Kosten dieser Karte in diesem Kampf um 1",
+                "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Jede *Qual, die du spielst, verringert die Kosten dieser Karte in diesem Kampf um 1"
+              },
+  "${modID}:Relief":  {
+              "NAME":  "Erleichterung",
+              "DESCRIPTION":  "Füge deinem Ablagestapel 2 *Qual hinzu. NL Verbrauche am Ende deines Zuges alle *Qual in deiner Hand.",
+              "UPGRADE_DESCRIPTION":  "Angeboren NL Füge deinem Ablagestapel 2 *Qual hinzu. NL Verbrauche am Ende deines Zuges alle *Qual in deiner Hand."
+            },
+  "${modID}:Misery":  {
+              "NAME":  "Qual",
+              "DESCRIPTION":  "Erleide 2 Schaden. NL Ziehe 1 Karte. NL Verbrauchen"
+            },
+  "${modID}:Parry":  {
+              "NAME":  "Parieren",
+              "DESCRIPTION":  "Erhalte !B! Block. NL Immer wenn du angegriffen wirst, reflektiere den abgewehrten Schaden auf den Angreifer.",
+              "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Immer wenn du angegriffen wirst, reflektiere den abgewehrten Schaden auf den Angreifer."
+            },
+  "${modID}:Pardon":  {
+              "NAME":  "Begnadigung",
+              "DESCRIPTION":  "Wandle ALLE Karten in deiner Hand in zufällige Karten um. NL Nachdem diese Karte !M! -mal gespielt wurde, wandle sie in eine zufällige Machtkarte um",
+              "UPGRADE_DESCRIPTION":  "Wandle ALLE Karten in deiner Hand in zufällige verbesserte Karten um. NL Nachdem diese Karte !M! -mal gespielt wurde, wandle sie in eine zufällige verbesserte Machtkarte um",
+              "EXTENDED_DESCRIPTION":  [
+                            " (gespielt !${modID}:PLAYS! Mal)"
+                          ]
+            },
+  "${modID}:Memorial":  {
+               "NAME":  "Gedenken",
+               "DESCRIPTION":  "Ziehe 1 Karte. NL Wenn die gezogene Karte eine Fähigkeit ist, verliere !M! ${modID}:Sünde.",
+               "UPGRADE_DESCRIPTION":  "Ziehe 1 Karte. NL Wenn die gezogene Karte eine Fähigkeit ist, verliere !M! ${modID}:Sünde."
+             },
+  "${modID}:Boiling":  {
+              "NAME":  "Sieden",
+              "DESCRIPTION":  "Verbrauche alle Nicht-Angriffskarten in deiner Hand. NL Füge 1 zufälligen Gegner für jede verbrauchte Karte !M! ${modID}:Blutung zu.",
+              "UPGRADE_DESCRIPTION":  "Verbrauche alle Nicht-Angriffskarten in deiner Hand. NL Füge 1 zufälligen Gegner für jede verbrauchte Karte !M! ${modID}:Blutung zu."
+            },
+  "${modID}:Grief":  {
+              "NAME":  "Trauer",
+              "DESCRIPTION":  "Füge deiner Hand 1 zufällige Statuskarte hinzu. NL In diesem Zug: Immer wenn du eine Karte ziehst, füge ALLEN Gegnern !M! ${modID}:Blutung zu.",
+              "UPGRADE_DESCRIPTION":  "Füge deiner Hand 1 zufällige Statuskarte hinzu. NL In diesem Zug: Immer wenn du eine Karte ziehst, füge ALLEN Gegnern !M! ${modID}:Blutung zu."
+            },
+  "${modID}:BloodSea":  {
+               "NAME":  "Meer aus Blut",
+               "DESCRIPTION":  "Füge !${modID}:BLEED! ${modID}:Blutung zu. NL Multipliziere die ${modID}:Blutung des Gegners mit !M!. NL Verbrauchen",
+               "UPGRADE_DESCRIPTION":  "Füge !${modID}:BLEED! ${modID}:Blutung zu. NL Multipliziere die ${modID}:Blutung des Gegners mit !M!. NL Verbrauchen"
+             },
+  "${modID}:RelentlessBleed":  {
+                  "NAME":  "Unermüdliche Blutung",
+                  "DESCRIPTION":  "Füge zu Beginn jeder Runde ALLEN Gegnern !M! ${modID}:Blutung zu.",
+                  "UPGRADE_DESCRIPTION":  "Füge zu Beginn jeder Runde ALLEN Gegnern !M! ${modID}:Blutung zu."
+                },
+  "${modID}:DreadMemory":  {
+                "NAME":  "Furchtbare Erinnerung",
+                "DESCRIPTION":  "Wenn du diesen Zug ${modID}:Schuld erhalten hast, verursachen Gegner !M!% weniger Schaden. NL Gilt nur in dem Zug, in dem du ${modID}:Schuld erhalten hast.",
+                "UPGRADE_DESCRIPTION":  "Wenn du diesen Zug ${modID}:Schuld erhalten hast, verursachen Gegner !M!% weniger Schaden. NL Gilt nur in dem Zug, in dem du ${modID}:Schuld erhalten hast."
+              },
+  "${modID}:Trial":  {
+              "NAME":  "Prüfung",
+              "DESCRIPTION":  "Erhalte !M! Stärke und !M! Geschicklichkeit. NL Erhalte 1 Schwach.",
+              "UPGRADE_DESCRIPTION":  "Erhalte !M! Stärke und !M! Geschicklichkeit. NL Erhalte 1 Schwach."
+            },
+  "${modID}:ReconcileFate":  {
+                  "NAME":  "Schicksal versöhnen",
+                  "DESCRIPTION":  "Immer wenn du eine *Qual erzeugst oder verbrauchst, erhalte !M! Block.",
+                  "UPGRADE_DESCRIPTION":  "Immer wenn du eine *Qual erzeugst oder verbrauchst, erhalte !M! Block."
+                },
+  "${modID}:MangledFlesh":  {
+                 "NAME":  "Zerfetztes Fleisch",
+                 "DESCRIPTION":  "Immer wenn du einem Gegner 6 ${modID}:Blutung zufügst, füge ALLEN Gegnern !M! Schaden zu.",
+                 "UPGRADE_DESCRIPTION":  "Immer wenn du einem Gegner 6 ${modID}:Blutung zufügst, füge ALLEN Gegnern !M! Schaden zu."
+               },
+  "${modID}:BloodThorns":  {
+                "NAME":  "Blutdornen",
+                "DESCRIPTION":  "Immer wenn ein Gegner dich angreift, füge ihm !M! ${modID}:Blutung zu.",
+                "UPGRADE_DESCRIPTION":  "Immer wenn ein Gegner dich angreift, füge ihm !M! ${modID}:Blutung zu."
+              },
+  "${modID}:RedemptionPath":  {
+                  "NAME":  "Pfad der Erlösung",
+                  "DESCRIPTION":  "Immer wenn du 1 ${modID}:Schuld entfernst, ziehe !M! Karten.",
+                  "UPGRADE_DESCRIPTION":  "Immer wenn du 1 ${modID}:Schuld entfernst, ziehe !M! Karten."
+                },
+  "${modID}:Requiem":  {
+              "NAME":  "Requiem",
+              "DESCRIPTION":  "Jede *Qual, die du verbraucht hast, fügt einem zufälligen Gegner !D! Schaden zu",
+              "UPGRADE_DESCRIPTION":  "Jede *Qual, die du verbraucht hast, fügt einem zufälligen Gegner !D! Schaden zu",
+              "EXTENDED_DESCRIPTION":  [
+                             " (Verursache insgesamt !${modID}:HITS! Treffer)"
+                           ]
+            },
+  "${modID}:DesperateMeasure":  {
+                   "NAME":  "Verzweifelte Maßnahme",
+                   "DESCRIPTION":  "Füge !D! Schaden zu. NL Wenn dies den Gegner nicht tötet, verliere !M! LP.",
+                   "UPGRADE_DESCRIPTION":  "Füge !D! Schaden zu. NL Wenn dies den Gegner nicht tötet, verliere !M! LP."
+                 },
+  "${modID}:UnceasingWar":  {
+                 "NAME":  "Endloser Krieg",
+                 "DESCRIPTION":  "Füge !D! Schaden !${modID}:HITS!-mal zu. NL Immer wenn dies einen Gegner tötet, erhöhe die Trefferzahl dieser Karte für den Rest des Laufs dauerhaft um 1. NL Verbrauchen",
+                 "UPGRADE_DESCRIPTION":  "Füge !D! Schaden !${modID}:HITS!-mal zu. NL Immer wenn dies einen Gegner tötet, erhöhe die Trefferzahl dieser Karte für den Rest des Laufs dauerhaft um 1. NL Verbrauchen"
+               },
+  "${modID}:FinalJudgment":  {
+                  "NAME":  "Letztes Urteil",
+                  "DESCRIPTION":  "Nur spielbar, wenn du mindestens 4 ${modID}:Schuld hast. NL Füge ALLEN Gegnern !D! Schaden zu. NL Entferne alle ${modID}:Sünde.",
+                  "UPGRADE_DESCRIPTION":  "Nur spielbar, wenn du mindestens 4 ${modID}:Schuld hast. NL Füge ALLEN Gegnern !D! Schaden zu. NL Entferne alle ${modID}:Sünde.",
+                  "EXTENDED_DESCRIPTION":  [
+                                "Du brauchst mindestens 4 ${modID}:Schuld."
+                              ]
+                },
+  "${modID}:Blazing":  {
+              "NAME":  "Lodernd",
+              "DESCRIPTION":  "Verbrauche alle Karten in deiner Hand. NL Ziehe für jede verbrauchte Statuskarte !M! Karten. NL Verbrauchen",
+              "UPGRADE_DESCRIPTION":  "Verbrauche alle Karten in deiner Hand. NL Ziehe für jede verbrauchte Statuskarte !M! Karten. NL Verbrauchen"
+            },
+  "${modID}:RockSolid":  {
+                "NAME":  "Felsenfest",
+                "DESCRIPTION":  "Erhalte !B! Block. NL Verliere 3 Max. LP.",
+                "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Verliere 3 Max. LP."
+              },
+  "${modID}:Devotion":  {
+               "NAME":  "Hingabe",
+               "DESCRIPTION":  "Entferne alle deine ${modID}:Schuld, Verwundbar, Schwach und Gebrechlich. NL Erhalte für jeden entfernten Stapel [E] und ziehe !M! Karten. NL Verbrauchen",
+               "UPGRADE_DESCRIPTION":  "Entferne alle deine ${modID}:Schuld, Verwundbar, Schwach und Gebrechlich. NL Erhalte für jeden entfernten Stapel [E] und ziehe !M! Karten. NL Verbrauchen"
+             },
+  "${modID}:Indignation":  {
+                "NAME":  "Empörung",
+                "DESCRIPTION":  "In den nächsten X Zügen kostet die erste Karte, die du pro Zug spielst, 0. NL Verbrauchen",
+                "UPGRADE_DESCRIPTION":  "In den nächsten X+1 Zügen kostet die erste Karte, die du pro Zug spielst, 0. NL Verbrauchen"
+              },
+  "${modID}:BloodFeud":  {
+                "NAME":  "Blutfehde",
+                "DESCRIPTION":  "Füge deiner Hand 1 *Qual hinzu. NL Löse sofort !M!% der ${modID}:Blutung aller Gegner aus.",
+                "UPGRADE_DESCRIPTION":  "Füge deiner Hand 1 *Qual hinzu. NL Löse sofort !M!% der ${modID}:Blutung aller Gegner aus."
+              },
+  "${modID}:VoidCall":  {
+               "NAME":  "Ruf der Leere",
+               "DESCRIPTION":  "Wähle 1 Karte aus deinem Nachziehstapel und füge sie deiner Hand hinzu. Sie wird Ätherisch. NL Verbrauchen",
+               "UPGRADE_DESCRIPTION":  "Wähle 1 Karte aus deinem Nachziehstapel und füge sie deiner Hand hinzu. Sie wird Ätherisch."
+             },
+  "${modID}:Spread":  {
+              "NAME":  "Ausbreitung",
+              "DESCRIPTION":  "Füge !M! ${modID}:Blutung zu. NL Füge alle Debuffs dieses Gegners allen anderen Gegnern zu.",
+              "UPGRADE_DESCRIPTION":  "Füge !M! ${modID}:Blutung zu. NL Füge alle Debuffs dieses Gegners allen anderen Gegnern zu."
+            },
+  "${modID}:HungeringBattleWill":  {
+                    "NAME":  "Gieriger Kampfwille",
+                    "DESCRIPTION":  "Erhalte zu Beginn jeder Runde [E]. NL Nimm am Ende jeder Runde 3 Schaden.",
+                    "UPGRADE_DESCRIPTION":  "Erhalte zu Beginn jeder Runde [E]. NL Nimm am Ende jeder Runde 3 Schaden."
+                  },
+  "${modID}:ExecutionForm":  {
+                  "NAME":  "Form des Urteils",
+                  "DESCRIPTION":  "Deine erste in jeder Runde gespielte Angriffskarte fügt ${modID}:Blutung in Höhe des ungeblockten Schadens zu.",
+                  "UPGRADE_DESCRIPTION":  "Deine ersten beiden in jeder Runde gespielten Angriffskarten fügen ${modID}:Blutung in Höhe des ungeblockten Schadens zu."
+                },
+  "${modID}:SinAvatar":  {
+                "NAME":  "Inkarnation der Sünde",
+                "DESCRIPTION":  "Erhalte am Ende deines Zuges !B! Block, plus !M! Block für jeden Stapel ${modID}:Schuld.",
+                "UPGRADE_DESCRIPTION":  "Erhalte am Ende deines Zuges !B! Block, plus !M! Block für jeden Stapel ${modID}:Schuld.",
+                "EXTENDED_DESCRIPTION":  [
+                              " (Erhalte insgesamt !${modID}:TOTAL_BLOCK! Block)"
+                            ]
+              },
+  "${modID}:Bloodbath":  {
+                "NAME":  "Blutbad",
+                "DESCRIPTION":  "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu.",
+                "UPGRADE_DESCRIPTION":  "Füge Gegnern unter !M!% ihrer Max. LP 50% mehr Schaden zu."
+              },
+  "${modID}:Overrigid":  {
+                "NAME":  "Übersteif",
+                "DESCRIPTION":  "Erhalte 5 Stärke. NL Jedes Mal, wenn du eine Angriffskarte spielst, verliert sie für den Rest des Kampfes dauerhaft !M! Schaden.",
+                "UPGRADE_DESCRIPTION":  "Erhalte 5 Stärke. NL Jedes Mal, wenn du eine Angriffskarte spielst, verliert sie für den Rest des Kampfes dauerhaft !M! Schaden."
+              },
+  "${modID}:Entangled":  {
+                "NAME":  "Verstrickt",
+                "DESCRIPTION":  "Immer wenn du diese Karte ziehst, füge deiner Hand 1 Kopie davon hinzu. NL Verbrauchen NL Wird diese Karte verbraucht, füge 1 Schleim dem Nachziehstapel hinzu."
+              },
+  "${modID}:Riot":  {
+             "NAME":  "Aufruhr",
+             "DESCRIPTION":  "Füge !D! Schaden X-mal zu. NL Jede ${modID}:Schuld, die du hast, lässt diese Karte !M! zusätzlichen Schaden verursachen.",
+             "UPGRADE_DESCRIPTION":  "Füge !D! Schaden X-mal zu. NL Jede ${modID}:Schuld, die du hast, lässt diese Karte !M! zusätzlichen Schaden verursachen.",
+             "EXTENDED_DESCRIPTION":  [
+                            " (Füge !${modID}:TOTAL_DAMAGE! Schaden pro Treffer zu)"
+                          ]
+           },
+  "${modID}:Bloodstain":  {
+                "NAME":  "Blutfleck",
+                "DESCRIPTION":  "Füge !M! ${modID}:Blutung zu. NL Wiederhole dies einmal für jede ${modID}:Schuld, die du hast. NL Verbrauchen.",
+                "UPGRADE_DESCRIPTION":  "Füge !M! ${modID}:Blutung zu. NL Wiederhole dies einmal für jede ${modID}:Schuld, die du hast."
+              },
+  "${modID}:BrokenArmor":  {
+                "NAME":  "Zerbrochene Rüstung",
+                "DESCRIPTION":  "Erhalte !B! Block. NL Jedes Mal, wenn du diese Karte spielst, erhältst du 2 weniger Block（in diesem Kampf）.",
+                "UPGRADE_DESCRIPTION":  "Erhalte !B! Block. NL Jedes Mal, wenn du diese Karte spielst, erhältst du 2 weniger Block（in diesem Kampf）."
+              },
+  "${modID}:FormPact":  {
+               "NAME":  "Pakt schließen",
+               "DESCRIPTION":  "Erhalte [E] [E]. NL Füge 1 *Qual dem Ablagestapel hinzu",
+               "UPGRADE_DESCRIPTION":  "Erhalte [E] [E] [E]. NL Füge 1 *Qual dem Ablagestapel hinzu"
+             },
+  "${modID}:Fraud":  {
+              "NAME":  "Betrug",
+              "DESCRIPTION":  "Ziehe !M! Karten. NL Erhalte !M! ${modID}:Sünde.",
+              "UPGRADE_DESCRIPTION":  "Ziehe !M! Karten. NL Erhalte !M! ${modID}:Sünde."
+            },
+  "${modID}:Mercy":  {
+              "NAME":  "Gnade",
+              "DESCRIPTION":  "Ätherisch. NL Verbrauche am Ende jeder Runde *Qual in deiner Hand. NL Erhalte !M! ${modID}:Sünde.",
+              "UPGRADE_DESCRIPTION":  "Verbrauche am Ende jeder Runde *Qual in deiner Hand. NL Erhalte !M! ${modID}:Sünde."
+            },
+  "${modID}:Prepare":  {
+              "NAME":  "Vorbereiten",
+              "DESCRIPTION":  "Angeboren. NL Ziehe !M! Karten. NL Behalte deine Hand in diesem Zug. NL Verbrauchen.",
+              "UPGRADE_DESCRIPTION":  "Angeboren. NL Ziehe !M! Karten. NL Behalte deine Hand in diesem Zug. NL Verbrauchen."
+            },
+  "${modID}:Relapse":  {
+              "NAME":  "Rückfall",
+              "DESCRIPTION":  "Füge 3 ${modID}:Blutung zu. NL Die ${modID}:Blutung eines Gegners wird für einen Zug nicht entfernt.",
+              "UPGRADE_DESCRIPTION":  "Füge 3 ${modID}:Blutung zu. NL Die ${modID}:Blutung ALLER Gegner wird für einen Zug nicht entfernt."
+            },
+  "${modID}:SharedSuffering":  {
+                  "NAME":  "Geteiltes Leid",
+                  "DESCRIPTION":  "Füge für jede ${modID}:Schuld, die du hast, ALLEN Gegnern !M! Schwach und !M! Verwundbar zu. NL Verbrauchen.",
+                  "UPGRADE_DESCRIPTION":  "Füge für jede ${modID}:Schuld, die du hast, ALLEN Gegnern !M! Schwach und !M! Verwundbar zu. NL Verbrauchen."
+                },
+  "${modID}:Taboo":  {
+              "NAME":  "Tabu",
+              "DESCRIPTION":  "Erhalte für jede ${modID}:Schuld, die du hast, [E]. NL Erhalte 1 ${modID}:Einschränkung.",
+              "UPGRADE_DESCRIPTION":  "Erhalte für jede ${modID}:Schuld, die du hast, plus 1 [E]. NL Erhalte 1 ${modID}:Einschränkung.",
+              "EXTENDED_DESCRIPTION":  [
+                            " (Kann keine Energie erhalten)",
+                            " (Erhalte !${modID}:TOTAL_ENERGY! Energie)",
+                            " (Erhalte !${modID}:TOTAL_ENERGY! Energie!)"
+                          ]
+            }
 }

@@ -1,0 +1,170 @@
+{
+  "${modID}:PowerID":  {
+              "NAME":  "Vrhunska moć",
+              "DESCRIPTIONS":  [
+                         "Veoma si kul i snažan."
+                       ]
+            },
+  "${modID}:BleedPower":  {
+                "NAME":  "Krvarenje",
+                "DESCRIPTIONS":  [
+                          "Na početku svog poteza, izgubi #b",
+                          " ž. p., potom ukloni sve Krvarenje. Kada stvorenje koje krvari primi štetu od neblokiranog napada, zadobi #b1 Krvarenja."
+                        ]
+              },
+  "${modID}:SinPower":  {
+               "NAME":  "Greh",
+               "DESCRIPTIONS":  [
+                          "Kada imaš #b5 greha, zadobi ",
+                          " ${modID}:Duga."
+                        ]
+             },
+  "${modID}:DebtPower":  {
+                "NAME":  "Dug",
+                "DESCRIPTIONS":  [
+                          "Svaki dug prima #b10% više štete. Prima ",
+                          "% više štete. NL Kada je primena duga blokirana Zaštitom, gubiš ",
+                          " greha za svaki blokirani dug."
+                        ]
+              },
+  "${modID}:LoseEnergyNextTurnPower":  {
+                      "NAME":  "Gubitak energije sledećeg poteza",
+                      "DESCRIPTIONS":  [
+                                 "Izgubi [E] sledećeg poteza"
+                               ]
+                    },
+  "${modID}:GainEnergyNextTurnPower":  {
+                      "NAME":  "Dobijanje energije sledećeg poteza",
+                      "DESCRIPTIONS":  [
+                                 "Zadobi [E] sledećeg poteza"
+                               ]
+                    },
+  "${modID}:MercyPower":  {
+                "NAME":  "Milost",
+                "DESCRIPTIONS":  [
+                          "Dug ne zadaje dodatnu štetu ovog poteza"
+                        ]
+              },
+  "${modID}:DeepWoundPower":  {
+                  "NAME":  "Duboka rana",
+                  "DESCRIPTIONS":  [
+                            "Krvarenje se ne uklanja na početku svog poteza."
+                          ]
+                },
+  "${modID}:ReliefPower":  {
+                "NAME":  "Olakšanje",
+                "DESCRIPTIONS":  [
+                           "Na kraju tvog poteza, iscrpi sav ",
+                           " iz ruke."
+                         ]
+              },
+  "${modID}:ParryPower":  {
+                "NAME":  "Pariranje",
+                "DESCRIPTIONS":  [
+                          "Kad god si napadnut, odbij štetu koju si blokirao nazad na napadača."
+                        ]
+              },
+  "${modID}:RelentlessBleedPower":  {
+                     "NAME":  "Neumoljivo krvarenje",
+                     "DESCRIPTIONS":  [
+                                "Na početku svakog poteza, nanesi #b",
+                                " ${modID}:Krvarenja SVIM neprijateljima."
+                              ]
+                   },
+  "${modID}:GriefPower":  {
+                "NAME":  "Tuga",
+                "DESCRIPTIONS":  [
+                          "Ovog poteza, kad god vučeš kartu, nanesi #b",
+                          " ${modID}:Krvarenja SVIM neprijateljima."
+                        ]
+              },
+  "${modID}:DreadMemoryPower":  {
+                   "NAME":  "Užasno sećanje",
+                   "DESCRIPTIONS":  [
+                              "Ako si ovog poteza zadobio dug, neprijatelji zadaju #b",
+                              "% manje štete."
+                            ]
+                 },
+  "${modID}:ReconcileFatePower":  {
+                    "NAME":  "Pomirenje sudbine",
+                    "DESCRIPTIONS":  [
+                              "Kad god stvoriš ili iscrpiš *Beda, zadobi #b",
+                              " odbrane."
+                            ]
+                  },
+  "${modID}:MangledFleshPower":  {
+                    "NAME":  "Razderano meso",
+                    "DESCRIPTIONS":  [
+                              "Kad god neprijatelju naneseš 6 ${modID}:Krvarenja, zadaj svim neprijateljima #b",
+                              " štete."
+                            ]
+                  },
+  "${modID}:BloodThornsPower":  {
+                   "NAME":  "Krvavo trnje",
+                   "DESCRIPTIONS":  [
+                              "Kad god te neprijatelj napadne, nanesi mu #b",
+                              " ${modID}:Krvarenja."
+                            ]
+                 },
+  "${modID}:RedemptionPathPower":  {
+                    "NAME":  "Put iskupljenja",
+                    "DESCRIPTIONS":  [
+                               "Kad god ukloniš 1 ${modID}:Dug, vuci #b",
+                               " karte."
+                             ]
+                  },
+  "${modID}:IndignationPower":  {
+                   "NAME":  "Ogorčenje",
+                   "DESCRIPTIONS":  [
+                              "Tokom narednih #b",
+                              " poteza, prva karta koju odigraš svakog poteza košta 0."
+                            ]
+                 },
+  "${modID}:HungeringBattleWillPower":  {
+                       "NAME":  "Gladna borbena volja",
+                       "DESCRIPTIONS":  [
+                                  "Na početku svakog poteza, zadobi [E]. NL Na kraju svakog poteza zadobi 3 štete."
+                                ]
+                     },
+  "${modID}:ConcedePower":  {
+                 "NAME":  "Popuštanje",
+                 "DESCRIPTIONS":  [
+                            "Ovaj neprijatelj prima #b50% više štete."
+                          ]
+               },
+  "${modID}:ExecutionFormPower":  {
+                    "NAME":  "Oblik suda",
+                    "DESCRIPTIONS":  [
+                            "Tvoja prva ",
+                            " karta napada odigrana svakog poteza nanosi ${modID}:Krvarenje jednako neblokiranoj šteti koju zadaje."
+                          ]
+                  },
+  "${modID}:SinAvatarPower":  {
+                  "NAME":  "Inkarnacija greha",
+                  "DESCRIPTIONS":  [
+                            "Na kraju tvog poteza, zadobi #b",
+                            " odbrane, plus #b",
+                            " odbrane za svaki sloj duga."
+                          ]
+                },
+  "${modID}:BloodbathPower":  {
+                  "NAME":  "Krvoproliće",
+                  "DESCRIPTIONS":  [
+                              "Zadaješ 50% više štete neprijateljima ispod ",
+                              "% njihovih maks. ž. p."
+                            ]
+                },
+  "${modID}:OverrigidPower":  {
+                  "NAME":  "Previše ukočen",
+                  "DESCRIPTIONS":  [
+                            "Svaki put kad odigraš kartu napada, ona trajno gubi ",
+                            " štete do kraja borbe."
+                          ]
+                },
+  "${modID}:RestrictionPower":  {
+                   "NAME":  "Ograničenje",
+                   "DESCRIPTIONS":  [
+                              "Ne možeš zadobiti [E]. Uklanja se na kraju tvog poteza."
+                            ]
+                 }
+}

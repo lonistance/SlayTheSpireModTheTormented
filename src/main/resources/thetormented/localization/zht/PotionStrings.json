@@ -1,0 +1,21 @@
+{
+  "${modID}:GodBlood": {
+    "NAME": "神之血",
+    "DESCRIPTIONS": [
+      "給予 1 名敵人 #b",
+      " 層 流血。"
+    ]
+  },
+  "${modID}:TearDrop": {
+    "NAME": "淚滴",
+    "DESCRIPTIONS": [
+      "保留你的手牌 #b1 回合。"
+    ]
+  },
+  "${modID}:RevivalWine": {
+    "NAME": "復甦之酒",
+    "DESCRIPTIONS": [
+      "獲得 #b1 點能量。 NL 抽 #b2 張牌。"
+    ]
+  }
+}

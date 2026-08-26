@@ -1,4 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
@@ -24,7 +24,7 @@
 
     <!-- This information will be displayed in ModTheSpire, the modded launcher. -->
     <name>The Tormented</name>
-    <version>0.0.0</version>
+    <version>1.0.3</version>
     <!-- Avoid using \ in this description, as they can cause the description to fail to load. -->
     <!-- If you really want to use them, you'll need to "escape" them by putting another one in front, like \\ -->
     <description>Once the tribe’s mightiest blade, he hewed the right arm from an ancient in single combat. For that insolence, the god laid a curse upon him: wherever his feet should fall, war would kindle, and only by draining his enemies’ blood to the dregs could he buy a brief respite from his guilt. To shatter that doom, he struck a covenant with Neow, the goddess of renewal, and set his course toward the Spire, there to tear out the very root of the blight.\n他曾是部落至强的战士，在一对一决斗中，一剑斩断了一位先古之民的右臂。神明因这冒犯而降下诅咒：无论他行至何处，战火必随之燃起；唯有将敌人之血放尽，方得片刻洗刷罪孽。为破除这宿命，他与复苏之神涅奥立下誓约，踏上高塔之路，铲除荒疫的根源。</description>

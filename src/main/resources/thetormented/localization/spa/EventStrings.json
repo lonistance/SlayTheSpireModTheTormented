@@ -1,0 +1,21 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Nombre del Evento",
+    "DESCRIPTIONS": [
+      "Este es el texto del evento, generalmente usado para describir lo que está sucediendo.",
+      "#g~Este~ #g~texto~ #g~está~ #g~verde~ #g~y~ #g~ondulado.~",
+      "#r@ROJO@ #r@Y@ #r@VIBRANDO@ #r@TEXTO.@",
+      "#rRojo #gVerde #yAmarillo #bAzul #pPúrpura. ~Ondulado~ @vibrando.@",
+      "Tienes que marcar cada palabra individualmente.",
+      "También puedes usar códigos de color hexadecimales como [#ffffff]blanco[] para colorear el texto.",
+      "Los códigos de color hexadecimales también funcionan en el texto de las cartas. ¡Pero no en las palabras clave, sin algunas adaptaciones."
+    ],
+    "OPTIONS": [
+      "[Descripción de Acción] Lo que realmente obtienes.",
+      "[Negación] #rPierde #r1 #rPV #rMáximo. Las cosas malas son rojas.",
+      "[Aceptación] #gGana #gApoteosis. Las cosas buenas son verdes.",
+      "[Salir]",
+      "Selecciona la carta a eliminar. (También puedes añadir texto extra así aquí.)"
+    ]
+  }
+}

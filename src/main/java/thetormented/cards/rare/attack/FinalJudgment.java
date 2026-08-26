@@ -17,9 +17,9 @@ import thetormented.util.CardStats;
 public class FinalJudgment extends BaseCard {
     public static final String ID = makeID(FinalJudgment.class.getSimpleName());
 
-    private static final int COST = 0;
-    private static final int BASE_DAMAGE = 30;
-    private static final int UPG_DAMAGE = 10; // 30 -> 40
+    private static final int COST = 1;
+    private static final int BASE_DAMAGE = 35;
+    private static final int UPG_DAMAGE = 10; // 35 -> 45
     private static final int MIN_DEBT = 4;
 
     private static final CardStats info = new CardStats(

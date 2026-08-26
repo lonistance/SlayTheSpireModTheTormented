@@ -1,0 +1,12 @@
+{
+  "${modID}:OrbID": {
+    "NAME": "Nom d'Orbe",
+    "DESCRIPTION": [
+      "#yPassif : Au début de votre tour, piochez #b",
+      " carte.",
+      " cartes.",
+      " NL #yÉvoquer : Infligez #b",
+      " PV de dégâts à tous les ennemis."
+    ]
+  }
+}

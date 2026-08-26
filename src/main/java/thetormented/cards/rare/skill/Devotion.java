@@ -6,6 +6,7 @@ import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.FrailPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import thetormented.actions.UpdateDebtAction;
@@ -40,8 +41,9 @@ public class Devotion extends BaseCard {
         int debt = p.hasPower(DebtPower.POWER_ID) ? p.getPower(DebtPower.POWER_ID).amount : 0;
         int vuln = p.hasPower(VulnerablePower.POWER_ID) ? p.getPower(VulnerablePower.POWER_ID).amount : 0;
         int weak = p.hasPower(WeakPower.POWER_ID) ? p.getPower(WeakPower.POWER_ID).amount : 0;
+        int frail = p.hasPower(FrailPower.POWER_ID) ? p.getPower(FrailPower.POWER_ID).amount : 0;
 
-        int total = debt + vuln + weak;
+        int total = debt + vuln + weak + frail;
 
         if (debt > 0) {
             addToBot(new UpdateDebtAction(p, p, -debt));
@@ -51,6 +53,9 @@ public class Devotion extends BaseCard {
         }
         if (weak > 0) {
             addToBot(new ReducePowerAction(p, p, WeakPower.POWER_ID, weak));
+        }
+        if (frail > 0) {
+            addToBot(new ReducePowerAction(p, p, FrailPower.POWER_ID, frail));
         }
 
         if (total > 0) {
